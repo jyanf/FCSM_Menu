@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<movepatterndiff>
+	<move id="789" index="0">
+		<frame index="0" xoffset="46" yoffset="128"></frame>
+		<frame index="1" xoffset="46" yoffset="128"></frame>
+		<frame index="2" xoffset="44" yoffset="128"></frame>
+		<frame index="3" xoffset="44" yoffset="124"></frame>
+		<frame index="4" xoffset="44" yoffset="122"></frame>
+		<frame index="5" xoffset="44" yoffset="120"></frame>
+		<frame index="6" xoffset="46" yoffset="122"></frame>
+		<frame index="7" xoffset="48" yoffset="124"></frame>
+		<frame index="8" merge_option="drop"/>
+		<frame index="9" merge_option="drop"/>
+	</move>
+	
+	<move id="790" index="0">
+		<frame index="0" xoffset="46" yoffset="142"></frame>
+		<frame index="1" xoffset="62" yoffset="184"></frame>
+		<frame image="jump001.bmp" index="2" texwidth="54" texheight="92" xoffset="62" yoffset="184"></frame>
+		<frame image="jump001.bmp" index="3" texwidth="54" texheight="92" xoffset="62" yoffset="184"></frame>
+	</move>
+	<move id="790" index="1">
+		<frame image="jump001.bmp" index="0" texwidth="54" texheight="92" xoffset="62" yoffset="184"></frame>
+	</move>
+	<move id="790" index="2">
+		<frame image="jump009.bmp" index="0" texwidth="55" texheight="90" xoffset="64" yoffset="188"></frame>
+		<frame image="jump010.bmp" index="1" texwidth="56" texheight="90" xoffset="66" yoffset="188"></frame>
+		<frame image="jump011.bmp" index="2" unknown="0" xtexoffset="0" ytexoffset="0" texwidth="57" texheight="90" xoffset="68" yoffset="188" duration="4" rendergroup="0">
+			<traits damage="0" proration="0" chipdamage="0" spiritdamage="0" untech="0" power="0" limit="0" onhitplayerstun="0" onhitenemystun="0" onblockplayerstun="0" onblockenemystun="0" onhitcardgain="0" onblockcardgain="0" onairhitsetsequence="0" ongroundhitsetsequence="0" xspeed="0" yspeed="0" onhitsfx="0" onhiteffect="0" attacklevel="0">
+				<airborne/>
+			</traits>
+			<effect xpivot="0" ypivot="0" xpositionextra="0" ypositionextra="0" xposition="0" yposition="0" unknown02="0" xspeed="0" yspeed="0"/>
+		</frame>
+		<frame image="jump010.bmp" index="3" unknown="0" xtexoffset="0" ytexoffset="0" texwidth="56" texheight="90" xoffset="66" yoffset="188" duration="4" rendergroup="0">
+			<traits damage="0" proration="0" chipdamage="0" spiritdamage="0" untech="0" power="0" limit="0" onhitplayerstun="0" onhitenemystun="0" onblockplayerstun="0" onblockenemystun="0" onhitcardgain="0" onblockcardgain="0" onairhitsetsequence="0" ongroundhitsetsequence="0" xspeed="0" yspeed="0" onhitsfx="0" onhiteffect="0" attacklevel="0">
+				<airborne/>
+			</traits>
+			<effect xpivot="0" ypivot="0" xpositionextra="0" ypositionextra="0" xposition="0" yposition="0" unknown02="0" xspeed="0" yspeed="0"/>
+		</frame>
+	</move>
+	<move id="790" index="3">
+		<frame image="walkFront010.bmp" index="0" texwidth="52" texheight="57" xoffset="36" yoffset="110" duration="3"></frame>
+		<frame image="walkFront011.bmp" index="1" texwidth="52" texheight="59" xoffset="44" yoffset="114" duration="3"></frame>
+		<frame index="2" merge_option="drop"/>
+		<frame index="3" merge_option="drop"/>
+		<frame index="4" merge_option="drop"/>
+		<frame index="5" merge_option="drop"/>
+	</move>
+	
+	<move id="799" index="0">
+		<frame index="0" xoffset="46" yoffset="142"></frame>
+		<frame index="1" xoffset="62" yoffset="184"></frame>
+		<frame index="2" xoffset="52" yoffset="196"></frame>
+		<frame index="3" xoffset="54" yoffset="196"></frame>
+	</move>
+	<move id="799" index="1">
+		<frame index="0" xoffset="40" yoffset="180"></frame>
+	</move>
+	<move id="799" index="2">
+		<frame index="0" xoffset="38" yoffset="178"></frame>
+		<frame index="1" xoffset="40" yoffset="180"></frame>
+		<frame index="2" xoffset="46" yoffset="190"></frame>
+		<frame index="3" xoffset="44" yoffset="186"></frame>
+		<frame index="4" xoffset="64" yoffset="188"></frame>
+		<frame index="5" merge_option="drop"/>
+		<frame index="6" merge_option="drop"/>
+	</move>
+	<move id="799" index="3">
+		<frame image="jump009.bmp" index="0" texwidth="55" texheight="90" xoffset="64" yoffset="188" duration="3"></frame>
+		<frame image="jump010.bmp" index="1" texwidth="56" texheight="90" xoffset="66" yoffset="188" duration="3"></frame>
+		<frame image="jump011.bmp" index="2" unknown="0" xtexoffset="0" ytexoffset="0" texwidth="57" texheight="90" xoffset="68" yoffset="188" duration="3" rendergroup="0">
+			<traits damage="0" proration="0" chipdamage="0" spiritdamage="0" untech="0" power="0" limit="0" onhitplayerstun="0" onhitenemystun="0" onblockplayerstun="0" onblockenemystun="0" onhitcardgain="0" onblockcardgain="0" onairhitsetsequence="0" ongroundhitsetsequence="0" xspeed="0" yspeed="0" onhitsfx="0" onhiteffect="0" attacklevel="0">
+				<airborne/>
+				<cancellable/>
+				<superarmor/>
+			</traits>
+			<hit>
+				<box left="-29" up="-169" right="29" down="-38"/>
+			</hit>
+			<effect xpivot="0" ypivot="0" xpositionextra="0" ypositionextra="0" xposition="0" yposition="0" unknown02="0" xspeed="0" yspeed="0"/>
+		</frame>
+		<frame image="jump010.bmp" index="3" unknown="0" xtexoffset="0" ytexoffset="0" texwidth="56" texheight="90" xoffset="66" yoffset="188" duration="3" rendergroup="0">
+			<traits damage="0" proration="0" chipdamage="0" spiritdamage="0" untech="0" power="0" limit="0" onhitplayerstun="0" onhitenemystun="0" onblockplayerstun="0" onblockenemystun="0" onhitcardgain="0" onblockcardgain="0" onairhitsetsequence="0" ongroundhitsetsequence="0" xspeed="0" yspeed="0" onhitsfx="0" onhiteffect="0" attacklevel="0">
+				<airborne/>
+				<cancellable/>
+				<superarmor/>
+			</traits>
+			<hit>
+				<box left="-29" up="-169" right="29" down="-38"/>
+			</hit>
+			<effect xpivot="0" ypivot="0" xpositionextra="0" ypositionextra="0" xposition="0" yposition="0" unknown02="0" xspeed="0" yspeed="0"/>
+		</frame>
+	</move>
+	<move id="799" index="4">
+		<frame image="walkFront010.bmp" index="0" texwidth="52" texheight="57" xoffset="36" yoffset="110" duration="3"></frame>
+		<frame image="walkFront011.bmp" index="1" texwidth="52" texheight="59" xoffset="44" yoffset="114" duration="3"></frame>
+		<frame index="2" merge_option="drop"/>
+		<frame index="3" merge_option="drop"/>
+		<frame index="4" merge_option="drop"/>
+		<frame index="5" merge_option="drop"/>
+	</move>
+	
+</movepatterndiff>
