@@ -1,6 +1,7 @@
 require("FCSM_scripts")
 local CMat = require("FCSM_scripts.CursorMatProxy")
 local ADDR_SUBMENU_CHARACTER = 0x899D10
+local ADDR_CURRENT_SCENE = 0x8A000C
 
 local isChanged=false
 
@@ -22,6 +23,11 @@ local function MenuProcess(menu)
 			soku.playSFX(40) --save
 			memory.writeint(ADDR_SUBMENU_CHARACTER, m.index)
 			isChanged = true
+			--to deck
+			local pscene = memory.readint(ADDR_CURRENT_SCENE)
+			if pscene~=0 then
+				memory.writeint(pscene+0x1424, 1)
+			end
 			return false
 		end
 		return
