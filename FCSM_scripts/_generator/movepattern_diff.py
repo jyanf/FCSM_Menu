@@ -19,6 +19,55 @@ def load_xml(path):
 def deepcopy(node):
     return copy.deepcopy(node)
 
+def pre_clone(root):
+    # root = deepcopy(root)
+    # move group
+    groups = {}
+    for m in root.findall("move"):
+        mid = m.attrib.get("id")
+        if mid is None:
+            continue
+        groups.setdefault(mid, []).append(m)
+    replacements = []
+    for node in root:
+        if node.tag != "clone":
+            continue
+        target = node.attrib.get("target")
+        if target is None:
+            continue
+        src_group = groups.get(target)
+        if not src_group:
+            raise RuntimeError(
+                f"clone target not found: {target}"
+            )
+        new_nodes = []
+        for src in src_group:
+            cp = deepcopy(src)
+            # clone id覆盖
+            if "id" in node.attrib:
+                cp.attrib["id"] = node.attrib["id"]
+            new_nodes.append(cp)
+
+        replacements.append(
+            (node, new_nodes)
+        )
+
+    for old, new_nodes in replacements:
+
+        parent = old.getparent()
+
+        pos = parent.index(old)
+
+        parent.remove(old)
+
+        for i, n in enumerate(new_nodes):
+
+            parent.insert(
+                pos + i,
+                n
+            )
+    return root
+
 def node_equal(a, b):
     if a.tag != b.tag:
         return False
@@ -208,7 +257,8 @@ def diff_frames(a_move, b_move): # blendOption的drop尚未处理
 # -----------------------------
 
 def diff_moves(a_root, b_root):
-
+    pre_clone(a_root)
+    pre_clone(b_root)
     out_root = etree.Element("movepatterndiff")
 
     a_moves = a_root.findall("move")
