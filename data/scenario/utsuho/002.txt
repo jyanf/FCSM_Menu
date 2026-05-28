@@ -27,7 +27,7 @@ Sleep:70;
 
 Face:utsuho,ïÅ
 #0ÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇR
-Well, what did you want to talk
+Well\, what did you want to talk
 to me about, Lady Suwako?\
 
 Face:utsuho,ä
