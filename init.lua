@@ -100,16 +100,49 @@ soku.SubscribeSceneChange(
 
 --[[
 	local Df = require "FCSM_scripts.DatFlater"
-	local d = Df.FromFile("score123-full.dat")
-	print("decomp str size", #d)
-	local f= io.open("score123-full2.dat.decomp", "wb")
-	if f then
-		f:write(d); f:close()
-	end
-	local f = io.open("score123-full.dat.decomp", "rb")
+
+	-- local d = Df.FromFile("score123-full-sc.dat")
+	-- print("decomp str size", #d)
+	-- local f= io.open("score123-full-sc.dat.decomp", "wb")
+	-- if f then
+	-- 	f:write(d); f:close()
+	-- end
+	local f = io.open("score123-full-sc.dat.decomp", "rb")
 	if f then
 		local d = f:read("a"); f:close()
 		print("recomp str size", #d)
-		Df.ToFile("score123-full.dat.recomp", d)
+		Df.ToFile("score123-full-sc.dat.recomp", d)
 	end
+--]]
+
+--[[try to unlock all sc
+local ADDR_SPELLCARD_RECORDS = 0x899f60+0x1a4
+local M = require("FCSM_scripts.FrameDataHacker.declarator")
+M.define("BonusRecord", {
+	size=0x18,
+	fields = {
+        enemy = {offset=0x00, type="int"},
+        difficulty = {offset=0x4, type="int"},
+		csvIndex = {offset=0x8, type="int"},
+        countTry= {offset=0xC, type="int"},
+		countSucc = {offset=0x10, type="int"},
+        timeLeft = {offset=0x14, type="int"},
+    },
+})
+M.define("vector<BonusRecord>", M.get_template("vector<>")("BonusRecord"))
+soku.SubscribeReady(function ()
+	for k=1,20 do
+		local p = ADDR_SPELLCARD_RECORDS + (k-1)*M.get_define("vector<BonusRecord>").size
+		local rec = M.fromPtr("vector<BonusRecord>", p)
+		print(p)
+		for i=0, rec:size()-1 do
+			local v = rec[i] or {}
+			v.countTry=1; v.countSucc=1
+			v.timeLeft = -60
+		end
+	end
+end)
+--]]
+
+---[[try to unlock cards
 --]]
