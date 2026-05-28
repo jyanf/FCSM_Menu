@@ -97,3 +97,19 @@ soku.SubscribeSceneChange(
 		end
 	end
 )
+
+--[[
+	local Df = require "FCSM_scripts.DatFlater"
+	local d = Df.FromFile("score123-full.dat")
+	print("decomp str size", #d)
+	local f= io.open("score123-full2.dat.decomp", "wb")
+	if f then
+		f:write(d); f:close()
+	end
+	local f = io.open("score123-full.dat.decomp", "rb")
+	if f then
+		local d = f:read("a"); f:close()
+		print("recomp str size", #d)
+		Df.ToFile("score123-full.dat.recomp", d)
+	end
+--]]
