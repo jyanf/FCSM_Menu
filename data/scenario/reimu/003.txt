@@ -1,0 +1,182 @@
+## =======================================================================
+#Stage:4
+#Title:雨にも風にも
+#Place:川
+#Weather:快晴
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "royal blue"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "royal blue"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+
+#
+# 霊夢が一人
+#
+#０１２３４５６７８９０１２３４５６７８９０１２３
+
+Character:reimu,160,0,0,8888FF
+Character:aya,160,0,1,FF8888
+#分画面外に待機
+Action:aya,100
+#カメラ固定
+Action:reimu,4
+#フォーカス瞬間移動
+#Action:reimu,11
+Bgm:data/bgm/ta03.ogg
+
+#向き固定解除
+Action:reimu,152
+
+Label:Start
+
+Sleep:60;
+
+#ステージタイトル表示
+Object:data/scenario/reimu/effect/StageTitle004.bmp,0,256,-32
+Sleep:60;
+Object:data/scenario/effect/Stage4.bmp,1,256,352
+Sleep:60;
+
+Face:reimu,晛
+确实呢，
+的确放晴的只有我周围而已呢\
+
+这么说来，绯色的云雾是从大家身体里冒出来的？
+然后，那些云雾……\
+Face:reimu,
+Hide:1
+
+#Weather:風雨
+# 横殴りの雨が降る
+Action:aya,103
+Sleep:60
+
+Face:reimu,晛
+会改变那个人周围的天气呢
+变成那个人所拥有的<accent>气质代表的天气</accent>\
+Face:reimu,
+Hide:1
+Sleep:30
+
+#
+# 文登場
+#
+
+#登場モーション開始
+Action:aya,101
+
+#登場モーション終了検知
+Action:aya,102
+
+Face:aya,晛
+停一下，
+竟然在这么大风的日子里上山来\
+
+Face:aya,娋
+你想死了吗？\
+
+# 名前のテロップ
+#Name:風雨の鴉　射命丸文
+Object:data/scenario/aya/effect/Name.bmp,2,352,304
+
+Face:reimu,梋
+竟然不偏不倚遇到这种坏天气……
+就是说你只配这种风雨交加的天气呢\
+
+Face:aya,搟
+这还真是一开始就打算找茬呢\
+
+Face:reimu,榝
+我还急着赶路呢
+怎么看这些绯色的云都集中在山顶的样子\
+
+Bgm:data/bgm/st03.ogg
+
+Face:aya,寛
+啊啊好啊，找上门来的茬子当然要全都买下啊
+要真想快点过去的话，你就准备大出血吧！\
+
+Action:reimu,3
+
+End:
+
+# 戦闘開始
+
+# --------------------------------
+# 戦闘終了　負け
+Label:Lose
+
+Face:aya,晛
+山里不是你们人类该来的地方
+赶快给我回去\
+
+End:
+
+# --------------------------------
+# 戦闘終了　コンテニュー処理
+Label:Continue
+
+#天候初期化
+Action:aya,113
+
+End:
+
+# --------------------------------
+# 戦闘終了　勝ち
+Label:Win
+
+#やられキャラ完全ダウン検知
+Action:aya,200
+#攻撃側ニュートラル移行検知
+Action:reimu,202
+
+# 晴れる
+Action:reimu,103
+Sleep:60
+
+Face:reimu,婐
+果然，山顶上比较可疑啊
+只有山顶的绯色云雾散不去……\
+
+Face:aya,晧
+你要那么动真格的话就没办法了呢
+我会去跟大家打声招呼的你赶快走吧\
+
+Face:reimu,晛
+你不说我也会走啦
+我的直觉还从来没有出过错呢\
+
+Face:aya,晧
+好久没见到大晴天了呢
+天一晴人的心情也好多了呢\
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+Sleep:30;
+
+#上空移行用上空退避
+Action:reimu,151
+
+Sleep:90;
+
+#フェードアウト　黒
+Action:reimu,160
+Sleep:60;
+
+
+Stage:4,0
+
+End:
+
+
+
+
+
+## =======================================================================

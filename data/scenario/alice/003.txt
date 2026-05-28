@@ -1,0 +1,150 @@
+## =======================================================================
+#Stage:4
+#Title:上を向いて闘おう
+#Place:紅魔館時計塔
+#Weather:曇天
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Bgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+#0１２３４５６７８９０１２３４５６７８９０１２３
+
+Character:alice,160,0,0,8888FF
+Character:sakuya,160,0,1,FF8888
+#カメラ固定
+Action:alice,4
+#フォーカス瞬間移動
+#Action:alice,11
+
+#向き固定解除
+Action:alice,152
+
+Bgm:data/bgm/st12.ogg
+Label:Start
+
+Sleep:30;
+
+#ステージタイトル表示
+Object:data/scenario/alice/effect/StageTitle004.bmp,0,256,-32
+Sleep:60;
+Object:data/scenario/effect/Stage4.bmp,1,256,352
+Sleep:60;
+
+# 名前のテロップ
+Object:data/scenario/sakuya/effect/Name.bmp,2,352,304
+
+Face:alice,榝
+我只是想调查点事情的说……\
+
+Face:sakuya,晛
+帕秋莉大人最近很忙的样子@
+成天嘀咕着天气啊，云啊……什么的\
+
+Face:alice,晛
+刚才她好像也说来着呢，@
+云……是指绯色的云吗？\
+
+Face:alice,榝
+嗯～@
+云吗……\
+
+Face:sakuya,晛
+虽然看你好像也烦恼着什么的样子，
+不过我必须得给你点教训所以……\
+
+Face:alice,嬃
+咦？是这样吗？\
+
+Face:sakuya,寛
+毕竟嘛，不这么做有些人就会更猖狂了\
+
+#戦闘開始処理
+Action:alice,3
+
+End:
+
+# 戦闘開始
+
+# --------------------------------
+# 戦闘終了　負け
+Label:Lose
+
+Face:sakuya,晛
+本来嘛，图书馆的使用者
+就只有帕秋莉大人一个而已\
+
+Face:sakuya,梋
+毕竟是私立的图书馆\
+
+End:
+
+# --------------------------------
+# 戦闘終了　コンテニュー処理
+Label:Continue
+
+#天候初期化
+Action:sakuya,113
+
+End:
+
+# --------------------------------
+# 戦闘終了　勝ち
+Label:Win
+
+#やられキャラ完全ダウン検知
+Action:sakuya,200
+#攻撃側ニュートラル移行検知
+Action:alice,202
+
+#自キャラ天候
+Action:alice,103
+Sleep:60
+
+Face:alice,榝
+知道了啦，
+不会妨碍那家伙啦\
+
+Face:sakuya,晧
+你在调查的是什么东西？\
+
+Face:alice,晛
+因为发现了地震的宏观前兆，
+所以想调查一下……\
+
+Face:alice,榝
+话说回来怎么看都觉得那个绯色的云雾很不自然呢……\
+
+Face:alice,寛
+搞不好不是自然形成的也说不定\
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+Sleep:30;
+#上空移行用上空退避
+Action:alice,151
+
+Sleep:90;
+
+#フェードアウト　黒
+Action:alice,160
+Sleep:60;
+
+Stage:4,0
+
+End:
+
+
+
+
+
+## =======================================================================

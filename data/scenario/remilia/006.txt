@@ -1,0 +1,194 @@
+## =======================================================================
+#Stage:7
+#Title:井の中の蛙
+#Place:大図書館
+#Weather:
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+#0１２３４５６７８９０１２３４５６７８９０１２３
+
+#０１２３４５６７８９０１２３４５６７８９０１２３
+
+Character:remilia,160,0,0,8888FF
+Character:reimu,160,0,1,FF8888
+#敵画面外に待機
+Action:reimu,100
+#カメラ固定
+Action:remilia,4
+
+#フォーカス瞬間移動
+#Action:remilia,11
+
+#向き固定解除
+Action:remilia,152
+
+Label:Start
+PlayBgm:data/bgm/ta08.ogg
+
+Sleep:30;
+
+#ステージタイトル表示
+Object:data/scenario/remilia/effect/StageTitle007.bmp,0,256,-32
+Sleep:60;
+Object:data/scenario/effect/Stage7.bmp,1,256,352
+Sleep:60
+
+Face:remilia,晛
+总感觉好像打倒了一大堆犯人\
+
+Face:remilia,晛
+差不多要是把异变解决了就好了\
+
+Face:remilia,
+Hide:1
+Sleep:30
+
+#
+# 敵登場
+#
+Action:reimu,101
+Action:reimu,102
+
+Sleep:20
+
+Face:reimu,搟
+搞什么搞什么\
+
+# 名前のテロップ
+Object:data/scenario/reimu/effect/Name.bmp,2,352,304
+
+Face:remilia,梋
+这次是你吗
+犯人\
+
+#敵天候
+Action:reimu,103
+
+Face:reimu,搟
+我没时间陪你玩
+神社被弄坏现在正烦着呢！\
+
+Face:remilia,梋
+呵呵
+就是说你把神社弄坏让天气异变……\
+
+Face:remilia,嬃
+咦？
+你说神社被弄坏了？\
+
+Face:reimu,搟
+是啊，因为地震啊！
+你说我这一肚子闷火要找谁去发！\
+
+Face:remilia,梋
+那不太简单了\
+
+Face:remilia,婐
+这里跟我打一场出出气如何？\
+
+Face:reimu,搟
+你不说我也会这么做的！\
+
+#戦闘開始
+PlayBgm:data/bgm/st10.ogg
+Action:remilia,3
+
+End:
+
+# 戦闘開始
+
+# --------------------------------
+# 戦闘終了　負け
+Label:Lose
+
+Face:reimu,寛
+真是一点都不爽！\
+
+Face:reimu,晛
+啊啊好空虚\
+
+
+End:
+
+# --------------------------------
+# 戦闘終了　コンテニュー処理
+Label:Continue
+
+#天候初期化
+Action:reimu,113
+
+End:
+
+# --------------------------------
+# 戦闘終了　勝ち
+Label:Win
+
+#やられキャラ完全ダウン検知
+Action:reimu,200
+#攻撃側ニュートラル移行検知
+Action:remilia,202
+
+#自キャラ天候
+Action:remilia,103
+#Sleep:60
+
+Face:remilia,嬃
+你刚刚说神社被弄坏了？\
+
+Face:remilia,晛
+难不成这次的事情……
+比我想象中的要大得多\
+
+Face:reimu,晧
+你知道什么吗？\
+
+Face:remilia,晛
+不知道，这次因为不能出门所以不太清楚\
+
+Face:reimu,晧
+为什么不能出门啊\
+
+Face:remilia,梋
+还不是突然下起雨的缘故啊\
+
+Face:reimu,晧
+下雨了？我最近可一直都晒大太阳来着呢……\
+
+Face:remilia,晛
+总感觉好长时间没见到天晴了……@
+唔唔唔唔唔？\
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+Stage:16,120
+
+#やられキャラ画面退場
+Action:reimu,201
+
+#自キャラ基準点へ移動
+Action:remilia,150
+
+#カメラ中央あわせ
+Action:remilia,4
+
+Sleep:120;
+
+End:
+
+
+
+
+
+## =======================================================================

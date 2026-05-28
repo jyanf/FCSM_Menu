@@ -1,0 +1,215 @@
+## =======================================================================
+#Stage:1
+#Title:紅魔館の主
+#Place:紅魔館ロビー
+#Weather:
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Font.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Window.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Background.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*CG.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+#PlayBgm:data/bgm/ta00.ogg
+#0１２３４５６７８９０１２３４５６７８９０１２３
+
+#０１２３４５６７８９０１２３４５６７８９０１２３
+
+Character:udonge,160,0,0,8888FF
+Character:remilia,160,0,1,FF8888
+
+#背景　紅魔館ロビー
+Stage:16,0
+
+#自キャラ画面外に待機
+Action:udonge,1
+
+
+#敵画面外に待機
+Action:remilia,100
+
+#カメラ中央固定
+Action:udonge,2
+
+Label:Start
+PlayBgm:data/bgm/ta00.ogg
+
+#自キャラ天候
+Action:udonge,104
+
+Sleep:60;
+
+#ステージタイトル表示
+Object:data/scenario/udonge/effect/StageTitle001.bmp,0,256,-32
+Sleep:60;
+Object:data/scenario/effect/Stage1.bmp,1,256,352
+Sleep:60;
+
+#登場
+Action:udonge,50
+Action:remilia,101
+
+Action:udonge,51
+Action:remilia,102
+
+Face:udonge,晛
+#０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９\
+好久不见了\
+
+# 名前のテロップ
+Object:data/scenario/remilia/effect/Name.bmp,2,352,304
+
+Face:remilia,晛
+唉呀？听到有人叫我还以为是哪个呢，
+你不是那时候的……\
+
+Face:udonge,晛
+这段时间你不是好像在对异变进行调查吗？
+我就想问问有什么进展没\
+
+Face:remilia,嬃
+对异变进行调查？
+啊啊，确实有这么回事呢\
+
+Face:remilia,梋
+你不说我都快给忘光了\
+
+Face:udonge,榝
+结果异变好像还是给巫女解决掉了
+虽然不太清楚详情……\
+
+Face:remilia,梋
+敌人在云层上对吧？\
+
+Face:udonge,嬃
+没错，
+你听说了吗？\
+
+Face:remilia,晛
+不用听说也知道啊
+然后呢？你有什么事？来向我报告？\
+
+Face:udonge,梋
+不是，灵梦解决了异变之后
+天气确实正常了\
+
+Face:udonge,榝
+不过，我所担心的事情还没解决啊\
+
+Face:remilia,晛
+是什么呢？\
+
+#0１２３４５６７８９０１２３４５６７８９０１２３
+Face:udonge,榝
+关于地震的事情
+虽然神社附近似乎已经安定下来了\
+
+Face:udonge,榝
+但竹林里长出弯曲的竹子了……
+关于大地的状况依然让人担心\
+
+Face:udonge,晛
+我就在想　从与神社不同的途径调查的你
+是不是有发现一些什么\
+
+Face:remilia,梋
+谁知道呢
+就算发现了我也不会告诉你的\
+
+Face:udonge,搟
+你怎么这样！\
+
+
+#敵天候
+#Action:remilia,103
+
+PlayBgm:data/bgm/st17.ogg
+Action:udonge,3
+End:
+
+# --------------------------------
+# 戦闘終了　負け
+Label:Lose
+
+Face:remilia,晛
+地震呢\
+
+Face:remilia,婐
+管它呢，要发生就让它发生不就好了？
+反正我会飞\
+
+End:
+
+# --------------------------------
+# 戦闘終了　コンテニュー処理
+Label:Continue
+
+#天候初期化
+Action:udonge,104
+
+End:
+
+# --------------------------------
+# 戦闘終了　勝ち
+Label:Win
+
+
+#やられキャラ完全ダウン検知
+Action:remilia,200
+#攻撃側ニュートラル移行検知
+Action:udonge,202
+
+#自キャラ天候
+#Action:udonge,103
+#Sleep:60;
+
+Face:remilia,晧
+没有发现有什么特别的变化啊\
+
+Face:udonge,晛
+是吗，那就好……\
+
+Face:udonge,娋
+不过我怎么也没办法相信那个天人呢\
+
+Face:remilia,晧
+不过，就算发生地震也无所谓啊
+最多，就注意一下家里的窗户而已\
+
+Face:udonge,榝
+其实比起损害来，
+看不透对方在盘算什么更让人不快活……就这样\
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+Stage:17,120
+
+#やられキャラ画面退場
+Action:remilia,201
+
+#自キャラ基準点へ移動
+Action:udonge,150
+
+#カメラ中央あわせ
+Action:udonge,4
+
+Sleep:120;
+
+End:
+
+
+
+
+
+## =======================================================================

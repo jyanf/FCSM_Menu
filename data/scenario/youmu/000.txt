@@ -1,0 +1,189 @@
+## =======================================================================
+#Stage:1
+#Title:幽霊失踪
+#Place:白玉楼の雪庭
+#Weather:蒼天
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "royal blue"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "royal blue"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+
+#
+# フィールドに誰も居ない
+#
+#０１２３４５６７８９０１２３４５６７８９０１２３
+
+Character:youmu,160,0,0,8888FF
+Character:yuyuko,160,0,1,FF8888
+
+#背景　白玉楼の雪庭
+Stage:17,0
+
+#自分画面外に待機
+Action:youmu,1
+
+#敵画面外に待機
+Action:yuyuko,100
+
+#カメラ中央固定
+Action:youmu,2
+
+Label:Start
+
+PlayBgm:data/bgm/ta03.ogg
+
+#自キャラ天候
+#Action:youmu,103
+#天候
+Action:yuyuko,103
+
+Sleep:60;
+
+#登場
+Action:youmu,50
+Action:youmu,51
+
+
+#ステージタイトル表示
+Object:data/scenario/youmu/effect/StageTitle001.bmp,0,256,-32
+Sleep:60;
+Object:data/scenario/effect/Stage1.bmp,1,256,352
+#Sleep:60;
+
+#
+# 敵登場
+Action:yuyuko,101
+Action:yuyuko,102
+
+Sleep:60
+
+#PlayBgm:data/bgm/ta00.ogg
+
+#0１２３４５６７８９０１２３４５６７８９０１２３
+Face:youmu,榝
+Face:yuyuko,嬃
+怎么回事啊，一脸想睡觉的样子\
+
+Face:youmu,榝
+有件事情要报告给幽々子大人……
+话说我可没想睡觉\
+
+# 名前のテロップ
+Object:data/scenario/yuyuko/effect/Name.bmp,2,352,304
+
+Face:yuyuko,晛
+不听～\
+
+Face:youmu,娋
+不是啦，希望您能听一下\
+
+Face:youmu,晛
+最近幽灵的数量减少了很多\
+
+Face:yuyuko,晛
+哎呀，要我去增加一些来吗？
+咔嚓咔嚓咔嚓嚓\
+
+Face:youmu,娋
+哪里哪里，
+减少本身是没有什么问题啦……\
+
+Face:youmu,榝
+不过好像全都没有成佛
+而是一个接一个消失了\
+
+Face:yuyuko,晛
+然后你想怎么做呢？\
+
+Face:youmu,梋
+我想出去调查一下@
+能容我稍微离开一段时间吗？\
+
+Face:yuyuko,梋
+不干～
+要想走的话就先推倒我再走吧\
+
+#戦闘開始処理
+PlayBgm:data/bgm/st16.ogg
+Action:youmu,3
+End:
+
+# --------------------------------
+# 戦闘終了　負け
+Label:Lose
+
+#0１２３４５６７８９０１２３４５６７８９０１２３
+Face:yuyuko,婐
+你只要老老实实扫家里院子就行了\
+
+Face:yuyuko,晛
+这件事情随便插手进去的话搞不好会有危险呢\
+
+End:
+
+# --------------------------------
+# 戦闘終了　コンテニュー処理
+Label:Continue
+
+#天候初期化
+Action:yuyuko,113
+
+End:
+
+# --------------------------------
+# 戦闘終了　勝ち
+Label:Win
+
+
+#やられキャラ完全ダウン検知
+Action:yuyuko,200
+#攻撃側ニュートラル移行検知
+Action:youmu,202
+
+#天候霧雨に変化
+Action:youmu,103
+Sleep:60;
+
+Face:youmu,娋
+为什么每次都会演变成这样啊\
+
+Face:yuyuko,晧
+真漂亮！
+我已经被你推倒了接下来你想怎么做就怎么做吧\
+
+Face:youmu,晛
+接下来，要以什么为线索开始搜查呢……\
+
+Face:youmu,寛
+总之，我去去就来！\
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+Stage:0,120
+
+#やられキャラ画面退場
+Action:yuyuko,201
+
+#自キャラ基準点へ移動
+Action:youmu,150
+
+#カメラ中央あわせ
+Action:youmu,4
+
+Sleep:120;
+
+End:
+
+
+
+
+
+## =======================================================================

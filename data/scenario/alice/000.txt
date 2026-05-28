@@ -1,0 +1,192 @@
+## =======================================================================
+#Stage:1
+#Title:群発する予兆
+#Place:壊れた神社
+#Weather:雹
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Bgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+#0１２３４５６７８９０１２３４５６７８９０１２３
+
+#
+#０１２３４５６７８９０１２３４５６７８９０１２３
+
+Character:alice,160,0,0,8888FF
+Character:reimu,160,0,1,FF8888
+
+#背景　壊れた神社
+Stage:0,0
+
+#自分画面外に待機
+Action:alice,1
+
+#敵画面外に待機
+Action:reimu,100
+
+Label:Start
+
+PlayBgm:data/bgm/ta03.ogg
+
+#自キャラ天候
+Action:alice,103
+
+Sleep:60;
+
+#ステージタイトル表示
+Object:data/scenario/alice/effect/StageTitle001.bmp,0,256,-32
+Sleep:60;
+Object:data/scenario/effect/Stage1.bmp,1,256,352
+Sleep:60;
+
+#カメラ移動
+Action:alice,2
+
+#登場
+Action:alice,50
+Action:alice,51
+
+#０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９\
+Face:alice,嬃
+啊啊、结果还是没赶上吗\
+
+Face:alice,榝
+虽然我的预测是正确的……\
+
+Face:reimu,無
+谁！\
+
+Face:alice,
+Hide:1
+Sleep:30
+
+#
+# 敵登場
+Action:reimu,101
+Action:reimu,102
+
+# 名前のテロップ
+Object:data/scenario/reimu/effect/Name.bmp,2,352,304
+
+Face:reimu,榝
+什么啊，原来是你啊？\
+
+Face:alice,晛
+果然发生地震了吧？\
+
+Face:reimu,晛
+什么叫果然啊\
+
+Face:alice,晛
+最近经常看到的绯色云雾，
+还有大粒的冰雹\
+
+Face:alice,榝
+这些都是地震的宏观前兆哦！\
+
+Hide:1
+
+#敵天候
+Action:reimu,103
+Sleep:60
+
+Face:reimu,晛
+绯色的云雾？你说冰雹？\
+
+Face:alice,嬃
+啊呀？　冰雹停了哎……@
+最近分明一直下个不停的来着\
+
+Face:reimu,搟
+既然知道要地震了，
+就该早点告诉我一声啊！\
+
+#戦闘開始処理
+
+PlayBgm:data/bgm/st00.ogg
+Action:alice,3
+End:
+
+# --------------------------------
+# 戦闘終了　負け
+Label:Lose
+
+Face:reimu,搟
+啊啊，我这满腔的怒火该找谁去发啊！\
+
+
+End:
+
+# --------------------------------
+# 戦闘終了　コンテニュー処理
+Label:Continue
+
+#天候初期化
+Action:reimu,113
+
+End:
+
+# --------------------------------
+# 戦闘終了　勝ち
+Label:Win
+
+
+#やられキャラ完全ダウン検知
+Action:reimu,200
+#攻撃側ニュートラル移行検知
+Action:alice,202
+
+
+Face:alice,梋
+我也还在调查中啊
+没想到地震这么快就发生了……\
+
+Face:reimu,晧
+哈啊～\
+
+Hide:1
+#自分天候
+Action:alice,103
+Sleep:60;
+
+Face:alice,晛
+但是，预兆还没消失\
+
+Face:alice,寛
+说不定地震还会发生……
+不能大意啊\
+
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+Stage:17,120
+
+
+#やられキャラ画面退場
+Action:reimu,201
+
+#自キャラ基準点へ移動
+Action:alice,150
+
+#カメラ中央あわせ
+Action:alice,4
+
+Sleep:120;
+
+End:
+
+
+
+
+
+## =======================================================================

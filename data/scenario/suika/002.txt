@@ -1,0 +1,255 @@
+## =======================================================================
+#Stage:Final
+#Title:太公望の釣り堀
+#Place:有頂天
+#Weather:極光
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Font.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Window.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Background.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*CG.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+#PlayBgm:data/bgm/ta00.ogg
+#0１２３４５６７８９０１２３４５６７８９０１２３
+
+Character:suika,160,0,0,8888FF
+Character:tenshi,160,0,1,FF8888
+#敵画面外に待機
+Action:tenshi,100
+#カメラ初期位置固定
+Action:tenshi,130
+#自キャラ画面外待機
+Action:suika,1
+
+#向き固定解除
+Action:suika,152
+
+#天候初期化
+Action:tenshi,153
+
+Label:Start
+
+Sleep:85;
+
+PlayBgm:data/bgm/ta07.ogg
+
+#フェードイン　白
+Action:suika,163
+
+#カメラ下へ
+Action:tenshi,131
+Sleep:60;
+
+#ステージタイトル表示
+Object:data/scenario/suika/effect/StageTitle003.bmp,0,256,-32
+#画面上から落下して登場
+Action:suika,50
+Sleep:60;
+Object:data/scenario/effect/StageFinal.bmp,1,256,352
+Action:suika,51
+
+#sleep,60
+Face:suika,婐
+天界还真宽广呢\
+
+Face:suika,晛
+我们在地上都丧失住所了的说\
+
+Face:suika,晛
+就连那山，都已经没有我们可容身之地了\
+
+Face:suika,梋
+喂—都出来吧—！
+花儿开得这么美，都出来喝一杯吧\
+
+Hide:1
+
+#イベント　メッセージウィンドウ消去
+#イベント　カメラ上空へ
+Action:tenshi,132
+
+#イベント　地震
+Action:tenshi,133
+
+#sleep,180
+
+
+Face:tenshi,無
+花看半开\
+
+
+Hide:1
+Sleep:30
+
+Action:tenshi,133
+#イベント　地震
+酒饮微醉\
+
+Hide:1
+#sleep,60
+
+# 天子登場
+#イベント　大地震
+#イベント　カメラフォーカス元へ
+Action:tenshi,134
+#sleep,180
+
+这就是进入天界之人的准则\
+
+#登場ポーズ終了指令
+#sleep,30
+
+Face:suika,晛
+好啦好啦，你别这样\
+
+Action:tenshi,139
+
+#Name:非想非非想天の娘　比那名居天子
+# 名前のテロップ
+Object:data/scenario/tenshi/effect/Name.bmp,2,352,304
+
+Face:tenshi,晛
+你难不成是，鬼族？
+不会吧\
+
+Face:suika,搟
+是鬼又怎么样？
+难道说鬼就没权力喝上两杯吗？\
+
+Face:tenshi,嬃
+哪里哪里，我只是没想到现在地上还有鬼族存在\
+
+Face:tenshi,婐
+那么你不远千里来天界有什么事？\
+
+Hide:1
+Sleep:20
+Action:suika,107
+Sleep:30
+
+Face:suika,梋
+不是啦，我说，
+是你在萃集大家的内心吧？\
+
+Face:suika,晛
+有啥目的啊\
+
+Face:tenshi,嬃
+真厉害，已经被发现了吗……
+其实要说目的倒也没什么\
+
+Face:suika,梋
+喔？\
+
+Face:tenshi,婐
+按照你的说法应该就是“下酒菜”吧\
+
+Face:suika,婐
+哎，这样吗？那就好啊\
+
+Face:suika,榝
+不过呢，
+萃集的方法太过粗杂，全都漏出去了啊\
+
+Face:tenshi,梋
+因为不漏出去变成天气的话就钓不到鱼了呢\
+
+Face:suika,梋
+下酒菜要用鱼、呢。
+你们天人还真是喜欢钓鱼啊\
+
+Face:tenshi,嬃
+那是老祖宗留下的习惯呢，
+话说你来又有什么目的？\
+
+#0１２３４５６７８９０１２３４５６７８９０１２３
+Face:suika,梋
+是啊，
+能不能把这片广阔的天界借我一部分呢\
+
+Face:tenshi,榝
+怎么说？\
+
+Face:suika,梋
+悠闲的晒着太阳……
+跟大家一起畅饮……\
+
+Face:suika,婐
+梦想真诱人啊\
+
+
+PlayBgm:data/bgm/st05.ogg
+
+Face:tenshi,嬃
+等下等下，
+那种事情不肯定是不行的吗\
+
+Face:suika,寛
+那就来硬的\
+
+Face:tenshi,搟
+哼，不要以为看穿了我的计划就得意忘形啊！\
+
+Face:tenshi,寛
+你那自信究竟来自何处，
+让我好好见识一下\
+
+
+#戦闘開始処理
+Action:suika,3
+
+End:
+
+# 戦闘開始
+
+# --------------------------------
+# 戦闘終了　負け
+Label:Lose
+
+Face:tenshi,寛
+来吧来吧，就那样趴在地上喝酒好了！\
+
+End:
+
+# --------------------------------
+# 戦闘終了　コンテニュー処理
+Label:Continue
+
+#背景　有頂天へ
+Action:tenshi,180
+#天候解除
+Action:tenshi,153
+
+End:
+
+# --------------------------------
+# 戦闘終了　勝ち
+Label:Win
+
+#やられキャラ完全ダウン検知
+Action:tenshi,200
+#攻撃側ニュートラル移行検知
+Action:suika,202
+
+Sleep:30
+Result:
+
+#イベント　勝利演出フェード
+
+End:
+
+
+
+
+
+## =======================================================================

@@ -1,0 +1,265 @@
+## =======================================================================
+#Stage:5
+#Title:復興する神社
+#Place:壊れた神社
+#Weather:
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Font.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Window.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Background.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*CG.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+#PlayBgm:data/bgm/ta00.ogg
+#0１２３４５６７８９０１２３４５６７８９０１２３
+
+Character:komachi,160,0,0,8888FF
+Character:reimu,160,0,1,FF8888
+Character:tenshi,160,0,2,FF8888
+
+#カメラ固定
+Action:komachi,4
+
+#フォーカス瞬間移動
+Action:komachi,11
+#Action:reimu,130
+
+#敵フィールド端で待機
+Action:reimu,100
+
+#自分画面外に待機
+Action:komachi,1
+
+#向き固定解除
+Action:komachi,152
+
+Label:Start
+Action:reimu,103
+Sleep:85;
+PlayBgm:data/bgm/ta07.ogg
+Action:komachi,163
+
+#Action:reimu,131
+#Action:komachi,2
+
+#ステージタイトル表示
+Object:data/scenario/komachi/effect/StageTitle005.bmp,0,256,-32
+Sleep:60;
+Object:data/scenario/effect/Stage5.bmp,1,256,352
+#登場
+Action:komachi,2
+Action:komachi,50
+Action:komachi,51
+Sleep:60;
+
+Face:komachi,晛
+什么啊，完全没有一点修好的样子嘛\
+
+Face:komachi,榝
+这看起来得花不少时间呢\
+
+Face:komachi,
+Hide:1
+Sleep:30
+
+#敵登場
+Action:reimu,101
+Action:reimu,102
+Sleep:20
+
+# 名前のテロップ
+Object:data/scenario/reimu/effect/Name.bmp,2,352,304
+
+Face:reimu,晛
+啊，偷懒的死神
+来这里参拜吗？\
+
+Face:komachi,晛
+……啊～好热啊
+还真是万里无云的晴空呢\
+
+Face:reimu,榝
+说是过一段时间天气就会恢复原状，
+看样子还没恢复\
+
+#0１２３４５６７８９０１２３４５６７８９０１２３
+Face:komachi,晛
+所谓大晴天就是指有害的阳光
+和地上的生气全都不加遮挡的透过。\
+
+Face:komachi,晛
+白天热，夜晚冷\
+
+Face:komachi,榝
+虽然不会有任何扭曲，但却不够圆滑。
+毫无慈悲之心也没有一点温柔\
+
+Face:reimu,搟
+你真罗嗦啊
+要是来碍事的就赶快给我出去啦\
+
+Face:reimu,娋
+话说，你是偷懒跑来的吧？\
+
+Face:komachi,嬃
+你还真聪明呢\
+
+PlayBgm:data/bgm/st10.ogg
+Action:komachi,3
+
+End:
+
+# 戦闘開始
+
+# --------------------------------
+# 戦闘終了　負け
+Label:Lose
+
+Face:reimu,梋
+那么有钱的话，
+就捐点香油钱吧\
+
+Face:reimu,晛
+话说，你这钱……
+是哪个国家的钱啊？\
+
+End:
+
+# --------------------------------
+# 戦闘終了　コンテニュー処理
+Label:Continue
+
+#天候初期化
+Action:reimu,113
+
+End:
+
+# --------------------------------
+# 戦闘終了　勝ち
+Label:Win
+
+#やられキャラ完全ダウン検知
+Action:reimu,200
+#攻撃側ニュートラル移行検知
+Action:komachi,202
+
+#自天候
+#Action:komachi,103
+#Sleep:60
+
+Face:komachi,榝
+好了，差不多也该回去工作了\
+
+Face:reimu,晧
+真好啊，
+自己决定上班的时间\
+
+Face:komachi,晛
+相对的咱工作量很大啊\
+
+Face:komachi,
+Face:reimu,
+Hide:1
+
+Sleep:30
+
+#二番手登場
+Action:tenshi,105
+
+#二番手天候
+Action:tenshi,103
+
+#105終了検知
+Action:tenshi,106
+
+Face:tenshi,晛
+哎呀，在做什么有趣的事情吗？\
+
+# 名前のテロップ
+Object:data/scenario/tenshi/effect/Name.bmp,2,352,304
+
+Face:komachi,嬃
+唉呀，你是谁啊？\
+
+Face:tenshi,婐
+是被人拜托来修复神社的人呢
+现在正在制订计划\
+
+Face:komachi,晛
+这么说来你就是……天人是吗？\
+
+Face:tenshi,嬃
+你是……？
+哎！难道是死神！\
+
+Face:komachi,寛
+是的，
+咱就是爱哭的孩子见到也会闭嘴的死神啦\
+
+Face:tenshi,榝
+死神的话应该没什么事情找我们天人吧？\
+
+Face:komachi,晛
+天人啊，其实也和人类一样有寿命的
+只不过，到了寿命不会死去罢了\
+
+Face:komachi,榝
+这种事情，你应该也明白吧？\
+
+Face:komachi,梋
+在咱看来啊，你已经过了好几次寿命了\
+
+Face:komachi,榝
+这么说来，你就是每次都靠
+击退前来超度的死神才活到今日吧\
+
+FadeBgm:200,0
+
+Face:tenshi,晛
+呵呵呵@
+Face:tenshi,婐
+没错啊\
+
+Face:tenshi,梋
+难道说地狱又派人来超度我吗？
+真白费力气\
+
+Hide:1
+
+Sleep:10
+
+#やられキャラ画面退場
+Action:reimu,201
+
+#ステージ間調整自キャラ
+Action:komachi,150
+Sleep:15
+
+#ステージ間調整敵
+Action:tenshi,110
+#CrossFadeBgm:data/bgm/st05.ogg,2000,0
+
+#カメラ中央あわせ
+Action:komachi,4
+
+#ステージ間調整敵　終了検知
+Action:tenshi,111
+
+Sleep:60
+
+End:
+
+
+
+
+
+## =======================================================================

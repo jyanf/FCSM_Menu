@@ -1,0 +1,202 @@
+## =======================================================================
+#Stage:4
+#Title:嵐の紅魔館
+#Place:紅魔館ロビー
+#Weather:
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Font.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Window.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Background.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*CG.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+#PlayBgm:data/bgm/ta00.ogg
+#0１２３４５６７８９０１２３４５６７８９０１２３
+
+#０１２３４５６７８９０１２３４５６７８９０１２３
+
+Character:aya,160,0,0,8888FF
+Character:remilia,160,0,1,FF8888
+
+#分画面外に待機
+Action:remilia,100
+#カメラ固定
+Action:aya,4
+#フォーカス瞬間移動
+#Action:aya,11
+
+#向き固定解除
+Action:aya,152
+
+Label:Start
+
+PlayBgm:data/bgm/ta02.ogg
+
+Sleep:30;
+
+#ステージタイトル表示
+Object:data/scenario/aya/effect/StageTitle004.bmp,0,256,-32
+Sleep:60;
+Object:data/scenario/effect/Stage4.bmp,1,256,352
+Sleep:60;
+
+#０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９\
+Face:aya,梋
+好的……终于顺利潜入到红魔馆当中！\
+
+Face:aya,榝
+这里到底会潜藏着什么样的魔物呢\
+
+# 敵登場
+Action:remilia,101
+Face:remilia,無
+嘎嗷—！\
+Action:remilia,102
+
+Face:aya,嬃
+出，出现了—！是怪物！
+特派员的命运究竟会如何！\
+
+Face:remilia,嬃
+我～要吃了你哦—！\
+
+Face:aya,榝
+恐怕是可怕的肉食性怪物。
+这难道就是传说中的Mokele-mbembe的模样吗！\
+
+
+Object:data/scenario/remilia/effect/Name.bmp,2,352,304
+
+Face:remilia,娋
+mo，moke？
+对不起，我不会演那东西\
+
+Face:aya,晛
+不过你今天还真顺着我啊\
+
+Face:remilia,榝
+无聊嘛，
+天气又不好……\
+
+Face:aya,嬃
+咦？
+天气，是吗？\
+
+Face:remilia,榝
+突然就会下起雨来所以我都不想出去了\
+
+Face:remilia,榝
+我啊，很讨厌雨水呢\
+
+Face:aya,榝
+……
+突然就会变天……是吗？\
+
+Face:remilia,晛
+啊啊是啊。
+前不久就开始变得奇怪了\
+
+Face:aya,晛
+唔唔唔唔唔？\
+
+Face:remilia,婐
+好啦，无聊死了我们来玩mokele游戏吧！\
+
+Face:remilia,寛
+听好了，不逃跑的话我就吃掉你哦～\
+
+Face:aya,嬃
+啊啊，怎么会这样！
+特派员百般无奈还是被逼上战场！\
+
+Face:aya,寛
+且听下回分解！\
+
+PlayBgm:data/bgm/st17.ogg
+Action:aya,3
+End:
+
+# --------------------------------
+# 戦闘終了　負け
+Label:Lose
+
+Face:remilia,晛
+好啦，差不多是喝红茶的时间了吧\
+
+Face:remilia,婐
+报纸做好了记得告诉我哦\
+
+End:
+
+# --------------------------------
+# 戦闘終了　コンテニュー処理
+Label:Continue
+
+#天候初期化
+Action:aya,113
+
+End:
+
+# --------------------------------
+# 戦闘終了　勝ち
+Label:Win
+
+
+#やられキャラ完全ダウン検知
+Action:remilia,200
+#攻撃側ニュートラル移行検知
+Action:aya,202
+
+Face:aya,晛
+……天气忽然急剧变化？\
+
+Face:remilia,晧
+痛痛痛痛……
+那么，报纸做好了记得告诉我哦\
+
+Face:aya,嬃
+嗯，没问题。
+这个事情我一定要写成新闻登出来\
+
+Face:aya,榝
+唔嗯，天气……
+一定是错觉吧？\
+
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+#やられキャラ画面退場
+#Action:remilia,201
+
+Sleep:60
+#自キャラ基準点へ移動
+Action:aya,151
+
+Sleep:90
+
+#フェードアウト　白
+Action:aya,162
+Sleep:60
+
+Stage:3,120
+
+#カメラ中央あわせ
+#Action:aya,4
+
+#Sleep:120;
+
+End:
+
+
+## =======================================================================

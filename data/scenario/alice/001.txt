@@ -1,0 +1,195 @@
+## =======================================================================
+#Stage:2
+#Title:
+#Place:白玉楼の雪庭
+#Weather:快晴
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Bgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+#0１２３４５６７８９０１２３４５６７８９０１２３
+
+#０１２３４５６７８９０１２３４５６７８９０１２３
+
+Character:alice,160,0,0,8888FF
+Character:youmu,160,0,1,FF8888
+#敵画面外に待機
+Action:youmu,100
+#カメラ固定
+Action:alice,4
+
+#フォーカス瞬間移動
+#Action:alice,11
+
+#向き固定解除
+Action:alice,152
+
+Label:Start
+PlayBgm:data/bgm/ta04.ogg
+
+Sleep:30;
+
+#ステージタイトル表示
+Object:data/scenario/alice/effect/StageTitle002.bmp,0,256,-32
+Sleep:60
+Object:data/scenario/effect/Stage2.bmp,1,256,352
+Sleep:60
+
+Face:alice,嬃
+呜哇～\
+
+Face:alice,晛
+这又是跟冰雹不相上下的异常气候呢\
+
+
+Face:alice,
+Hide:1
+Sleep:30
+
+#
+# 敵登場
+#
+Action:youmu,101
+Action:youmu,102
+
+Sleep:20
+
+Face:youmu,晛
+唉呀，又随便闯进来……\
+
+# 名前のテロップ
+Object:data/scenario/youmu/effect/Name.bmp,2,352,304
+
+Face:alice,梋
+我只是听说不光神社，
+白玉楼里也遇到了麻烦事\
+
+Face:alice,嬃
+还以为是因为地震倒塌了呢……
+结果竟然是下这么大的雪，在盛夏里……\
+
+Face:youmu,梋
+不过啊，擅自闯入是不对的哦？\
+
+Hide:1
+
+#敵天候
+Action:youmu,103
+Sleep:60
+
+Face:alice,梋
+你也注意一下地震吧\
+
+Face:alice,晛
+这些异变说不定就是地震的预兆\
+
+Face:youmu,晛
+地震？\
+
+Face:alice,寛
+得让我稍微调查一下哦？\
+
+Face:youmu,娋
+不，我都说了不行\
+
+Face:youmu,晛
+不管有什么原因，
+房屋内都是不能随便进去的\
+
+#戦闘開始
+PlayBgm:data/bgm/st14.ogg
+Action:alice,3
+
+End:
+
+# 戦闘開始
+
+# --------------------------------
+# 戦闘終了　負け
+Label:Lose
+
+Face:youmu,榝
+盛夏的大雪和地震，
+到底有什么关系的呢？\
+
+End:
+
+# --------------------------------
+# 戦闘終了　コンテニュー処理
+Label:Continue
+
+#天候初期化
+Action:youmu,113
+
+End:
+
+# --------------------------------
+# 戦闘終了　勝ち
+Label:Win
+
+#やられキャラ完全ダウン検知
+Action:youmu,200
+#攻撃側ニュートラル移行検知
+Action:alice,202
+
+#自キャラ天候
+Action:alice,103
+Sleep:60
+
+Face:alice,梋
+这也是为了大家哦\
+
+Face:youmu,晧
+你凭什么说要发生地震啊……\
+
+Face:alice,晛
+下不停的冰雹，绯色的云雾，
+异常的气候可都是地震的前兆哦\
+
+Face:alice,晛
+实际上，神社已经因地震倒塌了\
+
+Face:youmu,晧
+咦？\
+
+Face:youmu,晧
+完全没感觉到啊……
+能让神社倒塌的地震规模应该很大才对\
+
+Face:alice,榝
+嗯？说的也是啊……\
+
+
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+Stage:14,120
+
+#やられキャラ画面退場
+Action:youmu,201
+
+#自キャラ基準点へ移動
+Action:alice,150
+
+#カメラ中央あわせ
+Action:alice,4
+
+Sleep:120
+
+End:
+
+
+
+
+
+## =======================================================================

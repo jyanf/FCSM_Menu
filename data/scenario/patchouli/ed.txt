@@ -1,0 +1,104 @@
+# ----------------------------------------------------
+# Ending
+# Stage:Ending
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Bgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Font.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*WindowColor.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Background.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*CG.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+#Bgm:data/bgm/ta00.ogg
+#0１２３４５６７８９０１２３４５６７８９０１２３
+
+Font:ＭＳゴシック,16,3,6
+WindowColor:0,0,0,0
+Color:FFFFFF
+Background:data/scenario/effect/EdBack000.bmp,999,0,0
+CG:data/scenario/patchouli/effect/ED000.bmp,96,16,50
+Label:Start
+Bgm:data/bgm/ta06.ogg
+
+# 一枚目
+# 紅魔館のイラスト（他のキャラでも使う汎用絵）
+# 
+# 　一枚目は場所を示す簡単なイラストが入る予定です
+#0１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３
+　夏季的红魔馆@
+　在湖畔边上的恶魔之馆。@
+　红魔馆一带被浓雾包围着，变成了气温不会上升的夏天。\
+
+　在她回来后数日的今天，天气的异常依旧没有恢复。@
+　是光打倒那只鬼还不够呢。@
+　还是说，这真的其实只是自然现象引起的呢。\
+
+
+# 二枚目
+# パチュリーが図書館で本を積んで調べ物
+# いつもよりも真剣
+
+CG:data/scenario/patchouli/effect/ED001.bmp,96,16,50
+
+#0１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３
+帕琪　「……就是这个……@
+　　　　这就是那时候，那个龙宫使所说的……」\
+
+　她手里拿着的书记载了一些地震的宏观前兆
+　也就是地震前所发生的一些不可思议现象。
+　上面写着『鲶鱼变得凶暴』『鱼儿搁浅在陆地』。\
+
+帕琪　「『经常有人发现颜色异常的云』@
+　　　　『龙宫使者的出现』@
+　　　　原来是这样啊……」\
+
+帕琪　「然后就是，为什么生物的气质会被吸上去呢……。@
+　　　　怎么想都应该是暗中有人所为才对呢」\
+
+咲夜　「帕秋莉大人。@
+　　　　您没事吧！？」\
+
+
+CG:data/scenario/patchouli/effect/ED002.bmp,96,16,50
+# 三枚目
+# 咲夜が慌てている
+# パチュリーは慌てている咲夜を不思議そうに
+# 霊夢が天子に聞いている
+#0１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３
+帕琪　「发生什么事了？怎么这么慌张」@
+咲夜　「不是，听说我不在的时候好像发生了大地震的样子」\
+
+帕琪　「……大…地震……？」@
+咲夜　「神社倒塌了。
+　　　　红魔馆目前还没有发现有什么损伤」\
+
+帕琪　「完全没感觉到啊。@
+　　　　你觉得这可能吗？」@
+咲夜　「看来您相当专心呢……在调查什么事情吗？」\
+
+帕琪　「啊，没什么。只是一些关于地震的事」@
+咲夜　「哈啊？　您刚刚不是说没感觉到地震吗……」@
+帕琪　「没事算了，偶然，一定是偶然」\
+
+FadeBgm:2000,0
+CG:BLACK,0,0,15
+
+　帕秋莉脑海里浮现出先前战斗中听到的台词。
+　『比如说等神社被破坏掉什么的之后再来也不迟啊？』
+　她确信自己找错了犯人。\
+
+StaffRoll:
+
+　如果是这样的话，那只鬼为什么会呆在天界呢。
+　怎么也放不下心的她如此对咲夜命令道。
+　『去想办法让那个巫女去云层上看看』。\
+
+End:

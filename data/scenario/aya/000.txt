@@ -1,0 +1,172 @@
+## =======================================================================
+#Stage:1
+#Title:天狗の取材
+#Place:博麗神社
+#Weather:
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Font.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Window.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Background.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*CG.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+#PlayBgm:data/bgm/ta00.ogg
+#0１２３４５６７８９０１２３４５６７８９０１２３
+
+#０１２３４５６７８９０１２３４５６７８９０１２３
+
+Character:aya,160,0,0,8888FF
+Character:reimu,160,0,1,FF8888
+
+#背景神社
+Stage:10,0
+
+#自分画面外に待機
+Action:aya,1
+
+#敵画面外に待機
+Action:reimu,100
+
+Label:Start
+PlayBgm:data/bgm/ta05.ogg
+
+#自キャラ天候
+#Action:aya,103
+Action:reimu,103
+
+Sleep:60;
+
+#ステージタイトル表示
+Object:data/scenario/aya/effect/StageTitle001.bmp,0,256,-32
+Sleep:60;
+Object:data/scenario/effect/Stage1.bmp,1,256,352
+#Sleep:60;
+
+#カメラ移動
+Action:aya,2
+
+#自分登場
+Action:aya,50
+Action:aya,51
+
+#０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９\
+Face:aya,晛
+我就是每次为大家作报道的射命丸文\
+
+Face:aya,晛
+今天想就巫女的生态做一次观察\
+
+# 敵登場
+Action:reimu,101
+Face:reimu,柍
+别察！\
+Action:reimu,102
+
+Face:aya,梋
+没关系啦，
+别在意我继续做你该做的事情\
+
+# 名前のテロップ
+Object:data/scenario/reimu/effect/Name.bmp,2,352,304
+Face:reimu,娋
+又来了个让人郁闷的家伙啊……\
+
+Hide:1
+Action:aya,103
+Sleep:60
+
+Face:reimu,榝
+……咦？
+天气忽然就变坏了啊\
+
+Face:reimu,榝
+明明刚刚天空还万里无云来着……
+下雨收衣服啦\
+
+Face:aya,嬃
+啊，巫女要逃跑了！\
+
+#戦闘開始処理
+
+PlayBgm:data/bgm/st10.ogg
+Action:aya,3
+End:
+
+# --------------------------------
+# 戦闘終了　負け
+Label:Lose
+
+Face:reimu,榝
+天气不好啊—\
+
+Face:reimu,晛
+已经好久没吹过这么大风了\
+
+End:
+
+# --------------------------------
+# 戦闘終了　コンテニュー処理
+Label:Continue
+
+#天候初期化
+Action:aya,113
+
+End:
+
+# --------------------------------
+# 戦闘終了　勝ち
+Label:Win
+
+
+#やられキャラ完全ダウン検知
+Action:reimu,200
+#攻撃側ニュートラル移行検知
+Action:aya,202
+
+#自キャラ天候
+
+Face:aya,榝
+哎呀这可不行，
+打起来的话就不算客观事实了\
+
+Face:reimu,晧
+真是的，天气怎么变这么糟糕啊，
+是你干的吗？\
+
+Face:aya,晛
+怎么可能嘛？
+天气可是反复无常的哦。\
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+#やられキャラ画面退場
+Action:reimu,201
+
+#自キャラ基準点へ移動
+Sleep:60;
+Action:aya,151
+
+Stage:11,120
+#カメラ中央あわせ
+Action:aya,4
+
+Sleep:120;
+
+End:
+
+
+
+
+
+## =======================================================================

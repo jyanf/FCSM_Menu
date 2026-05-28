@@ -1,0 +1,221 @@
+## =======================================================================
+#Stage:5
+#Title:謎の妖怪
+#Place:玄海雲
+#Weather:台風
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Font.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Window.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Background.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*CG.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+#PlayBgm:data/bgm/ta00.ogg
+#0１２３４５６７８９０１２３４５６７８９０１２３
+
+Character:iku,160,0,0,8888FF
+Character:yukari,120,20,1,FF8888
+
+#専用ステージ初期設定
+Action:iku,138
+
+#カメラ固定
+Action:iku,4
+
+#フォーカス瞬間移動
+Action:iku,11
+
+#自キャラ画面左待機
+Action:iku,5
+
+#敵フィールド端で待機
+Action:yukari,100
+
+#向き固定解除
+Action:iku,152
+
+#天候初期化
+Action:iku,153
+
+Label:Start
+PlayBgm:data/bgm/ta02.ogg
+
+#背景暗雲設置
+Action:iku,134
+
+#フェードイン　黒
+Action:iku,161
+
+Sleep:60
+
+#ステージタイトル表示
+Object:data/scenario/iku/effect/StageTitle005.bmp,0,256,-32
+Sleep:60
+Object:data/scenario/effect/Stage5.bmp,1,256,352
+Sleep:300
+
+#雲中背景解除
+Action:iku,135
+Sleep:120
+
+#画面上から登場
+Action:iku,6
+
+#登場終了検知
+Action:iku,7
+
+Sleep:60
+
+Face:iku,晛
+接下来\
+
+Face:iku,晛
+这片云层已经没有调查的必要了呢\
+
+Face:iku,婐
+然后就看地上的诸位自己怎么做好防灾工作了\
+
+Face:iku,婐
+幽灵不要急剧增加就好了呢\
+
+Face:iku,
+Hide:1
+Sleep:30
+
+# 敵登場
+Action:yukari,101
+Action:yukari,102
+
+Face:yukari,無
+哎呀，你有来通知我吗？\
+
+Face:iku,嬃
+怎么？竟然有人跑到我这来问
+还真是少见啊\
+
+# 名前のテロップ
+Object:data/scenario/yukari/effect/Name.bmp,2,352,304
+
+Face:yukari,榝
+要发生地震了？\
+
+Face:iku,晛
+嗯，要地震了
+那真是那真是悲剧啊！\
+
+Face:yukari,婐
+……这样啊，原来地震不会发生了呢
+害我白担心了\
+
+Face:iku,榝
+？\
+
+#0１２３４５６７８９０１２３４５６７８９０１２３
+Face:yukari,婐
+就是因为看到绯色的云层出现了，
+我才担心是不是要发生地震了\
+
+Face:iku,榝
+不对不对不对，
+我就是说要发生地震了……\
+
+Face:yukari,梋
+是啊，结果最后地震不会发生呢\
+
+Face:iku,搟
+虽然不知道你想说什么，
+但我感觉你这人很危险呢\
+
+PlayBgm:data/bgm/st04.ogg
+
+#戦闘開始処理
+Action:iku,3
+
+End:
+
+# 戦闘開始
+
+# --------------------------------
+# 戦闘終了　負け
+Label:Lose
+
+Face:yukari,梋
+好好去神社调查一下看看如何？\
+
+Face:yukari,晛
+其实我还是有些怀疑呢\
+
+End:
+
+# --------------------------------
+# 戦闘終了　コンテニュー処理
+Label:Continue
+
+#天候初期化
+Action:iku,153
+
+End:
+
+# --------------------------------
+# 戦闘終了　勝ち
+Label:Win
+
+
+#やられキャラ完全ダウン検知
+Action:yukari,200
+#攻撃側ニュートラル移行検知
+Action:iku,202
+
+Face:iku,搟
+结果呢，你到底想说什么！\
+
+Face:yukari,晧
+好好去神社调查一下看看如何？\
+
+Face:iku,晛
+神社的话刚才已经去过了……
+到底有什么东西啊\
+
+#0１２３４５６７８９０１２３４５６７８９０１２３
+Face:yukari,晧
+关于地震重大且让人充满疑惑的什么东西
+就在坏掉的房顶下面\
+
+Face:iku,晛
+那我姑且去看看吧，
+要是什么都没有的话我永远诅咒你\
+
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+Stage:0,120
+
+#やられキャラ画面退場
+Action:yukari,201
+
+#自キャラ基準点へ移動
+Action:iku,150
+
+#カメラ中央あわせ
+Action:iku,4
+
+Sleep:120;
+
+End:
+
+
+
+
+
+## =======================================================================

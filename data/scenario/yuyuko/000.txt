@@ -1,0 +1,174 @@
+## =======================================================================
+#Stage:1
+#Title:白い暑中見舞い
+#Place:博麗神社
+#Weather:
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Font.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Window.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Background.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*CG.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+#PlayBgm:data/bgm/ta00.ogg
+#0１２３４５６７８９０１２３４５６７８９０１２３
+
+#０１２３４５６７８９０１２３４５６７８９０１２３
+
+Character:yuyuko,160,0,0,8888FF
+Character:reimu,160,0,1,FF8888
+
+#背景神社
+Stage:10,0
+
+#自分画面外に待機
+Action:yuyuko,1
+
+#敵画面外に待機
+Action:reimu,100
+
+Label:Start
+#自キャラ天候
+Action:reimu,103
+
+Sleep:60;
+PlayBgm:data/bgm/ta00.ogg
+
+#ステージタイトル表示
+Object:data/scenario/yuyuko/effect/StageTitle001.bmp,0,256,-32
+Sleep:60;
+Object:data/scenario/effect/Stage1.bmp,1,256,352
+#Sleep:60;
+
+#カメラ移動
+Action:yuyuko,2
+
+#自分登場
+Action:yuyuko,50
+Action:yuyuko,51
+
+Sleep:60;
+
+#０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９\
+Face:yuyuko,婐
+好了，要跟这闷热的夏季说拜拜了哦～\
+
+Face:yuyuko,
+Hide:1
+Sleep:30
+
+# 敵登場
+Action:reimu,101
+Action:reimu,102
+
+Face:reimu,榝
+哈啊，天是够热的呢
+大家都变成这幅样子了吗\
+
+# 名前のテロップ
+Object:data/scenario/reimu/effect/Name.bmp,2,352,304
+
+Face:yuyuko,寛
+那么，看到这个你还能说出那种话吗？\
+
+Hide:1
+
+Action:yuyuko,103
+#敵天候
+Sleep:60
+
+Face:reimu,嬃
+咦？
+等下等下！\
+
+Face:yuyuko,婐
+来吧，和充满酷热的夏季的世界说再见了哦\
+
+Face:reimu,娋
+感觉告诉我你很危险啊～！\
+
+#戦闘開始処理
+
+PlayBgm:data/bgm/st00.ogg
+Action:yuyuko,3
+End:
+
+# --------------------------------
+# 戦闘終了　負け
+Label:Lose
+
+Face:reimu,嬃
+究竟怎么让天上下雪的啊？\
+
+Face:reimu,榝
+虽然不太清楚不过真够可怕……\
+
+End:
+
+# --------------------------------
+# 戦闘終了　コンテニュー処理
+Label:Continue
+
+#天候初期化
+Action:yuyuko,113
+
+End:
+
+# --------------------------------
+# 戦闘終了　勝ち
+Label:Win
+
+
+#やられキャラ完全ダウン検知
+Action:reimu,200
+#攻撃側ニュートラル移行検知
+Action:yuyuko,202
+
+#自キャラ天候
+
+Face:yuyuko,梋
+变凉快了没啊？\
+
+Face:reimu,晧
+我都冷死啦～\
+
+Face:yuyuko,婐
+那真是太好了\
+
+Face:yuyuko,梋
+稍微冷静一下头脑
+就能过一个清净愉快的夏日了哦\
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+Stage:11,120
+
+#やられキャラ画面退場
+Action:reimu,201
+
+#自キャラ基準点へ移動
+Action:yuyuko,150
+
+#カメラ中央あわせ
+Action:yuyuko,4
+
+Sleep:120
+
+End:
+
+
+
+
+
+## =======================================================================

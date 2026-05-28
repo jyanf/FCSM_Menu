@@ -1,0 +1,186 @@
+## =======================================================================
+#Stage:8
+#Title:坐忘
+#Place:紅魔館ロビー
+#Weather:
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+#0１２３４５６７８９０１２３４５６７８９０１２３
+
+#０１２３４５６７８９０１２３４５６７８９０１２３
+
+Character:remilia,160,0,0,8888FF
+Character:yukari,160,0,1,FF8888
+#敵画面外に待機
+Action:yukari,100
+#カメラ固定
+Action:remilia,4
+
+#フォーカス瞬間移動
+#Action:remilia,11
+
+#向き固定解除
+Action:remilia,152
+
+Label:Start
+PlayBgm:data/bgm/ta07.ogg
+
+Sleep:30;
+
+#ステージタイトル表示
+Object:data/scenario/remilia/effect/StageTitle008.bmp,0,256,-32
+Sleep:60;
+Object:data/scenario/effect/StageFinal.bmp,1,256,352
+Sleep:60
+
+Face:remilia,晛
+果然还是不适合我啊@
+#做什么<ruby ArmchairDetective>轻　松　的　侦　探　</ruby>\
+做什么<ruby Armchair　Detective>轻松的侦探</ruby> \
+
+Face:remilia,婐
+咲夜～！
+不用再去找什么犯人了……\
+
+Face:remilia,婐
+冥界下雪，神社因地震倒塌，似乎发生了不少事情
+去帮我调查一下吧\
+
+Face:remilia,
+Hide:1
+Sleep:30
+
+#
+# 敵登場
+#
+Action:yukari,101
+Action:yukari,102
+
+Sleep:20
+
+Face:yukari,晛
+那你做什么呢\
+
+# 名前のテロップ
+Object:data/scenario/yukari/effect/Name.bmp,2,352,304
+
+Face:remilia,嬃
+#０１２３４５６７８９０１２３４５６７８９０１２３
+这还真是最像真凶的家伙结果没给抓来呢\
+
+#敵天候
+Action:yukari,103
+
+Face:yukari,晛
+没错，因为没法遮住阳光
+所以不想行动呢\
+
+#０１２３４５６７８９０１２３４５６７８９０１２３
+Face:remilia,嬃
+咦？\
+
+Face:yukari,晛
+没错，犯人在无法躲避阳光的云层上
+所以不想行动呢\
+
+Face:remilia,嬃
+咦？
+是吗？你在说什么？\
+
+Face:yukari,梋
+所谓的<ruby Armchair　Detective>安乐椅上的侦探</ruby>，可不是指轻松的侦探\
+
+Face:yukari,晛
+为什么，不行动也能作出正确的推理呢\
+
+Face:yukari,晛
+一旦看过一次现场情景就会印在脑海中
+不管什么，心里想的事情总忘不掉\
+
+Face:yukari,寛
+那样的话不看反而能作出正确的判断\
+
+Face:remilia,晛
+……\
+
+Face:yukari,寛
+靠在椅子上忘记一切吧\
+
+Face:remilia,晛
+……\
+
+PlayBgm:data/bgm/st05.ogg
+
+Face:remilia,梋
+就是说既然能操纵天气那么就不是地面上的人
+这个意思吧\
+
+Face:remilia,晛
+也就是下雪、神社和地震都是多余的情报\
+
+Face:remilia,榝
+但是不管怎么样我都出不了门\
+
+Face:remilia,梋
+这种时候只能派人前去了呢\
+
+Face:yukari,寛
+哎呀，你的意思是要命令我去吗？\
+
+Face:remilia,寛
+不是吗？你不就是为了这个才出现的吗？\
+
+
+#戦闘開始
+Action:remilia,3
+
+End:
+
+# 戦闘開始
+
+# --------------------------------
+# 戦闘終了　負け
+Label:Lose
+
+End:
+
+# --------------------------------
+# 戦闘終了　コンテニュー処理
+Label:Continue
+
+#天候初期化
+Action:yukari,113
+
+End:
+
+# --------------------------------
+# 戦闘終了　勝ち
+Label:Win
+
+#やられキャラ完全ダウン検知
+Action:yukari,200
+#攻撃側ニュートラル移行検知
+Action:remilia,202
+
+Sleep:30
+Result:
+
+#イベント　勝利演出フェード
+
+End:
+
+
+
+
+
+## =======================================================================

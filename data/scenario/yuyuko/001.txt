@@ -1,0 +1,162 @@
+## =======================================================================
+#Stage:2
+#Title:朝寝坊の宵っ張り
+#Place:霧雨魔法店
+#Weather:川霧
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Font.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Window.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Background.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*CG.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+#PlayBgm:data/bgm/ta00.ogg
+#0１２３４５６７８９０１２３４５６７８９０１２３
+
+#０１２３４５６７８９０１２３４５６７８９０１２３
+
+Character:yuyuko,160,0,0,8888FF
+Character:marisa,160,0,1,FF8888
+
+#分画面外に待機
+Action:marisa,100
+#カメラ固定
+Action:yuyuko,4
+#フォーカス瞬間移動
+#Action:yuyuko,11
+
+#向き固定解除
+Action:yuyuko,152
+
+Label:Start
+PlayBgm:data/bgm/ta04.ogg
+
+Sleep:30
+
+# 敵登場
+Action:marisa,101
+
+#ステージタイトル表示
+Object:data/scenario/yuyuko/effect/StageTitle002.bmp,0,256,-32
+Sleep:60
+Object:data/scenario/effect/Stage2.bmp,1,256,352
+#Sleep:60
+
+Action:marisa,102
+
+Sleep:60
+
+Face:marisa,晛
+总感觉今天好冷啊……\
+
+Face:marisa,嬃
+咋，下雪了！？\
+
+Face:yuyuko,晛
+早上好啊\
+
+# 名前のテロップ
+Object:data/scenario/marisa/effect/Name.bmp,2,352,304
+
+Face:marisa,榝
+太糟糕了～
+本以为只是睡过了而已……\
+
+Face:marisa,榝
+没想到竟然一口气睡到冬天啊\
+
+Face:yuyuko,榝
+哎呀哎呀，被不好的东西附身了呢\
+
+Face:marisa,娋
+附你妹啊\
+
+Face:yuyuko,婐
+那我来帮你附上吧\
+
+Face:marisa,嬃
+给我住手～
+我现在脑子乱乱得都搞不清状况了！\
+
+PlayBgm:data/bgm/st01.ogg
+Action:yuyuko,3
+End:
+
+# --------------------------------
+# 戦闘終了　負け
+Label:Lose
+
+Face:marisa,嬃
+哇啊～今天到底是几月几号啊？\
+
+Face:marisa,榝
+究竟搞什么东西啊？\
+
+End:
+
+# --------------------------------
+# 戦闘終了　コンテニュー処理
+Label:Continue
+
+#天候初期化
+Action:yuyuko,113
+
+End:
+
+# --------------------------------
+# 戦闘終了　勝ち
+Label:Win
+
+
+#やられキャラ完全ダウン検知
+Action:marisa,200
+#攻撃側ニュートラル移行検知
+Action:yuyuko,202
+
+#自キャラ天候
+
+Face:yuyuko,梋
+凉快了吧？\
+
+Face:marisa,晧
+咦？还，还是夏天吧？现在\
+
+Face:yuyuko,晛
+下这么大雪还是不能让你冷静下来吗？\
+
+Face:marisa,晧
+冷静你妹啊！\
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+Stage:2,120
+
+#やられキャラ画面退場
+Action:marisa,201
+
+#自キャラ基準点へ移動
+Action:yuyuko,150
+
+#カメラ中央あわせ
+Action:yuyuko,4
+
+Sleep:120;
+
+End:
+
+
+
+
+
+## =======================================================================

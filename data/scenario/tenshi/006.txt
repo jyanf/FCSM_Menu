@@ -1,0 +1,184 @@
+## =======================================================================
+#Stage:7
+#Title:幽霊の業
+#Place:有頂天
+#Weather:
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Font.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Window.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Background.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*CG.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+#PlayBgm:data/bgm/ta00.ogg
+#0１２３４５６７８９０１２３４５６７８９０１２３
+
+#０１２３４５６７８９０１２３４５６７８９０１２３
+
+Character:tenshi,160,0,0,8888FF
+Character:youmu,160,0,1,FF8888
+
+#分画面外に待機
+Action:youmu,100
+#カメラ固定
+Action:tenshi,4
+#フォーカス瞬間移動
+#Action:tenshi,11
+
+#向き固定解除
+Action:tenshi,152
+
+Label:Start
+
+PlayBgm:data/bgm/ta00.ogg
+
+Sleep:30;
+
+#ステージタイトル表示
+Object:data/scenario/tenshi/effect/StageTitle007.bmp,0,256,-32
+Sleep:60;
+Object:data/scenario/effect/Stage7.bmp,1,256,352
+Sleep:60;
+
+#０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９\
+Face:tenshi,晛
+话说回来人还真多啊\
+
+Face:tenshi,梋
+那个死小鬼，
+究竟叫了多少人来天界啊\
+
+
+Face:tenshi,
+Hide:1
+Sleep:30
+
+# 敵登場
+Action:youmu,101
+Action:youmu,102
+
+Sleep:20
+
+Face:youmu,晛
+终于找到了。
+啊，天人大人，有看到幽々子大人来过吗？\
+
+Face:tenshi,榝
+幽々子大人？
+啊啊，你说那个亡灵吧\
+
+Face:tenshi,晛
+今天一大早就来了哦\
+
+# 名前のテロップ
+Object:data/scenario/youmu/effect/Name.bmp,2,352,304
+
+Face:youmu,娋
+果然先跑来了啊。
+要出门的话先跟我打声招呼多好呢\
+
+Face:tenshi,梋
+搞不好是想一个人偷偷成佛呢～\
+
+Face:youmu,嬃
+原来如此…… @
+咦咦咦，你说啥！？\
+
+Face:tenshi,榝
+你不想成佛吗？\
+
+Face:youmu,榝
+我是没法成佛了。
+毕竟活到现在也一身罪孽\
+
+Face:tenshi,寛
+那好，就用我的绯色之剑把你的烦恼
+全都释放出来吧\
+
+Face:youmu,寛
+这个随便你好了，
+反正来打倒你也是目的之一\
+
+
+#戦闘開始処理
+
+PlayBgm:data/bgm/st14.ogg
+Action:tenshi,3
+End:
+
+# --------------------------------
+# 戦闘終了　負け
+Label:Lose
+
+Face:youmu,嬃
+哪里哪里，我真没打算成佛\
+
+Face:youmu,榝
+恐怕幽々子大人也是那么想的吧，
+人在里面是吗？\
+
+End:
+
+# --------------------------------
+# 戦闘終了　コンテニュー処理
+Label:Continue
+
+#天候初期化
+Action:tenshi,153
+
+End:
+
+# --------------------------------
+# 戦闘終了　勝ち
+Label:Win
+
+
+#やられキャラ完全ダウン検知
+Action:youmu,200
+#攻撃側ニュートラル移行検知
+Action:tenshi,202
+
+Face:tenshi,嬃
+你那把剑……\
+
+Face:tenshi,梋
+那是能斩断幽灵迷茫的东西吧\
+
+Face:youmu,晧
+嗯，没错\
+
+Face:tenshi,晛
+这样啊，那把剑……
+会是谁做的呢\
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+#やられキャラ画面退場
+Action:youmu,201
+
+#自キャラ基準点へ移動
+Action:tenshi,150
+
+#カメラ中央あわせ
+Action:tenshi,4
+
+Sleep:120;
+
+End:
+
+
+
+
+
+## =======================================================================

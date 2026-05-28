@@ -1,0 +1,167 @@
+## =======================================================================
+#Stage:3
+#Title:潜入せよ紅魔館
+#Place:紅魔館時計台
+#Weather:
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Font.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Window.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Background.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*CG.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+#PlayBgm:data/bgm/ta00.ogg
+#0１２３４５６７８９０１２３４５６７８９０１２３
+
+#０１２３４５６７８９０１２３４５６７８９０１２３
+
+Character:aya,160,0,0,8888FF
+Character:sakuya,160,0,1,FF8888
+
+#分画面外に待機
+Action:sakuya,100
+#カメラ固定
+Action:aya,4
+#フォーカス瞬間移動
+#Action:aya,11
+
+#向き固定解除
+Action:aya,152
+
+Action:sakuya,103
+Label:Start
+PlayBgm:data/bgm/ta08.ogg
+
+Sleep:30;
+
+#ステージタイトル表示
+Object:data/scenario/aya/effect/StageTitle003.bmp,0,256,-32
+Sleep:60;
+Object:data/scenario/effect/Stage3.bmp,1,256,352
+Sleep:60;
+
+Action:aya,50
+Action:aya,51
+
+#０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９\
+Face:aya,晛
+我就是每次为大家作报道的射命丸文\
+
+Face:aya,晛
+今天想尝试对红魔馆进行潜入报道\
+
+# 敵登場
+Action:sakuya,101
+Face:sakuya,無
+不行\
+
+Action:sakuya,102
+
+Face:aya,嬃
+这是第一障碍呢！\
+
+# 名前のテロップ
+Object:data/scenario/sakuya/effect/Name.bmp,2,352,304
+
+Face:sakuya,娋
+真是的，和平的日子过久了就会冒出这种家伙了呢\
+
+Hide:1
+Action:aya,103
+Sleep:60
+
+Face:sakuya,榝
+……天气变坏了啊。
+这还真是够糟糕\
+
+Face:aya,榝
+哦呀，又是暴风吗……\
+
+Face:sakuya,寛
+不就是你招来的暴风吗？\
+
+Face:aya,寛
+不是，那怎么可能呢！
+那么潜入作战开始！\
+
+Face:sakuya,娋
+都说了不行\
+#戦闘開始処理
+
+PlayBgm:data/bgm/st12.ogg
+Action:aya,3
+End:
+
+# --------------------------------
+# 戦闘終了　負け
+Label:Lose
+
+Face:sakuya,榝
+这天气是怎么回事啊？\
+
+Face:sakuya,榝
+难道要刮台风了吗？\
+
+End:
+
+# --------------------------------
+# 戦闘終了　コンテニュー処理
+Label:Continue
+
+#天候初期化
+Action:aya,113
+
+End:
+
+# --------------------------------
+# 戦闘終了　勝ち
+Label:Win
+
+
+#やられキャラ完全ダウン検知
+Action:sakuya,200
+#攻撃側ニュートラル移行検知
+Action:aya,202
+
+#自キャラ天候
+
+Face:aya,梋
+那么我告辞了。\
+
+Face:sakuya,晧
+真是，硬来呢\
+
+Face:aya,晛
+话说回来这天气……？
+不会吧，只是偶然罢了\
+
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+#やられキャラ画面退場
+Action:sakuya,201
+
+#自キャラ基準点へ移動
+Action:aya,150
+Stage:16,120
+
+#カメラ中央あわせ
+Action:aya,4
+
+Sleep:120;
+
+End:
+
+
+## =======================================================================

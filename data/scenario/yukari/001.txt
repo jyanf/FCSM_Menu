@@ -1,0 +1,213 @@
+## =======================================================================
+#Stage:2
+#Title:働かざる者
+#Place:玄武の沢
+#Weather:川霧
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Bgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+#0１２３４５６７８９０１２３４５６７８９０１２３
+
+
+Character:yukari,160,0,0,8888FF
+Character:komachi,160,0,1,FF8888
+
+#分画面外に待機
+Action:komachi,100
+
+# 敵登場
+Action:komachi,101
+Action:komachi,102
+
+#カメラ固定
+Action:yukari,4
+
+#フォーカス瞬間移動
+#Action:yukari,11
+
+#向き固定解除
+Action:yukari,152
+
+Label:Start
+PlayBgm:data/bgm/ta05.ogg
+
+Sleep:30;
+
+#Sleep:20
+
+
+#ステージタイトル表示
+Object:data/scenario/yukari/effect/StageTitle002.bmp,0,256,-32
+Sleep:60;
+Object:data/scenario/effect/Stage2.bmp,1,256,352
+Sleep:60;
+
+#自分登場
+Action:yukari,50
+Action:yukari,51
+
+
+#０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９\
+Face:yukari,婐
+呼，真没想到这一把年纪了
+竟然还落得个要爬山的下场啊\
+
+Face:yukari,晛
+啊，这里也有个不劳动的家伙\
+
+Face:yukari,
+Hide:1
+Sleep:30
+
+
+Face:komachi,晛
+噢噢，突然就冒出来了呢\
+
+# 名前のテロップ
+Object:data/scenario/komachi/effect/Name.bmp,2,352,304
+
+Face:yukari,晛
+这次骚动发生的时候你在做什么呢？\
+
+Face:komachi,嬃
+咦？真唐突呢。
+不过无所谓啦……\
+
+Face:komachi,晛
+首先你说这次骚动是什么意思？咱完全不明白\
+
+Face:yukari,梋
+原来如此，把幽灵送往彼岸了啊@
+那么你注意到有什么变化了没？\
+
+Face:komachi,榝
+咦？变化？
+你说什么咱完全听不懂的说……\
+
+#0１２３４５６７８９０１２３４５６７８９０１２３
+Face:yukari,晛
+对，你注意到幽灵的数量有所减少了呢\
+
+Face:komachi,榝
+喂喂，你说什么呀？\
+
+Face:yukari,寛
+你为什么不工作\
+
+Face:yukari,寛
+你要是勤快一点把幽灵送去彼岸的话
+损失也能减少一些\
+
+Face:komachi,嬃
+先，先打住一下
+损失是什么意思？\
+
+Face:yukari,梋
+悠闲的死神啊@
+给我滚回地狱被阎魔大人一顿臭骂吧\
+
+#戦闘開始処理
+PlayBgm:data/bgm/st02.ogg
+
+Action:yukari,3
+End:
+
+# --------------------------------
+# 戦闘終了　負け
+Label:Lose
+
+Face:komachi,榝
+虽然搞不清楚怎么回事
+但感觉还是回去工作比较好啊\
+
+End:
+
+# --------------------------------
+# 戦闘終了　コンテニュー処理
+Label:Continue
+
+#天候初期化
+Action:yukari,104
+
+End:
+
+# --------------------------------
+# 戦闘終了　勝ち
+Label:Win
+
+
+#やられキャラ完全ダウン検知
+Action:komachi,200
+#攻撃側ニュートラル移行検知
+Action:yukari,202
+
+#自キャラ天候
+#Action:yukari,103
+Sleep:60;
+
+Face:yukari,梋
+好了，回去工作工作\
+
+Face:komachi,晧
+我说，你究竟搞什么啊\
+
+Face:yukari,榝
+爬山正爬得无聊呢\
+
+Face:yukari,梋
+正好发现你就呆在我眼皮子附近\
+
+Face:komachi,晧
+等下，你这家伙不是转移出来的吗？
+这算哪门子的爬山啊……\
+
+Hide:1
+# ここで紫が潜って消える
+#紫画面外へ隙間退避
+Action:yukari,155
+#紫画面外へ隙間退避完了確認
+Action:yukari,156
+Hide:0
+
+#Sleep:60;
+
+Face:komachi,無
+Face:yukari,無
+啊啊爬山真够累人的呢\
+
+
+Hide:1
+Sleep:60;
+Result:
+
+#Hide:1
+FadeBgm:2000,0
+Stage:3,120
+
+#やられキャラ画面退場
+Action:komachi,201
+
+#自キャラ基準点へ移動
+#Action:yukari,150
+
+#カメラ中央あわせ
+Action:yukari,4
+
+Sleep:120;
+
+End:
+
+
+
+
+
+## =======================================================================

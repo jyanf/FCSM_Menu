@@ -1,0 +1,250 @@
+## =======================================================================
+#Stage:Final
+#Title:天の娘、地の神、人の心
+#Place:山頂
+#Weather:極光
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Bgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+#0１２３４５６７８９０１２３４５６７８９０１２３
+
+Character:youmu,160,0,0,8888FF
+Character:tenshi,160,0,1,FF8888
+#敵画面外に待機
+Action:tenshi,100
+#カメラ初期位置固定
+Action:tenshi,130
+#霊夢画面外待機
+Action:youmu,5
+
+#向き固定解除
+Action:youmu,152
+
+Label:Start
+
+Sleep:85;
+
+Bgm:data/bgm/ta07.ogg
+
+#フェードイン　白
+Action:youmu,163
+
+#カメラ下へ
+Action:tenshi,131
+#Sleep:60;
+
+#ステージタイトル表示
+Object:data/scenario/youmu/effect/StageTitle006.bmp,0,256,-32
+#画面上から落下して登場
+Action:youmu,6
+Action:youmu,7
+
+#Sleep:60;
+Object:data/scenario/effect/StageFinal.bmp,1,256,352
+Sleep:180;
+
+#sleep,60
+Face:youmu,晛
+这里是……\
+
+Face:youmu,嬃
+难不成是天界？\
+
+Hide:1
+
+#イベント　メッセージウィンドウ消去
+#イベント　カメラ上空へ
+Action:tenshi,132
+
+#イベント　地震
+Action:tenshi,133
+
+#sleep,180
+
+Face:tenshi,無
+绯色之雾，其为非想之气\
+
+Action:tenshi,133
+#イベント　地震
+非想之气，其为生物之本\
+
+#sleep,30
+
+# 天子登場
+#イベント　大地震
+#イベント　カメラフォーカス元へ
+Action:tenshi,134
+#sleep,180
+
+天气乃非想天之本质也\
+
+#登場ポーズ終了指令
+Action:tenshi,139
+#sleep,30
+
+Hide:0
+
+Face:tenshi,婐
+让你久等了\
+
+Face:youmu,嬃
+台词好长( ゜Д゜)\
+
+#0１２３４５６７８９０１２３４５６７８９０１２３
+Face:tenshi,晛
+怎么了？
+你一直寻找的犯人现在就在眼前哦？\
+
+Face:youmu,嬃
+咦？　咦咦！？\
+
+Face:tenshi,榝
+这孩子难道跟不上剧情发展了吗？\
+
+Face:youmu,嬃
+……\
+
+Face:tenshi,榝
+『斩杀幽灵的人原来就是你吗』\
+
+Face:youmu,晛
+那～个，斩杀幽灵的人原来就是你吗？\
+
+
+Face:tenshi,婐
+对，就是我啊@
+
+#Name:非想非非想天の娘　比那名居天子
+# 名前のテロップ
+Object:data/scenario/tenshi/effect/Name.bmp,2,352,304
+
+我叫<ruby ｂｉｎａｍｉｎｇｊｕ>比那名居</ruby><ruby ｔｉａｎｚｉ>天子</ruby> \
+
+Face:tenshi,晛
+这把<ruby ｆｅｉｘｉａｎｇｚｈｉｊｉａｎ>绯想之剑</ruby>能够让
+不管幽灵还是气质都全暴露出来\
+
+Face:tenshi,晛
+以此来收集绯色的雾气—\
+
+Face:tenshi,
+
+#イベント　天子地面に剣を刺して地震発生
+Action:tenshi,135
+Action:tenshi,136
+
+Face:tenshi,梋
+让大地震动\
+
+Face:youmu,娋
+我跟不上你的节奏了\
+
+Face:tenshi,榝
+搞什么啊～～给我用心一点啦
+你不是来<accent>教训</accent>我的吗？\
+
+Face:tenshi,榝
+你都一幅无精打采的模样我也就提不起劲了啊\
+
+Face:youmu,晛
+虽然没太听明白，
+不过你好像一幅希望被我打倒的态度呢\
+
+#Face:tenshi,榝
+#貴方がしっかりしなければ私もやる気が出ない\
+
+Face:tenshi,婐
+来吧，都来到已经无限接近正确答案的这里的你，@
+必须要打倒我才行\
+
+Face:youmu,娋
+？？？\
+
+Face:tenshi,晛
+就像在地上，人类和妖怪之间的战斗一般……
+我就憧憬着有一天能够体会那个啊！\
+
+
+Face:youmu,榝
+难、难道说你就是因为那种原因就斩杀幽灵，
+斩出人的本质，破坏神社的吗？\
+
+Bgm:data/bgm/st05.ogg
+
+Face:tenshi,梋
+当然没错啦
+要说的话其实—\
+
+Face:tenshi,
+
+#イベント　要石を動かして地震発生
+Action:tenshi,137
+Action:tenshi,138
+
+Face:tenshi,梋
+我接下来还要引发更大的地震哦
+你有什么意见？\
+
+Face:youmu,搟
+我开始真的有点想发火了\
+
+Face:tenshi,婐
+让你那火烧得更猛烈些吧！@
+你要不教训我一顿的话幻想乡可就要毁灭了啊！\
+
+
+#戦闘開始処理
+Action:youmu,3
+
+End:
+
+# 戦闘開始
+
+# --------------------------------
+# 戦闘終了　負け
+Label:Lose
+
+End:
+
+# --------------------------------
+# 戦闘終了　コンテニュー処理
+Label:Continue
+
+#背景　有頂天へ
+Action:tenshi,180
+#天候解除
+Action:tenshi,153
+
+End:
+
+# --------------------------------
+# 戦闘終了　勝ち
+Label:Win
+
+#やられキャラ完全ダウン検知
+Action:tenshi,200
+#攻撃側ニュートラル移行検知
+Action:youmu,202
+
+Sleep:30
+Hide:1
+Result:
+
+#イベント　勝利演出フェード
+
+End:
+
+
+
+
+
+## =======================================================================

@@ -1,0 +1,166 @@
+## =======================================================================
+#Stage:5
+#Title:天気は新聞より奇なり
+#Place:妖怪の山
+#Weather:
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Font.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Window.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Background.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*CG.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+#PlayBgm:data/bgm/ta00.ogg
+#0１２３４５６７８９０１２３４５６７８９０１２３
+
+#０１２３４５６７８９０１２３４５６７８９０１２３
+
+Character:aya,160,0,0,8888FF
+Character:reimu,160,0,1,FF8888
+
+#自分画面外に待機
+Action:aya,1
+#分画面外に待機
+Action:reimu,100
+#カメラ固定
+#Action:aya,4
+#フォーカス瞬間移動
+#Action:aya,11
+
+#向き固定解除
+Action:aya,152
+
+Label:Start
+Sleep:85;
+Bgm:data/bgm/ta07.ogg
+Action:reimu,163
+
+
+#ステージタイトル表示
+Object:data/scenario/aya/effect/StageTitle005.bmp,0,256,-32
+Sleep:60;
+Object:data/scenario/effect/StageFinal.bmp,1,256,352
+#Sleep:60;
+
+#カメラ移動
+Action:aya,2
+
+#自分登場
+Action:aya,50
+Action:aya,51
+
+#０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９\
+Face:aya,榝
+最近都没发现什么不错的材料呢\
+
+Face:aya,榝
+这点东西要写成有趣的报道还是很难啊……
+哦呀？\
+
+Face:aya,
+Hide:1
+Sleep:30
+
+# 敵登場
+Action:reimu,101
+Action:reimu,102
+
+Sleep:20
+
+# 名前のテロップ
+Object:data/scenario/reimu/effect/Name.bmp,2,352,304
+
+Face:reimu,晛
+哇啊，这还真又是糟糕的天气呢\
+
+Face:aya,晛
+等下等下，怎么风这么大的天气也到山上来\
+
+Face:aya,娋
+你想死吗？\
+
+Face:reimu,搟
+看来你和风雨很般配呢。
+我这还急着赶路给我让开啦！\
+
+Face:aya,榝
+我说我说，
+发生什么事情了吗？\
+
+Face:reimu,搟
+神社被破坏了啊！
+因为地震！\
+
+Face:aya,嬃
+咦？
+那个能当成新闻的材料吗？\
+
+Face:reimu,搟
+想当的话随便你好了！
+我现在要去找能赔我神社的人去啦！\
+
+Face:aya,梋
+那好，我这就去采访一下吧。
+没想到神社竟然被破坏……\
+
+PlayBgm:data/bgm/st05.ogg
+
+Face:aya,寛
+不过在那之前，
+得把随便进山的人先赶回去才行呢\
+
+Face:reimu,寛
+想妨碍我吗？
+现在的我可不会手下留情哦！\
+
+
+Action:aya,3
+End:
+
+# --------------------------------
+# 戦闘終了　負け
+Label:Lose
+
+Face:reimu,搟
+再见了！
+我现在急得很呢！\
+
+End:
+
+# --------------------------------
+# 戦闘終了　コンテニュー処理
+Label:Continue
+
+#天候初期化
+Action:aya,113
+
+End:
+
+# --------------------------------
+# 戦闘終了　勝ち
+Label:Win
+
+#やられキャラ完全ダウン検知
+Action:reimu,200
+#攻撃側ニュートラル移行検知
+Action:aya,202
+
+Sleep:30
+Result:
+
+#イベント　勝利演出フェード
+
+End:
+
+
+
+## =======================================================================

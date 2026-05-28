@@ -1,0 +1,157 @@
+## =======================================================================
+#Stage:3
+#Title:「ブロッケンの妖怪」
+#Place:霧の湖の辺
+
+Character:utsuho,160,0,0,8888FF
+Character:suwako,160,0,1,FF8888
+
+#背景　霧の湖の辺
+Stage:34,0
+
+#画面表示前処理終了============================
+
+Label:Start
+PlayBgm:data/bgm/room.ogg
+Sleep:60
+
+#ステージタイトル表示
+Object:data/scenario/utsuho/effect/StageTitle003.bmp,0,192,-32
+Sleep:30;
+Object:data/scenario/effect/StageFinal.bmp,1,256,352
+Sleep:216;
+
+Sleep:70;
+
+# 普、嬉、余、汗、驚、怒、決、惑、負
+
+Face:utsuho,普
+#0１２３４５６７８９０１２３４５６７８９０１２３
+Well, what did you want to talk
+to me about, Lady Suwako?\
+
+Face:utsuho,嬉
+Could it be that my work is already finished?\
+
+FadeBgm:2000,0
+Sleep:160;
+PlayBgm:data/bgm/ta21.ogg
+
+Sleep:160;
+
+Face:suwako,余
+I'm sorry, but no.\
+
+Sleep:30;
+
+Face:suwako,普
+I just came to check to see what was going on here.\
+
+Face:suwako,嬉
+I see you expelled everyone.\
+
+Face:utsuho,余
+I'm very powerful!\
+
+FadeBgm:2000,0
+
+Face:suwako,普
+I saw how powerful you are.\
+
+Face:utsuho,嬉
+Yes!\
+
+PlayBgm:data/bgm/st35.ogg
+
+Face:suwako,驚
+Although I still have a doubt.\
+
+Sleep:180;
+
+Face:suwako,決
+And show me your power!\
+
+#戦闘開始処理
+
+Action:utsuho,203
+Action:suwako,203
+Action:utsuho,167#　フラッシュ
+Action:utsuho,3
+
+End:
+
+# --------------------------------
+#中間デモ
+Label:Intermission10
+
+Action:suwako,154
+
+#やられキャラ完全ダウン検知
+Action:suwako,200
+#攻撃側ニュートラル移行検知
+Action:suwako,3　#空起き上がる
+
+Sleep:60;
+Action:suwako,203　#チルノ驚く
+Sleep:60;
+
+Face:suwako,決
+Very Well!\
+
+Action:utsuho,403　#空　疑問　というか何かを思い出そうとしているポーズ
+Face:utsuho,汗
+What did you want this fight for?\
+
+Face:suwako,余
+Well, for fun, apart from trying fun things.\
+
+Face:suwako,嬉
+Apart from that the final will be amazing, for me.\
+
+Face:suwako,決
+Come on, let's get this over with.\
+
+Hide:1
+
+
+#戦闘開始処理
+
+Action:utsuho,203#　ニュートラル状態へ
+Action:suwako,203#　ニュートラル状態へ
+
+戦闘再開処理
+Action:suwako,210#　死亡フラグ類初期化
+
+End:
+
+# --------------------------------
+# 戦闘終了　負け
+Label:Lose
+
+End:
+
+# --------------------------------
+# 戦闘終了　コンテニュー処理
+Label:Continue
+
+Action:suwako,499　#背景位置初期化
+
+End:
+
+# --------------------------------
+# 戦闘終了　勝ち
+Label:Win
+
+#やられキャラ完全ダウン検知
+#Action:suwako,200
+#攻撃側ニュートラル移行検知
+Action:reimu,202
+
+Sleep:30
+Result:
+
+#イベント　勝利演出フェード
+
+End:
+
+## =======================================================================

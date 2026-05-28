@@ -1,0 +1,157 @@
+## =======================================================================
+#Stage:4
+#Title:気質の行方
+#Place:魔法の森
+#Weather:天気雨
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "royal blue"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "royal blue"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+#0１２３４５６７８９０１２３４５６７８９０１２３
+
+
+#０１２３４５６７８９０１２３４５６７８９０１２３
+
+Character:youmu,160,0,0,8888FF
+Character:yukari,160,0,1,FF8888
+
+#カメラ固定
+Action:youmu,4
+
+#フォーカス瞬間移動
+#Action:youmu,11
+
+#向き固定解除
+Action:youmu,152
+
+Label:Start
+
+Sleep:30;
+
+#ステージタイトル表示
+Object:data/scenario/youmu/effect/StageTitle004.bmp,0,256,-32
+Sleep:60;
+Object:data/scenario/effect/Stage4.bmp,1,256,352
+Sleep:60;
+
+Face:yukari,晛
+在生物众多的这里的话，
+应该就能很清楚的看到那股气的流向了吧\
+
+Face:youmu,晛
+那—……个\
+
+Hide:1
+Sleep:60;
+Hide:0
+
+Face:youmu,娋
+看不到呢\
+
+Face:yukari,榝
+你也太不成熟了\
+
+Face:yukari,梋
+那我就来把气集中起来让你更容易看清吧\
+
+
+#戦闘開始処理
+Action:youmu,3
+
+End:
+
+# 戦闘開始
+
+# --------------------------------
+# 戦闘終了　負け
+Label:Lose
+
+Face:yukari,晛
+神社被破坏了呢\
+
+Face:yukari,梋
+我的火气差不多也可以爆发了呢\
+
+End:
+
+# --------------------------------
+# 戦闘終了　コンテニュー処理
+Label:Continue
+
+#天候初期化
+Action:yukari,113
+
+End:
+
+# --------------------------------
+# 戦闘終了　勝ち
+Label:Win
+
+#やられキャラ完全ダウン検知
+Action:yukari,200
+#攻撃側ニュートラル移行検知
+Action:youmu,202
+
+#自キャラ天候
+Action:youmu,103
+Sleep:60
+
+Face:youmu,晛
+原来如此我明白了！\
+
+Face:youmu,嬃
+幽灵……气质都仿佛被天空
+吸走一般飘上去了呢！\
+
+Face:yukari,晧
+不只是幽灵啊\
+
+Face:youmu,晛
+对，不只是幽灵……\
+
+Face:youmu,榝
+一切有生命的东西所有的气质
+都变成了绯色的云雾……啊！\
+
+Face:yukari,晧
+那么请走好\
+
+Face:youmu,婐
+托紫大人的福察觉到重要的事情了
+非常感谢\
+
+#上空移行用上空退避
+Hide:1
+Sleep:30;
+Action:youmu,151
+
+Sleep:90;
+
+Face:yukari,梋
+哪里哪里，去吃点苦头好了啊
+顺便就当锻炼自己\
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+#フェードアウト　黒
+Action:youmu,160
+Sleep:60;
+
+
+Stage:4,0
+
+End:
+
+
+
+
+
+## =======================================================================

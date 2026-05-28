@@ -1,0 +1,213 @@
+## =======================================================================
+#Stage:5
+#Title:世の中気紛れ
+#Place:壊れた神社
+#Weather:
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Bgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+#0１２３４５６７８９０１２３４５６７８９０１２３
+
+
+Character:yukari,160,0,0,8888FF
+Character:suika,160,0,1,FF8888
+
+#分画面外に待機
+Action:suika,100
+#カメラ固定
+Action:yukari,4
+#フォーカス瞬間移動
+#Action:yukari,11
+
+#向き固定解除
+Action:yukari,152
+
+Label:Start
+PlayBgm:data/bgm/ta00.ogg
+
+Sleep:30;
+
+#自分登場
+Action:yukari,50
+Action:yukari,51
+
+#ステージタイトル表示
+Object:data/scenario/yukari/effect/StageTitle005.bmp,0,256,-32
+Sleep:60;
+Object:data/scenario/effect/Stage5.bmp,1,256,352
+Sleep:60;
+
+#０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９\
+Face:yukari,晛
+神社还是被破坏的样子\
+
+Face:yukari,搟
+趁现在确认一下要石的情况吧\
+
+
+Face:yukari,
+Hide:1
+Sleep:30
+
+# 敵登場
+Action:suika,101
+Action:suika,102
+
+Sleep:20
+
+Face:suika,嬃
+噢噢，是紫？
+怎么来这里了\
+
+# 名前のテロップ
+Object:data/scenario/suika/effect/Name.bmp,2,352,304
+
+Face:yukari,晛
+我是来看看神社到底要到什么时候才能建好\
+
+#0１２３４５６７８９０１２３４５６７８９０１２３
+Face:suika,晛
+啊啊，有时候好像会有天女下来进行重建哦\
+
+Face:suika,嬃
+而且干起活来还够勤快呢\
+
+Face:yukari,梋
+为什么我在的时候就看不到呢@
+被讨厌了吗？\
+
+#萃香ごろ寝状態終了
+Hide:1
+Sleep:60
+Action:suika,107
+Sleep:30
+
+Face:suika,梋
+难道不是吗？
+被大家\
+
+Face:yukari,榝
+真头疼呢……@
+龙宫使还拜托我来着呢\
+
+Face:suika,晛
+哎？
+龙宫使？\
+
+Face:yukari,晛
+让我去把那天人教训得体无完肤\
+
+Face:suika,嬃
+哎～，这还真是够可怕啊\
+
+Face:suika,晛
+那我说啊，你就这等着如何？
+迟早还不是会来？\
+
+Face:suika,寛
+所以啊，好长时间都没陪我玩了对吧？\
+
+Face:yukari,娋
+我可没你那么悠闲的说啊\
+
+Bgm:data/bgm/st19.ogg
+
+Action:yukari,3
+
+End:
+
+# --------------------------------
+# 戦闘終了　負け
+Label:Lose
+
+Face:suika,婐
+啊哈哈，就是那么弱才会被大家讨厌哦
+一定没错！\
+
+End:
+
+# --------------------------------
+# 戦闘終了　コンテニュー処理
+Label:Continue
+
+#天候初期化
+Action:yukari,104
+
+End:
+
+# --------------------------------
+# 戦闘終了　勝ち
+Label:Win
+
+
+#やられキャラ完全ダウン検知
+Action:suika,200
+#攻撃側ニュートラル移行検知
+Action:yukari,202
+
+#自キャラ天候
+Sleep:60;
+
+Face:yukari,娋
+今天看样子是不大可能来了呢\
+
+#0１２３４５６７８９０１２３４５６７８９０１２３
+Face:suika,晧
+是啊
+再玩下去搞不好灵梦就要发火了\
+
+Face:yukari,榝
+呼，最近真不走运啊～\
+
+Face:yukari,嬃
+啊，对了对了
+萃香啊，我本来还有事想拜托你的\
+
+Face:suika,晧
+真少见呢
+不过，不是现在吧\
+
+Face:yukari,晛
+确实呢@
+算了啦，我也累死了回去睡大觉去\
+
+Face:suika,晧
+说起来大白天的你竟然在这边这个世界里还真少见啊\
+
+#紫画面外へ隙間退避
+Action:yukari,155
+#紫画面外へ隙間退避完了確認
+Action:yukari,156
+
+Face:yukari,無
+就是说我其实也有努力的意思哦\
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+Sleep:60;
+
+#フェードアウト　黒
+Action:yukari,160
+Sleep:60;
+
+
+Stage:10,0
+
+End:
+
+
+
+
+
+## =======================================================================

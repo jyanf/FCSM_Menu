@@ -1,0 +1,181 @@
+## =======================================================================
+#Stage:1
+#Title:浮雲の如し
+#Place:壊れた神社
+#Weather:霧雨
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Bgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+#0１２３４５６７８９０１２３４５６７８９０１２３
+
+#０１２３４５６７８９０１２３４５６７８９０１２３
+
+Character:yukari,160,0,0,8888FF
+Character:reimu,160,0,1,FF8888
+
+#背景倒壊神社
+Stage:0,0
+
+#自分画面外に待機
+Action:yukari,1
+
+#敵画面外に待機
+Action:reimu,100
+
+Label:Start
+PlayBgm:data/bgm/ta03.ogg
+
+#自キャラ天候
+#Action:yukari,103
+Action:reimu,103
+
+Sleep:60;
+
+#ステージタイトル表示
+Object:data/scenario/yukari/effect/StageTitle001.bmp,0,256,-32
+Sleep:60;
+Object:data/scenario/effect/Stage1.bmp,1,256,352
+Sleep:60;
+
+#カメラ移動
+Action:yukari,2
+
+#自分登場
+Action:yukari,50
+Action:yukari,51
+
+#０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９\
+Face:yukari,晛
+神社还没复兴啊\
+
+Face:yukari,婐
+灵梦，出来一下\
+
+Face:yukari,
+Hide:1
+Sleep:30
+
+# 敵登場
+Action:reimu,101
+Action:reimu,102
+
+Face:reimu,晛
+搞什么啊真是\
+
+# 名前のテロップ
+Object:data/scenario/reimu/effect/Name.bmp,2,352,304
+
+Face:yukari,晛
+神社还没完成复兴吗？
+你也够悠闲的呢\
+
+Face:reimu,榝
+还不是因为<ruby 那家伙>天子</ruby>说什么『今天是唱歌的日子』
+不肯下来\
+
+Face:yukari,晛
+真头疼呢@
+唱歌的话地上也能唱的说\
+
+Face:reimu,娋
+虽然问题不在那里
+不过真的很奢侈啊。不工作就光知道唱歌跳舞\
+
+Face:yukari,梋
+不义之财与荣华富贵
+对于我等而言宛若<ruby ｆｕｙｕｎ>浮云</ruby> \
+
+Face:reimu,榝
+？\
+
+Face:yukari,寛
+说的就是过着奢侈生活的天人和你哦\
+
+#戦闘開始処理
+PlayBgm:data/bgm/st10.ogg
+
+Action:yukari,3
+End:
+
+# --------------------------------
+# 戦闘終了　負け
+Label:Lose
+
+Face:reimu,晛
+神社会帮忙重建好的，那个天人\
+
+Face:reimu,婐
+毕竟是这么约好的\
+
+End:
+
+# --------------------------------
+# 戦闘終了　コンテニュー処理
+Label:Continue
+
+#天候初期化
+Action:reimu,113
+
+End:
+
+# --------------------------------
+# 戦闘終了　勝ち
+Label:Win
+
+
+#やられキャラ完全ダウン検知
+Action:reimu,200
+#攻撃側ニュートラル移行検知
+Action:yukari,202
+
+#自キャラ天候
+#Action:yukari,103
+Sleep:60;
+
+Face:yukari,晛
+我去给她脑子里的螺丝紧一紧吧\
+
+Face:reimu,晧
+那干嘛来找我啊……\
+
+Face:yukari,晛
+哎呀，你其实也跟那天人差不多哦\
+
+Face:yukari,梋
+脚不着地这一点上\
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+#紫画面外へ隙間退避
+Action:yukari,155
+
+#紫画面外へ隙間退避完了確認
+Action:yukari,156
+
+#やられキャラ画面退場
+Action:reimu,201
+
+#カメラ中央あわせ
+Action:yukari,4
+
+Stage:2,120
+
+Sleep:120;
+
+End:
+
+
+
+
+## =======================================================================

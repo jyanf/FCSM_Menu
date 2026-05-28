@@ -1,0 +1,155 @@
+## =======================================================================
+#Stage:2
+#Title:寝耳に水
+#Place:妖怪の山
+#Weather:
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Font.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Window.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Background.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*CG.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+#PlayBgm:data/bgm/ta00.ogg
+#0１２３４５６７８９０１２３４５６７８９０１２３
+
+#０１２３４５６７８９０１２３４５６７８９０１２３
+
+Character:iku,160,0,0,8888FF
+Character:aya,160,0,1,FF8888
+
+#分画面外に待機
+Action:aya,100
+#カメラ固定
+Action:iku,4
+#フォーカス瞬間移動
+#Action:iku,11
+
+#向き固定解除
+Action:iku,152
+
+Label:Start
+PlayBgm:data/bgm/ta05.ogg
+
+Sleep:30;
+
+
+#ステージタイトル表示
+Object:data/scenario/iku/effect/StageTitle002.bmp,0,256,-32
+# 敵登場
+Action:aya,101
+#敵天候
+Action:aya,103
+Sleep:60;
+Object:data/scenario/effect/Stage2.bmp,1,256,352
+Sleep:60;
+Action:aya,102
+
+#０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９\
+Face:iku,晛
+因此呢，马上就要发生地震了\
+
+# 名前のテロップ
+Object:data/scenario/aya/effect/Name.bmp,2,352,304
+
+Face:aya,嬃
+咦？
+真突然呢\
+
+Face:aya,娋
+你怎么会知道的？
+地震的规模有多大？\
+
+Face:iku,梋
+我只是为了传达此事而来的龙宫使\
+
+Face:iku,寛
+好了，我要去下面一家了\
+
+Face:aya,搟
+等一下等一下，
+这一点消息怎么写成新闻啊！！\
+
+#戦闘開始処理
+PlayBgm:data/bgm/st21.ogg
+Action:iku,3
+End:
+
+# --------------------------------
+# 戦闘終了　負け
+Label:Lose
+
+Face:aya,寛
+好了，快告诉我！\
+
+Face:aya,婐
+为什么你会知道要发生地震了呢？
+地震的规模是多大？\
+
+End:
+
+# --------------------------------
+# 戦闘終了　コンテニュー処理
+Label:Continue
+
+#天候初期化
+Action:aya,113
+
+End:
+
+# --------------------------------
+# 戦闘終了　勝ち
+Label:Win
+
+
+#やられキャラ完全ダウン検知
+Action:aya,200
+#攻撃側ニュートラル移行検知
+Action:iku,202
+
+#自キャラ天候
+Face:iku,晛
+好了，我要去下面一家了\
+
+Face:aya,晧
+好过分～
+光给别人留下不安自己就这么走了—\
+
+Face:iku,梋
+要是能给人留下不安
+那就说明我的工作没白做了\
+
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+Stage:16,120
+
+#やられキャラ画面退場
+Action:aya,201
+
+#自キャラ基準点へ移動
+Action:iku,150
+
+#カメラ中央あわせ
+Action:iku,4
+
+Sleep:120;
+
+End:
+
+
+
+
+
+## =======================================================================

@@ -1,0 +1,184 @@
+## =======================================================================
+#Stage:6
+#Title:悪魔の世話役
+#Place:有頂天
+#Weather:
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Font.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Window.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Background.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*CG.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+#PlayBgm:data/bgm/ta00.ogg
+#0１２３４５６７８９０１２３４５６７８９０１２３
+
+#０１２３４５６７８９０１２３４５６７８９０１２３
+
+Character:tenshi,160,0,0,8888FF
+Character:sakuya,160,0,1,FF8888
+
+#分画面外に待機
+Action:sakuya,100
+#カメラ固定
+Action:tenshi,4
+#フォーカス瞬間移動
+#Action:tenshi,11
+
+#向き固定解除
+Action:tenshi,152
+
+Label:Start
+
+PlayBgm:data/bgm/ta03.ogg
+
+Sleep:30;
+
+#ステージタイトル表示
+Object:data/scenario/tenshi/effect/StageTitle006.bmp,0,256,-32
+Sleep:60;
+Object:data/scenario/effect/Stage6.bmp,1,256,352
+Sleep:60;
+
+#０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９\
+Face:tenshi,娋
+真是的，那小鬼究竟叫了多少人来啊？\
+
+
+Face:tenshi,
+Hide:1
+Sleep:30
+
+# 敵登場
+Action:sakuya,101
+Action:sakuya,102
+
+Sleep:20
+
+Face:sakuya,晛
+终于到了。
+稍微来的太早了点呢\
+
+
+Face:tenshi,嬃
+噢，你就是那个传说中在地上侍奉恶魔的那个\
+
+# 名前のテロップ
+Object:data/scenario/sakuya/effect/Name.bmp,2,352,304
+
+Face:sakuya,晛
+嗯，是啊。
+神社的动工纪念祭在哪召开呢？\
+
+Face:tenshi,梋
+大家都在里面等着哦\
+
+Face:sakuya,婐
+是吗，那正好呢\
+
+Face:sakuya,梋
+比起宴会我还有更重要的事情来着，
+因此才稍微提早一点过来了\
+
+Face:tenshi,榝
+喔，
+不过更早的家伙有一堆呢\
+
+Face:sakuya,嬃
+哎，
+大家脑子都有病呢\
+
+Face:tenshi,梋
+那么，有什么事情呢？\
+
+Face:sakuya,寛
+天界有个让人感觉很不爽的家伙呢，
+想稍微教训她一下\
+
+Face:tenshi,寛
+不会吧，你可别说那个人她不是我哦\
+
+#戦闘開始処理
+
+PlayBgm:data/bgm/st12.ogg
+Action:tenshi,3
+End:
+
+# --------------------------------
+# 戦闘終了　負け
+Label:Lose
+
+Face:sakuya,婐
+啊—舒服多了\
+
+Face:sakuya,晛
+再见\
+
+End:
+
+# --------------------------------
+# 戦闘終了　コンテニュー処理
+Label:Continue
+
+#天候初期化
+Action:tenshi,153
+
+End:
+
+# --------------------------------
+# 戦闘終了　勝ち
+Label:Win
+
+
+#やられキャラ完全ダウン検知
+Action:sakuya,200
+#攻撃側ニュートラル移行検知
+Action:tenshi,202
+
+
+Face:tenshi,娋
+差不多也有点累了呢\
+
+Face:tenshi,梋
+你啊，真的满强的啊。
+那种实力确实够资格侍奉恶魔呢\
+
+Face:sakuya,晧
+怎么会这么强。
+刀子竟然刺不进去\
+
+Face:tenshi,榝
+天界的食物有锻炼身体的功效。
+味道虽然另当别论……\
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+#やられキャラ画面退場
+Action:sakuya,201
+
+#自キャラ基準点へ移動
+Action:tenshi,150
+
+#カメラ中央あわせ
+Action:tenshi,4
+
+Sleep:120;
+
+End:
+
+
+
+
+
+## =======================================================================

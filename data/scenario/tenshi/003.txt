@@ -1,0 +1,170 @@
+## =======================================================================
+#Stage:4
+#Title:地上の人形
+#Place:有頂天
+#Weather:
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Font.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Window.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Background.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*CG.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+#PlayBgm:data/bgm/ta00.ogg
+#0１２３４５６７８９０１２３４５６７８９０１２３
+
+#０１２３４５６７８９０１２３４５６７８９０１２３
+
+Character:tenshi,160,0,0,8888FF
+Character:alice,160,0,1,FF8888
+
+#分画面外に待機
+Action:alice,100
+#カメラ固定
+Action:tenshi,4
+#フォーカス瞬間移動
+#Action:tenshi,11
+
+#向き固定解除
+Action:tenshi,152
+
+Label:Start
+
+PlayBgm:data/bgm/ta01.ogg
+
+Sleep:30;
+
+#ステージタイトル表示
+Object:data/scenario/tenshi/effect/StageTitle004.bmp,0,256,-32
+Sleep:60;
+Object:data/scenario/effect/Stage4.bmp,1,256,352
+Sleep:60;
+
+#０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９\
+Face:tenshi,晛
+呼，想想这事还真头痛呢\
+
+Face:tenshi,
+Hide:1
+Sleep:30
+
+# 敵登場
+Action:alice,101
+Action:alice,102
+
+Sleep:20
+
+Face:alice,晛
+啊，找到了。
+地震混帐\
+
+
+Face:tenshi,晛
+唉呀，人偶混帐的你也被那小鬼叫来了？\
+
+# 名前のテロップ
+Object:data/scenario/alice/effect/Name.bmp,2,352,304
+
+Face:alice,梋
+是啊，顺便借这个机会把你也给教训一顿再说\
+
+Face:tenshi,梋
+是吗，不过呢。
+你搞错了一点\
+
+Face:alice,梋
+？\
+
+Face:tenshi,晛
+我输给那个巫女和大家都是故意的哦\
+
+Face:alice,寛
+都输了还装什么样子\
+
+Face:tenshi,榝
+地上那些生物怎么可能和我比嘛\
+
+#戦闘開始処理
+
+PlayBgm:data/bgm/st13.ogg
+Action:tenshi,3
+End:
+
+# --------------------------------
+# 戦闘終了　負け
+Label:Lose
+
+Face:alice,晛
+就会说呢\
+
+#0１２３４５６７８９０１２３４５６７８９０１２３
+Face:alice,婐
+好了，拿你鼻青脸肿的模样当下酒菜
+来让我们去开宴会吧\
+
+End:
+
+# --------------------------------
+# 戦闘終了　コンテニュー処理
+Label:Continue
+
+#天候初期化
+Action:tenshi,153
+
+End:
+
+# --------------------------------
+# 戦闘終了　勝ち
+Label:Win
+
+
+#やられキャラ完全ダウン検知
+Action:alice,200
+#攻撃側ニュートラル移行検知
+Action:tenshi,202
+
+#自キャラ天候
+Face:tenshi,梋
+唉，今天虽然是连战状态不过还可以继续呢。
+要不要再让你们点什么啊\
+
+Face:alice,晧
+这还真是……强啊—，
+那啥—我认输了\
+
+Face:tenshi,榝
+没错，一般情况下我才不会输……
+一般情况下哦\
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+
+#やられキャラ画面退場
+Action:alice,201
+
+#自キャラ基準点へ移動
+Action:tenshi,150
+
+#カメラ中央あわせ
+Action:tenshi,4
+
+Sleep:120;
+
+End:
+
+
+
+
+
+## =======================================================================

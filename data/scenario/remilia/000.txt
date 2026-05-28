@@ -1,0 +1,167 @@
+## =======================================================================
+#Stage:1
+#Title:冷夏の憂鬱
+#Place:紅魔館ロビー
+#Weather:
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+#0１２３４５６７８９０１２３４５６７８９０１２３
+
+#
+#０１２３４５６７８９０１２３４５６７８９０１２３
+
+Character:remilia,160,0,0,8888FF
+Character:sakuya,160,0,1,FF8888
+
+#背景　紅魔館ロビー
+Stage:16,0
+
+#初期設定
+Action:remilia,1
+
+#敵画面外に待機
+Action:sakuya,100
+
+Label:Start
+PlayBgm:data/bgm/ta05.ogg
+
+#自キャラ天候
+Action:remilia,103
+
+Sleep:30;
+
+#ステージタイトル表示
+Object:data/scenario/remilia/effect/StageTitle001.bmp,0,256,-32
+Sleep:60;
+Object:data/scenario/effect/Stage1.bmp,1,256,352
+Sleep:60;
+
+#カメラ移動
+Action:remilia,2
+
+#０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９\
+Face:remilia,搟
+喂～，咲夜在吗～？\
+
+Face:remilia,
+Hide:1
+Sleep:30
+
+#
+# 敵登場
+Action:sakuya,101
+Action:sakuya,102
+
+Face:sakuya,晛
+是的，有什么事情吗？\
+
+# 名前のテロップ
+Object:data/scenario/sakuya/effect/Name.bmp,2,352,304
+
+#0１２３４５６７８９０１２３４５６７８９０１２３
+Face:remilia,搟
+我说你啊，这正发生异变呢你搞什么东西？\
+
+Action:sakuya,103
+
+Face:sakuya,榝
+异变……是吗？\
+
+Face:remilia,晛
+真是的，知道我为什么不能外出的理由吗？\
+
+Face:sakuya,嬃
+突然，下大雨了是吗？
+最近，天气很不稳定呢……\
+
+Face:remilia,晛
+根本就不是不稳定这么简单！@
+给我再用心一点！\
+#戦闘開始処理
+
+PlayBgm:data/bgm/st12.ogg
+Action:remilia,3
+End:
+
+# --------------------------------
+# 戦闘終了　負け
+Label:Lose
+
+Face:sakuya,榝
+帕秋莉大人似乎也在调查关于天气的事情呢\
+
+Face:sakuya,榝
+难道不光是冷夏这么简单吗……\
+
+End:
+
+# --------------------------------
+# 戦闘終了　コンテニュー処理
+Label:Continue
+
+#天候初期化
+Action:sakuya,113
+
+End:
+
+# --------------------------------
+# 戦闘終了　勝ち
+Label:Win
+
+#やられキャラ完全ダウン検知
+Action:sakuya,200
+#攻撃側ニュートラル移行検知
+Action:remilia,202
+
+#自分天候
+Action:remilia,103
+
+Face:remilia,晛
+哼，肯定有什么人想要阻止我出门\
+
+Face:sakuya,榝
+是吗？\
+
+Face:remilia,梋
+咲夜，我看来是无法行动了～\
+
+Face:sakuya,晛
+明白了，我去调查看看\
+
+Face:remilia,寛
+不，你去把嫌疑犯都抓到我这来！\
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+Stage:14,120
+
+#やられキャラ画面退場
+Action:sakuya,201
+
+#自キャラ基準点へ移動
+Action:remilia,150
+
+#カメラ中央あわせ
+Action:remilia,4
+
+Sleep:120;
+
+End:
+
+
+
+
+
+## =======================================================================

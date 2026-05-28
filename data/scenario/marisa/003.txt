@@ -1,0 +1,220 @@
+## =======================================================================
+#Stage:4
+#Title:そこにある山
+#Place:妖怪の山
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "royal blue"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "royal blue"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+
+
+#０１２３４５６７８９０１２３４５６７８９０１２３
+
+Character:marisa,160,0,0,8888FF
+Character:aya,120,20,1,FF8888
+#分画面外に待機
+Action:aya,100
+#カメラ固定
+Action:marisa,4
+#フォーカス瞬間移動
+#Action:marisa,11
+
+#向き固定解除
+Action:marisa,152
+
+Label:Start
+
+
+Bgm:data/bgm/ta04.ogg
+
+Sleep:60;
+
+#ステージタイトル表示
+Object:data/scenario/marisa/effect/StageTitle004.bmp,0,256,-32
+Sleep:60;
+Object:data/scenario/effect/Stage4.bmp,1,256,352
+Sleep:20;
+
+Face:marisa,晛
+发现一件不得了的事情啊\
+
+Face:marisa,婐
+走到云层上面的话天气一定会晴朗的。
+就是说这么爬山的话\
+
+Face:marisa,婐
+一定能见到太阳公公\
+
+Face:marisa,
+Hide:1
+#Weather:風雨
+#敵キャラ天候
+Action:aya,103
+
+Face:marisa,
+……\
+
+
+Face:marisa,娋
+……天气虽然糟糕起来了。
+但我绝不认输。向云上奋进\
+
+
+Face:marisa,
+
+Hide:1
+Sleep:30
+
+#
+# 文登場
+#
+
+#登場モーション開始
+Action:aya,101
+
+#登場モーション終了検知
+Action:aya,102
+
+Face:aya,晛
+#0１２３４５６７８９０１２３４５６７８９０１２３
+就想着怎么又来报告说有人闯入山里。
+又是你吗？\
+
+# 名前のテロップ
+#Name:風雨の鴉　射命丸文
+Object:data/scenario/aya/effect/Name.bmp,2,352,304
+
+Face:marisa,梋
+暴风雨中执行侦察任务辛苦了\
+
+Face:aya,搟
+什么嘛，一幅首长派头\
+
+Face:aya,榝
+我这个天狗说也有点那啥啊，
+总之这附近风满厉害的呢\
+
+Face:aya,榝
+不管怎么做都停不下来呢这个\
+
+Face:marisa,晛
+不管哪都在为天气烦恼啊\
+
+Face:marisa,梋
+不过，去拜托风神大人来不就完了吗\
+
+Face:aya,晛
+这个嘛，
+因为这风似乎只在我周围吹的样子……\
+
+Face:marisa,晛
+哦哦\
+
+Face:marisa,晛
+不过嘛，
+我接下来就要出发去往一个没有雨的世界了\
+
+Face:aya,晛
+怎么去？\
+
+PlayBgm:data/bgm/st03.ogg
+
+Face:marisa,寛
+一直爬山爬到云层上去哦\
+
+Face:aya,梋
+我就是问你怎么去啊？\
+
+Face:aya,寛
+你要怎么才能躲过天狗的眼睛爬上去呢？\
+
+
+#戦闘開始処理
+
+Action:marisa,3
+
+End:
+
+# 戦闘開始
+
+# --------------------------------
+# 戦闘終了　負け
+Label:Lose
+
+Face:aya,晛
+好了好了，老老实实回去吧\
+
+Face:aya,晛
+你就算爬到云层上也解决不了任何问题哦\
+
+End:
+
+# --------------------------------
+# 戦闘終了　コンテニュー処理
+Label:Continue
+
+#天候初期化
+Action:aya,113
+
+End:
+
+# --------------------------------
+# 戦闘終了　勝ち
+Label:Win
+
+#やられキャラ完全ダウン検知
+Action:aya,200
+#攻撃側ニュートラル移行検知
+Action:marisa,202
+
+#自キャラ天候
+Action:marisa,103
+Sleep:60
+
+Face:marisa,婐
+出发爬山。
+因为山在那里啊\
+
+Face:aya,晧
+真没办法呢。
+不过你已经被大家给盯上了哦\
+
+Face:aya,晧
+有所觉悟得爬山吧\
+
+
+Face:marisa,梋
+没关系啦，这次山不过只是个中间点而已啦\
+
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+Sleep:30;
+
+#上空移行用上空退避
+Action:marisa,151
+
+Sleep:90;
+
+#フェードアウト　黒
+Action:marisa,160
+Sleep:60;
+
+
+Stage:4,0
+
+End:
+
+
+
+
+
+## =======================================================================

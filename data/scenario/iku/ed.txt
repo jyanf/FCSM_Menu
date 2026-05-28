@@ -1,0 +1,103 @@
+# ----------------------------------------------------
+# Ending
+# Stage:Ending
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Font.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Window.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Background.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*CG.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+#PlayBgm:data/bgm/ta00.ogg
+#0１２３４５６７８９０１２３４５６７８９０１２３
+
+Font:ＭＳゴシック,16,3,6
+WindowColor:0,0,0,0
+Color:FFFFFF
+Background:data/scenario/effect/EdBack000.bmp,999,0,0
+CG:data/scenario/iku/effect/ED000.bmp,96,16,50
+Label:Start
+
+Bgm:data/bgm/ta06.ogg
+
+# 一枚目
+# 壊れた神社のイラスト（他のキャラでも使う汎用絵）
+# 
+# 　一枚目は場所を示す簡単なイラストが入る予定です
+#0１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３
+　夏季的博丽神社。@
+　位于东侧境界上的神社——然而如今已经毁坏了。@
+　虽然还没有失去作为神社的作用，但作为居所的功能已经丧失了。\
+
+　神社在天人和天女的努力下正慢慢复兴。@
+　天气安定下来之后绯色的云层浓度也急剧下降，低于了标准值。@
+　已经不用再担心地震了。\
+
+
+# 二枚目
+# 
+# 天界から工事中の神社を見ている衣玖
+# とても小さく見える
+
+CG:data/scenario/iku/effect/ED001.bmp,96,16,50
+
+#0１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３
+衣玖　「想不到会再次看到往地上插要石的日子啊……」@
+　　　　从天上看到的神社非常渺小。@
+　　　　而那里却有着一块硕大的要石。\
+
+衣玖　「要石确实能镇住地震。@
+　　　　但是，其背后的意义就是那将成为
+　　　　能确实地引发大地震的钥匙」\
+
+衣玖　「要石压抑着地下的力量，
+　　　　就代表那股力量在不断积蓄。@
+　　　　一旦拔出来肯定会发生毁灭性的地震」\
+
+
+CG:data/scenario/iku/effect/ED002.bmp,96,16,50
+# 三枚目
+# 萃香と二人でお酒を呑んでいる
+# 衣玖は愚痴気味
+#0１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３
+萃香　「嘿，是这样啊」@
+衣玖　「真是的，天子大人打算怎么和比那名居家的头领大人解释呢」@
+萃香　「头领就是指地震的老大吗？」\
+
+衣玖　「差不多吧……我说，@
+　　　　我还没搞清楚你为什么会在这里啊」@
+萃香　「这附近已经变成我的地盘了哦」\
+
+衣玖　「咦？」@
+萃香　「威胁了一下那个天人以和平的方式取得的哦」@
+衣玖　「怎么会，竟然发生这种事情」\
+
+衣玖　「这件事也是，她总是不向任何人报告不找任何人商量
+　　　　搞得人头疼死了。@
+　　　　天人和天女们大家都拿她无可奈何啊」\
+
+萃香　「哇哈哈。算了啦，
+　　　　一起来喝个烂醉把心里的牢骚都一吐为快吧」\
+
+CG:BLACK,0,0,15
+FadeBgm:2000,0
+
+　插上要石后一段时间内是肯定不会发生地震了，
+　但同时也肯定了总有一天会发生一场大地震。
+　不过，对于衣玖而言还有一个重要的小变化。\
+
+StaffRoll:
+
+　那就是龙宫使者的工作量稍微减少了一些。
+　衣玖对于工作量的减少，虽然觉得轻松，但同时也抱有一些不安的感觉。\
+
+End:

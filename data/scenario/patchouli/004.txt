@@ -1,0 +1,224 @@
+## =======================================================================
+#Stage:5
+#Title:心の上の世界
+#Place:有頂天
+#Weather:極光
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Font.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Window.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Background.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*CG.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+#PlayBgm:data/bgm/ta00.ogg
+#0１２３４５６７８９０１２３４５６７８９０１２３
+
+Character:patchouli,160,0,0,8888FF
+Character:tenshi,160,0,1,FF8888
+#Character:suika,160,0,2,FF8888
+
+#敵画面外に待機
+Action:tenshi,100
+#カメラ初期位置固定
+Action:tenshi,130
+#自キャラ画面外待機
+Action:patchouli,5
+
+#向き固定解除
+Action:patchouli,152
+
+Label:Start
+PlayBgm:data/bgm/ta07.ogg
+
+Sleep:85;
+
+#フェードイン　白
+Action:patchouli,163
+
+#カメラ下へ
+Action:tenshi,131
+#Sleep:60;
+
+#ステージタイトル表示
+Action:patchouli,6
+Object:data/scenario/patchouli/effect/StageTitle005.bmp,0,256,-32
+#画面上から落下して登場
+
+Sleep:60;
+Object:data/scenario/effect/Stage5.bmp,1,256,352
+Sleep:60;
+Action:patchouli,7
+
+
+#sleep,60
+Face:patchouli,晛
+云层上竟然会有这样的世界……？\
+
+Face:patchouli,梋
+如果说有人将大家的气质化成云雾的话\
+
+Face:patchouli,晛
+那家伙平常应该不受到异变的影响\
+
+Face:patchouli,
+
+Hide:1
+
+#イベント　メッセージウィンドウ消去
+#イベント　カメラ上空へ
+Action:tenshi,132
+
+#イベント　地震
+Action:tenshi,133
+Face:tenshi,無
+欢迎不远千里来到天界\
+
+Hide:1
+Sleep:30
+
+Action:tenshi,133
+#イベント　地震
+天界欢迎宾客的方式……\
+
+Hide:1
+#sleep,60
+
+# 天子登場
+#イベント　大地震
+#イベント　カメラフォーカス元へ
+Action:tenshi,134
+#sleep,180
+那就是除了歌舞还是歌舞\
+
+
+#登場ポーズ終了指令
+Action:tenshi,139
+#sleep,30
+
+Face:patchouli,梋
+那还真是感谢\
+
+Object:data/scenario/tenshi/effect/Name.bmp,2,352,304
+
+Face:tenshi,晛
+你为了什么特地来到天界呢？\
+
+#0１２３４５６７８９０１２３４５６７８９０１２３
+Face:patchouli,晛
+来寻找收集气质改变天侯的家伙呢\
+
+Face:tenshi,梋
+这样啊\
+
+Face:patchouli,梋
+第六感告诉我应该就在这里\
+
+Face:tenshi,梋
+呵呵呵
+我没有看见那样的家伙呢\
+
+PlayBgm:data/bgm/st05.ogg
+
+Face:patchouli,晛
+你全身都散发出骗人的气息哦\
+
+Face:tenshi,榝
+呵呵呵
+现在不是还早吗？\
+
+Face:patchouli,搟
+等发生什么了那就太迟了\
+
+Face:tenshi,寛
+比如说等神社被破坏掉什么的
+之后再来也不迟啊？\
+
+#戦闘開始処理
+Action:patchouli,3
+
+End:
+
+# 戦闘開始
+
+# --------------------------------
+# 戦闘終了　負け
+Label:Lose
+Face:tenshi,寛
+还早还早，离要来我这里还太早了\
+
+Face:tenshi,晛
+我说，等大家都开始行动了再来不好么？\
+
+End:
+
+# --------------------------------
+# 戦闘終了　コンテニュー処理
+Label:Continue
+
+#天候初期化
+Action:tenshi,153
+
+End:
+
+# --------------------------------
+# 戦闘終了　勝ち
+Label:Win
+
+#やられキャラ完全ダウン検知
+Action:tenshi,200
+#攻撃側ニュートラル移行検知
+Action:patchouli,202
+
+#自キャラ天候に変化
+#Action:patchouli,103
+#Sleep:60
+
+Face:patchouli,寛
+和你打斗完全没有任何意义
+我的目的是打倒收集气质的犯人\
+
+Face:tenshi,晧
+……咦？\
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+Sleep:60;
+
+#ステージ間調整自キャラ
+#やられキャラ画面退場
+Action:tenshi,201
+Action:patchouli,150
+Sleep:15
+#カメラ中央あわせ
+Action:patchouli,4
+Sleep:100
+
+Face:patchouli,晛
+就藏在这里吧？
+赶快出来\
+
+Hide:1
+
+Sleep:60
+
+
+
+End:
+
+
+
+
+
+
+## =======================================================================

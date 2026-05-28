@@ -1,0 +1,200 @@
+## =======================================================================
+#Stage:1
+#Title:高湿の夏
+#Place:人形の森
+#Weather:霧雨
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "royal blue"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "royal blue"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+
+
+
+Character:marisa,160,0,0,8888FF
+Character:alice,160,0,1,FF8888
+
+#背景　人形の森
+Stage:13,0
+
+#魔理沙画面外に待機
+Action:marisa,1
+
+#アリス画面外に待機
+Action:alice,100
+
+#カメラ中央固定
+Action:marisa,2
+
+Label:Start
+#自キャラ天候
+Action:marisa,103
+
+PlayBgm:data/bgm/ta03.ogg
+
+Sleep:60;
+
+#ステージタイトル表示
+Object:data/scenario/marisa/effect/StageTitle001.bmp,0,256,-32
+Sleep:30;
+Object:data/scenario/effect/Stage1.bmp,1,256,352
+Sleep:30;
+
+#登場
+Action:marisa,50
+Action:marisa,51
+
+
+# 普、嬉、余、汗、驚、怒、決、惑、負
+
+Face:marisa,榝
+#0１２３４５６７８９０１２３４５６７８９０１２３
+真头疼啊。
+一直下雨连衣服都没法洗\
+
+梅雨季过去之后这雨还是一直下个不停\
+
+
+Face:marisa,
+Hide:1
+Sleep:30
+
+#
+# 敵登場
+Action:alice,101
+Action:alice,102
+
+Face:alice,嬃
+就这还亏你知道梅雨过去了呢\
+
+# 名前のテロップ
+Object:data/scenario/alice/effect/Name.bmp,2,352,304
+
+Face:marisa,嬃
+噢噢，不知不觉间竟然来到这里\
+
+Hide:1
+
+#敵天候
+Action:alice,103
+Sleep:60
+
+Face:alice,榝
+啊，又来了……\
+
+最近一直下冰雹连衣服都没法洗\
+
+
+Face:marisa,嬃
+这还真是少见，竟然下冰雹\
+
+Face:alice,嬃
+平常的话确实呢。
+不过今年梅雨一过就一直下冰雹……\
+
+Face:marisa,梋
+就这还亏你知道梅雨过去了呢\
+
+Face:alice,梋
+我可不像你这个傻瓜啊\
+
+Face:marisa,嬃
+我知道了。\
+
+Face:marisa,梋
+是你把森林的湿度提高了吧？\
+
+Face:alice,嬃
+为什么？\
+
+Face:marisa,寛
+我哪知道。
+等我打倒你再慢慢问个清楚\
+
+
+#戦闘開始処理
+
+Face:marisa,
+
+PlayBgm:data/bgm/st00.ogg
+Action:marisa,3
+End:
+
+# --------------------------------
+# 戦闘終了　負け
+Label:Lose
+
+Face:alice,婐
+自己好好想一想提高湿度的人究竟是谁\
+
+Face:alice,梋
+招雨的大傻瓜\
+
+End:
+
+# --------------------------------
+# 戦闘終了　コンテニュー処理
+Label:Continue
+
+#天候初期化
+Action:alice,113
+
+End:
+
+# --------------------------------
+# 戦闘終了　勝ち
+Label:Win
+
+
+#やられキャラ完全ダウン検知
+Action:alice,200
+#攻撃側ニュートラル移行検知
+Action:marisa,202
+
+#自キャラ天候
+Action:marisa,103
+Sleep:60;
+
+Face:marisa,寛
+不对啊，
+比起冰雹来雨更成问题\
+
+Face:alice,晧
+冰雹也成问题啊\
+
+Face:marisa,嬃
+又下起雨来了啊……\
+
+Face:marisa,婐
+也就是这雨在对我说，
+让我快去找回太阳公公吧？\
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+Stage:1,120
+
+#やられキャラ画面退場
+Action:alice,201
+
+#自キャラ基準点へ移動
+Action:marisa,150
+
+#カメラ中央あわせ
+Action:marisa,4
+
+Sleep:120;
+
+End:
+
+
+
+
+
+## =======================================================================

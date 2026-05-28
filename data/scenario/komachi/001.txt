@@ -1,0 +1,192 @@
+## =======================================================================
+#Stage:2
+#Title:曇っていますか？
+#Place:紅魔館時計台
+#Weather:
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Font.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Window.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Background.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*CG.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+#PlayBgm:data/bgm/ta00.ogg
+#0１２３４５６７８９０１２３４５６７８９０１２３
+
+#０１２３４５６７８９０１２３４５６７８９０１２３
+
+Character:komachi,160,0,0,8888FF
+Character:sakuya,160,0,1,FF8888
+#敵画面外に待機
+Action:sakuya,100
+#カメラ固定
+Action:komachi,4
+
+#フォーカス瞬間移動
+#Action:komachi,11
+
+#向き固定解除
+Action:komachi,152
+
+Label:Start
+PlayBgm:data/bgm/ta03.ogg
+
+Sleep:30;
+
+#ステージタイトル表示
+Object:data/scenario/komachi/effect/StageTitle002.bmp,0,256,-32
+Sleep:60;
+Object:data/scenario/effect/Stage2.bmp,1,256,352
+Sleep:60
+
+Face:komachi,晛
+这里好象也有人类的样子啊\
+Face:komachi,
+Hide:1
+Sleep:30
+
+#
+# 敵登場
+#
+Action:sakuya,101
+#敵天候
+Action:sakuya,103
+Action:sakuya,102
+
+Sleep:20
+
+Face:sakuya,嬃
+唉呀呀，死神来超度人？
+真不巧我们这里不缺死神呢\
+
+# 名前のテロップ
+Object:data/scenario/sakuya/effect/Name.bmp,2,352,304
+
+Face:komachi,晛
+阴天了呢，
+而且还起风了……\
+
+Face:komachi,梋
+你整个人都阴天了\
+
+Face:sakuya,搟
+总感觉你好像说了什么对我很失礼的话啊\
+
+Face:komachi,嬃
+不错啦，阴天这东西虽然不华丽也不丰壤，
+但能够遮蔽有害光线，舒适性超群啊\
+
+Face:komachi,晛
+你的根源是一种灵活的气质呢\
+
+Face:sakuya,嬃
+唉呀，是在赞美我吗？\
+
+Face:komachi,晛
+灵活的幽灵　几乎在活着的时候都是精通处世之道，
+过着没有一点不自由的生活\
+
+Face:komachi,榝
+然而，当来到彼岸接受审判的时候，
+就会因为那种技巧最后得不到很好的判决\
+
+Face:sakuya,晛
+还真是遥远未来的话题呢……
+话说回来，我都说了我们这里不缺死神\
+
+Face:komachi,梋
+你别这样，你别这样，就来试用一下好了\
+
+#戦闘開始
+PlayBgm:data/bgm/st12.ogg
+Action:komachi,3
+
+End:
+
+# 戦闘開始
+
+# --------------------------------
+# 戦闘終了　負け
+Label:Lose
+
+Face:sakuya,梋
+我现在还不能死呢\
+
+Face:sakuya,晛
+话说，有什么时候是能死的吗\
+
+End:
+
+# --------------------------------
+# 戦闘終了　コンテニュー処理
+Label:Continue
+
+#天候初期化
+Action:sakuya,113
+
+End:
+
+# --------------------------------
+# 戦闘終了　勝ち
+Label:Win
+
+#やられキャラ完全ダウン検知
+Action:sakuya,200
+#攻撃側ニュートラル移行検知
+Action:komachi,202
+
+#自キャラ天候
+Action:komachi,103
+Sleep:60
+
+Face:komachi,梋
+没事的，咱不会夺走任何人的魂魄啦\
+
+Face:sakuya,晧
+那为什么……
+难道说是经常那啥的“那个”？\
+
+Face:komachi,嬃
+嗯？
+经常那啥？\
+
+Face:komachi,娋
+啊啊，差不多啦，休息也是工作之一嘛\
+
+Face:komachi,梋
+擅长阿谀奉承的你应该明白吧？\
+
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+Stage:15,120
+
+#やられキャラ画面退場
+Action:sakuya,201
+
+#自キャラ基準点へ移動
+Action:komachi,150
+
+#カメラ中央あわせ
+Action:komachi,4
+
+Sleep:120;
+
+End:
+
+
+
+
+
+## =======================================================================

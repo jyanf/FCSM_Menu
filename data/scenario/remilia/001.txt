@@ -1,0 +1,164 @@
+## =======================================================================
+#Stage:2
+#Title:安楽椅子探偵
+#Place:大図書館
+#Weather:
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+#0１２３４５６７８９０１２３４５６７８９０１２３
+
+
+Character:remilia,160,0,0,8888FF
+Character:patchouli,160,0,1,FF8888
+#敵画面外に待機
+Action:patchouli,100
+#カメラ固定
+Action:remilia,4
+
+#フォーカス瞬間移動
+#Action:remilia,11
+
+#向き固定解除
+Action:remilia,152
+
+Label:Start
+#PlayBgm:data/bgm/ta01.ogg
+PlayBgm:data/bgm/ta01.ogg
+
+Action:patchouli,101
+Action:patchouli,102
+
+Sleep:30;
+
+#ステージタイトル表示
+Object:data/scenario/remilia/effect/StageTitle002.bmp,0,256,-32
+Sleep:60;
+Object:data/scenario/effect/Stage2.bmp,1,256,352
+Sleep:60
+
+Face:patchouli,晛
+怎么了？\
+
+Face:remilia,榝
+我说啊，你怎么也不行动呢\
+
+# 名前のテロップ
+Object:data/scenario/patchouli/effect/Name.bmp,2,352,304
+
+Face:patchouli,嬃
+咋了？
+我有在行动哦。现在\
+
+Face:remilia,晛
+天气不好的时候我不太想出门啊\
+
+Face:patchouli,嬃
+天气好的时候你不是也不想出门吗？
+下雨也好晴天也好\
+
+Face:remilia,晛
+晴天难道不是天气不好吗？\
+
+#敵天候
+Action:patchouli,103
+
+Face:patchouli,娋
+也是，反正跟我无关\
+
+Face:patchouli,晛
+不过，我有认真调查哦@
+关于天气的事情……\
+
+Face:remilia,寛
+交给帕琪你的话
+就搞不清楚要拖到何时才能解决了！\
+
+#戦闘開始
+PlayBgm:data/bgm/st15.ogg
+Action:remilia,3
+
+End:
+
+# 戦闘開始
+
+# --------------------------------
+# 戦闘終了　負け
+Label:Lose
+
+Face:patchouli,晛
+严谨的调查绝对不会弄坏石桥\
+
+Face:patchouli,梋
+总之，耐心等吧\
+
+End:
+
+# --------------------------------
+# 戦闘終了　コンテニュー処理
+Label:Continue
+
+#天候初期化
+Action:patchouli,113
+
+End:
+
+# --------------------------------
+# 戦闘終了　勝ち
+Label:Win
+
+#やられキャラ完全ダウン検知
+Action:patchouli,200
+#攻撃側ニュートラル移行検知
+Action:remilia,202
+
+#自キャラ天候
+Action:remilia,103
+#Sleep:60
+
+Face:remilia,梋
+现在这里就是我办案的地方了\
+
+Face:patchouli,晧
+咦？\
+
+Face:remilia,寛
+咲夜等下会把嫌疑犯一个一个抓过来@
+我要在这里从她们嘴里问出点什么\
+
+Face:patchouli,晧
+什么～？\
+
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+
+#やられキャラ画面退場
+Action:patchouli,201
+
+#自キャラ基準点へ移動
+Action:remilia,150
+
+#カメラ中央あわせ
+Action:remilia,4
+
+Sleep:120;
+
+End:
+
+
+
+
+
+## =======================================================================

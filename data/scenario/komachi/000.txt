@@ -1,0 +1,229 @@
+## =======================================================================
+#Stage:1
+#Title:霧雨の幽霊
+#Place:魔法の森
+#Weather:
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Font.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Window.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Background.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*CG.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+#PlayBgm:data/bgm/ta00.ogg
+#0１２３４５６７８９０１２３４５６７８９０１２３
+
+#
+#０１２３４５６７８９０１２３４５６７８９０１２３
+
+Character:komachi,160,0,0,8888FF
+Character:marisa,160,0,1,FF8888
+
+#背景　魔法の森
+Stage:1,0
+
+#自分画面外に待機
+Action:komachi,1
+
+#敵画面外に待機
+Action:marisa,100
+
+#向き固定解除
+Action:komachi,152
+
+Label:Start
+PlayBgm:data/bgm/ta05.ogg
+
+#自キャラ天候
+Action:komachi,103
+
+Sleep:60;
+
+#ステージタイトル表示
+Object:data/scenario/komachi/effect/StageTitle001.bmp,0,256,-32
+Sleep:60;
+Object:data/scenario/effect/Stage1.bmp,1,256,352
+#Sleep:60;
+#カメラ移動
+Action:komachi,2
+
+
+#登場
+Action:komachi,50
+Action:komachi,51
+
+#０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９\
+Face:komachi,婐
+呵呵呵，
+又发现有趣的事情可以打发时间了\
+
+Face:komachi,晛
+怎么说来着？天气是本人的气质是吧\
+
+Face:komachi,梋
+气质，也就是幽灵
+换句话说，只要看到那家伙周围的天气\
+
+Face:komachi,婐
+就能知道那人死后的样子啦\
+
+Face:komachi,
+Hide:1
+Sleep:30
+
+#
+# 敵登場
+Action:marisa,101
+#敵天候
+Action:marisa,103
+Action:marisa,102
+
+Face:marisa,榝
+哇，是死神，
+这么快就来为我超度了啊\
+
+# 名前のテロップ
+Object:data/scenario/marisa/effect/Name.bmp,2,352,304
+
+Face:komachi,梋
+喔喔～你拥有的是雾雨的气质吗\
+
+Face:marisa,晛
+你说啥？\
+
+Face:komachi,晛
+雾雨蒙蒙、黑暗且不显眼，
+但却拥有温柔\
+
+Face:marisa,晛
+咦？真让人不好意思啊\
+
+Face:komachi,梋
+应该会变成绝对成不了主角的幽灵吧\
+
+Face:komachi,晛
+不能成佛、不能转生，
+只能永远呆在彼岸一直等待审判的幽灵\
+
+Face:marisa,榝
+……果然是来超度我的吗？\
+
+Face:komachi,娋
+啊啊、如果你那么期待的话
+那就没办法了\
+
+#戦闘開始処理
+
+PlayBgm:data/bgm/st11.ogg
+Action:komachi,3
+End:
+
+# --------------------------------
+# 戦闘終了　負け
+Label:Lose
+
+Face:marisa,婐
+战胜死神是不是就能长生不死了？\
+
+Face:marisa,晛
+啊，但是会不会变成天人那样啊，果然吧\
+
+Face:marisa,榝
+有点不太乐意啊\
+
+
+End:
+
+# --------------------------------
+# 戦闘終了　コンテニュー処理
+Label:Continue
+
+#天候初期化
+Action:marisa,113
+
+End:
+
+# --------------------------------
+# 戦闘終了　勝ち
+Label:Win
+
+
+#やられキャラ完全ダウン検知
+Action:marisa,200
+#攻撃側ニュートラル移行検知
+Action:komachi,202
+
+#自分天候
+Action:komachi,103
+Sleep:60;
+
+Face:komachi,梋
+啊哈哈，玩笑啦，
+只是稍微来玩玩而已\
+
+Face:marisa,晧
+等你来超度我的时候把你打倒的话
+是不是就能不用死了？\
+
+Face:komachi,晛
+首先，咱是负责驾船的死神
+不会去给人超度的……\
+
+Face:komachi,晛
+如果能打赢前来超度的死神的话
+就能暂时延长寿命吧\
+
+Face:komachi,晛
+仙人啊，天人啊，
+这些大部分都是一直打赢的人类哦\
+
+Face:komachi,榝
+不过嘛，一般人的话首先没可能打得赢的，
+因为那些都是攻击人心弱点的精神攻击呢\
+
+Face:marisa,晧
+天人就是……
+是指现在在灵梦那里修复神社的家伙吧\
+
+Face:marisa,晧
+变成那些家伙那样我还真有点不乐意呢\
+
+Face:komachi,嬃
+咦？为什么天人会去修复神社……？\
+
+Face:komachi,晛
+那个巫女好大面子呢\
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+Stage:12,120
+
+#やられキャラ画面退場
+Action:marisa,201
+
+#自キャラ基準点へ移動
+Action:komachi,150
+
+#カメラ中央あわせ
+Action:komachi,4
+
+Sleep:120;
+
+End:
+
+
+
+
+
+## =======================================================================

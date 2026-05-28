@@ -1,0 +1,205 @@
+## =======================================================================
+#Stage:3
+#Title:蒼天の剣
+#Place:冥界
+#Weather:
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Font.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Window.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Background.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*CG.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+#PlayBgm:data/bgm/ta00.ogg
+#0１２３４５６７８９０１２３４５６７８９０１２３
+
+#０１２３４５６７８９０１２３４５６７８９０１２３
+
+Character:komachi,160,0,0,8888FF
+Character:youmu,160,0,1,FF8888
+#敵画面外に待機
+Action:youmu,100
+#カメラ固定
+Action:komachi,4
+
+#フォーカス瞬間移動
+#Action:komachi,11
+
+#向き固定解除
+Action:komachi,152
+
+Label:Start
+PlayBgm:data/bgm/ta00.ogg
+
+Sleep:30;
+
+#ステージタイトル表示
+Object:data/scenario/komachi/effect/StageTitle003.bmp,0,256,-32
+Sleep:60;
+Object:data/scenario/effect/Stage3.bmp,1,256,352
+Sleep:60
+
+Face:komachi,晛
+咱记得这里确实也有个有趣的家伙呢\
+
+Face:komachi,
+Hide:1
+Sleep:30
+
+#
+# 敵登場
+#
+Action:youmu,101
+#敵天候
+Action:youmu,103
+Action:youmu,102
+
+Sleep:20
+
+Face:youmu,晛
+你是？唉呀，辛苦你了
+幽灵这边有发生什么事情吗？\
+
+# 名前のテロップ
+Object:data/scenario/youmu/effect/Name.bmp,2,352,304
+
+Face:komachi,晛
+说起来，幽灵被斩的事情也减少了不少呢\
+
+Face:komachi,榝
+虽然不知道为什么，
+但似乎那不是你干的呢？\
+
+Face:youmu,晛
+是啊，那件事情似乎是天人搞得鬼哦～\
+
+Face:komachi,嬃
+那是什么意思？\
+
+Face:youmu,晛
+现在，天人不是在神社帮忙重建吗，
+于是我去问了一下\
+
+Face:youmu,榝
+似乎是通过斩杀幽灵来将<accent>气</accent>卷上<accent>天</accent>，
+以此改变自身周围的<accent>天气</accent>\
+
+Face:youmu,婐
+现在已经不再这么干了
+所以天气很快应该也能恢复了\
+
+Face:komachi,嬃
+你说什么！？\
+
+Face:youmu,嬃
+？\
+
+Face:komachi,娋
+啊，没有关系
+那、那真是太好了太好了\
+
+Face:komachi,晛
+话说，你的天气是非常美丽的苍天呢\
+
+Face:youmu,榝
+太热了让人不太快活呢\
+
+Face:komachi,婐
+这么蔚蓝的天空下还真想闹腾一番呢\
+
+Face:youmu,娋
+我可没这感觉啊\
+
+#戦闘開始
+PlayBgm:data/bgm/st14.ogg
+Action:komachi,3
+
+End:
+
+# 戦闘開始
+
+# --------------------------------
+# 戦闘終了　負け
+Label:Lose
+
+Face:youmu,梋
+总算，澄清了随便乱斩幽灵的嫌疑
+这一点真是太好了\
+
+Face:youmu,晛
+我只有在感觉到幽灵很烦人的时候才会斩掉，
+所以应该不会有那么多的\
+
+End:
+
+# --------------------------------
+# 戦闘終了　コンテニュー処理
+Label:Continue
+
+#天候初期化
+Action:youmu,113
+
+End:
+
+# --------------------------------
+# 戦闘終了　勝ち
+Label:Win
+
+#やられキャラ完全ダウン検知
+Action:youmu,200
+#攻撃側ニュートラル移行検知
+Action:komachi,202
+
+#自キャラ天候
+Action:komachi,103
+Sleep:60
+
+Face:komachi,晛
+苍天是生物活动的象征以及空虚\
+
+Face:komachi,梋
+活着的时候得到这种气质的话会很麻烦，
+但却是很多死者拥有的气质\
+
+Face:komachi,晛
+搞不好会变成那种心中有个空洞的幽灵呢\
+
+Face:youmu,晧
+别随便进行幽灵诊断啊\
+
+Face:komachi,嬃
+啊呀，马上就不能再这么玩了呢\
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+Stage:18,120
+
+#やられキャラ画面退場
+Action:youmu,201
+
+#自キャラ基準点へ移動
+Action:komachi,150
+
+#カメラ中央あわせ
+Action:komachi,4
+
+Sleep:120;
+
+End:
+
+
+
+
+
+## =======================================================================

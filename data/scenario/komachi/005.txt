@@ -1,0 +1,155 @@
+## =======================================================================
+#Stage:6
+#Title:有頂天の頭上華萎
+#Place:壊れた神社
+#Weather:
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Font.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Window.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Background.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*CG.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+#PlayBgm:data/bgm/ta00.ogg
+#0１２３４５６７８９０１２３４５６７８９０１２３
+
+
+#０１２３４５６７８９０１２３４５６７８９０１２３
+
+Character:komachi,160,0,0,8888FF
+Character:tenshi,160,0,1,FF8888
+#カメラ固定
+Action:komachi,4
+#フォーカス瞬間移動
+#Action:komachi,11
+
+#向き固定解除
+Action:komachi,152
+
+Label:Start
+
+#Sleep:30;
+PlayBgm:data/bgm/st05.ogg
+
+#ステージタイトル表示
+Object:data/scenario/komachi/effect/StageTitle006.bmp,0,256,-32
+Sleep:60;
+Object:data/scenario/effect/StageFinal.bmp,1,256,352
+Sleep:60;
+
+Face:tenshi,晛
+我可没有会被死神超度所幻惑的迷茫\
+
+Face:komachi,榝
+不过嘛，其实超度是咱工作范围以外的事情呢～
+咱就是个小小的船夫而已\
+
+Face:tenshi,榝
+船夫？
+难道是三途河上摆渡的？\
+
+Face:komachi,嬃
+对对，咱可不会随便就杀人的哦\
+
+Face:komachi,榝
+不过嘛
+气质……就是幽灵给你随便乱斩可不行啊\
+
+Face:tenshi,梋
+喔\
+
+Face:komachi,榝
+咱听说了哦，是你干的吧？
+把幽灵变成了天上的气\
+
+Face:komachi,梋
+幽灵要是不能渡过河去的话，
+咱会被上面的人给注意的。\
+
+Face:komachi,梋
+那样的话可就头疼了\
+
+
+Face:tenshi,婐
+这可真有趣啊
+本来与定期前来超度的死神打斗啊—\
+
+Face:tenshi,婐
+就是少数能让我感到快乐的事情
+竟然还有机会和船夫打\
+
+Face:komachi,寛
+咱劝你为了自己好还是不要太小看<ruby 咱>死神</ruby>了。
+天人最害怕的不就是死神吗？\
+
+Face:tenshi,晛
+天人所害怕的是被给予五衰\
+
+Face:tenshi,榝
+死神则是其中之一的<ruby ｔｏｕｓｈａｎｇｈｕａｗｅｉ>头上华萎</ruby>
+也就是让我们头上的鲜花<ruby ｋｕｗｅｉ>枯萎</ruby> \
+
+Face:tenshi,寛
+不过，五衰之一的<ruby ｂｕｌｅｂｅｎｚｕｏ>不乐本座</ruby>啊……
+托死神的福似乎已经对我无效了！\
+
+#戦闘開始処理
+Action:komachi,3
+
+End:
+
+# 戦闘開始
+
+# --------------------------------
+# 戦闘終了　負け
+Label:Lose
+
+Face:tenshi,晛
+说到底不过是个船夫\
+
+Face:tenshi,梋
+和使用不可思议的精神攻击超度的死神完全不同呢\
+
+End:
+
+# --------------------------------
+# 戦闘終了　コンテニュー処理
+Label:Continue
+
+#背景　神社へ
+Action:tenshi,182
+#天候初期化
+Action:tenshi,113
+
+End:
+
+# --------------------------------
+# 戦闘終了　勝ち
+Label:Win
+
+#やられキャラ完全ダウン検知
+Action:tenshi,200
+#攻撃側ニュートラル移行検知
+Action:komachi,202
+
+Sleep:30
+Result:
+
+#イベント　勝利演出フェード
+
+End:
+
+
+
+
+
+## =======================================================================

@@ -1,0 +1,254 @@
+## =======================================================================
+#Stage:4
+#Title:若い玄雲海
+#Place:玄海雲
+#Weather:
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Font.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Window.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Background.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*CG.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+#PlayBgm:data/bgm/ta00.ogg
+#0１２３４５６７８９０１２３４５６７８９０１２３
+
+Character:patchouli,160,0,0,8888FF
+Character:iku,120,20,1,FF8888
+
+#専用ステージ初期設定
+Action:iku,139
+
+#天候初期化
+Action:iku,153
+
+#カメラ固定
+Action:patchouli,4
+
+#フォーカス瞬間移動
+Action:patchouli,11
+
+#自キャラ画面左待機
+Action:patchouli,5
+
+PlayBgm:data/bgm/ta02.ogg
+
+#背景暗雲設置
+Action:iku,134
+
+#向き固定解除
+Action:patchouli,152
+
+Label:Start
+
+#フェードイン　黒
+Action:patchouli,161
+
+Sleep:60
+
+#ステージタイトル表示
+Object:data/scenario/patchouli/effect/StageTitle004.bmp,0,256,-32
+Sleep:60
+Object:data/scenario/effect/Stage4.bmp,1,256,352
+Sleep:300
+
+#雲中背景解除
+Action:iku,135
+Sleep:120
+
+#画面上から登場
+Action:patchouli,6
+
+#登場終了検知
+Action:patchouli,7
+
+Sleep:60
+
+Face:patchouli,榝
+为什么大家都注意不到
+明明大家体内的气质都化成雾气在消散啊\
+
+Face:patchouli,晛
+那雾气会使周围的天气改变
+最后雾气被集中向天空中的一点\
+
+Face:patchouli,
+Hide:1
+Sleep:60
+
+#衣玖黒塗りで画面上から登場
+Action:iku,130
+Sleep:90
+Face:iku,
+注意云的颜色\
+
+注意云的密度\
+
+
+#落雷+衣玖の姿が浮かび上がる
+Action:iku,131
+
+
+Face:iku,
+这样下去的话会冲入危险区域的哦\
+
+Sleep:40
+
+Face:patchouli,晛
+谁？\
+
+Face:iku,嬃
+哦哦？
+这种云层内居然还有其他人\
+
+Face:iku,榝
+这难道也是预兆吗\
+
+Face:patchouli,晛
+我是向着气质，不，
+是向着绯色的云雾汇集的地方前进来到这里的\
+
+Face:patchouli,晛
+你到底是？\
+
+#イベント　衣玖浮遊状態終了
+Action:iku,132
+
+# 名前のテロップ
+#Name:美しき緋の衣　永江衣玖
+Object:data/scenario/iku/effect/Name.bmp,2,352,304
+
+Face:iku,嬃
+我是在积雨云中游泳的龙宫使者\
+
+Face:iku,梋
+这片云层很可能成长为危险区域\
+
+Face:iku,晛
+我只是来这里确认下而已\
+
+PlayBgm:data/bgm/st04.ogg
+
+Face:patchouli,榝
+这片汇集了大家气质的云层究竟……
+会带来什么危险\
+
+Face:iku,嬃
+汇集了什么……？
+我不明白你的意思……\
+
+Face:iku,榝
+确实这片云层有可能让大地觉醒这是事实\
+
+Face:patchouli,榝
+……那就是你的目的吗？\
+
+Face:patchouli,寛
+那就麻烦你把知道的事情全交代出来了！\
+
+
+
+#戦闘開始処理
+Action:patchouli,3
+
+End:
+
+# 戦闘開始
+
+# --------------------------------
+# 戦闘終了　負け
+Label:Lose
+
+Face:iku,嬃
+虽然现在还不要紧……\
+
+Face:iku,梋
+但云层像现在这样继续成长下去的话，
+地震是无法避免的吧\
+
+End:
+
+# --------------------------------
+# 戦闘終了　コンテニュー処理
+Label:Continue
+
+#天候初期化
+Action:iku,153
+
+End:
+
+# --------------------------------
+# 戦闘終了　勝ち
+Label:Win
+
+#やられキャラ完全ダウン検知
+Action:iku,200
+#攻撃側ニュートラル移行検知
+Action:patchouli,202
+
+#Weather:天候クリア
+# 無天候へ
+Action:iku,133
+
+Face:patchouli,晛
+那么请你把知道的事情全交代出来吧！\
+
+Face:iku,晧
+这片绯色的云层
+很可能成长到足以引起地震的地步\
+
+Face:iku,晧
+我们知道的事只有这些\
+
+Face:iku,晧
+我们没有能够阻止地震的手段\
+
+Face:patchouli,晛
+……这片云层可是被人为聚集起来的云层哦\
+
+Face:iku,晧
+咦？
+是这样的吗？\
+
+Face:patchouli,晛
+所以，把聚集云层的家伙找出来教训一顿的话
+地震也应该能够避免的\
+
+Face:iku,晧
+竟然人为制造绯色的云层……\
+
+Face:patchouli,婐
+不过犯人是谁我心里大致也有数了呢\
+
+Hide:1
+
+Sleep:30
+#画面上部へ移動
+Action:patchouli,151
+
+Sleep:90
+Result:
+
+#フェードアウト　白
+Action:patchouli,162
+FadeBgm:2000,0
+Sleep:60
+
+Stage:5,0
+
+End:
+
+
+
+
+
+## =======================================================================

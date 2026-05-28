@@ -1,0 +1,176 @@
+## =======================================================================
+#Stage:5
+#Title:人間の限界
+#Place:有頂天
+#Weather:
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Font.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Window.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Background.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*CG.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+#PlayBgm:data/bgm/ta00.ogg
+#0１２３４５６７８９０１２３４５６７８９０１２３
+
+#０１２３４５６７８９０１２３４５６７８９０１２３
+
+Character:tenshi,160,0,0,8888FF
+Character:marisa,160,0,1,FF8888
+
+#分画面外に待機
+Action:marisa,100
+#カメラ固定
+Action:tenshi,4
+#フォーカス瞬間移動
+#Action:tenshi,11
+
+#向き固定解除
+Action:tenshi,152
+
+Label:Start
+
+PlayBgm:data/bgm/ta05.ogg
+
+Sleep:30;
+
+#ステージタイトル表示
+Object:data/scenario/tenshi/effect/StageTitle005.bmp,0,256,-32
+Sleep:60;
+Object:data/scenario/effect/Stage5.bmp,1,256,352
+Sleep:60;
+
+#０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９\
+Face:tenshi,晛
+说起来她到底叫了多少人啊？\
+
+Face:tenshi,梋
+天界竟然一下集中了那么多人……\
+
+Face:tenshi,
+Hide:1
+Sleep:30
+
+# 敵登場
+Action:marisa,101
+Action:marisa,102
+
+Sleep:20
+
+Face:marisa,寛
+好啊，我第一个！\
+
+# 名前のテロップ
+Object:data/scenario/marisa/effect/Name.bmp,2,352,304
+
+Face:marisa,晛
+哎呀，爬山真够累的呢，真是\
+
+Face:tenshi,娋
+很遗憾你离第一个差得远去了\
+
+Face:marisa,嬃
+唉—？
+这不离约定的时间还差<ruby 一段时间>两个小时</ruby>的吗？\
+#<ruby いっとき>两个小时</ruby>
+
+Face:tenshi,榝
+有人一大早可就来了\
+
+Face:marisa,榝
+搞什么嘛，大家都够急性子呢。
+离约定时间早那么多跑来\
+
+Face:tenshi,娋
+你不也是吗？
+我说你们来那么早究竟想搞什么啊？\
+
+Face:marisa,梋
+那个嘛，要打发时间还不是小事一桩嘛？\
+
+Face:tenshi,婐
+说的也是\
+#戦闘開始処理
+
+PlayBgm:data/bgm/st11.ogg
+Action:tenshi,3
+End:
+
+# --------------------------------
+# 戦闘終了　負け
+Label:Lose
+
+Face:marisa,晛
+还有不少时间啊\
+
+Face:marisa,榝
+说起来那么早来的家伙究竟是谁啊？\
+
+End:
+
+# --------------------------------
+# 戦闘終了　コンテニュー処理
+Label:Continue
+
+#天候初期化
+Action:tenshi,153
+
+End:
+
+# --------------------------------
+# 戦闘終了　勝ち
+Label:Win
+
+
+#やられキャラ完全ダウン検知
+Action:marisa,200
+#攻撃側ニュートラル移行検知
+Action:tenshi,202
+
+Face:tenshi,梋
+这样就可以了吧。
+你表现也很不错了\
+
+Face:marisa,晧
+呜哇你真够强的。
+被萃香给骗了啊\
+
+Face:tenshi,榝
+？\
+
+Face:tenshi,婐
+反正嘛，要是我不手下留情大概就是这么回事吧……
+好了，先来的诸位都在里面等着哦\
+
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+#やられキャラ画面退場
+Action:marisa,201
+
+#自キャラ基準点へ移動
+Action:tenshi,150
+
+#カメラ中央あわせ
+Action:tenshi,4
+
+Sleep:120;
+
+End:
+
+
+
+
+
+## =======================================================================

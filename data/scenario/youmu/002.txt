@@ -1,0 +1,235 @@
+## =======================================================================
+#Stage:3
+#Title:二つ目の成仏
+#Place:玄武の沢
+#Weather:川霧
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "royal blue"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "royal blue"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+#0１２３４５６７８９０１２３４５６７８９０１２３
+
+Character:youmu,160,0,0,8888FF
+Character:komachi,160,0,1,FF8888
+Character:yukari,160,0,2,FF8888
+
+#カメラ固定
+Action:youmu,4
+
+#フォーカス瞬間移動
+#Action:youmu,11
+
+#敵フィールド端で待機
+Action:komachi,100
+
+#向き固定解除
+Action:youmu,152
+
+Label:Start
+
+PlayBgm:data/bgm/ta00.ogg
+Sleep:30;
+
+#ステージタイトル表示
+Object:data/scenario/youmu/effect/StageTitle003.bmp,0,256,-32
+Sleep:60;
+Object:data/scenario/effect/Stage3.bmp,1,256,352
+Sleep:60
+
+Face:youmu,晛
+虽然我觉得不太可能……\
+
+Face:youmu,榝
+总之还是去找死神也问一下吧……\
+
+Face:youmu,
+Hide:1
+Sleep:30
+
+#
+# 敵登場
+#
+Action:komachi,101
+Action:komachi,102
+Sleep:20
+
+Face:komachi,晛
+怎么了？
+一脸想睡觉的样子\
+
+# 名前のテロップ
+Object:data/scenario/komachi/effect/Name.bmp,2,352,304
+
+Face:youmu,娋
+不是，最近幽灵的数量有所减少呢……
+话说我可没想睡觉\
+
+Hide:1
+#敵天候
+Action:komachi,103
+Sleep:60
+
+Face:komachi,嬃
+啊啊，幽灵是吗
+对了，关于那件事情咱想给你个忠告\
+
+Face:youmu,晛
+什么？\
+
+Face:komachi,晛
+是你吧？
+最近到处去斩幽灵的人\
+
+Face:komachi,搟
+幽灵们被斩之后
+就不知道跑哪去了\
+
+Face:youmu,嬃
+咦？　被斩？
+什么意思？\
+
+Face:komachi,晛
+咱才想问你呢\
+
+Face:youmu,嬃
+至少我没去斩啊\
+
+Face:komachi,梋
+除了你以外还有谁能够<ruby 做那种事>斩掉幽灵</ruby>吗？\
+
+Face:komachi,寛
+要是你自己没印象的话，
+就回去好好想想自己是不是得梦游症了！\
+
+
+#戦闘開始
+PlayBgm:data/bgm/st02.ogg
+Action:youmu,3
+
+End:
+
+# 戦闘開始
+
+# --------------------------------
+# 戦闘終了　負け
+Label:Lose
+
+Face:komachi,梋
+好了好了，最近工作量减轻真的很快活呢\
+
+Face:komachi,娋
+……好像也不能那么不负责任的开心呢\
+
+End:
+
+# --------------------------------
+# 戦闘終了　コンテニュー処理
+Label:Continue
+
+#天候初期化
+Action:komachi,113
+
+End:
+
+# --------------------------------
+# 戦闘終了　勝ち
+Label:Win
+
+#やられキャラ完全ダウン検知
+Action:komachi,200
+#攻撃側ニュートラル移行検知
+Action:youmu,202
+
+#自天候
+Action:youmu,103
+Sleep:60
+
+Face:youmu,搟
+那不是我干的
+我自己也在调查幽灵那件事情！\
+
+Face:komachi,晧
+是那样吗？\
+
+Face:komachi,晧
+还有其他人能做到那种事情吗……？\
+
+Face:komachi,無
+Face:youmu,無
+<color FFFFFF>当然有啊</color>\
+
+Face:youmu,
+Face:komachi,
+
+Hide:1
+
+Sleep:30
+
+#二番手登場
+Action:yukari,105
+
+#Weather:二番手天候
+Action:yukari,103
+
+#105終了検知
+Action:yukari,106
+
+Face:youmu,嬃
+哎！？
+紫大人？\
+
+Face:yukari,晛
+妖梦，能够斩杀幽灵的可不止你一个人\
+
+Face:youmu,晛
+是、是真的吗？\
+
+# 名前のテロップ
+Object:data/scenario/yukari/effect/Name.bmp,2,352,304
+
+Face:yukari,晛
+幽灵被随意乱斩的现状相当危险啊\
+
+Face:youmu,榝
+但是，究竟为什么要去斩幽灵呢？\
+
+Face:yukari,晛
+来，到这来……\
+
+Hide:1
+
+Sleep:10
+
+#やられキャラ画面退場
+Action:komachi,201
+
+#ステージ間調整自キャラ
+Action:youmu,150
+Sleep:15
+
+#ステージ間調整敵
+Action:yukari,110
+Stage:1,120
+CrossFadeBgm:data/bgm/st01.ogg,2000,1
+
+#カメラ中央あわせ
+Action:youmu,4
+
+#ステージ間調整敵　終了検知
+Action:yukari,111
+
+Sleep:60
+
+End:
+
+
+
+
+
+## =======================================================================

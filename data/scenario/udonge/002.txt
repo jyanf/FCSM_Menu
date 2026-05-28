@@ -1,0 +1,221 @@
+## =======================================================================
+#Stage:3
+#Title:不可思議な落成式
+#Place:壊れた神社
+#Weather:
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Font.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Window.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Background.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*CG.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+#PlayBgm:data/bgm/ta00.ogg
+#0１２３４５６７８９０１２３４５６７８９０１２３
+
+Character:udonge,160,0,0,8888FF
+Character:yukari,160,0,1,FF8888
+Character:tenshi,160,0,2,FF8888
+
+#カメラ固定
+Action:udonge,4
+
+#フォーカス瞬間移動
+#Action:udonge,11
+
+#敵フィールド端で待機
+Action:yukari,100
+
+#向き固定解除
+Action:udonge,152
+
+Label:Start
+PlayBgm:data/bgm/ta07.ogg
+
+Sleep:30;
+
+#ステージタイトル表示
+Object:data/scenario/udonge/effect/StageTitle003.bmp,0,256,-32
+Sleep:60;
+Object:data/scenario/effect/Stage3.bmp,1,256,352
+Sleep:60;
+
+Face:udonge,嬃
+……\
+
+Face:udonge,娋
+……我眼花了？\
+
+Face:udonge,梋
+搞什么嘛，被那亡灵给耍了啊
+神社这不是，根本就没修好吗\
+
+Sleep:30
+
+Face:udonge,無
+Face:yukari,無
+你已经来迟了\
+
+Face:udonge,嬃
+！？\
+
+#敵登場
+Action:yukari,101
+Action:yukari,102
+Sleep:60
+Face:yukari,晛
+神社的落成典礼已经结束了啊\
+
+Face:udonge,娋
+落成典礼……难道不是要等落成之后才开的吗？\
+
+
+# 名前のテロップ
+Object:data/scenario/yukari/effect/Name.bmp,2,352,304
+
+Face:yukari,梋
+别在意细节问题
+然后呢？你有什么事情吗？现在再来\
+
+Face:udonge,搟
+稍微有点想要调查的东西……\
+
+Face:yukari,婐
+调查什么呢？\
+
+Face:udonge,榝
+关于被地震破坏的神社的事情啊\
+
+Face:yukari,寛
+不～干\
+
+Face:udonge,嬃
+咦？\
+
+Face:yukari,寛
+绝对不让你调查哦
+这是我的神社\
+
+PlayBgm:data/bgm/st18.ogg
+
+Action:udonge,3
+
+End:
+
+# 戦闘開始
+
+# --------------------------------
+# 戦闘終了　負け
+Label:Lose
+
+Face:yukari,晛
+关于天人所安放的要石\
+
+#0１２３４５６７８９０１２３４５６７８９０１２３
+Face:yukari,婐
+我已经让鬼族的人们去调查了
+没有你这个宇宙人出场的戏份啦\
+
+End:
+
+# --------------------------------
+# 戦闘終了　コンテニュー処理
+Label:Continue
+
+#天候初期化
+Action:udonge,104
+
+End:
+
+# --------------------------------
+# 戦闘終了　勝ち
+Label:Win
+
+#やられキャラ完全ダウン検知
+Action:yukari,200
+#攻撃側ニュートラル移行検知
+Action:udonge,202
+
+#自天候
+Face:udonge,搟
+什么嘛，给我调查一下你少块肉啊
+对于神社倒塌这件事怎么都觉得很不放心呢\
+
+Face:yukari,晧
+神社不是你出场的地方\
+
+Face:udonge,搟
+但是，地震啊……\
+
+Hide:1
+
+#二番手登場
+FadeBgm:200,0
+Action:tenshi,105
+
+#105終了検知
+Action:tenshi,106
+
+Face:tenshi,晧
+啊疼疼疼……\
+
+Face:udonge,嬃
+啊、天人大人……！？\
+
+Face:tenshi,晧
+啊—啊，神社被那家伙给拆了\
+
+Face:udonge,榝
+？\
+
+Face:udonge,榝
+啊，我听说了哦？
+听说是你把神社给破坏了？\
+
+Face:tenshi,晧
+是—啦
+不过那也是过去的事情了\
+
+Face:udonge,榝
+？？？　算了不问这个了
+其他要问的事情都堆成山了\
+
+Hide:1
+
+Sleep:10
+
+#やられキャラ画面退場
+Action:yukari,201
+
+#ステージ間調整自キャラ
+Action:udonge,150
+Sleep:15
+
+#ステージ間調整敵
+Action:tenshi,110
+#CrossFadeBgm:data/bgm/st05.ogg,2000,0
+
+#カメラ中央あわせ
+Action:udonge,4
+
+#ステージ間調整敵　終了検知
+Action:tenshi,111
+
+Sleep:60
+
+End:
+
+
+
+
+
+## =======================================================================

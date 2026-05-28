@@ -1,0 +1,180 @@
+## =======================================================================
+#Stage:4
+#Title:最後の警告
+#Place:白玉楼の雪庭
+#Weather:
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Font.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Window.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Background.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*CG.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+#PlayBgm:data/bgm/ta00.ogg
+#0１２３４５６７８９０１２３４５６７８９０１２３
+
+
+#０１２３４５６７８９０１２３４５６７８９０１２３
+
+Character:iku,160,0,0,8888FF
+Character:yuyuko,120,20,1,FF8888
+#分画面外に待機
+Action:yuyuko,100
+#カメラ固定
+Action:iku,4
+#フォーカス瞬間移動
+#Action:iku,11
+
+#向き固定解除
+Action:iku,152
+
+Label:Start
+
+PlayBgm:data/bgm/ta04.ogg
+
+Sleep:60;
+
+#ステージタイトル表示
+Object:data/scenario/iku/effect/StageTitle004.bmp,0,256,-32
+#登場モーション開始
+Action:yuyuko,101
+#敵キャラ天候
+Action:yuyuko,103
+Sleep:60;
+Object:data/scenario/effect/Stage4.bmp,1,256,352
+Sleep:60;
+#登場モーション終了検知
+Action:yuyuko,102
+
+Face:iku,晛
+那里不久就会发生地震\
+
+# 名前のテロップ
+#Name:風雨の鴉　射命丸文
+Object:data/scenario/yuyuko/effect/Name.bmp,2,352,304
+
+Face:yuyuko,晛
+哎呀，终于要发生地震了吗\
+
+Face:yuyuko,梋
+不过，有没有可能其实有你不知道的内幕，
+结果最后地震就不会发生了呢？\
+
+Face:iku,榝
+……谁知道呢\
+
+Face:iku,榝
+虽然比那名居家的人
+确实有可以镇住地震的能力……\
+
+Face:iku,晛
+但她们八成也不会那么做\
+
+Face:yuyuko,婐
+实际上有人在神社里装了什么东西，
+最后镇住了地震\
+
+Face:yuyuko,婐
+……这种事情也不可能呢\
+
+Face:iku,榝
+？　虽然不知道你为什么会做那种想象，
+但不可能吧\
+
+Face:iku,晛
+那么，这样一来大部分人几乎都通知到了，
+我也就回去了\
+
+Face:yuyuko,嬃
+等一等啦，
+不来一场吗？\
+
+
+#戦闘開始処理
+PlayBgm:data/bgm/st16.ogg
+Action:iku,3
+
+End:
+
+# 戦闘開始
+
+# --------------------------------
+# 戦闘終了　負け
+Label:Lose
+
+Face:yuyuko,晛
+好了，你可以回去啦\
+
+Face:yuyuko,梋
+到我这来不比试一场就回去也太失礼了哦\
+
+End:
+
+# --------------------------------
+# 戦闘終了　コンテニュー処理
+Label:Continue
+
+#天候初期化
+Action:yuyuko,113
+
+End:
+
+# --------------------------------
+# 戦闘終了　勝ち
+Label:Win
+
+#やられキャラ完全ダウン検知
+Action:yuyuko,200
+#攻撃側ニュートラル移行検知
+Action:iku,202
+
+
+Face:iku,榝
+我只是来告知一下要发生地震而已，
+为什么就会发展成战斗了呢……\
+
+Face:yuyuko,晛
+想想看是不是说了什么多余的话之类的\
+
+Face:iku,晛
+我觉得自己是尽量简单明了的通知下去的呢\
+
+Face:iku,婐
+这个就不说了
+再见，记得一定要小心地震哦\
+
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+Sleep:30;
+
+#上空移行用上空退避
+Action:iku,151
+
+Sleep:90;
+
+#フェードアウト　黒
+Action:iku,160
+Sleep:60;
+
+
+Stage:4,0
+
+End:
+
+
+
+
+
+## =======================================================================

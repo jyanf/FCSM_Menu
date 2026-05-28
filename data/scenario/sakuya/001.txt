@@ -1,0 +1,233 @@
+## =======================================================================
+#Stage:2
+#Title:蒼天の冥界
+#Place:冥界
+#Weather:蒼天
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "royal blue"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "royal blue"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+
+#０１２３４５６７８９０１２３４５６７８９０１２３
+
+
+Character:sakuya,160,0,0,8888FF
+Character:youmu,160,0,1,FF8888
+Character:yuyuko,160,0,2,FF8888
+#敵画面外に待機
+Action:youmu,100
+#カメラ固定
+Action:sakuya,4
+
+#フォーカス瞬間移動
+#Action:sakuya,11
+
+#向き固定解除
+Action:sakuya,152
+
+Label:Start
+
+PlayBgm:data/bgm/ta03.ogg
+
+Sleep:30;
+
+#ステージタイトル表示
+Object:data/scenario/sakuya/effect/StageTitle002.bmp,0,256,-32
+Sleep:30;
+Object:data/scenario/effect/Stage2.bmp,1,256,352
+Sleep:30
+
+Face:sakuya,榝
+好像被什么吸走一般从身体里冒出来的气……\
+
+Face:sakuya,晛
+说到从身体里冒出来的气就要数幽灵了呢\
+
+Face:sakuya,
+Hide:1
+Sleep:30
+
+#
+# 敵登場
+#
+Action:youmu,101
+Action:youmu,102
+
+Sleep:20
+
+Face:youmu,晛
+发生什么了？
+一脸阴沉的表情\
+
+# 名前のテロップ
+Object:data/scenario/youmu/effect/Name.bmp,2,352,304
+
+Face:sakuya,晛
+不是，只是在想又要发生什么不可思议的事情……\
+
+Hide:1
+
+# ここで妖夢の体から緋色の霧が立ち上る
+# その後天候が変化がいいかな
+
+#敵天候
+Action:youmu,103
+Sleep:60
+
+Face:sakuya,晛
+从你的身体里也冒出来了哦\
+
+
+Face:youmu,嬃
+啊？
+你说什么？\
+
+Face:sakuya,榝
+类似幽灵一般的东西从身体里冒出来了\
+
+Face:youmu,晛
+幽灵？
+幽灵的话我想的确是有冒出来的啊\
+
+
+Face:sakuya,晛
+要说可疑的话还真是可疑
+不好意思我要进去一趟了哦\
+
+Face:youmu,榝
+虽然搞不太清楚状况不过我可不打算放你进去\
+
+
+
+#戦闘開始
+PlayBgm:data/bgm/st02.ogg
+Action:sakuya,3
+
+End:
+
+# 戦闘開始
+
+# --------------------------------
+# 戦闘終了　負け
+Label:Lose
+
+Face:youmu,榝
+最近，就光我周围热得人受不了啊\
+
+Face:youmu,榝
+家里那边也是怪事情一大堆\
+
+End:
+
+# --------------------------------
+# 戦闘終了　コンテニュー処理
+Label:Continue
+
+#天候初期化
+Action:youmu,113
+
+End:
+
+# --------------------------------
+# 戦闘終了　勝ち
+Label:Win
+
+#やられキャラ完全ダウン検知
+Action:youmu,200
+#攻撃側ニュートラル移行検知
+Action:sakuya,202
+
+#霧雨
+Action:sakuya,103
+
+Face:sakuya,梋
+好了，让我进去吧\
+
+Face:youmu,晧
+真是没办法啊\
+
+Face:youmu,晧
+不过现在啊，家里正发生怪事情呢\
+
+Face:sakuya,榝
+怪事情……？@
+那我就更不能不去了呢\
+
+Face:sakuya,
+Face:youmu,
+
+Hide:1
+
+Sleep:30
+
+#二番手登場
+Action:yuyuko,105
+
+#Weather:二番手天候
+Action:yuyuko,103
+
+#105終了検知
+Action:yuyuko,106
+
+Face:yuyuko,晛
+什么怪事情啊？ 妖梦\
+
+Face:youmu,晧
+哇哇，幽々子大人\
+
+Face:sakuya,嬃
+……咦？\
+
+Face:sakuya,嬃
+下雪了？
+现在明明是夏天的说……\
+
+# 名前のテロップ
+Object:data/scenario/yuyuko/effect/Name.bmp,2,352,304
+
+Face:yuyuko,婐
+我周围可没有发生一点怪事情哦\
+
+Face:yuyuko,婐
+来来，想来我家的话请进请进\
+
+Face:sakuya,晛
+不是，总感觉这已经足够奇怪了……\
+
+Hide:1
+
+Sleep:10
+
+#やられキャラ画面退場
+Action:youmu,201
+
+#ステージ間調整自キャラ
+Action:sakuya,150
+Sleep:15
+
+#ステージ間調整敵
+Action:yuyuko,110
+Stage:17,120
+CrossFadeBgm:data/bgm/st01.ogg,2000,1
+
+#カメラ中央あわせ
+Action:sakuya,4
+
+#ステージ間調整敵　終了検知
+Action:yuyuko,111
+
+Sleep:60
+
+End:
+
+
+
+
+
+## =======================================================================

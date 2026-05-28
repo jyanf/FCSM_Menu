@@ -1,0 +1,205 @@
+## =======================================================================
+#Stage:2
+#Title:新しき神社
+#Place:壊れた神社
+#Weather:蒼天
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "royal blue"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "royal blue"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+#0１２３４５６７８９０１２３４５６７８９０１２３
+
+Character:youmu,160,0,0,8888FF
+Character:reimu,160,0,1,FF8888
+#敵画面外に待機
+Action:reimu,100
+#カメラ固定
+Action:youmu,4
+
+#フォーカス瞬間移動
+#Action:youmu,11
+
+#向き固定解除
+Action:youmu,152
+
+Label:Start
+
+PlayBgm:data/bgm/ta05.ogg
+
+Sleep:30;
+
+#ステージタイトル表示
+Object:data/scenario/youmu/effect/StageTitle002.bmp,0,256,-32
+Sleep:60;
+Object:data/scenario/effect/Stage2.bmp,1,256,352
+Sleep:60
+
+Face:youmu,嬃
+……\
+
+Face:youmu,嬃
+咦？
+神社原来是这么有异国情调的建筑吗？\
+
+Face:youmu,
+Hide:1
+Sleep:30
+
+#
+# 敵登場
+#
+Action:reimu,101
+Action:reimu,102
+
+Sleep:20
+
+Face:reimu,搟
+啊—真是的搞什么啊
+今天不开张啦！\
+
+# 名前のテロップ
+Object:data/scenario/reimu/effect/Name.bmp,2,352,304
+
+Face:youmu,晛
+发生什么事了？
+怎么把神社给改装成这么奇怪的样子了\
+
+Face:reimu,搟
+你家会改装成这样啊？
+是被破坏了啊，被鲶鱼给！\
+
+Face:youmu,榝
+……我们家里堆满了积雪，
+神社被鲶鱼给弄坏了\
+
+Face:youmu,晛
+幽灵也不知道消失到哪去了……
+总觉得怪事连连呢\
+
+Hide:1
+
+#敵天候
+Action:reimu,103
+Sleep:60
+
+Face:reimu,搟
+你也是来碍我事的吗？\
+
+Face:youmu,梋
+哪里哪里，我可没有那意思……
+话说，太阳光突然强烈起来了呢\
+
+Face:reimu,梋
+啊—好热好热
+话说你刚刚说什么来着？\
+
+Face:reimu,婐
+『……我们家里堆满了积雪』
+那我要不要去避个暑啊\
+
+Face:youmu,嬃
+咦？@
+那啥我不在家的时候你可不能去\
+
+Face:reimu,搟
+吵死人了呢
+我现在可一肚子闷火没处发啊！\
+
+#戦闘開始
+PlayBgm:data/bgm/st00.ogg
+Action:youmu,3
+
+End:
+
+# 戦闘開始
+
+# --------------------------------
+# 戦闘終了　負け
+Label:Lose
+
+Face:reimu,婐
+再见，我去了哦\
+
+Face:reimu,梋
+你就在这里帮我重建神社吧\
+
+End:
+
+# --------------------------------
+# 戦闘終了　コンテニュー処理
+Label:Continue
+
+#天候初期化
+Action:reimu,113
+
+End:
+
+# --------------------------------
+# 戦闘終了　勝ち
+Label:Win
+
+#やられキャラ完全ダウン検知
+Action:reimu,200
+#攻撃側ニュートラル移行検知
+Action:youmu,202
+
+#天候蒼天に変化
+Action:youmu,103
+Sleep:60;
+
+Face:youmu,梋
+呼，我明白现在神社的问题很棘手，
+不过你也冷静点\
+
+Face:reimu,晧
+呜—\
+
+Face:youmu,榝
+……嗯—
+神社里也没发现幽灵的踪影\
+
+Face:youmu,榝
+我说，幽灵都到哪去了你知道吗？\
+
+Face:reimu,晧
+啊～？幽灵？
+你不就是的吗？\
+
+Face:reimu,晧
+难道不是去渡三途河了吗？\
+
+Face:youmu,榝
+唔—嗯，
+但愿没出什么大事就好\
+
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+Stage:2,120
+
+#やられキャラ画面退場
+Action:reimu,201
+
+#自キャラ基準点へ移動
+Action:youmu,150
+
+#カメラ中央あわせ
+Action:youmu,4
+
+Sleep:120;
+
+End:
+
+
+
+
+
+## =======================================================================

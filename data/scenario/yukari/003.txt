@@ -1,0 +1,238 @@
+## =======================================================================
+#Stage:4
+#Title:跡取り娘の行方
+#Place:玄海雲
+#Weather:台風
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Bgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+#0１２３４５６７８９０１２３４５６７８９０１２３
+
+
+Character:yukari,160,0,0,8888FF
+Character:iku,120,20,1,FF8888
+
+#分画面外に待機
+Action:iku,100
+#カメラ固定
+Action:yukari,4
+
+#Action:iku,133
+#フォーカス瞬間移動
+#Action:yukari,11
+
+#向き固定解除
+Action:yukari,152
+
+Label:Start
+
+Sleep:30;
+
+#自分登場
+Action:yukari,50
+Action:yukari,51
+
+PlayBgm:data/bgm/ta00.ogg
+
+#ステージタイトル表示
+Object:data/scenario/yukari/effect/StageTitle004.bmp,0,256,-32
+Sleep:60
+Object:data/scenario/effect/Stage4.bmp,1,256,352
+Sleep:60
+
+#０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９\
+Face:yukari,晛
+……哪都没有\
+
+Face:yukari,梋
+天界用地也太过奢侈了\
+
+Face:yukari,晛
+什么天界已经饱和了禁止成佛根本就是骗人呢@
+纯粹是不想变得拥挤而已……\
+
+Face:yukari,晛
+天人都是舍弃世俗的人也是个大谎言@
+其实就是最狡猾的人类的巢穴\
+
+Face:yukari,
+Hide:1
+Sleep:30
+
+# 敵登場
+Action:iku,101
+Action:iku,102
+
+Sleep:20
+
+Face:iku,榝
+哎呀，趴在地上的妖怪？\
+
+Face:yukari,晛
+你是……@
+龙宫使吧\
+
+# 名前のテロップ
+Object:data/scenario/iku/effect/Name.bmp,2,352,304
+
+Face:iku,嬃
+嗯确实不假\
+
+Face:yukari,晛
+今天是被差使来做什么的？
+难不成是，报告地震？\
+
+Face:iku,晛
+不是，关于地震已经基本上没有危险了
+比那名居家的<ruby ｊｉｃｈｅｎｇｒｅｎｘｉａｏｊｉｅ>继承人小姐</ruby>好像在神社插入了要石\
+
+Face:iku,梋
+话说，我们平常就是住在天界里的
+所以在这里出现也没什么好奇怪的啊……\
+
+Face:iku,晛
+有地上的妖怪出现才让人奇怪呢\
+
+Face:yukari,晛
+我在找一个天人\
+
+Face:yukari,梋
+比那名居 天子\
+
+Face:iku,榝
+继承人小姐吗？@
+找她有什么事情吗？\
+
+Face:yukari,梋
+让她死一次看看\
+
+Face:iku,嬃
+哎呀哎呀@
+那还真是可怕啊\
+
+PlayBgm:data/bgm/st04.ogg
+
+Face:yukari,寛
+好了，她人在哪呢？\
+
+#0１２３４５６７８９０１２３４５６７８９０１２３
+Face:iku,晛
+我想想啊@
+继承人小姐的话现在应该去地面上了才对\
+
+Face:yukari,榝
+唉呀？
+怎么和灵梦说的正好矛盾了呢\
+
+Face:iku,娋
+我悄悄告诉你 
+实际上在天人们中间啊\
+
+Face:iku,娋
+那个人行为太过自由也让所有人都很头疼呢\
+
+Face:yukari,梋
+实际上被你们给藏起来了吧？\
+
+Face:iku,晛
+我想她是真的不在的说……\
+
+#戦闘開始処理
+
+Action:yukari,3
+End:
+
+# 戦闘開始
+
+# --------------------------------
+# 戦闘終了　負け
+Label:Lose
+
+Face:iku,晛
+你要是想给继承人小姐脑子里紧紧螺丝的话
+那感激不尽\
+
+Face:iku,梋
+啊，当然我刚刚说的话请务必保密哦？\
+
+End:
+
+# --------------------------------
+# 戦闘終了　コンテニュー処理
+Label:Continue
+
+#天候初期化
+Action:yukari,104
+
+End:
+
+# --------------------------------
+# 戦闘終了　勝ち
+Label:Win
+
+
+#やられキャラ完全ダウン検知
+Action:iku,200
+#攻撃側ニュートラル移行検知
+Action:yukari,202
+
+Face:yukari,梋
+好了，告诉我她人在哪\
+
+Face:iku,晧
+不是啦，她真的不在\
+
+Face:yukari,娋
+唔
+看样子是白费时间和体力了呢\
+
+Face:iku,晛
+你要是想给继承人小姐脑子里紧紧螺丝的话
+那感激不尽\
+
+Face:iku,梋
+啊，当然我刚刚说的话请务必保密哦？\
+
+Face:yukari,梋
+刚刚我不是说了吗？
+不是紧紧螺丝而是让她死一次看看\
+
+
+Hide:1
+#紫画面外へ隙間退避
+Action:yukari,155
+#紫画面外へ隙間退避完了確認
+Action:yukari,156
+
+Face:iku,無
+Face:yukari,無
+
+哈啊浪费时间。浪费时间\
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+Stage:0,120
+
+#やられキャラ画面退場
+Action:iku,201
+
+#カメラ中央あわせ
+Action:yukari,4
+
+Sleep:120;
+
+End:
+
+
+## =======================================================================

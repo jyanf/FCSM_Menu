@@ -1,0 +1,190 @@
+## =======================================================================
+#Stage:5
+#Title:始まらない夏
+#Place:大図書館
+#Weather:
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+#0１２３４５６７８９０１２３４５６７８９０１２３
+
+#０１２３４５６７８９０１２３４５６７８９０１２３
+
+Character:remilia,160,0,0,8888FF
+Character:youmu,160,0,1,FF8888
+#敵画面外に待機
+Action:youmu,100
+#カメラ固定
+Action:remilia,4
+
+#フォーカス瞬間移動
+#Action:remilia,11
+
+#向き固定解除
+Action:remilia,152
+
+Label:Start
+PlayBgm:data/bgm/ta04.ogg
+
+Sleep:30;
+
+#ステージタイトル表示
+Object:data/scenario/remilia/effect/StageTitle005.bmp,0,256,-32
+Sleep:60;
+Object:data/scenario/effect/Stage5.bmp,1,256,352
+Sleep:60
+
+Face:remilia,晛
+来，下一位请～！\
+Face:remilia,
+Hide:1
+Sleep:30
+
+#
+# 敵登場
+#
+Action:youmu,101
+Action:youmu,102
+
+Sleep:20
+
+Face:youmu,榝
+咦？咲夜她说在开宴会
+不分三七二十一把我抓过来……\
+
+# 名前のテロップ
+Object:data/scenario/youmu/effect/Name.bmp,2,352,304
+
+Face:remilia,梋
+小心别人的甜言蜜语\
+
+Action:youmu,103
+Face:youmu,娋
+我是被不分三七二十一抓来的\
+
+Face:remilia,梋
+啊—，禁止交头接耳@
+你以前曾经摆弄过天侯对吧？\
+
+Face:youmu,晛
+天候？@
+不啊那是幽々子大人她……\
+
+Face:remilia,梋
+那么就肯定了
+这次你也是犯人！\
+
+
+
+
+#戦闘開始
+PlayBgm:data/bgm/st14.ogg
+Action:remilia,3
+
+Hide:1
+
+#敵天候
+Sleep:60
+
+End:
+
+# 戦闘開始
+
+# --------------------------------
+# 戦闘終了　負け
+Label:Lose
+
+Face:youmu,榝
+真无聊呢\
+
+Face:youmu,晛
+能不能帮着调查调查
+幽灵有没有减少啊\
+
+
+End:
+
+# --------------------------------
+# 戦闘終了　コンテニュー処理
+Label:Continue
+
+#天候初期化
+Action:youmu,113
+
+End:
+
+# --------------------------------
+# 戦闘終了　勝ち
+Label:Win
+
+#やられキャラ完全ダウン検知
+Action:youmu,200
+#攻撃側ニュートラル移行検知
+Action:remilia,202
+
+#自キャラ天候
+Action:remilia,103
+Sleep:60
+
+Face:remilia,梋
+你做这种事情对自己究竟有什么好处？\
+
+Face:youmu,晧
+这种事情是啥啊……？\
+
+Face:remilia,榝
+你把天气弄乱了对吧？\
+
+#0１２３４５６７８９０１２３４５６７８９０１２３
+Face:youmu,晧
+天气……？
+啊～难道你是说我们家里下雪的事情吗？\
+
+Face:remilia,嬃
+咦？下雪？\
+
+Face:youmu,晧
+那件事情搞不好是幽々子大人干的呢\
+
+Face:remilia,嬃
+咦？咦？
+你说什么？\
+
+Face:youmu,晧
+你要调查那件事情的话，我来帮忙\
+
+Face:remilia,娋
+啊，嗯
+那就拜托你了\
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+#やられキャラ画面退場
+Action:youmu,201
+
+#自キャラ基準点へ移動
+Action:remilia,150
+
+#カメラ中央あわせ
+Action:remilia,4
+
+Sleep:120;
+
+End:
+
+
+
+
+
+## =======================================================================

@@ -1,0 +1,212 @@
+## =======================================================================
+#Stage:1
+#Title:緋色の霧雨
+#Place:神社
+#Weather:快晴
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "royal blue"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "royal blue"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+
+
+
+Action:reimu,103
+
+# -------------------------------------------------------
+#0１２３４５６７８９０１２３４５６７８９０１２３
+Character:reimu,160,0,0,8888FF
+Character:marisa,160,0,1,FF8888
+
+#背景倒壊神社
+Stage:0,0
+
+#敵画面外に待機
+Action:marisa,100
+
+Bgm:data/bgm/ta00.ogg
+
+#カメラ上空
+Action:reimu,1
+
+Label:Start
+#自分天候
+Action:reimu,103
+
+Sleep:60;
+
+#ステージタイトル表示
+Object:data/scenario/reimu/effect/StageTitle001.bmp,0,256,-32
+Sleep:30;
+Object:data/scenario/effect/Stage1.bmp,1,256,352
+Sleep:30;
+
+Action:reimu,2
+
+# -------------------------------------------------------
+# -------------------------------------------------------
+# 会話開始
+Face:reimu,晛
+#０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９\
+……\
+
+Face:reimu,娋
+……还真是坏得彻底啊\
+
+这可不是打扫一下就能解决得了\
+
+Face:reimu,
+Hide:1
+Sleep:30
+
+#
+# 敵登場
+Action:marisa,101
+Action:marisa,102
+
+Face:marisa,榝
+唉呀，糟糕啦
+最近<accent>连续阴雨</accent>搞得我连衣服都没法洗了啊\
+
+# -------------------------------------------------------
+# 名前のテロップ
+#Name:霧雨の魔法使い　霧雨魔理沙
+Object:data/scenario/marisa/effect/Name.bmp,2,352,304
+
+Face:marisa,嬃
+……我说，你这啥啊\
+
+Face:reimu,晛
+什么你这啥啊，就算坏掉了这不还是神社啊\
+
+你家没关系吗？@
+今天早上那大地震\
+
+Face:marisa,晛
+哈？
+地震了？\
+
+我可没感觉到那东西啊\
+
+Hide:1
+
+#敵天候
+Action:marisa,103
+Sleep:60
+
+Face:reimu,榝
+啊啊真是的，连天气都开始变坏了\
+
+Face:marisa,榝
+有什么办法呢
+最近一直就<accent>连续阴雨</accent>\
+
+Face:reimu,晛
+你从刚刚就老是满口连续阴雨，
+我这里最近可连续在晒太阳啊！\
+
+Face:reimu,娋
+今天早上那地震也是，大得吓人来着啊！
+怎么可能没一点感觉嘛\
+
+Face:marisa,榝
+就算你这么说啊……\
+
+
+Face:reimu,晛
+总觉得很奇怪啊，
+嗅到异变的味道了呢\
+
+Face:marisa,晛
+噢真是奇遇呢。
+我也正好这么想来着\
+
+Face:reimu,寛
+而且空中那云的颜色……\
+
+Face:reimu,
+
+PlayBgm:data/bgm/st00.ogg
+
+Action:reimu,3
+End:
+
+# 戦闘開始
+
+# --------------------------------
+# 戦闘終了　負け
+Label:Lose
+
+Face:marisa,婐
+再见啦，灵梦就老老实实躺在那好了
+这次异变的调查就交给我啦\
+
+End:
+
+# --------------------------------
+# 戦闘終了　コンテニュー処理
+Label:Continue
+
+#天候初期化
+Action:marisa,113
+
+End:
+
+# --------------------------------
+# 戦闘終了　勝ち
+Label:Win
+
+
+#やられキャラ完全ダウン検知
+Action:marisa,200
+#攻撃側ニュートラル移行検知
+Action:reimu,202
+
+#自分天候
+Action:reimu,103
+Sleep:60;
+
+Face:reimu,梋
+再见啦，魔理沙你就老老实实在那帮我修好神社啊，
+这次异变就由我去解决\
+
+Face:marisa,晧
+为什么啊
+你还不是因为我来了才发现有异变的吗\
+
+Face:reimu,婐
+异变一定要尽早发现\
+
+Face:reimu,晛
+只要发现有一点奇怪的事情马上就要出发，
+这就是巫女的责任啊\
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+Stage:1,120
+
+#やられキャラ画面退場
+Action:marisa,201
+
+#自キャラ基準点へ移動
+Action:reimu,150
+
+#カメラ中央あわせ
+Action:reimu,4
+
+Sleep:120;
+
+End:
+
+
+
+
+
+## =======================================================================

@@ -1,0 +1,191 @@
+## =======================================================================
+#Stage:1
+#Title:「ブロッケンの妖怪」
+#Place:霧の湖の辺
+
+Character:suwako,160,0,0,8888FF
+Character:patchouli,160,0,1,FF8888
+Character:alice,160,0,2,FF8888
+
+#画面表示前処理終了============================
+
+Label:Start
+Sleep:60
+
+#ステージタイトル表示
+Object:data/scenario/suwako/effect/StageTitle007.bmp,0,192,-32
+Sleep:30;
+Object:data/scenario/effect/Stage7.bmp,1,256,352
+Sleep:216;
+
+Sleep:60;
+
+# 普、嬉、余、汗、驚、怒、決、惑、負
+
+Face:patchouli,驚
+Are you a God?\
+
+Face:suwako,普
+Maybe...\
+
+Face:suwako,余
+I'm a Native God!\
+
+Face:patchouli,決
+If Meiling can't beat you, I will.\
+
+Face:suwako,決
+Show me your power, old Magician!\
+
+#戦闘開始処理
+
+#　戦闘開始処理
+
+Action:suwako,203
+Action:patchouli,203
+Action:suwako,167#　フラッシュ
+Action:suwako,3
+
+End:
+
+# --------------------------------
+#中間デモ
+Label:Intermission10
+
+Action:patchouli,154
+
+#やられキャラ完全ダウン検知
+Action:patchouli,200
+#攻撃側ニュートラル移行検知
+Action:patchouli,3　#空起き上がる
+
+Sleep:60;
+Action:patchouli,203　#チルノ驚く
+Sleep:60;
+# 空が倒れている
+
+Face:suwako,汗
+That's all?\
+
+Face:patchouli,怒
+No, you'll see that the people who live in
+the Scarlet Devil mansion are not weak!\
+
+Hide:1
+
+
+#戦闘開始処理
+
+Action:suwako,203#　ニュートラル状態へ
+Action:patchouli,203#　ニュートラル状態へ
+
+戦闘再開処理
+Action:patchouli,210#　死亡フラグ類初期化
+
+End:
+
+# --------------------------------
+# 戦闘終了　負け
+Label:Lose
+
+End:
+
+# --------------------------------
+# 戦闘終了　コンテニュー処理
+Label:Continue
+
+End:
+
+# --------------------------------
+# 戦闘終了　勝ち
+Label:Win
+
+#やられキャラ完全ダウン検知
+#Action:patchouli,200
+#攻撃側ニュートラル移行検知
+#Action:suwako,202
+
+#Action:suwako,164
+Sleep:15
+
+#Action:suwako,204
+#Action:patchouli,205
+
+#カメラ中央固定
+#Action:suwako,2　
+
+Face:suwako,決
+Old magician, you failed to defeat me.\
+
+Sleep:60
+
+Face:suwako,惑
+?!\
+
+Face:suwako,惑
+I found The Gigant Thing!!!\
+
+Face:suwako,惑
+I will destroy that thing!!!\
+
+Face:patchouli,負
+I can't let her escape...\
+
+Hide:1
+
+Sleep:90
+
+#やられキャラ画面退場
+Action:suwako,151
+
+Sleep:120
+
+Action:alice,105
+Action:alice,103
+Action:alice,106
+
+Face:alice,惑
+Damn, that goddess noticed.\
+
+Face:alice,惑
+I have to get there first!\
+
+Face:alice,
+Face:patchouli,負
+...\
+
+Sleep:60;
+
+Hide:1
+
+Sleep:60;
+
+#やられキャラ画面退場
+Action:alice,151
+
+Sleep:120
+
+Result:
+FadeBgm:2000,0
+
+Action:suwako,160　#画面黒にフェードアウト
+
+Sleep:120;
+
+Action:suwako,204
+Action:alice,205
+
+#カメラ中央固定
+Action:suwako,1
+Action:alice,100
+
+
+Sleep:120;
+
+End:
+
+
+
+
+
+## =======================================================================

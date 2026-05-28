@@ -1,0 +1,220 @@
+## =======================================================================
+#Stage:1
+#Title:「ブロッケンの妖怪」
+#Place:霧の湖の辺
+
+Character:suwako,160,0,0,8888FF
+Character:utsuho,160,0,1,FF8888
+
+#自分初期配置
+Action:suwako,1　#画面外待機
+
+#敵初期配置
+Action:utsuho,100　#画面外で待機
+
+#カメラ中央固定
+Action:suwako,2
+
+#画面表示前処理終了============================
+
+Label:Start
+PlayBgm:data/bgm/room.ogg
+Sleep:60;
+
+#画面黒からフェードイン
+Action:suwako,161
+Sleep:120;
+
+#ステージタイトル表示
+Object:data/scenario/suwako/effect/StageTitle005.bmp,0,192,-32
+Sleep:30;
+Object:data/scenario/effect/Stage5.bmp,1,256,352
+Sleep:216;
+
+Sleep:60;
+
+Action:suwako,6
+Action:suwako,7 #登場動作終了検知
+
+Sleep:70;
+
+# 普、嬉、余、汗、驚、怒、決、惑、負
+
+Face:suwako,惑
+I don't see Utsuho...\
+
+Face:suwako,汗
+Is she facing another...?\
+
+Hide:1
+
+Sleep:30
+
+Action:utsuho,101　#画面が揺れて霊夢が落ちてくる
+Action:utsuho,102　#100終了検知
+
+Sleep:60
+
+Face:utsuho,驚
+Oh, Suwako, What are you doing here?\
+
+Face:suwako,普
+I just came to check to see what was going on here.\
+
+Face:suwako,嬉
+I see you kicked everyone out.\
+
+Face:utsuho,余
+I am very powreful!\
+
+Face:suwako,余
+I see how powerful you are.\
+
+Face:utsuho,嬉
+Yes!\
+
+Face:suwako,驚
+I still have a doubt though.\
+
+Face:suwako,決
+And show me your power!\
+
+PlayBgm:data/bgm/st33.ogg
+
+#戦闘開始処理
+
+#　戦闘開始処理
+
+Action:suwako,203
+Action:utsuho,203
+Action:suwako,167#　フラッシュ
+Action:suwako,3
+
+End:
+
+# --------------------------------
+#中間デモ
+Label:Intermission10
+
+Action:utsuho,154
+
+#やられキャラ完全ダウン検知
+Action:utsuho,200
+#攻撃側ニュートラル移行検知
+Action:utsuho,3　#空起き上がる
+
+Sleep:60;
+Action:utsuho,203　#チルノ驚く
+Sleep:60;
+# 空が倒れている
+
+Face:suwako,決
+Very well!\
+
+Face:utsuho,惑
+What did you want this fight for?\
+
+Face:suwako,余
+Well, for fun, apart from trying fun things.\
+
+Face:suwako,嬉
+Apart from that the final will be amazing, for me.\
+
+Face:suwako,決
+Come on, let's finish this.\
+
+Hide:1
+
+
+#戦闘開始処理
+
+Action:suwako,203#　ニュートラル状態へ
+Action:utsuho,203#　ニュートラル状態へ
+
+戦闘再開処理
+Action:utsuho,210#　死亡フラグ類初期化
+
+End:
+
+# --------------------------------
+# 戦闘終了　負け
+Label:Lose
+
+End:
+
+# --------------------------------
+# 戦闘終了　コンテニュー処理
+Label:Continue
+
+End:
+
+# --------------------------------
+# 戦闘終了　勝ち
+Label:Win
+
+#やられキャラ完全ダウン検知
+#Action:utsuho,200
+#攻撃側ニュートラル移行検知
+#Action:suwako,202
+
+#Action:suwako,164
+Sleep:15
+
+#Action:suwako,204
+#Action:utsuho,205
+
+#カメラ中央固定
+#Action:suwako,2　
+
+Sleep:30
+#Action:suwako,165
+
+Sleep:30
+
+Face:suwako,決
+We have already finished!\
+
+Sleep:60
+
+Face:utsuho,負
+Yes, I see it...\
+
+Face:suwako,嬉
+Well, I'm going to a place that
+I have left for a "Giant Youkai".\
+
+Hide:1
+Sleep:60
+
+Sleep:90
+
+Result:
+FadeBgm:2000,0
+
+#やられキャラ画面退場
+Action:suwako,151
+
+Sleep:120
+
+Action:suwako,160　#画面黒にフェードアウト
+
+Sleep:120;
+
+Action:suwako,204
+
+#カメラ中央固定
+Action:suwako,1
+
+Sleep:120;
+
+Stage:12,0
+
+Sleep:120;
+
+End:
+
+
+
+
+
+## =======================================================================

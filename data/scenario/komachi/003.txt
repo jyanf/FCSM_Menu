@@ -1,0 +1,216 @@
+## =======================================================================
+#Stage:4
+#Title:迷界の竹林
+#Place:迷いの竹林
+#Weather:
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Font.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Window.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Background.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*CG.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+#PlayBgm:data/bgm/ta00.ogg
+#0１２３４５６７８９０１２３４５６７８９０１２３
+
+#０１２３４５６７８９０１２３４５６７８９０１２３
+
+Character:komachi,160,0,0,8888FF
+Character:udonge,160,0,1,FF8888
+#敵画面外に待機
+Action:udonge,100
+#カメラ固定
+Action:komachi,4
+
+#フォーカス瞬間移動
+#Action:komachi,11
+
+#向き固定解除
+Action:komachi,152
+
+Label:Start
+PlayBgm:data/bgm/ta08.ogg
+
+Sleep:30;
+
+#ステージタイトル表示
+Object:data/scenario/komachi/effect/StageTitle004.bmp,0,256,-32
+Sleep:60;
+Object:data/scenario/effect/Stage4.bmp,1,256,352
+Sleep:60
+
+Face:komachi,晛
+人活着即是一种迷茫\
+
+Face:komachi,榝
+给这里起名叫什么迷途的竹林，
+是不是就是想象征活着的意思呢\
+
+Face:komachi,晛
+这里住着一群不老不死的家伙呢\
+
+Face:komachi,
+Hide:1
+Sleep:30
+
+#
+# 敵登場
+#
+Action:udonge,101
+Action:udonge,102
+
+Sleep:20
+
+Face:udonge,晛
+你是不是迷路了啊？\
+
+# 名前のテロップ
+Object:data/scenario/udonge/effect/Name.bmp,2,352,304
+
+Face:udonge,嬃
+我说，你是不是死神？
+那个以从不工作而闻名的？\
+
+Face:komachi,梋
+要不要咱在这工作一下啊？\
+
+Face:udonge,娋
+您还是继续偷懒吧\
+
+Hide:1
+#敵天候
+Action:udonge,103
+Sleep:60
+
+Face:komachi,嬃
+噢，明明是大晴天却刮大风了呢……\
+
+Face:udonge,晛
+？\
+
+Face:komachi,晛
+风是出现在心理不平衡的人身上的气质\
+
+Face:komachi,梋
+你是那种见人说人话，见鬼说鬼话的幽灵啊\
+
+#0１２３４５６７８９０１２３４５６７８９０１２３
+Face:komachi,榝
+虽然很会混社会，
+但相反的也很容易得心病\
+
+Face:udonge,榝
+你在说什么啊？\
+
+Face:komachi,梋
+不过，你的天空一片晴朗，
+就是说心里没有什么太多的迷茫吗\
+
+Face:udonge,搟
+虽然不知道你在说什么，但要是没有迷路的话，
+就请赶快回去吧\
+
+Face:komachi,婐
+等等，等等别这么说啦……
+稍微陪咱玩玩不行吗\
+
+
+#戦闘開始
+PlayBgm:data/bgm/st20.ogg
+Action:komachi,3
+
+End:
+
+# 戦闘開始
+
+# --------------------------------
+# 戦闘終了　負け
+Label:Lose
+
+Face:udonge,晛
+我可忙着呢\
+
+Face:udonge,榝
+你不去工作真的可以吗？\
+
+End:
+
+# --------------------------------
+# 戦闘終了　コンテニュー処理
+Label:Continue
+
+#天候初期化
+Action:udonge,113
+
+End:
+
+# --------------------------------
+# 戦闘終了　勝ち
+Label:Win
+
+#やられキャラ完全ダウン検知
+Action:udonge,200
+#攻撃側ニュートラル移行検知
+Action:komachi,202
+
+#自キャラ天候
+Action:komachi,103
+Sleep:60
+
+Face:komachi,晛
+风开始减弱了呢，
+已经到时间了吗？\
+
+Face:komachi,梋
+话说回来，你死后究竟准备去哪里呢\
+
+Face:udonge,晧
+为什么我现在非要考虑死后的事情啊\
+
+Face:komachi,婐
+因为那就是咱的工作呢\
+
+Face:udonge,晧
+就、就是想像一般人那样渡过三途河然后悠闲的等着转生\
+
+Face:komachi,晛
+哎呀是吗
+……也好，人总要有点梦想嘛\
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+#やられキャラ画面退場
+Action:udonge,201
+
+#自キャラ基準点へ移動
+Action:komachi,151
+
+
+Sleep:120;
+
+#Sleep:90
+
+#フェードアウト　白
+Action:komachi,162
+Sleep:60
+
+Stage:0,0
+
+End:
+
+
+
+
+
+## =======================================================================
