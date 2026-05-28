@@ -41,7 +41,7 @@ local function MenuProcess(menu)
 		return false
 	elseif(input.a==1) then
 		local result = m.index
-		menu.renderer:ShowChoice("确认选择“"..soku.characterName(result).."”吗？", true)
+		menu.renderer:ShowChoice("Sure to choose \""..soku.characterName(result).."\"?", true)
 		soku.playSFX(61)
 		data["box"] = true
 	end
@@ -57,7 +57,7 @@ soku.SubscribeSceneChange(
 	function(id, scene)
 		if(id~=soku.Scene.SelectStage) then return false end
 		--print("submenu")
-		local infoS = scene.renderer:createText("已修改角色值。请勿切换角色，直接进入对战。", ft, 400, 20)
+		local infoS = scene.renderer:createText("Character was set, now enter battle to start!", ft, 400, 20)
 		infoS.position.x=-10
 		infoS.position.y=-440
 		infoS:setColor(0x00FFFFFF)
