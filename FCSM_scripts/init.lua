@@ -191,9 +191,10 @@ local function EnableAll (state)
     local thisptr = state.ecx
     local unlocked = {}
     local es = split_chars(memory.readbytes(ADDR_ENABLED_SCENARIOS, 20))
+    local ss = split_chars(memory.readbytes(ADDR_SCENARIO_SCORES, 20))
     for k = 1, 20 do
         local i = k-1
-        unlocked[k] = not originalScenario[i] and es[k]~=0
+        unlocked[k] = not originalScenario[i] and (es[k]~=0 or ss[k]~=0)
     end
 
     for k=19,20 do
