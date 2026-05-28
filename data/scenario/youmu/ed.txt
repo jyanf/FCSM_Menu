@@ -1,0 +1,108 @@
+# ----------------------------------------------------
+# Ending
+# Stage:Ending
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Bgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Font.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Window.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Background.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*CG.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+Font:MonoSpatialModSWR,15,0,6
+WindowColor:0,0,0,0
+Color:FFFFFF
+Background:data/scenario/effect/EdBack000.bmp,999,0,0
+CG:data/scenario/youmu/effect/ED000.bmp,96,16,50
+Label:Start
+Bgm:data/bgm/ta06.ogg
+
+# ˆê–‡–Ú
+# ”’‹Ê˜OAá‚ª—n‚¯n‚ß‚Ä‚¢‚é
+# 
+# @ˆê–‡–Ú‚ÍêŠ‚ğ¦‚·ŠÈ’P‚ÈƒCƒ‰ƒXƒg‚ª“ü‚é—\’è‚Å‚·
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+  Hakugyokurou in summer.@
+  The summer snow that had piled up brought a heavy moisture to the Netherworld.@
+  Since it had stopped falling\, it would probably
+  soon disappear under the summer sun.\
+
+  It seemed the ghosts had stopped disappearing since she'd gone to Heaven.@
+  All the mysterious occurrences must have been that crazy celestial's doing.@
+  Youmu returned to the Netherworld\, not entirely satisfied.\
+
+
+# “ñ–‡–Ú
+# —HXq‚ª‰‘¤‚Å‹‚»‚¤‚É‚µ‚Ä‚¢‚é
+# —d–²‚ªQ‚Ä‚Ä‚©‚«•X‚Å‚à·‚µ“ü‚ê
+
+CG:data/scenario/youmu/effect/ED001.bmp,96,16,50
+
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+Yuyuko "Oh\, it's sure gone back to hot summer days.
+        Why did you have to go do something about it?"@
+Youmu  "No\, something bad probably would have happened
+        if things had stayed the way they were."\
+
+Yuyuko "Something bad?"@
+Youmu  "All the strange weather was a manifestation of your temperament.
+        That's why it was snowing."\
+
+Yuyuko "And?@
+        Why are you going on about something so obvious now?"@
+Youmu  "I'm sorry?"\
+
+CG:data/scenario/youmu/effect/ED002.bmp,96,16,50
+# O–‡–Ú
+# ‚©‚«•X‚ğH‚×‚È‚ª‚ç—d–²‚É˜b‚ğ‚·‚é—HXq
+# —d–²‚Í³À‚µ‚Ä˜b‚ğ•·‚¢‚Ä‚¢‚é
+
+Yuyuko "Didn't you realize we had spirit pouring off us all this time?"@
+Youmu  "Unfortunately... "\
+
+Yuyuko "Too bad. If it'd turned into the essence of temparament\,
+        the subconscious\, I could've controlled the weather all I wanted."@
+Youmu  "Huh?"\
+
+Youmu  "Lady Yuyuko\, are you saying you knew that\, and you were making it snow?"@
+Yuyuko "Well\, who knows?
+        But it was nicer when it was cool out."\
+
+Youmu  "Well\, I wish you'd said something before...@
+        Oh\, but it seems the scarlet mist
+        that changed the weather also caused the earthquake.
+        So we would have had to do something\, in any case."\
+
+Yuyuko "Do you mean to say you resolved that issue?"@
+Youmu  "Yes. The scarlet mist is gone now."@
+Yuyuko "That's too bad. That might be enough to make an earthquake happen."\
+
+Youmu  "What?"@
+Yuyuko "Once something's awakened\, it won't be taken care of that easily.@
+        Your judgement has always been a bit naive\, Youmu."\
+
+Youmu  "Hmmm\, then what should I..."@
+Yuyuko "Well\, please make sure our furniture won't fall apart."\
+
+FadeBgm:2000,0
+CG:BLACK,0,0,15
+
+  Certainly\, they had to be prepared for earthquakes.
+  However\, if there was a way to create earthquakes\,
+  then perhaps there was a way to prevent them\, as well.\
+
+StaffRoll:
+
+  Youmu headed out to Heaven once more\,
+  this time to calmly listen to what the celestial had to say.\
+
+End:

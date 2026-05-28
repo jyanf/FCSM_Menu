@@ -1,0 +1,95 @@
+# ----------------------------------------------------
+# Ending
+# Stage:Ending
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Font.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Window.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Background.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*CG.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+Font:MonoSpatialModSWR,15,0,6
+WindowColor:0,0,0,0
+Color:FFFFFF
+Background:data/scenario/effect/EdBack000.bmp,999,0,0
+CG:data/scenario/remilia/effect/ED000.bmp,96,16,50
+Label:Start
+Bgm:data/bgm/ta06.ogg
+
+# ˆê–‡–Ú
+# g–‚ŠÙ‚ÌƒCƒ‰ƒXƒgi‘¼‚ÌƒLƒƒƒ‰‚Å‚àg‚¤”Ä—pŠGj
+# 
+# @ˆê–‡–Ú‚ÍêŠ‚ğ¦‚·ŠÈ’P‚ÈƒCƒ‰ƒXƒg‚ª“ü‚é—\’è‚Å‚·
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+  Summer at the Scarlet Devil Manor.@
+  It was a devil's manor\, on the shores of a lake.@
+  The entire manor was enveloped in mist\, keeping temperatures cool.\
+
+  According to rumor\, odd weather abounded; there was snow in the Netherworld\,
+  hail in the forest\, and endless sunshine at the shrine.\
+  Remilia had no way of investigating the cause of all this.\
+
+# “ñ–‡–Ú
+# }‘ŠÙ‚Å–{‚ğ’²‚×‚æ‚¤‚Æ‚·‚éƒŒƒ~ƒŠƒA
+# –{‚ğ•Ğ•t‚¯‚à‚¹‚¸U‚ç‚©‚µ‚Ä‚¢‚é
+
+CG:data/scenario/remilia/effect/ED001.bmp,96,16,50
+
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+Remi "There are too many books here.
+      I wonder what's written in all of them..."\
+
+Remi "'100 Varieties of Soybeans'
+      'The Fourth Most Efficient Aria'@
+      I bet even I could write a book like this."\
+
+Remi "I wonder where I can find a book about weather..."\
+
+
+CG:data/scenario/remilia/effect/ED002.bmp,96,16,50
+# O–‡–Ú
+# ƒpƒ`ƒ…ƒŠ[‚ª}‘ŠÙ‚É“ü‚Á‚Ä‚«‚ÄU‚ç‚©‚Á‚Ä‚¢‚é‚Ì‚ğŒ©‚Ä•ğ‚ê‚Ä‚é
+#
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+Patchy  "The weather books are straight up that way."@
+Remi    "Oh\, thanks."\
+
+Patchy  "Put your books back where you found them\, okay?@
+         They're all sorted now."@
+Remi    "Really? I already forgot where I found them."\
+
+Patchy  "Mmm... don't worry about it.@
+         Just tell me what you want and I'll research it for you."\
+
+Remi    "Aww\, I wanted to try doing the research this time."@
+Patchy  "... you must be bored."@
+Remi    "Incredibly."\
+
+Patchy  "Well\, then\, why don't we get two cups of tea from Sakuya?"@
+Remi    "Yes\, let's make it three."\
+
+FadeBgm:2000,0
+CG:BLACK,0,0,15
+
+  Vampires don't like sun or rain.
+  It was usually misty around the Scarlet Devil Manor\,
+  but localized rain showers had been popping up all around Gensokyo.\
+
+StaffRoll:
+
+  Remilia thought if she could find out what was making it rain
+  like that\, she could meet the enemy on her own terms.
+  After all\, she knew where her enemy was.\
+
+End:

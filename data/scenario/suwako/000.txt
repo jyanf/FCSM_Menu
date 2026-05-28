@@ -1,0 +1,254 @@
+## =======================================================================
+#Stage:1
+#Title:「ブロッケンの妖怪」
+#Place:霧の湖の辺
+
+Character:suwako,160,0,0,8888FF
+Character:chirno,160,0,1,FF8888
+
+#背景　霧の湖の辺
+Stage:30,0
+
+#自分初期配置
+Action:suwako,1　#画面外待機
+
+#敵初期配置
+Action:chirno,400　#チルノ左右へうろうろ状態開始
+
+#カメラ中央固定
+Action:suwako,2　
+
+#画面表示前処理終了============================
+
+Label:Start
+PlayBgm:data/bgm/ta05.ogg
+Sleep:60
+
+#ステージタイトル表示
+Object:data/scenario/suwako/effect/StageTitle001.bmp,0,192,-32
+Sleep:30;
+Object:data/scenario/effect/Stage1.bmp,1,256,352
+Sleep:216;
+
+Action:chirno,401　#チルノ後ろを向いて驚く
+Sleep:60;
+
+Face:chirno,汗
+So does that Daidarabocchi exist or not?\
+
+Action:chirno,407　#チルノごまかし動作高速化
+
+Face:chirno,驚
+That steam could have been because of the weather
+not because of something else...\
+
+Hide:1
+
+#
+# Utsuho
+Action:suwako,5
+Action:suwako,6 #登場動作終了検知
+
+Sleep:70;
+
+# 普、嬉、余、汗、驚、怒、決、惑、負
+Face:suwako,普
+Hey!\
+
+Face:suwako,汗
+(Another one who is believed to have seen
+something gigant.)\
+
+Action:chirno,405　#チルノこちらを向いて驚く
+Face:chirno,惑
+Eh?\
+
+Action:chirno,406　#チルノこちらを向いて驚く
+Face:chirno,汗
+Who are you?\
+
+Action:chirno,407　#チルノごまかし動作高速化
+Face:chirno,驚
+Oh wait. You're the frog maniatic.\
+
+Action:suwako,402# 諏訪子　疑問
+Face:suwako,普
+Yes, just like you. but instead of
+freezing them I make them live.\
+
+Action:chirno,406　#チルノこちらを向いて驚く
+Face:chirno,惑
+How do you know that?\
+
+Face:suwako,驚
+Are you blind or something?\
+
+Face:suwako,汗
+You just need to look at me...\
+
+Action:chirno,405　#チルノこちらを向いて驚く
+Face:chirno,汗
+I don't see anything.\
+
+Action:chirno,203　#チルノこちらを向いて驚く
+Action:suwako,404# 諏訪子　笑う
+Face:suwako,普
+It shows you are idiot. I live
+with frogs symbols on my clothes.\
+
+Face:chirno,惑
+Are you a goddess of frogs?\
+
+Action:suwako,203# 諏訪子　笑う
+Face:suwako,余
+I am a Native Goddess of the Earth...\
+
+Face:suwako,惑
+(Wow, I'm wasting my time with this ice fairy...)\
+
+Face:suwako,驚
+Hey, fairy, did you se where Sanae went?\
+
+Action:chirno,404
+Face:chirno,決
+Well no, but now I care to fight, defeat and show
+that I am the strongest with a simple goddess.\
+
+Action:suwako,203
+Face:suwako,汗
+Well, if there isn't other way...\
+
+#戦闘開始処理
+
+#　戦闘開始処理
+PlayBgm:data/bgm/st31.ogg
+Action:suwako,203
+Action:chirno,203
+Action:suwako,167#　フラッシュ
+Action:suwako,3
+
+End:
+
+# --------------------------------
+#中間デモ
+Label:Intermission10
+
+Action:chirno,154
+
+#やられキャラ完全ダウン検知
+Action:chirno,200
+#攻撃側ニュートラル移行検知
+Action:chirno,3　#空起き上がる
+
+Sleep:60;
+Action:chirno,203　#チルノ驚く
+Sleep:60;
+# 空が倒れている
+
+Action:chirno,406　#チルノこちらを向いて驚く
+Face:chirno,汗
+Phew...\
+
+Action:chirno,203　#チルノこちらを向いて驚く
+Face:suwako,余
+You give up?\
+
+Face:chirno,怒
+Never!!!\
+
+Hide:1
+
+
+#戦闘開始処理
+
+Action:suwako,203#　ニュートラル状態へ
+Action:chirno,203#　ニュートラル状態へ
+
+戦闘再開処理
+Action:chirno,210#　死亡フラグ類初期化
+
+End:
+
+# --------------------------------
+# 戦闘終了　負け
+Label:Lose
+
+End:
+
+# --------------------------------
+# 戦闘終了　コンテニュー処理
+Label:Continue
+
+End:
+
+# --------------------------------
+# 戦闘終了　勝ち
+Label:Win
+
+#やられキャラ完全ダウン検知
+#Action:chirno,200
+#攻撃側ニュートラル移行検知
+#Action:suwako,202
+
+#Action:suwako,164
+Sleep:15
+
+#Action:suwako,204
+#Action:chirno,205
+
+#カメラ中央固定
+#Action:suwako,2　
+
+Sleep:30
+#Action:suwako,165
+
+Sleep:30
+
+Action:suwako,402# 諏訪子　疑問
+Face:suwako,汗
+You remember I told you I'm a goddess, right?\
+
+Face:chirno,負
+Yes. I saw above all damage I have...\
+
+Face:suwako,普
+For the next think.\
+
+Face:suwako,怒
+Calculate your powers or species that you are!\
+
+Face:suwako,怒
+I will go to my shrine and if
+you see Sanae. let me know there.\
+
+Face:chirno,負
+Okeey...\
+
+Hide:1
+Sleep:60
+
+Sleep:90
+
+Result:
+FadeBgm:2000,0
+
+Stage:31,120
+
+#やられキャラ画面退場
+Action:chirno,201
+
+#自キャラ基準点へ移動
+Action:suwako,150
+
+#カメラ中央あわせ
+Action:suwako,4
+
+Sleep:120;
+
+End:
+
+
+
+
+
+## =======================================================================

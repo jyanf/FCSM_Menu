@@ -1,0 +1,191 @@
+## =======================================================================
+#Stage:5
+#Title:n‚Ü‚ç‚È‚¢‰Ä
+#Place:‘å}‘ŠÙ
+#Weather:
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+#‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+Character:remilia,160,0,0,8888FF
+Character:youmu,160,0,1,FF8888
+#“G‰æ–ÊŠO‚É‘Ò‹@
+Action:youmu,100
+#ƒJƒƒ‰ŒÅ’è
+Action:remilia,4
+
+#ƒtƒH[ƒJƒXuŠÔˆÚ“®
+#Action:remilia,11
+
+#Œü‚«ŒÅ’è‰ğœ
+Action:remilia,152
+
+Label:Start
+PlayBgm:data/bgm/ta04.ogg
+
+Sleep:30;
+
+#ƒXƒe[ƒWƒ^ƒCƒgƒ‹•\¦
+Object:data/scenario/remilia/effect/StageTitle005.bmp,0,192,-32
+Sleep:60;
+Object:data/scenario/effect/Stage5.bmp,1,256,352
+Sleep:60
+
+Face:remilia,•
+Yes\, step right up!\
+Face:remilia,
+Hide:1
+Sleep:30
+
+#
+# “G“oê
+#
+Action:youmu,101
+Action:youmu,102
+
+Sleep:20
+
+Face:youmu,˜f
+Eh? Sakuya said there was a party
+and forcefully dragged me over here...\
+
+# –¼‘O‚Ìƒeƒƒbƒv
+Object:data/scenario/youmu/effect/Name.bmp,2,352,304
+
+Face:remilia,—]
+You should be more careful
+about listening to sweet words.\
+
+Action:youmu,103
+Face:youmu,Š¾
+I was forcefully dragged over here.\
+
+Face:remilia,—]
+Ah\, stop whispering.@
+Haven't you tampered with the climate before?\
+
+Face:youmu,•
+The climate?@
+No\, that was Lady Yuyuko's...\
+
+Face:remilia,—]
+Then it's settled!
+This time you're the criminal!\
+
+
+
+
+#í“¬ŠJn
+PlayBgm:data/bgm/st14.ogg
+Action:remilia,3
+
+Hide:1
+
+#“G“VŒó
+Sleep:60
+
+End:
+
+# í“¬ŠJn
+
+# --------------------------------
+# í“¬I—¹@•‰‚¯
+Label:Lose
+
+Face:youmu,˜f
+You're bored\, aren't you.\
+
+Face:youmu,•
+The number of ghosts has been decreasing lately\,
+so maybe you could look into that?\
+
+
+End:
+
+# --------------------------------
+# í“¬I—¹@ƒRƒ“ƒeƒjƒ…[ˆ—
+Label:Continue
+
+#“VŒó‰Šú‰»
+Action:youmu,113
+
+End:
+
+# --------------------------------
+# í“¬I—¹@Ÿ‚¿
+Label:Win
+
+#‚â‚ç‚êƒLƒƒƒ‰Š®‘Sƒ_ƒEƒ“ŒŸ’m
+Action:youmu,200
+#UŒ‚‘¤ƒjƒ…[ƒgƒ‰ƒ‹ˆÚsŒŸ’m
+Action:remilia,202
+
+#©ƒLƒƒƒ‰“VŒó
+Action:remilia,103
+Sleep:60
+
+Face:remilia,—]
+What do you gain by doing this?\
+
+Face:youmu,•‰
+Doing this... ?\
+
+Face:remilia,˜f
+By making the weather strange?\
+
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+Face:youmu,•‰
+The weather... ?
+Oh\, you mean making snow fall by the manor?\
+
+Face:remilia,‹Á
+Eh? Snow?\
+
+Face:youmu,•‰
+That should be the work of Lady Yuyuko.\
+
+Face:remilia,‹Á
+Eh? Eh?
+What are you talking about?\
+
+Face:youmu,•‰
+I'll help you investigate\, then.\
+
+Face:remilia,Š¾
+Ah\, okay.
+I'm counting on you.\
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+#‚â‚ç‚êƒLƒƒƒ‰‰æ–Ê‘Şê
+Action:youmu,201
+
+#©ƒLƒƒƒ‰Šî€“_‚ÖˆÚ“®
+Action:remilia,150
+
+#ƒJƒƒ‰’†‰›‚ ‚í‚¹
+Action:remilia,4
+
+Sleep:120;
+
+End:
+
+
+
+
+
+## =======================================================================

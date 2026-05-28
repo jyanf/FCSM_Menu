@@ -1,0 +1,262 @@
+## =======================================================================
+#Stage:Final
+#Title:Šy•s‰Â‹ÉA‰É•s‰Â’×
+#Place:—L’¸“V
+#Weather:
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Font.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Window.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Background.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*CG.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+#PlayBgm:data/bgm/ta00.ogg
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+#‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+Character:tenshi,160,0,0,8888FF
+Character:reimu,160,0,1,FF8888
+
+#•ª‰æ–ÊŠO‚É‘Ò‹@
+Action:reimu,100
+#ƒJƒƒ‰ŒÅ’è
+Action:tenshi,4
+#ƒtƒH[ƒJƒXuŠÔˆÚ“®
+#Action:tenshi,11
+
+#Œü‚«ŒÅ’è‰ğœ
+Action:tenshi,152
+
+Label:Start
+
+PlayBgm:data/bgm/ta03.ogg
+
+Sleep:60;
+
+#‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X\
+Face:tenshi,•
+A lot of people have gathered already.
+But it seems the shrine maiden hasn't arrived yet.\
+
+Face:tenshi,˜f
+For a shrine's groundbreaking\,
+we can't begin when the shrine's maiden isn't here.\
+
+Face:tenshi,•
+Well\, she might be busy...\
+
+Face:tenshi,—]
+Or maybe that little oni didn't invite her.\
+
+Face:tenshi,•
+... ...\
+
+Face:tenshi,—]
+I'll go check on her.\
+
+Hide:1
+
+Sleep:30
+#‰æ–Êã•”‚ÖˆÚ“®
+Action:tenshi,151
+
+Sleep:90
+
+#ƒtƒF[ƒhƒAƒEƒg@”’
+Action:tenshi,162
+FadeBgm:2000,0
+Sleep:60
+
+Stage:0,0
+Action:tenshi,130
+Action:reimu,103
+
+Sleep:85;
+
+#ƒtƒF[ƒhƒCƒ“@”’
+Bgm:data/bgm/ta07.ogg
+Action:tenshi,163
+
+#ƒJƒƒ‰‰º‚Ö
+Action:tenshi,131
+#Sleep:40;
+
+#ƒXƒe[ƒWƒ^ƒCƒgƒ‹•\¦
+Object:data/scenario/tenshi/effect/StageTitle008.bmp,0,192,-32
+
+#Sleep:20;
+#©ƒLƒƒƒ‰‰æ–Êã‚©‚ç—‰º‚µ‚Ä“oê
+Action:tenshi,6
+#Sleep:40;
+Object:data/scenario/effect/StageFinal.bmp,1,256,352
+#Sleep:10;
+Action:tenshi,7
+#ƒXƒe[ƒWƒ^ƒCƒgƒ‹•\¦
+
+Face:tenshi,˜f
+Hmm? I wonder where could she be~\
+
+Face:tenshi,
+Hide:1
+Sleep:30
+
+# “G“oê
+Action:reimu,101
+Action:reimu,102
+
+Sleep:20
+
+Face:reimu,“{
+Who is it! Oh it's just you.
+What do you want? Have you come to steal the shrine?\
+
+Face:tenshi,Šğ
+I'm not here for that.
+Aren't you coming to the
+shrine's groundbreaking ceremony?\
+
+# –¼‘O‚Ìƒeƒƒbƒv
+Object:data/scenario/reimu/effect/Name.bmp,2,352,304
+
+Face:reimu,‹Á
+Groundbreaking ceremony?\
+
+Face:tenshi,—]
+You didn't know that
+everyone's gathering in Bhava-agra?\
+
+Face:reimu,˜f
+Hmhmhmm? Ah\, could it be the gathering
+Suika was telling me about?\
+
+Face:tenshi,˜f
+It looks like everyone
+arrived already\, except for you.\
+
+Face:reimu,Šğ
+Oh.
+Ohhh thaat.\
+
+Face:reimu,—]
+Hmm\, you came to get me then.\
+
+Face:tenshi,—]
+That's fine\, isn't it.\
+
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+Face:reimu,Šğ
+Well you know\, I was told by Suika that the gathering
+wasn't called 'The Groundbreaking Ceremony\,'
+but actually the 'Celestial Torture-fest.'\
+
+Face:tenshi,‹Á
+!?\
+
+Face:reimu,—]
+I'd already beaten you once
+so I told her I didn't feel like it.\
+
+Face:tenshi,˜f
+...\
+
+Face:tenshi,‹Á
+I see\, that's what got everyone excited.\
+
+Face:tenshi,—]
+Heh heh heh.
+What a fun trick to pull.\
+
+Face:reimu,—]
+So\, how was it? Did everyone beat you up?\
+
+Face:tenshi,—]
+Of course\, I beat everyone up in no time at all.\
+
+Face:reimu,‹Á
+Oh\, that's really something.
+You outdid them one right after another\, right?\
+
+Face:tenshi,‹Á
+If I did that it wouldn't have been a real fight.
+Even with you\, didn't I lose on purpose?\
+
+Face:reimu,•
+Hmm\, I didn't really get that feeling\, though.\
+
+PlayBgm:data/bgm/st05.ogg
+
+Face:reimu,—]
+Somehow\, I've also gotten the will
+to participate in this festival.\
+
+Face:tenshi,•
+Fine by me.
+The festival wouldn't be complete without you.\
+
+Face:reimu,—]
+It'd take too long to go all the way to Heaven...\
+
+Face:reimu,Œˆ
+So\, lets start this party here!\
+
+Face:tenshi,Œˆ
+Very well then!
+I'll defeat everyone\, and get to see the
+look of surprise on that little oni's face!\
+
+
+Action:tenshi,3
+End:
+
+# --------------------------------
+# í“¬I—¹@•‰‚¯
+Label:Lose
+
+Face:reimu,Šğ
+Look at you\, you're already tired?\
+
+Face:reimu,•
+How many did you fight before me anyways?\
+
+End:
+
+# --------------------------------
+# í“¬I—¹@ƒRƒ“ƒeƒjƒ…[ˆ—
+Label:Continue
+
+#“VŒó‰Šú‰»
+Action:tenshi,153
+
+End:
+
+# --------------------------------
+# í“¬I—¹@Ÿ‚¿
+Label:Win
+
+#‚â‚ç‚êƒLƒƒƒ‰Š®‘Sƒ_ƒEƒ“ŒŸ’m
+Action:reimu,200
+#UŒ‚‘¤ƒjƒ…[ƒgƒ‰ƒ‹ˆÚsŒŸ’m
+Action:tenshi,202
+
+Sleep:30
+Result:
+
+#ƒCƒxƒ“ƒg@Ÿ—˜‰‰oƒtƒF[ƒh
+
+End:
+
+
+
+
+
+## =======================================================================

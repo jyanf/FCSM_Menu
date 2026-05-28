@@ -1,0 +1,201 @@
+## =======================================================================
+#Stage:4
+#Title:—’‚Ìg–‚ŠÙ
+#Place:g–‚ŠÙƒƒr[
+#Weather:
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Font.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Window.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Background.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*CG.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+#PlayBgm:data/bgm/ta00.ogg
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+#‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+Character:aya,160,0,0,8888FF
+Character:remilia,160,0,1,FF8888
+
+#•ª‰æ–ÊŠO‚É‘Ò‹@
+Action:remilia,100
+#ƒJƒƒ‰ŒÅ’è
+Action:aya,4
+#ƒtƒH[ƒJƒXuŠÔˆÚ“®
+#Action:aya,11
+
+#Œü‚«ŒÅ’è‰ğœ
+Action:aya,152
+
+Label:Start
+
+PlayBgm:data/bgm/ta02.ogg
+
+Sleep:30;
+
+#ƒXƒe[ƒWƒ^ƒCƒgƒ‹•\¦
+Object:data/scenario/aya/effect/StageTitle004.bmp,0,192,-32
+Sleep:60;
+Object:data/scenario/effect/Stage4.bmp,1,256,352
+Sleep:60;
+
+#‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X\
+Face:aya,—]
+We have infiltrated the Scarlet Devil Mansion!\
+
+Face:aya,˜f
+I wonder what devilish beasts lurk in this mansion?\
+
+# “G“oê
+Action:remilia,101
+Face:remilia,–³
+Growl-!\
+Action:remilia,102
+
+Face:aya,‹Á
+It's\, it's here! It's a monster!
+What's going to happen to our correspondent?!\
+
+Face:remilia,‹Á
+I'm-gonna-eat-you-!\
+
+Face:aya,˜f
+Such a fearsome carnivorous monster!
+Could this be the legendary Mokele-mbembe?!\
+
+
+Object:data/scenario/remilia/effect/Name.bmp,2,352,304
+
+Face:remilia,Š¾
+Mo\, Moke?
+Sorry\, I can't act like something like that.\
+
+Face:aya,•
+You're really going with the flow today\, aren't you?\
+
+Face:remilia,˜f
+Because I'm bored...
+The weather isn't nice out...\
+
+Face:aya,‹Á
+Oh? The weather\, is it?\
+
+Face:remilia,˜f
+It suddenly rained outside so I can't go out.\
+
+Face:remilia,˜f
+I'm weak against the rain\, after all.\
+
+Face:aya,˜f
+... You said the weather changed suddenly?\
+
+Face:remilia,•
+Yeah\, that's what I said.
+It's been strange since not too long ago.\
+
+Face:aya,•
+Hmmmmmm?\
+
+Face:remilia,Šğ
+Well then\, since I'm so bored
+let's play hide-and-seek with the Mokele!\
+
+Face:remilia,Œˆ
+If you don't run you're gonna get eaten aliiive!\
+
+Face:aya,‹Á
+Ahh! What's this?!
+Our correspondent now has
+no other choice but to fight!\
+
+Face:aya,Œˆ
+Don't miss the next issue!\
+
+PlayBgm:data/bgm/st17.ogg
+Action:aya,3
+End:
+
+# --------------------------------
+# í“¬I—¹@•‰‚¯
+Label:Lose
+
+Face:remilia,•
+It's going to be tea time soon.\
+
+Face:remilia,Šğ
+Tell me if this gets on the news.\
+
+End:
+
+# --------------------------------
+# í“¬I—¹@ƒRƒ“ƒeƒjƒ…[ˆ—
+Label:Continue
+
+#“VŒó‰Šú‰»
+Action:aya,113
+
+End:
+
+# --------------------------------
+# í“¬I—¹@Ÿ‚¿
+Label:Win
+
+
+#‚â‚ç‚êƒLƒƒƒ‰Š®‘Sƒ_ƒEƒ“ŒŸ’m
+Action:remilia,200
+#UŒ‚‘¤ƒjƒ…[ƒgƒ‰ƒ‹ˆÚsŒŸ’m
+Action:aya,202
+
+Face:aya,•
+... So the weather changed abruptly?\
+
+Face:remilia,•‰
+Owowowow. Tell me when this gets on the news.\
+
+Face:aya,‹Á
+Ah\, will do. I'll try to
+make this suitable for an article.\
+
+Face:aya,˜f
+Hmm\, the weather...
+Does it have to do with temperaments?\
+
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+#‚â‚ç‚êƒLƒƒƒ‰‰æ–Ê‘Şê
+#Action:remilia,201
+
+Sleep:60
+#©ƒLƒƒƒ‰Šî€“_‚ÖˆÚ“®
+Action:aya,151
+
+Sleep:90
+
+#ƒtƒF[ƒhƒAƒEƒg@”’
+Action:aya,162
+Sleep:60
+
+Stage:3,120
+
+#ƒJƒƒ‰’†‰›‚ ‚í‚¹
+#Action:aya,4
+
+#Sleep:120;
+
+End:
+
+
+## =======================================================================

@@ -1,0 +1,204 @@
+## =======================================================================
+#Stage:2
+#Title:
+#Place:”’‹Ê˜O‚Ìá’ë
+#Weather:‰õ°
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Bgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+#‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+Character:alice,160,0,0,8888FF
+Character:youmu,160,0,1,FF8888
+#“G‰æ–ÊŠO‚É‘Ò‹@
+Action:youmu,100
+#ƒJƒƒ‰ŒÅ’è
+Action:alice,4
+
+#ƒtƒH[ƒJƒXuŠÔˆÚ“®
+#Action:alice,11
+
+#Œü‚«ŒÅ’è‰ğœ
+Action:alice,152
+
+Label:Start
+PlayBgm:data/bgm/ta04.ogg
+
+Sleep:30;
+
+#ƒXƒe[ƒWƒ^ƒCƒgƒ‹•\¦
+Object:data/scenario/alice/effect/StageTitle002.bmp,0,192,-32
+Sleep:60
+Object:data/scenario/effect/Stage2.bmp,1,256,352
+Sleep:60
+
+Face:alice,‹Á
+Uhyaa...\
+
+Face:alice,•
+Bizarre weather like this
+is way beyond simple hail.\
+
+
+Face:alice\,
+Hide:1
+Sleep:30
+
+#
+# “G“oê
+#
+Action:youmu,101
+Action:youmu,102
+
+Sleep:20
+
+Face:youmu,•
+Hold it\, you can't just waltz in here...\
+
+# –¼‘O‚Ìƒeƒƒbƒv
+Object:data/scenario/youmu/effect/Name.bmp,2,352,304
+
+Face:alice,—]
+I'd heard that Hakugyokurou was in bad shape\,
+just like the shrine was.\
+
+I thought that meant it had collapsed
+in the earthquake too\, but...\
+
+Face:alice,‹Á
+To think you were having such a
+heavy snowfall in the middle of summer...\
+
+Face:youmu,—]
+But that doesn't mean you can
+come in here without permission.\
+
+Hide:1
+
+#“G“VŒó
+Action:youmu,103
+Sleep:60
+
+Face:alice,—]
+You should watch out for earthquakes too.\
+
+Face:alice,•
+These strange events may be omens
+that one is about to happen.\
+
+Face:youmu,•
+Earthquakes?\
+
+Face:alice,Œˆ
+I'm just going to take a look around\, okay?\
+
+Face:youmu,Š¾
+No\, I'm telling you it's not okay.\
+
+Face:youmu,•
+Whatever your reasons are\,
+I can't just let you wander into the manor.\
+
+#í“¬ŠJn
+PlayBgm:data/bgm/st14.ogg
+Action:alice,3
+
+End:
+
+# í“¬ŠJn
+
+# --------------------------------
+# í“¬I—¹@•‰‚¯
+Label:Lose
+
+Face:youmu,˜f
+The summer snow and the earthquake
+must be related somehow.\
+
+End:
+
+# --------------------------------
+# í“¬I—¹@ƒRƒ“ƒeƒjƒ…[ˆ—
+Label:Continue
+
+#“VŒó‰Šú‰»
+Action:youmu,113
+
+End:
+
+# --------------------------------
+# í“¬I—¹@Ÿ‚¿
+Label:Win
+
+#‚â‚ç‚êƒLƒƒƒ‰Š®‘Sƒ_ƒEƒ“ŒŸ’m
+Action:youmu,200
+#UŒ‚‘¤ƒjƒ…[ƒgƒ‰ƒ‹ˆÚsŒŸ’m
+Action:alice,202
+
+#©ƒLƒƒƒ‰“VŒó
+Action:alice,103
+Sleep:60
+
+Face:alice,—]
+I'm doing this for everyone's sake.\
+
+Face:youmu,•‰
+What makes you think there's
+going to be an earthquake...?\
+
+Face:alice,•
+The endlessly falling hail\, the scarlet clouds...
+All this strange weather may be
+a harbinger of an earthquake.\
+
+Face:alice,•
+In fact\, the shrine has already been leveled.\
+
+Face:youmu,•‰
+Eh?\
+
+Face:youmu,•‰
+But we didn't notice anything...
+And it would have to have been
+a big one to knock down the shrine.\
+
+Face:alice,˜f
+Hmm? I guess so...\
+
+
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+Stage:14,120
+
+#‚â‚ç‚êƒLƒƒƒ‰‰æ–Ê‘Şê
+Action:youmu,201
+
+#©ƒLƒƒƒ‰Šî€“_‚ÖˆÚ“®
+Action:alice,150
+
+#ƒJƒƒ‰’†‰›‚ ‚í‚¹
+Action:alice,4
+
+Sleep:120
+
+End:
+
+
+
+
+
+## =======================================================================

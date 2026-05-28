@@ -1,0 +1,209 @@
+## =======================================================================
+#Stage:1
+#Title:高湿の夏
+#Place:人形の森
+#Weather:霧雨
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "royal blue"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "royal blue"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+
+
+
+Character:marisa,160,0,0,8888FF
+Character:alice,160,0,1,FF8888
+
+#背景　人形の森
+Stage:13,0
+
+#魔理沙画面外に待機
+Action:marisa,1
+
+#アリス画面外に待機
+Action:alice,100
+
+#カメラ中央固定
+Action:marisa,2
+
+Label:Start
+#自キャラ天候
+Action:marisa,103
+
+PlayBgm:data/bgm/ta03.ogg
+
+Sleep:60;
+
+#ステージタイトル表示
+Object:data/scenario/marisa/effect/StageTitle001.bmp,0,192,-32
+Sleep:30;
+Object:data/scenario/effect/Stage1.bmp,1,256,352
+Sleep:30;
+
+#登場
+Action:marisa,50
+Action:marisa,51
+
+
+# 普、嬉、余、汗、驚、怒、決、惑、負
+
+Face:marisa,惑
+#0１２３４５６７８９０１２３４５６７８９０１２３
+This is troublesome.
+I can't dry my laundry
+if the rain continues like this.\
+
+Even though the rainy season ended\,
+the rain still doesn't want to end.\
+
+
+Face:marisa,
+Hide:1
+Sleep:30
+
+#
+# 敵登場
+Action:alice,101
+Action:alice,102
+
+Face:alice,普
+Yet\, you can still tell
+that the rainy season ended?\
+
+# 名前のテロップ
+Object:data/scenario/alice/effect/Name.bmp,2,352,304
+
+Face:marisa,普
+Whoa\, when did you get here?\
+
+Hide:1
+
+#敵天候
+Action:alice,103
+Sleep:60
+
+Face:alice,惑
+Ah\, not again...\
+
+The hail kept falling\,
+so I couldn't dry my laundry.\
+
+
+Face:marisa,驚
+This is rare\, the hail and all.\
+
+Face:alice,普
+It's always been like this.
+But this year\, it's still hailing
+after the rainy season...\
+
+Face:marisa,余
+And you still managed to tell
+that the rainy season ended.\
+
+Face:alice,余
+That's because I'm not stupid like you.\
+
+Face:marisa,普
+I could tell.\
+
+Face:marisa,余
+You cranked up the humidity
+in the forest\, didn't you?\
+
+Face:alice,普
+Why would I do that?\
+
+Face:marisa,決
+How should I know?
+I'll beat you up and find out!\
+
+
+#戦闘開始処理
+
+Face:marisa,
+
+PlayBgm:data/bgm/st00.ogg
+Action:marisa,3
+End:
+
+# --------------------------------
+# 戦闘終了　負け
+Label:Lose
+
+Face:alice,嬉
+Please think carefully about
+who's really raising the humidity.\
+
+Face:alice,余
+You silly little rainmaker.\
+
+End:
+
+# --------------------------------
+# 戦闘終了　コンテニュー処理
+Label:Continue
+
+#天候初期化
+Action:alice,113
+
+End:
+
+# --------------------------------
+# 戦闘終了　勝ち
+Label:Win
+
+
+#やられキャラ完全ダウン検知
+Action:alice,200
+#攻撃側ニュートラル移行検知
+Action:marisa,202
+
+#自キャラ天候
+Action:marisa,103
+Sleep:60;
+
+Face:marisa,決
+That's not it.
+It's not so much the hail.
+The rain is more of a problem.\
+
+Face:alice,負
+The hail is still a problem!\
+
+Face:marisa,普
+It's raining again...\
+
+Face:marisa,嬉
+Alright\, then. The rain is telling me
+that I need to go and get back the sun...?\
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+Stage:1,120
+
+#やられキャラ画面退場
+Action:alice,201
+
+#自キャラ基準点へ移動
+Action:marisa,150
+
+#カメラ中央あわせ
+Action:marisa,4
+
+Sleep:120;
+
+End:
+
+
+
+
+
+## =======================================================================

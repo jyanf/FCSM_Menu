@@ -1,0 +1,167 @@
+## =======================================================================
+#Stage:4
+#Title:真夏の冬山
+#Place:妖怪の山
+#Weather:快晴
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Font.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Window.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Background.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*CG.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+#PlayBgm:data/bgm/ta00.ogg
+#0１２３４５６７８９０１２３４５６７８９０１２３
+
+
+Character:yuyuko,160,0,0,8888FF
+Character:aya,120,20,1,FF8888
+#分画面外に待機
+Action:aya,100
+#カメラ固定
+Action:yuyuko,4
+#フォーカス瞬間移動
+#Action:yuyuko,11
+
+#向き固定解除
+Action:yuyuko,152
+
+Label:Start
+
+PlayBgm:data/bgm/ta00.ogg
+
+Sleep:60;
+
+#ステージタイトル表示
+Object:data/scenario/yuyuko/effect/StageTitle004.bmp,0,192,-32
+Sleep:60;
+Object:data/scenario/effect/Stage4.bmp,1,256,352
+Sleep:60;
+
+Face:yuyuko,余
+Let's cool this place with snow too.\
+
+
+#登場モーション開始
+Action:aya,101
+
+Action:aya,103
+
+Face:aya,無
+Huh? Why are you here?\
+
+#登場モーション終了検知
+Action:aya,102
+
+Face:yuyuko,驚
+Ayaya\, the snow...\
+
+Face:aya,普
+I don't really understand what's going on\, but...\
+
+Object:data/scenario/aya/effect/Name.bmp,2,352,304
+
+Face:aya,惑
+Nobody is allowed to enter the mountain.\
+
+Face:yuyuko,普
+Oh dear\, the snow got blown away.\
+
+Face:aya,惑
+Snow?\
+
+Face:yuyuko,余
+Yes\, the mountain-beautifying snow of mine.\
+
+
+#戦闘開始処理
+PlayBgm:data/bgm/st03.ogg
+Action:yuyuko,3
+
+End:
+
+# 戦闘開始
+
+# --------------------------------
+# 戦闘終了　負け
+Label:Lose
+
+Face:aya,普
+Now\, go.\
+
+Face:aya,汗
+If people like you meet someone else here\,
+something bad might happen.\
+
+End:
+
+# --------------------------------
+# 戦闘終了　コンテニュー処理
+Label:Continue
+
+#天候初期化
+Action:aya,113
+
+End:
+
+# --------------------------------
+# 戦闘終了　勝ち
+Label:Win
+
+#やられキャラ完全ダウン検知
+Action:aya,200
+#攻撃側ニュートラル移行検知
+Action:yuyuko,202
+
+#自キャラ天候
+
+Face:yuyuko,惑
+Regrettably\, my power is insufficient.\
+
+Face:aya,負
+I guess?\
+
+Face:yuyuko,普
+My ephemeral snow cannot defeat your tempest.\
+
+Face:aya,負
+No\, I lost...\
+
+Face:yuyuko,余
+It seems that I need a change of tactics.\
+
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+Sleep:30;
+
+#上空移行用上空退避
+Action:yuyuko,151
+
+Sleep:90;
+
+#フェードアウト　黒
+Action:yuyuko,160
+Sleep:60;
+
+
+Stage:4,0
+
+End:
+
+
+
+
+
+## =======================================================================

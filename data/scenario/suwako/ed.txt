@@ -1,0 +1,85 @@
+# ----------------------------------------------------
+# Ending
+# Stage:Ending
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "royal blue"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "royal blue"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+
+Font:ＭＳゴシック,16,3,6
+WindowColor:0,0,0,0
+Color:FFFFFF
+Background:data/scenario/effect/EdBack000.bmp,999,0,0
+#CG:data/scenario/sanae/effect/ED000.bmp,96,16,50
+WindowPos:8,372
+Label:Start
+
+Bgm:data/bgm/ta06.ogg
+
+# 一枚目
+# 壊れた神社のイラスト（他のキャラでも使う汎用絵）
+# 
+# 　一枚目は場所を示す簡単なイラストが入る予定です
+#0１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３
+
+  ---Hakurei Shrine, the eastern border of Gensokyo.@
+  There was something there more annoying
+  than the incessant chatter of cicadas.@
+  This annoyance, however, is integral to this story.\
+
+#CG:data/scenario/utsuho/effect/ED001.bmp,96,16,50
+  ---Moriya Shrine, originally from the Outside World.@
+  It is located on top of Youkai Mountain.@
+  It's hard to get to her because of the Tengus.\
+
+#CG:data/scenario/utsuho/effect/ED002.bmp,96,16,50
+  ---Doll Forest, a forest full of dolls
+  where there was a giant active doll...@
+  Alice doing her thing to fix the giant doll problem.\
+
+# 二枚目
+# 神社を天女達が歌いながら建て直そうとしている
+# 空を飛べる分効率がよさそう
+# 天子は指示をしている様な感じ
+# 霊夢はその様子を見ている
+#
+
+#CG:data/scenario/utsuho/effect/ED002.bmp,96,16,50
+Suwako "That's it, I already broke that Goliath Doll."@
+Alice  "Why did you want to do that?"\
+#CG:data/scenario/utsuho/effect/ED004.bmp,96,16,50
+Suwako "It can cause problems..."@
+Alice  "Are you sure about that?"@
+Suwako "Yes, because they are objetcts and there
+        will be a time when your don't control them."@
+Alice  "Oh, I didn't realise..."\
+
+FadeBgm:2000,0
+CG:BLACK,0,0,15
+
+  Suwako already did what she sould...\
+  Suwako aldready lived peacefully with...\
+  At a festival they did...\
+  But she was preparing for one thing...\
+  And her...\
+  To HisoutenSoku, so it doesn't become a
+  youkai and attack Gensokyo.\
+
+FadeBgm:20000,0
+CG:BLACK,0,0,15
+StaffRoll:
+
+#　その話がアリスの耳に入った時には既に、自分が研究している@
+#　「人形巨大化計画」の事だと思えない程変化していた。\
+
+#　アリスは確信した。@
+#　早く人形の巨大化の魔法を自分の物にして、@
+#　未知の巨大妖怪と戦わねばならない、と。@
+
+End:

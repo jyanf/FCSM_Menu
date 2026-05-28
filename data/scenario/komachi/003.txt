@@ -1,0 +1,223 @@
+## =======================================================================
+#Stage:4
+#Title:–ÀŠE‚Ì’|—Ñ
+#Place:–À‚¢‚Ì’|—Ñ
+#Weather:
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Font.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Window.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Background.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*CG.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+#PlayBgm:data/bgm/ta00.ogg
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+#‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+Character:komachi,160,0,0,8888FF
+Character:udonge,160,0,1,FF8888
+#“G‰æ–ÊŠO‚É‘Ò‹@
+Action:udonge,100
+#ƒJƒƒ‰ŒÅ’è
+Action:komachi,4
+
+#ƒtƒH[ƒJƒXuŠÔˆÚ“®
+#Action:komachi,11
+
+#Œü‚«ŒÅ’è‰ğœ
+Action:komachi,152
+
+Label:Start
+PlayBgm:data/bgm/ta08.ogg
+
+Sleep:30;
+
+#ƒXƒe[ƒWƒ^ƒCƒgƒ‹•\¦
+Object:data/scenario/komachi/effect/StageTitle004.bmp,0,192,-32
+Sleep:60;
+Object:data/scenario/effect/Stage4.bmp,1,256,352
+Sleep:60
+
+Face:komachi,•
+For a human\, to be alive is to be lost.\
+
+Face:komachi,˜f
+They gave this place the name
+Bamboo Forest of the Lost\,
+perhaps wanting to make it a symbol of the living.\
+
+Face:komachi,•
+There's an unaging bunch living here.\
+
+Face:komachi,
+Hide:1
+Sleep:30
+
+#
+# “G“oê
+#
+Action:udonge,101
+Action:udonge,102
+
+Sleep:20
+
+Face:udonge,•
+Are you\, perhaps\, lost?\
+
+# –¼‘O‚Ìƒeƒƒbƒv
+Object:data/scenario/udonge/effect/Name.bmp,2,352,304
+
+Face:udonge,‹Á
+What\, you're a shinigami?
+The one famous for skipping work.\
+
+Face:komachi,—]
+Should I start working here\, then?\
+
+Face:udonge,Š¾
+I'll have to pass on that.\
+
+Hide:1
+#“G“VŒó
+Action:udonge,103
+Sleep:60
+
+Face:komachi,‹Á
+Oh\, the weather just cleared\,
+but suddenly there's a breeze.\
+
+Face:udonge,•
+?\
+
+Face:komachi,•
+A spirit of wind is a sign
+of imbalance in the heart.\
+
+Face:komachi,—]
+A ghost who changes depending on
+who they're with\, I predict.\
+
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+Face:komachi,˜f
+Skillful in worldly affairs\,
+but weak to ailments of the mind.\
+
+Face:udonge,˜f
+What are you talking about?\
+
+Face:komachi,—]
+Hmmm\, your weakness is becoming
+difficult to perceive. You don't seem to
+be wandering aimlessly anymore.\
+
+Face:udonge,“{
+I don't understand what you're talking about\,
+but if you're not lost\, please leave quickly.\
+
+Face:komachi,Šğ
+My\, my\, don't be like that...
+Just playing around a little bit should be fine.\
+
+
+#í“¬ŠJn
+PlayBgm:data/bgm/st20.ogg
+Action:komachi,3
+
+End:
+
+# í“¬ŠJn
+
+# --------------------------------
+# í“¬I—¹@•‰‚¯
+Label:Lose
+
+Face:udonge,•
+I'm going to be busy soon.\
+
+Face:udonge,˜f
+Is it really ok for you to skip work?\
+
+End:
+
+# --------------------------------
+# í“¬I—¹@ƒRƒ“ƒeƒjƒ…[ˆ—
+Label:Continue
+
+#“VŒó‰Šú‰»
+Action:udonge,113
+
+End:
+
+# --------------------------------
+# í“¬I—¹@Ÿ‚¿
+Label:Win
+
+#‚â‚ç‚êƒLƒƒƒ‰Š®‘Sƒ_ƒEƒ“ŒŸ’m
+Action:udonge,200
+#UŒ‚‘¤ƒjƒ…[ƒgƒ‰ƒ‹ˆÚsŒŸ’m
+Action:komachi,202
+
+#©ƒLƒƒƒ‰“VŒó
+Action:komachi,103
+Sleep:60
+
+Face:komachi,•
+The wind has already died down quite a bit.
+Am I almost out of time?\
+
+Face:komachi,—]
+Putting that aside\,
+where do you plan to go when you die?\
+
+Face:udonge,•‰
+Why do I have to think about my own afterlife?\
+
+Face:komachi,Šğ
+It is my job\, you know.\
+
+Face:udonge,•‰
+Well\, I'd like to cross
+the Sanzu River and take it easy.\
+
+Face:komachi,•
+Oh\, interesting.
+... Well\, hold on to that dream.\
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+#‚â‚ç‚êƒLƒƒƒ‰‰æ–Ê‘Şê
+Action:udonge,201
+
+#©ƒLƒƒƒ‰Šî€“_‚ÖˆÚ“®
+Action:komachi,151
+
+
+Sleep:120;
+
+#Sleep:90
+
+#ƒtƒF[ƒhƒAƒEƒg@”’
+Action:komachi,162
+Sleep:60
+
+Stage:0,0
+
+End:
+
+
+
+
+
+## =======================================================================

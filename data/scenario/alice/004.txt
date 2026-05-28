@@ -1,0 +1,275 @@
+## =======================================================================
+#Stage:5
+#Title:天空の龍宮
+#Place:玄海雲
+#Weather:台風
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Bgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+#0１２３４５６７８９０１２３４５６７８９０１２３
+
+Character:alice,160,0,0,8888FF
+Character:iku,120,20,1,FF8888
+
+#専用ステージ初期設定
+Action:iku,139
+
+#カメラ固定
+Action:alice,4
+
+#フォーカス瞬間移動
+Action:alice,11
+
+#自キャラ画面左待機
+Action:alice,5
+
+Bgm:data/bgm/ta02.ogg
+
+#背景暗雲設置
+Action:iku,134
+
+#向き固定解除
+Action:alice,152
+
+#天候解除
+Action:iku,153
+
+Label:Start
+
+#フェードイン　黒
+Action:alice,161
+
+Sleep:60
+
+#ステージタイトル表示
+Object:data/scenario/alice/effect/StageTitle005.bmp,0,192,-32
+Sleep:60
+Object:data/scenario/effect/Stage5.bmp,1,256,352
+Sleep:300
+
+#雲中背景解除
+Action:iku,135
+Sleep:120
+
+#画面上から登場
+Action:alice,6
+
+#登場終了検知
+Action:alice,7
+
+Sleep:60
+
+Face:alice,惑
+It's a lot stormier in these clouds than I expected.\
+
+Face:alice,惑
+I hope I can find some kind of clue...\
+
+Face:alice\,
+Hide:1
+Sleep:60
+
+#衣玖黒塗りで画面上から登場
+Action:iku,130
+Sleep:90
+Face:iku\,
+What stains the sky scarlet
+is the yawning of the earth.\
+
+The yawning of the earth is a sign of its awakening.\
+
+#落雷+衣玖の姿が浮かび上がる
+Action:iku,131
+
+Gensokyo's awakening draws near.
+A violent awakening\, and a cruel one.\
+
+Sleep:90
+
+Face:alice,驚
+Swimming about in the middle of such dark clouds...@
+You're no ordinary person.\
+
+# 名前のテロップ
+#Name:美しき緋の衣　永江衣玖
+Object:data/scenario/iku/effect/Name.bmp,2,352,304
+
+Face:iku,普
+I'm just a messenger of the Dragon Palace\,
+here to inform everyone of the danger.
+Swimming in scarlet clouds is my job.\
+
+Face:iku,惑
+You\, on the other hand\,
+went out of your way to climb up here.
+From my perspective\, you're the strange one.\
+
+Face:alice,惑
+A messenger... of the Dragon Palace?\
+
+Face:iku,普
+Yes\, we're messengers whose sole purpose
+is to swim in scarlet clouds.\
+
+Face:alice,普
+A messenger of the Dragon Palace...
+I'm sure I've heard that somewhere before.\
+
+Face:alice,驚
+Messenger of the Dragon Palace...@
+Ah\, I remember now!\
+
+#イベント　衣玖浮遊状態終了
+Action:iku,132
+
+Bgm:data/bgm/st04.ogg
+
+Face:alice,驚
+Messengers of the Dragon Palace appearing
+is a large-scale omen of an earthquake!\
+
+Face:iku,余
+That's right.
+Unfortunately\, there will be an earthquake.\
+
+Face:alice,惑
+Mm\, hmm...
+At last\, I have proof
+that my prediction was correct...\
+
+Face:iku,惑
+It is a cruel but unavoidable certainty.\
+
+Face:alice,惑
+What to do...\
+
+Face:alice,嬉
+Oh\, right\, if I get rid of all the omens\,
+then that should stop the earthquake from happening.
+I read that in a book once.\
+
+Face:iku,驚
+Eh?\
+
+Face:alice,決
+If I get rid of you\, and then
+take care of these scarlet clouds\,
+then maybe...!\
+
+
+#戦闘開始処理
+Action:alice,3
+
+End:
+
+# 戦闘開始
+
+# --------------------------------
+# 戦闘終了　負け
+Label:Lose
+
+Face:iku,余
+I'm afraid the earthquake will occur
+regardless of my defeat.\
+
+Face:iku,普
+It's better for you to watch for fire hazards
+so that your dolls don't all burn in a fire.\
+
+End:
+
+# --------------------------------
+# 戦闘終了　コンテニュー処理
+Label:Continue
+
+#天候初期化
+Action:iku,153
+
+End:
+
+# --------------------------------
+# 戦闘終了　勝ち
+Label:Win
+
+#やられキャラ完全ダウン検知
+Action:iku,200
+#攻撃側ニュートラル移行検知
+Action:alice,202
+
+#Weather:天候クリア
+# 無天候へ
+Action:iku,133
+
+Face:alice,嬉
+For now at least\, I've won!\
+
+Face:iku,負
+I'm afraid the earthquake will
+occur regardless of my defeat.
+You have changed nothing.\
+
+Face:alice,普
+Won't know unless I try\, will I?\
+
+Face:alice,惑
+Now there's just the scarlet clouds to take care of...
+But that's the tricky part\, isn't it?\
+
+Face:iku,負
+The scarlet clouds...@
+It may be that they were
+deliberately created.\
+
+Face:alice,驚
+What do you mean?\
+
+Face:iku,負
+The basis for these clouds doesn't seem to be water...@
+Instead\, they're composed of
+the temperament of living things.
+
+Face:iku,負
+I did think it was rather strange...\
+
+Face:iku,負
+but when scarlet clouds show up\,
+we do have to do our jobs.\
+
+Face:alice,余
+See\, you were being manipulated too!@
+There's definitely some mastermind
+plotting to cause an earthquake!\
+
+
+Hide:1
+
+Sleep:30
+#画面上部へ移動
+Action:alice,151
+
+Sleep:90
+Result:
+
+#フェードアウト　白
+Action:alice,162
+Sleep:60
+FadeBgm:2000,0
+
+Stage:5,0
+
+End:
+
+
+
+
+
+## =======================================================================

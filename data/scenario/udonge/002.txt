@@ -1,0 +1,223 @@
+## =======================================================================
+#Stage:3
+#Title:•s‰Âv‹c‚È—¬®
+#Place:‰ó‚ê‚½_Ğ
+#Weather:
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Font.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Window.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Background.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*CG.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+#PlayBgm:data/bgm/ta00.ogg
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+Character:udonge,160,0,0,8888FF
+Character:yukari,160,0,1,FF8888
+Character:tenshi,160,0,2,FF8888
+
+#ƒJƒƒ‰ŒÅ’è
+Action:udonge,4
+
+#ƒtƒH[ƒJƒXuŠÔˆÚ“®
+#Action:udonge,11
+
+#“GƒtƒB[ƒ‹ƒh’[‚Å‘Ò‹@
+Action:yukari,100
+
+#Œü‚«ŒÅ’è‰ğœ
+Action:udonge,152
+
+Label:Start
+PlayBgm:data/bgm/ta07.ogg
+
+Sleep:30;
+
+#ƒXƒe[ƒWƒ^ƒCƒgƒ‹•\¦
+Object:data/scenario/udonge/effect/StageTitle003.bmp,0,192,-32
+Sleep:60;
+Object:data/scenario/effect/Stage3.bmp,1,256,352
+Sleep:60;
+
+Face:udonge,‹Á
+... ...\
+
+Face:udonge,Š¾
+... Ehh?\
+
+Face:udonge,—]
+What\, that ghost played a trick on me.
+The shrine isn't rebuilt at all!\
+
+Sleep:30
+
+Face:udonge,–³
+Face:yukari,–³
+You're late.\
+
+Face:udonge,‹Á
+!?\
+
+#“G“oê
+Action:yukari,101
+Action:yukari,102
+Sleep:60
+Face:yukari,•
+The shrine's completion ceremony has already ended.\
+
+Face:udonge,Š¾
+Completion ceremony\, you say...
+isn't it not even completed yet?\
+
+
+# –¼‘O‚Ìƒeƒƒbƒv
+Object:data/scenario/yukari/effect/Name.bmp,2,352,304
+
+Face:yukari,—]
+Oh\, don't fret the little details.
+So\, what are you here for this late?\
+
+Face:udonge,“{
+There's something I'm looking into...\
+
+Face:yukari,Šğ
+What is it?\
+
+Face:udonge,˜f
+I came to investigate the shrine
+that was wrecked by the earthquake.\
+
+Face:yukari,Œˆ
+De-nied.\
+
+Face:udonge,‹Á
+Huh?\
+
+Face:yukari,Œˆ
+I won't let you investigate my shrine.\
+
+PlayBgm:data/bgm/st18.ogg
+
+Action:udonge,3
+
+End:
+
+# í“¬ŠJn
+
+# --------------------------------
+# í“¬I—¹@•‰‚¯
+Label:Lose
+
+Face:yukari,•
+The keystone that the celestial set up
+is now being investigated by the oni.\
+
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+Face:yukari,Šğ
+You aliens have nothing to do here.\
+
+End:
+
+# --------------------------------
+# í“¬I—¹@ƒRƒ“ƒeƒjƒ…[ˆ—
+Label:Continue
+
+#“VŒó‰Šú‰»
+Action:udonge,104
+
+End:
+
+# --------------------------------
+# í“¬I—¹@Ÿ‚¿
+Label:Win
+
+#‚â‚ç‚êƒLƒƒƒ‰Š®‘Sƒ_ƒEƒ“ŒŸ’m
+Action:yukari,200
+#UŒ‚‘¤ƒjƒ…[ƒgƒ‰ƒ‹ˆÚsŒŸ’m
+Action:udonge,202
+
+#©“VŒó
+Face:udonge,“{
+What\, there's nothing wrong with investigating
+the shrine. I can't understand how
+the shrine was destroyed.\
+
+Face:yukari,•‰
+The shrine isn't anything for you to investigate.\
+
+Face:udonge,“{
+But\, the earthquakes...\
+
+Hide:1
+
+#“ñ”Ôè“oê
+FadeBgm:200,0
+Action:tenshi,105
+
+#105I—¹ŒŸ’m
+Action:tenshi,106
+
+Face:tenshi,•‰
+Ah\, that hurt...\
+
+Face:udonge,‹Á
+A\, a Celestial...!?\
+
+Face:tenshi,•‰
+Aaah\, the shrine has been wrecked.\
+
+Face:udonge,˜f
+?\
+
+Face:udonge,˜f
+Ah\, I've heard about it.
+You're the one who broke down the shrine.\
+
+Face:tenshi,•‰
+Well\, yes. But that was last time.\
+
+Face:udonge,˜f
+???@
+Well\, whatever.
+I have a lot of questions I'd like to ask you.\
+
+Hide:1
+
+Sleep:10
+
+#‚â‚ç‚êƒLƒƒƒ‰‰æ–Ê‘Şê
+Action:yukari,201
+
+#ƒXƒe[ƒWŠÔ’²®©ƒLƒƒƒ‰
+Action:udonge,150
+Sleep:15
+
+#ƒXƒe[ƒWŠÔ’²®“G
+Action:tenshi,110
+#CrossFadeBgm:data/bgm/st05.ogg,2000,0
+
+#ƒJƒƒ‰’†‰›‚ ‚í‚¹
+Action:udonge,4
+
+#ƒXƒe[ƒWŠÔ’²®“G@I—¹ŒŸ’m
+Action:tenshi,111
+
+Sleep:60
+
+End:
+
+
+
+
+
+## =======================================================================

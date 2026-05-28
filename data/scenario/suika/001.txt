@@ -1,0 +1,254 @@
+## =======================================================================
+#Stage:2
+#Title:龍宮の使い
+#Place:玄海雲
+#Weather:台風
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Font.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Window.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Background.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*CG.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+#PlayBgm:data/bgm/ta00.ogg
+#0１２３４５６７８９０１２３４５６７８９０１２３
+
+Character:suika,160,0,0,8888FF
+Character:iku,120,20,1,FF8888
+
+#専用ステージ初期設定
+Action:iku,139
+
+#カメラ固定
+Action:suika,4
+
+#フォーカス瞬間移動
+Action:suika,11
+
+#自キャラ画面左待機
+Action:suika,5
+
+#向き固定解除
+Action:suika,152
+
+#天候初期化
+Action:iku,153
+
+Label:Start
+
+PlayBgm:data/bgm/ta02.ogg
+
+#背景暗雲設置
+Action:iku,134
+
+#フェードイン　黒
+Action:suika,161
+
+Sleep:60
+
+#ステージタイトル表示
+Object:data/scenario/suika/effect/StageTitle002.bmp,0,192,-32
+Sleep:60
+Object:data/scenario/effect/Stage2.bmp,1,256,352
+Sleep:300
+
+#雲中背景解除
+Action:iku,135
+Sleep:120
+
+#画面上から登場
+Action:suika,6
+
+#登場終了検知
+Action:suika,7
+
+Sleep:60
+
+Face:suika,惑
+What's with these clouds?\
+
+Face:suika,惑
+I think these mists were collected from everyone\,
+but this is such a messy way to collect them.\
+
+Face:suika,普
+Almost all the mist is turning
+into weather and leaking out.\
+
+Face:suika,余
+I don't know what's the point of gathering hearts\,
+but at least I know this much.\
+
+Face:suika,
+Hide:1
+Sleep:60
+
+#衣玖黒塗りで画面上から登場
+Action:iku,130
+Sleep:90
+Face:iku,
+The scarlet clouds' concentration
+is three times its normal level.\
+
+The margin of error allows
+for up to a hundred.\
+
+
+#落雷+衣玖の姿が浮かび上がる
+Action:iku,131
+
+Face:iku,
+Clouds like today's are not a problem.\
+
+Face:suika,余
+Oh\, a messenger from the Dragon Palace.
+You rarely see those around.\
+
+# 名前のテロップ
+#Name:美しき緋の衣　永江衣玖
+Object:data/scenario/iku/effect/Name.bmp,2,352,304
+
+Face:iku,驚
+Ah! Is somebody there?\
+
+Face:suika,普
+Uh\, yes.\
+
+Face:suika,余
+A messenger from the Dragon Palace\, huh?
+Is something urgent happening?\
+
+#イベント　衣玖浮遊状態終了
+Action:iku,132
+
+Face:iku,惑
+Eh? Ehhh... I was worried about
+the concentration of the scarlet clouds.\
+
+Face:iku,普
+Although the level here isn't too worrying yet...\
+
+Face:suika,普
+Heh. These clouds are thick.
+That means an earthquake is going to happen\, right?\
+
+Face:iku,惑
+Yes\, something like that.
+You could tell\, then?\
+
+Face:suika,余
+Well\, yeah.\
+
+PlayBgm:data/bgm/st04.ogg
+
+Face:iku,惑
+The unnatural clouds were too suspicious.
+They gave it away\, right?\
+
+Face:iku,普
+Above this is Heaven.\
+
+Face:iku,余
+If you want to be safe\, you should go there...
+You're going to go\, right?\
+
+Face:iku,決
+Hold on\, I'll test you first.\
+
+Face:suika,余
+You certainly talk like a messenger
+from the Dragon Palace\, don't you?\
+
+
+
+#戦闘開始処理
+Action:suika,3
+
+End:
+
+# 戦闘開始
+
+# --------------------------------
+# 戦闘終了　負け
+Label:Lose
+
+Face:iku,普
+Now then\, please return.\
+
+Face:iku,余
+But I don't really mind if
+you're just hanging around to play.\
+
+End:
+
+# --------------------------------
+# 戦闘終了　コンテニュー処理
+Label:Continue
+
+#天候初期化
+Action:iku,153
+
+End:
+
+# --------------------------------
+# 戦闘終了　勝ち
+Label:Win
+
+#やられキャラ完全ダウン検知
+Action:iku,200
+#攻撃側ニュートラル移行検知
+Action:suika,202
+
+#Weather:天候クリア
+# 無天候へ
+Action:iku,133
+
+Face:suika,嬉
+Well\, with that\,
+I'm off to Heaven.\
+
+Face:iku,負
+How did... what kind of person are you?\
+
+Face:suika,余
+Quickly\, the these clouds
+are getting thicker and thicker!\
+
+Face:iku,負
+Eh?\
+
+Face:suika,普
+It looks like you're going to be busy for a while.\
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+Sleep:30
+#画面上部へ移動
+Action:suika,151
+
+Sleep:90
+
+#フェードアウト　白
+Action:suika,162
+Sleep:60
+
+Stage:5,0
+
+End:
+
+
+
+
+
+## =======================================================================

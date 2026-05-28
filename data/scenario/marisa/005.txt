@@ -1,0 +1,293 @@
+## =======================================================================
+#Stage:Final
+#Title:天の娘、地の神、人の心
+#Place:有頂天
+#Weather:極光
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "royal blue"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "royal blue"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+
+Character:marisa,160,0,0,8888FF
+Character:tenshi,160,0,1,FF8888
+#敵画面外に待機
+Action:tenshi,100
+#カメラ初期位置固定
+Action:tenshi,130
+#自キャラ画面外待機
+Action:marisa,5
+
+#向き固定解除
+Action:marisa,152
+
+Label:Start
+
+Sleep:85;
+
+Bgm:data/bgm/ta07.ogg
+#フェードイン　白
+Action:marisa,163
+
+#カメラ下へ
+Action:tenshi,131
+#Sleep:60;
+
+#ステージタイトル表示
+Object:data/scenario/marisa/effect/StageTitle006.bmp,0,192,-32
+#画面上から落下して登場
+Action:marisa,6
+Action:marisa,7
+#Sleep:60;
+Object:data/scenario/effect/StageFinal.bmp,1,256,352
+Sleep:180;
+
+
+#sleep,60
+Face:marisa,普
+Oh\, what's this I see?\
+
+Face:marisa,嬉
+The weather is really nice above the clouds.\
+
+Face:marisa,
+
+Hide:1
+
+#イベント　メッセージウィンドウ消去
+#イベント　カメラ上空へ
+Action:tenshi,132
+
+#イベント　地震
+Action:tenshi,133
+
+#sleep,180
+
+Face:tenshi,無
+Control the Earth from Heaven.\
+
+Hide:1
+Sleep:30
+
+Action:tenshi,133
+#イベント　地震
+Remove the key from the Earth\,\
+
+Hide:1
+#sleep,60
+
+# 天子登場
+#イベント　大地震
+#イベント　カメラフォーカス元へ
+Action:tenshi,134
+#sleep,180
+
+and lay bare the scarlet hearts of men!\
+
+#登場ポーズ終了指令
+Action:tenshi,139
+#sleep,30
+
+Face:tenshi,普
+You've finally come.\
+
+
+Face:marisa,普
+Who's there?\
+
+#Name:非想非非想天の娘　比那名居天子
+# 名前のテロップ
+Object:data/scenario/tenshi/effect/Name.bmp,2,352,304
+
+Face:tenshi,普
+#私は天界に住む<ruby ひななゐ>比那名居</ruby>の人\
+I'm a member of the Hinanawi clan
+that lives in the heavens.\
+
+Face:marisa,怒
+Is it you?
+The one who's been doing all this.\
+
+Face:tenshi,驚
+All this? I don't really get what you mean.\
+
+Face:tenshi,余
+But yes\, I did it.\
+
+Face:marisa,汗
+What did you do?\
+
+Face:tenshi,普
+Your temperament is humid and heavy.\
+
+Face:tenshi,普
+I am collecting everyone's temperaments
+into a scarlet mist\,\
+
+Face:tenshi,普
+and raising that mist to the heavens
+to create a scarlet sky.\
+
+Face:tenshi,余
+Won't that make for a beautiful lunatic summer?\
+
+Face:marisa,普
+This world has too many folks
+with bad tastes.\
+
+Face:tenshi,普
+The scarlet clouds are heavenly miracles
+that start catastrophes on earth.\
+
+Face:tenshi,普
+#この、<ruby ひそうのつるぎ>緋想の剣</ruby>で人の気質の
+With my Sword of Scarlet Thought\,
+I collect temperaments and 
+materialize them into scarlet mist...\
+
+Hide:1
+
+#イベント　天子地面に剣を刺して地震発生
+Action:tenshi,135
+Action:tenshi,136
+
+Hide:0
+
+Face:tenshi,余
+and shake the earth with it!\
+
+Face:marisa,驚
+Whoa\, an earthquake!?
+I didn't understand anything\,
+but did you start that?\
+
+Face:tenshi,普
+What parts did you listen to?\
+
+Face:marisa,惑
+I didn't understand anything you said.\
+
+Face:marisa,普
+But an earthquake is troublesome.
+My house wasn't built to withstand earthquakes!\
+
+Face:tenshi,余
+Now\, I don't really want to
+unleash a great earthquake on Gensokyo.\
+
+Face:tenshi,惑
+A celestial's life is so boring\,
+I just want to play like everyone else down there!\
+
+Face:tenshi,普
+That's why I made forboding signs of an earthquake
+to see who might come and stop me!\
+
+Face:tenshi,嬉
+You over there\, who came all the way up here\,\
+
+Face:tenshi,惑
+can you satisfy me?\
+
+Face:tenshi,汗
+You don't look very dependable...\
+
+Face:marisa,怒
+Ahhh? You're annoying.\
+
+Face:marisa,怒
+Did I tell you to tell me about your schemes?\
+
+Face:marisa,余
+Unfortunately\, I've heard nothing
+but talks of earthquakes.
+My goal is-\
+
+Face:tenshi,普
+The weather\, isn't it?
+Because it's all rain around you.\
+
+Face:marisa,普
+No. There was a mountain so I climbed it.\
+
+Face:tenshi,余
+Whatever.
+But if you don't do anything\,
+your house will get wrecked too.\
+
+Bgm:data/bgm/st05.ogg
+
+Face:marisa,普
+But if I see someone when I climb a mountain\,\
+
+Face:marisa,決
+I'd certainly give her my greetings!\
+
+Face:tenshi,普
+Yes\, that's the spirit!\
+
+Face:tenshi,嬉
+You all only need to
+solve incidents when you see them.\
+
+Face:tenshi,嬉
+That is what makes the youkai happy\, after all.\
+
+Face:marisa,決
+I'm waiting for you to come at me\, you know.\
+
+Face:tenshi,決
+Huhuhu\, let's see how your wet drizzling weather
+compares with my bright glittering weather!\
+
+Face:tenshi,
+
+#戦闘開始処理
+Action:marisa,3
+
+End:
+# 戦闘開始
+
+# --------------------------------
+# 戦闘終了　負け
+Label:Lose
+
+End:
+
+# --------------------------------
+# 戦闘終了　コンテニュー処理
+Label:Continue
+
+#背景　有頂天へ
+Action:tenshi,180
+#天候解除
+Action:tenshi,153
+
+End:
+
+# --------------------------------
+# 戦闘終了　勝ち
+Label:Win
+
+#やられキャラ完全ダウン検知
+Action:tenshi,200
+#攻撃側ニュートラル移行検知
+Action:marisa,202
+
+Sleep:30
+Result:
+
+#イベント　勝利演出フェード
+
+End:
+
+
+
+
+
+## =======================================================================

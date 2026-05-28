@@ -1,0 +1,209 @@
+## =======================================================================
+#Stage:3
+#Title:¬lŠÕ‹‚µ‚Ä
+#Place:—d‰ö‚ÌR
+#Weather:–¶‰J
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Bgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+#‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+Character:yukari,160,0,0,8888FF
+Character:marisa,160,0,1,FF8888
+
+#•ª‰æ–ÊŠO‚É‘Ò‹@
+Action:marisa,100
+#ƒJƒƒ‰ŒÅ’è
+Action:yukari,4
+#ƒtƒH[ƒJƒXuŠÔˆÚ“®
+#Action:yukari,11
+# “G“oê
+Action:marisa,101
+Action:marisa,102
+
+#Œü‚«ŒÅ’è‰ğœ
+Action:yukari,152
+
+Label:Start
+PlayBgm:data/bgm/ta04.ogg
+
+Sleep:30;
+
+#ƒXƒe[ƒWƒ^ƒCƒgƒ‹•\¦
+Object:data/scenario/yukari/effect/StageTitle003.bmp,0,192,-32
+Sleep:60;
+Object:data/scenario/effect/Stage3.bmp,1,256,352
+Sleep:60;
+
+#©•ª“oê
+Action:yukari,50
+Action:yukari,51
+
+#‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X\
+Face:yukari,˜f
+Ah\, it's so\, so hot.\
+
+Face:yukari,˜f
+I should've replenished some water
+back at that swamp.\
+
+Face:marisa,‹Á
+Wha!\
+
+Face:marisa,•
+What's with you?@
+Don't suddenly come out
+like a monster in a haunted house!\
+
+# –¼‘O‚Ìƒeƒƒbƒv
+Object:data/scenario/marisa/effect/Name.bmp,2,352,304
+
+Face:yukari,—]
+It's rare for humans to be
+on the mountain so I came to see~\
+
+Face:marisa,Šğ
+Yeah\, Reimu said there's a world
+where celestials live above here.\
+
+Face:marisa,Šğ
+There must be some valuable things there!\
+
+Face:yukari,•
+Well\, the celestials have stuff like...
+peaches\, fishing tools\, those sorts of things.\
+
+Face:marisa,•
+Really? But we're talking about Heaven?@
+As in the astral plane\, you know? Paradise?\
+
+Face:marisa,Œˆ
+If I borrow something from there
+it'd make life that much easier.
+Don't you think so?\
+
+PlayBgm:data/bgm/st11.ogg
+
+Face:yukari,•
+The petty person dwells
+retired and commits misdeeds.\
+
+Face:marisa,˜f
+What?\
+
+Face:yukari,Œˆ
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+A fool like you only thinks of enjoyment
+when you're alone. That's what I'm saying.\
+
+#í“¬ŠJnˆ—
+
+Action:yukari,3
+End:
+
+# --------------------------------
+# í“¬I—¹@•‰‚¯
+Label:Lose
+
+Face:marisa,Šğ
+What's wrong with that?\
+
+Face:marisa,—]
+Doesn't the desire for ease and
+enjoyment lead to a better future?\
+
+End:
+
+# --------------------------------
+# í“¬I—¹@ƒRƒ“ƒeƒjƒ…[ˆ—
+Label:Continue
+
+#“VŒó‰Šú‰»
+Action:yukari,104
+
+End:
+
+# --------------------------------
+# í“¬I—¹@Ÿ‚¿
+Label:Win
+
+#‚â‚ç‚êƒLƒƒƒ‰Š®‘Sƒ_ƒEƒ“ŒŸ’m
+Action:marisa,200
+#UŒ‚‘¤ƒjƒ…[ƒgƒ‰ƒ‹ˆÚsŒŸ’m
+Action:yukari,202
+
+#©ƒLƒƒƒ‰“VŒó
+#Action:yukari,103
+Sleep:60
+
+Face:yukari,•
+Now\, it's best for you to
+head back before the tengu find you.\
+
+Face:marisa,•‰
+Dammit\, seeing you is a greater misfortune
+than seeing the tengu.\
+
+Face:marisa,•‰
+Why are you here anyways?\
+
+Face:yukari,•
+I'm scaling this mountain to head to Heaven.\
+
+# ‚±‚±‚Å’n–Ê‚Éö‚é
+Hide:1
+#‡‰æ–ÊŠO‚ÖŒ„ŠÔ‘Ş”ğ
+Action:yukari,155
+#‡‰æ–ÊŠO‚ÖŒ„ŠÔ‘Ş”ğŠ®—¹Šm”F
+Action:yukari,156
+Hide:0
+
+Face:marisa,–³
+Face:yukari,–³
+The astral plane\, and paradise!\
+
+Face:marisa,•‰
+You're also heading to Heaven?\
+
+Face:marisa,•‰
+Then I guess it's best to head back for today.\
+
+Face:marisa,–³
+Face:yukari,–³
+Not heading to the heavens with
+such a lax attitude is for your own good.\
+
+
+Hide:1
+Sleep:30;
+Result:
+FadeBgm:2000,0
+
+Stage:5,120
+
+#‚â‚ç‚êƒLƒƒƒ‰‰æ–Ê‘Şê
+Action:marisa,201
+
+#©ƒLƒƒƒ‰Šî€“_‚ÖˆÚ“®
+#Action:yukari,150
+
+#ƒJƒƒ‰’†‰›‚ ‚í‚¹
+Action:yukari,4
+
+Sleep:120;
+
+
+End:
+
+## =======================================================================

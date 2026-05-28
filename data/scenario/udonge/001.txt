@@ -1,0 +1,194 @@
+## =======================================================================
+#Stage:2
+#Title:cáŒ©•‘‚¢\‚µã‚°‚Ü‚·
+#Place:”’‹Ê˜O‚Ìá’ë
+#Weather:
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Font.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Window.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Background.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*CG.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+#PlayBgm:data/bgm/ta00.ogg
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+#‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+Character:udonge,160,0,0,8888FF
+Character:yuyuko,160,0,1,FF8888
+#“G‰æ–ÊŠO‚É‘Ò‹@
+Action:yuyuko,100
+#ƒJƒƒ‰ŒÅ’è
+Action:udonge,4
+
+#ƒtƒH[ƒJƒXuŠÔˆÚ“®
+#Action:udonge,11
+
+#Œü‚«ŒÅ’è‰ğœ
+Action:udonge,152
+
+Label:Start
+PlayBgm:data/bgm/ta08.ogg
+
+Sleep:30;
+
+#ƒXƒe[ƒWƒ^ƒCƒgƒ‹•\¦
+Object:data/scenario/udonge/effect/StageTitle002.bmp,0,192,-32
+Sleep:60;
+Object:data/scenario/effect/Stage2.bmp,1,256,352
+Sleep:60
+
+Face:udonge,‹Á
+... The snow still hasn't disappeared yet.\
+
+Face:udonge,
+Hide:1
+Sleep:30
+
+#
+# “G“oê
+#
+Action:yuyuko,101
+Action:yuyuko,102
+
+Sleep:20
+
+Face:yuyuko,•
+Oh really\, it's so annoying.\
+
+# –¼‘O‚Ìƒeƒƒbƒv
+Object:data/scenario/yuyuko/effect/Name.bmp,2,352,304
+
+Face:yuyuko,—]
+It's almost time for the
+summer snow viewing to come to an end.\
+
+Face:udonge,•
+It's surprising that the snow hasn't melted yet\,
+considering how thin it is.\
+
+Face:yuyuko,—]
+What's this? Have you come to cool off?\
+
+Face:udonge,˜f
+Asking why I came under these circumstances...
+Did something unusual happen?\
+
+Face:yuyuko,Šğ
+Nothing has happened.
+Like catfish ghosts acting violently or-\
+
+Face:udonge,Š¾
+Huh? Well\, it's good that
+nothing happened\, I guess.\
+
+Face:yuyuko,•
+Are you worried about the earthquakes?\
+
+Face:udonge,‹Á
+Eh? Yes. That's right.\
+
+Face:yuyuko,Šğ
+Then\, you'll have to defeat me first.\
+
+Face:udonge,Š¾
+I'm sorry\, but I don't understand what you mean.\
+
+#í“¬ŠJn
+PlayBgm:data/bgm/st16.ogg
+Action:udonge,3
+
+End:
+
+# í“¬ŠJn
+
+# --------------------------------
+# í“¬I—¹@•‰‚¯
+Label:Lose
+
+Face:yuyuko,—]
+Knowing that an earthquake may happen any time\,\
+
+Face:yuyuko,•
+it's best when preparing for an earthquake
+to be calm as if there were no earthquakes.\
+
+End:
+
+# --------------------------------
+# í“¬I—¹@ƒRƒ“ƒeƒjƒ…[ˆ—
+Label:Continue
+
+#“VŒó‰Šú‰»
+Action:udonge,104
+
+End:
+
+# --------------------------------
+# í“¬I—¹@Ÿ‚¿
+Label:Win
+
+#‚â‚ç‚êƒLƒƒƒ‰Š®‘Sƒ_ƒEƒ“ŒŸ’m
+Action:yuyuko,200
+#UŒ‚‘¤ƒjƒ…[ƒgƒ‰ƒ‹ˆÚsŒŸ’m
+Action:udonge,202
+
+#©ƒLƒƒƒ‰“VŒó
+Face:yuyuko,•‰
+If you're worried about the earthquakes
+go visit the shrine.\
+
+Face:yuyuko,•‰
+I've been told today is the
+completion ceremony of the new shrine.\
+
+Face:udonge,‹Á
+Ah\, so the shrine has been repaired already.\
+
+Face:yuyuko,•‰
+Hmm\, but I wonder what's
+going on the shrine right now.\
+
+Face:udonge,Š¾
+??\
+
+# ‰J
+Face:udonge,•
+Well\, I am worried about the earthquakes\, but
+I'd like to go see what the new shrine is like.\
+
+
+Hide:1
+Result:
+
+Stage:0,120
+FadeBgm:2000,0
+
+#‚â‚ç‚êƒLƒƒƒ‰‰æ–Ê‘Şê
+Action:yuyuko,201
+
+#©ƒLƒƒƒ‰Šî€“_‚ÖˆÚ“®
+Action:udonge,150
+
+#ƒJƒƒ‰’†‰›‚ ‚í‚¹
+Action:udonge,4
+
+Sleep:120;
+
+End:
+
+
+
+
+
+## =======================================================================

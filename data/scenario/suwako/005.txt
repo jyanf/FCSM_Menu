@@ -1,0 +1,230 @@
+## =======================================================================
+#Stage:1
+#Title:「ブロッケンの妖怪」
+#Place:霧の湖の辺
+
+Character:suwako,160,0,0,8888FF
+Character:meirin,160,0,1,FF8888
+Character:patchouli,160,0,2,FF8888
+
+#自分初期配置
+Action:suwako,1　#画面外待機
+
+#敵初期配置
+Action:meirin,400　#2P定位置で待機
+Action:meirin,401　#遠くを見ている
+
+#カメラ中央固定
+Action:suwako,2
+
+#画面表示前処理終了============================
+
+Label:Start
+PlayBgm:data/bgm/ta20.ogg
+Sleep:80;
+
+#画面黒からフェードイン
+Action:suwako,161
+Sleep:120;
+
+#ステージタイトル表示
+Object:data/scenario/suwako/effect/StageTitle006.bmp,0,192,-32
+Sleep:30;
+Object:data/scenario/effect/Stage6.bmp,1,256,352
+Sleep:216;
+
+Sleep:60;
+
+Face:meirin,
+...\
+
+Action:meirin,402　#背中を向けて腕組
+Face:meirin,驚
+And that thing!\
+
+Face:meirin,惑
+He doesn't look anything like Taisui Xingjun.\
+
+Sleep:30;
+
+Action:suwako,6
+Action:suwako,7 #登場動作終了検知
+
+Sleep:70;
+
+# 普、嬉、余、汗、驚、怒、決、惑、負
+
+Face:suwako,普
+Excuse me...\
+
+Face:suwako,余
+Did you see something giant around here?\
+
+Face:meirin,汗
+I guess so...\
+
+Face:suwako,驚
+Where?\
+
+Face:meirin,普
+Throught the Forest of Magic.\
+
+Action:meirin,403　#美鈴驚いて振り向く
+Action:meirin,404　#103終了検知
+
+Face:meirin,惑
+Hey, wait!\
+
+Action:meirin,405　#美鈴臨戦態勢
+Face:meirin,怒
+You can not be here.\
+
+Face:suwako,驚
+Why?\
+
+Face:meirin,怒
+It's the property of the Scarlet Devil, so go away.\
+
+Face:suwako,怒
+Well, you don't know who you're up against.\
+
+#戦闘開始処理
+
+#　戦闘開始処理
+
+PlayBgm:data/bgm/st32.ogg
+Action:suwako,203
+Action:meirin,203
+Action:suwako,167#　フラッシュ
+Action:suwako,3
+
+End:
+
+# --------------------------------
+#中間デモ
+Label:Intermission10
+
+Action:meirin,154
+
+#やられキャラ完全ダウン検知
+Action:meirin,200
+#攻撃側ニュートラル移行検知
+Action:meirin,3　#空起き上がる
+
+Sleep:60;
+Action:meirin,203　#チルノ驚く
+Sleep:60;
+# 空が倒れている
+
+Face:suwako,決
+Do you know that you're losing?\
+
+Face:meirin,怒
+I'm already realizing it, but that
+doesn't mean that I can't lose.\
+
+Hide:1
+
+
+#戦闘開始処理
+
+Action:suwako,203#　ニュートラル状態へ
+Action:meirin,203#　ニュートラル状態へ
+
+戦闘再開処理
+Action:meirin,210#　死亡フラグ類初期化
+
+End:
+
+# --------------------------------
+# 戦闘終了　負け
+Label:Lose
+
+End:
+
+# --------------------------------
+# 戦闘終了　コンテニュー処理
+Label:Continue
+
+End:
+
+# --------------------------------
+# 戦闘終了　勝ち
+Label:Win
+
+#やられキャラ完全ダウン検知
+#Action:meirin,200
+#攻撃側ニュートラル移行検知
+#Action:suwako,202
+
+#Action:suwako,164
+Sleep:15
+
+#Action:suwako,204
+#Action:meirin,205
+
+#カメラ中央固定
+#Action:suwako,2　
+
+Sleep:30
+#Action:suwako,165
+
+Sleep:30
+
+Face:suwako,余
+What did I tell you?\
+
+Face:suwako,嬉
+If you allow me, I'll go
+where you told me.\
+
+Face:suwako,
+Face:meirin,
+
+Face:patchouli,
+MEILING!!!\
+
+Sleep:60
+
+Hide:1
+
+# 二番手登場
+Action:patchouli,105
+
+# 登場終了検知
+Action:patchouli,106
+
+Face:meirin,負
+Uppps...\
+
+Face:meirin,負
+Next time I'll get better and beat you...\
+
+Hide:1
+Sleep:10
+
+#やられキャラ画面退場
+Action:meirin,201
+
+#ステージ間調整自キャラ
+Action:suwako,150
+Sleep:15
+
+#ステージ間調整敵
+Action:patchouli,110
+CrossFadeBgm:data/bgm/st43.ogg,2000,1
+
+#カメラ中央あわせ
+Action:suwako,4
+
+Action:patchouli,111
+
+Sleep:60
+
+End:
+
+
+
+
+
+## =======================================================================

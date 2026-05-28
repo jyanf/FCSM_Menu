@@ -1,0 +1,228 @@
+## =======================================================================
+#Stage:5
+#Title:心の上の世界
+#Place:有頂天
+#Weather:極光
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Font.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Window.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Background.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*CG.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+#PlayBgm:data/bgm/ta00.ogg
+#0１２３４５６７８９０１２３４５６７８９０１２３
+
+Character:patchouli,160,0,0,8888FF
+Character:tenshi,160,0,1,FF8888
+#Character:suika,160,0,2,FF8888
+
+#敵画面外に待機
+Action:tenshi,100
+#カメラ初期位置固定
+Action:tenshi,130
+#自キャラ画面外待機
+Action:patchouli,5
+
+#向き固定解除
+Action:patchouli,152
+
+Label:Start
+PlayBgm:data/bgm/ta07.ogg
+
+Sleep:85;
+
+#フェードイン　白
+Action:patchouli,163
+
+#カメラ下へ
+Action:tenshi,131
+#Sleep:60;
+
+#ステージタイトル表示
+Action:patchouli,6
+Object:data/scenario/patchouli/effect/StageTitle005.bmp,0,192,-32
+#画面上から落下して登場
+
+Sleep:60;
+Object:data/scenario/effect/Stage5.bmp,1,256,352
+Sleep:60;
+Action:patchouli,7
+
+
+#sleep,60
+Face:patchouli,普
+There was such a world beyond the clouds... ?\
+
+Face:patchouli,余
+If there is someone indiscriminately
+transforming the mist of temperament\,\
+
+Face:patchouli,普
+they would probably not
+be affected by the disaster here.\
+
+Face:patchouli,
+
+Hide:1
+
+#イベント　メッセージウィンドウ消去
+#イベント　カメラ上空へ
+Action:tenshi,132
+
+#イベント　地震
+Action:tenshi,133
+Face:tenshi,無
+Welcome to Heaven.\
+
+Hide:1
+Sleep:30
+
+Action:tenshi,133
+#イベント　地震
+In Heaven\, song and dance...\
+
+Hide:1
+#sleep,60
+
+# 天子登場
+#イベント　大地震
+#イベント　カメラフォーカス元へ
+Action:tenshi,134
+#sleep,180
+and then after more song and dance await you.\
+
+
+#登場ポーズ終了指令
+Action:tenshi,139
+#sleep,30
+
+Face:patchouli,余
+My\, I'm honored.\
+
+Object:data/scenario/tenshi/effect/Name.bmp,2,352,304
+
+Face:tenshi,普
+What have you come all the way to Heaven for?\
+
+#0１２３４５６７８９０１２３４５６７８９０１２３
+Face:patchouli,普
+I've come searching for the one gathering
+mists of temperament and changing the weather.\
+
+Face:tenshi,余
+Hmm-\
+
+Face:patchouli,余
+According to my intuition\, they should be here.\
+
+Face:tenshi,余
+Hahaha\, I haven't seen such a person at all.\
+
+PlayBgm:data/bgm/st05.ogg
+
+Face:patchouli,普
+Your lying temperament is
+leaking from your entire body.\
+
+Face:tenshi,惑
+Hahaha. Isn't it a little too soon for that?\
+
+Face:patchouli,怒
+If you're going to try something\,
+you're already too late.\
+
+Face:tenshi,決
+But\, say I wanted to break the shrine\,
+I wouldn't be late\, would I?\
+
+#戦闘開始処理
+Action:patchouli,3
+
+End:
+
+# 戦闘開始
+
+# --------------------------------
+# 戦闘終了　負け
+Label:Lose
+Face:tenshi,決
+You came here too early.\
+
+Face:tenshi,普
+Wouldn't it be nice if everyone started to move?\
+
+End:
+
+# --------------------------------
+# 戦闘終了　コンテニュー処理
+Label:Continue
+
+#天候初期化
+Action:tenshi,153
+
+End:
+
+# --------------------------------
+# 戦闘終了　勝ち
+Label:Win
+
+#やられキャラ完全ダウン検知
+Action:tenshi,200
+#攻撃側ニュートラル移行検知
+Action:patchouli,202
+
+#自キャラ天候に変化
+#Action:patchouli,103
+#Sleep:60
+
+Face:patchouli,決
+There's no meaning in fighting with you.
+My goal is to defeat the one
+gathering the mist of temperament.\
+
+Face:tenshi,負
+... Huh?\
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+Sleep:60;
+
+#ステージ間調整自キャラ
+#やられキャラ画面退場
+Action:tenshi,201
+Action:patchouli,150
+Sleep:15
+#カメラ中央あわせ
+Action:patchouli,4
+Sleep:100
+
+Face:patchouli,普
+You're here\, aren't you?
+Come out already.\
+
+Hide:1
+
+Sleep:60
+
+
+
+End:
+
+
+
+
+
+
+## =======================================================================

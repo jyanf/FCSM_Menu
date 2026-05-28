@@ -1,0 +1,234 @@
+## =======================================================================
+#Stage:1
+#Title:–¶‰J‚Ì—H—ì
+#Place:–‚–@‚ÌX
+#Weather:
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Font.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Window.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Background.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*CG.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+#PlayBgm:data/bgm/ta00.ogg
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+#
+#‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+Character:komachi,160,0,0,8888FF
+Character:marisa,160,0,1,FF8888
+
+#”wŒi@–‚–@‚ÌX
+Stage:1,0
+
+#©•ª‰æ–ÊŠO‚É‘Ò‹@
+Action:komachi,1
+
+#“G‰æ–ÊŠO‚É‘Ò‹@
+Action:marisa,100
+
+#Œü‚«ŒÅ’è‰ğœ
+Action:komachi,152
+
+Label:Start
+PlayBgm:data/bgm/ta05.ogg
+
+#©ƒLƒƒƒ‰“VŒó
+Action:komachi,103
+
+Sleep:60;
+
+#ƒXƒe[ƒWƒ^ƒCƒgƒ‹•\¦
+Object:data/scenario/komachi/effect/StageTitle001.bmp,0,192,-32
+Sleep:60;
+Object:data/scenario/effect/Stage1.bmp,1,256,352
+#Sleep:60;
+#ƒJƒƒ‰ˆÚ“®
+Action:komachi,2
+
+
+#“oê
+Action:komachi,50
+Action:komachi,51
+
+#‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X\
+Face:komachi,Šğ
+Heh heh heh\, I found another
+amusing way to pass the time.\
+
+Face:komachi,•
+The weather is the materialization
+of the spirit\, hmm.\
+
+Face:komachi,—]
+Spirit\, or in other words\, ghosts.
+Meaning\, if I watch the surrounding weather\,\
+
+Face:komachi,Šğ
+I can understand the shape the afterlife will take.\
+
+Face:komachi,
+Hide:1
+Sleep:30
+
+#
+# “G“oê
+Action:marisa,101
+#“G“VŒó
+Action:marisa,103
+Action:marisa,102
+
+Face:marisa,˜f
+Uwah\, a shinigami!
+She's coming to take me away!\
+
+# –¼‘O‚Ìƒeƒƒbƒv
+Object:data/scenario/marisa/effect/Name.bmp,2,352,304
+
+Face:komachi,—]
+Oh ho\, I see you hold the spirit of drizzling rain.\
+
+Face:marisa,•
+What's that?\
+
+Face:komachi,•
+Drizzling rain is thin\, gloomy\, and unremarkable\,
+but it has a gentle quality about it.\
+
+Face:marisa,•
+Aw\, don't make me blush.\
+
+Face:komachi,—]
+I bet you'll become a ghost
+that's always in the background.\
+
+Face:komachi,•
+Neither ascending to heaven nor reincarnating\,
+just a spirit eternally waiting
+for judgement in Higan.\
+
+Face:marisa,˜f
+... Have you come for me after all\, then?\
+
+Face:komachi,Š¾
+Aah\, if you're going to be that impatient\,
+then I guess I have no choice.\
+
+#í“¬ŠJnˆ—
+
+PlayBgm:data/bgm/st11.ogg
+Action:komachi,3
+End:
+
+# --------------------------------
+# í“¬I—¹@•‰‚¯
+Label:Lose
+
+Face:marisa,Šğ
+Do I become immortal if I beat death?\
+
+Face:marisa,•
+Oh\, if that means I have to be like a celestial\,@
+
+Face:marisa,˜f
+I don't think I want to.\
+
+
+End:
+
+# --------------------------------
+# í“¬I—¹@ƒRƒ“ƒeƒjƒ…[ˆ—
+Label:Continue
+
+#“VŒó‰Šú‰»
+Action:marisa,113
+
+End:
+
+# --------------------------------
+# í“¬I—¹@Ÿ‚¿
+Label:Win
+
+
+#‚â‚ç‚êƒLƒƒƒ‰Š®‘Sƒ_ƒEƒ“ŒŸ’m
+Action:marisa,200
+#UŒ‚‘¤ƒjƒ…[ƒgƒ‰ƒ‹ˆÚsŒŸ’m
+Action:komachi,202
+
+#©•ª“VŒó
+Action:komachi,103
+Sleep:60;
+
+Face:komachi,—]
+Ha ha ha\, I'm kidding.
+I just came to play around a bit.\
+
+Face:marisa,•‰
+If I defeat you when you do come for me\,
+will I really not die?\
+
+Face:komachi,•
+First of all\, I'm a ferryman\,
+so I won't be coming for you.\
+
+Face:komachi,•
+If you do defeat the shinigami that comes for you\,
+you'd gain a little extension on your life.\
+
+Face:komachi,•
+Hermits and and Celestials are
+usually the ones who keep on winning.\
+
+Face:komachi,˜f
+However\, against normal humans\,
+first they'd use a mental attack 
+against an open crack in their hearts.\
+
+Face:marisa,•‰
+Celestials as in...
+like the one in charge
+of repairing Reimu's shrine?\
+
+Face:marisa,•‰
+I don't want to become like her.\
+
+Face:komachi,‹Á
+Huh? Why would a celestial be repairing a shrine... ?\
+
+Face:komachi,•
+That shrine maiden has more to her than she lets on.\
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+Stage:12,120
+
+#‚â‚ç‚êƒLƒƒƒ‰‰æ–Ê‘Şê
+Action:marisa,201
+
+#©ƒLƒƒƒ‰Šî€“_‚ÖˆÚ“®
+Action:komachi,150
+
+#ƒJƒƒ‰’†‰›‚ ‚í‚¹
+Action:komachi,4
+
+Sleep:120;
+
+End:
+
+
+
+
+
+## =======================================================================

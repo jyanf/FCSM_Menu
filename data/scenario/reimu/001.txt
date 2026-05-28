@@ -1,0 +1,281 @@
+## =======================================================================
+#Stage:2
+#Title:氷の粒が降り注ぐ
+#Place:森
+#Weather:快晴
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "royal blue"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "royal blue"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+
+
+#０１２３４５６７８９０１２３４５６７８９０１２３
+
+Character:reimu,160,0,0,8888FF
+Character:alice,160,0,1,FF8888
+Character:komachi,160,0,2,FF8888
+#敵画面外に待機
+Action:alice,100
+#カメラ固定
+Action:reimu,4
+
+#フォーカス瞬間移動
+#Action:reimu,11
+
+Bgm:data/bgm/ta01.ogg
+
+#向き固定解除
+Action:reimu,152
+
+Label:Start
+
+Sleep:30;
+
+#ステージタイトル表示
+Object:data/scenario/reimu/effect/StageTitle002.bmp,0,192,-32
+Sleep:60;
+Object:data/scenario/effect/Stage2.bmp,1,256,352
+Sleep:80
+
+Face:reimu,普
+It looks like somehow that the earthquake
+only affected the shrine.\
+
+And then there's the rain
+that's only falling around Marisa...\
+
+The rain was falling from scarlet colored clouds...\
+
+It's hard to believe that all these
+natural disasters could be normal events.\
+
+Face:reimu,
+Hide:1
+Sleep:30
+
+#
+# アリス登場
+#
+Action:alice,101
+Action:alice,102
+
+Sleep:20
+
+Face:alice,普
+Well\, I don't see you around the forest often.\
+
+Face:reimu,惑
+(Better keep the disaster a secret 
+from the non-humans.)
+Uh\, yes. Well.\
+
+# 名前のテロップ
+#Name:雹の人形遣い　アリス・マーガトロイド
+Object:data/scenario/alice/effect/Name.bmp,2,352,304
+
+Face:alice,惑
+What's with that reaction?
+You sound like you're busy resolving a disaster.\
+
+Face:reimu,汗
+Whatever could you be referring to?
+Oh yes\, how's the weather in the forest been lately?\
+
+Face:alice,普
+That's a strange question.\
+
+Face:alice,汗
+The weather's been quite odd lately\,
+what with the hail every day.\
+
+Face:reimu,普
+Hail\, you say?
+Hail\, huh...\
+
+Hide:1
+
+#敵天候
+Action:alice,103
+
+Sleep:60
+
+Face:alice,普
+Ah\, see\, there it is again...\
+
+Face:reimu,普
+(A scarlet sky again.)
+Huh\, it really is.\
+
+Face:alice,普
+This is a disaster\, right?
+That's why you came all the way to the forest.\
+
+Face:reimu,怒
+Well\, aren't you acting suspicious?
+I hadn't said anything of the sort\, and yet...\
+
+You're hiding something\, aren't you?\
+
+Face:alice,惑
+Not really\, no.\
+
+PlayBgm:data/bgm/st01.ogg
+
+Face:reimu,普
+Something's strange.
+It definitely smells like a disaster.\
+
+Face:alice,余
+I'd rather not be a suspect.\
+
+But if you don't take care of this soon\,
+your shrine might get destroyed\, you know?\
+
+Action:reimu,3
+
+End:
+
+# 戦闘開始
+
+# --------------------------------
+# 戦闘終了　負け
+Label:Lose
+
+Face:alice,余
+How silly. At this rate\, the hail will go on and on.\
+
+End:
+
+# --------------------------------
+# 戦闘終了　コンテニュー処理
+Label:Continue
+
+#天候初期化
+Action:alice,113
+
+End:
+
+# --------------------------------
+# 戦闘終了　勝ち
+Label:Win
+
+#やられキャラ完全ダウン検知
+Action:alice,200
+#攻撃側ニュートラル移行検知
+Action:reimu,202
+
+#Weather:快晴
+Action:reimu,103
+Sleep:60
+
+Face:reimu,余
+How did you know the shrine collapsed?\
+
+Face:alice,負
+What? It collapsed?\
+
+Face:reimu,汗
+It's too late to be playing dumb...\
+Face:reimu,
+Face:alice,
+
+Hide:1
+
+# 二番手登場
+Action:komachi,105
+
+#Weather:二番手天候
+Action:komachi,103
+
+# 登場終了検知
+Action:komachi,106
+
+#CrossFadeBgm:data/bgm/st02.ogg,2000,1
+
+Face:komachi,普
+Oh\, good grief.
+No matter where I go it's always
+so damp and humid. Ick.\
+
+Face:reimu,普
+Oh\, you're that Slackmeister from a while back.\
+
+#Name:川霧の水先案内人　小野塚小町
+# 名前のテロップ
+Object:data/scenario/komachi/effect/Name.bmp,2,352,304
+
+Face:komachi,汗
+"Slackmeister"?\
+
+Face:komachi,普
+I was taking a stroll during my break
+and I heard about something interesting\,
+so I came to check it out.\
+
+Face:reimu,普
+You too...
+You're also changing the weather\, aren't you?\
+
+Face:komachi,惑
+Huh? I don't know what you're talking about.\
+
+Face:reimu,普
+Haven't you noticed?
+That river mist is only showing up around you.\
+
+Face:komachi,普
+Now that you mention it\, I guess so.
+Whaddya think it means?\
+
+Face:reimu,普
+The energy leaking from your body 
+and the energy of the weather are the same...\
+Could be that you're being used
+by the culprit behind this disaster.\
+Face:reimu,余
+I'll be destroying that <color FFFFFF>energy</color> now.\
+
+Face:alice,負
+I don't really care what you do\,
+but I can't move right now.\
+If you're going to have a duel\,
+can you take it somewhere else?\
+
+Face:komachi,汗
+I guess.\
+
+Hide:1
+Sleep:10
+
+#やられキャラ画面退場
+Action:alice,201
+
+#ステージ間調整自キャラ
+Action:reimu,150
+Sleep:15
+
+#ステージ間調整敵
+Action:komachi,110
+Stage:2,120
+CrossFadeBgm:data/bgm/st02.ogg,2000,1
+
+#カメラ中央あわせ
+Action:reimu,4
+
+Action:komachi,111
+
+Sleep:60
+
+End:
+
+
+
+
+
+## =======================================================================

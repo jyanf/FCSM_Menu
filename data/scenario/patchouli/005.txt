@@ -1,0 +1,143 @@
+## =======================================================================
+#Stage:Final
+#Title:萃まる有頂天
+#Place:有頂天
+#Weather:
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Font.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Window.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Background.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*CG.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+#PlayBgm:data/bgm/ta00.ogg
+#0１２３４５６７８９０１２３４５６７８９０１２３
+
+Character:patchouli,160,0,0,8888FF
+Character:suika,160,0,1,FF8888
+
+
+#カメラ固定
+Action:patchouli,4
+
+Action:suika,100
+
+#フォーカス瞬間移動
+#Action:patchouli,11
+
+#向き固定解除
+Action:patchouli,152
+
+Label:Start
+
+PlayBgm:data/bgm/ta04.ogg
+
+#登場終了検知
+
+Action:suika,101
+Action:suika,102
+
+
+Sleep:30;
+
+#ステージタイトル表示
+Object:data/scenario/patchouli/effect/StageTitle006.bmp,0,192,-32
+Sleep:60;
+Object:data/scenario/effect/StageFinal.bmp,1,256,352
+Sleep:60;
+
+# 名前のテロップ
+Object:data/scenario/suika/effect/Name.bmp,2,352,304
+
+Face:suika,嬉
+It's very pleasant here.
+It's wide\, and the wind feels nice.\
+
+Face:patchouli,普
+Ah\, so it is you.
+It did seem like the scarlet mist
+was being <color 333333>gathered</color>.\
+
+Face:suika,普
+I didn't do a~nything at all this time\, though.\
+
+Face:patchouli,余
+You have no reason to be in Heaven\, then.\
+
+Action:suika,107
+Face:suika,余
+But I have a lot of reasons for being here\, okay?\
+
+PlayBgm:data/bgm/st05.ogg
+
+Face:patchouli,決
+Hah\, I predicted as much\,
+so I'm prepared for anything!\
+
+Face:suika,普
+Oh? You want to fight?\
+
+Face:suika,決
+Well\, I'm bored of song and dance every day\,
+so I won't hold back.\
+
+#Action:suika,113
+
+
+#戦闘開始処理
+Action:patchouli,3
+
+End:
+
+# 戦闘開始
+
+# --------------------------------
+# 戦闘終了　負け
+Label:Lose
+Face:suika,余
+You're too late now.\
+
+Face:suika,嬉
+At any rate\, I'd like to get everyone to come here.\
+
+End:
+
+# --------------------------------
+# 戦闘終了　コンテニュー処理
+Label:Continue
+
+#天候初期化
+Action:suika,113
+
+End:
+
+# --------------------------------
+# 戦闘終了　勝ち
+Label:Win
+
+#やられキャラ完全ダウン検知
+Action:suika,200
+#攻撃側ニュートラル移行検知
+Action:patchouli,202
+
+Sleep:30
+Result:
+
+#イベント　勝利演出フェード
+
+End:
+
+
+
+
+
+## =======================================================================

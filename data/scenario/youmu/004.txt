@@ -1,0 +1,302 @@
+## =======================================================================
+#Stage:5
+#Title:‰_‚Ì’†‚Ì—\’m
+#Place:—’
+#Weather:‘ä•—
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "royal blue"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "royal blue"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+Character:youmu,160,0,0,8888FF
+Character:iku,120,20,1,FF8888
+
+#ê—pƒXƒe[ƒW‰Šúİ’è
+Action:iku,139
+
+#ƒJƒƒ‰ŒÅ’è
+Action:youmu,4
+
+#ƒtƒH[ƒJƒXuŠÔˆÚ“®
+Action:youmu,11
+
+#©ƒLƒƒƒ‰‰æ–Ê¶‘Ò‹@
+Action:youmu,5
+
+#”wŒiˆÃ‰_İ’u
+Action:iku,134
+
+#Œü‚«ŒÅ’è‰ğœ
+Action:youmu,152
+
+#“V‹C‰Šú‰»
+Action:iku,153
+
+Label:Start
+
+#ƒtƒF[ƒhƒCƒ“@•
+Action:youmu,161
+
+Bgm:data/bgm/ta08.ogg
+
+Sleep:60
+
+#ƒXƒe[ƒWƒ^ƒCƒgƒ‹•\¦
+Object:data/scenario/youmu/effect/StageTitle005.bmp,0,192,-32
+Sleep:60
+Object:data/scenario/effect/Stage5.bmp,1,256,352
+Sleep:300
+
+#‰_’†”wŒi‰ğœ
+Action:iku,135
+Sleep:120
+
+#‰æ–Êã‚©‚ç“oê
+Action:youmu,6
+
+#“oêI—¹ŒŸ’m
+Action:youmu,7
+
+Sleep:60
+
+Face:youmu,•
+I see. The temperament of humans is being slain.@
+Not just ghosts\, hm?\
+
+Face:youmu,˜f
+The slain temperament circles around the body
+and gathers overhead as scarlet clouds...\
+
+
+Face:youmu,‹Á
+I see\, the snow that is falling in our mansion
+is Lady Yuyuko's temperament... !\
+
+Face:youmu,Œˆ
+The culprit is somewhere in the clouds!\
+
+Face:youmu,
+Hide:1
+Sleep:60
+
+#ˆß‹è•“h‚è‚Å‰æ–Êã‚©‚ç“oê
+Action:iku,130
+Sleep:90
+Face:iku,
+The sky has been dyed with scarlet
+due to the yawning of the land.\
+
+The yawning of the land is a sign of the awakening.\
+
+#——‹+ˆß‹è‚Ìp‚ª•‚‚©‚Ñã‚ª‚é
+Action:iku,131
+
+In any case\,
+Gensokyo has been awakened\, has it not?\
+
+
+Sleep:90
+
+Face:youmu,•
+You...@
+you did this... ?\
+
+Face:iku,‹Á
+Yes?\
+
+Face:youmu,“{
+It's wrong to simply slay ghosts like that.\
+
+Face:youmu,•
+Entering Nirvana without permission is forbidden.\
+
+Face:iku,•
+Oh?@
+Is that so?\
+
+Face:youmu,“{
+That's right!@
+Because Heaven is so full right now!\
+
+Hide:1
+
+#ƒCƒxƒ“ƒg@ˆß‹è•‚—Vó‘ÔI—¹
+Action:iku,132
+Sleep:160
+# –¼‘O‚Ìƒeƒƒbƒv
+#Name:”ü‚µ‚«”ê‚Ìˆß@‰i]ˆß‹è
+Object:data/scenario/iku/effect/Name.bmp,2,352,304
+
+
+Face:iku,•
+I've heard about that.\
+
+Face:iku,•
+So\, are you turning to Heaven for help?\
+
+Face:youmu,‹Á
+Eh? Heaven?\
+
+Face:iku,•
+Up above the clouds is Heaven.\
+
+Face:youmu,Š¾
+Eh? I've come so high up?\
+
+Face:iku,•
+Do you have important matters
+that require going to Heaven?\
+
+Bgm:data/bgm/st04.ogg
+
+Face:youmu,•
+My job is to find the brat responsible
+for slaying and gathering the temperament
+of living things\, then defeat her!\
+
+Face:iku,—]
+My\, my.\
+
+Face:youmu,Šğ
+The temperament has been
+gathering into these rain clouds.\
+
+Face:youmu,Œˆ
+In other words\, you're the culprit\, aren't you?!\
+
+
+#í“¬ŠJnˆ—
+Action:youmu,3
+
+End:
+
+# í“¬ŠJn
+
+# --------------------------------
+# í“¬I—¹@•‰‚¯
+Label:Lose
+
+Face:iku,˜f
+My my\, it seems like you're mistaken.\
+
+Face:iku,•
+Now then\, I should descend to the surface
+and warn of the earth's awakening.\
+
+End:
+
+# --------------------------------
+# í“¬I—¹@ƒRƒ“ƒeƒjƒ…[ˆ—
+Label:Continue
+
+#“VŒó‰Šú‰»
+Action:iku,153
+
+End:
+
+# --------------------------------
+# í“¬I—¹@Ÿ‚¿
+Label:Win
+
+#‚â‚ç‚êƒLƒƒƒ‰Š®‘Sƒ_ƒEƒ“ŒŸ’m
+Action:iku,200
+#UŒ‚‘¤ƒjƒ…[ƒgƒ‰ƒ‹ˆÚsŒŸ’m
+Action:youmu,202
+
+#Weather:“VŒóƒNƒŠƒA
+# –³“VŒó‚Ö
+Action:iku,133
+
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+Face:youmu,Œˆ
+At last\, I've stopped the trickster behind all this!\
+
+Face:iku,•‰
+I'm just a messenger from the Dragon Palace
+bringing tidings of catastrophe to the humans.\
+
+Face:iku,•‰
+I have nothing to do with creating them.\
+
+Face:youmu,Š¾
+Huh?@
+I-Is that true?\
+
+Face:youmu,•
+Then you're here in the clouds because... ?\
+
+Face:iku,•‰
+Gensokyo's going to wake up soon.\
+
+Face:iku,•‰
+Then\, an apocalyptic earthquake
+shall tear Gensokyo asunder.\
+
+Face:youmu,‹Á
+Eh?!\
+
+Face:youmu,‹Á
+W-W-W-W-What?!\
+
+Face:iku,•‰
+That's why these scarlet clouds are here.
+When these clouds appear there will be
+no avoiding of the earthquake.\
+
+Face:youmu,˜f
+So the catfish who destroyed the shrine...\
+
+Face:youmu,˜f
+She probably meant earthquake
+when she said catfish...\
+
+Face:iku,•‰
+Soon\, there will probably
+be a sudden influx of ghosts.@
+Isn't that tragic?\
+
+
+Face:youmu,“{
+Using the ghosts to create scarlet clouds\,
+causing earthquakes from the clouds...\
+
+Face:youmu,“{
+and using that to create an influx of ghosts!\
+
+Face:youmu,Œˆ
+I can't let this keep happening.
+I'm gonna slice that criminal!\
+
+
+Hide:1
+
+Sleep:30
+#‰æ–Êã•”‚ÖˆÚ“®
+Action:youmu,151
+
+Sleep:90
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+#ƒtƒF[ƒhƒAƒEƒg@”’
+Action:youmu,162
+Sleep:60
+
+Stage:5,0
+
+End:
+
+
+
+
+
+## =======================================================================

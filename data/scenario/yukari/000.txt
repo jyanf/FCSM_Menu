@@ -1,0 +1,183 @@
+## =======================================================================
+#Stage:1
+#Title:•‚‰_‚Ì”@‚µ
+#Place:‰ó‚ê‚½_Ğ
+#Weather:–¶‰J
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Bgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+#‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+Character:yukari,160,0,0,8888FF
+Character:reimu,160,0,1,FF8888
+
+#”wŒi“|‰ó_Ğ
+Stage:0,0
+
+#©•ª‰æ–ÊŠO‚É‘Ò‹@
+Action:yukari,1
+
+#“G‰æ–ÊŠO‚É‘Ò‹@
+Action:reimu,100
+
+Label:Start
+PlayBgm:data/bgm/ta03.ogg
+
+#©ƒLƒƒƒ‰“VŒó
+#Action:yukari,103
+Action:reimu,103
+
+Sleep:60;
+
+#ƒXƒe[ƒWƒ^ƒCƒgƒ‹•\¦
+Object:data/scenario/yukari/effect/StageTitle001.bmp,0,192,-32
+Sleep:60;
+Object:data/scenario/effect/Stage1.bmp,1,256,352
+Sleep:60;
+
+#ƒJƒƒ‰ˆÚ“®
+Action:yukari,2
+
+#©•ª“oê
+Action:yukari,50
+Action:yukari,51
+
+#‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X\
+Face:yukari,•
+The shrine's not repaired yet.\
+
+Face:yukari,Šğ
+Reimu\, come out.\
+
+Face:yukari,
+Hide:1
+Sleep:30
+
+# “G“oê
+Action:reimu,101
+Action:reimu,102
+
+Face:reimu,•
+What's up?\
+
+# –¼‘O‚Ìƒeƒƒbƒv
+Object:data/scenario/reimu/effect/Name.bmp,2,352,304
+
+Face:yukari,•
+What's taking so long to recover the shrine?
+You're so carefree aren't you?\
+
+Face:reimu,˜f
+But that Tenshi girl didn't come down today.
+"Today's a song-day\," she said.\
+
+Face:yukari,•
+Well\, she could sing on earth\,@
+if that's what she wants to do.\
+
+Face:reimu,Š¾
+Well\, that's not the point\, I guess.
+Anyway\, it's a luxury isn't it\,
+singing and dancing days without any job to do.\
+
+Face:yukari,—]
+Wealth and honor from unrighteousness
+is to me like a cloud in the sky.\
+
+Face:reimu,˜f
+?\
+
+Face:yukari,Œˆ
+I'm talking about celestials that enjoy luxury.
+And you\, too.\
+
+#í“¬ŠJnˆ—
+PlayBgm:data/bgm/st10.ogg
+
+Action:yukari,3
+End:
+
+# --------------------------------
+# í“¬I—¹@•‰‚¯
+Label:Lose
+
+Face:reimu,•
+The shrine will get back to normal.\
+
+Face:reimu,Šğ
+That celestial promised this.\
+
+End:
+
+# --------------------------------
+# í“¬I—¹@ƒRƒ“ƒeƒjƒ…[ˆ—
+Label:Continue
+
+#“VŒó‰Šú‰»
+Action:reimu,113
+
+End:
+
+# --------------------------------
+# í“¬I—¹@Ÿ‚¿
+Label:Win
+
+
+#‚â‚ç‚êƒLƒƒƒ‰Š®‘Sƒ_ƒEƒ“ŒŸ’m
+Action:reimu,200
+#UŒ‚‘¤ƒjƒ…[ƒgƒ‰ƒ‹ˆÚsŒŸ’m
+Action:yukari,202
+
+#©ƒLƒƒƒ‰“VŒó
+#Action:yukari,103
+Sleep:60;
+
+Face:yukari,•
+I'm gonna go and punish her in person.\
+
+Face:reimu,•‰
+Why me...\
+
+Face:yukari,•
+Well\, you're quite like a celestial yourself.\
+
+Face:yukari,—]
+You're not so down-to-earth\, are you?\
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+#‡‰æ–ÊŠO‚ÖŒ„ŠÔ‘Ş”ğ
+Action:yukari,155
+
+#‡‰æ–ÊŠO‚ÖŒ„ŠÔ‘Ş”ğŠ®—¹Šm”F
+Action:yukari,156
+
+#‚â‚ç‚êƒLƒƒƒ‰‰æ–Ê‘Şê
+Action:reimu,201
+
+#ƒJƒƒ‰’†‰›‚ ‚í‚¹
+Action:yukari,4
+
+Stage:2,120
+
+Sleep:120;
+
+End:
+
+
+
+
+## =======================================================================

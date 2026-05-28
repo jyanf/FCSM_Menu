@@ -1,0 +1,198 @@
+## =======================================================================
+#Stage:6
+#Title:—H—ì‚Ì–©
+#Place:‘å}‘ŠÙ
+#Weather:
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+#‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+Character:remilia,160,0,0,8888FF
+Character:komachi,160,0,1,FF8888
+#“G‰æ–ÊŠO‚É‘Ò‹@
+Action:komachi,100
+#ƒJƒƒ‰ŒÅ’è
+Action:remilia,4
+
+#ƒtƒH[ƒJƒXuŠÔˆÚ“®
+#Action:remilia,11
+
+#Œü‚«ŒÅ’è‰ğœ
+Action:remilia,152
+
+Label:Start
+PlayBgm:data/bgm/ta02.ogg
+
+Sleep:30;
+
+#ƒXƒe[ƒWƒ^ƒCƒgƒ‹•\¦
+Object:data/scenario/remilia/effect/StageTitle006.bmp,0,192,-32
+Sleep:60;
+Object:data/scenario/effect/Stage6.bmp,1,256,352
+Sleep:60
+
+Face:remilia,•
+Sakuyaaa...
+Choose the suspects more wisely!\
+Face:remilia,
+Hide:1
+Sleep:30
+
+#
+# “G“oê
+#
+Action:komachi,101
+Action:komachi,102
+
+Sleep:20
+
+Face:komachi,˜f
+Suspect?
+That's a strange way to address someone.\
+
+# –¼‘O‚Ìƒeƒƒbƒv
+Object:data/scenario/komachi/effect/Name.bmp,2,352,304
+
+Face:remilia,Šğ
+Ooh\, this is more like it\, Sakuya.\
+
+#“G“VŒó
+Action:komachi,103
+
+Face:komachi,•
+What's more like it?\
+
+Face:remilia,•
+That dangerous-looking scythe
+and that criminal look...
+Surely you did this?\
+
+Face:komachi,Š¾
+That's such a mean thing to say.
+But\, for a shinigami that might be a good omen.\
+
+Face:remilia,—]
+I don't care about your motive anymore.
+You're getting a guilty verdict no matter what.\
+
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+Face:komachi,‹Á
+Oh\, a mock trial?
+I've seen plenty of those\,
+so I know a lot about them.\
+
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+Face:remilia,—]
+Then I might learn a thing or two
+about catching criminals.\
+
+Face:komachi,•
+A trial doesn't catch criminals.\
+
+Face:remilia,‹Á
+Eh? Then what does it do?\
+
+Face:komachi,•
+Things like yanking tongues out and roasting them.\
+
+Face:remilia,Œˆ
+Nice\, nice...@
+That's what we'll do today!\
+
+#í“¬ŠJn
+PlayBgm:data/bgm/st22.ogg
+Action:remilia,3
+
+End:
+
+# í“¬ŠJn
+
+# --------------------------------
+# í“¬I—¹@•‰‚¯
+Label:Lose
+
+Face:komachi,˜f
+So\, why was I dragged all the way here?\
+
+Face:komachi,˜f
+Sigh\, if I don't get back to work she'll get angry.
+I'll be going my way now.\
+
+
+End:
+
+# --------------------------------
+# í“¬I—¹@ƒRƒ“ƒeƒjƒ…[ˆ—
+Label:Continue
+
+#“VŒó‰Šú‰»
+Action:komachi,113
+
+End:
+
+# --------------------------------
+# í“¬I—¹@Ÿ‚¿
+Label:Win
+
+#‚â‚ç‚êƒLƒƒƒ‰Š®‘Sƒ_ƒEƒ“ŒŸ’m
+Action:komachi,200
+#UŒ‚‘¤ƒjƒ…[ƒgƒ‰ƒ‹ˆÚsŒŸ’m
+Action:remilia,202
+
+#©ƒLƒƒƒ‰“VŒó
+Action:remilia,103
+Sleep:60
+
+Face:remilia,˜f
+Making the weather strange to yank tongues...
+That doesn't make sense.\
+
+Face:komachi,•‰
+You're bored\, too?@
+If you have time to waste\, I can play with you.\
+
+Face:remilia,˜f
+Don't you have work to do?\
+
+Face:komachi,Š¾
+Ah\, I've got to get back to work.\
+
+Face:remilia,˜f
+Sakuyaaa!
+Next!\
+
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+#‚â‚ç‚êƒLƒƒƒ‰‰æ–Ê‘Şê
+Action:komachi,201
+
+#©ƒLƒƒƒ‰Šî€“_‚ÖˆÚ“®
+Action:remilia,150
+
+#ƒJƒƒ‰’†‰›‚ ‚í‚¹
+Action:remilia,4
+
+Sleep:120;
+
+End:
+
+
+
+
+
+## =======================================================================

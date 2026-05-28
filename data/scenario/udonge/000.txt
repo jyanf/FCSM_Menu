@@ -1,0 +1,218 @@
+## =======================================================================
+#Stage:1
+#Title:g–‚ŠÙ‚Ìå
+#Place:g–‚ŠÙƒƒr[
+#Weather:
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Font.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Window.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Background.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*CG.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+#PlayBgm:data/bgm/ta00.ogg
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+#‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+Character:udonge,160,0,0,8888FF
+Character:remilia,160,0,1,FF8888
+
+#”wŒi@g–‚ŠÙƒƒr[
+Stage:16,0
+
+#©ƒLƒƒƒ‰‰æ–ÊŠO‚É‘Ò‹@
+Action:udonge,1
+
+
+#“G‰æ–ÊŠO‚É‘Ò‹@
+Action:remilia,100
+
+#ƒJƒƒ‰’†‰›ŒÅ’è
+Action:udonge,2
+
+Label:Start
+PlayBgm:data/bgm/ta00.ogg
+
+#©ƒLƒƒƒ‰“VŒó
+Action:udonge,104
+
+Sleep:60;
+
+#ƒXƒe[ƒWƒ^ƒCƒgƒ‹•\¦
+Object:data/scenario/udonge/effect/StageTitle001.bmp,0,192,-32
+Sleep:60;
+Object:data/scenario/effect/Stage1.bmp,1,256,352
+Sleep:60;
+
+#“oê
+Action:udonge,50
+Action:remilia,101
+
+Action:udonge,51
+Action:remilia,102
+
+Face:udonge,•
+#‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X\
+Long time no see.\
+
+# –¼‘O‚Ìƒeƒƒbƒv
+Object:data/scenario/remilia/effect/Name.bmp,2,352,304
+
+Face:remilia,•
+Oh? I was wondering who had called on me\,
+but it's just the one from back then.\
+
+Face:udonge,•
+A while ago you were investigating the disaster.
+I was wondering if perhaps you had found anything.\
+
+Face:remilia,‹Á
+A disaster investigation?
+Oh\, there was indeed something like that.\
+
+Face:remilia,—]
+I'd completely forgotten about it.\
+
+Face:udonge,˜f
+In the end\, it looks like the shrine maiden
+resolved the matter. However\, I'm not
+very knowledgeable of the details...\
+
+Face:remilia,—]
+The enemy was above the clouds\, right?\
+
+Face:udonge,‹Á
+Yes\, that's right.
+Have you heard about it?\
+
+Face:remilia,•
+I'd know even if I didn't hear about it.
+So\, what this? You're reporting to me?\
+
+Face:udonge,—]
+No\, Reimu certainly did resolve the
+issues with the strange weather.\
+
+Face:udonge,˜f
+However\, my concern has not been resolved.\
+
+Face:remilia,•
+What could that be?\
+
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+Face:udonge,˜f
+It's about the earthquakes.
+It seems the land around the shrine has calmed down\,\
+
+Face:udonge,˜f
+however in the bamboo forest\, twisted bamboo
+is growing... The issues with the earth
+haven't been cleared up.\
+
+Face:udonge,•
+I thought maybe a person not associated
+with the shrine such as you might know something.\
+
+Face:remilia,—]
+Maybe so. Even if I did know
+something\, I wouldn't tell you.\
+
+Face:udonge,“{
+How mean.\
+
+
+#“G“VŒó
+#Action:remilia,103
+
+PlayBgm:data/bgm/st17.ogg
+Action:udonge,3
+End:
+
+# --------------------------------
+# í“¬I—¹@•‰‚¯
+Label:Lose
+
+Face:remilia,•
+Earthquake\, huh?\
+
+Face:remilia,Šğ
+If one happens we'll just fly to the sky.
+Nothing to worry about.\
+
+End:
+
+# --------------------------------
+# í“¬I—¹@ƒRƒ“ƒeƒjƒ…[ˆ—
+Label:Continue
+
+#“VŒó‰Šú‰»
+Action:udonge,104
+
+End:
+
+# --------------------------------
+# í“¬I—¹@Ÿ‚¿
+Label:Win
+
+
+#‚â‚ç‚êƒLƒƒƒ‰Š®‘Sƒ_ƒEƒ“ŒŸ’m
+Action:remilia,200
+#UŒ‚‘¤ƒjƒ…[ƒgƒ‰ƒ‹ˆÚsŒŸ’m
+Action:udonge,202
+
+#©ƒLƒƒƒ‰“VŒó
+#Action:udonge,103
+#Sleep:60;
+
+Face:remilia,•‰
+I haven't noticed anything out of the ordinary.\
+
+Face:udonge,•
+I see\, well that's fine but...\
+
+Face:udonge,Š¾
+I'm suspicious of that Celestial.\
+
+Face:remilia,•‰
+Well\, even if an earthquake occurs it'll be fine.
+At most there's only the 
+window glass to worry about.\
+
+Face:udonge,˜f
+More than damage\, I'm worried she's
+plotting something unpleasant\, you know?\
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+Stage:17,120
+
+#‚â‚ç‚êƒLƒƒƒ‰‰æ–Ê‘Şê
+Action:remilia,201
+
+#©ƒLƒƒƒ‰Šî€“_‚ÖˆÚ“®
+Action:udonge,150
+
+#ƒJƒƒ‰’†‰›‚ ‚í‚¹
+Action:udonge,4
+
+Sleep:120;
+
+End:
+
+
+
+
+
+## =======================================================================

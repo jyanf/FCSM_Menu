@@ -1,0 +1,193 @@
+## =======================================================================
+#Stage:1
+#Title:¬•§‚µ‚Ä‚İ‚Ü‚·H
+#Place:—L’¸“V
+#Weather:
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Font.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Window.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Background.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*CG.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+#PlayBgm:data/bgm/ta00.ogg
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+#‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+Character:tenshi,160,0,0,8888FF
+Character:yuyuko,160,0,1,FF8888
+
+#”wŒi@—L’¸“V
+Stage:5,0
+
+
+#©ƒLƒƒƒ‰‰æ–ÊŠO‚É‘Ò‹@
+Action:tenshi,1
+
+#“G‰æ–ÊŠO‚É‘Ò‹@
+Action:yuyuko,100
+
+Label:Start
+#©ƒLƒƒƒ‰“VŒó
+#Action:tenshi,103
+
+Sleep:60;
+
+#PlayBgm:data/bgm/ta00.ogg
+
+#Sleep:60;
+
+#ƒJƒƒ‰’†‰›ˆÚ“®
+Action:tenshi,2
+
+#“oê
+Action:tenshi,50
+Action:tenshi,51
+
+Face:tenshi,˜f
+Ahh...\
+
+Face:tenshi,•
+The newly rebuilt shrine was destroyed\,
+and the little oni is responsible
+for the re-reconstruction.\
+
+Face:tenshi,˜f
+Things aren't going my way lately...\
+
+Face:tenshi,
+Hide:1
+Sleep:30
+
+
+# “G“oê
+Action:yuyuko,101
+
+#ƒXƒe[ƒWƒ^ƒCƒgƒ‹•\¦
+Object:data/scenario/tenshi/effect/StageTitle001.bmp,0,192,-32
+Sleep:60;
+Object:data/scenario/effect/Stage1.bmp,1,256,352
+
+#
+Action:yuyuko,102
+PlayBgm:data/bgm/ta05.ogg
+
+
+Face:yuyuko,•
+Sorry to keep you waiting.\
+
+Face:tenshi,‹Á
+Eh? Why are you here?\
+
+# –¼‘O‚Ìƒeƒƒbƒv
+Object:data/scenario/yuyuko/effect/Name.bmp,2,352,304
+
+Face:yuyuko,Šğ
+I came out here because I was invited?\
+
+Face:tenshi,˜f
+Who would invite you here...
+Wait\, maybe it's-\
+
+Face:yuyuko,—]
+Today\, the shrine's groundbreaking ceremony party
+is being held here. I was invited to it.\
+
+Face:tenshi,“{
+It is that little oni's prank after all...
+But she wouldn't be at the shrine
+even if I went there...\
+
+Face:yuyuko,‹Á
+I wonder if I came a little too early.
+The celebration is still about a half a day away.\
+
+Face:tenshi,Š¾
+Oh\, I guess it can't be helped.\
+
+Face:tenshi,Šğ
+I know\, if you've nothing to do\,
+how about killing some time with me?\
+
+Face:yuyuko,—]
+You're the one with too much time
+on your hands\, you know.\
+
+#í“¬ŠJnˆ—
+
+PlayBgm:data/bgm/st16.ogg
+Action:tenshi,3
+End:
+
+# --------------------------------
+# í“¬I—¹@•‰‚¯
+Label:Lose
+
+Face:yuyuko,—]
+Since there's still time before the feast\,
+mind if I look around?\
+
+End:
+
+# --------------------------------
+# í“¬I—¹@ƒRƒ“ƒeƒjƒ…[ˆ—
+Label:Continue
+
+#“VŒó‰Šú‰»
+Action:tenshi,153
+
+End:
+
+# --------------------------------
+# í“¬I—¹@Ÿ‚¿
+Label:Win
+
+
+#‚â‚ç‚êƒLƒƒƒ‰Š®‘Sƒ_ƒEƒ“ŒŸ’m
+Action:yuyuko,200
+#UŒ‚‘¤ƒjƒ…[ƒgƒ‰ƒ‹ˆÚsŒŸ’m
+Action:tenshi,202
+
+Face:tenshi,—]
+It's not supposed to be this easy
+to get into Heaven\, you know.\
+
+Face:yuyuko,•‰
+It's fine for me\, I'm a ghost.\
+
+Face:tenshi,•
+Heaven is a place where spirits ascend to.
+Are you trying to do that?\
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+#‚â‚ç‚êƒLƒƒƒ‰‰æ–Ê‘Şê
+Action:yuyuko,201
+
+#©ƒLƒƒƒ‰Šî€“_‚ÖˆÚ“®
+Action:tenshi,150
+
+#ƒJƒƒ‰’†‰›‚ ‚í‚¹
+Action:tenshi,4
+
+Sleep:120;
+
+End:
+
+
+
+
+
+## =======================================================================

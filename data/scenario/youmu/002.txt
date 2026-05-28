@@ -1,0 +1,243 @@
+## =======================================================================
+#Stage:3
+#Title:二つ目の成仏
+#Place:玄武の沢
+#Weather:川霧
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "royal blue"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "royal blue"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+#0１２３４５６７８９０１２３４５６７８９０１２３
+
+Character:youmu,160,0,0,8888FF
+Character:komachi,160,0,1,FF8888
+Character:yukari,160,0,2,FF8888
+
+#カメラ固定
+Action:youmu,4
+
+#フォーカス瞬間移動
+#Action:youmu,11
+
+#敵フィールド端で待機
+Action:komachi,100
+
+#向き固定解除
+Action:youmu,152
+
+Label:Start
+
+PlayBgm:data/bgm/ta00.ogg
+Sleep:30;
+
+#ステージタイトル表示
+Object:data/scenario/youmu/effect/StageTitle003.bmp,0,192,-32
+Sleep:60;
+Object:data/scenario/effect/Stage3.bmp,1,256,352
+Sleep:60
+
+Face:youmu,普
+I didn't think I would
+have to resort to such a thing...\
+
+Face:youmu,惑
+But maybe I should try
+asking a shinigami for once...\
+
+Face:youmu,
+Hide:1
+Sleep:30
+
+#
+# 敵登場
+#
+Action:komachi,101
+Action:komachi,102
+Sleep:20
+
+Face:komachi,普
+What's up? 
+What's with your sleepy face?\
+
+# 名前のテロップ
+Object:data/scenario/komachi/effect/Name.bmp,2,352,304
+
+Face:youmu,汗
+No\, well\, haven't you noticed
+the absence of ghosts recently... ?
+Also\, I'm not sleepy.\
+
+Hide:1
+#敵天候
+Action:komachi,103
+Sleep:60
+
+Face:komachi,驚
+Ahh\, ghosts?
+Yes\, I have something to ask you about that.\
+
+Face:youmu,普
+Yes?\
+
+Face:komachi,普
+It's you\, isn't it?
+The one who's been going around slaying ghosts.\
+
+Face:komachi,怒
+I heard that all the ghosts
+are being slain somehow.\
+
+Face:youmu,驚
+Eh? Being slain?
+What do you mean?\
+
+Face:komachi,普
+That's what I want to know!\
+
+Face:youmu,驚
+All I can tell you is that
+I'm not the one slaying them.\
+
+Face:komachi,余
+Is there anyone other than you who can slay ghosts?
+Even if you have no memory of doing it-\
+
+Face:komachi,決
+maybe you have a sleep-walking disorder...
+I still suspect you!\
+
+
+#戦闘開始
+PlayBgm:data/bgm/st02.ogg
+Action:youmu,3
+
+End:
+
+# 戦闘開始
+
+# --------------------------------
+# 戦闘終了　負け
+Label:Lose
+
+Face:komachi,余
+Work has been decreasing lately\, it's delightful!\
+
+Face:komachi,汗
+... Though I shouldn't just
+happily leave this alone.\
+
+End:
+
+# --------------------------------
+# 戦闘終了　コンテニュー処理
+Label:Continue
+
+#天候初期化
+Action:komachi,113
+
+End:
+
+# --------------------------------
+# 戦闘終了　勝ち
+Label:Win
+
+#やられキャラ完全ダウン検知
+Action:komachi,200
+#攻撃側ニュートラル移行検知
+Action:youmu,202
+
+#自天候
+Action:youmu,103
+Sleep:60
+
+Face:youmu,怒
+I didn't do it!
+I'm trying to investigate this case!\
+
+Face:komachi,負
+Is that so?\
+
+Face:komachi,負
+Is there anyone else who is
+capable of doing such a thing... ?\
+
+Face:komachi,無
+Face:youmu,無
+<color FF00FF>There is.</color>\
+
+Face:youmu,
+Face:komachi,
+
+Hide:1
+
+Sleep:30
+
+#二番手登場
+Action:yukari,105
+
+#Weather:二番手天候
+Action:yukari,103
+
+#105終了検知
+Action:yukari,106
+
+Face:youmu,驚
+Eh!?
+Lady Yukari?\
+
+Face:yukari,普
+Youmu\, you are not the only one who can slay ghosts.\
+
+Face:youmu,普
+I-Is that so?\
+
+# 名前のテロップ
+Object:data/scenario/yukari/effect/Name.bmp,2,352,304
+
+Face:yukari,普
+It would be dangerous if ghosts kept
+getting cut up the way they are now.\
+
+Face:youmu,惑
+Even so\, why are they being slain?\
+
+Face:yukari,普
+Well\, follow me...\
+
+Hide:1
+
+Sleep:10
+
+#やられキャラ画面退場
+Action:komachi,201
+
+#ステージ間調整自キャラ
+Action:youmu,150
+Sleep:15
+
+#ステージ間調整敵
+Action:yukari,110
+Stage:1,120
+CrossFadeBgm:data/bgm/st01.ogg,2000,1
+
+#カメラ中央あわせ
+Action:youmu,4
+
+#ステージ間調整敵　終了検知
+Action:yukari,111
+
+Sleep:60
+
+End:
+
+
+
+
+
+## =======================================================================

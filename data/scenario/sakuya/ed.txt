@@ -1,0 +1,110 @@
+# ----------------------------------------------------
+# Ending
+# Stage:Ending
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "royal blue"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "royal blue"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+
+Font:MonoSpatialModSWR,15,0,6
+WindowColor:0,0,0,0
+Color:FFFFFF
+Background:data/scenario/effect/EdBack000.bmp,999,0,0
+CG:data/scenario/sakuya/effect/ED000.bmp,96,16,50
+Label:Start
+
+Bgm:data/bgm/ta06.ogg
+
+# ˆê–‡–Ú
+# ‰ó‚ê‚½_Ğ‚ÌƒCƒ‰ƒXƒgi‘¼‚ÌƒLƒƒƒ‰‚Å‚àg‚¤”Ä—pŠGj
+# 
+# @ˆê–‡–Ú‚ÍêŠ‚ğ¦‚·ŠÈ’P‚ÈƒCƒ‰ƒXƒg‚ª“ü‚é—\’è‚Å‚·
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+  Summer at the Hakurei Shrine.@
+  It was the shrine at the eastern border of Gensokyo\, but now it's broken down.@
+  It still serves its purpose as a shrine\, but not as a place to live.\
+
+  The shrine had been destroyed by an earthquake that occurred directly below it.@
+  It had probably occurred while Sakuya was in Heaven\,
+  so she hadn't noticed it at all.\
+
+# “ñ–‡–Ú
+# —ì–²‚Æ–‚—¹‚Æç–é
+# —ì–²‚ª“r•û‚É•é‚ê‚Ä‚¢‚é—l‚ğ–‚—¹‚ª‚É‚â‚Â‚¢‚Ä’­‚ß‚Ä‚¢‚é
+# ç–é‚Í“|‰ó‚µ‚½_Ğ‚ğŒ©‚Ä‚¢‚é
+
+
+CG:data/scenario/sakuya/effect/ED001.bmp,96,16,50
+
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+Reimu  "Seriously\, what am I going to do?"@
+Marisa "Wow\, the roof's totally caved in."@
+Sakuya "That happens a lot when buildings collapse in earthquakes."\
+
+Marisa "It must be because the roof's so heavy."@
+Reimu  "How are you all so calm about this!?"@
+Sakuya "It sounds like nobody in the manor felt anything at all."\
+
+Reimu  "Oh\, what do I do now..."@
+Marisa "Why not try asking for donations?
+        You could go around with the donation box."\
+
+Sakuya "Ah! I have a good idea."\
+
+
+CG:data/scenario/sakuya/effect/ED002.bmp,96,16,50
+# O–‡–Ú
+# ç–é‚ª‰½‚©‚ğv‚¢‚Â‚¢‚Ä“ñl‚ÉŒê‚Á‚Ä‚¢‚é
+# —ì–²‚Æ–‚—¹‚Í˜b‚µ”¼•ª‚É•·‚¢‚Ä‚¢‚é
+# 
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+Sakuya "I met someone who can control earthquakes recently."@
+Marisa " ... No way\, that's crazy."@
+Sakuya "If you can make friends with them\, 
+        I'm sure you won't have to worry about aftershocks."\
+
+Reimu  "It's not like there's anything left for the aftershocks to knock down!@
+        You should've introduced us BEFORE this happened."\
+
+Sakuya "Hm\, perhaps.@
+        I can't help but wonder\, though\, if that person may have been
+        behind this earthquake."\
+
+Reimu  "!? Wait\, tell me more."@
+Sakuya "Well\, the earthquake was strong enough to destroy the shrine\, right?@
+        It's very unusual no-one else noticed an earthquake that strong."\
+
+Sakuya "She was able to create very localized earthquakes.@
+        And she kept mumbling about how she wanted to make more."\
+
+Marisa "Huh?  Is this for real?"@
+Sakuya "I think Reimu should decide for herself."@
+Reimu  "... She must be the culprit! Where was she?"\
+
+Sakuya "She lives far above the clouds."@
+Reimu  "Above the clouds... Well\, I'll go anywhere!
+        I'll tie her up\, bring her back\, and make her pay!"\
+
+FadeBgm:3000,0
+CG:BLACK,0,0,15
+
+  Sakuya gave the crazy celestial a good lecture in her last battle\,
+  but... it seemed she still bore a grudge.\
+
+  She thought she'd send Reimu to give her another lecture.
+  Reimu would definitely be a lot more forceful in her ministrations.\
+
+StaffRoll:
+
+  She imagined how disappointed an invincible
+  celestial would be when she lost to Reimu --
+  And that made her feel a little better.\
+
+End:

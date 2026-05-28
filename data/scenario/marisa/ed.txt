@@ -1,0 +1,107 @@
+# ----------------------------------------------------
+# Ending
+# Stage:Ending
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "royal blue"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "royal blue"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+
+Font:MonoSpatialModSWR,15,0,6
+WindowColor:0,0,0,0
+Color:FFFFFF
+Background:data/scenario/effect/EdBack000.bmp,999,0,0
+CG:data/scenario/marisa/effect/ED000.bmp,96,16,50
+Label:Start
+
+
+Bgm:data/bgm/ta06.ogg
+
+# ˆê–‡–Ú
+# X‚ÌƒCƒ‰ƒXƒg
+# 
+# @ˆê–‡–Ú‚ÍêŠ‚ğ¦‚·ŠÈ’P‚ÈƒCƒ‰ƒXƒg‚ª“ü‚é—\’è‚Å‚·
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+  The Forest of Magic.@
+  The forest sheltered all creatures in it from any harmful light.@
+  Still\, the forest couldn't live without any light at all.\
+
+  At the same time\, rain was essential for the creatures of the forest.@
+  The drizzle that only fell around her had let up considerably.@
+  She'd succeeded in winning back the summer heat.\
+
+
+# “ñ–‡–Ú
+#
+# ˆÃ‚¢•”‰®‚Ì’†‚Å‹‚ª‚è‚È‚ª‚ç•Ğ•t‚¯‚ğ‚µ‚Ä‚¢‚é–‚—¹
+# •”‰®‚Í•¨‚¾‚ç‚¯‚Å‚ ‚é
+# –{‚ğè‚É‰½ˆ‚É‚µ‚Ü‚¨‚¤‚©”Y‚ñ‚Å‚¢‚é
+
+CG:data/scenario/marisa/effect/ED001.bmp,96,16,50
+
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+Marisa "Hmm\, where did I put those books I borrowed from the library?"@
+  As soon as she got back from Heaven\, Marisa started really cleaning out her room.
+  It had been a few years since the last time.\
+
+Marisa "Man\, it's so hot. Summer's really hot."
+        Well\, cleaning up might open up a draft in here."\
+
+  When the earthquake happened\, she was afraid
+  she might get buried by the piles in her room.@
+  That's why she started a frenzy of cleaning.\
+
+
+Marisa "I wonder if my house would get as smashed up
+        as the shrine if there were an earthquake.@
+        It was totally destroyed..."\
+
+
+CG:data/scenario/marisa/effect/ED002.bmp,96,16,50
+# O–‡–Ú
+# ‰Æ‚ÌŠO
+# –‚—¹‚ª‰Æ‚ğŒ©ã‚°‚Ä‚¢‚é
+# 
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+Marisa "Well\, as long as I'm safe\, I'm not scared of any earthquake.@
+        Even if my house got leveled\,
+        I can always just build another one."\
+
+Marisa "... what did she say?@
+        Even if you beat me\, you can't prevent the earthquake."\
+
+Marisa "Who was she\, anyway?@
+        Did she start all this just because she wanted to play?@
+        That pisses me off the more I think about it."\
+
+  Tenshi had the Hinanawi's power to prevent earthquakes\,
+  but she had said it wasn't time to use it yet.@
+  Marisa had given up and gone home to get ready for an earthquake.\
+
+Marisa "If you have the power to prevent earthquakes\, why not use it?@
+        I don't think I could convince someone as weird as her to do it."\
+
+Marisa "I guess I'll leave this to Reimu for now... @
+        I'll just make sure to enjoy this summer.@
+        This wonderful summer without rain."\
+
+FadeBgm:2000,0
+CG:BLACK,0,0,15
+
+Marisa started shoring up her house for the big earthquake that could happen any time.
+As long as she lives in this country\, she'll have to be ready for earthquakes.
+Maybe you could say the celestial had warned her about that.\
+
+StaffRoll:
+
+The earth here is alive.
+Just as it was billions of years ago\, when the gods created the earth.\
+
+End:

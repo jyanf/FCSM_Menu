@@ -1,0 +1,203 @@
+## =======================================================================
+#Stage:1
+#Title:
+#Place:—L’¸“V
+#Weather:
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Font.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Window.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Background.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*CG.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+#PlayBgm:data/bgm/ta00.ogg
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+#‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+Character:iku,160,0,0,8888FF
+Character:suika,160,0,1,FF8888
+
+#”wŒi—L’¸“V
+Stage:5,0
+
+#©•ª‰æ–ÊŠO‚É‘Ò‹@
+Action:iku,1
+
+#“G‰æ–ÊŠO‚É‘Ò‹@
+Action:suika,100
+
+Label:Start
+PlayBgm:data/bgm/ta00.ogg
+
+#©ƒLƒƒƒ‰“VŒó
+Action:iku,133
+
+Sleep:60;
+
+#ƒXƒe[ƒWƒ^ƒCƒgƒ‹•\¦
+#ƒJƒƒ‰ˆÚ“®
+Object:data/scenario/iku/effect/StageTitle001.bmp,0,192,-32
+#©•ª“oê
+Sleep:60;
+Object:data/scenario/effect/Stage1.bmp,1,256,352
+#Sleep:60;
+Action:iku,2
+Action:iku,50
+Action:iku,51
+
+#‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X\
+Face:iku,•
+Eldest Daughter-\
+
+Face:iku,•
+Eldest Daughter\, are you here-?\
+
+Face:iku,˜f
+Where did she go\, I wonder?
+It's troubling how she's so capricious.\
+
+Face:iku,
+Hide:1
+Sleep:30
+
+
+# “G“oê
+Action:suika,101
+Action:suika,102
+
+Face:suika,
+She isn't here.\
+
+Face:iku,‹Á
+Hm? Why are you here?\
+
+# –¼‘O‚Ìƒeƒƒbƒv
+Object:data/scenario/suika/effect/Name.bmp,2,352,304
+
+Face:suika,—]
+A lot happened\, you see.\
+
+Face:iku,˜f
+Well I'll let that slide.
+But I'm a bit worried...\
+
+Face:iku,•
+The earthquake omen has already reached the limit.
+I wanted to make a report of it.\
+
+Face:suika,•
+Ooh\, it's already gathered that much?\
+
+Face:iku,‹Á
+Gathered?\
+
+Face:suika,—]
+So\, how big will the earthquake be?\
+
+Face:iku,•
+On the scale of one that
+only occurs every sixty years.\
+
+Face:iku,—]
+Now then\, I think I should go to
+the lower world and warn everyone about it.\
+
+Face:suika,Šğ
+Before you do that\,
+will you play a game with me?\
+
+Face:iku,‹Á
+What?\
+
+Hide:1
+Sleep:30
+Action:suika,107
+Sleep:30
+
+Face:suika,—]
+Heaven is really dull\, isn't it?\
+
+PlayBgm:data/bgm/st00.ogg
+
+
+Action:iku,3
+End:
+
+# --------------------------------
+# í“¬I—¹@•‰‚¯
+Label:Lose
+
+Face:suika,•
+Really\, an earthquake?\
+
+Face:suika,Šğ
+That's probably gonna turn out okay.\
+
+End:
+
+# --------------------------------
+# í“¬I—¹@ƒRƒ“ƒeƒjƒ…[ˆ—
+Label:Continue
+
+#“VŒó‰Šú‰»
+Action:iku,113
+
+End:
+
+# --------------------------------
+# í“¬I—¹@Ÿ‚¿
+Label:Win
+
+
+#‚â‚ç‚êƒLƒƒƒ‰Š®‘Sƒ_ƒEƒ“ŒŸ’m
+Action:suika,200
+#UŒ‚‘¤ƒjƒ…[ƒgƒ‰ƒ‹ˆÚsŒŸ’m
+Action:iku,202
+
+#©ƒLƒƒƒ‰“VŒó
+
+Face:iku,•
+Now then\, I'm off to warn everyone.\
+
+Face:suika,•‰
+See ya later~
+That was pretty fun.\
+
+Face:iku,˜f
+I really can't understand why
+you're hanging around here.\
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+Stage:3,120
+
+#‚â‚ç‚êƒLƒƒƒ‰‰æ–Ê‘Şê
+Action:suika,201
+
+#©ƒLƒƒƒ‰Šî€“_‚ÖˆÚ“®
+Action:iku,150
+
+#ƒJƒƒ‰’†‰›‚ ‚í‚¹
+Action:iku,4
+
+Sleep:120;
+
+End:
+
+
+
+
+
+## =======================================================================

@@ -1,0 +1,232 @@
+## =======================================================================
+#Stage:5
+#Title:ˆÙ•Ï‚Ì’›‚µ
+#Place:ŒºŠC‰_
+#Weather:‘ä•—
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Font.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Window.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Background.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*CG.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+#PlayBgm:data/bgm/ta00.ogg
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+Character:yuyuko,160,0,0,8888FF
+Character:iku,120,20,1,FF8888
+
+#ê—pƒXƒe[ƒW‰Šúİ’è
+Action:iku,139
+
+#ƒJƒƒ‰ŒÅ’è
+Action:yuyuko,4
+
+#ƒtƒH[ƒJƒXuŠÔˆÚ“®
+Action:yuyuko,11
+
+#©ƒLƒƒƒ‰‰æ–Ê¶‘Ò‹@
+Action:yuyuko,5
+
+#Œü‚«ŒÅ’è‰ğœ
+Action:yuyuko,152
+
+#“VŒó‰Šú‰»
+Action:iku,153
+
+Label:Start
+
+PlayBgm:data/bgm/ta02.ogg
+
+#”wŒiˆÃ‰_İ’u
+Action:iku,134
+
+#ƒtƒF[ƒhƒCƒ“@•
+Action:yuyuko,161
+
+Sleep:60
+
+#ƒXƒe[ƒWƒ^ƒCƒgƒ‹•\¦
+Object:data/scenario/yuyuko/effect/StageTitle005.bmp,0,192,-32
+Sleep:60
+Object:data/scenario/effect/Stage5.bmp,1,256,352
+Sleep:300
+
+#‰_’†”wŒi‰ğœ
+Action:iku,135
+Sleep:120
+
+#‰æ–Êã‚©‚ç“oê
+Action:yuyuko,6
+
+#“oêI—¹ŒŸ’m
+Action:yuyuko,7
+
+Sleep:60
+
+Face:yuyuko,˜f
+As expected\, it's cold inside the clouds.\
+
+Face:yuyuko,—]
+There isn't a clear spot anywhere...\
+
+Face:yuyuko,
+Hide:1
+Sleep:60
+
+#ˆß‹è•“h‚è‚Å‰æ–Êã‚©‚ç“oê
+Action:iku,130
+Sleep:90
+Face:iku,
+The scarlet clouds are forming again.\
+
+Take notice of the movement of the clouds.\
+
+#——‹+ˆß‹è‚Ìp‚ª•‚‚©‚Ñã‚ª‚é
+Action:iku,131
+
+Face:iku,
+The disaster that takes place
+every few decades is coming.\
+
+Face:yuyuko,‹Á
+Oh\, aren't you...\
+
+# –¼‘O‚Ìƒeƒƒbƒv
+#Name:”ü‚µ‚«”ê‚Ìˆß@‰i]ˆß‹è
+Object:data/scenario/iku/effect/Name.bmp,2,352,304
+
+Face:iku,‹Á
+Yes\, I'm the messenger from the Dragon Palace.\
+
+Face:yuyuko,—]
+... famously grilled in soy-sauce\,
+or just grilled plain...\
+
+#ƒCƒxƒ“ƒg@ˆß‹è•‚—Vó‘ÔI—¹
+Action:iku,132
+
+Face:iku,Š¾
+Most certainly not.\
+
+Face:yuyuko,˜f
+What? Is an earthquake going to happen?\
+
+Face:iku,•
+I'm not sure\, but we are
+now investigating the matter.\
+
+Face:yuyuko,•
+Oh dear\, I guess it can't be helped.
+Perhaps it's time to reinforce the house.\
+
+Face:iku,•
+Who are you anyway?\
+
+Face:yuyuko,—]
+I'm just a wandering spirit
+that brings coolness to everyone.\
+
+Face:iku,‹Á
+A ghost?\
+
+PlayBgm:data/bgm/st04.ogg
+
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+Face:iku,—]
+Aha\, above these clouds is the realm of Heaven.
+I suppose you've come by yourself to enter Nirvana?\
+
+Face:iku,Œˆ
+But there are many trials
+before one can enter Nirvana.
+Can you overcome them?\
+
+
+
+#í“¬ŠJnˆ—
+Action:yuyuko,3
+
+End:
+
+# í“¬ŠJn
+
+# --------------------------------
+# í“¬I—¹@•‰‚¯
+Label:Lose
+
+Face:iku,‹Á
+You're not there yet.\
+
+Face:iku,—]
+If you can't enter the realm of thoughtlessness
+you cannot become a celestial.\
+
+End:
+
+# --------------------------------
+# í“¬I—¹@ƒRƒ“ƒeƒjƒ…[ˆ—
+Label:Continue
+
+#“VŒó‰Šú‰»
+Action:iku,153
+
+End:
+
+# --------------------------------
+# í“¬I—¹@Ÿ‚¿
+Label:Win
+
+#‚â‚ç‚êƒLƒƒƒ‰Š®‘Sƒ_ƒEƒ“ŒŸ’m
+Action:iku,200
+#UŒ‚‘¤ƒjƒ…[ƒgƒ‰ƒ‹ˆÚsŒŸ’m
+Action:yuyuko,202
+
+#Weather:“VŒóƒNƒŠƒA
+# –³“VŒó‚Ö
+Action:iku,133
+
+Face:yuyuko,Šğ
+And now\, next\, Heaven.\
+
+Face:iku,•‰
+You're really strong.
+I don't think you'll have
+any trouble entering Nirvana.\
+
+Face:yuyuko,—]
+Oh\, I'm sorry\, but I can't. I still have
+lots of lingering attachments to this world.\
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+Sleep:30
+#‰æ–Êã•”‚ÖˆÚ“®
+Action:yuyuko,151
+
+Sleep:90
+
+#ƒtƒF[ƒhƒAƒEƒg@”’
+Action:yuyuko,162
+Sleep:60
+
+Stage:5,0
+
+End:
+
+
+
+
+
+## =======================================================================

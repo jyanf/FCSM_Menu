@@ -1,0 +1,169 @@
+## =======================================================================
+#Stage:1
+#Title:—â‰Ä‚Ì—JŸT
+#Place:g–‚ŠÙƒƒr[
+#Weather:
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+#
+#‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+Character:remilia,160,0,0,8888FF
+Character:sakuya,160,0,1,FF8888
+
+#”wŒi@g–‚ŠÙƒƒr[
+Stage:16,0
+
+#‰Šúİ’è
+Action:remilia,1
+
+#“G‰æ–ÊŠO‚É‘Ò‹@
+Action:sakuya,100
+
+Label:Start
+PlayBgm:data/bgm/ta05.ogg
+
+#©ƒLƒƒƒ‰“VŒó
+Action:remilia,103
+
+Sleep:30;
+
+#ƒXƒe[ƒWƒ^ƒCƒgƒ‹•\¦
+Object:data/scenario/remilia/effect/StageTitle001.bmp,0,192,-32
+Sleep:60;
+Object:data/scenario/effect/Stage1.bmp,1,256,352
+Sleep:60;
+
+#ƒJƒƒ‰ˆÚ“®
+Action:remilia,2
+
+#‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X\
+Face:remilia,“{
+Sakuyaaa\, you heeere?\
+
+Face:remilia,
+Hide:1
+Sleep:30
+
+#
+# “G“oê
+Action:sakuya,101
+Action:sakuya,102
+
+Face:sakuya,•
+Yes\, what is it?\
+
+# –¼‘O‚Ìƒeƒƒbƒv
+Object:data/scenario/sakuya/effect/Name.bmp,2,352,304
+
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+Face:remilia,“{
+So\, what're you going to do about this incident?\
+
+Action:sakuya,103
+
+Face:sakuya,˜f
+There's... an incident?\
+
+Face:remilia,•
+Aren't you going to find out why I can't go outside?\
+
+Face:sakuya,‹Á
+Is it because it suddenly rained outside?
+The weather's been quite uncertain lately...\
+
+Face:remilia,•
+Uncertainty isn't the problem!@
+You need to be more alert!
+#í“¬ŠJnˆ—
+
+PlayBgm:data/bgm/st12.ogg
+Action:remilia,3
+End:
+
+# --------------------------------
+# í“¬I—¹@•‰‚¯
+Label:Lose
+
+Face:sakuya,˜f
+Miss Patchouli is also investigating
+about the weather\, it seems.\
+
+Face:sakuya,˜f
+Maybe it's not just a cold summer...\
+
+End:
+
+# --------------------------------
+# í“¬I—¹@ƒRƒ“ƒeƒjƒ…[ˆ—
+Label:Continue
+
+#“VŒó‰Šú‰»
+Action:sakuya,113
+
+End:
+
+# --------------------------------
+# í“¬I—¹@Ÿ‚¿
+Label:Win
+
+#‚â‚ç‚êƒLƒƒƒ‰Š®‘Sƒ_ƒEƒ“ŒŸ’m
+Action:sakuya,200
+#UŒ‚‘¤ƒjƒ…[ƒgƒ‰ƒ‹ˆÚsŒŸ’m
+Action:remilia,202
+
+#©•ª“VŒó
+Action:remilia,103
+
+Face:remilia,•
+Hmph\, there must be someone
+out there trying to hinder me.\
+
+Face:sakuya,˜f
+Really?\
+
+Face:remilia,—]
+Sakuya\, since I can't move-\
+
+Face:sakuya,•
+Understood\, I'll go investigate.\
+
+Face:remilia,Œˆ
+No\, bring the suspects over here!\
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+Stage:14,120
+
+#‚â‚ç‚êƒLƒƒƒ‰‰æ–Ê‘Şê
+Action:sakuya,201
+
+#©ƒLƒƒƒ‰Šî€“_‚ÖˆÚ“®
+Action:remilia,150
+
+#ƒJƒƒ‰’†‰›‚ ‚í‚¹
+Action:remilia,4
+
+Sleep:120;
+
+End:
+
+
+
+
+
+## =======================================================================

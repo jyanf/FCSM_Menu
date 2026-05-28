@@ -1,0 +1,101 @@
+# ----------------------------------------------------
+# Ending
+# Stage:Ending
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Font.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Window.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Background.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*CG.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+#PlayBgm:data/bgm/ta00.ogg
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+Font:MonoSpatialModSWR,15,0,6
+WindowColor:0,0,0,0
+Color:FFFFFF
+Background:data/scenario/effect/EdBack000.bmp,999,0,0
+CG:data/scenario/iku/effect/ED000.bmp,96,16,50
+Label:Start
+
+Bgm:data/bgm/ta06.ogg
+
+# ˆê–‡–Ú
+# ‰ó‚ê‚½_Ğ‚ÌƒCƒ‰ƒXƒgi‘¼‚ÌƒLƒƒƒ‰‚Å‚àg‚¤”Ä—pŠGj
+# 
+# @ˆê–‡–Ú‚ÍêŠ‚ğ¦‚·ŠÈ’P‚ÈƒCƒ‰ƒXƒg‚ª“ü‚é—\’è‚Å‚·
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+  Summer at the Hakurei Shrine.@
+  It was the shrine at the eastern border of Gensokyo\, but now it's broken down.@
+  It still serves its purpose as a shrine\, but not as a place to live.\
+
+  The shrine was being rebuilt by the celestial and her divine maidens.@
+  When the weather became normal again\, the scarlet mist suddenly faded into nothing.@
+  There was no more danger of earthquakes.\
+
+
+# “ñ–‡–Ú
+# 
+# “VŠE‚©‚çH–’†‚Ì_Ğ‚ğŒ©‚Ä‚¢‚éˆß‹è
+# ‚Æ‚Ä‚à¬‚³‚­Œ©‚¦‚é
+
+CG:data/scenario/iku/effect/ED001.bmp,96,16,50
+
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+Iku    "I can't believe she's used a keystone again..."@
+        The shrine looked incredibly small from up in the air.@
+        Amidst it all was an enormous keystone.\
+
+Iku    "It's true that keystones will quell earthquakes.@
+        However\, it has a hidden meaning - as the key to another
+        great earthquake in the future."\
+
+Iku    "When the keystone traps the earth's power underground\,
+        it's also storing it up.@
+        If you take it out\, a massive earthquake will surely happen."\
+
+
+CG:data/scenario/iku/effect/ED002.bmp,96,16,50
+# O–‡–Ú
+# äÂ‚Æ“ñl‚Å‚¨ğ‚ğ“Û‚ñ‚Å‚¢‚é
+# ˆß‹è‚Í‹ğ’s‹C–¡
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+Suika  "Oh\, wow\, really?"@
+Iku    "... honestly\, Tenshi should have explained
+        that she's the eldest Hinanawi child."@
+Suika  "Eldest child?  She's like the boss of earthquakes?"\
+
+Iku    "Yes\, something like that... er...@
+        I still don't understand why you're here in Heaven\, though.@
+Suika  "This land around here is my land now!"\
+
+Iku    "Eh?"@
+Suika  "I threatened that celestial\, and she gave it up fair and square."@
+Iku    "What?  So that's what happened."\
+
+Iku    "That's probably true\, and she wouldn't have consulted with anyone.@
+        The maidens and other celestials always have their hands full with her."@
+Suika  "Wahaha\, well\, drink and get drunk and complain all you want!"\
+
+FadeBgm:2000,0
+CG:BLACK,0,0,15
+
+  The keystone in the ground was a momentary promise that no earthquakes would happen.
+  It also promised that a great earthquake would happen some day.
+  However\, it also ensured one important change for Iku.\
+
+StaffRoll:
+
+  Namely\, that she would have less work to do for a while.
+  It was nice to have less work\, but it also made her a little uneasy.\
+
+End:

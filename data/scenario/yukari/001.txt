@@ -1,0 +1,212 @@
+## =======================================================================
+#Stage:2
+#Title:“­‚©‚´‚éÒ
+#Place:Œº•‚Ì‘ò
+#Weather:ì–¶
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Bgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+
+Character:yukari,160,0,0,8888FF
+Character:komachi,160,0,1,FF8888
+
+#•ª‰æ–ÊŠO‚É‘Ò‹@
+Action:komachi,100
+
+# “G“oê
+Action:komachi,101
+Action:komachi,102
+
+#ƒJƒƒ‰ŒÅ’è
+Action:yukari,4
+
+#ƒtƒH[ƒJƒXuŠÔˆÚ“®
+#Action:yukari,11
+
+#Œü‚«ŒÅ’è‰ğœ
+Action:yukari,152
+
+Label:Start
+PlayBgm:data/bgm/ta05.ogg
+
+Sleep:30;
+
+#Sleep:20
+
+
+#ƒXƒe[ƒWƒ^ƒCƒgƒ‹•\¦
+Object:data/scenario/yukari/effect/StageTitle002.bmp,0,192,-32
+Sleep:60;
+Object:data/scenario/effect/Stage2.bmp,1,256,352
+Sleep:60;
+
+#©•ª“oê
+Action:yukari,50
+Action:yukari,51
+
+
+#‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X\
+Face:yukari,Šğ
+... Huff\, never thought mountain climbing
+would become so difficult at this age.\
+
+Face:yukari,•
+Oh\, here's another unworking fellow.\
+
+Face:yukari,
+Hide:1
+Sleep:30
+
+
+Face:komachi,•
+Whoa\, you just came out of nowhere.\
+
+# –¼‘O‚Ìƒeƒƒbƒv
+Object:data/scenario/komachi/effect/Name.bmp,2,352,304
+
+Face:yukari,•
+What have you been doing during this disturbance?\
+
+Face:komachi,‹Á
+Eh? That's sudden. Well\, whatever....\
+
+Face:komachi,•
+What do you mean by "this disturbance" anyways?\
+
+Face:yukari,—]
+Yes\, you were bringing ghosts to Higan.@
+Did you notice anything different?\
+
+Face:komachi,˜f
+Eh? Different?
+I have no idea what you're saying....\
+
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+Face:yukari,•
+So you've realized that the
+number of ghosts has been decreasing.\
+
+Face:komachi,˜f
+Oi oi\, what are you talking about?\
+
+Face:yukari,Œˆ
+Why didn't you work?\
+
+Face:yukari,Œˆ
+If you had brought the ghosts to Higan earlier\,
+there wouldn't have been so many casualties.\
+
+Face:komachi,‹Á
+Hey\, hey\, wait a second! What casualties?\
+
+Face:yukari,—]
+You sloth of a shinigami\,@
+go back to Hell and let the Enma have at you!\
+
+#í“¬ŠJnˆ—
+PlayBgm:data/bgm/st02.ogg
+
+Action:yukari,3
+End:
+
+# --------------------------------
+# í“¬I—¹@•‰‚¯
+Label:Lose
+
+Face:komachi,˜f
+I don't know anything\, but I get the feeling
+that I better get back to work.\
+
+End:
+
+# --------------------------------
+# í“¬I—¹@ƒRƒ“ƒeƒjƒ…[ˆ—
+Label:Continue
+
+#“VŒó‰Šú‰»
+Action:yukari,104
+
+End:
+
+# --------------------------------
+# í“¬I—¹@Ÿ‚¿
+Label:Win
+
+
+#‚â‚ç‚êƒLƒƒƒ‰Š®‘Sƒ_ƒEƒ“ŒŸ’m
+Action:komachi,200
+#UŒ‚‘¤ƒjƒ…[ƒgƒ‰ƒ‹ˆÚsŒŸ’m
+Action:yukari,202
+
+#©ƒLƒƒƒ‰“VŒó
+#Action:yukari,103
+Sleep:60;
+
+Face:yukari,—]
+Now\, go back to work\, go back to work.\
+
+Face:komachi,•‰
+Really\, what's happening?\
+
+Face:yukari,˜f
+Mountain climbing is boring.\
+
+Face:yukari,—]
+It's great that you're here.\
+
+Face:komachi,•‰
+Didn't you just warp here?
+Mountain climbing isn't that big a deal\, really....\
+
+Hide:1
+# ‚±‚±‚Å‡‚ªö‚Á‚ÄÁ‚¦‚é
+#‡‰æ–ÊŠO‚ÖŒ„ŠÔ‘Ş”ğ
+Action:yukari,155
+#‡‰æ–ÊŠO‚ÖŒ„ŠÔ‘Ş”ğŠ®—¹Šm”F
+Action:yukari,156
+Hide:0
+
+#Sleep:60;
+
+Face:komachi,–³
+Face:yukari,–³
+Ahh\, mountain climbing is such a pain.\
+
+
+Hide:1
+Sleep:60;
+Result:
+
+#Hide:1
+FadeBgm:2000,0
+Stage:3,120
+
+#‚â‚ç‚êƒLƒƒƒ‰‰æ–Ê‘Şê
+Action:komachi,201
+
+#©ƒLƒƒƒ‰Šî€“_‚ÖˆÚ“®
+#Action:yukari,150
+
+#ƒJƒƒ‰’†‰›‚ ‚í‚¹
+Action:yukari,4
+
+Sleep:120;
+
+End:
+
+
+
+
+
+## =======================================================================

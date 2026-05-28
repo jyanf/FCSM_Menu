@@ -1,0 +1,197 @@
+## =======================================================================
+#Stage:2
+#Title:“Ü‚Á‚Ä‚¢‚Ü‚·‚©H
+#Place:g–‚ŠÙŒv‘ä
+#Weather:
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Font.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Window.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Background.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*CG.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+#PlayBgm:data/bgm/ta00.ogg
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+#‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+Character:komachi,160,0,0,8888FF
+Character:sakuya,160,0,1,FF8888
+#“G‰æ–ÊŠO‚É‘Ò‹@
+Action:sakuya,100
+#ƒJƒƒ‰ŒÅ’è
+Action:komachi,4
+
+#ƒtƒH[ƒJƒXuŠÔˆÚ“®
+#Action:komachi,11
+
+#Œü‚«ŒÅ’è‰ğœ
+Action:komachi,152
+
+Label:Start
+PlayBgm:data/bgm/ta03.ogg
+
+Sleep:30;
+
+#ƒXƒe[ƒWƒ^ƒCƒgƒ‹•\¦
+Object:data/scenario/komachi/effect/StageTitle002.bmp,0,192,-32
+Sleep:60;
+Object:data/scenario/effect/Stage2.bmp,1,256,352
+Sleep:60
+
+Face:komachi,•
+It looks like there are also humans here.\
+Face:komachi,
+Hide:1
+Sleep:30
+
+#
+# “G“oê
+#
+Action:sakuya,101
+#“G“VŒó
+Action:sakuya,103
+Action:sakuya,102
+
+Sleep:20
+
+Face:sakuya,‹Á
+My\, my. A shinigami has come for me?
+I'm very sorry\, but I'll meet
+with you some other time.\
+
+# –¼‘O‚Ìƒeƒƒbƒv
+Object:data/scenario/sakuya/effect/Name.bmp,2,352,304
+
+Face:komachi,•
+Clouds have appeared.
+It's also become windy.\
+
+Face:komachi,—]
+You'll become like a cloud.\
+
+Face:sakuya,“{
+I'm getting the feeling I'm being slighted somehow.\
+
+Face:komachi,‹Á
+It's alright\, to become like a cloud means you
+won't be brilliant or wealthy\, but\, you can avoid
+harmful light\, and spend your days telling fortunes.\
+
+Face:komachi,•
+A very handy spirit to have\, I'll let you know.\
+
+Face:sakuya,‹Á
+Oh my\, are you complimenting me?\
+
+Face:komachi,•
+While they were living\, these skilled ghosts
+were generally knowledgeable and successful leaders\,
+living without discomfort.\
+
+Face:komachi,˜f
+But\, when it comes time for judgement in Higan\,
+those techniques' transient usefulness won't show up.\
+
+
+Face:sakuya,•
+You certainly like talking about the future...
+Well\, it does fit a shinigami.\
+
+Face:komachi,—]
+Well\, well\, let's put that aside and end it here.\
+
+#í“¬ŠJn
+PlayBgm:data/bgm/st12.ogg
+Action:komachi,3
+
+End:
+
+# í“¬ŠJn
+
+# --------------------------------
+# í“¬I—¹@•‰‚¯
+Label:Lose
+
+Face:sakuya,—]
+I still don't want to die yet.\
+
+Face:sakuya,•
+That said\, I wonder if there will
+be a time when I do want to die.\
+
+End:
+
+# --------------------------------
+# í“¬I—¹@ƒRƒ“ƒeƒjƒ…[ˆ—
+Label:Continue
+
+#“VŒó‰Šú‰»
+Action:sakuya,113
+
+End:
+
+# --------------------------------
+# í“¬I—¹@Ÿ‚¿
+Label:Win
+
+#‚â‚ç‚êƒLƒƒƒ‰Š®‘Sƒ_ƒEƒ“ŒŸ’m
+Action:sakuya,200
+#UŒ‚‘¤ƒjƒ…[ƒgƒ‰ƒ‹ˆÚsŒŸ’m
+Action:komachi,202
+
+#©ƒLƒƒƒ‰“VŒó
+Action:komachi,103
+Sleep:60
+
+Face:komachi,—]
+Don't worry\, I'm not taking anyone's soul.\
+
+Face:sakuya,•‰
+Then why... could it be because of the usual?\
+
+Face:komachi,‹Á
+Hm? The usual?\
+
+Face:komachi,Š¾
+Well\, y'know not really.
+I was taking a break from work.\
+
+Face:komachi,—]
+A knowledgeable and successful leader
+like you would understand\, right?\
+
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+Stage:15,120
+
+#‚â‚ç‚êƒLƒƒƒ‰‰æ–Ê‘Şê
+Action:sakuya,201
+
+#©ƒLƒƒƒ‰Šî€“_‚ÖˆÚ“®
+Action:komachi,150
+
+#ƒJƒƒ‰’†‰›‚ ‚í‚¹
+Action:komachi,4
+
+Sleep:120;
+
+End:
+
+
+
+
+
+## =======================================================================

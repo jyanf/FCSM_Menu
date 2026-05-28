@@ -1,0 +1,228 @@
+## =======================================================================
+#Stage:4
+#Title:‚»‚±‚É‚ ‚éR
+#Place:—d‰ö‚ÌR
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "royal blue"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "royal blue"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+
+
+#‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+Character:marisa,160,0,0,8888FF
+Character:aya,120,20,1,FF8888
+#•ª‰æ–ÊŠO‚É‘Ò‹@
+Action:aya,100
+#ƒJƒƒ‰ŒÅ’è
+Action:marisa,4
+#ƒtƒH[ƒJƒXuŠÔˆÚ“®
+#Action:marisa,11
+
+#Œü‚«ŒÅ’è‰ğœ
+Action:marisa,152
+
+Label:Start
+
+
+Bgm:data/bgm/ta04.ogg
+
+Sleep:60;
+
+#ƒXƒe[ƒWƒ^ƒCƒgƒ‹•\¦
+Object:data/scenario/marisa/effect/StageTitle004.bmp,0,192,-32
+Sleep:60;
+Object:data/scenario/effect/Stage4.bmp,1,256,352
+Sleep:20;
+
+Face:marisa,•
+I've realized something great.\
+
+Face:marisa,Šğ
+It's bound to be sunny above the clouds.
+If I climb the mountain\,@
+
+Face:marisa,Šğ
+then I can finally see the sun!\
+
+Face:marisa,
+Hide:1
+#Weather:•—‰J
+#“GƒLƒƒƒ‰“VŒó
+Action:aya,103
+
+Face:marisa,
+...\
+
+
+Face:marisa,Š¾
+...The weather's getting bad.
+I'm not gonna give up.
+My goal is above the clouds.\
+
+
+Face:marisa,
+
+Hide:1
+Sleep:30
+
+#
+# •¶“oê
+#
+
+#“oêƒ‚[ƒVƒ‡ƒ“ŠJn
+Action:aya,101
+
+#“oêƒ‚[ƒVƒ‡ƒ“I—¹ŒŸ’m
+Action:aya,102
+
+Face:aya,•
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+I wondered who the mountain intruder
+in that report was.
+It's you again?\
+
+# –¼‘O‚Ìƒeƒƒbƒv
+#Name:•—‰J‚Ìéë@Ë–½ŠÛ•¶
+Object:data/scenario/aya/effect/Name.bmp,2,352,304
+
+Face:marisa,—]
+Thank you for your reconnaissance work
+in this storm.\
+
+Face:aya,“{
+You make it sound like a big deal.\
+
+Face:aya,˜f
+I shouldn't say this as a tengu\,
+but the winds are strong around here.\
+
+Face:aya,˜f
+Whatever business you have around here\,
+why don't you forget it?\
+
+Face:marisa,•
+The weather worries are the same everywhere.\
+
+Face:marisa,—]
+But wouldn't it be okay if
+you prayed to the wind god?\
+
+Face:aya,•
+About that\, it seems that the wind
+only blows around me...\
+
+Face:marisa,•
+Ho ho\,\
+
+Face:marisa,•
+I'm planning to journey to
+a rainless world from here.\
+
+Face:aya,•
+How are you going to do that?\
+
+PlayBgm:data/bgm/st03.ogg
+
+Face:marisa,Œˆ
+By climbing the mountain until
+I get above the clouds.\
+
+Face:aya,—]
+And then what?\
+
+Face:aya,Œˆ
+How are you going to climb
+with the tengu's eyes upon you?\
+
+
+#í“¬ŠJnˆ—
+
+Action:marisa,3
+
+End:
+
+# í“¬ŠJn
+
+# --------------------------------
+# í“¬I—¹@•‰‚¯
+Label:Lose
+
+Face:aya,•
+Now then\, be a good girl and leave.\
+
+Face:aya,•
+Even if you climb to Heaven\, nothing will get solved.\
+
+End:
+
+# --------------------------------
+# í“¬I—¹@ƒRƒ“ƒeƒjƒ…[ˆ—
+Label:Continue
+
+#“VŒó‰Šú‰»
+Action:aya,113
+
+End:
+
+# --------------------------------
+# í“¬I—¹@Ÿ‚¿
+Label:Win
+
+#‚â‚ç‚êƒLƒƒƒ‰Š®‘Sƒ_ƒEƒ“ŒŸ’m
+Action:aya,200
+#UŒ‚‘¤ƒjƒ…[ƒgƒ‰ƒ‹ˆÚsŒŸ’m
+Action:marisa,202
+
+#©ƒLƒƒƒ‰“VŒó
+Action:marisa,103
+Sleep:60
+
+Face:marisa,Šğ
+Well\, I'm going\, now.
+Because there's a mountain there.\
+
+Face:aya,•‰
+Can't be helped\, then.
+You're already being watched.\
+
+Face:aya,•‰
+Keep that in mind while you climb.\
+
+
+Face:marisa,—]
+It's alright\, the mountain is
+only a checkpoint this time.\
+
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+Sleep:30;
+
+#ã‹óˆÚs—pã‹ó‘Ş”ğ
+Action:marisa,151
+
+Sleep:90;
+
+#ƒtƒF[ƒhƒAƒEƒg@•
+Action:marisa,160
+Sleep:60;
+
+
+Stage:4,0
+
+End:
+
+
+
+
+
+## =======================================================================

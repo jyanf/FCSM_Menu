@@ -1,0 +1,179 @@
+## =======================================================================
+#Stage:3
+#Title:Š¨ˆá‚¢‚Ì‘ã
+#Place:—L’¸“V
+#Weather:
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Font.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Window.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Background.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*CG.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+#PlayBgm:data/bgm/ta00.ogg
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+#‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+Character:tenshi,160,0,0,8888FF
+Character:patchouli,160,0,1,FF8888
+
+#•ª‰æ–ÊŠO‚É‘Ò‹@
+Action:patchouli,100
+#ƒJƒƒ‰ŒÅ’è
+Action:tenshi,4
+#ƒtƒH[ƒJƒXuŠÔˆÚ“®
+#Action:tenshi,11
+
+#Œü‚«ŒÅ’è‰ğœ
+Action:tenshi,152
+
+Label:Start
+
+PlayBgm:data/bgm/ta00.ogg
+
+Sleep:30;
+
+#ƒXƒe[ƒWƒ^ƒCƒgƒ‹•\¦
+Object:data/scenario/tenshi/effect/StageTitle003.bmp,0,192,-32
+Sleep:60;
+Object:data/scenario/effect/Stage3.bmp,1,256,352
+Sleep:60;
+
+#‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X\
+Face:tenshi,•
+There's still a while until
+the time that little oni told me.\
+
+Face:tenshi,˜f
+What should I do?\
+
+Face:tenshi,
+Hide:1
+Sleep:30
+
+# “G“oê
+Action:patchouli,101
+Action:patchouli,102
+
+Sleep:20
+
+Face:patchouli,•
+Whew.\
+
+# –¼‘O‚Ìƒeƒƒbƒv
+Object:data/scenario/patchouli/effect/Name.bmp,2,352,304
+
+Face:tenshi,‹Á
+My\, for an inactive person
+you're here rather early.\
+
+Face:patchouli,—]
+Oh it's you.
+I made a mistake last time.\
+
+Face:tenshi,—]
+You did\, didn't you.\
+
+Face:patchouli,˜f
+You're the culprit behind everything.
+You don't really put out a strong aura\,
+so I didn't notice until a little while ago.\
+
+Face:tenshi,Šğ
+You're just slow.\
+
+Face:tenshi,˜f
+However\, someone who is truly strong
+wouldn't scatter their aura about everywhere.\
+
+Face:tenshi,˜f
+Standing out while winning a match
+can mean defeat as well.\
+
+Face:patchouli,Š¾
+Well\, the disruption seems to be over\, but
+this bad feeling I have still won't disappear.\
+
+Face:tenshi,Šğ
+Oh\, you want to fight?
+This time I don't plan to
+lose on purpose\, you know.\
+
+PlayBgm:data/bgm/st15.ogg
+Action:tenshi,3
+End:
+
+# --------------------------------
+# í“¬I—¹@•‰‚¯
+Label:Lose
+
+Face:patchouli,•
+You're nothing to talk about.\
+
+Face:patchouli,—]
+Now\, after this is the banquet in the sky.
+Too bad Remi can't come.\
+
+End:
+
+# --------------------------------
+# í“¬I—¹@ƒRƒ“ƒeƒjƒ…[ˆ—
+Label:Continue
+
+#“VŒó‰Šú‰»
+Action:tenshi,153
+
+End:
+
+# --------------------------------
+# í“¬I—¹@Ÿ‚¿
+Label:Win
+
+
+#‚â‚ç‚êƒLƒƒƒ‰Š®‘Sƒ_ƒEƒ“ŒŸ’m
+Action:patchouli,200
+#UŒ‚‘¤ƒjƒ…[ƒgƒ‰ƒ‹ˆÚsŒŸ’m
+Action:tenshi,202
+
+Face:tenshi,—]
+Huh\, not even worth the effort.\
+
+Face:patchouli,•‰
+Mugyuu~\
+
+Face:tenshi,•
+After this\, visitors are going to keep coming\,
+so I conserved my energy.\
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+#‚â‚ç‚êƒLƒƒƒ‰‰æ–Ê‘Şê
+Action:patchouli,201
+
+#©ƒLƒƒƒ‰Šî€“_‚ÖˆÚ“®
+Action:tenshi,150
+
+#ƒJƒƒ‰’†‰›‚ ‚í‚¹
+Action:tenshi,4
+
+Sleep:120;
+
+End:
+
+
+
+
+
+## =======================================================================

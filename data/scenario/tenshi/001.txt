@@ -1,0 +1,167 @@
+## =======================================================================
+#Stage:2
+#Title:äÂ‚Ü‚é‰É’×‚µ
+#Place:—L’¸“V
+#Weather:
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Font.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Window.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Background.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*CG.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+#PlayBgm:data/bgm/ta00.ogg
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+#‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+Character:tenshi,160,0,0,8888FF
+Character:suika,160,0,1,FF8888
+
+#•ª‰æ–ÊŠO‚É‘Ò‹@
+Action:suika,100
+#ƒJƒƒ‰ŒÅ’è
+Action:tenshi,4
+#ƒtƒH[ƒJƒXuŠÔˆÚ“®
+#Action:tenshi,11
+
+#Œü‚«ŒÅ’è‰ğœ
+Action:tenshi,152
+
+Label:Start
+
+PlayBgm:data/bgm/ta04.ogg
+
+Sleep:30;
+
+#ƒXƒe[ƒWƒ^ƒCƒgƒ‹•\¦
+Object:data/scenario/tenshi/effect/StageTitle002.bmp,0,192,-32
+# “G“oê
+Action:suika,101
+Sleep:60;
+Object:data/scenario/effect/Stage2.bmp,1,256,352
+Sleep:60;
+Action:suika,102
+
+Face:suika,
+Hiya there.\
+
+Face:tenshi,“{
+Wait wait\, I've been looking for you.
+There are guests are arriving?\
+
+# –¼‘O‚Ìƒeƒƒbƒv
+Object:data/scenario/suika/effect/Name.bmp,2,352,304
+
+Face:suika,‹Á
+Huh? That was fast. There should
+still be plenty of time left.\
+
+Face:tenshi,˜f
+Well\, I'll let it go this time\,
+but could you not call out people on your own?\
+
+Hide:1
+Sleep:30
+Action:suika,107
+Sleep:30
+
+Face:suika,—]
+Alright\, it's about time for the people I gathered
+to start arriving. I guess I'll wait here.\
+
+Face:tenshi,Š¾
+Wait\, just how many people did you invite?\
+
+Face:suika,Šğ
+If I call out then they'll gather naturally.
+That's my ability.\
+
+Face:suika,•
+Now then\, I wonder how many will show up.\
+
+Face:tenshi,—]
+How mean! Did you invite everyone
+just to waste time?\
+
+#í“¬ŠJnˆ—
+
+PlayBgm:data/bgm/st19.ogg
+Action:tenshi,3
+End:
+
+# --------------------------------
+# í“¬I—¹@•‰‚¯
+Label:Lose
+
+Face:suika,•
+You don't even have time to waste
+for time-wasting\, you say?\
+
+Face:suika,Šğ
+Who cares? There's nothing to do in Heaven anyways.\
+
+End:
+
+# --------------------------------
+# í“¬I—¹@ƒRƒ“ƒeƒjƒ…[ˆ—
+Label:Continue
+
+#“VŒó‰Šú‰»
+Action:tenshi,153
+
+End:
+
+# --------------------------------
+# í“¬I—¹@Ÿ‚¿
+Label:Win
+
+
+#‚â‚ç‚êƒLƒƒƒ‰Š®‘Sƒ_ƒEƒ“ŒŸ’m
+Action:suika,200
+#UŒ‚‘¤ƒjƒ…[ƒgƒ‰ƒ‹ˆÚsŒŸ’m
+Action:tenshi,202
+
+
+Face:tenshi,—]
+Oh really\, because of you\,
+I have to do a ton of things now!\
+
+Face:suika,•‰
+What's wrong with that? Heaven is really boring\,
+so try out different things to pass the time.\
+
+Face:tenshi,˜f
+What's going to happen next...\
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+#‚â‚ç‚êƒLƒƒƒ‰‰æ–Ê‘Şê
+Action:suika,201
+
+#©ƒLƒƒƒ‰Šî€“_‚ÖˆÚ“®
+Action:tenshi,150
+
+#ƒJƒƒ‰’†‰›‚ ‚í‚¹
+Action:tenshi,4
+
+Sleep:120;
+
+End:
+
+
+
+
+
+## =======================================================================

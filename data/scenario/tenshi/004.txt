@@ -1,0 +1,177 @@
+## =======================================================================
+#Stage:5
+#Title:lŠÔ‚ÌŒÀŠE
+#Place:—L’¸“V
+#Weather:
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Font.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Window.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Background.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*CG.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+#PlayBgm:data/bgm/ta00.ogg
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+#‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+Character:tenshi,160,0,0,8888FF
+Character:marisa,160,0,1,FF8888
+
+#•ª‰æ–ÊŠO‚É‘Ò‹@
+Action:marisa,100
+#ƒJƒƒ‰ŒÅ’è
+Action:tenshi,4
+#ƒtƒH[ƒJƒXuŠÔˆÚ“®
+#Action:tenshi,11
+
+#Œü‚«ŒÅ’è‰ğœ
+Action:tenshi,152
+
+Label:Start
+
+PlayBgm:data/bgm/ta05.ogg
+
+Sleep:30;
+
+#ƒXƒe[ƒWƒ^ƒCƒgƒ‹•\¦
+Object:data/scenario/tenshi/effect/StageTitle005.bmp,0,192,-32
+Sleep:60;
+Object:data/scenario/effect/Stage5.bmp,1,256,352
+Sleep:60;
+
+#‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X\
+Face:tenshi,•
+Really\, how many people did she call out?\
+
+Face:tenshi,—]
+For so many people to gather in Heaven...\
+
+Face:tenshi,
+Hide:1
+Sleep:30
+
+# “G“oê
+Action:marisa,101
+Action:marisa,102
+
+Sleep:20
+
+Face:marisa,Œˆ
+Alright\, I'm the first!\
+
+# –¼‘O‚Ìƒeƒƒbƒv
+Object:data/scenario/marisa/effect/Name.bmp,2,352,304
+
+Face:marisa,•
+Aah\, mountain climbing really is a lot of work.\
+
+Face:tenshi,Š¾
+Sorry to tell you\, but you're far from being first.\
+
+Face:marisa,‹Á
+Ehh? But aren't there still another
+two hours before the scheduled time?\
+
+Face:tenshi,˜f
+There were people who arrived
+first thing in the morning.\
+
+Face:marisa,˜f
+Huh\, everyone's acting so childish.
+Arriving that early before the meeting time.\
+
+Face:tenshi,Š¾
+Aren't you included in that as well?
+What're you arriving so early for?\
+
+Face:marisa,—]
+Because it's easy to kill time this way?\
+
+Face:tenshi,Šğ
+Well\, I guess so.\
+#í“¬ŠJnˆ—
+
+PlayBgm:data/bgm/st11.ogg
+Action:tenshi,3
+End:
+
+# --------------------------------
+# í“¬I—¹@•‰‚¯
+Label:Lose
+
+Face:marisa,•
+Really\, there's still time.\
+
+Face:marisa,˜f
+Who the heck came so early anyway?\
+
+End:
+
+# --------------------------------
+# í“¬I—¹@ƒRƒ“ƒeƒjƒ…[ˆ—
+Label:Continue
+
+#“VŒó‰Šú‰»
+Action:tenshi,153
+
+End:
+
+# --------------------------------
+# í“¬I—¹@Ÿ‚¿
+Label:Win
+
+
+#‚â‚ç‚êƒLƒƒƒ‰Š®‘Sƒ_ƒEƒ“ŒŸ’m
+Action:marisa,200
+#UŒ‚‘¤ƒjƒ…[ƒgƒ‰ƒ‹ˆÚsŒŸ’m
+Action:tenshi,202
+
+Face:tenshi,—]
+That's enough\, now.
+You've tried hard enough.\
+
+Face:marisa,•‰
+Wah\, you're really strong.
+I wonder if I got tricked by Suika.\
+
+Face:tenshi,˜f
+?\
+
+Face:tenshi,Šğ
+Well\, this is what happens if I don't hold back...
+Now then\, everyone that came earlier
+is waiting in the back.\
+
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+#‚â‚ç‚êƒLƒƒƒ‰‰æ–Ê‘Şê
+Action:marisa,201
+
+#©ƒLƒƒƒ‰Šî€“_‚ÖˆÚ“®
+Action:tenshi,150
+
+#ƒJƒƒ‰’†‰›‚ ‚í‚¹
+Action:tenshi,4
+
+Sleep:120;
+
+End:
+
+
+
+
+
+## =======================================================================

@@ -1,0 +1,198 @@
+## =======================================================================
+#Stage:7
+#Title:ˆä‚Ì’†‚ÌŠ^
+#Place:‘å}‘ŠÙ
+#Weather:
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+#‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+Character:remilia,160,0,0,8888FF
+Character:reimu,160,0,1,FF8888
+#“G‰æ–ÊŠO‚É‘Ò‹@
+Action:reimu,100
+#ƒJƒƒ‰ŒÅ’è
+Action:remilia,4
+
+#ƒtƒH[ƒJƒXuŠÔˆÚ“®
+#Action:remilia,11
+
+#Œü‚«ŒÅ’è‰ğœ
+Action:remilia,152
+
+Label:Start
+PlayBgm:data/bgm/ta08.ogg
+
+Sleep:30;
+
+#ƒXƒe[ƒWƒ^ƒCƒgƒ‹•\¦
+Object:data/scenario/remilia/effect/StageTitle007.bmp,0,192,-32
+Sleep:60;
+Object:data/scenario/effect/Stage7.bmp,1,256,352
+Sleep:60
+
+Face:remilia,•
+I've beaten a lot of criminals by now\,\
+
+Face:remilia,•
+so soon I think I'll
+find the cause of this disaster.\
+
+Face:remilia,
+Hide:1
+Sleep:30
+
+#
+# “G“oê
+#
+Action:reimu,101
+Action:reimu,102
+
+Sleep:20
+
+Face:reimu,“{
+What\, what!\
+
+# –¼‘O‚Ìƒeƒƒbƒv
+Object:data/scenario/reimu/effect/Name.bmp,2,352,304
+
+Face:remilia,—]
+You're it this time.
+The criminal.\
+
+#“G“VŒó
+Action:reimu,103
+
+Face:reimu,“{
+I don't have time to play.
+The shrine was destroyed! It's awful!\
+
+Face:remilia,—]
+Ho ho. That means you wrecked your shrine
+by causing this weather inci...\
+
+Face:remilia,‹Á
+Eh? Your shrine was destroyed?\
+
+Face:reimu,“{
+Yes! In an earthquake!
+What am I going to do about
+your false accusations?!\
+
+Face:remilia,—]
+Isn't that simple?\
+
+Face:remilia,Šğ
+Why don't you try having
+a fight with me right here?\
+
+Face:reimu,“{
+I was gonna do that even if you didn't ask!\
+
+#í“¬ŠJn
+PlayBgm:data/bgm/st10.ogg
+Action:remilia,3
+
+End:
+
+# í“¬ŠJn
+
+# --------------------------------
+# í“¬I—¹@•‰‚¯
+Label:Lose
+
+Face:reimu,Œˆ
+That's not helping at all!\
+
+Face:reimu,•
+Ahh\, I feel so hollow.\
+
+
+End:
+
+# --------------------------------
+# í“¬I—¹@ƒRƒ“ƒeƒjƒ…[ˆ—
+Label:Continue
+
+#“VŒó‰Šú‰»
+Action:reimu,113
+
+End:
+
+# --------------------------------
+# í“¬I—¹@Ÿ‚¿
+Label:Win
+
+#‚â‚ç‚êƒLƒƒƒ‰Š®‘Sƒ_ƒEƒ“ŒŸ’m
+Action:reimu,200
+#UŒ‚‘¤ƒjƒ…[ƒgƒ‰ƒ‹ˆÚsŒŸ’m
+Action:remilia,202
+
+#©ƒLƒƒƒ‰“VŒó
+Action:remilia,103
+#Sleep:60
+
+Face:remilia,‹Á
+The shrine was destroyed?\
+
+Face:remilia,•
+Then the incident this time...
+might be more serious than I thought.\
+
+Face:reimu,•‰
+What do you know?\
+
+Face:remilia,•
+Nothing. I haven't been outside\,
+so I don't know a thing.\
+
+Face:reimu,•‰
+Why didn't you go outside?\
+
+Face:remilia,—]
+Because of this sudden rain.\
+
+Face:reimu,•‰
+What rain? It was sunny all the way...\
+
+Face:remilia,•
+I haven't seen the sun for a long time\,
+I'm getting concerned...@
+Hmmmmm?\
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+Stage:16,120
+
+#‚â‚ç‚êƒLƒƒƒ‰‰æ–Ê‘Şê
+Action:reimu,201
+
+#©ƒLƒƒƒ‰Šî€“_‚ÖˆÚ“®
+Action:remilia,150
+
+#ƒJƒƒ‰’†‰›‚ ‚í‚¹
+Action:remilia,4
+
+Sleep:120;
+
+End:
+
+
+
+
+
+## =======================================================================

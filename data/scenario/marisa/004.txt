@@ -1,0 +1,299 @@
+## =======================================================================
+#Stage:5
+#Title:未来の雲上
+#Place:玄海雲
+#Weather:台風
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "royal blue"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "royal blue"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+
+
+
+Character:marisa,160,0,0,8888FF
+Character:iku,120,20,1,FF8888
+
+#専用ステージ初期設定
+Action:iku,139
+
+#カメラ固定
+Action:marisa,4
+
+#フォーカス瞬間移動
+Action:marisa,11
+
+Bgm:data/bgm/ta02.ogg
+
+#自キャラ画面左待機
+Action:marisa,5
+
+#背景暗雲設置
+Action:iku,134
+
+#向き固定解除
+Action:marisa,152
+
+#天候解除
+Action:marisa,153
+
+Label:Start
+
+#フェードイン　黒
+Action:marisa,161
+
+Sleep:60
+
+#ステージタイトル表示
+Object:data/scenario/marisa/effect/StageTitle005.bmp,0,192,-32
+Sleep:60
+Object:data/scenario/effect/Stage5.bmp,1,256,352
+Sleep:300
+
+#雲中背景解除
+Action:iku,135
+Sleep:120
+
+#画面上から登場
+Action:marisa,6
+
+#登場終了検知
+Action:marisa,7
+
+Sleep:60
+
+Face:marisa,惑
+It's rough in the clouds\,
+but once I get past here...\
+
+Face:marisa,怒
+My world without rain is waiting for me!\
+
+Face:marisa,
+
+Hide:1
+Sleep:60
+
+#衣玖黒塗りで画面上から登場
+Action:iku,130
+Sleep:90
+Face:iku,
+The carp climbs the waterfall and becomes a dragon.
+The dragon grows inside the thunder clouds.\
+
+The human who swims in these clouds...\
+
+#落雷+衣玖の姿が浮かび上がる
+Action:iku,131
+
+Sleep:90
+
+# 名前のテロップ
+#Name:美しき緋の衣　永江衣玖
+Object:data/scenario/iku/effect/Name.bmp,2,352,304
+
+Face:iku,普
+You. Who are you?\
+
+Face:marisa,驚
+Ohh?
+An obstructive person showed up.\
+
+Face:iku,余
+I'm not here to block your path.\
+
+#イベント　衣玖浮遊状態終了
+Action:iku,132
+
+Face:iku,普
+I'm just worried about the future of Gensokyo\,
+and trying warn you about it.\
+
+Face:marisa,普
+If you're not in my way\, then farewell.
+Except\, you are in my way.\
+
+Face:iku,惑
+Why do you seek to go beyond the clouds?\
+
+Face:marisa,怒
+Because it's constantly raining
+and the sun won't come out!
+Although\, the rain only falls around me.\
+
+Face:iku,驚
+So what do you plan to do beyond the clouds?\
+
+Face:marisa,普
+Who knows. I mean\,
+it doesn't rain above the clouds\, right?\
+
+Face:iku,普
+Such astonishingly naive thinking...\
+
+Face:iku,惑
+It's true that it doesn't rain above the clouds\,\
+
+Face:iku,惑
+but that ends when you go back to the ground.\
+
+Face:iku,余
+Do you plan to stay above the clouds?\
+
+Face:marisa,余
+Bgm:data/bgm/st04.ogg
+Hmph\, I'm no idiot\, you know.\
+
+
+Face:marisa,余
+When there's someone controlling the climate
+and causing incidents\, the criminal will be
+somewhere where the climate doesn't change.\
+#<ruby そいつ>犯人</ruby>は天候の変化のない場所にいる\
+#０１２３４５６７８９０１２３４５６７８９０１２３
+
+Face:marisa,決
+I'm going to crush that person
+and take back my hot\, sunny summer\, alright?\
+
+Face:iku,驚
+Is that so? I didn't know the climate
+had become so strange.\
+
+Face:iku,普
+I've stayed in the clouds for a long time\,
+and there haven't been any climate changes here.\
+
+Face:marisa,余
+... then\, I found the criminal!\
+
+Face:marisa,
+
+
+#戦闘開始処理
+Action:marisa,3
+
+End:
+
+# 戦闘開始
+
+# --------------------------------
+# 戦闘終了　負け
+Label:Lose
+
+Face:iku,普
+I am not the criminal.\
+
+Face:iku,惑
+Now\, I have to get going to tell Gensokyo
+what's going to happen.\
+
+Face:iku,普
+This is all somewhat depressing.\
+
+End:
+
+# --------------------------------
+# 戦闘終了　コンテニュー処理
+Label:Continue
+
+#天候初期化
+Action:iku,153
+
+End:
+
+# --------------------------------
+# 戦闘終了　勝ち
+Label:Win
+
+#やられキャラ完全ダウン検知
+Action:iku,200
+#攻撃側ニュートラル移行検知
+Action:marisa,202
+
+#Weather:天候クリア
+# 無天候へ
+Action:iku,133
+
+Face:marisa,嬉
+I won! Now it's gonna be sunny!\
+
+Face:iku,負
+It doesn't work that way.\
+
+Face:iku,負
+Defeating me does not change the tragic future
+destined for Gensokyo.\
+
+Face:marisa,普
+What are you babbling about?
+You kept saying future this and future that.\
+
+Face:iku,負
+Gensokyo...
+is going to experience an apocalyptic earthquake.\
+
+Face:marisa,惑
+... Wasn't there someone who said this before?\
+
+Face:marisa,驚
+...!?
+Didn't Reimu say there was
+an earthquake this morning?\
+
+Face:iku,負
+Maybe that was a foreboding sign.\
+
+Face:marisa,惑
+What the...
+If there's an earthquake\,
+my goods are gonna get all messed up. Great.\
+
+Face:marisa,怒
+Can't we do something?\
+
+Face:iku,負
+I do not have the power to suppress earthquakes.
+But...\
+
+Face:marisa,怒
+But?\
+
+Face:iku,負
+Above these clouds there is someone
+who can suppress earthquakes.\
+
+Face:marisa,普
+That's right! My goal was to go above the clouds.
+There was nothing wrong with my plan.\
+
+
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+Sleep:30
+#画面上部へ移動
+Action:marisa,151
+
+Sleep:90
+
+#フェードアウト　白
+Action:marisa,162
+Sleep:60
+
+Stage:5,0
+
+End:
+
+
+
+
+
+## =======================================================================

@@ -1,0 +1,197 @@
+## =======================================================================
+#Stage:1
+#Title:「ブロッケンの妖怪」
+#Place:霧の湖の辺
+
+Character:suwako,160,0,0,8888FF
+Character:sanae,160,0,1,FF8888
+
+#敵初期配置
+Action:sanae,100　#チルノ左右へうろうろ状態開始
+
+#自分初期配置
+Action:suwako,4　#画面外待機
+
+#画面表示前処理終了============================
+
+Label:Start
+PlayBgm:data/bgm/ta00.ogg
+Sleep:60
+
+#ステージタイトル表示
+Object:data/scenario/suwako/effect/StageTitle002.bmp,0,192,-32
+Sleep:30;
+Object:data/scenario/effect/Stage2.bmp,1,256,352
+Sleep:216;
+
+Sleep:60;
+
+Sleep:70;
+
+# 普、嬉、余、汗、驚、怒、決、惑、負
+
+Face:suwako,惑
+I don't see Sanae...\
+
+Face:suwako,汗
+I hope she isn't crazy,
+luckily it was resolved yesterday...\
+
+Face:suwako,驚
+Besides, she is somewhat obsessed with a robot...\
+
+Face:sanae,
+I'm comming...\
+
+#
+# 早苗登場
+Action:sanae,101
+Action:sanae,102 #登場動作終了検知
+
+Sleep:30
+
+Face:sanae,惑
+Oh, Suwako, were you waiting for me?\
+
+Face:suwako,普
+Yes, well I want to ask you something...\
+
+Face:sanae,驚
+About what subject?\
+
+Face:suwako,汗
+About robots...\
+
+Face:sanae,嬉
+I knew it, they exist!\
+
+Face:suwako,怒
+Stupid, stop that obsession with robots.\
+
+Face:suwako,怒
+I'll take that obsession away
+from you with pure fight!\
+
+Face:sanae,驚
+!\
+
+#戦闘開始処理
+
+#　戦闘開始処理
+
+PlayBgm:data/bgm/st30.ogg
+Action:suwako,203
+Action:sanae,203
+Action:suwako,167#　フラッシュ
+Action:suwako,3
+
+End:
+
+# --------------------------------
+#中間デモ
+Label:Intermission10
+
+Action:sanae,154
+
+#やられキャラ完全ダウン検知
+Action:sanae,200
+#攻撃側ニュートラル移行検知
+Action:sanae,3　#空起き上がる
+
+Sleep:60;
+Action:sanae,203　#チルノ驚く
+Sleep:60;
+# 空が倒れている
+
+Face:sanae,汗
+Wait, wait!\
+
+Face:sanae,驚
+Why are you doing this to me?\
+
+Face:suwako,怒
+Because, it is a punishment!\
+
+Hide:1
+
+
+#戦闘開始処理
+
+Action:suwako,203#　ニュートラル状態へ
+Action:sanae,203#　ニュートラル状態へ
+
+戦闘再開処理
+Action:sanae,210#　死亡フラグ類初期化
+
+End:
+
+# --------------------------------
+# 戦闘終了　負け
+Label:Lose
+
+End:
+
+# --------------------------------
+# 戦闘終了　コンテニュー処理
+Label:Continue
+
+End:
+
+# --------------------------------
+# 戦闘終了　勝ち
+Label:Win
+
+#やられキャラ完全ダウン検知
+#Action:sanae,200
+#攻撃側ニュートラル移行検知
+#Action:suwako,202
+
+#Action:suwako,164
+Sleep:15
+
+#Action:suwako,204
+#Action:sanae,205
+
+#カメラ中央固定
+#Action:suwako,2　
+
+Sleep:30
+#Action:suwako,165
+
+Sleep:30
+
+Face:suwako,怒
+Well, you've already
+received your punishment!\
+
+Face:sanae,負
+I'm so sorry, I'll leave the robots...\
+
+Hide:1
+Sleep:60
+
+Sleep:90
+
+Result:
+FadeBgm:2000,0
+
+Stage:32,120
+
+#やられキャラ画面退場
+Action:sanae,201
+
+#自キャラ基準点へ移動
+Action:suwako,150
+
+#カメラ中央あわせ
+Action:suwako,4
+
+Sleep:120;
+
+End:
+
+
+
+
+
+## =======================================================================

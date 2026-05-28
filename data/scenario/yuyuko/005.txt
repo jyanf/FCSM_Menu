@@ -1,0 +1,242 @@
+## =======================================================================
+#Stage:Final
+#Title:非想天
+#Place:有頂天
+#Weather:極光
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Font.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Window.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Background.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*CG.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+#PlayBgm:data/bgm/ta00.ogg
+#0１２３４５６７８９０１２３４５６７８９０１２３
+
+Character:yuyuko,160,0,0,8888FF
+Character:tenshi,160,0,1,FF8888
+#敵画面外に待機
+Action:tenshi,100
+#カメラ初期位置固定
+Action:tenshi,130
+#自キャラ画面外待機
+Action:yuyuko,5
+
+#向き固定解除
+Action:yuyuko,152
+
+Label:Start
+
+Sleep:85;
+
+PlayBgm:data/bgm/ta07.ogg
+
+#フェードイン　白
+Action:yuyuko,163
+
+#カメラ下へ
+Action:tenshi,131
+#Sleep:60;
+
+#ステージタイトル表示
+Object:data/scenario/yuyuko/effect/StageTitle006.bmp,0,192,-32
+#画面上から落下して登場
+Action:yuyuko,6
+#Sleep:60;
+Object:data/scenario/effect/StageFinal.bmp,1,256,352
+Action:yuyuko,7
+Sleep:180;
+
+#sleep,60
+Face:yuyuko,普
+Heaven is even larger than the Netherworld.\
+
+Face:yuyuko,惑
+It's called Heaven\, but they're
+separated like many different worlds.\
+
+Face:yuyuko,余
+This must be... the thoughtless heaven?\
+
+Face:yuyuko,
+Hide:1
+
+#イベント　メッセージウィンドウ消去
+#イベント　カメラ上空へ
+Action:tenshi,132
+
+#イベント　地震
+Action:tenshi,133
+
+#sleep,180
+
+Face:tenshi,無
+The way of Heaven and Earth\
+
+Hide:1
+Sleep:30
+
+Action:tenshi,133
+#イベント　地震
+reverses at the extremes.\
+
+Hide:1
+#sleep,60
+
+# 天子登場
+#イベント　大地震
+#イベント　カメラフォーカス元へ
+Action:tenshi,134
+#sleep,180
+
+And breaks at the fullest!\
+
+
+#登場ポーズ終了指令
+Action:tenshi,139
+#sleep,30
+
+Face:tenshi,余
+Even the warmth of summer\,
+with the passing of time\,
+will cool and turn into winter.\
+
+#Name:非想非非想天の娘　比那名居天子
+# 名前のテロップ
+Object:data/scenario/tenshi/effect/Name.bmp,2,352,304
+
+Face:tenshi,惑
+Why are you making it snow in the middle of summer?\
+
+Face:yuyuko,余
+Snow in summer is many more times
+more charming than the same snow in winter.\
+
+Face:tenshi,余
+But... how are you making it snow?\
+
+Face:yuyuko,驚
+Well\, see\, humans with
+enough diligence\, can do anything.\
+
+Face:yuyuko,普
+Yes\, compose your heart and free yourself
+from all thought and you can live freely.
+That is\, as a manner of speaking.\
+
+Face:yuyuko,余
+I'm dead though.\
+
+
+Face:tenshi,嬉
+Ahahahaha.
+I yield\, I yield.
+How did you find out so quickly?\
+
+Face:tenshi,余
+Wow\, I never guessed there were
+people like you living on the ground.\
+
+Face:yuyuko,驚
+??
+What are you saying?\
+
+
+Face:tenshi,嬉
+Your purpose here is to defeat me
+and return the weather to normal\, isn't it?\
+
+
+Face:yuyuko,怒
+No\, no\, absolutely not. If it returned 
+to normal so quickly\, I'd be quite vexed.\
+
+PlayBgm:data/bgm/st05.ogg
+
+Face:tenshi,驚
+Eh?\
+
+Face:yuyuko,余
+After all that effort invested in making this
+summer snow\, wouldn't it be better to
+enjoy it for a bit longer?\
+
+
+Face:tenshi,驚
+Wha...\
+
+Face:tenshi,汗
+Am I being looked down as a fool?\
+
+Face:yuyuko,嬉
+No\, no... I wouldn't do that to your Highness.\
+
+Face:tenshi,普
+Well\, whatever.\
+
+Face:tenshi,決
+You shall be the first in the line of
+the earth-dwellers\, so\, accept the
+opening performance of this battle!\
+
+
+#戦闘開始処理
+Action:yuyuko,3
+
+End:
+
+# 戦闘開始
+
+# --------------------------------
+# 戦闘終了　負け
+Label:Lose
+
+Face:tenshi,普
+The earth-dwellers are stronger than I've thought.\
+
+Face:tenshi,嬉
+I must rein in the temperaments more!\
+
+End:
+
+# --------------------------------
+# 戦闘終了　コンテニュー処理
+Label:Continue
+
+#背景　有頂天へ
+Action:tenshi,180
+#天候解除
+Action:tenshi,153
+
+End:
+
+# --------------------------------
+# 戦闘終了　勝ち
+Label:Win
+
+#やられキャラ完全ダウン検知
+Action:tenshi,200
+#攻撃側ニュートラル移行検知
+Action:yuyuko,202
+
+Sleep:30
+Result:
+
+#イベント　勝利演出フェード
+
+End:
+
+
+
+
+
+## =======================================================================

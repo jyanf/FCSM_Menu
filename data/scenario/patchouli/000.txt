@@ -1,0 +1,170 @@
+## =======================================================================
+#Stage:1
+#Title:‹C¿‚Ì–¶
+#Place:g–‚ŠÙƒƒr[
+#Weather:
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Font.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Window.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Background.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*CG.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+#‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+Character:patchouli,160,0,0,8888FF
+Character:sakuya,160,0,1,FF8888
+
+#”wŒi@g–‚ŠÙƒƒr[
+Stage:16,0
+
+#©ƒLƒƒƒ‰‰æ–ÊŠO‚É‘Ò‹@
+Action:patchouli,1
+
+#“G‰æ–ÊŠO‚É‘Ò‹@
+Action:sakuya,100
+
+#ƒJƒƒ‰’†‰›ŒÅ’è
+Action:patchouli,2
+
+Label:Start
+PlayBgm:data/bgm/ta00.ogg
+
+#©ƒLƒƒƒ‰“VŒó
+Action:patchouli,103
+
+Sleep:60;
+
+#ƒXƒe[ƒWƒ^ƒCƒgƒ‹•\¦
+Object:data/scenario/patchouli/effect/StageTitle001.bmp,0,192,-32
+Sleep:60;
+Object:data/scenario/effect/Stage1.bmp,1,256,352
+Sleep:60;
+
+#“oê
+Action:patchouli,50
+Action:patchouli,51
+
+Face:patchouli,•
+#‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X\
+Sakuya\, are you there?\
+
+Face:patchouli,
+Hide:1
+Sleep:30
+
+#
+# “G“oê
+Action:sakuya,101
+Action:sakuya,102
+
+Face:sakuya,•
+I am\, more or less.\
+
+# –¼‘O‚Ìƒeƒƒbƒv
+Object:data/scenario/sakuya/effect/Name.bmp,2,352,304
+
+Face:patchouli,•
+Stay still for a second.\
+
+Hide:1
+#“G“VŒó
+# –¶‚ªo‚Ä‚¢‚é
+Action:sakuya,103
+Sleep:60;
+
+Face:patchouli,•
+Yes\, how enigmatic...\
+
+Face:sakuya,˜f
+What's this about?\
+
+Face:patchouli,•
+Now\, try moving a little bit.\
+PlayBgm:data/bgm/st12.ogg
+#í“¬ŠJnˆ—
+
+Action:patchouli,3
+End:
+
+# --------------------------------
+# í“¬I—¹@•‰‚¯
+Label:Lose
+
+Face:sakuya,Š¾
+Eh? Is it alright if I win?\
+
+End:
+
+# --------------------------------
+# í“¬I—¹@ƒRƒ“ƒeƒjƒ…[ˆ—
+Label:Continue
+
+#“VŒó‰Šú‰»
+Action:sakuya,113
+
+End:
+
+# --------------------------------
+# í“¬I—¹@Ÿ‚¿
+Label:Win
+
+
+#‚â‚ç‚êƒLƒƒƒ‰Š®‘Sƒ_ƒEƒ“ŒŸ’m
+Action:sakuya,200
+#UŒ‚‘¤ƒjƒ…[ƒgƒ‰ƒ‹ˆÚsŒŸ’m
+Action:patchouli,202
+
+#©ƒLƒƒƒ‰“VŒó
+Action:patchouli,103
+Sleep:60;
+
+Face:patchouli,—]
+As I thought\, it's easier to understand
+while being a bit violent.
+I'll be going out for a while now.\
+
+Face:sakuya,•‰
+After all that\, just what was this about...\
+
+Face:patchouli,•
+Temperament...@
+Those who use magic are sensitive
+to changes in temperament.\
+
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+Stage:10,120
+
+#‚â‚ç‚êƒLƒƒƒ‰‰æ–Ê‘Şê
+Action:sakuya,201
+
+#©ƒLƒƒƒ‰Šî€“_‚ÖˆÚ“®
+Action:patchouli,150
+
+#ƒJƒƒ‰’†‰›‚ ‚í‚¹
+Action:patchouli,4
+
+Sleep:120;
+
+End:
+
+
+
+
+
+## =======================================================================

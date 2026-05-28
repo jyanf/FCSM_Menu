@@ -1,0 +1,207 @@
+## =======================================================================
+#Stage:Final
+#Title:_Ğ‚Ì‰º‚É–°‚é•¨
+#Place:‰ó‚ê‚½_Ğ
+#Weather:
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Font.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Window.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Background.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*CG.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+#PlayBgm:data/bgm/ta00.ogg
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+#‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+Character:iku,160,0,0,8888FF
+Character:tenshi,160,0,1,FF8888
+
+#•ª‰æ–ÊŠO‚É‘Ò‹@
+Action:tenshi,100
+#ƒJƒƒ‰ŒÅ’è
+Action:iku,4
+#ƒtƒH[ƒJƒXuŠÔˆÚ“®
+#Action:iku,11
+
+#Œü‚«ŒÅ’è‰ğœ
+Action:iku,152
+
+Label:Start
+PlayBgm:data/bgm/ta07.ogg
+
+Sleep:30;
+
+#ƒXƒe[ƒWƒ^ƒCƒgƒ‹•\¦
+Object:data/scenario/iku/effect/StageTitle006.bmp,0,192,-32
+Sleep:60;
+Object:data/scenario/effect/StageFinal.bmp,1,256,352
+Sleep:60;
+
+#‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X\
+Face:iku,˜f
+What that youkai just said worries me...\
+
+Face:iku,•
+"Under the roof\," was it?\
+
+Face:iku,
+Hide:1
+Sleep:30
+
+# “G“oê
+Action:tenshi,101
+#Action:tenshi,103
+Action:tenshi,102
+
+Sleep:20
+
+Face:tenshi,•
+Oh\, you're...\
+
+Face:tenshi,˜f
+The Dragon Palace's messenger...
+Um\, what was it?\
+
+Face:iku,˜f
+Iku\, of the Nagae.
+Eldest Daughter\, so you were
+staying in such a place.\
+
+# –¼‘O‚Ìƒeƒƒbƒv
+Object:data/scenario/tenshi/effect/Name.bmp,2,352,304
+
+Face:tenshi,•
+Do you have some business here?\
+
+Face:iku,•
+The density of the scarlet clouds surpassed
+one hundred times its normal level.
+It can no longer be avoided.\
+
+Face:iku,˜f
+I was supposed to make a report before
+warning the people of the lower world\,\
+
+Face:iku,—]
+but all of the Hinanawi clan was away\,
+So I went to warn everyone else first.\
+
+Face:tenshi,˜f
+My\, my\, could this be a report after the fact?\
+
+Face:iku,˜f
+We have no idea when the earthquake will strike.
+It was a race against time.\
+
+Face:tenshi,—]
+You fool. If only you had
+searched for me more seriously.\
+
+Face:tenshi,—]
+There won't be an earthquake.\
+
+Face:iku,‹Á
+Wha?\
+
+Face:tenshi,•
+I inserted a keystone into the shrine.\
+
+Face:iku,‹Á
+Eh? What was that?\
+
+Face:tenshi,Šğ
+I've placed a keystone at the center of this shrine.@
+Understand?\
+
+Face:iku,“{
+... Is it okay to go ahead and do that?\
+
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+Face:iku,“{
+If an earthquake doesn't happen when it's supposed to\,
+tension builds up without relief in the ground.\
+
+Face:iku,—]
+Eldest Daughter\, do you have a
+good explanation for what you did?\
+
+Face:tenshi,Šğ
+Nope. When the time comes\, it comes.\
+
+PlayBgm:data/bgm/st05.ogg
+Face:iku,“{
+... I suppose it would be appropriate
+to chastise you a little.\
+
+Face:tenshi,•
+A mere messenger from the Dragon Palace
+such as you has no right to get angry.\
+
+Face:iku,Œˆ
+No\, the Eldest Daughter has been spoiled
+a little too much. I'll have you learn
+from a painful experience for once.\
+
+Face:tenshi,Œˆ
+Hmph\, I've made no mistakes.
+The Divine Law lies with me!\
+
+Action:tenshi,103
+
+#í“¬ŠJnˆ—
+
+Action:iku,3
+End:
+
+# --------------------------------
+# í“¬I—¹@•‰‚¯
+Label:Lose
+
+Face:tenshi,Œˆ
+Go back and clean up the clouds.\
+
+End:
+
+# --------------------------------
+# í“¬I—¹@ƒRƒ“ƒeƒjƒ…[ˆ—
+Label:Continue
+
+#”wŒi@_Ğ‚Ö
+Action:tenshi,182
+#“VŒó‰ğœ
+Action:tenshi,113
+
+End:
+
+# --------------------------------
+# í“¬I—¹@Ÿ‚¿
+Label:Win
+
+#‚â‚ç‚êƒLƒƒƒ‰Š®‘Sƒ_ƒEƒ“ŒŸ’m
+Action:tenshi,200
+#UŒ‚‘¤ƒjƒ…[ƒgƒ‰ƒ‹ˆÚsŒŸ’m
+Action:iku,202
+
+Sleep:30
+Result:
+
+#ƒCƒxƒ“ƒg@Ÿ—˜‰‰oƒtƒF[ƒh
+
+End:
+
+
+
+
+
+## =======================================================================

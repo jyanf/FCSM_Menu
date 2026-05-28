@@ -1,0 +1,113 @@
+# ----------------------------------------------------
+# Ending
+# Stage:Ending
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Font.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Window.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Background.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*CG.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+#PlayBgm:data/bgm/ta00.ogg
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+Font:MonoSpatialModSWR,15,0,6
+WindowColor:0,0,0,0
+Color:FFFFFF
+Background:data/scenario/effect/EdBack000.bmp,999,0,0
+CG:data/scenario/udonge/effect/ED000.bmp,96,16,50
+Label:Start
+Bgm:data/bgm/ta06.ogg
+
+# ˆê–‡–Ú
+# ‰i‰“’à‚ÌƒCƒ‰ƒXƒgi‘¼‚ÌƒLƒƒƒ‰‚Å‚àg‚¤”Ä—pŠGj
+# 
+# @ˆê–‡–Ú‚ÍêŠ‚ğ¦‚·ŠÈ’P‚ÈƒCƒ‰ƒXƒg‚ª“ü‚é—\’è‚Å‚·
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+  Eientei\, the Hall of Eternity.@
+  An unusual mansion in the Bamboo Forest of the Lost.@
+  It's built in a very old style\, but it's in perfect condition.\
+
+  Maybe it will never change for all eternity\, as the name suggests?@
+  Or maybe it would be destroyed like the shrine if an earthquake happened?\
+
+
+# “ñ–‡–Ú
+#
+# ‰i—Ô‚É•ñ‚·‚é—éå
+# ‰i—Ô‚ÍŠ÷‚ÉÀ‚Á‚Ä•·‚¢‚Ä‚¢‚é
+
+CG:data/scenario/udonge/effect/ED001.bmp,96,16,50
+
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+Reisen "... So\, anyway\, we probably don't need to worry about earthquakes now."@
+Eirin  "Good work."@
+Reisen "I was wondering\, though\, what's a keystone?"\
+
+  The celestial had said she'd installed a keystone at the shrine.@
+  The keystone was supposed to prevent earthquakes.\
+
+Eirin  "A keystone is a heavy object made of black granite.@
+        Black granite is created by volcanoes...@
+        Anyway\, a keystone is a huge slab of black granite."\
+
+Reisen "Huh... "@
+Eirin  "It's a long\, long stone that reaches down into the underground world\,
+        so it acts as a weight to prevent earthquakes."\
+
+Eirin  "That celestial must be someone special if she can use keystones."@
+Reisen "It does look like it would be hard to handle something that huge."\
+
+
+CG:data/scenario/udonge/effect/ED002.bmp,96,16,50
+
+# O–‡–Ú
+# ‰i—Ô‚ª“¾ˆÓ‚°‚Éà–¾‚ğn‚ß‚é
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+Eirin  "Well\, huge rocks are one thing.@
+        In any case\, Heaven was once a keystone stuck in the Earth."@
+Reisen "What?"\
+
+Eirin  "While it's true that keystones prevent earthquakes\, if you pull it out
+        it will actually cause a tremendous earthquake."\
+
+Eirin  "When that keystone was pulled out to create Heaven\,
+        all creatures on Earth perished."@
+Reisen "Master\, did you see that happen... ?"@
+Eirin  "Of course not.  This was a very long time ago."\
+
+Eirin  "A celestial who can put keystones in the Earth...
+        She must be a member of the Nawi."@
+Reisen "What's that?"\
+
+Eirin  "The Nawi could control earthquakes\, and ruled over the Earth.@
+        If they're using keystones again\, perhaps they're trying to
+        regain their influence over the Earth..."\
+
+
+Eirin  "We'll have to keep an eye on the situation."@
+Reisen "Understood\, I'll be sure to watch over her."\
+
+FadeBgm:2000,0
+CG:BLACK,0,0,15
+
+  The keystone was sunk deep into the earth below the shrine.
+  Would it bring peace of mind to Gensokyo\,
+  or would it bring about unease... ?\
+
+StaffRoll:
+
+  In any case\, at least there wouldn't be any earthquakes for a while.
+  Perhaps the bamboo of the forest had been twisted by a keystone long ago.\
+
+End:

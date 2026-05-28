@@ -1,0 +1,103 @@
+# ----------------------------------------------------
+# Ending
+# Stage:Ending
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Font.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Window.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Background.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*CG.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+#PlayBgm:data/bgm/ta00.ogg
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+Font:MonoSpatialModSWR,15,0,6
+WindowColor:0,0,0,0
+Color:FFFFFF
+Background:data/scenario/effect/EdBack000.bmp,999,0,0
+CG:data/scenario/komachi/effect/ED000.bmp,96,16,50
+Label:Start
+Bgm:data/bgm/ta06.ogg
+
+# ˆê–‡–Ú
+# O“r‚Ì‰Í‚ÌƒCƒ‰ƒXƒgi‘¼‚ÌƒLƒƒƒ‰‚Å‚àg‚¤”Ä—pŠGj
+# 
+# @ˆê–‡–Ú‚ÍêŠ‚ğ¦‚·ŠÈ’P‚ÈƒCƒ‰ƒXƒg‚ª“ü‚é—\’è‚Å‚·
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+  The Sanzu River.@
+  The first trial one must overcome before reincarnation.@
+  It's a great river that separates this world from the next.\
+
+  You can't tell where the water goes - it just flows on silently.@
+  The mist is so thick\, it's impossible to see how wide the river is.@
+  This is where she works.\
+
+
+# “ñ–‡–Ú
+# ¬’¬‚ª‰ÍŒ´‚ÅÎ‚ğÏ‚ñ‚Å‚¢‚éq‹Ÿ‚Ì—ì‚ğŒ©‚Â‚¯‚é
+# q‹Ÿ‚Í—]‚èÀ‘Ô‚Ì‚È‚¢‚Ú‚ñ‚â‚è‚Æ‚µ‚½lŒ^‚Ì—H—ì‚Å
+CG:data/scenario/komachi/effect/ED001.bmp,96,16,50
+
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+Ghost   (... the first tower is for my father)@
+Komachi "Oh\, man\, another kid's ghost?@
+         Kids have no experience\, so their conversations are boring."\
+
+Ghost   (... the second tower is for my mother)@
+Komachi "See\, you're wasting your time piling up those stones.@
+         Do you think someone will take pity on you?"\
+
+Ghost   (... the third tower is for...)@
+Komachi "Nah\, that's wrong.
+         You'll never get across the river like that."\
+
+CG:data/scenario/komachi/effect/ED002.bmp,96,16,50
+# O–‡–Ú
+# ¬’¬‚ÍŠ™‚Å—H—ì‚ªÏ‚ñ‚Å‚¢‚½Î‚ğ•ö‚µ‚½
+# —H—ì‚ÍQ‚Ä‚½Š´‚¶
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+Komachi "The will to fulfill your hopes is just a form of desire.@
+         Desire begets hesitation\, which creates attachment."@
+Ghost    (... ...)\
+
+Komachi "You've gotta throw away your misguided will\, just accept
+         everything\, and float across the river."@
+Ghost   (... the first tower is for my father)\
+
+Komachi "If you don't understand\, just keep going."@
+Ghost   (... the second...)@
+Komachi "But\, your attachment will turn into resentment. That's no good."\
+
+Komachi "If you ever think you want to forget this world...@
+         Come see me anytime.@
+         I'll make a special trip to take you to the other side."\
+
+
+FadeBgm:2000,0
+CG:BLACK,0,0,15
+
+
+  Komachi thought about changing jobs to become one of the shinigami
+  that greets people after death. As long as she had a job in hand\,
+  she'd get by somehow even if she got fired.\
+
+  If she ever got sick of ferrying spirits\, she thought
+  maybe she'd go try fighting the celestials in Heaven.
+  She wouldn't let them get away with saying they weren't afraid of death.\
+
+StaffRoll:
+
+  Still\, what she didn't realize was --
+  If she lost her job as a ferryman because she didn't ferry spirits\,
+  she wouldn't be able to get another job that easily.\
+
+End:

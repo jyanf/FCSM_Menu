@@ -1,0 +1,206 @@
+## =======================================================================
+#Stage:1
+#Title:à‚é”êF
+#Place:g–‚ŠÙŒv‘ä
+#Weather:“Ü“V
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "royal blue"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "royal blue"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+
+
+#‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+Character:sakuya,160,0,0,8888FF
+Character:marisa,160,0,1,FF8888
+
+#”wŒi@g–‚ŠÙŒv‘ä
+Stage:12,0
+
+#©•ª‰æ–ÊŠO‚É‘Ò‹@
+Action:sakuya,1
+
+#“G‰æ–ÊŠO‚É‘Ò‹@
+Action:marisa,100
+
+PlayBgm:data/bgm/ta00.ogg
+
+#ƒJƒƒ‰’†‰›ŒÅ’è
+Action:sakuya,2
+
+Label:Start
+
+#©ƒLƒƒƒ‰“VŒó
+Action:sakuya,103
+
+Sleep:60;
+
+#ƒXƒe[ƒWƒ^ƒCƒgƒ‹•\¦
+Object:data/scenario/sakuya/effect/StageTitle001.bmp,0,192,-32
+Sleep:30;
+Object:data/scenario/effect/Stage1.bmp,1,256,352
+Sleep:30;
+
+#“oê
+Action:sakuya,50
+Action:sakuya,51
+
+#‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X\
+
+# --------------------------------------------
+# ‚±‚±‚Å‘Ì‚©‚ç”êF‚Ì–¶‚ª—§‚¿ã‚é‚Æ—Ç‚¢‚¯‚Ç
+
+Action:sakuya,170
+
+Face:sakuya,‹Á
+What's this...\
+
+
+Face:sakuya,•
+Looks like something's coming out of my body.\
+
+
+
+Face:sakuya,
+Hide:1
+Sleep:30
+
+#
+# “G“oê
+Action:marisa,101
+Action:marisa,102
+
+Face:marisa,•
+Oi\, what's up?
+You came to collect rainwater for cooking?\
+
+Action:sakuya,171
+
+# –¼‘O‚Ìƒeƒƒbƒv
+Object:data/scenario/marisa/effect/Name.bmp,2,352,304
+
+Face:sakuya,‹Á
+I don't think there's any rain around here.\
+
+Hide:1
+
+#“G“VŒó
+Action:marisa,103
+Sleep:60
+
+Face:marisa,˜f
+Hm? If you want rain
+then isn't it raining?\
+
+Face:sakuya,‹Á
+Oh my\, it is raining.\
+
+Face:marisa,•
+That's right\, it's troubling because
+it won't stop raining.@
+It makes the books I take home wet.\
+
+Face:sakuya,Š¾
+Don't take them without permission!\
+
+Face:sakuya,•
+Well\, it's true that the weather
+has been bad lately.
+Do you feel anything else?\
+
+Face:marisa,•
+Ahh?
+Nothing at all.\
+
+Face:sakuya,‹Á
+Look\, your body is also emitting...\
+
+Hide:1
+# ------------------------------------------------------
+# ‚±‚±‚Å–‚—¹‚Ì‘Ì‚©‚ç”êF‚Ì–¶‚ğo‚¹‚é‚Æ—Ç‚¢‚È‚Ÿ
+Action:marisa,170
+Sleep:60
+
+Face:marisa,Œˆ
+Anyways\, I've got no use for you!\
+
+#í“¬ŠJnˆ—
+PlayBgm:data/bgm/st00.ogg
+Action:sakuya,3
+End:
+
+# --------------------------------
+# í“¬I—¹@•‰‚¯
+Label:Lose
+
+Face:marisa,Šğ
+I'll go borrow books from the library today too.\
+
+End:
+
+# --------------------------------
+# í“¬I—¹@ƒRƒ“ƒeƒjƒ…[ˆ—
+Label:Continue
+
+#“VŒó‰Šú‰»
+Action:marisa,113
+
+End:
+
+# --------------------------------
+# í“¬I—¹@Ÿ‚¿
+Label:Win
+
+
+#‚â‚ç‚êƒLƒƒƒ‰Š®‘Sƒ_ƒEƒ“ŒŸ’m
+Action:marisa,200
+#UŒ‚‘¤ƒjƒ…[ƒgƒ‰ƒ‹ˆÚsŒŸ’m
+Action:sakuya,202
+
+#“VŒó–¶‰J‚É•Ï‰»
+Action:sakuya,103
+Sleep:60;
+
+Face:sakuya,—]
+I have no use for you either.\
+
+Face:marisa,•‰
+Then don't fight.\
+
+Face:sakuya,Š¾
+Didn't you attack me first?\
+
+Face:sakuya,•
+It stopped raining\,
+so I'll leave the house for a bit.\
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+Stage:15,120
+
+#‚â‚ç‚êƒLƒƒƒ‰‰æ–Ê‘Şê
+Action:marisa,201
+
+#©ƒLƒƒƒ‰Šî€“_‚ÖˆÚ“®
+Action:sakuya,150
+
+#ƒJƒƒ‰’†‰›‚ ‚í‚¹
+Action:sakuya,4
+
+Sleep:120;
+
+End:
+
+
+
+
+
+## =======================================================================

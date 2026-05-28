@@ -1,0 +1,213 @@
+## =======================================================================
+#Stage:3
+#Title:図書館の虫
+#Place:大図書館
+#Weather:花曇
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Bgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+#0１２３４５６７８９０１２３４５６７８９０１２３
+
+Character:alice,160,0,0,8888FF
+Character:patchouli,160,0,1,FF8888
+Character:sakuya,160,0,2,FF8888
+
+#カメラ固定
+Action:alice,4
+
+#フォーカス瞬間移動
+#Action:alice,11
+
+#向き固定解除
+Action:alice,152
+
+#敵フィールド端で待機
+Action:patchouli,100
+#敵登場
+Action:patchouli,101
+Action:patchouli,102
+Sleep:20
+
+Label:Start
+PlayBgm:data/bgm/st15.ogg
+
+Sleep:30;
+
+#ステージタイトル表示
+Object:data/scenario/alice/effect/StageTitle003.bmp,0,192,-32
+Sleep:60;
+Object:data/scenario/effect/Stage3.bmp,1,256,352
+Sleep:60;
+Face:patchouli,惑
+What?\
+
+Face:alice,普
+There's something I wanted to ask about\, that's all.\
+
+Face:patchouli,普
+...\
+
+Face:patchouli,普
+Your temperament is hail.\
+
+Face:patchouli,普
+A weather pattern in which lumps of ice become
+too heavy for rising air currents to support\,
+and thus fall from the sky.\
+
+Face:patchouli,余
+How fitting for you.\
+
+Face:alice,普
+What are you talking about?\
+
+Face:alice\,
+Hide:1
+#敵天候
+Action:patchouli,103
+Sleep:30
+
+# 名前のテロップ
+Object:data/scenario/patchouli/effect/Name.bmp,2,352,304
+
+Face:patchouli,普
+You're here to find out about the weather\, right?\
+
+Face:alice,驚
+No\, I'm here to find out about earthquakes!\
+
+Face:patchouli,惑
+Earthquakes...?@
+Why earthquakes at a time like this?\
+
+Face:patchouli,余
+Right now you should be
+coming in here about the weather.@
+Though it seems you remain clueless.\
+
+Face:alice,怒
+What was that?\
+
+Face:alice,決
+Fine\, I'll just look it up myself then!\
+
+Face:patchouli,決
+Hmph.
+Amateur.\
+
+#PlayBgm:data/bgm/st01.ogg
+Action:alice,3
+
+End:
+
+# 戦闘開始
+
+# --------------------------------
+# 戦闘終了　負け
+Label:Lose
+
+Face:patchouli,驚
+Earthquakes\, you say?@
+Hmm\, you can look at it that way.\
+
+End:
+
+# --------------------------------
+# 戦闘終了　コンテニュー処理
+Label:Continue
+
+#天候初期化
+Action:patchouli,113
+
+End:
+
+# --------------------------------
+# 戦闘終了　勝ち
+Label:Win
+
+#やられキャラ完全ダウン検知
+Action:patchouli,200
+#攻撃側ニュートラル移行検知
+Action:alice,202
+
+#自天候
+Action:alice,103
+Sleep:60
+
+Face:alice,余
+Now then\, I'll just go study by myself!\
+
+Face:patchouli,負
+Please\, this is hardly the time for--\
+
+Face:alice\,
+Face:patchouli\,
+Hide:1
+Sleep:30
+
+#二番手登場
+Action:sakuya,105
+#Weather:曇天
+Action:sakuya,103
+
+#105終了検知
+Action:sakuya,106
+
+Face:sakuya,普
+Miss Patchouli\, it's time for tea.\
+
+Face:alice,普
+Why\, thank you.\
+
+Face:sakuya,汗
+I didn't bring any for you.
+Besides\, when did you sneak in here?\
+
+Face:patchouli,負
+Sakuya\, throw her out of here.\
+
+Face:sakuya,普
+Understood.\
+
+
+Hide:1
+FadeBgm:2000,0
+
+Sleep:10
+
+#やられキャラ画面退場
+Action:patchouli,201
+
+#ステージ間調整自キャラ
+Action:alice,150
+Sleep:15
+
+#ステージ間調整敵
+Action:sakuya,110
+Stage:12,120
+#CrossFadeBgm:data/bgm/st12.ogg,2000,0
+
+#カメラ中央あわせ
+Action:alice,4
+
+#ステージ間調整敵　終了検知
+Action:sakuya,111
+
+Sleep:60
+
+End:
+
+
+
+
+
+## =======================================================================

@@ -1,0 +1,219 @@
+## =======================================================================
+#Stage:5
+#Title:¢‚Ì’†‹C•´‚ê
+#Place:‰ó‚ê‚½_Ğ
+#Weather:
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Bgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+
+Character:yukari,160,0,0,8888FF
+Character:suika,160,0,1,FF8888
+
+#•ª‰æ–ÊŠO‚É‘Ò‹@
+Action:suika,100
+#ƒJƒƒ‰ŒÅ’è
+Action:yukari,4
+#ƒtƒH[ƒJƒXuŠÔˆÚ“®
+#Action:yukari,11
+
+#Œü‚«ŒÅ’è‰ğœ
+Action:yukari,152
+
+Label:Start
+PlayBgm:data/bgm/ta00.ogg
+
+Sleep:30;
+
+#©•ª“oê
+Action:yukari,50
+Action:yukari,51
+
+#ƒXƒe[ƒWƒ^ƒCƒgƒ‹•\¦
+Object:data/scenario/yukari/effect/StageTitle005.bmp,0,192,-32
+Sleep:60;
+Object:data/scenario/effect/Stage5.bmp,1,256,352
+Sleep:60;
+
+#‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X\
+Face:yukari,•
+The shrine is still out of commission\,\
+
+Face:yukari,“{
+I should take this time to check on the keystone.\
+
+
+Face:yukari,
+Hide:1
+Sleep:30
+
+# “G“oê
+Action:suika,101
+Action:suika,102
+
+Sleep:20
+
+Face:suika,‹Á
+Oh oh\, Yukari?
+Why are you here?\
+
+# –¼‘O‚Ìƒeƒƒbƒv
+Object:data/scenario/suika/effect/Name.bmp,2,352,304
+
+Face:yukari,•
+I'm here to see when
+the shrine's going to be fixed.\
+
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+Face:suika,•
+Ah\, the celestials come down to
+fix the shrine from time to time.\
+
+Face:suika,‹Á
+It's a bit too soon for them to be working...\
+
+Face:yukari,—]
+Why don't I see them when I'm here?@
+Am I hated or something?\
+
+#äÂ‚²‚ëQó‘ÔI—¹
+Hide:1
+Sleep:60
+Action:suika,107
+Sleep:30
+
+Face:suika,—]
+Aren't you hated already?
+By everyone.\
+
+Face:yukari,˜f
+This is troubling....@
+The Dragon Palace's envoy
+wanted me to do something for her.\
+
+Face:suika,•
+Eh? The Dragon Palace's envoy?\
+
+Face:yukari,•
+She wanted me to shred that girl into pieces.\
+
+Face:suika,‹Á
+Ehhhhh\, that's unsettling.
+
+Face:suika,•
+Anyways\, if you wait here
+she's bound to show up some time.\
+
+Face:suika,Œˆ
+So why don't we play for a bit?
+We haven't done so in a long time.\
+
+Face:yukari,Š¾
+I don't have the time
+to be doing this\, but oh well.\
+
+Bgm:data/bgm/st19.ogg
+
+Action:yukari,3
+
+End:
+
+# --------------------------------
+# í“¬I—¹@•‰‚¯
+Label:Lose
+
+Face:suika,Šğ
+Ahaha\, everyone hates you
+because you're so weak! That must be it!\
+
+End:
+
+# --------------------------------
+# í“¬I—¹@ƒRƒ“ƒeƒjƒ…[ˆ—
+Label:Continue
+
+#“VŒó‰Šú‰»
+Action:yukari,104
+
+End:
+
+# --------------------------------
+# í“¬I—¹@Ÿ‚¿
+Label:Win
+
+
+#‚â‚ç‚êƒLƒƒƒ‰Š®‘Sƒ_ƒEƒ“ŒŸ’m
+Action:suika,200
+#UŒ‚‘¤ƒjƒ…[ƒgƒ‰ƒ‹ˆÚsŒŸ’m
+Action:yukari,202
+
+#©ƒLƒƒƒ‰“VŒó
+Sleep:60;
+
+Face:yukari,Š¾
+Doesn't seem like she's coming today.\
+
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+Face:suika,•‰
+Yeah. If we keep playing like this\,
+Reimu's gonna get angry.\
+
+Face:yukari,˜f
+Hmph\, things aren't going my way lately.\
+
+Face:yukari,‹Á
+Oh\, that's right.
+Suika\, I have something to ask of you.\
+
+Face:suika,•‰
+That's rare.
+But not now.\
+
+Face:yukari,•
+Ah.@
+Well then\, I'm feeling tired so
+I'll go back to sleep.\
+
+Face:suika,•‰
+In any case\, seeing you on this side
+of the world in broad daylight sure is rare.\
+
+#‡‰æ–ÊŠO‚ÖŒ„ŠÔ‘Ş”ğ
+Action:yukari,155
+#‡‰æ–ÊŠO‚ÖŒ„ŠÔ‘Ş”ğŠ®—¹Šm”F
+Action:yukari,156
+
+Face:yukari,–³
+I'm working hard\, you see.\
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+Sleep:60;
+
+#ƒtƒF[ƒhƒAƒEƒg@•
+Action:yukari,160
+Sleep:60;
+
+
+Stage:10,0
+
+End:
+
+
+
+
+
+## =======================================================================

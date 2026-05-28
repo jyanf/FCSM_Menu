@@ -1,0 +1,159 @@
+## =======================================================================
+#Stage:4
+#Title:‹C¿‚Ìs•û
+#Place:–‚–@‚ÌX
+#Weather:“V‹C‰J
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "royal blue"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "royal blue"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+
+#‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+Character:youmu,160,0,0,8888FF
+Character:yukari,160,0,1,FF8888
+
+#ƒJƒƒ‰ŒÅ’è
+Action:youmu,4
+
+#ƒtƒH[ƒJƒXuŠÔˆÚ“®
+#Action:youmu,11
+
+#Œü‚«ŒÅ’è‰ğœ
+Action:youmu,152
+
+Label:Start
+
+Sleep:30;
+
+#ƒXƒe[ƒWƒ^ƒCƒgƒ‹•\¦
+Object:data/scenario/youmu/effect/StageTitle004.bmp,0,192,-32
+Sleep:60;
+Object:data/scenario/effect/Stage4.bmp,1,256,352
+Sleep:60;
+
+Face:yukari,•
+Since this place has more living things around\,
+can you see the flow of energy more clearly?\
+
+Face:youmu,•
+Err... hmm.\
+
+Hide:1
+Sleep:60;
+Hide:0
+
+Face:youmu,Š¾
+I can't really tell.\
+
+Face:yukari,˜f
+You're far too inexperienced.\
+
+Face:yukari,—]
+Shall we gather more energy to
+make it easier for you to judge?\
+
+
+#í“¬ŠJnˆ—
+Action:youmu,3
+
+End:
+
+# í“¬ŠJn
+
+# --------------------------------
+# í“¬I—¹@•‰‚¯
+Label:Lose
+
+Face:yukari,•
+The shrine's been destroyed.\
+
+Face:yukari,—]
+This is a good time for me to get angry.\
+
+End:
+
+# --------------------------------
+# í“¬I—¹@ƒRƒ“ƒeƒjƒ…[ˆ—
+Label:Continue
+
+#“VŒó‰Šú‰»
+Action:yukari,113
+
+End:
+
+# --------------------------------
+# í“¬I—¹@Ÿ‚¿
+Label:Win
+
+#‚â‚ç‚êƒLƒƒƒ‰Š®‘Sƒ_ƒEƒ“ŒŸ’m
+Action:yukari,200
+#UŒ‚‘¤ƒjƒ…[ƒgƒ‰ƒ‹ˆÚsŒŸ’m
+Action:youmu,202
+
+#©ƒLƒƒƒ‰“VŒó
+Action:youmu,103
+Sleep:60
+
+Face:youmu,•
+Oh\, I get it!\
+
+Face:youmu,‹Á
+Ghosts... their temperament seems to be rising up\,
+as if they're all being sucked into the sky!\
+
+Face:yukari,•‰
+It's not just ghosts\, actually.\
+
+Face:youmu,•
+Yes\, it's not just ghosts...\
+
+Face:youmu,˜f
+The temperament of all living things is rising.
+The clouds have turned scarlet... ah!\
+
+Face:yukari,•‰
+Well then\, see you.\
+
+Face:youmu,Šğ
+With your help\, Lady Yukari\, 
+I have realized something very important.
+Thank you very much!\
+
+#ã‹óˆÚs—pã‹ó‘Ş”ğ
+Hide:1
+Sleep:30;
+Action:youmu,151
+
+Sleep:90;
+
+Face:yukari,—]
+You're welcome\, although you'll
+still have to fight a little to find the answer.\
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+#ƒtƒF[ƒhƒAƒEƒg@•
+Action:youmu,160
+Sleep:60;
+
+
+Stage:4,0
+
+End:
+
+
+
+
+
+## =======================================================================

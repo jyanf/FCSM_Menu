@@ -1,0 +1,211 @@
+## =======================================================================
+#Stage:6
+#Title:“V“¹¥‚©”ñ‚©
+#Place:”—í_Ğ
+#Weather:
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+#
+#‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+Character:yukari,160,0,0,8888FF
+Character:tenshi,160,0,1,FF8888
+
+
+
+#©•ª‰æ–ÊŠO‚É‘Ò‹@
+Action:yukari,1
+
+#“G‰æ–ÊŠO‚É‘Ò‹@
+Action:tenshi,100
+
+#Œü‚«ŒÅ’è‰ğœ
+Action:yukari,152
+
+Label:Start
+PlayBgm:data/bgm/ta07.ogg
+
+#‰æ–ÊƒtƒF[ƒhƒCƒ“
+Action:yukari,161
+
+Sleep:60;
+
+
+
+Action:yukari,2
+
+#ƒXƒe[ƒWƒ^ƒCƒgƒ‹•\¦
+Object:data/scenario/yukari/effect/StageTitle006.bmp,0,192,-32
+#ƒJƒƒ‰ˆÚ“®
+Sleep:60;
+Object:data/scenario/effect/StageFinal.bmp,1,256,352
+#Sleep:60;
+# “G“oê
+Action:tenshi,101
+Action:tenshi,102
+
+
+# –¼‘O‚Ìƒeƒƒbƒv
+Object:data/scenario/tenshi/effect/Name.bmp,2,352,304
+
+Face:tenshi,•
+Here now\, the new shrine's inauguration ceremony!\
+
+Face:tenshi,–³
+Face:yukari,–³
+Audience (applause)\
+
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+Face:tenshi,Šğ
+Although the shrine was destroyed in the disaster\,
+that proved to be an opportunity for it
+to become stronger and more beautiful.\
+
+Face:tenshi,•
+Now then\, how can a shrine keep its shape
+without being worn and torn\,
+and still manage to keep its faith?\
+
+Face:tenshi,•
+That is because of a deeply rooted tradition
+in Japanese shrines\, and it is done for a reason.\
+
+Face:tenshi,Œˆ
+This tradition is the
+periodic ceremony of reconstruction\,
+known as Shikinen Senguu.\
+
+Face:tenshi,Šğ
+Because of the events this time\,
+the Hakurei Shrine can also
+undergo Shikinen Senguu...\
+
+#“oê
+PlayBgm:data/bgm/st18.ogg
+
+Action:yukari,50
+Action:yukari,51
+
+Sleep:80;
+#‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X\
+Face:tenshi,‹Á
+Face:yukari,Šğ
+I-found-you.\
+
+Face:tenshi,‹Á
+What!? What!?
+It's the middle of the inauguration!\
+
+Face:yukari,•
+I'm here to destroy this shrine.\
+
+Face:tenshi,“{
+What are you saying?!
+I'm not gonna let you do that!\
+
+Face:yukari,—]
+Heh\, you break things on a whim
+and yet you won't let others do the same?\
+
+Face:tenshi,Š¾
+Ugh\, that's....\
+
+Face:yukari,•
+What did you put in there?\
+
+Face:tenshi,—]
+What are you talking about?\
+
+Face:yukari,•
+I know all about it.@
+To make the shrine able to carry your line\,\
+
+Face:yukari,—]
+you renovated the shrine to suit your tastes
+and conspired to add one more place
+for you to live\, didn't you?\
+
+Face:tenshi,Šğ
+Well yeah\, what's wrong with that?\
+
+Face:yukari,Œˆ
+So I'm going to destroy it.\
+
+Bgm:data/bgm/st05.ogg
+
+Face:tenshi,—]
+Huhuhu\, the filthy earth-crawling youkai
+said some delightful things!\
+
+Face:yukari,•
+I've seen the way Heaven is now.\
+
+Face:yukari,—]
+Heaven is spacious with lots of land to spare\,@
+and yet you still seek places to live on Earth...\
+
+Face:tenshi,Œˆ
+It's hard to be poor without grumbling.
+No wonder you earth-dwellers are so jealous!\
+
+Face:yukari,Œˆ
+It's easy to be rich without being proud.
+I can't stand the way you celestials
+look down on everyone.\
+
+Face:yukari,Œˆ
+Begone!  I'll cast you off of the earth\,
+beautifully and cruelly!
+#í“¬ŠJnˆ—
+
+Action:yukari,3
+End:
+
+# --------------------------------
+# í“¬I—¹@•‰‚¯
+Label:Lose
+
+End:
+
+# --------------------------------
+# í“¬I—¹@ƒRƒ“ƒeƒjƒ…[ˆ—
+Label:Continue
+
+#”wŒi@_Ğ‚Ö
+Action:tenshi,181
+#“VŒó‰ğœ
+Action:yukari,104
+
+End:
+
+# --------------------------------
+# í“¬I—¹@Ÿ‚¿
+Label:Win
+
+#‚â‚ç‚êƒLƒƒƒ‰Š®‘Sƒ_ƒEƒ“ŒŸ’m
+Action:tenshi,200
+#UŒ‚‘¤ƒjƒ…[ƒgƒ‰ƒ‹ˆÚsŒŸ’m
+Action:alice,202
+
+Sleep:30
+Result:
+
+#ƒCƒxƒ“ƒg@Ÿ—˜‰‰oƒtƒF[ƒh
+
+End:
+
+
+
+## =======================================================================

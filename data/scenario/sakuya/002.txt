@@ -1,0 +1,167 @@
+## =======================================================================
+#Stage:3
+#Title:避暑地で肝を冷やせ
+#Place:白玉楼の雪庭
+#Weather:雪
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "royal blue"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "royal blue"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+
+Character:sakuya,160,0,0,8888FF
+Character:yuyuko,160,0,1,FF8888
+
+#カメラ固定
+Action:sakuya,4
+
+#フォーカス瞬間移動
+#Action:sakuya,11
+
+#向き固定解除
+Action:sakuya,152
+
+Label:Start
+
+Sleep:30;
+
+#ステージタイトル表示
+Object:data/scenario/sakuya/effect/StageTitle003.bmp,0,192,-32
+Sleep:60;
+Object:data/scenario/effect/Stage3.bmp,1,256,352
+Sleep:60;
+#０１２３４５６７８９０１２３４５６７８９０１２３
+
+Face:sakuya,驚
+It piled up this much...\
+
+Face:sakuya,汗
+And you say there's nothing strange happening?\
+
+Face:yuyuko,普
+Of course it would pile up when it snows.\
+
+Face:yuyuko,普
+Well then\, you can escape from
+the summer heat in my Netherworld.\
+
+Face:sakuya,汗
+I don't know... but how is snow falling here...
+This mist was supposed to be the big incident\,
+but I guess it wasn't.\
+
+Face:sakuya,普
+With all these weird things happening\,
+I get the feeling you're plotting something.\
+
+Face:yuyuko,余
+Nothing of the sort.\
+
+Face:sakuya,汗
+Hmmm.
+I was just asking\, but the questioning starts now!\
+
+
+Action:sakuya,3
+
+End:
+
+# 戦闘開始
+
+# --------------------------------
+# 戦闘終了　負け
+Label:Lose
+
+Face:yuyuko,余
+Snowing does not change the fact that it is summer.\
+
+Face:yuyuko,普
+Go back to your mansion\, and\, just to be sure\,
+maybe it's better if you rebuild it.\
+
+End:
+
+# --------------------------------
+# 戦闘終了　コンテニュー処理
+Label:Continue
+
+#天候初期化
+Action:yuyuko,113
+
+End:
+
+# --------------------------------
+# 戦闘終了　勝ち
+Label:Win
+
+#やられキャラ完全ダウン検知
+Action:yuyuko,200
+#攻撃側ニュートラル移行検知
+Action:sakuya,202
+
+#自キャラ天候
+Action:sakuya,103
+Sleep:60
+
+Face:yuyuko,負
+Ah\, such a cool summer.\
+
+Face:sakuya,普
+You mean cold.\
+
+Face:sakuya,普
+I just wanted to ask something...@
+Scarlet mist is coming out from your body as well.\
+
+Face:sakuya,余
+What are those things?\
+
+Face:yuyuko,負
+You mean that?
+That problem is already solved\, so it's okay.\
+
+Face:sakuya,汗
+Pardon?\
+
+Face:yuyuko,負
+If you want to know more then it might be
+good for you to chase the mist's whereabouts.\
+
+Face:sakuya,惑
+Ummm....
+So it's there after all.\
+
+Face:sakuya,惑
+I don't really want to go into the mountains.\
+
+
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+Stage:3,120
+
+#やられキャラ画面退場
+Action:yuyuko,201
+
+#自キャラ基準点へ移動
+Action:sakuya,150
+
+#カメラ中央あわせ
+Action:sakuya,4
+
+Sleep:120;
+
+End:
+
+
+
+
+
+## =======================================================================

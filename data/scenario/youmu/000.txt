@@ -1,0 +1,195 @@
+## =======================================================================
+#Stage:1
+#Title:—H—ì¸çH
+#Place:”’‹Ê˜O‚Ìá’ë
+#Weather:‘““V
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "royal blue"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "royal blue"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+
+#
+# ƒtƒB[ƒ‹ƒh‚É’N‚à‹‚È‚¢
+#
+#‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+Character:youmu,160,0,0,8888FF
+Character:yuyuko,160,0,1,FF8888
+
+#”wŒi@”’‹Ê˜O‚Ìá’ë
+Stage:17,0
+
+#©•ª‰æ–ÊŠO‚É‘Ò‹@
+Action:youmu,1
+
+#“G‰æ–ÊŠO‚É‘Ò‹@
+Action:yuyuko,100
+
+#ƒJƒƒ‰’†‰›ŒÅ’è
+Action:youmu,2
+
+Label:Start
+
+PlayBgm:data/bgm/ta03.ogg
+
+#©ƒLƒƒƒ‰“VŒó
+#Action:youmu,103
+#“VŒó
+Action:yuyuko,103
+
+Sleep:60;
+
+#“oê
+Action:youmu,50
+Action:youmu,51
+
+
+#ƒXƒe[ƒWƒ^ƒCƒgƒ‹•\¦
+Object:data/scenario/youmu/effect/StageTitle001.bmp,0,192,-32
+Sleep:60;
+Object:data/scenario/effect/Stage1.bmp,1,256,352
+#Sleep:60;
+
+#
+# “G“oê
+Action:yuyuko,101
+Action:yuyuko,102
+
+Sleep:60
+
+#PlayBgm:data/bgm/ta00.ogg
+
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+Face:youmu,˜f
+Face:yuyuko,‹Á
+What's with the sleepy face?\
+
+Face:youmu,˜f
+Lady Yuyuko\, there's something
+I would like to report to you.
+Also\, I'm not really that sleepy.\
+
+# –¼‘O‚Ìƒeƒƒbƒv
+Object:data/scenario/yuyuko/effect/Name.bmp,2,352,304
+
+Face:yuyuko,•
+I'm not listening.\
+
+Face:youmu,Š¾
+I really think you should listen to this.\
+
+Face:youmu,•
+Recently\, the number of ghosts has been decreasing.\
+
+Face:yuyuko,•
+So\, we'll increase the number\, then?\
+Slice\, slice!\
+
+Face:youmu,Š¾
+No\, no\, the problem isn't
+the decreasing number itself.\
+
+Somehow\, one by one\, those who died
+aren't even turning into ghosts.\
+
+Face:youmu,˜f
+It seems that they simply vanished.\
+
+Face:yuyuko,•
+Even so\, what do you intend to do about it?\
+
+Face:youmu,—]
+I think I should go out to investigate.@
+Um\, is it fine for me to leave for a while?\
+
+Face:yuyuko,—]
+Not really\, no.
+If you want to go\,
+you'll have to defeat me first.\
+
+#í“¬ŠJnˆ—
+PlayBgm:data/bgm/st16.ogg
+Action:youmu,3
+End:
+
+# --------------------------------
+# í“¬I—¹@•‰‚¯
+Label:Lose
+
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+Face:yuyuko,Šğ
+It's fine if you just go sweep in the garden\,\
+
+Face:yuyuko,•
+because this might be dangerous
+if it's handled badly.\
+
+End:
+
+# --------------------------------
+# í“¬I—¹@ƒRƒ“ƒeƒjƒ…[ˆ—
+Label:Continue
+
+#“VŒó‰Šú‰»
+Action:yuyuko,113
+
+End:
+
+# --------------------------------
+# í“¬I—¹@Ÿ‚¿
+Label:Win
+
+
+#‚â‚ç‚êƒLƒƒƒ‰Š®‘Sƒ_ƒEƒ“ŒŸ’m
+Action:yuyuko,200
+#UŒ‚‘¤ƒjƒ…[ƒgƒ‰ƒ‹ˆÚsŒŸ’m
+Action:youmu,202
+
+#“VŒó–¶‰J‚É•Ï‰»
+Action:youmu,103
+Sleep:60;
+
+Face:youmu,Š¾
+Why did I have to do that... ?\
+
+Face:yuyuko,•‰
+Splendid!
+You've defeated me.
+You can do as you wish.\
+
+Face:youmu,•
+Then\, it's fine for me to go search for clues... ?\
+
+Face:youmu,Œˆ
+In that case\, I'm off!\
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+Stage:0,120
+
+#‚â‚ç‚êƒLƒƒƒ‰‰æ–Ê‘Şê
+Action:yuyuko,201
+
+#©ƒLƒƒƒ‰Šî€“_‚ÖˆÚ“®
+Action:youmu,150
+
+#ƒJƒƒ‰’†‰›‚ ‚í‚¹
+Action:youmu,4
+
+Sleep:120;
+
+End:
+
+
+
+
+
+## =======================================================================

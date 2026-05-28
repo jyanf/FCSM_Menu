@@ -1,0 +1,263 @@
+## =======================================================================
+#Stage:2
+#Title:‚¨“V“¹—l‚Í‰½ˆ‚É
+#Place:–‚–@‚ÌX
+#Weather:–¶‰J
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "royal blue"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "royal blue"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+
+#‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+Character:marisa,160,0,0,8888FF
+Character:reimu,160,0,1,FF8888
+Character:udonge,160,0,2,FF8888
+
+#“GƒLƒƒƒ‰‰æ–ÊŠO‚É‘Ò‹@
+Action:reimu,100
+#ƒJƒƒ‰ŒÅ’è
+Action:marisa,4
+
+#ƒtƒH[ƒJƒXuŠÔˆÚ“®
+#Action:marisa,11
+
+#Œü‚«ŒÅ’è‰ğœ
+Action:marisa,152
+
+Label:Start
+
+Bgm:data/bgm/ta00.ogg
+
+Sleep:30;
+
+#ƒXƒe[ƒWƒ^ƒCƒgƒ‹•\¦
+Object:data/scenario/marisa/effect/StageTitle002.bmp,0,192,-32
+Sleep:30;
+Object:data/scenario/effect/Stage2.bmp,1,256,352
+Sleep:30
+
+# •AŠğA—]AŠ¾A‹ÁA“{AŒˆA˜fA•‰
+
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+Face:marisa,•
+I've heard of rain dancing\,
+but what do you do when you want the reverse?\
+
+Face:marisa,—]
+I don't believe in things like teruterubouzu...\
+
+Face:marisa,
+Hide:1
+Sleep:30
+
+#
+# —ì–²“oê
+#
+Action:reimu,101
+Action:reimu,102
+
+Sleep:20
+
+Face:reimu,•
+Are you here?\
+
+# –¼‘O‚Ìƒeƒƒbƒv
+Object:data/scenario/reimu/effect/Name.bmp,2,352,304
+
+Face:marisa,•
+Not right now\, nope.\
+
+Hide:1
+# ‰õ°
+Action:reimu,103
+Sleep:50
+
+
+Face:reimu,Š¾
+Oh\, really? But you're right in front of me.\
+
+Face:marisa,‹Á
+Ohhh?
+I was just saying that the sun isn't here\,\
+
+Face:marisa,‹Á
+but the moment you came\, it became sunny!\
+
+Face:reimu,•
+Because it's been nothing but <color FFFFFF>sun</color> recently.\
+
+Face:reimu,˜f
+At this rate\, all the plants are going to die.\
+
+Face:marisa,“{
+Look at this forest!
+If the rain keeps falling\,
+the forest's gonna rot!\
+
+Face:reimu,“{
+I know nothing of that.\
+
+Face:marisa,•
+Oh\, I get it.\
+
+Face:marisa,Œˆ
+You're the sun.
+The weather's bad because
+you're lazing around\, right?\
+
+Face:marisa,
+
+#í“¬ŠJn
+PlayBgm:data/bgm/st01.ogg
+Action:marisa,3
+
+End:
+
+# í“¬ŠJn
+
+# --------------------------------
+# í“¬I—¹@•‰‚¯
+Label:Lose
+
+Face:reimu,“{
+You're making such a fuss of this.\
+
+Face:reimu,•’Ê
+I only came to look over
+the damage done by the earthquake.\
+
+End:
+
+# --------------------------------
+# í“¬I—¹@ƒRƒ“ƒeƒjƒ…[ˆ—
+Label:Continue
+
+#“VŒó‰Šú‰»
+Action:reimu,113
+
+End:
+
+# --------------------------------
+# í“¬I—¹@Ÿ‚¿
+Label:Win
+
+#‚â‚ç‚êƒLƒƒƒ‰Š®‘Sƒ_ƒEƒ“ŒŸ’m
+Action:reimu,200
+#UŒ‚‘¤ƒjƒ…[ƒgƒ‰ƒ‹ˆÚsŒŸ’m
+Action:marisa,202
+
+#©ƒLƒƒƒ‰“VŒó‚É•Ï‰»
+#Action:marisa,103
+#Sleep:60
+
+Face:reimu,•‰
+I don't know why we just fought...
+Are you okay from the earthquake this morning?\
+
+Face:marisa,•
+Earthquake?
+I didn't really feel anything\, actually.\
+
+Face:reimu,•‰
+How can that be...
+The earthquake was strong enough to level my shrine!\
+
+Face:reimu,
+
+Hide:1
+
+# O”Ôè“oê
+Action:udonge,105
+
+#Weather:°—’
+Action:udonge,103
+
+#“oêI—¹ŒŸ’m
+Action:udonge,106
+
+
+Face:udonge,•
+That magician doesn't know a thing.\
+
+Face:marisa,‹Á
+What's going on today?
+I've never had this many customers
+since this store opened.\
+
+# –¼‘O‚Ìƒeƒƒbƒv
+Object:data/scenario/Udonge/effect/Name.bmp,2,352,304
+
+Face:udonge,˜f
+You had a store?\
+
+Face:marisa,˜f
+Actually\, I want to open shop\,
+but the times are hard lately\, you know?\
+
+Face:udonge,•
+Anyway\, it seems like something horrible is
+going to happen\, so I came to you.\
+
+Face:marisa,•
+It was just sunny\, but it's all strange now...
+Is this "something horrible?"\
+
+Face:udonge,—]
+No\, no\, it's an earthquake!\
+
+Face:reimu,•‰
+An earthquake\, you say?
+Well\, there was already one this morning.\
+
+Face:udonge,˜f
+Eh? I didn't feel anything this morning...\
+
+Face:udonge,•
+But if an earthquake is going to happen\,
+it wouldn't be a small tremor like that\, I think.\
+
+
+Face:marisa,•
+How do you know these things?\
+
+Face:udonge,•
+Hmph\, follow me.\
+
+Hide:1
+
+Sleep:10
+
+#‚â‚ç‚êƒLƒƒƒ‰‰æ–Ê‘Şê
+Action:reimu,201
+
+#ƒXƒe[ƒWŠÔ’²®©ƒLƒƒƒ‰
+Action:marisa,150
+Sleep:15
+
+#ƒXƒe[ƒWŠÔ’²®“G
+Action:udonge,110
+Stage:2,120
+CrossFadeBgm:data/bgm/st02.ogg,2000,1
+
+#ƒJƒƒ‰’†‰›‚ ‚í‚¹
+Action:marisa,4
+
+#“GˆÚ“®I—¹ŒŸ’m
+Action:udonge,111
+
+Sleep:60
+
+End:
+
+
+
+
+
+## =======================================================================

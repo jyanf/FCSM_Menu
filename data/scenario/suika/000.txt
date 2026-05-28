@@ -1,0 +1,234 @@
+## =======================================================================
+#Stage:1
+#Title:V‹Œ—d‰ö‚ÌR
+#Place:—d‰ö‚ÌR
+#Weather:
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Font.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Window.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Background.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*CG.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+#PlayBgm:data/bgm/ta00.ogg
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+#‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+Character:suika,160,0,0,8888FF
+Character:aya,160,0,1,FF8888
+
+#”wŒi@—d‰ö‚ÌR
+Stage:3,0
+
+#©ƒLƒƒƒ‰‰æ–ÊŠO‚É‘Ò‹@
+Action:suika,1
+
+#“G‰æ–ÊŠO‚É‘Ò‹@
+Action:aya,100
+
+Label:Start
+PlayBgm:data/bgm/ta00.ogg
+
+#©ƒLƒƒƒ‰“VŒó
+Action:suika,103
+
+Sleep:60;
+
+#ƒXƒe[ƒWƒ^ƒCƒgƒ‹•\¦
+Object:data/scenario/suika/effect/StageTitle001.bmp,0,192,-32
+Sleep:60;
+Object:data/scenario/effect/Stage1.bmp,1,256,352
+#Sleep:60;
+
+#ƒJƒƒ‰ˆÚ“®
+Action:suika,2
+
+#“oê
+Action:suika,50
+Action:suika,51
+
+Face:suika,•
+Ah\, mountain climbing\, mountain climbing!\
+
+Face:suika,Šğ
+The Youkai Mountain is nostalgic\, too.\
+
+Face:suika,—]
+Though it wasn't so suspicious back then...\
+
+Face:suika,
+Hide:1
+Sleep:30
+
+#
+# “G“oê
+Action:aya,101
+Action:aya,102
+
+# –¼‘O‚Ìƒeƒƒbƒv
+Object:data/scenario/aya/effect/Name.bmp,2,352,304
+
+Action:aya,103
+
+Face:aya,˜f
+Ayayayaya!
+Um\, what are you doing here?\
+
+Face:suika,—]
+I just like to exercise every once in a while.\
+
+Face:aya,Š¾
+Again? Whenever you come to
+this mountain\, everyone goes nuts.\
+
+Face:aya,˜f
+I'd be glad if you could
+restrain yourself a little.\
+
+Face:suika,Šğ
+I don't plan to take this mountain
+back from the tengu.\
+
+Face:suika,•
+So don't mind me\, let's drink sake!\
+
+Face:aya,•
+Sorry\, but I'm on the job here.\
+
+Face:aya,˜f
+Even if you say that\, you still can't come here.\
+
+Face:aya,˜f
+If somebody sees you here\,
+they might all come and drive you out.\
+
+Face:suika,—]
+I'm not gonna lose to anyone
+that comes\, so that's okay.\
+
+Face:aya,‹Á
+That's not what I meant.
+If you won\, then it would be a grave matter.\
+
+Face:aya,˜f
+Seeing as the tengu society values its face...\
+
+Hide:1
+Sleep:20
+Action:suika,107
+Sleep:30
+
+Face:suika,˜f
+Meh\, that's annoying.
+Why not just give up now?\
+
+Face:aya,•
+Well\, there is a better way to
+settle their hearts.\
+
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+Face:aya,•
+The least troublesome way is to
+defeat you and make you go back.\
+
+Face:suika,Œˆ
+Well\, what are you waiting for?\
+
+#í“¬ŠJnˆ—
+Sleep:10
+
+PlayBgm:data/bgm/st21.ogg
+Action:suika,3
+End:
+
+# --------------------------------
+# í“¬I—¹@•‰‚¯
+Label:Lose
+
+Face:aya,Šğ
+Well then\, leave without being seen.\
+
+End:
+
+# --------------------------------
+# í“¬I—¹@ƒRƒ“ƒeƒjƒ…[ˆ—
+Label:Continue
+
+#“VŒó‰Šú‰»
+Action:aya,113
+
+End:
+
+# --------------------------------
+# í“¬I—¹@Ÿ‚¿
+Label:Win
+
+#‚â‚ç‚êƒLƒƒƒ‰Š®‘Sƒ_ƒEƒ“ŒŸ’m
+Action:aya,200
+#UŒ‚‘¤ƒjƒ…[ƒgƒ‰ƒ‹ˆÚsŒŸ’m
+Action:suika,202
+
+#©ƒLƒƒƒ‰“VŒó
+Action:suika,103
+Sleep:60
+
+Face:suika,Šğ
+Well\, you lost somehow.\
+
+Face:aya,•‰
+Um\, where are you going?\
+
+Face:suika,˜f
+Above and above of what's above this mountain.\
+
+Face:aya,•‰
+That's some bizarre mountain climbing.\
+
+Face:suika,—]
+I've said this before\, but I don't really
+want to bother the tengu's livelihoods.\
+
+Face:aya,•‰
+I guess that's that.
+I'll be your guarantor\, so I'll let you pass.\
+
+Face:aya,•‰
+In return\, please avoid contact with the tengu.\
+
+Face:suika,•
+We oni don't lie.\
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+Sleep:30;
+#ã‹óˆÚs—pã‹ó‘Ş”ğ
+Action:suika,151
+
+Sleep:90;
+
+#ƒtƒF[ƒhƒAƒEƒg@•
+Action:suika,160
+Sleep:60;
+
+
+Stage:4,0
+
+End:
+
+
+
+
+
+## =======================================================================

@@ -1,0 +1,294 @@
+## =======================================================================
+#Stage:5
+#Title:天女の緋色
+#Place:嵐
+#Weather:台風
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "royal blue"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "royal blue"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+
+Character:reimu,160,0,0,8888FF
+Character:iku,120,20,1,FF8888
+
+#専用ステージ初期設定
+Action:iku,139
+
+#カメラ固定
+Action:reimu,4
+
+#フォーカス瞬間移動
+Action:reimu,11
+
+#自キャラ画面左待機
+Action:reimu,5
+
+#背景暗雲設置
+Action:iku,134
+
+#向き固定解除
+Action:reimu,152
+
+#天候初期化
+Action:iku,153
+
+Label:Start
+
+#フェードイン　黒
+Action:reimu,161
+Bgm:data/bgm/ta02.ogg
+
+
+Sleep:60
+
+#ステージタイトル表示
+Object:data/scenario/reimu/effect/StageTitle005.bmp,0,192,-32
+Sleep:60
+Object:data/scenario/effect/Stage5.bmp,1,256,352
+Sleep:300
+
+#雲中背景解除
+Action:iku,135
+Sleep:120
+
+#霊夢画面上から登場
+Action:reimu,6
+
+#登場終了検知
+Action:reimu,7
+
+Sleep:60
+
+Face:reimu,惑
+What on earth...?
+The thunderclouds are only swirling
+around this area.\
+
+Up until now\, no matter where I went\,
+it always started out being sunny around me.\
+
+Face:reimu,普
+I knew my intuition was right. The culprit behind
+this mysterious phenomenon must be above here.\
+Face:reimu,
+Hide:1
+Sleep:60
+
+#衣玖黒塗りで画面上から登場
+Action:iku,130
+Sleep:90
+Face:iku,
+Oho?
+You're not a tengu.\
+
+Nor a kappa.\
+Not a ghost either.\
+#落雷+衣玖の姿が浮かび上がる
+Action:iku,131
+Face:iku,
+A human...@
+It's rare for a human to
+make it this far up the mountain.\
+#Sleep:90
+
+
+Face:reimu,普
+What are you?
+Someone who swims around in thunderstorms
+clearly isn't an ordinary person.\
+
+
+Face:iku,普
+Well... these are the kinds of clouds we swim in.\
+
+# 名前のテロップ
+#Name:美しき緋の衣　永江衣玖
+Object:data/scenario/iku/effect/Name.bmp,2,352,304
+
+We are messengers from the Dragon Palace.
+We swim in the sky only to warn
+of a certain disaster.\
+
+The scarlet mist is a mist of temperament.
+The scarlet sky is a sign of the disaster to come.\
+
+Face:iku,嬉
+The scarlet clouds shall shake the earth.
+We swim to convey these things.\
+
+Face:reimu,驚
+Shake the earth!?
+Y-You don't mean...\
+
+#イベント　衣玖浮遊状態終了
+Action:iku,132
+
+Face:iku,普
+Yes\, an earthquake.
+Though it hasn't happened yet.\
+
+Face:iku,余
+Very soon now\, a great earthquake will occur.
+I'm merely warning everyone about it.\
+
+Face:reimu,怒
+Wait\, wait\, we already had an earthquake!
+It was just this morning\,
+and I'm in a huge mess because of it!\
+
+Face:iku,惑
+What? There's already been an earthquake?
+How odd.\
+
+Face:reimu,汗
+Aah\, that reminds me.
+My shrine collapsed. I have to do something--\
+
+Face:iku,普
+If an earthquake has occurred\,
+these clouds should have settled already...\
+
+Face:iku,汗
+Perhaps that person was responsible?
+Such a troublesome girl.\
+
+Face:reimu,怒
+You knew an earthquake was coming\, didn't you?
+You should have told everyone immediately!\
+
+Bgm:data/bgm/st04.ogg
+
+Face:iku,余
+The earthquake that leveled your shrine
+must have been a <color FFFFFF>test</color>.
+The true disaster is yet to come.\
+
+Face:reimu,汗
+Honestly!
+Why is everyone being so laid back!?\
+
+Face:iku,決
+If you've seen how fearsome an earthquake can be\,@
+why not hurry home and make arrangements
+for disaster prevention?\
+
+Face:reimu,怒
+The way I prevent disasters is to
+beat up the people who are plotting them!\
+
+
+Action:reimu,3
+
+
+End:
+
+# 戦闘開始
+
+# --------------------------------
+# 戦闘終了　負け
+Label:Lose
+
+Face:iku,余
+It's not good to get too emotional.\
+
+Face:iku,普
+The truth is\, no one can stop these disasters.
+The one who will put an end to the disasters...\
+
+Face:iku,惑
+It won't be you. Sad, isn't it?
+Only "that person" alone...\
+
+End:
+
+# --------------------------------
+# 戦闘終了　コンテニュー処理
+Label:Continue
+
+#天候初期化
+Action:iku,153
+
+End:
+
+# --------------------------------
+# 戦闘終了　勝ち
+Label:Win
+
+#やられキャラ完全ダウン検知
+Action:iku,200
+#攻撃側ニュートラル移行検知
+Action:reimu,202
+
+#Weather:天候クリア
+# 無天候へ
+Action:iku,133
+
+Face:reimu,嬉
+I won! Now the earthquake won't happen\, right?\
+
+Face:iku,負
+Don't relax just yet.
+I'm just trying to warn everyone
+about an earthquake that's going to happen.\
+
+Face:iku,負
+I don't have any control over
+whether it happens or not.\
+
+No one can stop the true disaster from occurring.
+Unfortunately\, the only one who could...\
+
+Is not you\, but <color FFFFFF>that person</color>.\
+
+Face:reimu,怒
+Who are you talking about?
+Where's the one who's going to
+take responsibility for wrecking my shrine?\
+
+Face:iku,負
+If my guess is correct\,
+she is definitely the perpetrator
+behind that earthquake.\
+
+But she is also the only one
+who can stop the disaster to come...\
+
+Face:reimu,普
+Either way\, it looks like I'll need to
+meet with this person.\
+About taking responsibility for my shrine
+and about stopping the disaster.\
+
+Face:iku,負
+Then by all means\, continue up through the clouds.
+Although it certainly won't be easy.\
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+Sleep:30
+#画面上部へ移動
+Action:reimu,151
+
+Sleep:90
+
+#フェードアウト　白
+Action:reimu,162
+Sleep:60
+
+Stage:5,0
+
+End:
+
+
+
+
+
+## =======================================================================

@@ -1,0 +1,226 @@
+## =======================================================================
+#Stage:5
+#Title:“ä‚Ì—d‰ö
+#Place:ŒºŠC‰_
+#Weather:‘ä•—
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Font.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Window.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Background.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*CG.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+#PlayBgm:data/bgm/ta00.ogg
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+Character:iku,160,0,0,8888FF
+Character:yukari,120,20,1,FF8888
+
+#ê—pƒXƒe[ƒW‰Šúİ’è
+Action:iku,138
+
+#ƒJƒƒ‰ŒÅ’è
+Action:iku,4
+
+#ƒtƒH[ƒJƒXuŠÔˆÚ“®
+Action:iku,11
+
+#©ƒLƒƒƒ‰‰æ–Ê¶‘Ò‹@
+Action:iku,5
+
+#“GƒtƒB[ƒ‹ƒh’[‚Å‘Ò‹@
+Action:yukari,100
+
+#Œü‚«ŒÅ’è‰ğœ
+Action:iku,152
+
+#“VŒó‰Šú‰»
+Action:iku,153
+
+Label:Start
+PlayBgm:data/bgm/ta02.ogg
+
+#”wŒiˆÃ‰_İ’u
+Action:iku,134
+
+#ƒtƒF[ƒhƒCƒ“@•
+Action:iku,161
+
+Sleep:60
+
+#ƒXƒe[ƒWƒ^ƒCƒgƒ‹•\¦
+Object:data/scenario/iku/effect/StageTitle005.bmp,0,192,-32
+Sleep:60
+Object:data/scenario/effect/Stage5.bmp,1,256,352
+Sleep:300
+
+#‰_’†”wŒi‰ğœ
+Action:iku,135
+Sleep:120
+
+#‰æ–Êã‚©‚ç“oê
+Action:iku,6
+
+#“oêI—¹ŒŸ’m
+Action:iku,7
+
+Sleep:60
+
+Face:iku,•
+Alright.\
+
+Face:iku,•
+There's no longer any need to investigate this cloud.\
+
+Face:iku,Šğ
+All that's left is for the lower world's
+beings to prepare for the disaster.\
+
+Face:iku,Šğ
+It'd be good if there isn't a
+sudden rise in the ghost population.\
+
+Face:iku,
+Hide:1
+Sleep:30
+
+# “G“oê
+Action:yukari,101
+Action:yukari,102
+
+Face:yukari,–³
+Oh\, but have you come to warn me?\
+
+Face:iku,‹Á
+My\, how rare for someone
+to come to talk with me.\
+
+# –¼‘O‚Ìƒeƒƒbƒv
+Object:data/scenario/yukari/effect/Name.bmp,2,352,304
+
+Face:yukari,˜f
+Is there going to be an earthquake?\
+
+Face:iku,•
+Yes\, there will.
+It's a very unfortunate event.\
+
+Face:yukari,Šğ
+... I see\, there won't be an earthquake.
+I was worried over nothing.\
+
+Face:iku,˜f
+?\
+
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+Face:yukari,Šğ
+Since the scarlet clouds appeared\, I thought\,
+"Is there going to be an earthquake?"
+but I guess that was just needless worry.\
+
+Face:iku,˜f
+No no no\, I'm saying that there will be one...\
+
+Face:yukari,—]
+Yes\, there won't be an earthquake.\
+
+Face:iku,“{
+I have no idea what you're getting at\, but\,
+you have a very perilous sense of things.\
+
+PlayBgm:data/bgm/st04.ogg
+
+#í“¬ŠJnˆ—
+Action:iku,3
+
+End:
+
+# í“¬ŠJn
+
+# --------------------------------
+# í“¬I—¹@•‰‚¯
+Label:Lose
+
+Face:yukari,—]
+How about going to the shrine
+and thoroughly investigating?\
+
+Face:yukari,•
+I'm still having doubts\, though.\
+
+End:
+
+# --------------------------------
+# í“¬I—¹@ƒRƒ“ƒeƒjƒ…[ˆ—
+Label:Continue
+
+#“VŒó‰Šú‰»
+Action:iku,153
+
+End:
+
+# --------------------------------
+# í“¬I—¹@Ÿ‚¿
+Label:Win
+
+
+#‚â‚ç‚êƒLƒƒƒ‰Š®‘Sƒ_ƒEƒ“ŒŸ’m
+Action:yukari,200
+#UŒ‚‘¤ƒjƒ…[ƒgƒ‰ƒ‹ˆÚsŒŸ’m
+Action:iku,202
+
+Face:iku,“{
+So\, what on earth are you talking about!\
+
+Face:yukari,•‰
+Why don't you go and
+closely investigate the shrine?\
+
+Face:iku,•
+I just recently visited the shrine...
+What are you talking about?\
+
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+Face:yukari,•‰
+There's some serious suspicions about
+the earthquake below the broken roof there.\
+
+Face:iku,•
+I'll go investigate it then\,
+but if I don't find anything
+I'll surely put a curse on you for eternity.\
+
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+Stage:0,120
+
+#‚â‚ç‚êƒLƒƒƒ‰‰æ–Ê‘Şê
+Action:yukari,201
+
+#©ƒLƒƒƒ‰Šî€“_‚ÖˆÚ“®
+Action:iku,150
+
+#ƒJƒƒ‰’†‰›‚ ‚í‚¹
+Action:iku,4
+
+Sleep:120;
+
+End:
+
+
+
+
+
+## =======================================================================

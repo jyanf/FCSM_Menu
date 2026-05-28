@@ -1,0 +1,94 @@
+# ----------------------------------------------------
+# Ending
+# Stage:Ending
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Font.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Window.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Background.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*CG.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+#PlayBgm:data/bgm/ta00.ogg
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+Font:MonoSpatialModSWR,15,0,6
+WindowColor:0,0,0,0
+Color:FFFFFF
+Background:data/scenario/effect/EdBack000.bmp,999,0,0
+CG:data/scenario/suika/effect/ED000.bmp,96,16,50
+Label:Start
+Bgm:data/bgm/ta06.ogg
+
+# ˆê–‡–Ú
+# “VŠE‚ÌƒCƒ‰ƒXƒgi‘¼‚ÌƒLƒƒƒ‰‚Å‚àg‚¤”Ä—pŠGj
+# 
+# @ˆê–‡–Ú‚ÍêŠ‚ğ¦‚·ŠÈ’P‚ÈƒCƒ‰ƒXƒg‚ª“ü‚é—\’è‚Å‚·
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+  Bhava-agra.@
+  This is one of the worlds in Heaven where celestials live.@
+  It was full of beautiful flowers\, beautiful song\, and\, of course\, delicious sake.\
+
+  You could dance and dance until you couldn't remember what day it was.@
+  You could drink and drink until you got tired and fell asleep.@
+  That's what life is like in this world above the clouds.\
+
+# “ñ–‡–Ú
+# “‚Ì–Ø‚Ì‰º‚Å‚¨ğ‚ğ“Û‚ŞäÂ
+# “Vq‚â“V—’B‚àˆê‚É“Û‚ñ‚Å‚¢‚éB
+
+CG:data/scenario/suika/effect/ED001.bmp,96,16,50
+
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+Suika  "Ahhh\, Heaven sure is nice."@
+Tenshi "No\, this is really boring."@
+Suika  "This is the life."\
+
+Suika  "Still\, the food's better down on Earth.@
+        Isn't there anything for chasers other than peaches?"@
+Tenshi "That's why people are going to bring snacks from Earth."\
+
+Suika  "I wonder who's going to come first... ?"@
+Tenshi "Are you just going to lie around until they get here?"\
+
+CG:data/scenario/suika/effect/ED002.bmp,96,16,50
+# O–‡–Ú
+# •ÊƒAƒ“ƒOƒ‹‚Å‚¨ğ‚ğ“Û‚ñ‚Å‚¢‚éƒV[ƒ“
+# äÂ‚ª“¾ˆÓ‚°‚É‚È‚Á‚Ä‚¢‚é
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+Suika  "But\, you'll give me the land around here\, right?"@
+Tenshi "Mmgh\, w-well\, I guess I can lend it to you.@
+        It'll keep other people from finding you."\
+
+Suika  "Anyway\, everyone's gonna come\, so they'll find you out."@
+Tenshi "Huh?  Everyone?"\
+
+Suika  "According to your plan\, someone's gonna come from Earth to beat you\, right?"@
+        So\, you'll probably lose somewhere around when the shrine maiden comes.
+        What'll you do then?"\
+
+Tenshi "Just who's going to lose\, now?"@
+Suika  "It'll get boring again after that\, right?@
+        Just leave it to me and everyone'll show up."\
+
+FadeBgm:2000,0
+CG:BLACK,0,0,15
+
+  And having said that\, Suika laid down and fell asleep.
+  Tenshi had to lease out part of Heaven to Suika\, who beat her.
+  She hadn't set a lease term limit yet\, but she wasn't worried about that.\
+
+StaffRoll:
+
+  In any case\, she thought Suika would get bored and leave before too long.
+  She couldn't imagine how people from Earth could see Heaven as a paradise.\
+
+End:

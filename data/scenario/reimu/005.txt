@@ -1,0 +1,266 @@
+## =======================================================================
+#Stage:Final
+#Title:天の娘、地の神、人の心
+#Place:山頂
+#Weather:極光
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "royal blue"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "royal blue"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+
+Character:reimu,160,0,0,8888FF
+Character:tenshi,160,0,1,FF8888
+#敵画面外に待機
+Action:tenshi,100
+#カメラ初期位置固定
+Action:tenshi,130
+#霊夢画面外待機
+Action:reimu,5
+
+#向き固定解除
+Action:reimu,152
+
+Label:Start
+
+Sleep:85;
+
+#フェードイン　白
+Bgm:data/bgm/ta07.ogg
+Action:reimu,163
+
+#カメラ下へ
+Action:tenshi,131
+#Sleep:40;
+
+#ステージタイトル表示
+Object:data/scenario/reimu/effect/StageTitle006.bmp,0,192,-32
+
+#Sleep:20;
+#自キャラ画面上から落下して登場
+Action:reimu,6
+Action:reimu,7
+#Sleep:40;
+Object:data/scenario/effect/StageFinal.bmp,1,256,352
+#Sleep:10;
+
+Sleep:180;
+Face:reimu,普
+Now then\, where is she?
+The one who's going to take responsibility
+for the earthquake.\
+
+It sure is quiet above the clouds...\
+Face:reimu,
+
+Hide:1
+
+#イベント　メッセージウィンドウ消去
+#イベント　カメラ上空へ
+Action:tenshi,132
+
+#イベント　地震
+Action:tenshi,133
+
+Sleep:60
+
+Face:tenshi,無
+Control the Earth from Heaven.\
+
+Hide:1
+#Sleep:120
+
+Action:tenshi,133
+#イベント　地震
+Remove the key from the Earth\,\
+
+Hide:1
+Sleep:60
+
+# 天子登場
+#イベント　大地震
+#イベント　カメラフォーカス元へ
+Action:tenshi,134
+#sleep,180
+
+and lay bare the scarlet hearts of men!\
+
+#登場ポーズ終了指令
+Action:tenshi,139
+#sleep,30
+
+Face:reimu,普
+You're the one who's causing earthquakes
+and screwing up the weather\, aren't you?\
+
+Face:tenshi,普
+And you're the disaster resolution specialist.
+I've been waiting for you.\
+
+Face:reimu,怒
+Hmph\, waiting for me?
+You sound like you actually want me to
+resolve this disaster.\
+
+Face:tenshi,余
+When you're <color FFFFFF>playing</color> disaster resolution\,
+the opponent doesn't have to be a youkai\, right?\
+
+#Name:非想非非想天の娘　比那名居天子
+# 名前のテロップ
+Object:data/scenario/tenshi/effect/Name.bmp,2,352,304
+
+Face:tenshi,普
+I'm a member of the Hinanawi clan
+that lives in Heaven.\
+
+Face:tenshi,普
+Every day is singing\, singing\, drinking\, dancing\,
+and singing again\, over and over.
+Life in Heaven is really carefree.\
+
+Face:reimu,普
+You're making me jealous.
+Are you bragging?\
+
+Face:tenshi,怒
+What are you talking about?
+I'm saying I was bored out of my mind!\
+
+Face:tenshi,普
+So I came down to the surface and watched you play
+with all kinds of different youkai.\
+
+Face:reimu,汗
+I wouldn't exactly call it playing\, though.\
+
+Face:tenshi,普
+Seeing that made me think\,
+"I want to play disaster resolution too."\
+
+Face:tenshi,嬉
+So I caused one. A disaster\, I mean.\
+
+Face:reimu,怒
+Don't act so flippant about it!
+Thanks to you my shrine is a mess!!\
+
+Face:tenshi,余
+Oh\, that was just to make sure it worked.
+Next up is the real thing.\
+
+Face:tenshi,普
+My Sword of Scarlet Thought is a sword
+that can lay bare a person's temperament.\
+
+Then\, I gather the scarlet mist like this--\
+Face:tenshi,
+
+#イベント　天子地面に剣を刺して地震発生
+Action:tenshi,135
+Action:tenshi,136
+
+Face:tenshi,余
+And the energy gathered in the sky
+causes the earth to shake.\
+
+Face:tenshi,普
+Furthermore\, it shifts the keystones
+beneath my feet.\
+
+Face:tenshi,
+
+#イベント　要石を動かして地震発生
+Action:tenshi,137
+Action:tenshi,138
+
+Face:tenshi,嬉
+Soon\, all the land in Gensokyo will tremble.\
+
+Face:reimu,怒
+Hmph\, this is all a game to you\, huh.\
+Face:reimu,怒
+Regardless of how your plan works\,
+you're obviously the one who caused the earthquake.\
+
+Face:reimu,普
+Whether you're a celestial or just some weirdo\,
+my job is simple.\
+
+Bgm:data/bgm/st05.ogg
+
+Face:reimu,決
+All I have to do is take you down!
+And after that\, I'm going to make you fix my shrine!\
+
+Face:tenshi,余
+Ufufu.
+Good\, good! That's the enthusiasm I was looking for!\
+
+Face:tenshi,惑
+I don't want to go on living
+the boring life of a celestial forever.\
+
+Face:tenshi,嬉
+That ends today!\
+
+Face:tenshi,余
+The weather in the sky\, the stability of the earth\,
+and the hearts of man are all
+in the palm of my hand.\
+
+Face:tenshi,決
+Show me the weather with which
+you defeated so many youkai!\
+
+
+#戦闘開始処理
+Action:reimu,3
+
+End:
+
+# 戦闘開始
+
+# --------------------------------
+# 戦闘終了　負け
+Label:Lose
+
+
+End:
+# --------------------------------
+# 戦闘終了　コンテニュー処理
+Label:Continue
+
+#背景　有頂天へ
+Action:tenshi,180
+#天候解除
+Action:tenshi,153
+
+End:
+
+# --------------------------------
+# 戦闘終了　勝ち
+Label:Win
+
+#やられキャラ完全ダウン検知
+Action:tenshi,200
+#攻撃側ニュートラル移行検知
+Action:reimu,202
+
+Sleep:30
+Result:
+
+#イベント　勝利演出フェード
+
+End:
+
+
+
+
+
+## =======================================================================

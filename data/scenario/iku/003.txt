@@ -1,0 +1,179 @@
+## =======================================================================
+#Stage:4
+#Title:ÅŒã‚ÌŒx
+#Place:”’‹Ê˜O‚Ìá’ë
+#Weather:
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Font.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Window.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Background.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*CG.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+#PlayBgm:data/bgm/ta00.ogg
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+
+#‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+Character:iku,160,0,0,8888FF
+Character:yuyuko,120,20,1,FF8888
+#•ª‰æ–ÊŠO‚É‘Ò‹@
+Action:yuyuko,100
+#ƒJƒƒ‰ŒÅ’è
+Action:iku,4
+#ƒtƒH[ƒJƒXuŠÔˆÚ“®
+#Action:iku,11
+
+#Œü‚«ŒÅ’è‰ğœ
+Action:iku,152
+
+Label:Start
+
+PlayBgm:data/bgm/ta04.ogg
+
+Sleep:60;
+
+#ƒXƒe[ƒWƒ^ƒCƒgƒ‹•\¦
+Object:data/scenario/iku/effect/StageTitle004.bmp,0,192,-32
+#“oêƒ‚[ƒVƒ‡ƒ“ŠJn
+Action:yuyuko,101
+#“GƒLƒƒƒ‰“VŒó
+Action:yuyuko,103
+Sleep:60;
+Object:data/scenario/effect/Stage4.bmp,1,256,352
+Sleep:60;
+#“oêƒ‚[ƒVƒ‡ƒ“I—¹ŒŸ’m
+Action:yuyuko,102
+
+Face:iku,•
+You there\, there's going to be an earthquake.\
+
+# –¼‘O‚Ìƒeƒƒbƒv
+#Name:•—‰J‚Ìéë@Ë–½ŠÛ•¶
+Object:data/scenario/yuyuko/effect/Name.bmp,2,352,304
+
+Face:yuyuko,•
+My\, suddenly an earthquake is going to happen.\
+
+Face:yuyuko,—]
+But\, you don't know everything.
+Is it possible that there won't
+be an earthquake?\
+
+Face:iku,˜f
+... I wonder. The Hinanawi clan
+could suppress the earthquake...\
+
+Face:iku,•
+But they probably won't.\
+
+Face:yuyuko,Šğ
+As a matter of fact\, over at the shrine
+there's some sort of event going on.
+Isn't it possible that could suppress the earthquake?\
+
+Face:iku,˜f
+?
+I cannot fathom how you came to that conclusion\,
+but\, it's not possible.\
+
+Face:iku,•
+With that\, I've finished my warnings.
+I'll be returning now.\
+
+Face:yuyuko,‹Á
+Wait just a minute.
+Won't you fight with me?\
+
+
+#í“¬ŠJnˆ—
+PlayBgm:data/bgm/st16.ogg
+Action:iku,3
+
+End:
+
+# í“¬ŠJn
+
+# --------------------------------
+# í“¬I—¹@•‰‚¯
+Label:Lose
+
+Face:yuyuko,•
+You can go now.\
+
+Face:yuyuko,—]
+It's impolite to just come to me
+and leave without fighting.\
+
+End:
+
+# --------------------------------
+# í“¬I—¹@ƒRƒ“ƒeƒjƒ…[ˆ—
+Label:Continue
+
+#“VŒó‰Šú‰»
+Action:yuyuko,113
+
+End:
+
+# --------------------------------
+# í“¬I—¹@Ÿ‚¿
+Label:Win
+
+#‚â‚ç‚êƒLƒƒƒ‰Š®‘Sƒ_ƒEƒ“ŒŸ’m
+Action:yuyuko,200
+#UŒ‚‘¤ƒjƒ…[ƒgƒ‰ƒ‹ˆÚsŒŸ’m
+Action:iku,202
+
+
+Face:iku,˜f
+I only came to warn about an earthquake\,
+yet why did I have to fight you...\
+
+Face:yuyuko,•
+Maybe you said something you shouldn't have.\
+
+Face:iku,•
+But I did try to make my warnings
+as simple as possible.\
+
+Face:iku,Šğ
+Well\, anyways.
+Please be prepared for the earthquake.\
+
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+Sleep:30;
+
+#ã‹óˆÚs—pã‹ó‘Ş”ğ
+Action:iku,151
+
+Sleep:90;
+
+#ƒtƒF[ƒhƒAƒEƒg@•
+Action:iku,160
+Sleep:60;
+
+
+Stage:4,0
+
+End:
+
+
+
+
+
+## =======================================================================

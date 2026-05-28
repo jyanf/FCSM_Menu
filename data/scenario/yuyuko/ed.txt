@@ -1,0 +1,100 @@
+# ----------------------------------------------------
+# Ending
+# Stage:Ending
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Font.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Window.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Background.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*CG.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+#PlayBgm:data/bgm/ta00.ogg
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+Font:MonoSpatialModSWR,15,0,6
+WindowColor:0,0,0,0
+Color:FFFFFF
+Background:data/scenario/effect/EdBack000.bmp,999,0,0
+CG:data/scenario/yuyuko/effect/ED000.bmp,96,16,50
+Label:Start
+
+Bgm:data/bgm/ta06.ogg
+
+# ˆê–‡–Ú
+# ”’‹Ê˜O‚ÌƒCƒ‰ƒXƒgi‘¼‚ÌƒLƒƒƒ‰‚Å‚àg‚¤”Ä—pŠGj
+# 
+# @ˆê–‡–Ú‚ÍêŠ‚ğ¦‚·ŠÈ’P‚ÈƒCƒ‰ƒXƒg‚ª“ü‚é—\’è‚Å‚·
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+#2345678901234567890123456789012345678901234567890123456789012345
+  Hakugyokurou in summer.@
+  The snow that fell every day gradually covered the earth.@
+  As the snow hid the ground\, the temperature dropped.\
+
+  Only Hakugyokurou had lost its summer atmosphere thus.@
+  The Netherworld was all white\,
+  and the snow's silence fit it perfectly.\
+
+
+# “ñ–‡–Ú
+# —d–²‚É‰Î”«‚ğ‚Á‚Ä‚«‚Ä‚Æ—Š‚Ş—HXq
+#
+
+CG:data/scenario/yuyuko/effect/ED001.bmp,96,16,50
+
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+Yuyuko "Youmu~
+        Come bring a heater~"\
+
+Youmu  "That's right...@
+        I'd have never thought we'd need a heater in the summer\, but...@
+        It's so cold\, it can't be helped."\
+
+Yuyuko "It's important to take care of your body."@
+Youmu  "Yes\, I suppose."@
+Yuyuko "Even if you don't have one\, like me."\
+
+
+CG:data/scenario/yuyuko/effect/ED002.bmp,96,16,50
+# O–‡–Ú
+# ‰Î”«‚Å’g‚Ü‚é—HXq
+# ˜e‚Å—d–²‚ª•·‚¢‚Ä‚¢‚é
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+Youmu  "But\, what on earth is with this weather... ?"@
+Yuyuko "Oh\, you don't know\, do you\, Youmu?"\
+
+Yuyuko "Weather is a type of qi.@
+        If you take ghosts to be the spirits of living things\,
+        the weather is the temperament of the heavens."\
+
+Youmu  "Huh..."@
+Yuyuko "It looks like you want to look into this weather incident."@
+Youmu  "Well..."\
+
+Yuyuko "There's no need to look into it.@
+        Not until you clear away this snow\, at least."@
+Youmu  "Oh\, I see..."\
+
+FadeBgm:2000,0
+CG:BLACK,0,0,15
+
+  Someone would probably begin looking into the strange weather soon.
+  Yuyuko didn't know what that celestial really wanted\,
+  but she was grateful to her for making things so interesting.\
+
+StaffRoll:
+
+  The Heaven of Non-Perception --
+  In other words\, a world of the unconscious at the pinnacle of Heaven.
+  And yet\, the resident she'd found there was quite an imperfect being.\
+
+
+End:

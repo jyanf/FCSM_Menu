@@ -1,0 +1,101 @@
+# ----------------------------------------------------
+# Ending
+# Stage:Ending
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Font.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Window.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Background.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*CG.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+#PlayBgm:data/bgm/ta00.ogg
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+Font:MonoSpatialModSWR,15,0,6
+WindowColor:0,0,0,0
+Color:FFFFFF
+Background:data/scenario/effect/EdBack000.bmp,999,0,0
+CG:data/scenario/aya/effect/ED000.bmp,96,16,50
+Label:Start
+Bgm:data/bgm/ta06.ogg
+
+# ˆê–‡–Ú
+# ‰ó‚ê‚½_Ğ‚ÌƒCƒ‰ƒXƒgi‘¼‚ÌƒLƒƒƒ‰‚Å‚àg‚¤”Ä—pŠGj
+# 
+# @ˆê–‡–Ú‚ÍêŠ‚ğ¦‚·ŠÈ’P‚ÈƒCƒ‰ƒXƒg‚ª“ü‚é—\’è‚Å‚·
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+  Summer at the Hakurei Shrine.@
+  It was the shrine at the eastern border of Gensokyo\, but now it's broken down.@
+  It still serves its purpose as a shrine\, but not as a place to live.\
+
+  They said the shrine had been destroyed in an earthquake.@
+  Aya worried about how to report this fact.@
+  After all\, nobody would read a newspaper that
+  didn't report on interesting\, unusual things.\
+
+
+# “ñ–‡–Ú
+# ‰ó‚ê‚Ä‚¢‚é_Ğ‚ğÊ^‚É”[‚ß‚Ä‚¢‚é•¶
+#
+
+CG:data/scenario/aya/effect/ED001.bmp,96,16,50
+
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+Aya    "This is very strange.@
+        The shrine was completely leveled\, but it seems nobody aside from
+        the shrine maiden felt the earthquake."\
+
+Aya    "Perhaps the shrine...@
+        was weak against earthquakes\, and had poor structure?
+        Maybe it was a building defect!?"\
+
+Aya    "I think I can write something about that.@
+        'Is Your House Safe!? The Danger of Cutting Construction Corners!"\
+
+CG:data/scenario/aya/effect/ED002.bmp,96,16,50
+# O–‡–Ú
+# ·‚èã‚ª‚Á‚Ä‚¢‚é•¶‚ÌŒã‚ë‚©‚ç—â‚ß‚½—ì–²
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+Reimu  "What are you all excited about\, anyway?"@
+Aya    "Oh\, are you back now?"@
+Reimu  "Wow\, I'm really tired!"\
+
+Aya    "So\, what happened after that?"@
+Reimu  "I don't really get it\, but I met someone really annoying above the clouds\,
+        and I got her to promise to fix my shrine."\
+
+Aya    "Hmm? So\, you mean..."@
+Reimu  "She was happy to take over\, but\, well..."@
+Aya    "Well\, at least the shrine will be repaired\, right?"\
+
+Reimu  "That's true\, but..."@
+Aya    "Well\, then\, I should take some pictures from before it's repaired."@
+Reimu  "Why?"\
+
+Aya    "Judging by your story\, it sounds like they'll be useful someday."\
+
+FadeBgm:2000,0
+CG:BLACK,0,0,15
+
+  Aya's intuition said the person Reimu had met above the clouds was dangerous.
+  Who knew what would happen if she rebuilt the shrine?
+  It would be wise to document exactly what currently made up the shrine.\
+
+StaffRoll:
+
+  Even if by some chance the shrine was turned into something unrecognizable...
+  They could restore it to normal with these pictures.
+  Aya knew well that photos were much better records than living people's memories.\
+
+End:

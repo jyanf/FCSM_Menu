@@ -1,0 +1,176 @@
+## =======================================================================
+#Stage:3
+#Title:©—R‚É€‚Ê
+#Place:Œº•‚Ì‘ò
+#Weather:
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Font.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Window.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Background.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*CG.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+#PlayBgm:data/bgm/ta00.ogg
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+#‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+Character:yuyuko,160,0,0,8888FF
+Character:komachi,160,0,1,FF8888
+
+#“G‰æ–ÊŠO‚É‘Ò‹@
+Action:komachi,100
+#ƒJƒƒ‰ŒÅ’è
+Action:yuyuko,4
+#ƒtƒH[ƒJƒXuŠÔˆÚ“®
+#Action:yuyuko,11
+
+#Œü‚«ŒÅ’è‰ğœ
+Action:yuyuko,152
+
+Label:Start
+PlayBgm:data/bgm/ta00.ogg
+
+Sleep:30;
+
+#ƒXƒe[ƒWƒ^ƒCƒgƒ‹•\¦
+Object:data/scenario/yuyuko/effect/StageTitle003.bmp,0,192,-32
+Sleep:60;
+Object:data/scenario/effect/Stage3.bmp,1,256,352
+Sleep:60;
+
+#‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X\
+Face:yuyuko,•
+Mountains are at their prettiest
+when covered with snow.\
+
+
+Face:yuyuko,
+Hide:1
+Sleep:30
+
+# “G“oê
+Action:komachi,101
+
+Face:komachi,–³
+Oh? Would this by any chance be the Saigyouji...\
+
+Action:komachi,102
+
+Face:yuyuko,˜f
+Oh greetings. But this river
+isn't the Sanzu River\, is it?\
+
+# –¼‘O‚Ìƒeƒƒbƒv
+Object:data/scenario/komachi/effect/Name.bmp,2,352,304
+
+Face:komachi,‹Á
+Ack... Ah well\,
+I guess that's right\, but anyway...\
+
+Face:komachi,Š¾
+... What? It's snowing?\
+
+Face:yuyuko,˜f
+The world is full of strange things.\
+
+Face:komachi,Š¾
+In other words\, you're making it snow?\
+
+Face:yuyuko,—]
+I suppose so. What about it?\
+
+Face:komachi,•
+You're really a very peculiar lady.\
+
+Face:komachi,—]
+But I guess if that weren't the case\,
+it might be difficult for you
+to manage the netherworld.\
+
+Face:yuyuko,Œˆ
+And\, this river isn't your workplace\, is it?\
+#í“¬ŠJnˆ—
+
+PlayBgm:data/bgm/st02.ogg
+Action:yuyuko,3
+End:
+
+# --------------------------------
+# í“¬I—¹@•‰‚¯
+Label:Lose
+
+Face:komachi,‹Á
+I understand\, I understand.
+I'm going back to work.\
+
+Face:komachi,—]
+But please teach me how to
+make snow like that sometime.\
+
+End:
+
+# --------------------------------
+# í“¬I—¹@ƒRƒ“ƒeƒjƒ…[ˆ—
+Label:Continue
+
+#“VŒó‰Šú‰»
+Action:yuyuko,113
+
+End:
+
+# --------------------------------
+# í“¬I—¹@Ÿ‚¿
+Label:Win
+
+#‚â‚ç‚êƒLƒƒƒ‰Š®‘Sƒ_ƒEƒ“ŒŸ’m
+Action:komachi,200
+#UŒ‚‘¤ƒjƒ…[ƒgƒ‰ƒ‹ˆÚsŒŸ’m
+Action:yuyuko,202
+
+#©ƒLƒƒƒ‰“VŒó
+Face:yuyuko,Šğ
+If you can keep a cool head\,
+it's easy to change the weather.\
+
+Face:komachi,•‰
+Uhh\, I don't think it's
+that easy to get your way...\
+
+Face:yuyuko,˜f
+However\, in order to change the weather
+to something you prefer\,
+a little extra <color FFFFFF>work</color> is needed.\
+
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+Stage:3,120
+
+
+#‚â‚ç‚êƒLƒƒƒ‰‰æ–Ê‘Şê
+Action:komachi,201
+
+#©ƒLƒƒƒ‰ˆÊ’u•â³
+Action:yuyuko,150
+
+Action:yuyuko,4
+
+Sleep:120
+
+End:
+
+
+
+## =======================================================================

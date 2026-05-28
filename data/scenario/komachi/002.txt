@@ -1,0 +1,212 @@
+## =======================================================================
+#Stage:3
+#Title:‘““V‚ÌŒ•
+#Place:–»ŠE
+#Weather:
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Font.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Window.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Background.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*CG.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+#PlayBgm:data/bgm/ta00.ogg
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+#‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+Character:komachi,160,0,0,8888FF
+Character:youmu,160,0,1,FF8888
+#“G‰æ–ÊŠO‚É‘Ò‹@
+Action:youmu,100
+#ƒJƒƒ‰ŒÅ’è
+Action:komachi,4
+
+#ƒtƒH[ƒJƒXuŠÔˆÚ“®
+#Action:komachi,11
+
+#Œü‚«ŒÅ’è‰ğœ
+Action:komachi,152
+
+Label:Start
+PlayBgm:data/bgm/ta00.ogg
+
+Sleep:30;
+
+#ƒXƒe[ƒWƒ^ƒCƒgƒ‹•\¦
+Object:data/scenario/komachi/effect/StageTitle003.bmp,0,192,-32
+Sleep:60;
+Object:data/scenario/effect/Stage3.bmp,1,256,352
+Sleep:60
+
+Face:komachi,•
+If I remember correctly\, this place
+has an interesting fellow as well.\
+
+Face:komachi,
+Hide:1
+Sleep:30
+
+#
+# “G“oê
+#
+Action:youmu,101
+#“G“VŒó
+Action:youmu,103
+Action:youmu,102
+
+Sleep:20
+
+Face:youmu,•
+Huh? Thank you for your work.
+You did something about the ghosts\, right?\
+
+# –¼‘O‚Ìƒeƒƒbƒv
+Object:data/scenario/youmu/effect/Name.bmp,2,352,304
+
+Face:komachi,•
+Now that you mention it\, the number
+of murdered ghosts has gone down quite a bit.\
+
+Face:komachi,˜f
+I'm not sure why\, but surely
+it wasn't something you did\, was it?\
+
+Face:youmu,•
+Of course not.
+It looks like it was
+the work of the Celestial.\
+
+Face:komachi,‹Á
+What was that?\
+
+Face:youmu,•
+Not long ago\, the Celestial came from
+the shrine to resolve the problem.
+I heard a lot from her.\
+
+Face:youmu,˜f
+If <color 0000FF>spirit</color> is removed from the <color 0000FF>heavens</color>\,
+everyone's surrounding <color 0000FF>weather</color> will change.\
+
+Face:youmu,Šğ
+Then\, she performed the finishing touches which
+should make the weather gradually return to normal.\
+
+Face:komachi,‹Á
+What was that!?\
+
+Face:youmu,‹Á
+?\
+
+Face:komachi,Š¾
+Oh\, nothing. Well\, that's good to hear.\
+
+Face:komachi,•
+Speaking of which\, your weather
+is such a magnificent blue sky.\
+
+Face:youmu,˜f
+It's much too warm\, though.\
+
+Face:komachi,Šğ
+This blue somehow makes you feel violent.\
+
+Face:youmu,Š¾
+That's not really true.\
+
+#í“¬ŠJn
+PlayBgm:data/bgm/st14.ogg
+Action:komachi,3
+
+End:
+
+# í“¬ŠJn
+
+# --------------------------------
+# í“¬I—¹@•‰‚¯
+Label:Lose
+
+Face:youmu,—]
+Well\, I'm glad I'm cleared of your suspicion
+that I was slashing the ghosts.\
+
+Face:youmu,•
+I only slash the ghosts when they feel depressed\,
+and there aren't that many of them.\
+
+End:
+
+# --------------------------------
+# í“¬I—¹@ƒRƒ“ƒeƒjƒ…[ˆ—
+Label:Continue
+
+#“VŒó‰Šú‰»
+Action:youmu,113
+
+End:
+
+# --------------------------------
+# í“¬I—¹@Ÿ‚¿
+Label:Win
+
+#‚â‚ç‚êƒLƒƒƒ‰Š®‘Sƒ_ƒEƒ“ŒŸ’m
+Action:youmu,200
+#UŒ‚‘¤ƒjƒ…[ƒgƒ‰ƒ‹ˆÚsŒŸ’m
+Action:komachi,202
+
+#©ƒLƒƒƒ‰“VŒó
+Action:komachi,103
+Sleep:60
+
+Face:komachi,•
+Azure skies were once a symbol of emptiness.\
+
+Face:komachi,—]
+Among the living\, obtaining that spirit is difficult\,
+but among the dead it's quite common.\
+
+Face:komachi,•
+You might become a ghost with
+a gaping hole in your heart.\
+
+Face:youmu,•‰
+Please don't one-sidedly predict my afterlife.\
+
+Face:komachi,‹Á
+Now then\, since I won't be able to play
+this game for much longer\, I'll go finish it up.\
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+Stage:18,120
+
+#‚â‚ç‚êƒLƒƒƒ‰‰æ–Ê‘Şê
+Action:youmu,201
+
+#©ƒLƒƒƒ‰Šî€“_‚ÖˆÚ“®
+Action:komachi,150
+
+#ƒJƒƒ‰’†‰›‚ ‚í‚¹
+Action:komachi,4
+
+Sleep:120;
+
+End:
+
+
+
+
+
+## =======================================================================

@@ -1,0 +1,287 @@
+## =======================================================================
+#Stage:5
+#Title:—´‹{‚ÌŒx
+#Place:—’
+#Weather:‘ä•—
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "royal blue"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "royal blue"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+
+
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+Character:sakuya,160,0,0,8888FF
+Character:iku,120,20,1,FF8888
+
+#ê—pƒXƒe[ƒW‰Šúİ’è
+Action:iku,139
+
+#ƒJƒƒ‰ŒÅ’è
+Action:sakuya,4
+
+#ƒtƒH[ƒJƒXuŠÔˆÚ“®
+Action:sakuya,11
+
+#©ƒLƒƒƒ‰‰æ–Ê¶‘Ò‹@
+Action:sakuya,5
+
+#”wŒiˆÃ‰_İ’u
+Action:iku,134
+
+#Œü‚«ŒÅ’è‰ğœ
+Action:sakuya,152
+
+#“VŒó‰ğœ
+Action:iku,153
+
+Label:Start
+
+#ƒtƒF[ƒhƒCƒ“@•
+Action:sakuya,161
+Bgm:data/bgm/ta02.ogg
+
+Sleep:60
+
+#ƒXƒe[ƒWƒ^ƒCƒgƒ‹•\¦
+Object:data/scenario/sakuya/effect/StageTitle005.bmp,0,192,-32
+Sleep:60
+Object:data/scenario/effect/Stage5.bmp,1,256,352
+Sleep:300
+
+#‰_’†”wŒi‰ğœ
+Action:iku,135
+Sleep:120
+
+#‰æ–Êã‚©‚ç“oê
+Action:sakuya,6
+
+#“oêI—¹ŒŸ’m
+Action:sakuya,7
+
+Sleep:60
+
+Face:sakuya,˜f
+I believed that ghost's words\,
+so I've come into the clouds.\
+
+Face:sakuya,“{
+I came all the way here\,
+what should I do if nothing happens?\
+
+Face:sakuya,
+Hide:1
+Sleep:60
+
+#ˆß‹è•“h‚è‚Å‰æ–Êã‚©‚ç“oê
+Action:iku,130
+
+Sleep:90
+
+Face:iku,
+Oho?
+You're not a tengu.\
+
+Nor a kappa.\
+Not a ghost either.\
+#——‹+ˆß‹è‚Ìp‚ª•‚‚©‚Ñã‚ª‚é
+Action:iku,131
+Face:iku,
+A human...@
+Sleep:60
+It's rare for a human to
+make it this far up the mountain.\
+#Sleep:90
+
+Face:sakuya,Š¾
+Well\, I didn't want to come here.\
+
+Face:iku,•
+There is no mountain above this place.
+The heavens exist there.\
+
+Face:sakuya,•
+The heavens?\
+
+Face:iku,˜f
+Normally\, ordinary humans can't go to that place.\
+
+Face:iku,•
+It's best for you to return now\,
+since the angels haven't noticed you yet.\
+
+Face:sakuya,‹Á
+Such a place exists above the mountain...\
+
+Face:sakuya,Šğ
+That's the first thing I've gained
+since I started this aimless mountain climb.\
+
+Face:iku,˜f
+You don't intend to go back?\
+
+Face:sakuya,Šğ
+That's right. Unfortunately I'm in "Go Go" mode.@
+
+Face:sakuya,•
+Who are you anyways?\
+
+Hide:1
+Sleep:60
+
+#ƒCƒxƒ“ƒg@ˆß‹è•‚—Vó‘ÔI—¹
+Action:iku,132
+
+Sleep:160
+
+# –¼‘O‚Ìƒeƒƒbƒv
+#Name:”ü‚µ‚«”ê‚Ìˆß@‰i]ˆß‹è
+Object:data/scenario/iku/effect/Name.bmp,2,352,304
+
+Bgm:data/bgm/st04.ogg
+
+Face:iku,•
+... I'm only a messenger from the Dragon Palace
+who gives advice.@
+I am Iku Nagae.\
+
+Face:sakuya,•
+Are you some kind of guard for the heavens?\
+
+Face:iku,•
+We\, the messengers of the Dragon Palace\,
+have no relation with the heavens.\
+We just swim in the lightning clouds
+to warn about the things to come.\
+
+Face:iku,—]
+But\, to ignore my well-intentioned advice...
+I'm a bit irked.\
+
+Face:sakuya,•
+Oh\, but right now\,\
+
+Face:sakuya,Œˆ
+I'm in "Push Forward" mode.\
+
+Face:iku,•
+The advice from a messenger of the Dragon Palace
+is one way to avoid a future calamity.\
+
+Face:iku,Œˆ
+Unfortunately\,
+you've just lost that excellent choice.\
+
+
+#í“¬ŠJnˆ—
+Action:sakuya,3
+
+End:
+
+# í“¬ŠJn
+
+# --------------------------------
+# í“¬I—¹@•‰‚¯
+Label:Lose
+
+Face:iku,˜f
+You might want to take your leave and prepare yourselves.\
+
+Face:iku,˜f
+Because unfortunately\, Gensokyo is about to be the host
+of a tremendously destructive earthquake.\
+
+End:
+
+# --------------------------------
+# í“¬I—¹@ƒRƒ“ƒeƒjƒ…[ˆ—
+Label:Continue
+
+#“VŒó‰Šú‰»
+Action:iku,153
+
+End:
+
+# --------------------------------
+# í“¬I—¹@Ÿ‚¿
+Label:Win
+
+#‚â‚ç‚êƒLƒƒƒ‰Š®‘Sƒ_ƒEƒ“ŒŸ’m
+Action:iku,200
+#UŒ‚‘¤ƒjƒ…[ƒgƒ‰ƒ‹ˆÚsŒŸ’m
+Action:sakuya,202
+
+#Weather:“VŒóƒNƒŠƒA
+# –³“VŒó‚Ö
+Action:iku,133
+
+Face:sakuya,Šğ
+Well then\, let's head to the heavens.\
+
+Face:iku,•‰
+The residents of Heaven do not treat
+the creatures of the surface well.\
+
+Face:iku,•‰
+They may not even think of
+the surface dwellers as living creatures.\
+
+Face:sakuya,˜f
+Mmmm. I'll keep that in mind for a bit.\
+
+Face:iku,•‰
+So why are you going to Heaven?\
+
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+Face:sakuya,•
+Well\, at first I was only chasing 
+the scarlet mist that came out from my body.\
+
+Face:sakuya,Šğ
+Then suddenly it turned into a plight
+that took me all the way up to Heaven.\
+
+Face:sakuya,Œˆ
+If you will excuse me\, time is on my side.\
+
+Hide:1
+Sleep:30
+#‰æ–Êã•”‚ÖˆÚ“®
+Action:sakuya,151
+
+Sleep:90
+
+
+Face:iku,•‰
+... Scarlet mist? From the body?\
+
+Face:iku,•‰
+That's how the scarlet clouds came to be?@
+So the earthquake that will happen...\
+
+Face:iku,•‰
+Mmm\, could it be that it's all her idea of a joke?\
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+#ƒtƒF[ƒhƒAƒEƒg@”’
+Action:sakuya,162
+Sleep:60
+
+Stage:5,0
+
+End:
+
+
+
+
+
+## =======================================================================

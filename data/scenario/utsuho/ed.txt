@@ -1,0 +1,88 @@
+# ----------------------------------------------------
+# Ending
+# Stage:Ending
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "royal blue"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "royal blue"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+
+Font:‚l‚rƒSƒVƒbƒN,16,3,6
+WindowColor:0,0,0,0
+Color:FFFFFF
+Background:data/scenario/effect/EdBack000.bmp,999,0,0
+#CG:data/scenario/sanae/effect/ED000.bmp,96,16,50
+WindowPos:8,372
+Label:Start
+
+Bgm:data/bgm/ta06.ogg
+
+# ˆê–‡–Ú
+# ‰ó‚ê‚½_Ğ‚ÌƒCƒ‰ƒXƒgi‘¼‚ÌƒLƒƒƒ‰‚Å‚àg‚¤”Ä—pŠGj
+# 
+# @ˆê–‡–Ú‚ÍêŠ‚ğ¦‚·ŠÈ’P‚ÈƒCƒ‰ƒXƒg‚ª“ü‚é—\’è‚Å‚·
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+  ---Hakurei Shrine, the eastern border of Gensokyo.@
+  There was something there more annoying
+  than the incessant chatter of cicadas.@
+  This annoyance, however, is integral to this story.\
+
+#CG:data/scenario/utsuho/effect/ED001.bmp,96,16,50
+  ---Moriya Shrine, originally from the Outside World.@
+  It is located on top of Youkai Mountain.@
+  It's hard to get to her because of the Tengus.\
+
+#CG:data/scenario/utsuho/effect/ED002.bmp,96,16,50
+  ---Doll Forest, a forest full of dolls
+  where there was a giant active doll...@
+  Alice doing her thing to fix the giant doll problem.\
+
+#CG:data/scenario/utsuho/effect/ED002.bmp,96,16,50
+  ---Palace of the Earth Spirits, it is a mansion located
+  in the center of what used to be the Old Hell in the Underworld.@
+  Outside the mansion, Utsuho wondered where to go.\
+
+# “ñ–‡–Ú
+# _Ğ‚ğ“V—’B‚ª‰Ì‚¢‚È‚ª‚çŒš‚Ä’¼‚»‚¤‚Æ‚µ‚Ä‚¢‚é
+# ‹ó‚ğ”ò‚×‚é•ªŒø—¦‚ª‚æ‚³‚»‚¤
+# “Vq‚Íw¦‚ğ‚µ‚Ä‚¢‚é—l‚ÈŠ´‚¶
+# —ì–²‚Í‚»‚Ì—lq‚ğŒ©‚Ä‚¢‚é
+#
+
+#CG:data/scenario/utsuho/effect/ED003.bmp,96,16,50
+Okuu   "Now I am free..."@
+Okuu   "I can visit one of the two tho arrived..."@
+#CG:data/scenario/utsuho/effect/ED004.bmp,96,16,50
+Rin    "I can help you find them."@
+Okuu   "Are you sure about that?"\
+Rin    "Yes, but I need to ask Satori a question about that."\
+
+FadeBgm:2000,0
+CG:BLACK,0,0,15
+
+  Utsuho goes to the mansion, but gets a surprise.\
+  A surprise that she liked...\
+  And it was Satori giving freedom for him to rest.\
+  It goes to the surface...\
+  And she didn't fin anything good when she left,
+  in fact she felt that they saw her a weirdo.
+  And come back sad on house.\
+
+FadeBgm:20000,0
+CG:BLACK,0,0,15
+StaffRoll:
+
+#@‚»‚Ì˜b‚ªƒAƒŠƒX‚Ì¨‚É“ü‚Á‚½‚É‚ÍŠù‚ÉA©•ª‚ªŒ¤‹†‚µ‚Ä‚¢‚é@
+#@ulŒ`‹‘å‰»Œv‰æv‚Ì–‚¾‚Æv‚¦‚È‚¢’ö•Ï‰»‚µ‚Ä‚¢‚½B\
+
+#@ƒAƒŠƒX‚ÍŠmM‚µ‚½B@
+#@‘‚­lŒ`‚Ì‹‘å‰»‚Ì–‚–@‚ğ©•ª‚Ì•¨‚É‚µ‚ÄA@
+#@–¢’m‚Ì‹‘å—d‰ö‚Æí‚í‚Ë‚Î‚È‚ç‚È‚¢A‚ÆB@
+
+End:

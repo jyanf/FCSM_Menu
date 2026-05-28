@@ -1,0 +1,192 @@
+## =======================================================================
+#Stage:8
+#Title:¿–Y
+#Place:g–‚ŠÙƒƒr[
+#Weather:
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+#‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+Character:remilia,160,0,0,8888FF
+Character:yukari,160,0,1,FF8888
+#“G‰æ–ÊŠO‚É‘Ò‹@
+Action:yukari,100
+#ƒJƒƒ‰ŒÅ’è
+Action:remilia,4
+
+#ƒtƒH[ƒJƒXuŠÔˆÚ“®
+#Action:remilia,11
+
+#Œü‚«ŒÅ’è‰ğœ
+Action:remilia,152
+
+Label:Start
+PlayBgm:data/bgm/ta07.ogg
+
+Sleep:30;
+
+#ƒXƒe[ƒWƒ^ƒCƒgƒ‹•\¦
+Object:data/scenario/remilia/effect/StageTitle008.bmp,0,192,-32
+Sleep:60;
+Object:data/scenario/effect/StageFinal.bmp,1,256,352
+Sleep:60
+
+Face:remilia,•
+As I thought\, this isn't for me.
+This "armchair detective" thing.\
+
+Face:remilia,Šğ
+Sakuyaaa!
+You can stop searching for criminals...\
+
+Face:remilia,Šğ
+The snowy Netherworld\, the shrine-destroying
+earthquake\, and all the other things happening...
+I want you to check those places for some clues.\
+
+Face:remilia,
+Hide:1
+Sleep:30
+
+#
+# “G“oê
+#
+Action:yukari,101
+Action:yukari,102
+
+Sleep:20
+
+Face:yukari,•
+What are you doing?\
+
+# –¼‘O‚Ìƒeƒƒbƒv
+Object:data/scenario/yukari/effect/Name.bmp,2,352,304
+
+Face:remilia,‹Á
+#‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+It seems we haven't caught the
+most suspicious character yet!\
+
+#“G“VŒó
+Action:yukari,103
+
+Face:yukari,•
+Since you can't blot out the sun\,
+it looks like you don't want to go out.\
+
+#‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+Face:remilia,‹Á
+Huh?\
+
+Face:yukari,•
+The criminal is above the clouds\,
+where you can't escape from the sunlight.
+Thus\, you don't want to go there.\
+
+Face:remilia,‹Á
+Eh? What's that?
+What are you talking about?\
+
+Face:yukari,—]
+Being an armchair detective is
+never an easy way to be a detective.
+
+Face:yukari,•
+How can you think clearly without going out?\
+
+Face:yukari,•
+If you're at the scene of the crime\, that sight
+will be burnt into you. No one can escape from
+their first impression of the crime scene.\
+
+Face:yukari,Œˆ
+That's why it's better to not be there
+so you can think more clearly.\
+
+Face:remilia,•
+...\
+
+Face:yukari,Œˆ
+Sit in your chair and forget everything.\
+
+Face:remilia,•
+...\
+
+PlayBgm:data/bgm/st05.ogg
+
+Face:remilia,—]
+The one controlling the weather
+isn't from the ground\, right?\
+
+Face:remilia,•
+The snow\, the shrine\, and the earthquake
+are all unnecessary information.\
+
+Face:remilia,˜f
+But I can't go out myself.\
+
+Face:remilia,—]
+Thus\, I have to let someone else go there for me.\
+
+Face:yukari,Œˆ
+Oh\, you want me to go there for you?\
+
+Face:remilia,Œˆ
+Isn't that why you're here?\
+
+
+#í“¬ŠJn
+Action:remilia,3
+
+End:
+
+# í“¬ŠJn
+
+# --------------------------------
+# í“¬I—¹@•‰‚¯
+Label:Lose
+
+End:
+
+# --------------------------------
+# í“¬I—¹@ƒRƒ“ƒeƒjƒ…[ˆ—
+Label:Continue
+
+#“VŒó‰Šú‰»
+Action:yukari,113
+
+End:
+
+# --------------------------------
+# í“¬I—¹@Ÿ‚¿
+Label:Win
+
+#‚â‚ç‚êƒLƒƒƒ‰Š®‘Sƒ_ƒEƒ“ŒŸ’m
+Action:yukari,200
+#UŒ‚‘¤ƒjƒ…[ƒgƒ‰ƒ‹ˆÚsŒŸ’m
+Action:remilia,202
+
+Sleep:30
+Result:
+
+#ƒCƒxƒ“ƒg@Ÿ—˜‰‰oƒtƒF[ƒh
+
+End:
+
+
+
+
+
+## =======================================================================

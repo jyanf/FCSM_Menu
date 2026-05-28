@@ -1,0 +1,163 @@
+## =======================================================================
+#Stage:2
+#Title:’©Q–V‚Ìª‚Á’£‚è
+#Place:–¶‰J–‚–@“X
+#Weather:ì–¶
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Font.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Window.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Background.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*CG.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+#PlayBgm:data/bgm/ta00.ogg
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+#‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+Character:yuyuko,160,0,0,8888FF
+Character:marisa,160,0,1,FF8888
+
+#•ª‰æ–ÊŠO‚É‘Ò‹@
+Action:marisa,100
+#ƒJƒƒ‰ŒÅ’è
+Action:yuyuko,4
+#ƒtƒH[ƒJƒXuŠÔˆÚ“®
+#Action:yuyuko,11
+
+#Œü‚«ŒÅ’è‰ğœ
+Action:yuyuko,152
+
+Label:Start
+PlayBgm:data/bgm/ta04.ogg
+
+Sleep:30
+
+# “G“oê
+Action:marisa,101
+
+#ƒXƒe[ƒWƒ^ƒCƒgƒ‹•\¦
+Object:data/scenario/yuyuko/effect/StageTitle002.bmp,0,192,-32
+Sleep:60
+Object:data/scenario/effect/Stage2.bmp,1,256,352
+#Sleep:60
+
+Action:marisa,102
+
+Sleep:60
+
+Face:marisa,•
+Why the hell is it so cold today...\
+
+Face:marisa,‹Á
+... Wha\, it's snowing!?\
+
+Face:yuyuko,•
+Good morning.\
+
+# –¼‘O‚Ìƒeƒƒbƒv
+Object:data/scenario/marisa/effect/Name.bmp,2,352,304
+
+Face:marisa,˜f
+Oh nooo...
+I thought I overslept a little\, but...\
+
+Face:marisa,˜f
+I can't believe I slept in all the way until winter!\
+
+Face:yuyuko,˜f
+Oh dear\, you look as if you were possessed.\
+
+Face:marisa,Š¾
+I'm not possessed.\
+
+Face:yuyuko,Šğ
+Then let's possess you.\
+
+Face:marisa,‹Á
+Stop it already!
+You're confusing me!\
+
+PlayBgm:data/bgm/st01.ogg
+Action:yuyuko,3
+End:
+
+# --------------------------------
+# í“¬I—¹@•‰‚¯
+Label:Lose
+
+Face:marisa,‹Á
+Whaaa\, what's the date today?\
+
+Face:marisa,˜f
+What the heck is happening?\
+
+End:
+
+# --------------------------------
+# í“¬I—¹@ƒRƒ“ƒeƒjƒ…[ˆ—
+Label:Continue
+
+#“VŒó‰Šú‰»
+Action:yuyuko,113
+
+End:
+
+# --------------------------------
+# í“¬I—¹@Ÿ‚¿
+Label:Win
+
+
+#‚â‚ç‚êƒLƒƒƒ‰Š®‘Sƒ_ƒEƒ“ŒŸ’m
+Action:marisa,200
+#UŒ‚‘¤ƒjƒ…[ƒgƒ‰ƒ‹ˆÚsŒŸ’m
+Action:yuyuko,202
+
+#©ƒLƒƒƒ‰“VŒó
+
+Face:yuyuko,—]
+It's cooler now\, isn't it?\
+
+Face:marisa,•‰
+Eh? Is it summer? Now?\
+
+Face:yuyuko,•
+How weird. Can't you keep your cool
+even with this snow falling around?\
+
+Face:marisa,•‰
+It'd be weird if I could!\
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+Stage:2,120
+
+#‚â‚ç‚êƒLƒƒƒ‰‰æ–Ê‘Şê
+Action:marisa,201
+
+#©ƒLƒƒƒ‰Šî€“_‚ÖˆÚ“®
+Action:yuyuko,150
+
+#ƒJƒƒ‰’†‰›‚ ‚í‚¹
+Action:yuyuko,4
+
+Sleep:120;
+
+End:
+
+
+
+
+
+## =======================================================================

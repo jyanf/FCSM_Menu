@@ -1,0 +1,135 @@
+# ----------------------------------------------------
+# Ending
+# Stage:Ending
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "royal blue"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "royal blue"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+
+Font:MonoSpatialModSWR,15,0,6
+WindowColor:0,0,0,0
+Color:FFFFFF
+Background:data/scenario/effect/EdBack000.bmp,999,0,0
+CG:data/scenario/reimu/effect/ED000.bmp,96,16,50
+Label:Start
+
+Bgm:data/bgm/ta06.ogg
+
+# ˆê–‡–Ú
+# ‰ó‚ê‚½_Ğ‚ÌƒCƒ‰ƒXƒgi‘¼‚ÌƒLƒƒƒ‰‚Å‚àg‚¤”Ä—pŠGj
+# 
+# @ˆê–‡–Ú‚ÍêŠ‚ğ¦‚·ŠÈ’P‚ÈƒCƒ‰ƒXƒg‚ª“ü‚é—\’è‚Å‚·
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+  Summer at the Hakurei Shrine.@
+  It was the shrine at the eastern border of Gensokyo\, but now it's broken down.@
+  It still serves its purpose as a shrine\, but not as a place to live.\
+
+  Everyone's localized weather phenomena was also beginning to
+  fade back into normally variable weather.@
+  Constant sunshine would have been better for rebuilding the shrine\, though...\
+
+
+# “ñ–‡–Ú
+# _Ğ‚ğ“V—’B‚ª‰Ì‚¢‚È‚ª‚çŒš‚Ä’¼‚»‚¤‚Æ‚µ‚Ä‚¢‚é
+# ‹ó‚ğ”ò‚×‚é•ªŒø—¦‚ª‚æ‚³‚»‚¤
+# “Vq‚Íw¦‚ğ‚µ‚Ä‚¢‚é—l‚ÈŠ´‚¶
+# —ì–²‚Í‚»‚Ì—lq‚ğŒ©‚Ä‚¢‚é
+#
+
+CG:data/scenario/reimu/effect/ED001.bmp,96,16,50
+
+#             0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+Tenshi "... oh\, does that pillar go over there?"@
+Reimu  "Make sure you put it all back together\, okay?"@
+Tenshi "It shouldn't take long for my heavenly maidens to fix a shrine like this."\
+
+Reimu  "... I don't wanna hear that from the person who broke it in the first place.
+        Don't rest until everything is back to normal!@
+Tenshi "But\, I'm stopping for today when that pillar is in place."\
+
+Reimu  "Why?  The day's still young.@
+        You're the one who broke it\, so I'm not letting you go back
+        to Heaven until it's fixed\, got it?"\
+
+Tenshi "Oh\, that's exactly what I... uh\, I mean.@
+        Don't get so bent out of shape.@
+        It's sunny now\, but <color 0000FF>it</color> <color FFFFFF>will be coming soon.</color>"\
+
+Reimu  "... hmmm.
+        I guess a walking weather forecast like you would know."@
+Tenshi "Who are you calling a weather forecast?"\
+
+
+CG:data/scenario/reimu/effect/ED002.bmp,96,16,50
+# O–‡–Ú
+# —ì–²‚Æ“Vq‚ªŒš‚Ä’¼‚µ’†‚Ì_Ğ‚Ì˜e‚ÅA
+# ‰¼‚Ì“Œ‰®i‚à‚µ‚­‚Í‘å‚«‚­‚ÄÔ‚¢”ÔP‚ğƒpƒ‰ƒ\ƒ‹•—‚É—§‚Ä‚½‰J‚æ‚¯A‚¨’ƒ‰®‚Æ‚©‚É—Ç‚­‚ ‚é“zj‚ğŒš‚Ä‚Ä‚»‚Ì’†‚Å‹xŒe‚µ‚Ä‚¢‚é
+# —ì–²‚ª“Vq‚É•·‚¢‚Ä‚¢‚é
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+Reimu  "... it was so sunny today\, but it's really coming down this evening."@
+Tenshi "That's because it was so humid today."\
+
+Reimu  "So\, some strange lady told me there could still be an earthquake... "@
+Tenshi "Strange lady?"@
+Reimu  "She was swimming in the clouds\, saying an earthquake would come to Gensokyo."\
+
+
+Tenshi "Oh\, you're talking about the oarfish?"@
+Reimu  "Hmm\, maybe?  She was all fluffy and wavy."@
+Tenshi "Yes\, if an oarfish says it\, it must be true."\
+
+Tenshi "The oarfish swim through the thunder to tell people
+        an earthquake is coming.@
+        What the oarfish said was... "\
+
+Tenshi "An earthquake will happen soon.@
+        One that's not big enough to destroy a shrine like this."@
+Reimu  "Hmm.  Maybe I'd better stock up on emergency supplies... "\
+
+Tenshi "But\, it's the perfect time!  The shrine's already destroyed."@
+Reimu  "Yeah\, thanks to you."@
+Tenshi "Since the shrine's already destroyed\, what's the worst that could happen?"\
+
+Reimu  "... can't you do something?"@
+Tenshi "Oho\, I said it was the perfect time\, didn't I?@
+        I can make earthquakes happen\, and prevent them\, too."\
+
+Tenshi "Let's put down a keystone before we finish rebuilding the shrine."@
+Reimu  "A keystone?"@
+Tenshi "One of the stones I always have around."\
+
+Tenshi "When you put a keystone in the ground\, it grows deep underground
+        and pushes down on the big catfish's head.@
+        That will prevent earthquakes."\
+
+Reimu  "Huh\, maybe we could dig a hot spring\, too."@
+Tenshi "Still\, that'll make the catfish mad\, so if you take out the keystone\,
+        it'll squirm around and a huge earthquake will happen."\
+
+Reimu  "But\, as long as we don't take it out\, it's okay\, right?@
+        Make sure you put in one of those keystones!"@
+Tenshi "Yes\, as long as you don't take it out\, it's okay."\
+
+FadeBgm:2000,0
+CG:BLACK,0,0,15
+
+  And so the shrine was gradually rebuilt under the celestial's care.
+  The keystone Tenshi installed brought a sense of peace to Gensokyo.
+  But\, at the same time...\
+
+StaffRoll:
+
+  There was a lingering trace of unease.
+  Reimu thought she'd have to watch over the shrine more closely
+  once it was rebuilt.\
+
+End:

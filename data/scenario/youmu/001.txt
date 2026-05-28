@@ -1,0 +1,207 @@
+## =======================================================================
+#Stage:2
+#Title:新しき神社
+#Place:壊れた神社
+#Weather:蒼天
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "royal blue"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "royal blue"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+#0１２３４５６７８９０１２３４５６７８９０１２３
+
+Character:youmu,160,0,0,8888FF
+Character:reimu,160,0,1,FF8888
+#敵画面外に待機
+Action:reimu,100
+#カメラ固定
+Action:youmu,4
+
+#フォーカス瞬間移動
+#Action:youmu,11
+
+#向き固定解除
+Action:youmu,152
+
+Label:Start
+
+PlayBgm:data/bgm/ta05.ogg
+
+Sleep:30;
+
+#ステージタイトル表示
+Object:data/scenario/youmu/effect/StageTitle002.bmp,0,192,-32
+Sleep:60;
+Object:data/scenario/effect/Stage2.bmp,1,256,352
+Sleep:60
+
+Face:youmu,驚
+... ...\
+
+Face:youmu,驚
+Eh? Has the shrine always been so... exotic?\
+
+Face:youmu,
+Hide:1
+Sleep:30
+
+#
+# 敵登場
+#
+Action:reimu,101
+Action:reimu,102
+
+Sleep:20
+
+Face:reimu,怒
+Ahhh... what do you want?
+We're not open today!\
+
+# 名前のテロップ
+Object:data/scenario/reimu/effect/Name.bmp,2,352,304
+
+Face:youmu,普
+What happened? It looks like the shrine
+was renovated into a strange style.\
+
+Face:reimu,怒
+Renovated? Do you think that makes sense?
+No\, the shrine was destroyed! By a catfish!\
+
+Face:youmu,惑
+... Our mansion is completely covered by snow\,
+and the shrine was destroyed by a catfish.\
+
+Face:youmu,普
+Not to mention that ghosts seem to be
+vanishing somehow... That makes for
+a lot of strange things recently\, huh?\
+
+Hide:1
+
+#敵天候
+Action:reimu,103
+Sleep:60
+
+Face:reimu,怒
+Are you here to bother me\, too?\
+
+Face:youmu,余
+No\, no\, I didn't mean to bother you...
+Say\, it's getting really hot over here\, isn't it?\
+
+Face:reimu,余
+Ahh... it's hot\, so hot.
+Come to think of it\, you said 
+something about that\, didn't you?\
+
+Face:reimu,嬉
+"... Our mansion is completely covered with snow."
+Hey\, is it okay for me to go
+over there and enjoy the cool weather?\
+
+Face:youmu,驚
+Eh?@
+That might be a problem while I'm not there...\
+
+Face:reimu,怒
+Shut up! I'm feeling so angry\, I can't control it!\
+
+#戦闘開始
+PlayBgm:data/bgm/st00.ogg
+Action:youmu,3
+
+End:
+
+# 戦闘開始
+
+# --------------------------------
+# 戦闘終了　負け
+Label:Lose
+
+Face:reimu,嬉
+Okay\, I'm going!\
+
+Face:reimu,余
+You can stay here and rebuild my shrine.\
+
+End:
+
+# --------------------------------
+# 戦闘終了　コンテニュー処理
+Label:Continue
+
+#天候初期化
+Action:reimu,113
+
+End:
+
+# --------------------------------
+# 戦闘終了　勝ち
+Label:Win
+
+#やられキャラ完全ダウン検知
+Action:reimu,200
+#攻撃側ニュートラル移行検知
+Action:youmu,202
+
+#天候蒼天に変化
+Action:youmu,103
+Sleep:60;
+
+Face:youmu,余
+Ummm\, I understand that a terrible thing
+has happened to the shrine.
+Please\, calm down.\
+
+Face:reimu,負
+Whew...\
+
+Face:youmu,惑
+...Um. I don't see any ghosts
+here at the shrine\, either.\
+
+Face:youmu,惑
+Say\, do you know where all the ghosts went?\
+
+Face:reimu,負
+Ah? Ghosts?
+Aren't you one yourself?\
+
+Face:reimu,負
+Haven't you even crossed the Sanzu River?\
+
+Face:youmu,惑
+Ummm. It would be good if
+this doesn't escalate into anything big.\
+
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+Stage:2,120
+
+#やられキャラ画面退場
+Action:reimu,201
+
+#自キャラ基準点へ移動
+Action:youmu,150
+
+#カメラ中央あわせ
+Action:youmu,4
+
+Sleep:120;
+
+End:
+
+
+
+
+
+## =======================================================================

@@ -1,0 +1,243 @@
+## =======================================================================
+#Stage:4
+#Title:Õæ‚è–º‚Ìs•û
+#Place:ŒºŠC‰_
+#Weather:‘ä•—
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Bgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+
+Character:yukari,160,0,0,8888FF
+Character:iku,120,20,1,FF8888
+
+#•ª‰æ–ÊŠO‚É‘Ò‹@
+Action:iku,100
+#ƒJƒƒ‰ŒÅ’è
+Action:yukari,4
+
+#Action:iku,133
+#ƒtƒH[ƒJƒXuŠÔˆÚ“®
+#Action:yukari,11
+
+#Œü‚«ŒÅ’è‰ğœ
+Action:yukari,152
+
+Label:Start
+
+Sleep:30;
+
+#©•ª“oê
+Action:yukari,50
+Action:yukari,51
+
+PlayBgm:data/bgm/ta00.ogg
+
+#ƒXƒe[ƒWƒ^ƒCƒgƒ‹•\¦
+Object:data/scenario/yukari/effect/StageTitle004.bmp,0,192,-32
+Sleep:60
+Object:data/scenario/effect/Stage4.bmp,1,256,352
+Sleep:60
+
+#‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X\
+Face:yukari,•
+... Nothing anywhere.\
+
+Face:yukari,—]
+Heaven uses the lands too luxuriously.\
+
+Face:yukari,•
+They say Heaven is too saturated so
+Enlightenment is forbidden... What a big lie.@
+They just hate small spaces\, that's all...\
+
+Face:yukari,•
+Saying the celestials are people who left their
+worldliness behind is also a big lie.@
+Heaven is\, in fact\, the hive for these sly people.\
+
+Face:yukari,
+Hide:1
+Sleep:30
+
+# “G“oê
+Action:iku,101
+Action:iku,102
+
+Sleep:20
+
+Face:iku,˜f
+Oh\, an earth-crawling youkai?\
+
+Face:yukari,•
+You're...@
+a messenger from the Dragon Palace\, I see.\
+
+# –¼‘O‚Ìƒeƒƒbƒv
+Object:data/scenario/iku/effect/Name.bmp,2,352,304
+
+Face:iku,‹Á
+Yes\, that's right.\
+
+Face:yukari,•
+What messages do you bring today?
+Tidings of an earthquake\, you don't say?\
+
+Face:iku,•
+No\, the earthquake-related threat
+is almost taken care of.\
+
+It seems that the
+Eldest Daughter of Hinanawi
+inserted a keystone at the shrine.\
+
+Face:iku,—]
+Well\, since we usually live in Heaven
+it's not strange for us to be here...\
+
+Face:iku,•
+but it is unnatural for a youkai
+from the ground to be here.\
+
+Face:yukari,•
+I'm looking for a celestial.\
+
+Face:yukari,—]
+Tenshi Hinanawi.\
+
+Face:iku,˜f
+The Eldest Daughter?@
+What business do you have?\
+
+Face:yukari,—]
+I'm going to make her become deceased for a bit.\
+
+Face:iku,‹Á
+Oh my\,@
+that's quite unsettling.\
+
+PlayBgm:data/bgm/st04.ogg
+
+Face:yukari,Œˆ
+Well then\, where is she?\
+
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+Face:iku,•
+Well.@
+The Eldest Daughter has descended
+onto the earth for now\, I think.\
+
+Face:yukari,˜f
+Huh? That's different from what Reimu said.\
+
+Face:iku,Š¾
+Just between you and me\, she's allowed a bit
+more freedom than she ought to have.
+Even the celestials have a hard time with her.\
+
+Face:yukari,—]
+Are you hiding something?\
+
+Face:iku,•
+She isn't here\, really...\
+
+#í“¬ŠJnˆ—
+
+Action:yukari,3
+End:
+
+# í“¬ŠJn
+
+# --------------------------------
+# í“¬I—¹@•‰‚¯
+Label:Lose
+
+Face:iku,•
+If you are going to punish the Eldest Daughter\,
+by all means\, please do so.\
+
+Face:iku,—]
+Ah\, don't tell anyone that I said this\, okay?\
+
+End:
+
+# --------------------------------
+# í“¬I—¹@ƒRƒ“ƒeƒjƒ…[ˆ—
+Label:Continue
+
+#“VŒó‰Šú‰»
+Action:yukari,104
+
+End:
+
+# --------------------------------
+# í“¬I—¹@Ÿ‚¿
+Label:Win
+
+
+#‚â‚ç‚êƒLƒƒƒ‰Š®‘Sƒ_ƒEƒ“ŒŸ’m
+Action:iku,200
+#UŒ‚‘¤ƒjƒ…[ƒgƒ‰ƒ‹ˆÚsŒŸ’m
+Action:yukari,202
+
+Face:yukari,—]
+Tell me where she is.\
+
+Face:iku,•‰
+No\, honestly\, she isn't here.\
+
+Face:yukari,Š¾
+Hmph. That looked like a waste of time and energy.\
+
+Face:iku,•
+If you intend to punish the Eldest Daughter\,
+by all means\, please do so.\
+
+Face:iku,—]
+Ah\, don't tell anyone that I said this\, okay?\
+
+Face:yukari,—]
+Didn't I say it just now?
+I'm not going to punish her\,
+I'm going to make her become deceased.\
+
+
+Hide:1
+#‡‰æ–ÊŠO‚ÖŒ„ŠÔ‘Ş”ğ
+Action:yukari,155
+#‡‰æ–ÊŠO‚ÖŒ„ŠÔ‘Ş”ğŠ®—¹Šm”F
+Action:yukari,156
+
+Face:iku,–³
+Face:yukari,–³
+
+Haaa\, a waste of time. A waste of time.\
+
+Hide:1
+Result:
+FadeBgm:2000,0
+
+Stage:0,120
+
+#‚â‚ç‚êƒLƒƒƒ‰‰æ–Ê‘Şê
+Action:iku,201
+
+#ƒJƒƒ‰’†‰›‚ ‚í‚¹
+Action:yukari,4
+
+Sleep:120;
+
+End:
+
+
+## =======================================================================

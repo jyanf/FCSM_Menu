@@ -1,0 +1,158 @@
+## =======================================================================
+#Stage:6
+#Title:—L’¸“V‚Ì“ªã‰ØˆŞ
+#Place:‰ó‚ê‚½_Ğ
+#Weather:
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Font.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Window.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Background.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*CG.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+#PlayBgm:data/bgm/ta00.ogg
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+
+#‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+Character:komachi,160,0,0,8888FF
+Character:tenshi,160,0,1,FF8888
+#ƒJƒƒ‰ŒÅ’è
+Action:komachi,4
+#ƒtƒH[ƒJƒXuŠÔˆÚ“®
+#Action:komachi,11
+
+#Œü‚«ŒÅ’è‰ğœ
+Action:komachi,152
+
+Label:Start
+
+#Sleep:30;
+PlayBgm:data/bgm/st05.ogg
+
+#ƒXƒe[ƒWƒ^ƒCƒgƒ‹•\¦
+Object:data/scenario/komachi/effect/StageTitle006.bmp,0,192,-32
+Sleep:60;
+Object:data/scenario/effect/StageFinal.bmp,1,256,352
+Sleep:60;
+
+Face:tenshi,•
+If a shinigami has come for me\,
+then there's nothing more to think about.\
+
+Face:komachi,˜f
+Well\, claiming souls is out of my jurisdiction.
+I'm just a humble ferryman.\
+
+Face:tenshi,˜f
+Ferryman? Perhaps of the Sanzu River?\
+
+Face:komachi,‹Á
+Right\, right. I don't go out and kill people.\
+
+Face:komachi,˜f
+But you know\,
+Seeing spirits-... ghosts
+being murdered is a bit troubling.\
+
+Face:tenshi,—]
+Oh?\
+
+Face:komachi,˜f
+From what I've heard\, it looks like it's your doing?
+You use ghosts to change the mood of the heavens\,\
+
+Face:komachi,—]
+thus the ghosts don't cross the river\,
+and then I have to do something about it.
+It's a real annoyance.\
+
+
+Face:tenshi,Šğ
+Now this is interesting.
+Fighting with the shinigami that occasionally
+came for me was a rare pleasure\,\
+
+Face:tenshi,Šğ
+but a fight with a ferryman-\
+
+Face:komachi,Œˆ
+It would be in your best interests
+to not underestimate a shinigami.
+Don't celestials fear shinigami?\
+
+Face:tenshi,•
+Celestials fear the appearance of the five omens.\
+
+Face:tenshi,˜f
+Shinigami are one of them\, the wilting crown wreath.
+In other words\, they make the wreaths
+on our heads wither.\
+
+Face:tenshi,Œˆ
+However\, thanks to the shinigami\,
+I'll never have to worry about another omen -
+not being able to enjoy life!\
+
+#í“¬ŠJnˆ—
+Action:komachi,3
+
+End:
+
+# í“¬ŠJn
+
+# --------------------------------
+# í“¬I—¹@•‰‚¯
+Label:Lose
+
+Face:tenshi,•
+You're the ferryman after all.\
+
+Face:tenshi,—]
+Go summon a different
+mysterious spirit to fight me.\
+
+End:
+
+# --------------------------------
+# í“¬I—¹@ƒRƒ“ƒeƒjƒ…[ˆ—
+Label:Continue
+
+#”wŒi@_Ğ‚Ö
+Action:tenshi,182
+#“VŒó‰Šú‰»
+Action:tenshi,113
+
+End:
+
+# --------------------------------
+# í“¬I—¹@Ÿ‚¿
+Label:Win
+
+#‚â‚ç‚êƒLƒƒƒ‰Š®‘Sƒ_ƒEƒ“ŒŸ’m
+Action:tenshi,200
+#UŒ‚‘¤ƒjƒ…[ƒgƒ‰ƒ‹ˆÚsŒŸ’m
+Action:komachi,202
+
+Sleep:30
+Result:
+
+#ƒCƒxƒ“ƒg@Ÿ—˜‰‰oƒtƒF[ƒh
+
+End:
+
+
+
+
+
+## =======================================================================

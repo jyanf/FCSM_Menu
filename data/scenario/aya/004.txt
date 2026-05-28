@@ -1,0 +1,167 @@
+## =======================================================================
+#Stage:5
+#Title:“V‹C‚ÍV•·‚æ‚èŠï‚È‚è
+#Place:—d‰ö‚ÌR
+#Weather:
+#
+# Hi-lock: (("\\#.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*Character.*$"              (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Action.*$"              (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Stage.*$"              (0 '((t (:foreground "sky blue"))) t))) 
+# Hi-lock: (("^[ \t]*Label.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Object.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Sleep.*$"            (0 '((t (:foreground "cornflower blue"))) t))) 
+# Hi-lock: (("^[ \t]*Face.*$"            (0 '((t (:foreground "medium spring green"))) t))) 
+# Hi-lock: (("^[ \t]*End.*$"            (0 '((t (:foreground "dark slate gray"))) t))) 
+# Hi-lock: (("^[ \t]*PlayBgm.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Hide.*$"            (0 '((t (:foreground "dark turquoise"))) t))) 
+# Hi-lock: (("^[ \t]*Font.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Window.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*Background.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+# Hi-lock: (("^[ \t]*CG.*$"            (0 '((t (:foreground "dim gray"))) t))) 
+#PlayBgm:data/bgm/ta00.ogg
+#0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+#‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
+
+Character:aya,160,0,0,8888FF
+Character:reimu,160,0,1,FF8888
+
+#©•ª‰æ–ÊŠO‚É‘Ò‹@
+Action:aya,1
+#•ª‰æ–ÊŠO‚É‘Ò‹@
+Action:reimu,100
+#ƒJƒƒ‰ŒÅ’è
+#Action:aya,4
+#ƒtƒH[ƒJƒXuŠÔˆÚ“®
+#Action:aya,11
+
+#Œü‚«ŒÅ’è‰ğœ
+Action:aya,152
+
+Label:Start
+Sleep:85;
+Bgm:data/bgm/ta07.ogg
+Action:reimu,163
+
+
+#ƒXƒe[ƒWƒ^ƒCƒgƒ‹•\¦
+Object:data/scenario/aya/effect/StageTitle005.bmp,0,192,-32
+Sleep:60;
+Object:data/scenario/effect/StageFinal.bmp,1,256,352
+#Sleep:60;
+
+#ƒJƒƒ‰ˆÚ“®
+Action:aya,2
+
+#©•ª“oê
+Action:aya,50
+Action:aya,51
+
+#‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X\
+Face:aya,˜f
+I can't find any good material lately.\
+
+Face:aya,˜f
+I can't write anything interesting with this...@
+Oh?\
+
+Face:aya,
+Hide:1
+Sleep:30
+
+# “G“oê
+Action:reimu,101
+Action:reimu,102
+
+Sleep:20
+
+# –¼‘O‚Ìƒeƒƒbƒv
+Object:data/scenario/reimu/effect/Name.bmp,2,352,304
+
+Face:reimu,•
+Uwa\, it's this rough weather again.\
+
+Face:aya,•
+Hey hey\, coming to the mountain
+on such a windy day\,\
+
+Face:aya,Š¾
+do you want to die?\
+
+Face:reimu,“{
+The wind and rain suit someone like you.
+I'm passing through so get lost!\
+
+Face:aya,˜f
+Wait\, wait.
+What happened?\
+
+Face:reimu,“{
+My shrine was demolished!
+By an earthquake!\
+
+Face:aya,‹Á
+Eh? Does that make good news material?\
+
+Face:reimu,“{
+Write whatever you want!
+I'm going to find someone
+who can compensate me for my shrine!\
+
+Face:aya,—]
+Well then\, I'll head over there to take notes.
+To think the shrine would get destroyed...\
+
+PlayBgm:data/bgm/st05.ogg
+
+Face:aya,Œˆ
+But before that I'll have to chase away
+those who enter the mountain without permission!\
+
+Face:reimu,Œˆ
+You're going to be in my way?
+I'm not going to go easy on you!\
+
+
+Action:aya,3
+End:
+
+# --------------------------------
+# í“¬I—¹@•‰‚¯
+Label:Lose
+
+Face:reimu,“{
+I'm in a hurry!
+Bye!\
+
+End:
+
+# --------------------------------
+# í“¬I—¹@ƒRƒ“ƒeƒjƒ…[ˆ—
+Label:Continue
+
+#“VŒó‰Šú‰»
+Action:aya,113
+
+End:
+
+# --------------------------------
+# í“¬I—¹@Ÿ‚¿
+Label:Win
+
+#‚â‚ç‚êƒLƒƒƒ‰Š®‘Sƒ_ƒEƒ“ŒŸ’m
+Action:reimu,200
+#UŒ‚‘¤ƒjƒ…[ƒgƒ‰ƒ‹ˆÚsŒŸ’m
+Action:aya,202
+
+Sleep:30
+Result:
+
+#ƒCƒxƒ“ƒg@Ÿ—˜‰‰oƒtƒF[ƒh
+
+End:
+
+
+
+## =======================================================================
