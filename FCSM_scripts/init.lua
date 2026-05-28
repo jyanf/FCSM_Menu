@@ -177,12 +177,12 @@ memory.hooktramp(0x431253, 5, memory.createcallback(0, function (state)
         end
     end
     --]]
-    local debug=""
-    for k = 1, 20 do
-        local i = k-1
-        debug=debug..tostring(i)..(es[k]~=0 and "|" or "o").." "
-    end
-    print(debug)
+    -- local debug=""
+    -- for k = 1, 20 do
+    --     local i = k-1
+    --     debug=debug..tostring(i)..(es[k]~=0 and "|" or "o").." "
+    -- end
+    -- print(debug)
     memory.writebytes(ADDR_ENABLED_SCENARIOS, merge_chars(es))
 end))
 --]]
@@ -200,14 +200,14 @@ local function EnableAll (state)
         local i = k-1
         if unlocked[k] then
             EnableCharacterScenario(thisptr, i)
-            print("unlocked", i)
+            -- print("unlocked", i)
         end
     end
     for k=1,18 do
         local i = k-1
         if unlocked[k] then
             EnableCharacterScenario(thisptr, i)
-            print("unlocked", i)
+            -- print("unlocked", i)
         end
     end
 end
