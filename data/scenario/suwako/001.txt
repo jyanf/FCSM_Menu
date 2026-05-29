@@ -34,11 +34,11 @@ Face:suwako,òf
 I don't see Sanae...\
 
 Face:suwako,äæ
-I hope she isn't crazy,
+I hope she isn't crazy\,
 luckily it was resolved yesterday...\
 
 Face:suwako,ã¡
-Besides, she is somewhat obsessed with a robot...\
+Besides\, she is somewhat obsessed with a robot...\
 
 Face:sanae,
 I'm comming...\
@@ -51,10 +51,10 @@ Action:sanae,102 #ìoèÍìÆçÏèIóπåüím
 Sleep:30
 
 Face:sanae,òf
-Oh, Suwako, were you waiting for me?\
+Oh\, Suwako\, were you waiting for me?\
 
 Face:suwako,ïÅ
-Yes, well I want to ask you something...\
+Yes\, well I want to ask you something...\
 
 Face:sanae,ã¡
 About what subject?\
@@ -63,10 +63,10 @@ Face:suwako,äæ
 About robots...\
 
 Face:sanae,ä
-I knew it, they exist!\
+I knew it\, they exist!\
 
 Face:suwako,ì{
-Stupid, stop that obsession with robots.\
+Stupid\, stop that obsession with robots.\
 
 Face:suwako,ì{
 I'll take that obsession away
@@ -104,13 +104,13 @@ Sleep:60;
 # ãÛÇ™ì|ÇÍÇƒÇ¢ÇÈ
 
 Face:sanae,äæ
-Wait, wait!\
+Wait\, wait!\
 
 Face:sanae,ã¡
 Why are you doing this to me?\
 
 Face:suwako,ì{
-Because, it is a punishment!\
+Because\, it is a punishment!\
 
 Hide:1
 
@@ -161,14 +161,14 @@ Sleep:30
 Sleep:30
 
 Face:suwako,ì{
-Well, you've already
+Well\, you've already
 received your punishment!\
 
 Face:sanae,ïâ
-I'm so sorry, I'll leave the robots...\
+I'm so sorry\, I'll leave the robots...\
 
 Hide:1
-Sleep:60
+Sleep:30
 
 Sleep:90
 

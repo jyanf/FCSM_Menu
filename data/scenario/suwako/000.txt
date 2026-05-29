@@ -73,7 +73,7 @@ Oh wait. You're the frog maniatic.\
 
 Action:suwako,402# z–Kq@‹^–â
 Face:suwako,•
-Yes, just like you. but instead of
+Yes\, just like you. but instead of
 freezing them I make them live.\
 
 Action:chirno,406@#ƒ`ƒ‹ƒm‚±‚¿‚ç‚ğŒü‚¢‚Ä‹Á‚­
@@ -104,19 +104,19 @@ Face:suwako,—]
 I am a Native Goddess of the Earth...\
 
 Face:suwako,˜f
-(Wow, I'm wasting my time with this ice fairy...)\
+(Wow\, I'm wasting my time with this ice fairy...)\
 
 Face:suwako,‹Á
-Hey, fairy, did you se where Sanae went?\
+Hey\, fairy\, did you see where Sanae went?\
 
 Action:chirno,404
 Face:chirno,Œˆ
-Well no, but now I care to fight, defeat and show
+Well no\, but now I care to fight\, defeat and show
 that I am the strongest with a simple goddess.\
 
 Action:suwako,203
 Face:suwako,Š¾
-Well, if there isn't other way...\
+Well\, if there isn't other way...\
 
 #í“¬ŠJnˆ—
 
@@ -206,7 +206,7 @@ Sleep:30
 
 Action:suwako,402# z–Kq@‹^–â
 Face:suwako,Š¾
-You remember I told you I'm a goddess, right?\
+You remember I told you I'm a goddess\, right?\
 
 Face:chirno,•‰
 Yes. I saw above all damage I have...\
@@ -219,13 +219,13 @@ Calculate your powers or species that you are!\
 
 Face:suwako,“{
 I will go to my shrine and if
-you see Sanae. let me know there.\
+you see Sanae\, let me know there.\
 
 Face:chirno,•‰
 Okeey...\
 
 Hide:1
-Sleep:60
+Sleep:30
 
 Sleep:90
 

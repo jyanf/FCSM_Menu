@@ -62,7 +62,7 @@ Face:utsuho,余
 Foreign substance sighted!\
 
 Face:utsuho,余
-Upon contamination of the nuclear reactor core,
+Upon contamination of the nuclear reactor core\,
 reactor operations are to be halted
 and the foreign substance eradicated immediately!\
 
@@ -98,7 +98,7 @@ Sleep:60;
 
 Action:sanae,305　#早苗驚く
 Face:sanae,汗
-Wait, wait!\
+Wait\, wait!\
 
 Face:sanae,惑
 I'm a shrine maiden of Lady Kanako!\
@@ -112,23 +112,23 @@ Action:sanae,203　#早苗素立ちポーズ
 
 Face:sanae,怒
 Crows are really birdbrained after all.
-Simply put, I serve a higher power than yourself.\
+Simply put\, I serve a higher power than yourself.\
 
 Face:utsuho,驚
 A servant of a higher power?\
 
 Face:utsuho,驚
-A servant can't be that great, can it?
+A servant can't be that great\, can it?
 Then a human that's not great is...\
 
 Action:utsuho,404　#空　驚きのポーズ
 Face:utsuho,怒
-Ah, which reminds me, I came because of
+Ah, which reminds me\, I came because of
 the notification that a foreign substance
 had contaminated the reactor core!\
 
 Face:sanae,汗
-No, I mean...\
+No\, I mean...\
 
 Action:utsuho,405　#威嚇ポーズ
 Action:utsuho,406　#406終了
@@ -144,7 +144,7 @@ Action:sanae,302　#301終了検知
 
 Face:sanae,驚
 Unless I can completely exhaust that
-lively energy of yours, it looks like
+lively energy of yours\, it looks like
 we won't be able to talk any further.\
 
 Hide:1
@@ -199,7 +199,7 @@ Face:utsuho,汗
 Another one that I must leave where it came...\
 
 Face:utsuho,怒
-Sorry, there was nothing big here, bye.\
+Sorry\, there was nothing big here\, bye.\
 
 Face:sanae,負
 Really?\
@@ -211,23 +211,23 @@ Action:suwako,105
 Action:suwako,106
 
 Face:suwako,怒
-Sanae, what are you doing here?\
+Sanae\, what are you doing here?\
 
 Face:suwako,怒
 Please leave here Sanae.\
 
 Face:sanae,負
-Okey, Lady Suwako...\
+Okey\, Lady Suwako...\
 
 Face:utsuho,普
 ...@
-Lady Suwako, what are you doing here?\
+Lady Suwako\, what are you doing here?\
 
 Face:suwako,汗
-Now, I'm telling you...\
+Now\, I'm telling you...\
 
 Hide:1
-Sleep:60
+Sleep:30
 
 Sleep:90
 
