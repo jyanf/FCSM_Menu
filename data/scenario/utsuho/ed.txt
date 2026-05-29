@@ -28,25 +28,25 @@ Bgm:data/bgm/ta06.ogg
 # @ˆê–‡–Ú‚ÍêŠ‚ğ¦‚·ŠÈ’P‚ÈƒCƒ‰ƒXƒg‚ª“ü‚é—\’è‚Å‚·
 #0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
 
-  ---Hakurei Shrine\, the eastern border of Gensokyo.@
+  ---Hakurei Shrine, the eastern border of Gensokyo.@
   There was something there more annoying
   than the incessant chatter of cicadas.@
-  This annoyance\, however, is integral to this story.\
+  This annoyance, however, is integral to this story.\
 
 #CG:data/scenario/utsuho/effect/ED001.bmp,96,16,50
-  ---Moriya Shrine\, originally from the Outside World.@
+  ---Moriya Shrine, originally from the Outside World.@
   It is located on top of Youkai Mountain.@
   It's hard to get to her because of the Tengus.\
 
 #CG:data/scenario/utsuho/effect/ED002.bmp,96,16,50
-  ---Doll Forest\, a forest full of dolls
+  ---Doll Forest, a forest full of dolls
   where there was a giant active doll...@
   Alice doing her thing to fix the giant doll problem.\
 
 #CG:data/scenario/utsuho/effect/ED002.bmp,96,16,50
-  ---Palace of the Earth Spirits\, it is a mansion located
+  ---Palace of the Earth Spirits, it is a mansion located
   in the center of what used to be the Old Hell in the Underworld.@
-  Outside the mansion\, Utsuho wondered where to go.\
+  Outside the mansion, Utsuho wondered where to go.\
 
 # “ñ–‡–Ú
 # _Ğ‚ğ“V—’B‚ª‰Ì‚¢‚È‚ª‚çŒš‚Ä’¼‚»‚¤‚Æ‚µ‚Ä‚¢‚é
@@ -66,11 +66,11 @@ Rin    "Yes, but I need to ask Satori a question about that."\
 FadeBgm:2000,0
 CG:BLACK,0,0,15
 
-  Utsuho goes to the mansion\, but gets a surprise.\
+  Utsuho goes to the mansion, but gets a surprise.\
   A surprise that she liked...\
   And it was Satori giving freedom for him to rest.\
   It goes to the surface...\
-  And she didn't fin anything good when she left\,
+  And she didn't fin anything good when she left,
   in fact she felt that they saw her a weirdo.
   And come back sad on house.\
 

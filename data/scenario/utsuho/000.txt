@@ -46,12 +46,12 @@ Face:utsuho,ïÅ
 (I'm supposed to protect this area...)\
 
 Face:utsuho,äæ
-(But\, I don't know how to get them
+(But, I don't know how to get them
 away without having to kill them...)\
 
 Face:utsuho,ó]
 (I'll try the next one that
-comes\, luckily no one came before.)\
+comes, luckily no one came before.)\
 
 Face:utsuho,äæ
 (I already saw one!)@
@@ -178,19 +178,19 @@ Sleep:30
 
 Face:utsuho,òf
 It must have been an illusion
-that brought her here\, I guess...\
+that brought her here, I guess...\
 
 Face:utsuho,äæ
-I'm sorry\, but there aren't Daidarabocchi here.\
+I'm sorry, but there aren't Daidarabocchi here.\
 
 Face:utsuho,ó]
-Well\, it's time to take you back to the surface.\
+Well, it's time to take you back to the surface.\
 
 Face:chirno,ïâ
 Really?\
 
 Face:utsuho,åà
-Yes\, Bye.\
+Yes, Bye.\
 
 Hide:1
 Sleep:30

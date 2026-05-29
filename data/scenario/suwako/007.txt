@@ -104,7 +104,7 @@ Sleep:70;
 # 普、嬉、余、汗、驚、怒、決、惑、負
 
 Face:alice,怒
-Damn\, I'm late...\
+Damn, I'm late...\
 
 Face:suwako,嬉
 I finally found it!\
@@ -120,18 +120,18 @@ I didn't think a doll magician could
 do such a huge thing.\
 
 Face:suwako,普
-But\, sorry I have to destroy it.\
+But, sorry I have to destroy it.\
 
 Face:suwako,決
-For that\, only this HisoutenSoku.\
+For that, only this HisoutenSoku.\
 
 FadeBgm:2000,0
 Sleep:100;
 PlayBgm:data/bgm/st35.ogg
 
 Face:alice,汗
-Well\, that doll is built with a lot of magic and 
-it can only be destroyed by itself\, so you can't damage it.
+Well, that doll is built with a lot of magic and 
+it can only be destroyed by itself, so you can't damage it.
 
 Face:alice,普
 But I won't let them eliminate
@@ -171,7 +171,7 @@ Face:alice,怒
 Mmm... this isn't going well...\
 
 Face:alice,惑
-I still have spells left\, I'll use them!\
+I still have spells left, I'll use them!\
 
 Hide:1
 
