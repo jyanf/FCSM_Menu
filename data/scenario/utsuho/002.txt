@@ -27,7 +27,7 @@ Sleep:70;
 
 Face:utsuho,ïÅ
 #0ÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇR
-Well\, what did you want to talk
+Well, what did you want to talk
 to me about, Lady Suwako?\
 
 Face:utsuho,ä
@@ -40,7 +40,7 @@ PlayBgm:data/bgm/ta21.ogg
 Sleep:160;
 
 Face:suwako,ó]
-I'm sorry\, but no.\
+I'm sorry, but no.\
 
 Sleep:30;
 
@@ -101,13 +101,13 @@ Face:utsuho,äæ
 What did you want this fight for?\
 
 Face:suwako,ó]
-Well\, for fun, apart from trying fun things.\
+Well, for fun, apart from trying fun things.\
 
 Face:suwako,ä
 Apart from that the final will be amazing, for me.\
 
 Face:suwako,åà
-Come on\, let's get this over with.\
+Come on, let's get this over with.\
 
 Hide:1
 

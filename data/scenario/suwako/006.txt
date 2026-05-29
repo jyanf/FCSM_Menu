@@ -32,10 +32,10 @@ Face:suwako,ó]
 I'm a Native God!\
 
 Face:patchouli,åà
-If Meiling can't beat you\, I will.\
+If Meiling can't beat you, I will.\
 
 Face:suwako,åà
-Show me your power\, old Magician!\
+Show me your power, old Magician!\
 
 #êÌì¨äJénèàóù
 
@@ -68,7 +68,7 @@ Face:suwako,äæ
 That's all?\
 
 Face:patchouli,ì{
-No\, you'll see that the people who live in
+No, you'll see that the people who live in
 the Scarlet Devil mansion are not weak!\
 
 Hide:1
@@ -115,7 +115,7 @@ Sleep:15
 #Action:suwako,2Å@
 
 Face:suwako,åà
-Old magician\, you failed to defeat me.\
+Old magician, you failed to defeat me.\
 
 Sleep:60
 
@@ -145,7 +145,7 @@ Action:alice,103
 Action:alice,106
 
 Face:alice,òf
-Damn\, that goddess noticed.\
+Damn, that goddess noticed.\
 
 Face:alice,òf
 I have to get there first!\

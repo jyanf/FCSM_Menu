@@ -41,7 +41,7 @@ Sleep:70;
 # 普、嬉、余、汗、驚、怒、決、惑、負
 
 Face:suwako,普
-Well\, I've arrived here.\
+Well, I've arrived here.\
 
 Face:suwako,余
 I don't think there's another problem.\
@@ -57,7 +57,7 @@ Action:reimu,401　#100終了検知
 Sleep:60
 
 Face:reimu,普
-I hate that\, I always fall there.\
+I hate that, I always fall there.\
 
 Face:suwako,驚
 Reimu!\
@@ -67,7 +67,7 @@ Action:reimu,402　#霊夢起き上がる
 Action:reimu,403　#402終了検知
 
 Face:reimu,余
-I don't know either\, I just fell and that's it...\
+I don't know either, I just fell and that's it...\
 
 PlayBgm:data/bgm/st40.ogg
 
@@ -108,7 +108,7 @@ Face:reimu,怒
 That hurts!\
 
 Face:reimu,怒
-I'm tired of this\, I'll punish you.\
+I'm tired of this, I'll punish you.\
 
 Hide:1
 
@@ -159,7 +159,7 @@ Sleep:30
 Sleep:30
 
 Face:suwako,惑
-You've already lost\, now leave.\
+You've already lost, now leave.\
 
 Action:reimu,408　#霊夢起き上がり座り込んで頭をさする
 Sleep:60

@@ -56,7 +56,7 @@ Action:utsuho,102　#100終了検知
 Sleep:60
 
 Face:utsuho,驚
-Oh\, Suwako\, What are you doing here?\
+Oh, Suwako, What are you doing here?\
 
 Face:suwako,普
 I just came to check to see what was going on here.\
@@ -115,13 +115,13 @@ Face:utsuho,惑
 What did you want this fight for?\
 
 Face:suwako,余
-Well\, for fun\, apart from trying fun things.\
+Well, for fun, apart from trying fun things.\
 
 Face:suwako,嬉
-Apart from that the final will be amazing\, for me.\
+Apart from that the final will be amazing, for me.\
 
 Face:suwako,決
-Come on\, let's finish this.\
+Come on, let's finish this.\
 
 Hide:1
 
@@ -177,10 +177,10 @@ We have already finished!\
 Sleep:60
 
 Face:utsuho,負
-Yes\, I see it...\
+Yes, I see it...\
 
 Face:suwako,嬉
-Well\, I'm going to a place that
+Well, I'm going to a place that
 I have left for a "Giant Youkai".\
 
 Hide:1
