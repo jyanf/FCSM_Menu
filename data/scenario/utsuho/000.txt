@@ -198,7 +198,7 @@ Sleep:30
 Sleep:90
 
 Result:
-FadeBgm:2000,0
+#FadeBgm:2000,0
 
 #‚â‚ç‚êƒLƒƒƒ‰‰æ–Ê‘Şê
 Action:chirno,201
