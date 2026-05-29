@@ -77,7 +77,7 @@ Face:suika,惑
 What's with these clouds?\
 
 Face:suika,惑
-I think these mists were collected from everyone\,
+I think these mists were collected from everyone,
 but this is such a messy way to collect them.\
 
 Face:suika,普
@@ -85,7 +85,7 @@ Almost all the mist is turning
 into weather and leaking out.\
 
 Face:suika,余
-I don't know what's the point of gathering hearts\,
+I don't know what's the point of gathering hearts,
 but at least I know this much.\
 
 Face:suika,
@@ -110,7 +110,7 @@ Face:iku,
 Clouds like today's are not a problem.\
 
 Face:suika,余
-Oh\, a messenger from the Dragon Palace.
+Oh, a messenger from the Dragon Palace.
 You rarely see those around.\
 
 # 名前のテロップ
@@ -121,10 +121,10 @@ Face:iku,驚
 Ah! Is somebody there?\
 
 Face:suika,普
-Uh\, yes.\
+Uh, yes.\
 
 Face:suika,余
-A messenger from the Dragon Palace\, huh?
+A messenger from the Dragon Palace, huh?
 Is something urgent happening?\
 
 #イベント　衣玖浮遊状態終了
@@ -139,34 +139,34 @@ Although the level here isn't too worrying yet...\
 
 Face:suika,普
 Heh. These clouds are thick.
-That means an earthquake is going to happen\, right?\
+That means an earthquake is going to happen, right?\
 
 Face:iku,惑
-Yes\, something like that.
-You could tell\, then?\
+Yes, something like that.
+You could tell, then?\
 
 Face:suika,余
-Well\, yeah.\
+Well, yeah.\
 
 PlayBgm:data/bgm/st04.ogg
 
 Face:iku,惑
 The unnatural clouds were too suspicious.
-They gave it away\, right?\
+They gave it away, right?\
 
 Face:iku,普
 Above this is Heaven.\
 
 Face:iku,余
-If you want to be safe\, you should go there...
-You're going to go\, right?\
+If you want to be safe, you should go there...
+You're going to go, right?\
 
 Face:iku,決
-Hold on\, I'll test you first.\
+Hold on, I'll test you first.\
 
 Face:suika,余
 You certainly talk like a messenger
-from the Dragon Palace\, don't you?\
+from the Dragon Palace, don't you?\
 
 
 
@@ -182,7 +182,7 @@ End:
 Label:Lose
 
 Face:iku,普
-Now then\, please return.\
+Now then, please return.\
 
 Face:iku,余
 But I don't really mind if
@@ -213,14 +213,14 @@ Action:suika,202
 Action:iku,133
 
 Face:suika,嬉
-Well\, with that\,
+Well, with that,
 I'm off to Heaven.\
 
 Face:iku,負
 How did... what kind of person are you?\
 
 Face:suika,余
-Quickly\, the these clouds
+Quickly, the these clouds
 are getting thicker and thicker!\
 
 Face:iku,負

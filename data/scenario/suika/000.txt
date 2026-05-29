@@ -58,10 +58,10 @@ Action:suika,50
 Action:suika,51
 
 Face:suika,ïÅ
-Ah\, mountain climbing\, mountain climbing!\
+Ah, mountain climbing, mountain climbing!\
 
 Face:suika,ä
-The Youkai Mountain is nostalgic\, too.\
+The Youkai Mountain is nostalgic, too.\
 
 Face:suika,ó]
 Though it wasn't so suspicious back then...\
@@ -82,14 +82,14 @@ Action:aya,103
 
 Face:aya,òf
 Ayayayaya!
-Um\, what are you doing here?\
+Um, what are you doing here?\
 
 Face:suika,ó]
 I just like to exercise every once in a while.\
 
 Face:aya,äæ
 Again? Whenever you come to
-this mountain\, everyone goes nuts.\
+this mountain, everyone goes nuts.\
 
 Face:aya,òf
 I'd be glad if you could
@@ -100,25 +100,25 @@ I don't plan to take this mountain
 back from the tengu.\
 
 Face:suika,ïÅ
-So don't mind me\, let's drink sake!\
+So don't mind me, let's drink sake!\
 
 Face:aya,ïÅ
-Sorry\, but I'm on the job here.\
+Sorry, but I'm on the job here.\
 
 Face:aya,òf
-Even if you say that\, you still can't come here.\
+Even if you say that, you still can't come here.\
 
 Face:aya,òf
-If somebody sees you here\,
+If somebody sees you here,
 they might all come and drive you out.\
 
 Face:suika,ó]
 I'm not gonna lose to anyone
-that comes\, so that's okay.\
+that comes, so that's okay.\
 
 Face:aya,ã¡
 That's not what I meant.
-If you won\, then it would be a grave matter.\
+If you won, then it would be a grave matter.\
 
 Face:aya,òf
 Seeing as the tengu society values its face...\
@@ -129,11 +129,11 @@ Action:suika,107
 Sleep:30
 
 Face:suika,òf
-Meh\, that's annoying.
+Meh, that's annoying.
 Why not just give up now?\
 
 Face:aya,ïÅ
-Well\, there is a better way to
+Well, there is a better way to
 settle their hearts.\
 
 #0ÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇR
@@ -142,7 +142,7 @@ The least troublesome way is to
 defeat you and make you go back.\
 
 Face:suika,åà
-Well\, what are you waiting for?\
+Well, what are you waiting for?\
 
 #êÌì¨äJénèàóù
 Sleep:10
@@ -156,7 +156,7 @@ End:
 Label:Lose
 
 Face:aya,ä
-Well then\, leave without being seen.\
+Well then, leave without being seen.\
 
 End:
 
@@ -183,10 +183,10 @@ Action:suika,103
 Sleep:60
 
 Face:suika,ä
-Well\, you lost somehow.\
+Well, you lost somehow.\
 
 Face:aya,ïâ
-Um\, where are you going?\
+Um, where are you going?\
 
 Face:suika,òf
 Above and above of what's above this mountain.\
@@ -195,15 +195,15 @@ Face:aya,ïâ
 That's some bizarre mountain climbing.\
 
 Face:suika,ó]
-I've said this before\, but I don't really
+I've said this before, but I don't really
 want to bother the tengu's livelihoods.\
 
 Face:aya,ïâ
 I guess that's that.
-I'll be your guarantor\, so I'll let you pass.\
+I'll be your guarantor, so I'll let you pass.\
 
 Face:aya,ïâ
-In return\, please avoid contact with the tengu.\
+In return, please avoid contact with the tengu.\
 
 Face:suika,ïÅ
 We oni don't lie.\

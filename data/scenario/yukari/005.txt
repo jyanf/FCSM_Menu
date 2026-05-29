@@ -61,7 +61,7 @@ Action:tenshi,102
 Object:data/scenario/tenshi/effect/Name.bmp,2,352,304
 
 Face:tenshi,ïÅ
-Here now\, the new shrine's inauguration ceremony!\
+Here now, the new shrine's inauguration ceremony!\
 
 Face:tenshi,ñ≥
 Face:yukari,ñ≥
@@ -69,26 +69,26 @@ Audience (applause)\
 
 #0ÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇR
 Face:tenshi,ä
-Although the shrine was destroyed in the disaster\,
+Although the shrine was destroyed in the disaster,
 that proved to be an opportunity for it
 to become stronger and more beautiful.\
 
 Face:tenshi,ïÅ
-Now then\, how can a shrine keep its shape
-without being worn and torn\,
+Now then, how can a shrine keep its shape
+without being worn and torn,
 and still manage to keep its faith?\
 
 Face:tenshi,ïÅ
 That is because of a deeply rooted tradition
-in Japanese shrines\, and it is done for a reason.\
+in Japanese shrines, and it is done for a reason.\
 
 Face:tenshi,åà
 This tradition is the
-periodic ceremony of reconstruction\,
+periodic ceremony of reconstruction,
 known as Shikinen Senguu.\
 
 Face:tenshi,ä
-Because of the events this time\,
+Because of the events this time,
 the Hakurei Shrine can also
 undergo Shikinen Senguu...\
 
@@ -116,11 +116,11 @@ What are you saying?!
 I'm not gonna let you do that!\
 
 Face:yukari,ó]
-Heh\, you break things on a whim
+Heh, you break things on a whim
 and yet you won't let others do the same?\
 
 Face:tenshi,äæ
-Ugh\, that's....\
+Ugh, that's....\
 
 Face:yukari,ïÅ
 What did you put in there?\
@@ -130,15 +130,15 @@ What are you talking about?\
 
 Face:yukari,ïÅ
 I know all about it.@
-To make the shrine able to carry your line\,\
+To make the shrine able to carry your line,\
 
 Face:yukari,ó]
 you renovated the shrine to suit your tastes
 and conspired to add one more place
-for you to live\, didn't you?\
+for you to live, didn't you?\
 
 Face:tenshi,ä
-Well yeah\, what's wrong with that?\
+Well yeah, what's wrong with that?\
 
 Face:yukari,åà
 So I'm going to destroy it.\
@@ -146,14 +146,14 @@ So I'm going to destroy it.\
 Bgm:data/bgm/st05.ogg
 
 Face:tenshi,ó]
-Huhuhu\, the filthy earth-crawling youkai
+Huhuhu, the filthy earth-crawling youkai
 said some delightful things!\
 
 Face:yukari,ïÅ
 I've seen the way Heaven is now.\
 
 Face:yukari,ó]
-Heaven is spacious with lots of land to spare\,@
+Heaven is spacious with lots of land to spare,@
 and yet you still seek places to live on Earth...\
 
 Face:tenshi,åà
@@ -166,7 +166,7 @@ I can't stand the way you celestials
 look down on everyone.\
 
 Face:yukari,åà
-Begone!  I'll cast you off of the earth\,
+Begone!  I'll cast you off of the earth,
 beautifully and cruelly!
 #êÌì¨äJénèàóù
 

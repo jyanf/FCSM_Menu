@@ -33,11 +33,11 @@ Bgm:data/bgm/ta06.ogg
 # 
 # Å@àÍñáñ⁄ÇÕèÍèäÇé¶Ç∑ä»íPÇ»ÉCÉâÉXÉgÇ™ì¸ÇÈó\íËÇ≈Ç∑
 #0ÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇR
-  Eientei\, the Hall of Eternity.@
+  Eientei, the Hall of Eternity.@
   An unusual mansion in the Bamboo Forest of the Lost.@
-  It's built in a very old style\, but it's in perfect condition.\
+  It's built in a very old style, but it's in perfect condition.\
 
-  Maybe it will never change for all eternity\, as the name suggests?@
+  Maybe it will never change for all eternity, as the name suggests?@
   Or maybe it would be destroyed like the shrine if an earthquake happened?\
 
 
@@ -49,19 +49,19 @@ Bgm:data/bgm/ta06.ogg
 CG:data/scenario/udonge/effect/ED001.bmp,96,16,50
 
 #0ÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇR
-Reisen "... So\, anyway\, we probably don't need to worry about earthquakes now."@
+Reisen "... So, anyway, we probably don't need to worry about earthquakes now."@
 Eirin  "Good work."@
-Reisen "I was wondering\, though\, what's a keystone?"\
+Reisen "I was wondering, though, what's a keystone?"\
 
   The celestial had said she'd installed a keystone at the shrine.@
   The keystone was supposed to prevent earthquakes.\
 
 Eirin  "A keystone is a heavy object made of black granite.@
         Black granite is created by volcanoes...@
-        Anyway\, a keystone is a huge slab of black granite."\
+        Anyway, a keystone is a huge slab of black granite."\
 
 Reisen "Huh... "@
-Eirin  "It's a long\, long stone that reaches down into the underground world\,
+Eirin  "It's a long, long stone that reaches down into the underground world,
         so it acts as a weight to prevent earthquakes."\
 
 Eirin  "That celestial must be someone special if she can use keystones."@
@@ -74,40 +74,40 @@ CG:data/scenario/udonge/effect/ED002.bmp,96,16,50
 # âió‘Ç™ìæà”Ç∞Ç…ê‡ñæÇénÇﬂÇÈ
 #0ÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇR
 
-Eirin  "Well\, huge rocks are one thing.@
-        In any case\, Heaven was once a keystone stuck in the Earth."@
+Eirin  "Well, huge rocks are one thing.@
+        In any case, Heaven was once a keystone stuck in the Earth."@
 Reisen "What?"\
 
-Eirin  "While it's true that keystones prevent earthquakes\, if you pull it out
+Eirin  "While it's true that keystones prevent earthquakes, if you pull it out
         it will actually cause a tremendous earthquake."\
 
-Eirin  "When that keystone was pulled out to create Heaven\,
+Eirin  "When that keystone was pulled out to create Heaven,
         all creatures on Earth perished."@
-Reisen "Master\, did you see that happen... ?"@
+Reisen "Master, did you see that happen... ?"@
 Eirin  "Of course not.  This was a very long time ago."\
 
 Eirin  "A celestial who can put keystones in the Earth...
         She must be a member of the Nawi."@
 Reisen "What's that?"\
 
-Eirin  "The Nawi could control earthquakes\, and ruled over the Earth.@
-        If they're using keystones again\, perhaps they're trying to
+Eirin  "The Nawi could control earthquakes, and ruled over the Earth.@
+        If they're using keystones again, perhaps they're trying to
         regain their influence over the Earth..."\
 
 
 Eirin  "We'll have to keep an eye on the situation."@
-Reisen "Understood\, I'll be sure to watch over her."\
+Reisen "Understood, I'll be sure to watch over her."\
 
 FadeBgm:2000,0
 CG:BLACK,0,0,15
 
   The keystone was sunk deep into the earth below the shrine.
-  Would it bring peace of mind to Gensokyo\,
+  Would it bring peace of mind to Gensokyo,
   or would it bring about unease... ?\
 
 StaffRoll:
 
-  In any case\, at least there wouldn't be any earthquakes for a while.
+  In any case, at least there wouldn't be any earthquakes for a while.
   Perhaps the bamboo of the forest had been twisted by a keystone long ago.\
 
 End:

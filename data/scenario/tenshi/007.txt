@@ -49,11 +49,11 @@ A lot of people have gathered already.
 But it seems the shrine maiden hasn't arrived yet.\
 
 Face:tenshi,òf
-For a shrine's groundbreaking\,
+For a shrine's groundbreaking,
 we can't begin when the shrine's maiden isn't here.\
 
 Face:tenshi,ïÅ
-Well\, she might be busy...\
+Well, she might be busy...\
 
 Face:tenshi,ó]
 Or maybe that little oni didn't invite her.\
@@ -136,27 +136,27 @@ You didn't know that
 everyone's gathering in Bhava-agra?\
 
 Face:reimu,òf
-Hmhmhmm? Ah\, could it be the gathering
+Hmhmhmm? Ah, could it be the gathering
 Suika was telling me about?\
 
 Face:tenshi,òf
 It looks like everyone
-arrived already\, except for you.\
+arrived already, except for you.\
 
 Face:reimu,ä
 Oh.
 Ohhh thaat.\
 
 Face:reimu,ó]
-Hmm\, you came to get me then.\
+Hmm, you came to get me then.\
 
 Face:tenshi,ó]
-That's fine\, isn't it.\
+That's fine, isn't it.\
 
 #0ÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇR
 Face:reimu,ä
-Well you know\, I was told by Suika that the gathering
-wasn't called 'The Groundbreaking Ceremony\,'
+Well you know, I was told by Suika that the gathering
+wasn't called 'The Groundbreaking Ceremony,'
 but actually the 'Celestial Torture-fest.'\
 
 Face:tenshi,ã¡
@@ -170,33 +170,33 @@ Face:tenshi,òf
 ...\
 
 Face:tenshi,ã¡
-I see\, that's what got everyone excited.\
+I see, that's what got everyone excited.\
 
 Face:tenshi,ó]
 Heh heh heh.
 What a fun trick to pull.\
 
 Face:reimu,ó]
-So\, how was it? Did everyone beat you up?\
+So, how was it? Did everyone beat you up?\
 
 Face:tenshi,ó]
-Of course\, I beat everyone up in no time at all.\
+Of course, I beat everyone up in no time at all.\
 
 Face:reimu,ã¡
-Oh\, that's really something.
-You outdid them one right after another\, right?\
+Oh, that's really something.
+You outdid them one right after another, right?\
 
 Face:tenshi,ã¡
 If I did that it wouldn't have been a real fight.
-Even with you\, didn't I lose on purpose?\
+Even with you, didn't I lose on purpose?\
 
 Face:reimu,ïÅ
-Hmm\, I didn't really get that feeling\, though.\
+Hmm, I didn't really get that feeling, though.\
 
 PlayBgm:data/bgm/st05.ogg
 
 Face:reimu,ó]
-Somehow\, I've also gotten the will
+Somehow, I've also gotten the will
 to participate in this festival.\
 
 Face:tenshi,ïÅ
@@ -207,11 +207,11 @@ Face:reimu,ó]
 It'd take too long to go all the way to Heaven...\
 
 Face:reimu,åà
-So\, lets start this party here!\
+So, lets start this party here!\
 
 Face:tenshi,åà
 Very well then!
-I'll defeat everyone\, and get to see the
+I'll defeat everyone, and get to see the
 look of surprise on that little oni's face!\
 
 
@@ -223,7 +223,7 @@ End:
 Label:Lose
 
 Face:reimu,ä
-Look at you\, you're already tired?\
+Look at you, you're already tired?\
 
 Face:reimu,ïÅ
 How many did you fight before me anyways?\

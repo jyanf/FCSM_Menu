@@ -49,7 +49,7 @@ Object:data/scenario/effect/Stage3.bmp,1,256,352
 Sleep:60
 
 Face:komachi,普
-If I remember correctly\, this place
+If I remember correctly, this place
 has an interesting fellow as well.\
 
 Face:komachi,
@@ -68,18 +68,18 @@ Sleep:20
 
 Face:youmu,普
 Huh? Thank you for your work.
-You did something about the ghosts\, right?\
+You did something about the ghosts, right?\
 
 # 名前のテロップ
 Object:data/scenario/youmu/effect/Name.bmp,2,352,304
 
 Face:komachi,普
-Now that you mention it\, the number
+Now that you mention it, the number
 of murdered ghosts has gone down quite a bit.\
 
 Face:komachi,惑
-I'm not sure why\, but surely
-it wasn't something you did\, was it?\
+I'm not sure why, but surely
+it wasn't something you did, was it?\
 
 Face:youmu,普
 Of course not.
@@ -90,16 +90,16 @@ Face:komachi,驚
 What was that?\
 
 Face:youmu,普
-Not long ago\, the Celestial came from
+Not long ago, the Celestial came from
 the shrine to resolve the problem.
 I heard a lot from her.\
 
 Face:youmu,惑
-If <color 0000FF>spirit</color> is removed from the <color 0000FF>heavens</color>\,
+If <color 0000FF>spirit</color> is removed from the <color 0000FF>heavens</color>,
 everyone's surrounding <color 0000FF>weather</color> will change.\
 
 Face:youmu,嬉
-Then\, she performed the finishing touches which
+Then, she performed the finishing touches which
 should make the weather gradually return to normal.\
 
 Face:komachi,驚
@@ -109,14 +109,14 @@ Face:youmu,驚
 ?\
 
 Face:komachi,汗
-Oh\, nothing. Well\, that's good to hear.\
+Oh, nothing. Well, that's good to hear.\
 
 Face:komachi,普
-Speaking of which\, your weather
+Speaking of which, your weather
 is such a magnificent blue sky.\
 
 Face:youmu,惑
-It's much too warm\, though.\
+It's much too warm, though.\
 
 Face:komachi,嬉
 This blue somehow makes you feel violent.\
@@ -137,11 +137,11 @@ End:
 Label:Lose
 
 Face:youmu,余
-Well\, I'm glad I'm cleared of your suspicion
+Well, I'm glad I'm cleared of your suspicion
 that I was slashing the ghosts.\
 
 Face:youmu,普
-I only slash the ghosts when they feel depressed\,
+I only slash the ghosts when they feel depressed,
 and there aren't that many of them.\
 
 End:
@@ -172,7 +172,7 @@ Face:komachi,普
 Azure skies were once a symbol of emptiness.\
 
 Face:komachi,余
-Among the living\, obtaining that spirit is difficult\,
+Among the living, obtaining that spirit is difficult,
 but among the dead it's quite common.\
 
 Face:komachi,普
@@ -183,8 +183,8 @@ Face:youmu,負
 Please don't one-sidedly predict my afterlife.\
 
 Face:komachi,驚
-Now then\, since I won't be able to play
-this game for much longer\, I'll go finish it up.\
+Now then, since I won't be able to play
+this game for much longer, I'll go finish it up.\
 
 Hide:1
 Result:

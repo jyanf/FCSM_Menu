@@ -55,7 +55,7 @@ Sleep:180;
 
 #sleep,60
 Face:alice,•
-Well\, I was getting enthusiastic about it all but...\
+Well, I was getting enthusiastic about it all but...\
 
 Face:alice,•
 I wonder where the one responsible
@@ -66,9 +66,9 @@ Action:tenshi,133
 Sleep:60;
 
 Face:alice,‹Á
-What\, an earthquake!?\
+What, an earthquake!?\
 
-Face:alice\,
+Face:alice,
 
 Hide:1
 
@@ -89,7 +89,7 @@ Sleep:30
 
 Action:tenshi,133
 #ƒCƒxƒ“ƒg@’nk
-Remove the key from the Earth\,\
+Remove the key from the Earth,\
 
 Hide:1
 #sleep,60
@@ -107,7 +107,7 @@ Action:tenshi,139
 #sleep,30
 
 Face:alice,‹Á
-So\, so the earthquakes are...\
+So, so the earthquakes are...\
 
 Face:tenshi,Šğ
 The preparations for awakening
@@ -126,8 +126,8 @@ A celestial who sings and dances
 in this heavenly world.\
 
 Face:alice,Š¾
-Actually\, I was wondering more about
-the earthquakes\, scarlet clouds\,
+Actually, I was wondering more about
+the earthquakes, scarlet clouds,
 or other things like that.\
 
 Face:tenshi,—]
@@ -138,7 +138,7 @@ As I thought...
 So you must be...\
 
 Face:tenshi,—]
-Well\, as the one awakening
+Well, as the one awakening
 the earthquakes I surely would know.\
 
 Face:alice,‹Á
@@ -146,7 +146,7 @@ I thought as much. There have been
 quite a few unnatural omens.\
 
 Face:alice,•
-So\, defeating you will bring an end
+So, defeating you will bring an end
 to the earthquakes then?\
 
 Face:tenshi,—]
@@ -165,7 +165,7 @@ Face:tenshi,•
 Those scarlet clouds then in turn...\
 
 
-Face:tenshi\,
+Face:tenshi,
 Hide:1
 
 #ƒCƒxƒ“ƒg@“Vq’n–Ê‚ÉŒ•‚ğh‚µ‚Ä’nk”­¶
@@ -183,7 +183,7 @@ the origin of the earthquakes
 would do well to come here.\
 
 Face:tenshi,Šğ
-At first\, I tried summoning a little quake
+At first, I tried summoning a little quake
 at the shrine. I thought that would bring me
 the shrine maiden for sure...\
 
@@ -192,8 +192,8 @@ But anyone will do.
 I just needed something to waste time.\
 
 Face:tenshi,˜f
-Now\, wherever should I summon the next quake?
-I'm not sure\, but it
+Now, wherever should I summon the next quake?
+I'm not sure, but it
 should be fine however it turns out.\
 
 Face:tenshi,Šğ
@@ -213,20 +213,20 @@ All I want is to play with
 all the humans and youkai too you know.\
 
 Face:alice,“{
-...In any case\, it simply wouldn't do
+...In any case, it simply wouldn't do
 if the living daylights weren't
 beaten out of you now would it?\
 
 Face:tenshi,Œˆ
-Quite right\, this is just what
+Quite right, this is just what
 I've been preparing for all this time.\
 
-Now\, come at me with
+Now, come at me with
 all your magic in this Bhava-agra!\
 
 #0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
 
-#Face:tenshi\,
+#Face:tenshi,
 
 #ƒCƒxƒ“ƒg@—vÎ‚ğ“®‚©‚µ‚Ä’nk”­¶
 #Action:tenshi,137

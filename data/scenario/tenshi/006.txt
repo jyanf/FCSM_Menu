@@ -69,11 +69,11 @@ Action:youmu,102
 Sleep:20
 
 Face:youmu,ïÅ
-Alright then. Ah\, Miss Celestial\,
+Alright then. Ah, Miss Celestial,
 have you seen Lady Yuyuko recently?\
 
 Face:tenshi,òf
-Lady Yuyuko? Oh\, that ghost.\
+Lady Yuyuko? Oh, that ghost.\
 
 Face:tenshi,ïÅ
 She was the first to arrive today.\
@@ -86,11 +86,11 @@ So she did come here. If only she would
 tell me when she's leaving for somewhere.\
 
 Face:tenshi,ó]
-Although she might have secretly ascended\, mmm-\
+Although she might have secretly ascended, mmm-\
 
 Face:youmu,ã¡
-Oh\, okay.@
-Wait\, what!?\
+Oh, okay.@
+Wait, what!?\
 
 Face:tenshi,òf
 Will you ascend as well?\
@@ -100,11 +100,11 @@ I can't ascend.
 Because of various things I've done.\
 
 Face:tenshi,åà
-Well then\, should I try and make your
+Well then, should I try and make your
 troubles disappear? With this scarlet sword of mine.\
 
 Face:youmu,åà
-You're welcome to try\,
+You're welcome to try,
 since I also came here to defeat you.\
 
 
@@ -119,7 +119,7 @@ End:
 Label:Lose
 
 Face:youmu,ã¡
-No no\, I don't intend to ascend.\
+No no, I don't intend to ascend.\
 
 Face:youmu,òf
 And I imagine Lady Yuyuko thinks that way too.
@@ -154,10 +154,10 @@ Doesn't it have the ability to
 sever the troubles of ghosts?\
 
 Face:youmu,ïâ
-Yes\, that's right.\
+Yes, that's right.\
 
 Face:tenshi,ïÅ
-Hmm\, that sword...
+Hmm, that sword...
 I wonder who made it.\
 
 Hide:1

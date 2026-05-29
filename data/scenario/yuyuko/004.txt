@@ -74,7 +74,7 @@ Action:yuyuko,7
 Sleep:60
 
 Face:yuyuko,˜f
-As expected\, it's cold inside the clouds.\
+As expected, it's cold inside the clouds.\
 
 Face:yuyuko,—]
 There isn't a clear spot anywhere...\
@@ -99,17 +99,17 @@ The disaster that takes place
 every few decades is coming.\
 
 Face:yuyuko,‹Á
-Oh\, aren't you...\
+Oh, aren't you...\
 
 # –¼‘O‚Ìƒeƒƒbƒv
 #Name:”ü‚µ‚«”ê‚Ìˆß@‰i]ˆß‹è
 Object:data/scenario/iku/effect/Name.bmp,2,352,304
 
 Face:iku,‹Á
-Yes\, I'm the messenger from the Dragon Palace.\
+Yes, I'm the messenger from the Dragon Palace.\
 
 Face:yuyuko,—]
-... famously grilled in soy-sauce\,
+... famously grilled in soy-sauce,
 or just grilled plain...\
 
 #ƒCƒxƒ“ƒg@ˆß‹è•‚—Vó‘ÔI—¹
@@ -122,11 +122,11 @@ Face:yuyuko,˜f
 What? Is an earthquake going to happen?\
 
 Face:iku,•
-I'm not sure\, but we are
+I'm not sure, but we are
 now investigating the matter.\
 
 Face:yuyuko,•
-Oh dear\, I guess it can't be helped.
+Oh dear, I guess it can't be helped.
 Perhaps it's time to reinforce the house.\
 
 Face:iku,•
@@ -143,7 +143,7 @@ PlayBgm:data/bgm/st04.ogg
 
 #0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
 Face:iku,—]
-Aha\, above these clouds is the realm of Heaven.
+Aha, above these clouds is the realm of Heaven.
 I suppose you've come by yourself to enter Nirvana?\
 
 Face:iku,Œˆ
@@ -196,7 +196,7 @@ Action:yuyuko,202
 Action:iku,133
 
 Face:yuyuko,Šğ
-And now\, next\, Heaven.\
+And now, next, Heaven.\
 
 Face:iku,•‰
 You're really strong.
@@ -204,7 +204,7 @@ I don't think you'll have
 any trouble entering Nirvana.\
 
 Face:yuyuko,—]
-Oh\, I'm sorry\, but I can't. I still have
+Oh, I'm sorry, but I can't. I still have
 lots of lingering attachments to this world.\
 
 Hide:1

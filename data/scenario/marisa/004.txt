@@ -68,7 +68,7 @@ Action:marisa,7
 Sleep:60
 
 Face:marisa,òf
-It's rough in the clouds\,
+It's rough in the clouds,
 but once I get past here...\
 
 Face:marisa,ì{
@@ -111,12 +111,12 @@ I'm not here to block your path.\
 Action:iku,132
 
 Face:iku,ïÅ
-I'm just worried about the future of Gensokyo\,
+I'm just worried about the future of Gensokyo,
 and trying warn you about it.\
 
 Face:marisa,ïÅ
-If you're not in my way\, then farewell.
-Except\, you are in my way.\
+If you're not in my way, then farewell.
+Except, you are in my way.\
 
 Face:iku,òf
 Why do you seek to go beyond the clouds?\
@@ -124,20 +124,20 @@ Why do you seek to go beyond the clouds?\
 Face:marisa,ì{
 Because it's constantly raining
 and the sun won't come out!
-Although\, the rain only falls around me.\
+Although, the rain only falls around me.\
 
 Face:iku,ã¡
 So what do you plan to do beyond the clouds?\
 
 Face:marisa,ïÅ
-Who knows. I mean\,
-it doesn't rain above the clouds\, right?\
+Who knows. I mean,
+it doesn't rain above the clouds, right?\
 
 Face:iku,ïÅ
 Such astonishingly naive thinking...\
 
 Face:iku,òf
-It's true that it doesn't rain above the clouds\,\
+It's true that it doesn't rain above the clouds,\
 
 Face:iku,òf
 but that ends when you go back to the ground.\
@@ -147,30 +147,30 @@ Do you plan to stay above the clouds?\
 
 Face:marisa,ó]
 Bgm:data/bgm/st04.ogg
-Hmph\, I'm no idiot\, you know.\
+Hmph, I'm no idiot, you know.\
 
 
 Face:marisa,ó]
 When there's someone controlling the climate
-and causing incidents\, the criminal will be
+and causing incidents, the criminal will be
 somewhere where the climate doesn't change.\
 #<ruby ÇªÇ¢Ç¬>î∆êl</ruby>ÇÕìVåÛÇÃïœâªÇÃÇ»Ç¢èÍèäÇ…Ç¢ÇÈ\
 #ÇOÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇR
 
 Face:marisa,åà
 I'm going to crush that person
-and take back my hot\, sunny summer\, alright?\
+and take back my hot, sunny summer, alright?\
 
 Face:iku,ã¡
 Is that so? I didn't know the climate
 had become so strange.\
 
 Face:iku,ïÅ
-I've stayed in the clouds for a long time\,
+I've stayed in the clouds for a long time,
 and there haven't been any climate changes here.\
 
 Face:marisa,ó]
-... then\, I found the criminal!\
+... then, I found the criminal!\
 
 Face:marisa,
 
@@ -190,7 +190,7 @@ Face:iku,ïÅ
 I am not the criminal.\
 
 Face:iku,òf
-Now\, I have to get going to tell Gensokyo
+Now, I have to get going to tell Gensokyo
 what's going to happen.\
 
 Face:iku,ïÅ
@@ -251,7 +251,7 @@ Maybe that was a foreboding sign.\
 
 Face:marisa,òf
 What the...
-If there's an earthquake\,
+If there's an earthquake,
 my goods are gonna get all messed up. Great.\
 
 Face:marisa,ì{

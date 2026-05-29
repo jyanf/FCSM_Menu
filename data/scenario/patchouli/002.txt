@@ -53,7 +53,7 @@ Face:marisa,ã¡
 Oh? A rare face.\
 
 Face:patchouli,ïÅ
-Drizzling rain\, a dripping\,
+Drizzling rain, a dripping,
 wet and gloomy weather.
 Very troubling.\
 
@@ -64,7 +64,7 @@ Face:marisa,ã¡
 What? Did Reimu do something?\
 
 Face:patchouli,åà
-She wouldn't do anything\, so I instigated something.
+She wouldn't do anything, so I instigated something.
 I might as well instigate something with you as well.\
 
 
@@ -81,7 +81,7 @@ Label:Lose
 
 Face:marisa,ó]
 What are you talking about?
-Anyways\, the rain's getting bad\,
+Anyways, the rain's getting bad,
 so I'm heading into the shrine.\
 
 End:
@@ -109,18 +109,18 @@ Action:patchouli,103
 Sleep:60
 
 Face:patchouli,ó]
-The change was easy to see\,
+The change was easy to see,
 but I guess it's not something I can
 comprehend by just observing my surroundings.\
 
 Face:marisa,ïâ
 What're you talking about?
-Anyways\, the rain's getting bad\,
+Anyways, the rain's getting bad,
 so I'm heading into the shrine.\
 
 Face:patchouli,ïÅ
 I guess it really can't be helped.
-No other way but to confirm it for myself\, I suppose.\
+No other way but to confirm it for myself, I suppose.\
 
 
 Hide:1

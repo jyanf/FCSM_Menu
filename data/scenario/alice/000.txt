@@ -56,15 +56,15 @@ Action:alice,51
 
 #ÇOÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇRÇSÇTÇUÇVÇWÇX\
 Face:alice,ã¡
-Ah\, I'm too late.\
+Ah, I'm too late.\
 
 Face:alice,òf
-My prediction was correct\, though...\
+My prediction was correct, though...\
 
 Face:reimu,ñ≥
 Who's there!?\
 
-Face:alice\,
+Face:alice,
 Hide:1
 Sleep:30
 
@@ -77,13 +77,13 @@ Action:reimu,102
 Object:data/scenario/reimu/effect/Name.bmp,2,352,304
 
 Face:reimu,òf
-Oh\, it's just you.\
+Oh, it's just you.\
 
 Face:alice,ïÅ
 So there was an earthquake after all?\
 
 Face:reimu,ïÅ
-What do you mean\, "after all?"\
+What do you mean, "after all?"\
 
 Face:alice,ïÅ
 It's these scarlet clouds we've been
@@ -107,7 +107,7 @@ Huh? The hail stopped...@
 Even though it's been constantly falling around here.\
 
 Face:reimu,ì{
-If you knew there was going to be an earthquake\,
+If you knew there was going to be an earthquake,
 you should have told me!\
 
 #êÌì¨äJénèàóù
@@ -121,7 +121,7 @@ End:
 Label:Lose
 
 Face:reimu,ì{
-Aah\, I've got no place to live!
+Aah, I've got no place to live!
 I'm so pissed! What am I supposed to do!\
 
 
@@ -153,7 +153,7 @@ I didn't realize the earthquake
 would happen so soon...\
 
 Face:reimu,ïâ
-Oh\, really.\
+Oh, really.\
 
 Hide:1
 #é©ï™ìVåÛ

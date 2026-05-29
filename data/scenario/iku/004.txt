@@ -98,10 +98,10 @@ Action:yukari,101
 Action:yukari,102
 
 Face:yukari,ñ≥
-Oh\, but have you come to warn me?\
+Oh, but have you come to warn me?\
 
 Face:iku,ã¡
-My\, how rare for someone
+My, how rare for someone
 to come to talk with me.\
 
 # ñºëOÇÃÉeÉçÉbÉv
@@ -111,11 +111,11 @@ Face:yukari,òf
 Is there going to be an earthquake?\
 
 Face:iku,ïÅ
-Yes\, there will.
+Yes, there will.
 It's a very unfortunate event.\
 
 Face:yukari,ä
-... I see\, there won't be an earthquake.
+... I see, there won't be an earthquake.
 I was worried over nothing.\
 
 Face:iku,òf
@@ -123,18 +123,18 @@ Face:iku,òf
 
 #0ÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇR
 Face:yukari,ä
-Since the scarlet clouds appeared\, I thought\,
+Since the scarlet clouds appeared, I thought,
 "Is there going to be an earthquake?"
 but I guess that was just needless worry.\
 
 Face:iku,òf
-No no no\, I'm saying that there will be one...\
+No no no, I'm saying that there will be one...\
 
 Face:yukari,ó]
-Yes\, there won't be an earthquake.\
+Yes, there won't be an earthquake.\
 
 Face:iku,ì{
-I have no idea what you're getting at\, but\,
+I have no idea what you're getting at, but,
 you have a very perilous sense of things.\
 
 PlayBgm:data/bgm/st04.ogg
@@ -155,7 +155,7 @@ How about going to the shrine
 and thoroughly investigating?\
 
 Face:yukari,ïÅ
-I'm still having doubts\, though.\
+I'm still having doubts, though.\
 
 End:
 
@@ -179,7 +179,7 @@ Action:yukari,200
 Action:iku,202
 
 Face:iku,ì{
-So\, what on earth are you talking about!\
+So, what on earth are you talking about!\
 
 Face:yukari,ïâ
 Why don't you go and
@@ -195,7 +195,7 @@ There's some serious suspicions about
 the earthquake below the broken roof there.\
 
 Face:iku,ïÅ
-I'll go investigate it then\,
+I'll go investigate it then,
 but if I don't find anything
 I'll surely put a curse on you for eternity.\
 

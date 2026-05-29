@@ -79,7 +79,7 @@ Mist of temperament is emanating from everyone
 and altering the weather around them.\
 
 Face:patchouli,ïÅ
-More importantly\, it's all
+More importantly, it's all
 gathering in one place in the sky.\
 
 Face:patchouli,
@@ -115,7 +115,7 @@ This must also be an omen.\
 
 Face:patchouli,ïÅ
 I am heading towards where the temperament-
-no\, the scarlet fog is gathering.\
+no, the scarlet fog is gathering.\
 
 Face:patchouli,ïÅ
 Exactly who are you?\
@@ -150,7 +150,7 @@ Gathering... ?
 I find what you say hard to understand...\
 
 Face:iku,òf
-But it is true that in these clouds\, there exists
+But it is true that in these clouds, there exists
 a possibility that the land will awaken.\
 
 Face:patchouli,òf
@@ -176,7 +176,7 @@ Face:iku,ã¡
 It's still fine at this point...\
 
 Face:iku,ó]
-But if the clouds continue to grow at this rate\,
+But if the clouds continue to grow at this rate,
 there will be no escape from an earthquake.\
 
 End:
@@ -204,7 +204,7 @@ Action:patchouli,202
 Action:iku,133
 
 Face:patchouli,ïÅ
-Now\, explain to me everything you know!\
+Now, explain to me everything you know!\
 
 Face:iku,ïâ
 There is the possibility that these 
@@ -225,7 +225,7 @@ Face:iku,ïâ
 Eh? Is that true?\
 
 Face:patchouli,ïÅ
-Therefore\, if we search for and defeat the cause\,
+Therefore, if we search for and defeat the cause,
 the earthquake should not occur.\
 
 Face:iku,ïâ

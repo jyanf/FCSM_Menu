@@ -58,11 +58,11 @@ Action:yukari,51
 
 #ÇOÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇRÇSÇTÇUÇVÇWÇX\
 Face:yukari,ä
-... Huff\, never thought mountain climbing
+... Huff, never thought mountain climbing
 would become so difficult at this age.\
 
 Face:yukari,ïÅ
-Oh\, here's another unworking fellow.\
+Oh, here's another unworking fellow.\
 
 Face:yukari,
 Hide:1
@@ -70,7 +70,7 @@ Sleep:30
 
 
 Face:komachi,ïÅ
-Whoa\, you just came out of nowhere.\
+Whoa, you just came out of nowhere.\
 
 # ñºëOÇÃÉeÉçÉbÉv
 Object:data/scenario/komachi/effect/Name.bmp,2,352,304
@@ -79,13 +79,13 @@ Face:yukari,ïÅ
 What have you been doing during this disturbance?\
 
 Face:komachi,ã¡
-Eh? That's sudden. Well\, whatever....\
+Eh? That's sudden. Well, whatever....\
 
 Face:komachi,ïÅ
 What do you mean by "this disturbance" anyways?\
 
 Face:yukari,ó]
-Yes\, you were bringing ghosts to Higan.@
+Yes, you were bringing ghosts to Higan.@
 Did you notice anything different?\
 
 Face:komachi,òf
@@ -98,20 +98,20 @@ So you've realized that the
 number of ghosts has been decreasing.\
 
 Face:komachi,òf
-Oi oi\, what are you talking about?\
+Oi oi, what are you talking about?\
 
 Face:yukari,åà
 Why didn't you work?\
 
 Face:yukari,åà
-If you had brought the ghosts to Higan earlier\,
+If you had brought the ghosts to Higan earlier,
 there wouldn't have been so many casualties.\
 
 Face:komachi,ã¡
-Hey\, hey\, wait a second! What casualties?\
+Hey, hey, wait a second! What casualties?\
 
 Face:yukari,ó]
-You sloth of a shinigami\,@
+You sloth of a shinigami,@
 go back to Hell and let the Enma have at you!\
 
 #êÌì¨äJénèàóù
@@ -125,7 +125,7 @@ End:
 Label:Lose
 
 Face:komachi,òf
-I don't know anything\, but I get the feeling
+I don't know anything, but I get the feeling
 that I better get back to work.\
 
 End:
@@ -154,10 +154,10 @@ Action:yukari,202
 Sleep:60;
 
 Face:yukari,ó]
-Now\, go back to work\, go back to work.\
+Now, go back to work, go back to work.\
 
 Face:komachi,ïâ
-Really\, what's happening?\
+Really, what's happening?\
 
 Face:yukari,òf
 Mountain climbing is boring.\
@@ -167,7 +167,7 @@ It's great that you're here.\
 
 Face:komachi,ïâ
 Didn't you just warp here?
-Mountain climbing isn't that big a deal\, really....\
+Mountain climbing isn't that big a deal, really....\
 
 Hide:1
 # Ç±Ç±Ç≈éáÇ™êˆÇ¡Çƒè¡Ç¶ÇÈ
@@ -181,7 +181,7 @@ Hide:0
 
 Face:komachi,ñ≥
 Face:yukari,ñ≥
-Ahh\, mountain climbing is such a pain.\
+Ahh, mountain climbing is such a pain.\
 
 
 Hide:1

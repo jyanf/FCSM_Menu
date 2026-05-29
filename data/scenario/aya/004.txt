@@ -80,11 +80,11 @@ Sleep:20
 Object:data/scenario/reimu/effect/Name.bmp,2,352,304
 
 Face:reimu,ïÅ
-Uwa\, it's this rough weather again.\
+Uwa, it's this rough weather again.\
 
 Face:aya,ïÅ
-Hey hey\, coming to the mountain
-on such a windy day\,\
+Hey hey, coming to the mountain
+on such a windy day,\
 
 Face:aya,äæ
 do you want to die?\
@@ -94,7 +94,7 @@ The wind and rain suit someone like you.
 I'm passing through so get lost!\
 
 Face:aya,òf
-Wait\, wait.
+Wait, wait.
 What happened?\
 
 Face:reimu,ì{
@@ -110,7 +110,7 @@ I'm going to find someone
 who can compensate me for my shrine!\
 
 Face:aya,ó]
-Well then\, I'll head over there to take notes.
+Well then, I'll head over there to take notes.
 To think the shrine would get destroyed...\
 
 PlayBgm:data/bgm/st05.ogg

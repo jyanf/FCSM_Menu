@@ -63,16 +63,16 @@ Action:komachi,51
 
 #ÇOÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇRÇSÇTÇUÇVÇWÇX\
 Face:komachi,ä
-Heh heh heh\, I found another
+Heh heh heh, I found another
 amusing way to pass the time.\
 
 Face:komachi,ïÅ
 The weather is the materialization
-of the spirit\, hmm.\
+of the spirit, hmm.\
 
 Face:komachi,ó]
-Spirit\, or in other words\, ghosts.
-Meaning\, if I watch the surrounding weather\,\
+Spirit, or in other words, ghosts.
+Meaning, if I watch the surrounding weather,\
 
 Face:komachi,ä
 I can understand the shape the afterlife will take.\
@@ -89,39 +89,39 @@ Action:marisa,103
 Action:marisa,102
 
 Face:marisa,òf
-Uwah\, a shinigami!
+Uwah, a shinigami!
 She's coming to take me away!\
 
 # ñºëOÇÃÉeÉçÉbÉv
 Object:data/scenario/marisa/effect/Name.bmp,2,352,304
 
 Face:komachi,ó]
-Oh ho\, I see you hold the spirit of drizzling rain.\
+Oh ho, I see you hold the spirit of drizzling rain.\
 
 Face:marisa,ïÅ
 What's that?\
 
 Face:komachi,ïÅ
-Drizzling rain is thin\, gloomy\, and unremarkable\,
+Drizzling rain is thin, gloomy, and unremarkable,
 but it has a gentle quality about it.\
 
 Face:marisa,ïÅ
-Aw\, don't make me blush.\
+Aw, don't make me blush.\
 
 Face:komachi,ó]
 I bet you'll become a ghost
 that's always in the background.\
 
 Face:komachi,ïÅ
-Neither ascending to heaven nor reincarnating\,
+Neither ascending to heaven nor reincarnating,
 just a spirit eternally waiting
 for judgement in Higan.\
 
 Face:marisa,òf
-... Have you come for me after all\, then?\
+... Have you come for me after all, then?\
 
 Face:komachi,äæ
-Aah\, if you're going to be that impatient\,
+Aah, if you're going to be that impatient,
 then I guess I have no choice.\
 
 #êÌì¨äJénèàóù
@@ -138,7 +138,7 @@ Face:marisa,ä
 Do I become immortal if I beat death?\
 
 Face:marisa,ïÅ
-Oh\, if that means I have to be like a celestial\,@
+Oh, if that means I have to be like a celestial,@
 
 Face:marisa,òf
 I don't think I want to.\
@@ -170,19 +170,19 @@ Action:komachi,103
 Sleep:60;
 
 Face:komachi,ó]
-Ha ha ha\, I'm kidding.
+Ha ha ha, I'm kidding.
 I just came to play around a bit.\
 
 Face:marisa,ïâ
-If I defeat you when you do come for me\,
+If I defeat you when you do come for me,
 will I really not die?\
 
 Face:komachi,ïÅ
-First of all\, I'm a ferryman\,
+First of all, I'm a ferryman,
 so I won't be coming for you.\
 
 Face:komachi,ïÅ
-If you do defeat the shinigami that comes for you\,
+If you do defeat the shinigami that comes for you,
 you'd gain a little extension on your life.\
 
 Face:komachi,ïÅ
@@ -190,7 +190,7 @@ Hermits and and Celestials are
 usually the ones who keep on winning.\
 
 Face:komachi,òf
-However\, against normal humans\,
+However, against normal humans,
 first they'd use a mental attack 
 against an open crack in their hearts.\
 

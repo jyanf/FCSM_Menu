@@ -51,7 +51,7 @@ Sleep:60;
 
 #ÇOÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇRÇSÇTÇUÇVÇWÇX\
 Face:tenshi,ïÅ
-Really\, how many people did she call out?\
+Really, how many people did she call out?\
 
 Face:tenshi,ó]
 For so many people to gather in Heaven...\
@@ -67,16 +67,16 @@ Action:marisa,102
 Sleep:20
 
 Face:marisa,åà
-Alright\, I'm the first!\
+Alright, I'm the first!\
 
 # ñºëOÇÃÉeÉçÉbÉv
 Object:data/scenario/marisa/effect/Name.bmp,2,352,304
 
 Face:marisa,ïÅ
-Aah\, mountain climbing really is a lot of work.\
+Aah, mountain climbing really is a lot of work.\
 
 Face:tenshi,äæ
-Sorry to tell you\, but you're far from being first.\
+Sorry to tell you, but you're far from being first.\
 
 Face:marisa,ã¡
 Ehh? But aren't there still another
@@ -87,7 +87,7 @@ There were people who arrived
 first thing in the morning.\
 
 Face:marisa,òf
-Huh\, everyone's acting so childish.
+Huh, everyone's acting so childish.
 Arriving that early before the meeting time.\
 
 Face:tenshi,äæ
@@ -98,7 +98,7 @@ Face:marisa,ó]
 Because it's easy to kill time this way?\
 
 Face:tenshi,ä
-Well\, I guess so.\
+Well, I guess so.\
 #êÌì¨äJénèàóù
 
 PlayBgm:data/bgm/st11.ogg
@@ -110,7 +110,7 @@ End:
 Label:Lose
 
 Face:marisa,ïÅ
-Really\, there's still time.\
+Really, there's still time.\
 
 Face:marisa,òf
 Who the heck came so early anyway?\
@@ -137,19 +137,19 @@ Action:marisa,200
 Action:tenshi,202
 
 Face:tenshi,ó]
-That's enough\, now.
+That's enough, now.
 You've tried hard enough.\
 
 Face:marisa,ïâ
-Wah\, you're really strong.
+Wah, you're really strong.
 I wonder if I got tricked by Suika.\
 
 Face:tenshi,òf
 ?\
 
 Face:tenshi,ä
-Well\, this is what happens if I don't hold back...
-Now then\, everyone that came earlier
+Well, this is what happens if I don't hold back...
+Now then, everyone that came earlier
 is waiting in the back.\
 
 

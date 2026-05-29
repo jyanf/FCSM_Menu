@@ -70,7 +70,7 @@ What on earth...?
 The thunderclouds are only swirling
 around this area.\
 
-Up until now\, no matter where I went\,
+Up until now, no matter where I went,
 it always started out being sunny around me.\
 
 Face:reimu,ïÅ
@@ -130,16 +130,16 @@ Y-You don't mean...\
 Action:iku,132
 
 Face:iku,ïÅ
-Yes\, an earthquake.
+Yes, an earthquake.
 Though it hasn't happened yet.\
 
 Face:iku,ó]
-Very soon now\, a great earthquake will occur.
+Very soon now, a great earthquake will occur.
 I'm merely warning everyone about it.\
 
 Face:reimu,ì{
-Wait\, wait\, we already had an earthquake!
-It was just this morning\,
+Wait, wait, we already had an earthquake!
+It was just this morning,
 and I'm in a huge mess because of it!\
 
 Face:iku,òf
@@ -147,11 +147,11 @@ What? There's already been an earthquake?
 How odd.\
 
 Face:reimu,äæ
-Aah\, that reminds me.
+Aah, that reminds me.
 My shrine collapsed. I have to do something--\
 
 Face:iku,ïÅ
-If an earthquake has occurred\,
+If an earthquake has occurred,
 these clouds should have settled already...\
 
 Face:iku,äæ
@@ -159,7 +159,7 @@ Perhaps that person was responsible?
 Such a troublesome girl.\
 
 Face:reimu,ì{
-You knew an earthquake was coming\, didn't you?
+You knew an earthquake was coming, didn't you?
 You should have told everyone immediately!\
 
 Bgm:data/bgm/st04.ogg
@@ -174,7 +174,7 @@ Honestly!
 Why is everyone being so laid back!?\
 
 Face:iku,åà
-If you've seen how fearsome an earthquake can be\,@
+If you've seen how fearsome an earthquake can be,@
 why not hurry home and make arrangements
 for disaster prevention?\
 
@@ -198,7 +198,7 @@ Face:iku,ó]
 It's not good to get too emotional.\
 
 Face:iku,ïÅ
-The truth is\, no one can stop these disasters.
+The truth is, no one can stop these disasters.
 The one who will put an end to the disasters...\
 
 Face:iku,òf
@@ -230,7 +230,7 @@ Action:reimu,202
 Action:iku,133
 
 Face:reimu,ä
-I won! Now the earthquake won't happen\, right?\
+I won! Now the earthquake won't happen, right?\
 
 Face:iku,ïâ
 Don't relax just yet.
@@ -242,9 +242,9 @@ I don't have any control over
 whether it happens or not.\
 
 No one can stop the true disaster from occurring.
-Unfortunately\, the only one who could...\
+Unfortunately, the only one who could...\
 
-Is not you\, but <color FFFFFF>that person</color>.\
+Is not you, but <color FFFFFF>that person</color>.\
 
 Face:reimu,ì{
 Who are you talking about?
@@ -252,7 +252,7 @@ Where's the one who's going to
 take responsibility for wrecking my shrine?\
 
 Face:iku,ïâ
-If my guess is correct\,
+If my guess is correct,
 she is definitely the perpetrator
 behind that earthquake.\
 
@@ -260,13 +260,13 @@ But she is also the only one
 who can stop the disaster to come...\
 
 Face:reimu,ïÅ
-Either way\, it looks like I'll need to
+Either way, it looks like I'll need to
 meet with this person.\
 About taking responsibility for my shrine
 and about stopping the disaster.\
 
 Face:iku,ïâ
-Then by all means\, continue up through the clouds.
+Then by all means, continue up through the clouds.
 Although it certainly won't be easy.\
 
 Hide:1

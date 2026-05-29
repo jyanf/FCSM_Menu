@@ -71,9 +71,9 @@ Face:yuyuko,ã¡
 What's with the sleepy face?\
 
 Face:youmu,òf
-Lady Yuyuko\, there's something
+Lady Yuyuko, there's something
 I would like to report to you.
-Also\, I'm not really that sleepy.\
+Also, I'm not really that sleepy.\
 
 # ñºëOÇÃÉeÉçÉbÉv
 Object:data/scenario/yuyuko/effect/Name.bmp,2,352,304
@@ -85,32 +85,32 @@ Face:youmu,äæ
 I really think you should listen to this.\
 
 Face:youmu,ïÅ
-Recently\, the number of ghosts has been decreasing.\
+Recently, the number of ghosts has been decreasing.\
 
 Face:yuyuko,ïÅ
-So\, we'll increase the number\, then?\
-Slice\, slice!\
+So, we'll increase the number, then?\
+Slice, slice!\
 
 Face:youmu,äæ
-No\, no\, the problem isn't
+No, no, the problem isn't
 the decreasing number itself.\
 
-Somehow\, one by one\, those who died
+Somehow, one by one, those who died
 aren't even turning into ghosts.\
 
 Face:youmu,òf
 It seems that they simply vanished.\
 
 Face:yuyuko,ïÅ
-Even so\, what do you intend to do about it?\
+Even so, what do you intend to do about it?\
 
 Face:youmu,ó]
 I think I should go out to investigate.@
-Um\, is it fine for me to leave for a while?\
+Um, is it fine for me to leave for a while?\
 
 Face:yuyuko,ó]
-Not really\, no.
-If you want to go\,
+Not really, no.
+If you want to go,
 you'll have to defeat me first.\
 
 #êÌì¨äJénèàóù
@@ -124,7 +124,7 @@ Label:Lose
 
 #0ÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇR
 Face:yuyuko,ä
-It's fine if you just go sweep in the garden\,\
+It's fine if you just go sweep in the garden,\
 
 Face:yuyuko,ïÅ
 because this might be dangerous
@@ -164,10 +164,10 @@ You've defeated me.
 You can do as you wish.\
 
 Face:youmu,ïÅ
-Then\, it's fine for me to go search for clues... ?\
+Then, it's fine for me to go search for clues... ?\
 
 Face:youmu,åà
-In that case\, I'm off!\
+In that case, I'm off!\
 
 Hide:1
 Result:

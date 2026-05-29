@@ -50,7 +50,7 @@ Sleep:180;
 
 #sleep,60
 Face:marisa,普
-Oh\, what's this I see?\
+Oh, what's this I see?\
 
 Face:marisa,嬉
 The weather is really nice above the clouds.\
@@ -76,7 +76,7 @@ Sleep:30
 
 Action:tenshi,133
 #イベント　地震
-Remove the key from the Earth\,\
+Remove the key from the Earth,\
 
 Hide:1
 #sleep,60
@@ -117,7 +117,7 @@ Face:tenshi,驚
 All this? I don't really get what you mean.\
 
 Face:tenshi,余
-But yes\, I did it.\
+But yes, I did it.\
 
 Face:marisa,汗
 What did you do?\
@@ -127,7 +127,7 @@ Your temperament is humid and heavy.\
 
 Face:tenshi,普
 I am collecting everyone's temperaments
-into a scarlet mist\,\
+into a scarlet mist,\
 
 Face:tenshi,普
 and raising that mist to the heavens
@@ -146,7 +146,7 @@ that start catastrophes on earth.\
 
 Face:tenshi,普
 #この、<ruby ひそうのつるぎ>緋想の剣</ruby>で人の気質の
-With my Sword of Scarlet Thought\,
+With my Sword of Scarlet Thought,
 I collect temperaments and 
 materialize them into scarlet mist...\
 
@@ -162,8 +162,8 @@ Face:tenshi,余
 and shake the earth with it!\
 
 Face:marisa,驚
-Whoa\, an earthquake!?
-I didn't understand anything\,
+Whoa, an earthquake!?
+I didn't understand anything,
 but did you start that?\
 
 Face:tenshi,普
@@ -177,11 +177,11 @@ But an earthquake is troublesome.
 My house wasn't built to withstand earthquakes!\
 
 Face:tenshi,余
-Now\, I don't really want to
+Now, I don't really want to
 unleash a great earthquake on Gensokyo.\
 
 Face:tenshi,惑
-A celestial's life is so boring\,
+A celestial's life is so boring,
 I just want to play like everyone else down there!\
 
 Face:tenshi,普
@@ -189,7 +189,7 @@ That's why I made forboding signs of an earthquake
 to see who might come and stop me!\
 
 Face:tenshi,嬉
-You over there\, who came all the way up here\,\
+You over there, who came all the way up here,\
 
 Face:tenshi,惑
 can you satisfy me?\
@@ -204,12 +204,12 @@ Face:marisa,怒
 Did I tell you to tell me about your schemes?\
 
 Face:marisa,余
-Unfortunately\, I've heard nothing
+Unfortunately, I've heard nothing
 but talks of earthquakes.
 My goal is-\
 
 Face:tenshi,普
-The weather\, isn't it?
+The weather, isn't it?
 Because it's all rain around you.\
 
 Face:marisa,普
@@ -217,32 +217,32 @@ No. There was a mountain so I climbed it.\
 
 Face:tenshi,余
 Whatever.
-But if you don't do anything\,
+But if you don't do anything,
 your house will get wrecked too.\
 
 Bgm:data/bgm/st05.ogg
 
 Face:marisa,普
-But if I see someone when I climb a mountain\,\
+But if I see someone when I climb a mountain,\
 
 Face:marisa,決
 I'd certainly give her my greetings!\
 
 Face:tenshi,普
-Yes\, that's the spirit!\
+Yes, that's the spirit!\
 
 Face:tenshi,嬉
 You all only need to
 solve incidents when you see them.\
 
 Face:tenshi,嬉
-That is what makes the youkai happy\, after all.\
+That is what makes the youkai happy, after all.\
 
 Face:marisa,決
-I'm waiting for you to come at me\, you know.\
+I'm waiting for you to come at me, you know.\
 
 Face:tenshi,決
-Huhuhu\, let's see how your wet drizzling weather
+Huhuhu, let's see how your wet drizzling weather
 compares with my bright glittering weather!\
 
 Face:tenshi,

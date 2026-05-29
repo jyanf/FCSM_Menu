@@ -68,7 +68,7 @@ Sleep:60
 
 Face:youmu,•
 I see. The temperament of humans is being slain.@
-Not just ghosts\, hm?\
+Not just ghosts, hm?\
 
 Face:youmu,˜f
 The slain temperament circles around the body
@@ -76,7 +76,7 @@ and gathers overhead as scarlet clouds...\
 
 
 Face:youmu,‹Á
-I see\, the snow that is falling in our mansion
+I see, the snow that is falling in our mansion
 is Lady Yuyuko's temperament... !\
 
 Face:youmu,Œˆ
@@ -98,8 +98,8 @@ The yawning of the land is a sign of the awakening.\
 #——‹+ˆß‹è‚Ìp‚ª•‚‚©‚Ñã‚ª‚é
 Action:iku,131
 
-In any case\,
-Gensokyo has been awakened\, has it not?\
+In any case,
+Gensokyo has been awakened, has it not?\
 
 
 Sleep:90
@@ -139,7 +139,7 @@ Face:iku,•
 I've heard about that.\
 
 Face:iku,•
-So\, are you turning to Heaven for help?\
+So, are you turning to Heaven for help?\
 
 Face:youmu,‹Á
 Eh? Heaven?\
@@ -159,17 +159,17 @@ Bgm:data/bgm/st04.ogg
 Face:youmu,•
 My job is to find the brat responsible
 for slaying and gathering the temperament
-of living things\, then defeat her!\
+of living things, then defeat her!\
 
 Face:iku,—]
-My\, my.\
+My, my.\
 
 Face:youmu,Šğ
 The temperament has been
 gathering into these rain clouds.\
 
 Face:youmu,Œˆ
-In other words\, you're the culprit\, aren't you?!\
+In other words, you're the culprit, aren't you?!\
 
 
 #í“¬ŠJnˆ—
@@ -184,10 +184,10 @@ End:
 Label:Lose
 
 Face:iku,˜f
-My my\, it seems like you're mistaken.\
+My my, it seems like you're mistaken.\
 
 Face:iku,•
-Now then\, I should descend to the surface
+Now then, I should descend to the surface
 and warn of the earth's awakening.\
 
 End:
@@ -216,7 +216,7 @@ Action:iku,133
 
 #0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
 Face:youmu,Œˆ
-At last\, I've stopped the trickster behind all this!\
+At last, I've stopped the trickster behind all this!\
 
 Face:iku,•‰
 I'm just a messenger from the Dragon Palace
@@ -236,7 +236,7 @@ Face:iku,•‰
 Gensokyo's going to wake up soon.\
 
 Face:iku,•‰
-Then\, an apocalyptic earthquake
+Then, an apocalyptic earthquake
 shall tear Gensokyo asunder.\
 
 Face:youmu,‹Á
@@ -258,13 +258,13 @@ She probably meant earthquake
 when she said catfish...\
 
 Face:iku,•‰
-Soon\, there will probably
+Soon, there will probably
 be a sudden influx of ghosts.@
 Isn't that tragic?\
 
 
 Face:youmu,“{
-Using the ghosts to create scarlet clouds\,
+Using the ghosts to create scarlet clouds,
 causing earthquakes from the clouds...\
 
 Face:youmu,“{

@@ -64,7 +64,7 @@ the behavior of the burglar.\
 # “G“oê
 Action:marisa,101
 Face:marisa,–³
-What\, it's you?\
+What, it's you?\
 Action:marisa,102
 
 Object:data/scenario/marisa/effect/Name.bmp,2,352,304
@@ -73,17 +73,17 @@ Face:marisa,˜f
 Then I'm heading back.\
 
 Face:aya,Šğ
-Go on\, go on.\
+Go on, go on.\
 
 Face:marisa,Š¾
-...No\, I'm heading back after I drive you away.\
+...No, I'm heading back after I drive you away.\
 
 Hide:1
 Action:aya,103
 Sleep:60
 
 Face:marisa,˜f
-Hey\, the wind's blowing...
+Hey, the wind's blowing...
 What's with this wind...
 Are you the one responsible for this?\
 
@@ -131,7 +131,7 @@ Action:aya,202
 
 #©ƒLƒƒƒ‰“VŒó
 Face:aya,—]
-Okay\, please continue.\
+Okay, please continue.\
 
 Face:marisa,˜f
 I don't wanna do anything in this bad weather.\

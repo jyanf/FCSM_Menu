@@ -58,7 +58,7 @@ Face:yukari,普
 The shrine's not repaired yet.\
 
 Face:yukari,嬉
-Reimu\, come out.\
+Reimu, come out.\
 
 Face:yukari,
 Hide:1
@@ -80,15 +80,15 @@ You're so carefree aren't you?\
 
 Face:reimu,惑
 But that Tenshi girl didn't come down today.
-"Today's a song-day\," she said.\
+"Today's a song-day," she said.\
 
 Face:yukari,普
-Well\, she could sing on earth\,@
+Well, she could sing on earth,@
 if that's what she wants to do.\
 
 Face:reimu,汗
-Well\, that's not the point\, I guess.
-Anyway\, it's a luxury isn't it\,
+Well, that's not the point, I guess.
+Anyway, it's a luxury isn't it,
 singing and dancing days without any job to do.\
 
 Face:yukari,余
@@ -100,7 +100,7 @@ Face:reimu,惑
 
 Face:yukari,決
 I'm talking about celestials that enjoy luxury.
-And you\, too.\
+And you, too.\
 
 #戦闘開始処理
 PlayBgm:data/bgm/st10.ogg
@@ -150,10 +150,10 @@ Face:reimu,負
 Why me...\
 
 Face:yukari,普
-Well\, you're quite like a celestial yourself.\
+Well, you're quite like a celestial yourself.\
 
 Face:yukari,余
-You're not so down-to-earth\, are you?\
+You're not so down-to-earth, are you?\
 
 Hide:1
 Result:

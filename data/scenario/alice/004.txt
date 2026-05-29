@@ -74,14 +74,14 @@ It's a lot stormier in these clouds than I expected.\
 Face:alice,òf
 I hope I can find some kind of clue...\
 
-Face:alice\,
+Face:alice,
 Hide:1
 Sleep:60
 
 #àﬂãËçïìhÇËÇ≈âÊñ è„Ç©ÇÁìoèÍ
 Action:iku,130
 Sleep:90
-Face:iku\,
+Face:iku,
 What stains the sky scarlet
 is the yawning of the earth.\
 
@@ -91,7 +91,7 @@ The yawning of the earth is a sign of its awakening.\
 Action:iku,131
 
 Gensokyo's awakening draws near.
-A violent awakening\, and a cruel one.\
+A violent awakening, and a cruel one.\
 
 Sleep:90
 
@@ -104,20 +104,20 @@ You're no ordinary person.\
 Object:data/scenario/iku/effect/Name.bmp,2,352,304
 
 Face:iku,ïÅ
-I'm just a messenger of the Dragon Palace\,
+I'm just a messenger of the Dragon Palace,
 here to inform everyone of the danger.
 Swimming in scarlet clouds is my job.\
 
 Face:iku,òf
-You\, on the other hand\,
+You, on the other hand,
 went out of your way to climb up here.
-From my perspective\, you're the strange one.\
+From my perspective, you're the strange one.\
 
 Face:alice,òf
 A messenger... of the Dragon Palace?\
 
 Face:iku,ïÅ
-Yes\, we're messengers whose sole purpose
+Yes, we're messengers whose sole purpose
 is to swim in scarlet clouds.\
 
 Face:alice,ïÅ
@@ -126,7 +126,7 @@ I'm sure I've heard that somewhere before.\
 
 Face:alice,ã¡
 Messenger of the Dragon Palace...@
-Ah\, I remember now!\
+Ah, I remember now!\
 
 #ÉCÉxÉìÉgÅ@àﬂãËïÇóVèÛë‘èIóπ
 Action:iku,132
@@ -139,11 +139,11 @@ is a large-scale omen of an earthquake!\
 
 Face:iku,ó]
 That's right.
-Unfortunately\, there will be an earthquake.\
+Unfortunately, there will be an earthquake.\
 
 Face:alice,òf
-Mm\, hmm...
-At last\, I have proof
+Mm, hmm...
+At last, I have proof
 that my prediction was correct...\
 
 Face:iku,òf
@@ -153,7 +153,7 @@ Face:alice,òf
 What to do...\
 
 Face:alice,ä
-Oh\, right\, if I get rid of all the omens\,
+Oh, right, if I get rid of all the omens,
 then that should stop the earthquake from happening.
 I read that in a book once.\
 
@@ -161,8 +161,8 @@ Face:iku,ã¡
 Eh?\
 
 Face:alice,åà
-If I get rid of you\, and then
-take care of these scarlet clouds\,
+If I get rid of you, and then
+take care of these scarlet clouds,
 then maybe...!\
 
 
@@ -210,7 +210,7 @@ Action:alice,202
 Action:iku,133
 
 Face:alice,ä
-For now at least\, I've won!\
+For now at least, I've won!\
 
 Face:iku,ïâ
 I'm afraid the earthquake will
@@ -218,11 +218,11 @@ occur regardless of my defeat.
 You have changed nothing.\
 
 Face:alice,ïÅ
-Won't know unless I try\, will I?\
+Won't know unless I try, will I?\
 
 Face:alice,òf
 Now there's just the scarlet clouds to take care of...
-But that's the tricky part\, isn't it?\
+But that's the tricky part, isn't it?\
 
 Face:iku,ïâ
 The scarlet clouds...@
@@ -234,18 +234,18 @@ What do you mean?\
 
 Face:iku,ïâ
 The basis for these clouds doesn't seem to be water...@
-Instead\, they're composed of
+Instead, they're composed of
 the temperament of living things.
 
 Face:iku,ïâ
 I did think it was rather strange...\
 
 Face:iku,ïâ
-but when scarlet clouds show up\,
+but when scarlet clouds show up,
 we do have to do our jobs.\
 
 Face:alice,ó]
-See\, you were being manipulated too!@
+See, you were being manipulated too!@
 There's definitely some mastermind
 plotting to cause an earthquake!\
 

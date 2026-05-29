@@ -59,12 +59,12 @@ Heaven uses the lands too luxuriously.\
 Face:yukari,ïÅ
 They say Heaven is too saturated so
 Enlightenment is forbidden... What a big lie.@
-They just hate small spaces\, that's all...\
+They just hate small spaces, that's all...\
 
 Face:yukari,ïÅ
 Saying the celestials are people who left their
 worldliness behind is also a big lie.@
-Heaven is\, in fact\, the hive for these sly people.\
+Heaven is, in fact, the hive for these sly people.\
 
 Face:yukari,
 Hide:1
@@ -77,24 +77,24 @@ Action:iku,102
 Sleep:20
 
 Face:iku,òf
-Oh\, an earth-crawling youkai?\
+Oh, an earth-crawling youkai?\
 
 Face:yukari,ïÅ
 You're...@
-a messenger from the Dragon Palace\, I see.\
+a messenger from the Dragon Palace, I see.\
 
 # ñºëOÇÃÉeÉçÉbÉv
 Object:data/scenario/iku/effect/Name.bmp,2,352,304
 
 Face:iku,ã¡
-Yes\, that's right.\
+Yes, that's right.\
 
 Face:yukari,ïÅ
 What messages do you bring today?
-Tidings of an earthquake\, you don't say?\
+Tidings of an earthquake, you don't say?\
 
 Face:iku,ïÅ
-No\, the earthquake-related threat
+No, the earthquake-related threat
 is almost taken care of.\
 
 It seems that the
@@ -102,7 +102,7 @@ Eldest Daughter of Hinanawi
 inserted a keystone at the shrine.\
 
 Face:iku,ó]
-Well\, since we usually live in Heaven
+Well, since we usually live in Heaven
 it's not strange for us to be here...\
 
 Face:iku,ïÅ
@@ -123,25 +123,25 @@ Face:yukari,ó]
 I'm going to make her become deceased for a bit.\
 
 Face:iku,ã¡
-Oh my\,@
+Oh my,@
 that's quite unsettling.\
 
 PlayBgm:data/bgm/st04.ogg
 
 Face:yukari,åà
-Well then\, where is she?\
+Well then, where is she?\
 
 #0ÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇR
 Face:iku,ïÅ
 Well.@
 The Eldest Daughter has descended
-onto the earth for now\, I think.\
+onto the earth for now, I think.\
 
 Face:yukari,òf
 Huh? That's different from what Reimu said.\
 
 Face:iku,äæ
-Just between you and me\, she's allowed a bit
+Just between you and me, she's allowed a bit
 more freedom than she ought to have.
 Even the celestials have a hard time with her.\
 
@@ -149,7 +149,7 @@ Face:yukari,ó]
 Are you hiding something?\
 
 Face:iku,ïÅ
-She isn't here\, really...\
+She isn't here, really...\
 
 #êÌì¨äJénèàóù
 
@@ -163,11 +163,11 @@ End:
 Label:Lose
 
 Face:iku,ïÅ
-If you are going to punish the Eldest Daughter\,
-by all means\, please do so.\
+If you are going to punish the Eldest Daughter,
+by all means, please do so.\
 
 Face:iku,ó]
-Ah\, don't tell anyone that I said this\, okay?\
+Ah, don't tell anyone that I said this, okay?\
 
 End:
 
@@ -194,21 +194,21 @@ Face:yukari,ó]
 Tell me where she is.\
 
 Face:iku,ïâ
-No\, honestly\, she isn't here.\
+No, honestly, she isn't here.\
 
 Face:yukari,äæ
 Hmph. That looked like a waste of time and energy.\
 
 Face:iku,ïÅ
-If you intend to punish the Eldest Daughter\,
-by all means\, please do so.\
+If you intend to punish the Eldest Daughter,
+by all means, please do so.\
 
 Face:iku,ó]
-Ah\, don't tell anyone that I said this\, okay?\
+Ah, don't tell anyone that I said this, okay?\
 
 Face:yukari,ó]
 Didn't I say it just now?
-I'm not going to punish her\,
+I'm not going to punish her,
 I'm going to make her become deceased.\
 
 
@@ -221,7 +221,7 @@ Action:yukari,156
 Face:iku,ñ≥
 Face:yukari,ñ≥
 
-Haaa\, a waste of time. A waste of time.\
+Haaa, a waste of time. A waste of time.\
 
 Hide:1
 Result:

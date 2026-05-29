@@ -47,21 +47,21 @@ Object:data/scenario/effect/StageFinal.bmp,1,256,352
 Sleep:60;
 
 Face:tenshi,ïÅ
-If a shinigami has come for me\,
+If a shinigami has come for me,
 then there's nothing more to think about.\
 
 Face:komachi,òf
-Well\, claiming souls is out of my jurisdiction.
+Well, claiming souls is out of my jurisdiction.
 I'm just a humble ferryman.\
 
 Face:tenshi,òf
 Ferryman? Perhaps of the Sanzu River?\
 
 Face:komachi,ã¡
-Right\, right. I don't go out and kill people.\
+Right, right. I don't go out and kill people.\
 
 Face:komachi,òf
-But you know\,
+But you know,
 Seeing spirits-... ghosts
 being murdered is a bit troubling.\
 
@@ -69,11 +69,11 @@ Face:tenshi,ó]
 Oh?\
 
 Face:komachi,òf
-From what I've heard\, it looks like it's your doing?
-You use ghosts to change the mood of the heavens\,\
+From what I've heard, it looks like it's your doing?
+You use ghosts to change the mood of the heavens,\
 
 Face:komachi,ó]
-thus the ghosts don't cross the river\,
+thus the ghosts don't cross the river,
 and then I have to do something about it.
 It's a real annoyance.\
 
@@ -81,7 +81,7 @@ It's a real annoyance.\
 Face:tenshi,ä
 Now this is interesting.
 Fighting with the shinigami that occasionally
-came for me was a rare pleasure\,\
+came for me was a rare pleasure,\
 
 Face:tenshi,ä
 but a fight with a ferryman-\
@@ -95,12 +95,12 @@ Face:tenshi,ïÅ
 Celestials fear the appearance of the five omens.\
 
 Face:tenshi,òf
-Shinigami are one of them\, the wilting crown wreath.
-In other words\, they make the wreaths
+Shinigami are one of them, the wilting crown wreath.
+In other words, they make the wreaths
 on our heads wither.\
 
 Face:tenshi,åà
-However\, thanks to the shinigami\,
+However, thanks to the shinigami,
 I'll never have to worry about another omen -
 not being able to enjoy life!\
 

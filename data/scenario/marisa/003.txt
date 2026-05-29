@@ -46,7 +46,7 @@ I've realized something great.\
 
 Face:marisa,Šğ
 It's bound to be sunny above the clouds.
-If I climb the mountain\,@
+If I climb the mountain,@
 
 Face:marisa,Šğ
 then I can finally see the sun!\
@@ -100,11 +100,11 @@ Face:aya,“{
 You make it sound like a big deal.\
 
 Face:aya,˜f
-I shouldn't say this as a tengu\,
+I shouldn't say this as a tengu,
 but the winds are strong around here.\
 
 Face:aya,˜f
-Whatever business you have around here\,
+Whatever business you have around here,
 why don't you forget it?\
 
 Face:marisa,•
@@ -115,11 +115,11 @@ But wouldn't it be okay if
 you prayed to the wind god?\
 
 Face:aya,•
-About that\, it seems that the wind
+About that, it seems that the wind
 only blows around me...\
 
 Face:marisa,•
-Ho ho\,\
+Ho ho,\
 
 Face:marisa,•
 I'm planning to journey to
@@ -155,10 +155,10 @@ End:
 Label:Lose
 
 Face:aya,•
-Now then\, be a good girl and leave.\
+Now then, be a good girl and leave.\
 
 Face:aya,•
-Even if you climb to Heaven\, nothing will get solved.\
+Even if you climb to Heaven, nothing will get solved.\
 
 End:
 
@@ -185,11 +185,11 @@ Action:marisa,103
 Sleep:60
 
 Face:marisa,Šğ
-Well\, I'm going\, now.
+Well, I'm going, now.
 Because there's a mountain there.\
 
 Face:aya,•‰
-Can't be helped\, then.
+Can't be helped, then.
 You're already being watched.\
 
 Face:aya,•‰
@@ -197,7 +197,7 @@ Keep that in mind while you climb.\
 
 
 Face:marisa,—]
-It's alright\, the mountain is
+It's alright, the mountain is
 only a checkpoint this time.\
 
 

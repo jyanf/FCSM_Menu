@@ -60,34 +60,34 @@ Object:data/scenario/suika/effect/Name.bmp,2,352,304
 
 Face:suika,ä
 It's very pleasant here.
-It's wide\, and the wind feels nice.\
+It's wide, and the wind feels nice.\
 
 Face:patchouli,ïÅ
-Ah\, so it is you.
+Ah, so it is you.
 It did seem like the scarlet mist
 was being <color 333333>gathered</color>.\
 
 Face:suika,ïÅ
-I didn't do a~nything at all this time\, though.\
+I didn't do a~nything at all this time, though.\
 
 Face:patchouli,ó]
-You have no reason to be in Heaven\, then.\
+You have no reason to be in Heaven, then.\
 
 Action:suika,107
 Face:suika,ó]
-But I have a lot of reasons for being here\, okay?\
+But I have a lot of reasons for being here, okay?\
 
 PlayBgm:data/bgm/st05.ogg
 
 Face:patchouli,åà
-Hah\, I predicted as much\,
+Hah, I predicted as much,
 so I'm prepared for anything!\
 
 Face:suika,ïÅ
 Oh? You want to fight?\
 
 Face:suika,åà
-Well\, I'm bored of song and dance every day\,
+Well, I'm bored of song and dance every day,
 so I won't hold back.\
 
 #Action:suika,113
@@ -107,7 +107,7 @@ Face:suika,ó]
 You're too late now.\
 
 Face:suika,ä
-At any rate\, I'd like to get everyone to come here.\
+At any rate, I'd like to get everyone to come here.\
 
 End:
 

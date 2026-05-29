@@ -44,7 +44,7 @@ Object:data/scenario/effect/Stage7.bmp,1,256,352
 Sleep:60
 
 Face:remilia,普
-I've beaten a lot of criminals by now\,\
+I've beaten a lot of criminals by now,\
 
 Face:remilia,普
 so soon I think I'll
@@ -63,7 +63,7 @@ Action:reimu,102
 Sleep:20
 
 Face:reimu,怒
-What\, what!\
+What, what!\
 
 # 名前のテロップ
 Object:data/scenario/reimu/effect/Name.bmp,2,352,304
@@ -117,7 +117,7 @@ Face:reimu,決
 That's not helping at all!\
 
 Face:reimu,普
-Ahh\, I feel so hollow.\
+Ahh, I feel so hollow.\
 
 
 End:
@@ -155,7 +155,7 @@ Face:reimu,負
 What do you know?\
 
 Face:remilia,普
-Nothing. I haven't been outside\,
+Nothing. I haven't been outside,
 so I don't know a thing.\
 
 Face:reimu,負
@@ -168,7 +168,7 @@ Face:reimu,負
 What rain? It was sunny all the way...\
 
 Face:remilia,普
-I haven't seen the sun for a long time\,
+I haven't seen the sun for a long time,
 I'm getting concerned...@
 Hmmmmm?\
 

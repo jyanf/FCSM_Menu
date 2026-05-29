@@ -51,7 +51,7 @@ Action:remilia,2
 
 #ÇOÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇRÇSÇTÇUÇVÇWÇX\
 Face:remilia,ì{
-Sakuyaaa\, you heeere?\
+Sakuyaaa, you heeere?\
 
 Face:remilia,
 Hide:1
@@ -63,14 +63,14 @@ Action:sakuya,101
 Action:sakuya,102
 
 Face:sakuya,ïÅ
-Yes\, what is it?\
+Yes, what is it?\
 
 # ñºëOÇÃÉeÉçÉbÉv
 Object:data/scenario/sakuya/effect/Name.bmp,2,352,304
 
 #0ÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇR
 Face:remilia,ì{
-So\, what're you going to do about this incident?\
+So, what're you going to do about this incident?\
 
 Action:sakuya,103
 
@@ -99,7 +99,7 @@ Label:Lose
 
 Face:sakuya,òf
 Miss Patchouli is also investigating
-about the weather\, it seems.\
+about the weather, it seems.\
 
 Face:sakuya,òf
 Maybe it's not just a cold summer...\
@@ -128,20 +128,20 @@ Action:remilia,202
 Action:remilia,103
 
 Face:remilia,ïÅ
-Hmph\, there must be someone
+Hmph, there must be someone
 out there trying to hinder me.\
 
 Face:sakuya,òf
 Really?\
 
 Face:remilia,ó]
-Sakuya\, since I can't move-\
+Sakuya, since I can't move-\
 
 Face:sakuya,ïÅ
-Understood\, I'll go investigate.\
+Understood, I'll go investigate.\
 
 Face:remilia,åà
-No\, bring the suspects over here!\
+No, bring the suspects over here!\
 
 Hide:1
 Result:

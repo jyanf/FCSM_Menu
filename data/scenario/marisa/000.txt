@@ -58,7 +58,7 @@ This is troublesome.
 I can't dry my laundry
 if the rain continues like this.\
 
-Even though the rainy season ended\,
+Even though the rainy season ended,
 the rain still doesn't want to end.\
 
 
@@ -72,14 +72,14 @@ Action:alice,101
 Action:alice,102
 
 Face:alice,普
-Yet\, you can still tell
+Yet, you can still tell
 that the rainy season ended?\
 
 # 名前のテロップ
 Object:data/scenario/alice/effect/Name.bmp,2,352,304
 
 Face:marisa,普
-Whoa\, when did you get here?\
+Whoa, when did you get here?\
 
 Hide:1
 
@@ -88,18 +88,18 @@ Action:alice,103
 Sleep:60
 
 Face:alice,惑
-Ah\, not again...\
+Ah, not again...\
 
-The hail kept falling\,
+The hail kept falling,
 so I couldn't dry my laundry.\
 
 
 Face:marisa,驚
-This is rare\, the hail and all.\
+This is rare, the hail and all.\
 
 Face:alice,普
 It's always been like this.
-But this year\, it's still hailing
+But this year, it's still hailing
 after the rainy season...\
 
 Face:marisa,余
@@ -114,7 +114,7 @@ I could tell.\
 
 Face:marisa,余
 You cranked up the humidity
-in the forest\, didn't you?\
+in the forest, didn't you?\
 
 Face:alice,普
 Why would I do that?\
@@ -180,7 +180,7 @@ Face:marisa,普
 It's raining again...\
 
 Face:marisa,嬉
-Alright\, then. The rain is telling me
+Alright, then. The rain is telling me
 that I need to go and get back the sun...?\
 
 Hide:1

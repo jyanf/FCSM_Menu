@@ -60,10 +60,10 @@ Face:iku,普
 Eldest Daughter-\
 
 Face:iku,普
-Eldest Daughter\, are you here-?\
+Eldest Daughter, are you here-?\
 
 Face:iku,惑
-Where did she go\, I wonder?
+Where did she go, I wonder?
 It's troubling how she's so capricious.\
 
 Face:iku,
@@ -85,7 +85,7 @@ Hm? Why are you here?\
 Object:data/scenario/suika/effect/Name.bmp,2,352,304
 
 Face:suika,余
-A lot happened\, you see.\
+A lot happened, you see.\
 
 Face:iku,惑
 Well I'll let that slide.
@@ -96,24 +96,24 @@ The earthquake omen has already reached the limit.
 I wanted to make a report of it.\
 
 Face:suika,普
-Ooh\, it's already gathered that much?\
+Ooh, it's already gathered that much?\
 
 Face:iku,驚
 Gathered?\
 
 Face:suika,余
-So\, how big will the earthquake be?\
+So, how big will the earthquake be?\
 
 Face:iku,普
 On the scale of one that
 only occurs every sixty years.\
 
 Face:iku,余
-Now then\, I think I should go to
+Now then, I think I should go to
 the lower world and warn everyone about it.\
 
 Face:suika,嬉
-Before you do that\,
+Before you do that,
 will you play a game with me?\
 
 Face:iku,驚
@@ -125,7 +125,7 @@ Action:suika,107
 Sleep:30
 
 Face:suika,余
-Heaven is really dull\, isn't it?\
+Heaven is really dull, isn't it?\
 
 PlayBgm:data/bgm/st00.ogg
 
@@ -138,7 +138,7 @@ End:
 Label:Lose
 
 Face:suika,普
-Really\, an earthquake?\
+Really, an earthquake?\
 
 Face:suika,嬉
 That's probably gonna turn out okay.\
@@ -167,7 +167,7 @@ Action:iku,202
 #自キャラ天候
 
 Face:iku,普
-Now then\, I'm off to warn everyone.\
+Now then, I'm off to warn everyone.\
 
 Face:suika,負
 See ya later~

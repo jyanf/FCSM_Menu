@@ -58,7 +58,7 @@ Face:tenshi,惑
 Ahh...\
 
 Face:tenshi,普
-The newly rebuilt shrine was destroyed\,
+The newly rebuilt shrine was destroyed,
 and the little oni is responsible
 for the re-reconstruction.\
 
@@ -97,10 +97,10 @@ I came out here because I was invited?\
 
 Face:tenshi,惑
 Who would invite you here...
-Wait\, maybe it's-\
+Wait, maybe it's-\
 
 Face:yuyuko,余
-Today\, the shrine's groundbreaking ceremony party
+Today, the shrine's groundbreaking ceremony party
 is being held here. I was invited to it.\
 
 Face:tenshi,怒
@@ -113,15 +113,15 @@ I wonder if I came a little too early.
 The celebration is still about a half a day away.\
 
 Face:tenshi,汗
-Oh\, I guess it can't be helped.\
+Oh, I guess it can't be helped.\
 
 Face:tenshi,嬉
-I know\, if you've nothing to do\,
+I know, if you've nothing to do,
 how about killing some time with me?\
 
 Face:yuyuko,余
 You're the one with too much time
-on your hands\, you know.\
+on your hands, you know.\
 
 #戦闘開始処理
 
@@ -134,7 +134,7 @@ End:
 Label:Lose
 
 Face:yuyuko,余
-Since there's still time before the feast\,
+Since there's still time before the feast,
 mind if I look around?\
 
 End:
@@ -160,10 +160,10 @@ Action:tenshi,202
 
 Face:tenshi,余
 It's not supposed to be this easy
-to get into Heaven\, you know.\
+to get into Heaven, you know.\
 
 Face:yuyuko,負
-It's fine for me\, I'm a ghost.\
+It's fine for me, I'm a ghost.\
 
 Face:tenshi,普
 Heaven is a place where spirits ascend to.

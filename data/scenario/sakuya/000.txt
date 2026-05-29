@@ -77,7 +77,7 @@ Action:marisa,101
 Action:marisa,102
 
 Face:marisa,•
-Oi\, what's up?
+Oi, what's up?
 You came to collect rainwater for cooking?\
 
 Action:sakuya,171
@@ -99,10 +99,10 @@ Hm? If you want rain
 then isn't it raining?\
 
 Face:sakuya,‹Á
-Oh my\, it is raining.\
+Oh my, it is raining.\
 
 Face:marisa,•
-That's right\, it's troubling because
+That's right, it's troubling because
 it won't stop raining.@
 It makes the books I take home wet.\
 
@@ -110,7 +110,7 @@ Face:sakuya,Š¾
 Don't take them without permission!\
 
 Face:sakuya,•
-Well\, it's true that the weather
+Well, it's true that the weather
 has been bad lately.
 Do you feel anything else?\
 
@@ -119,7 +119,7 @@ Ahh?
 Nothing at all.\
 
 Face:sakuya,‹Á
-Look\, your body is also emitting...\
+Look, your body is also emitting...\
 
 Hide:1
 # ------------------------------------------------------
@@ -128,7 +128,7 @@ Action:marisa,170
 Sleep:60
 
 Face:marisa,Œˆ
-Anyways\, I've got no use for you!\
+Anyways, I've got no use for you!\
 
 #í“¬ŠJnˆ—
 PlayBgm:data/bgm/st00.ogg
@@ -177,7 +177,7 @@ Face:sakuya,Š¾
 Didn't you attack me first?\
 
 Face:sakuya,•
-It stopped raining\,
+It stopped raining,
 so I'll leave the house for a bit.\
 
 Hide:1

@@ -33,7 +33,7 @@ Bgm:data/bgm/ta06.ogg
 # @ˆê–‡–Ú‚ÍêŠ‚ğ¦‚·ŠÈ’P‚ÈƒCƒ‰ƒXƒg‚ª“ü‚é—\’è‚Å‚·
 #0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
   Summer at the Hakurei Shrine.@
-  Destroyed by an earthquake\, it had been repaired by a celestial\,
+  Destroyed by an earthquake, it had been repaired by a celestial,
   but now it's been destroyed again in a battle between youkai and celestial.\
 
   Reimu sulked and demanded they do something about it.@
@@ -51,19 +51,19 @@ CG:data/scenario/yukari/effect/ED001.bmp,96,16,50
 
 #0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
 Reimu  "And it just got rebuilt..."@
-Youmu  "Well\, now\, as long as it gets rebuilt again\, all is well."@
-Marisa "Eh\, last time it was an act of god\, but this was an act of man..."\
+Youmu  "Well, now, as long as it gets rebuilt again, all is well."@
+Marisa "Eh, last time it was an act of god, but this was an act of man..."\
 
 Reimu  "Maybe it's bad that it's so easy to destroy the shrine...@
-        Hey\, I wonder if the keystone is alright."@
+        Hey, I wonder if the keystone is alright."@
 Marisa "Keystone?"\
 
-Reimu  "That celestial gave it to me. It'll prevent earthquakes\, or something...@
-        Yeah\, it looks like it's still okay."@
-Sakuya "But... the celestial left that here\, then?"\
+Reimu  "That celestial gave it to me. It'll prevent earthquakes, or something...@
+        Yeah, it looks like it's still okay."@
+Sakuya "But... the celestial left that here, then?"\
 
 Reimu  "Ah!@
-        But\, they say a huge earthquake will happen if you take it out..."\
+        But, they say a huge earthquake will happen if you take it out..."\
 
 CG:data/scenario/yukari/effect/ED002.bmp,96,16,50
 # O–‡–Ú
@@ -76,7 +76,7 @@ Reimu  "Woah! When did you..."@
 Suika  "I looked into it. That keystone's for real. Don't touch it!"\
 
 Reimu  "Really?@
-        But\, what are you doing?"@
+        But, what are you doing?"@
 Suika  "Isn't it obvious? I'm gonna rebuild the shrine."\
 
 Reimu  "You'll really help?"@
@@ -85,14 +85,14 @@ Suika  "Yukari asked me to. She said an earth person
 Reimu  "... ..."\
 
 Suika  "It'll be a lot faster than when that celestial did it.
-        This is what oni are best at. I'll make the tengu help\, too!"@
+        This is what oni are best at. I'll make the tengu help, too!"@
 Reimu  "... ... are you trying to do something to my shrine?"\
 
 Suika  "Who knows?@
         But isn't it better than having a celestial do it?"@
-Reimu  "What's the difference\, really?"\
+Reimu  "What's the difference, really?"\
 
-Suika  "Well\, let's have a party to celebrate the start of construction!"@
+Suika  "Well, let's have a party to celebrate the start of construction!"@
 Others "Not this again!"\
 
 FadeBgm:2000,0
@@ -104,7 +104,7 @@ CG:BLACK,0,0,15
 
 StaffRoll:
 
-  In that case\, maybe it would be best to rebuild it every once in a while.
+  In that case, maybe it would be best to rebuild it every once in a while.
   She could make a tradition out of transfering the shrine deity.\
 
 End:

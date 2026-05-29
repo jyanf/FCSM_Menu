@@ -46,7 +46,7 @@ Face:reimu,普
 I guess it's true.
 Looks like it really is only sunny around me.\
 
-Then\, that scarlet mist is coming
+Then, that scarlet mist is coming
 from everyone's bodies?
 And that mist is...\
 Face:reimu,
@@ -81,19 +81,19 @@ What brings you to the mountain
 on a windy day like this?\
 
 Face:aya,汗
-A death wish\, maybe?\
+A death wish, maybe?\
 
 # 名前のテロップ
 #Name:風雨の鴉　射命丸文
 Object:data/scenario/aya/effect/Name.bmp,2,352,304
 
 Face:reimu,余
-Out of all possible weathers\,
+Out of all possible weathers,
 yours is this terrible...
 I suppose the wind and rain do suit you though.\
 
 Face:aya,怒
-You're here looking for a fight again\, aren't you?\
+You're here looking for a fight again, aren't you?\
 
 Face:reimu,惑
 I'm on my way upward and I'm in a hurry.\
@@ -104,9 +104,9 @@ at the top of the mountain.\
 Bgm:data/bgm/st03.ogg
 
 Face:aya,決
-Oh\, that's fine.
-If you want a fight\, I'll sell you one.\
-But if you want to pass through here\,
+Oh, that's fine.
+If you want a fight, I'll sell you one.\
+But if you want to pass through here,
 you'd better make me a good offer!\
 
 Action:reimu,3
@@ -120,7 +120,7 @@ End:
 Label:Lose
 
 Face:aya,普
-This mountain is not a place for humans\,
+This mountain is not a place for humans,
 please leave at once.\
 
 End:
@@ -148,19 +148,19 @@ Action:reimu,103
 Sleep:60
 
 Face:reimu,嬉
-Just as I thought\, the top of the mountain
+Just as I thought, the top of the mountain
 is definitely suspicious.\
 It's the only place where these
 scarlet clouds aren't clearing up.\
 
 Face:aya,負
-If you're that serious about it\,
+If you're that serious about it,
 I suppose there's nothing I can do.
-I'll let everyone else know\, so get going already.\
+I'll let everyone else know, so get going already.\
 
 Face:reimu,普
 I'd go whether you told me to or not.
-My intuition is never wrong\, after all.\
+My intuition is never wrong, after all.\
 
 Face:aya,負
 This is the first I've seen

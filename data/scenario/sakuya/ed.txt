@@ -28,11 +28,11 @@ Bgm:data/bgm/ta06.ogg
 #0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
 
   Summer at the Hakurei Shrine.@
-  It was the shrine at the eastern border of Gensokyo\, but now it's broken down.@
-  It still serves its purpose as a shrine\, but not as a place to live.\
+  It was the shrine at the eastern border of Gensokyo, but now it's broken down.@
+  It still serves its purpose as a shrine, but not as a place to live.\
 
   The shrine had been destroyed by an earthquake that occurred directly below it.@
-  It had probably occurred while Sakuya was in Heaven\,
+  It had probably occurred while Sakuya was in Heaven,
   so she hadn't noticed it at all.\
 
 # “ñ–‡–Ú
@@ -44,15 +44,15 @@ Bgm:data/bgm/ta06.ogg
 CG:data/scenario/sakuya/effect/ED001.bmp,96,16,50
 
 #0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
-Reimu  "Seriously\, what am I going to do?"@
-Marisa "Wow\, the roof's totally caved in."@
+Reimu  "Seriously, what am I going to do?"@
+Marisa "Wow, the roof's totally caved in."@
 Sakuya "That happens a lot when buildings collapse in earthquakes."\
 
 Marisa "It must be because the roof's so heavy."@
 Reimu  "How are you all so calm about this!?"@
 Sakuya "It sounds like nobody in the manor felt anything at all."\
 
-Reimu  "Oh\, what do I do now..."@
+Reimu  "Oh, what do I do now..."@
 Marisa "Why not try asking for donations?
         You could go around with the donation box."\
 
@@ -66,19 +66,19 @@ CG:data/scenario/sakuya/effect/ED002.bmp,96,16,50
 # 
 #0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
 Sakuya "I met someone who can control earthquakes recently."@
-Marisa " ... No way\, that's crazy."@
-Sakuya "If you can make friends with them\, 
+Marisa " ... No way, that's crazy."@
+Sakuya "If you can make friends with them, 
         I'm sure you won't have to worry about aftershocks."\
 
 Reimu  "It's not like there's anything left for the aftershocks to knock down!@
         You should've introduced us BEFORE this happened."\
 
-Sakuya "Hm\, perhaps.@
-        I can't help but wonder\, though\, if that person may have been
+Sakuya "Hm, perhaps.@
+        I can't help but wonder, though, if that person may have been
         behind this earthquake."\
 
-Reimu  "!? Wait\, tell me more."@
-Sakuya "Well\, the earthquake was strong enough to destroy the shrine\, right?@
+Reimu  "!? Wait, tell me more."@
+Sakuya "Well, the earthquake was strong enough to destroy the shrine, right?@
         It's very unusual no-one else noticed an earthquake that strong."\
 
 Sakuya "She was able to create very localized earthquakes.@
@@ -89,13 +89,13 @@ Sakuya "I think Reimu should decide for herself."@
 Reimu  "... She must be the culprit! Where was she?"\
 
 Sakuya "She lives far above the clouds."@
-Reimu  "Above the clouds... Well\, I'll go anywhere!
-        I'll tie her up\, bring her back\, and make her pay!"\
+Reimu  "Above the clouds... Well, I'll go anywhere!
+        I'll tie her up, bring her back, and make her pay!"\
 
 FadeBgm:3000,0
 CG:BLACK,0,0,15
 
-  Sakuya gave the crazy celestial a good lecture in her last battle\,
+  Sakuya gave the crazy celestial a good lecture in her last battle,
   but... it seemed she still bore a grudge.\
 
   She thought she'd send Reimu to give her another lecture.

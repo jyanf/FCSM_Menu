@@ -51,7 +51,7 @@ Face:patchouli,òf
 What?\
 
 Face:alice,ïÅ
-There's something I wanted to ask about\, that's all.\
+There's something I wanted to ask about, that's all.\
 
 Face:patchouli,ïÅ
 ...\
@@ -61,7 +61,7 @@ Your temperament is hail.\
 
 Face:patchouli,ïÅ
 A weather pattern in which lumps of ice become
-too heavy for rising air currents to support\,
+too heavy for rising air currents to support,
 and thus fall from the sky.\
 
 Face:patchouli,ó]
@@ -70,7 +70,7 @@ How fitting for you.\
 Face:alice,ïÅ
 What are you talking about?\
 
-Face:alice\,
+Face:alice,
 Hide:1
 #ìGìVåÛ
 Action:patchouli,103
@@ -80,10 +80,10 @@ Sleep:30
 Object:data/scenario/patchouli/effect/Name.bmp,2,352,304
 
 Face:patchouli,ïÅ
-You're here to find out about the weather\, right?\
+You're here to find out about the weather, right?\
 
 Face:alice,ã¡
-No\, I'm here to find out about earthquakes!\
+No, I'm here to find out about earthquakes!\
 
 Face:patchouli,òf
 Earthquakes...?@
@@ -98,7 +98,7 @@ Face:alice,ì{
 What was that?\
 
 Face:alice,åà
-Fine\, I'll just look it up myself then!\
+Fine, I'll just look it up myself then!\
 
 Face:patchouli,åà
 Hmph.
@@ -116,8 +116,8 @@ End:
 Label:Lose
 
 Face:patchouli,ã¡
-Earthquakes\, you say?@
-Hmm\, you can look at it that way.\
+Earthquakes, you say?@
+Hmm, you can look at it that way.\
 
 End:
 
@@ -144,13 +144,13 @@ Action:alice,103
 Sleep:60
 
 Face:alice,ó]
-Now then\, I'll just go study by myself!\
+Now then, I'll just go study by myself!\
 
 Face:patchouli,ïâ
-Please\, this is hardly the time for--\
+Please, this is hardly the time for--\
 
-Face:alice\,
-Face:patchouli\,
+Face:alice,
+Face:patchouli,
 Hide:1
 Sleep:30
 
@@ -163,17 +163,17 @@ Action:sakuya,103
 Action:sakuya,106
 
 Face:sakuya,ïÅ
-Miss Patchouli\, it's time for tea.\
+Miss Patchouli, it's time for tea.\
 
 Face:alice,ïÅ
-Why\, thank you.\
+Why, thank you.\
 
 Face:sakuya,äæ
 I didn't bring any for you.
-Besides\, when did you sneak in here?\
+Besides, when did you sneak in here?\
 
 Face:patchouli,ïâ
-Sakuya\, throw her out of here.\
+Sakuya, throw her out of here.\
 
 Face:sakuya,ïÅ
 Understood.\

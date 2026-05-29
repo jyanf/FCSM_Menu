@@ -66,7 +66,7 @@ That's a strange way to address someone.\
 Object:data/scenario/komachi/effect/Name.bmp,2,352,304
 
 Face:remilia,ä
-Ooh\, this is more like it\, Sakuya.\
+Ooh, this is more like it, Sakuya.\
 
 #ìGìVåÛ
 Action:komachi,103
@@ -81,7 +81,7 @@ Surely you did this?\
 
 Face:komachi,äæ
 That's such a mean thing to say.
-But\, for a shinigami that might be a good omen.\
+But, for a shinigami that might be a good omen.\
 
 Face:remilia,ó]
 I don't care about your motive anymore.
@@ -89,8 +89,8 @@ You're getting a guilty verdict no matter what.\
 
 #0ÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇR
 Face:komachi,ã¡
-Oh\, a mock trial?
-I've seen plenty of those\,
+Oh, a mock trial?
+I've seen plenty of those,
 so I know a lot about them.\
 
 #0ÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇR
@@ -108,7 +108,7 @@ Face:komachi,ïÅ
 Things like yanking tongues out and roasting them.\
 
 Face:remilia,åà
-Nice\, nice...@
+Nice, nice...@
 That's what we'll do today!\
 
 #êÌì¨äJén
@@ -124,10 +124,10 @@ End:
 Label:Lose
 
 Face:komachi,òf
-So\, why was I dragged all the way here?\
+So, why was I dragged all the way here?\
 
 Face:komachi,òf
-Sigh\, if I don't get back to work she'll get angry.
+Sigh, if I don't get back to work she'll get angry.
 I'll be going my way now.\
 
 
@@ -160,14 +160,14 @@ Making the weather strange to yank tongues...
 That doesn't make sense.\
 
 Face:komachi,ïâ
-You're bored\, too?@
-If you have time to waste\, I can play with you.\
+You're bored, too?@
+If you have time to waste, I can play with you.\
 
 Face:remilia,òf
 Don't you have work to do?\
 
 Face:komachi,äæ
-Ah\, I've got to get back to work.\
+Ah, I've got to get back to work.\
 
 Face:remilia,òf
 Sakuyaaa!

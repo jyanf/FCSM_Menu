@@ -67,12 +67,12 @@ It's nothing like what everyone
 on the ground is used to.\
 
 Face:suika,ïÅ
-Even in the mountains\, we don't
+Even in the mountains, we don't
 have anything like this.\
 
 Face:suika,ó]
-Heeey\, come out--
-These flowers are nice\,
+Heeey, come out--
+These flowers are nice,
 but some sake would make this better.\
 
 Hide:1
@@ -129,7 +129,7 @@ What's wrong with oni?
 Are you saying you won't drink an oni's sake?\
 
 Face:tenshi,ã¡
-No\, no. I didn't think that oni
+No, no. I didn't think that oni
 still existed on the surface.\
 
 Face:tenshi,ä
@@ -142,7 +142,7 @@ Sleep:30
 
 Face:suika,ó]
 Well... you collected
-everyone's hearts\, didn't you?\
+everyone's hearts, didn't you?\
 
 Face:suika,ïÅ
 What's your objective?\
@@ -162,20 +162,20 @@ Face:suika,ä
 Oh really? Well that's fine.\
 
 Face:suika,òf
-But with your messy way of gathering hearts\,
+But with your messy way of gathering hearts,
 you're not going to get anyone.\
 
 Face:tenshi,ó]
 It's because if I don't
-do it like this\, I can't fish.\
+do it like this, I can't fish.\
 
 Face:suika,ó]
-Talking about fish\, now?
+Talking about fish, now?
 The celestials sure love fishing.\
 
 Face:tenshi,ã¡
 That's because it's a tradition 
-passed from former days. Anyways\,
+passed from former days. Anyways,
 what are your objectives then?\
 
 #0ÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇR
@@ -196,17 +196,17 @@ I'd like to spread this dream.\
 PlayBgm:data/bgm/st05.ogg
 
 Face:tenshi,ã¡
-Hold on\, hold on. That's definitely not okay.\
+Hold on, hold on. That's definitely not okay.\
 
 Face:suika,åà
-Well then\, let's settle this by force.\
+Well then, let's settle this by force.\
 
 Face:tenshi,ì{
-Ah\, I'm being challenged by this inferior person?
+Ah, I'm being challenged by this inferior person?
 Don't think you're that strong!\
 
 Face:tenshi,åà
-Let me see for myself\,
+Let me see for myself,
 where that confidence of yours is coming from!\
 
 
@@ -222,7 +222,7 @@ End:
 Label:Lose
 
 Face:tenshi,åà
-Now\, grovel on the ground as you drink sake!\
+Now, grovel on the ground as you drink sake!\
 
 End:
 

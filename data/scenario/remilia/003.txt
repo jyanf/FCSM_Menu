@@ -44,7 +44,7 @@ Object:data/scenario/effect/Stage4.bmp,1,256,352
 Sleep:240
 
 Face:remilia,•
-Who's up next\, I wonder...\
+Who's up next, I wonder...\
 Face:remilia,
 Hide:1
 Sleep:30
@@ -64,7 +64,7 @@ I have something to ask. Is that alright?\
 Object:data/scenario/udonge/effect/Name.bmp,2,352,304
 
 Face:remilia,•
-Ah\, ahem.
+Ah, ahem.
 You've got the roles reversed there.\
 
 #“G“VŒó
@@ -85,7 +85,7 @@ Face:remilia,•
 Why did you do such a thing?\
 
 Face:udonge,“{
-It's an emergency\, so I came here
+It's an emergency, so I came here
 thinking that you might have some clues!\
 
 Face:remilia,Œˆ
@@ -139,8 +139,8 @@ You... made the weather strange...
 so you could watch the moon?\
 
 Face:udonge,•‰
-Yeah\, yeah.
-I'm kinda busy\,
+Yeah, yeah.
+I'm kinda busy,
 so I'll take my leave.\
 
 Face:remilia,“{

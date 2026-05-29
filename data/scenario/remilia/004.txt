@@ -44,7 +44,7 @@ Object:data/scenario/effect/Stage5.bmp,1,256,352
 Sleep:60
 
 Face:remilia,ïÅ
-Yes\, step right up!\
+Yes, step right up!\
 Face:remilia,
 Hide:1
 Sleep:30
@@ -73,12 +73,12 @@ Face:youmu,äæ
 I was forcefully dragged over here.\
 
 Face:remilia,ó]
-Ah\, stop whispering.@
+Ah, stop whispering.@
 Haven't you tampered with the climate before?\
 
 Face:youmu,ïÅ
 The climate?@
-No\, that was Lady Yuyuko's...\
+No, that was Lady Yuyuko's...\
 
 Face:remilia,ó]
 Then it's settled!
@@ -105,10 +105,10 @@ End:
 Label:Lose
 
 Face:youmu,òf
-You're bored\, aren't you.\
+You're bored, aren't you.\
 
 Face:youmu,ïÅ
-The number of ghosts has been decreasing lately\,
+The number of ghosts has been decreasing lately,
 so maybe you could look into that?\
 
 
@@ -148,7 +148,7 @@ By making the weather strange?\
 #0ÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇR
 Face:youmu,ïâ
 The weather... ?
-Oh\, you mean making snow fall by the manor?\
+Oh, you mean making snow fall by the manor?\
 
 Face:remilia,ã¡
 Eh? Snow?\
@@ -161,10 +161,10 @@ Eh? Eh?
 What are you talking about?\
 
 Face:youmu,ïâ
-I'll help you investigate\, then.\
+I'll help you investigate, then.\
 
 Face:remilia,äæ
-Ah\, okay.
+Ah, okay.
 I'm counting on you.\
 
 Hide:1

@@ -53,7 +53,7 @@ So this is Heaven...?\
 Face:sakuya,ïÅ
 The land above the clouds
 where there is no bad weather.\
-Such a luxurious world\,@
+Such a luxurious world,@
 
 Face:sakuya,ó]
 escaping from the calamities of the earth...\
@@ -107,17 +107,17 @@ Action:tenshi,139
 #sleep,30
 
 Face:sakuya,ã¡
-Key-\, keystone?\
+Key-, keystone?\
 
 Face:tenshi,ïÅ
-Yes\, since the keystone is floating in space\,
+Yes, since the keystone is floating in space,
 the earthquakes won't stop.\
 
 Face:tenshi,ä
-The Earth lives on\, and the land is plentiful.\
+The Earth lives on, and the land is plentiful.\
 
 Face:sakuya,ïÅ
-Well\, I think it's best if
+Well, I think it's best if
 earthquakes just cease to exist.\
 
 
@@ -132,8 +132,8 @@ Face:sakuya,äæ
 Um...\
 
 Face:sakuya,ïÅ
-Well\, the midsummer snow? No\, the scarlet mist.@
-Yes\, I was interested in the scarlet mist so I...\
+Well, the midsummer snow? No, the scarlet mist.@
+Yes, I was interested in the scarlet mist so I...\
 
 Face:tenshi,ó]
 So you came all the way to Heaven for that?\
@@ -153,7 +153,7 @@ The scarlet mist is pulled up here by my sword.\
 
 Face:tenshi,ïÅ
 But you still haven't seen through my objective.@
-That in itself\, is of no value to you.\
+That in itself, is of no value to you.\
 
 Face:sakuya,òf
 Just what are you saying...\
@@ -190,8 +190,8 @@ Face:sakuya,ì{
 but I'm getting rather pissed off.\
 
 Face:tenshi,ïÅ
-Even if you are pissed off\, there's no way
-you can resolve my incident\, is there?\
+Even if you are pissed off, there's no way
+you can resolve my incident, is there?\
 
 #0ÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇR
 Face:tenshi,òf
@@ -206,16 +206,16 @@ for quite some time now.\
 Bgm:data/bgm/st05.ogg
 
 Face:sakuya,ïÅ
-However\, you've made one unfortunate mistake!\
+However, you've made one unfortunate mistake!\
 
 Face:sakuya,åà
-I'm not just some mountain climber\,
-I am also a part-time resolver of incidents\,
+I'm not just some mountain climber,
+I am also a part-time resolver of incidents,
 the number one maid in Gensokyo!\
 
 Face:tenshi,ó]
 Ha! I'll give you credit for noticing 
-the scarlet mist rising from people's bodies\,\
+the scarlet mist rising from people's bodies,\
 
 Face:tenshi,ïÅ
 but you didn't notice what

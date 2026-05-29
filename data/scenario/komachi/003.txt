@@ -49,11 +49,11 @@ Object:data/scenario/effect/Stage4.bmp,1,256,352
 Sleep:60
 
 Face:komachi,ïÅ
-For a human\, to be alive is to be lost.\
+For a human, to be alive is to be lost.\
 
 Face:komachi,òf
 They gave this place the name
-Bamboo Forest of the Lost\,
+Bamboo Forest of the Lost,
 perhaps wanting to make it a symbol of the living.\
 
 Face:komachi,ïÅ
@@ -72,17 +72,17 @@ Action:udonge,102
 Sleep:20
 
 Face:udonge,ïÅ
-Are you\, perhaps\, lost?\
+Are you, perhaps, lost?\
 
 # ñºëOÇÃÉeÉçÉbÉv
 Object:data/scenario/udonge/effect/Name.bmp,2,352,304
 
 Face:udonge,ã¡
-What\, you're a shinigami?
+What, you're a shinigami?
 The one famous for skipping work.\
 
 Face:komachi,ó]
-Should I start working here\, then?\
+Should I start working here, then?\
 
 Face:udonge,äæ
 I'll have to pass on that.\
@@ -93,7 +93,7 @@ Action:udonge,103
 Sleep:60
 
 Face:komachi,ã¡
-Oh\, the weather just cleared\,
+Oh, the weather just cleared,
 but suddenly there's a breeze.\
 
 Face:udonge,ïÅ
@@ -105,27 +105,27 @@ of imbalance in the heart.\
 
 Face:komachi,ó]
 A ghost who changes depending on
-who they're with\, I predict.\
+who they're with, I predict.\
 
 #0ÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇR
 Face:komachi,òf
-Skillful in worldly affairs\,
+Skillful in worldly affairs,
 but weak to ailments of the mind.\
 
 Face:udonge,òf
 What are you talking about?\
 
 Face:komachi,ó]
-Hmmm\, your weakness is becoming
+Hmmm, your weakness is becoming
 difficult to perceive. You don't seem to
 be wandering aimlessly anymore.\
 
 Face:udonge,ì{
-I don't understand what you're talking about\,
-but if you're not lost\, please leave quickly.\
+I don't understand what you're talking about,
+but if you're not lost, please leave quickly.\
 
 Face:komachi,ä
-My\, my\, don't be like that...
+My, my, don't be like that...
 Just playing around a little bit should be fine.\
 
 
@@ -176,22 +176,22 @@ The wind has already died down quite a bit.
 Am I almost out of time?\
 
 Face:komachi,ó]
-Putting that aside\,
+Putting that aside,
 where do you plan to go when you die?\
 
 Face:udonge,ïâ
 Why do I have to think about my own afterlife?\
 
 Face:komachi,ä
-It is my job\, you know.\
+It is my job, you know.\
 
 Face:udonge,ïâ
-Well\, I'd like to cross
+Well, I'd like to cross
 the Sanzu River and take it easy.\
 
 Face:komachi,ïÅ
-Oh\, interesting.
-... Well\, hold on to that dream.\
+Oh, interesting.
+... Well, hold on to that dream.\
 
 Hide:1
 Result:

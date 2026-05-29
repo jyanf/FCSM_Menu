@@ -34,13 +34,13 @@ Bgm:data/bgm/ta06.ogg
 # @ˆê–‡–Ú‚ÍêŠ‚ğ¦‚·ŠÈ’P‚ÈƒCƒ‰ƒXƒg‚ª“ü‚é—\’è‚Å‚·
 #0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
   Summer at the Hakurei Shrine.@
-  It was the shrine at the eastern border of Gensokyo\, but now it's broken down.@
-  It still serves its purpose as a shrine\, but not as a place to live.\
+  It was the shrine at the eastern border of Gensokyo, but now it's broken down.@
+  It still serves its purpose as a shrine, but not as a place to live.\
 
   They said the shrine had been destroyed in an earthquake.@
   Aya worried about how to report this fact.@
-  After all\, nobody would read a newspaper that
-  didn't report on interesting\, unusual things.\
+  After all, nobody would read a newspaper that
+  didn't report on interesting, unusual things.\
 
 
 # “ñ–‡–Ú
@@ -52,11 +52,11 @@ CG:data/scenario/aya/effect/ED001.bmp,96,16,50
 #0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
 
 Aya    "This is very strange.@
-        The shrine was completely leveled\, but it seems nobody aside from
+        The shrine was completely leveled, but it seems nobody aside from
         the shrine maiden felt the earthquake."\
 
 Aya    "Perhaps the shrine...@
-        was weak against earthquakes\, and had poor structure?
+        was weak against earthquakes, and had poor structure?
         Maybe it was a building defect!?"\
 
 Aya    "I think I can write something about that.@
@@ -67,23 +67,23 @@ CG:data/scenario/aya/effect/ED002.bmp,96,16,50
 # ·‚èã‚ª‚Á‚Ä‚¢‚é•¶‚ÌŒã‚ë‚©‚ç—â‚ß‚½—ì–²
 #0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
 
-Reimu  "What are you all excited about\, anyway?"@
-Aya    "Oh\, are you back now?"@
-Reimu  "Wow\, I'm really tired!"\
+Reimu  "What are you all excited about, anyway?"@
+Aya    "Oh, are you back now?"@
+Reimu  "Wow, I'm really tired!"\
 
-Aya    "So\, what happened after that?"@
-Reimu  "I don't really get it\, but I met someone really annoying above the clouds\,
+Aya    "So, what happened after that?"@
+Reimu  "I don't really get it, but I met someone really annoying above the clouds,
         and I got her to promise to fix my shrine."\
 
-Aya    "Hmm? So\, you mean..."@
-Reimu  "She was happy to take over\, but\, well..."@
-Aya    "Well\, at least the shrine will be repaired\, right?"\
+Aya    "Hmm? So, you mean..."@
+Reimu  "She was happy to take over, but, well..."@
+Aya    "Well, at least the shrine will be repaired, right?"\
 
-Reimu  "That's true\, but..."@
-Aya    "Well\, then\, I should take some pictures from before it's repaired."@
+Reimu  "That's true, but..."@
+Aya    "Well, then, I should take some pictures from before it's repaired."@
 Reimu  "Why?"\
 
-Aya    "Judging by your story\, it sounds like they'll be useful someday."\
+Aya    "Judging by your story, it sounds like they'll be useful someday."\
 
 FadeBgm:2000,0
 CG:BLACK,0,0,15

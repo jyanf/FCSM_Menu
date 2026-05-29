@@ -61,7 +61,7 @@ Face:yuyuko,普
 Heaven is even larger than the Netherworld.\
 
 Face:yuyuko,惑
-It's called Heaven\, but they're
+It's called Heaven, but they're
 separated like many different worlds.\
 
 Face:yuyuko,余
@@ -106,8 +106,8 @@ Action:tenshi,139
 #sleep,30
 
 Face:tenshi,余
-Even the warmth of summer\,
-with the passing of time\,
+Even the warmth of summer,
+with the passing of time,
 will cool and turn into winter.\
 
 #Name:非想非非想天の娘　比那名居天子
@@ -125,13 +125,13 @@ Face:tenshi,余
 But... how are you making it snow?\
 
 Face:yuyuko,驚
-Well\, see\, humans with
-enough diligence\, can do anything.\
+Well, see, humans with
+enough diligence, can do anything.\
 
 Face:yuyuko,普
-Yes\, compose your heart and free yourself
+Yes, compose your heart and free yourself
 from all thought and you can live freely.
-That is\, as a manner of speaking.\
+That is, as a manner of speaking.\
 
 Face:yuyuko,余
 I'm dead though.\
@@ -139,11 +139,11 @@ I'm dead though.\
 
 Face:tenshi,嬉
 Ahahahaha.
-I yield\, I yield.
+I yield, I yield.
 How did you find out so quickly?\
 
 Face:tenshi,余
-Wow\, I never guessed there were
+Wow, I never guessed there were
 people like you living on the ground.\
 
 Face:yuyuko,驚
@@ -153,12 +153,12 @@ What are you saying?\
 
 Face:tenshi,嬉
 Your purpose here is to defeat me
-and return the weather to normal\, isn't it?\
+and return the weather to normal, isn't it?\
 
 
 Face:yuyuko,怒
-No\, no\, absolutely not. If it returned 
-to normal so quickly\, I'd be quite vexed.\
+No, no, absolutely not. If it returned 
+to normal so quickly, I'd be quite vexed.\
 
 PlayBgm:data/bgm/st05.ogg
 
@@ -167,7 +167,7 @@ Eh?\
 
 Face:yuyuko,余
 After all that effort invested in making this
-summer snow\, wouldn't it be better to
+summer snow, wouldn't it be better to
 enjoy it for a bit longer?\
 
 
@@ -178,14 +178,14 @@ Face:tenshi,汗
 Am I being looked down as a fool?\
 
 Face:yuyuko,嬉
-No\, no... I wouldn't do that to your Highness.\
+No, no... I wouldn't do that to your Highness.\
 
 Face:tenshi,普
-Well\, whatever.\
+Well, whatever.\
 
 Face:tenshi,決
 You shall be the first in the line of
-the earth-dwellers\, so\, accept the
+the earth-dwellers, so, accept the
 opening performance of this battle!\
 
 

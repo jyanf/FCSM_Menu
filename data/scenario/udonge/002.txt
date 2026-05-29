@@ -56,7 +56,7 @@ Face:udonge,äæ
 ... Ehh?\
 
 Face:udonge,ó]
-What\, that ghost played a trick on me.
+What, that ghost played a trick on me.
 The shrine isn't rebuilt at all!\
 
 Sleep:30
@@ -76,7 +76,7 @@ Face:yukari,ïÅ
 The shrine's completion ceremony has already ended.\
 
 Face:udonge,äæ
-Completion ceremony\, you say...
+Completion ceremony, you say...
 isn't it not even completed yet?\
 
 
@@ -84,8 +84,8 @@ isn't it not even completed yet?\
 Object:data/scenario/yukari/effect/Name.bmp,2,352,304
 
 Face:yukari,ó]
-Oh\, don't fret the little details.
-So\, what are you here for this late?\
+Oh, don't fret the little details.
+So, what are you here for this late?\
 
 Face:udonge,ì{
 There's something I'm looking into...\
@@ -148,7 +148,7 @@ Action:udonge,202
 
 #é©ìVåÛ
 Face:udonge,ì{
-What\, there's nothing wrong with investigating
+What, there's nothing wrong with investigating
 the shrine. I can't understand how
 the shrine was destroyed.\
 
@@ -156,7 +156,7 @@ Face:yukari,ïâ
 The shrine isn't anything for you to investigate.\
 
 Face:udonge,ì{
-But\, the earthquakes...\
+But, the earthquakes...\
 
 Hide:1
 
@@ -168,27 +168,27 @@ Action:tenshi,105
 Action:tenshi,106
 
 Face:tenshi,ïâ
-Ah\, that hurt...\
+Ah, that hurt...\
 
 Face:udonge,ã¡
-A\, a Celestial...!?\
+A, a Celestial...!?\
 
 Face:tenshi,ïâ
-Aaah\, the shrine has been wrecked.\
+Aaah, the shrine has been wrecked.\
 
 Face:udonge,òf
 ?\
 
 Face:udonge,òf
-Ah\, I've heard about it.
+Ah, I've heard about it.
 You're the one who broke down the shrine.\
 
 Face:tenshi,ïâ
-Well\, yes. But that was last time.\
+Well, yes. But that was last time.\
 
 Face:udonge,òf
 ???@
-Well\, whatever.
+Well, whatever.
 I have a lot of questions I'd like to ask you.\
 
 Hide:1

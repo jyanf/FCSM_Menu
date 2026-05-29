@@ -50,24 +50,24 @@ Every day she's been going on about
 weather this and clouds that.\
 
 Face:alice,ïÅ
-Yes\, she said something about that before.@
+Yes, she said something about that before.@
 Clouds... could she mean those scarlet clouds?\
 
 Face:alice,òf
 Hmm.@
-The clouds\, is it...\
+The clouds, is it...\
 
 Face:sakuya,ïÅ
 It sounds like you have your own
 problems to worry about.
-However\, I'm afraid you need to be punished...\
+However, I'm afraid you need to be punished...\
 
 Face:alice,ã¡
-What\, really?\
+What, really?\
 
 Face:sakuya,åà
-Yes\, we can't have you setting
-a bad example for others\, after all.\
+Yes, we can't have you setting
+a bad example for others, after all.\
 
 #êÌì¨äJénèàóù
 Action:alice,3
@@ -81,8 +81,8 @@ End:
 Label:Lose
 
 Face:sakuya,ïÅ
-Originally\, the only user
-of this library was Miss Patchouli\,@
+Originally, the only user
+of this library was Miss Patchouli,@
 
 
 Face:sakuya,ó]
@@ -121,11 +121,11 @@ What was it you wanted to ask about?\
 
 Face:alice,ïÅ
 I saw some large-scale omens that an earthquake
-is going to occur\, so I wanted to
+is going to occur, so I wanted to
 find out more about them...\
 
 Face:alice,òf
-At any rate\, those scarlet clouds
+At any rate, those scarlet clouds
 are definitely abnormal...\
 
 Face:alice,åà

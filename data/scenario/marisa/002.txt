@@ -41,15 +41,15 @@ Can you see them clearly from here?
 The clouds around the Youkai Mountain.\
 
 Face:marisa,ïÅ
-I can't see anything\, just bad weather.\
+I can't see anything, just bad weather.\
 
 Face:udonge,ì{
-Unnaturally colored clouds\,
-unnatural climate\,
+Unnaturally colored clouds,
+unnatural climate,
 what it all means is that...\
 
 Face:marisa,ì{
-Ah\, whatever you say then.
+Ah, whatever you say then.
 I just want to take back the hot summer.\
 
 
@@ -65,7 +65,7 @@ End:
 Label:Lose
 
 Face:udonge,òf
-At any rate\, an earthquake struck the shrine?
+At any rate, an earthquake struck the shrine?
 What an odd occurrence.\
 
 End:

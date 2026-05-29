@@ -53,7 +53,7 @@ Face:iku,òf
 What that youkai just said worries me...\
 
 Face:iku,ïÅ
-"Under the roof\," was it?\
+"Under the roof," was it?\
 
 Face:iku,
 Hide:1
@@ -67,15 +67,15 @@ Action:tenshi,102
 Sleep:20
 
 Face:tenshi,ïÅ
-Oh\, you're...\
+Oh, you're...\
 
 Face:tenshi,òf
 The Dragon Palace's messenger...
-Um\, what was it?\
+Um, what was it?\
 
 Face:iku,òf
-Iku\, of the Nagae.
-Eldest Daughter\, so you were
+Iku, of the Nagae.
+Eldest Daughter, so you were
 staying in such a place.\
 
 # ñºëOÇÃÉeÉçÉbÉv
@@ -91,14 +91,14 @@ It can no longer be avoided.\
 
 Face:iku,òf
 I was supposed to make a report before
-warning the people of the lower world\,\
+warning the people of the lower world,\
 
 Face:iku,ó]
-but all of the Hinanawi clan was away\,
+but all of the Hinanawi clan was away,
 So I went to warn everyone else first.\
 
 Face:tenshi,òf
-My\, my\, could this be a report after the fact?\
+My, my, could this be a report after the fact?\
 
 Face:iku,òf
 We have no idea when the earthquake will strike.
@@ -129,15 +129,15 @@ Face:iku,ì{
 
 #0ÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇR
 Face:iku,ì{
-If an earthquake doesn't happen when it's supposed to\,
+If an earthquake doesn't happen when it's supposed to,
 tension builds up without relief in the ground.\
 
 Face:iku,ó]
-Eldest Daughter\, do you have a
+Eldest Daughter, do you have a
 good explanation for what you did?\
 
 Face:tenshi,ä
-Nope. When the time comes\, it comes.\
+Nope. When the time comes, it comes.\
 
 PlayBgm:data/bgm/st05.ogg
 Face:iku,ì{
@@ -149,12 +149,12 @@ A mere messenger from the Dragon Palace
 such as you has no right to get angry.\
 
 Face:iku,åà
-No\, the Eldest Daughter has been spoiled
+No, the Eldest Daughter has been spoiled
 a little too much. I'll have you learn
 from a painful experience for once.\
 
 Face:tenshi,åà
-Hmph\, I've made no mistakes.
+Hmph, I've made no mistakes.
 The Divine Law lies with me!\
 
 Action:tenshi,103

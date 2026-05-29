@@ -59,7 +59,7 @@ Face:marisa,ïÅ
 Why the hell is it so cold today...\
 
 Face:marisa,ã¡
-... Wha\, it's snowing!?\
+... Wha, it's snowing!?\
 
 Face:yuyuko,ïÅ
 Good morning.\
@@ -69,13 +69,13 @@ Object:data/scenario/marisa/effect/Name.bmp,2,352,304
 
 Face:marisa,òf
 Oh nooo...
-I thought I overslept a little\, but...\
+I thought I overslept a little, but...\
 
 Face:marisa,òf
 I can't believe I slept in all the way until winter!\
 
 Face:yuyuko,òf
-Oh dear\, you look as if you were possessed.\
+Oh dear, you look as if you were possessed.\
 
 Face:marisa,äæ
 I'm not possessed.\
@@ -96,7 +96,7 @@ End:
 Label:Lose
 
 Face:marisa,ã¡
-Whaaa\, what's the date today?\
+Whaaa, what's the date today?\
 
 Face:marisa,òf
 What the heck is happening?\
@@ -125,7 +125,7 @@ Action:yuyuko,202
 #é©ÉLÉÉÉâìVåÛ
 
 Face:yuyuko,ó]
-It's cooler now\, isn't it?\
+It's cooler now, isn't it?\
 
 Face:marisa,ïâ
 Eh? Is it summer? Now?\

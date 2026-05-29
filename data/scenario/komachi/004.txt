@@ -62,7 +62,7 @@ Action:komachi,51
 Sleep:60;
 
 Face:komachi,ïÅ
-Hmm\, not even close to being fully rebuilt yet.\
+Hmm, not even close to being fully rebuilt yet.\
 
 Face:komachi,òf
 It looks like this'll take some time.\
@@ -80,15 +80,15 @@ Sleep:20
 Object:data/scenario/reimu/effect/Name.bmp,2,352,304
 
 Face:reimu,ïÅ
-Oh\, slacker.
+Oh, slacker.
 Did you come here for worship?\
 
 Face:komachi,ïÅ
-...Mmm\, it's warm.
+...Mmm, it's warm.
 Fine weather with not a single cloud in the sky.\
 
 Face:reimu,òf
-She said that after a while\, the weather should
+She said that after a while, the weather should
 return to normal. But it seems that
 it's still a ways off.\
 
@@ -96,21 +96,21 @@ it's still a ways off.\
 Face:komachi,ïÅ
 Clear weather means the harmful sun's rays
 and earth's vitality just pass you by.
-Hot in the daytime\, cool at night.
+Hot in the daytime, cool at night.
 
 Face:komachi,òf
-You're straight-shooting\, but not very accomodating\,
+You're straight-shooting, but not very accomodating,
 and you're not at all ruthless or kind.\
 
 Face:reimu,ì{
-Oh\, shut up.
+Oh, shut up.
 If you've come to be an annoyance just go away.\
 
 Face:reimu,äæ
-Wait\, you just came to skip work\, didn't you?\
+Wait, you just came to skip work, didn't you?\
 
 Face:komachi,ã¡
-Wow\, good guess.\
+Wow, good guess.\
 
 PlayBgm:data/bgm/st10.ogg
 Action:komachi,3
@@ -124,11 +124,11 @@ End:
 Label:Lose
 
 Face:reimu,ó]
-If you have that much money\,
+If you have that much money,
 donate some of that already.\
 
 Face:reimu,ïÅ
-But\, these coins...
+But, these coins...
 which country are these from?\
 
 End:
@@ -156,16 +156,16 @@ Action:komachi,202
 #Sleep:60
 
 Face:komachi,òf
-Well then\, I guess it's
+Well then, I guess it's
 about time I got back to my work.\
 
 Face:reimu,ïâ
-It must be nice\, being able
+It must be nice, being able
 to pick your own work hours.\
 
 Face:komachi,ïÅ
-Because of that\, I always
-have a lot of work\, though.\
+Because of that, I always
+have a lot of work, though.\
 
 Face:komachi,
 Face:reimu,
@@ -183,53 +183,53 @@ Action:tenshi,103
 Action:tenshi,106
 
 Face:tenshi,ïÅ
-My\, what fun-looking thing are you doing?\
+My, what fun-looking thing are you doing?\
 
 # ñºëOÇÃÉeÉçÉbÉv
 Object:data/scenario/tenshi/effect/Name.bmp,2,352,304
 
 Face:komachi,ã¡
-Wait\, just who are you?\
+Wait, just who are you?\
 
 Face:tenshi,ä
 I was asked to rebuild this shrine.
-Right now\, I'm carrying out those plans.\
+Right now, I'm carrying out those plans.\
 
 Face:komachi,ïÅ
-That would make you... the Celestial\, right?\
+That would make you... the Celestial, right?\
 
 Face:tenshi,ã¡
 And you are...?
 Wah! Could you be a shinigami?!\
 
 Face:komachi,åà
-That's right\, a shinigami whose presence
+That's right, a shinigami whose presence
 silences crying children.\
 
 Face:tenshi,òf
-If you're a shinigami \, then shouldn't you
+If you're a shinigami , then shouldn't you
 have no business with a celestial like me?\
 
 Face:komachi,ïÅ
 Even celestials have lifespans like humans.
-However\, their lives do not end
+However, their lives do not end
 when their lifespan does.\
 
 Face:komachi,òf
-So you do understand what that means\, then?\
+So you do understand what that means, then?\
 
 Face:komachi,ó]
-The way I see it\, you've lived
+The way I see it, you've lived
 long enough for several lifetimes.\
 
 Face:komachi,òf
-And every time\, you fight the shinigami that
-comes to bring you back\, don't you?\
+And every time, you fight the shinigami that
+comes to bring you back, don't you?\
 
 FadeBgm:200,0
 
 Face:tenshi,ïÅ
-Heh heh\,@
+Heh heh,@
 Face:tenshi,ä
 that's right.\
 

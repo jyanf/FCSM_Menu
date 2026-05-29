@@ -44,7 +44,7 @@ Object:data/scenario/effect/StageFinal.bmp,1,256,352
 Sleep:60
 
 Face:remilia,ïÅ
-As I thought\, this isn't for me.
+As I thought, this isn't for me.
 This "armchair detective" thing.\
 
 Face:remilia,ä
@@ -52,8 +52,8 @@ Sakuyaaa!
 You can stop searching for criminals...\
 
 Face:remilia,ä
-The snowy Netherworld\, the shrine-destroying
-earthquake\, and all the other things happening...
+The snowy Netherworld, the shrine-destroying
+earthquake, and all the other things happening...
 I want you to check those places for some clues.\
 
 Face:remilia,
@@ -83,7 +83,7 @@ most suspicious character yet!\
 Action:yukari,103
 
 Face:yukari,ïÅ
-Since you can't blot out the sun\,
+Since you can't blot out the sun,
 it looks like you don't want to go out.\
 
 #ÇOÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇR
@@ -91,9 +91,9 @@ Face:remilia,ã¡
 Huh?\
 
 Face:yukari,ïÅ
-The criminal is above the clouds\,
+The criminal is above the clouds,
 where you can't escape from the sunlight.
-Thus\, you don't want to go there.\
+Thus, you don't want to go there.\
 
 Face:remilia,ã¡
 Eh? What's that?
@@ -107,7 +107,7 @@ Face:yukari,ïÅ
 How can you think clearly without going out?\
 
 Face:yukari,ïÅ
-If you're at the scene of the crime\, that sight
+If you're at the scene of the crime, that sight
 will be burnt into you. No one can escape from
 their first impression of the crime scene.\
 
@@ -128,20 +128,20 @@ PlayBgm:data/bgm/st05.ogg
 
 Face:remilia,ó]
 The one controlling the weather
-isn't from the ground\, right?\
+isn't from the ground, right?\
 
 Face:remilia,ïÅ
-The snow\, the shrine\, and the earthquake
+The snow, the shrine, and the earthquake
 are all unnecessary information.\
 
 Face:remilia,òf
 But I can't go out myself.\
 
 Face:remilia,ó]
-Thus\, I have to let someone else go there for me.\
+Thus, I have to let someone else go there for me.\
 
 Face:yukari,åà
-Oh\, you want me to go there for you?\
+Oh, you want me to go there for you?\
 
 Face:remilia,åà
 Isn't that why you're here?\

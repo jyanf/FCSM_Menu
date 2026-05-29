@@ -71,7 +71,7 @@ That fierce face.\
 Object:data/scenario/youmu/effect/Name.bmp,2,352,304
 
 Face:sakuya,ïÅ
-No\, it's another unusual phenomenon...\
+No, it's another unusual phenomenon...\
 
 Hide:1
 
@@ -98,11 +98,11 @@ If it's that then I think it's already out.\
 
 
 Face:sakuya,ïÅ
-How strange\, how strange.
-Let me pass through\, will you?\
+How strange, how strange.
+Let me pass through, will you?\
 
 Face:youmu,òf
-I don't know what's going on\,
+I don't know what's going on,
 but I don't intend to let you pass.\
 
 
@@ -180,10 +180,10 @@ Action:yuyuko,103
 Action:yuyuko,106
 
 Face:yuyuko,ïÅ
-What's strange\, Youmu?\
+What's strange, Youmu?\
 
 Face:youmu,ïâ
-Wahh\, Miss Yuyuko.\
+Wahh, Miss Yuyuko.\
 
 Face:sakuya,ã¡
 ... eh?\
@@ -199,11 +199,11 @@ Face:yuyuko,ä
 There's nothing strange happening around me.\
 
 Face:yuyuko,ä
-If you want to come to my place\,
+If you want to come to my place,
 then make yourself at home.\
 
 Face:sakuya,ïÅ
-No\, I feel there's something
+No, I feel there's something
 extremely strange going on...\
 
 Hide:1

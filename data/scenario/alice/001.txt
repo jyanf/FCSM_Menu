@@ -51,7 +51,7 @@ Bizarre weather like this
 is way beyond simple hail.\
 
 
-Face:alice\,
+Face:alice,
 Hide:1
 Sleep:30
 
@@ -64,17 +64,17 @@ Action:youmu,102
 Sleep:20
 
 Face:youmu,普
-Hold it\, you can't just waltz in here...\
+Hold it, you can't just waltz in here...\
 
 # 名前のテロップ
 Object:data/scenario/youmu/effect/Name.bmp,2,352,304
 
 Face:alice,余
-I'd heard that Hakugyokurou was in bad shape\,
+I'd heard that Hakugyokurou was in bad shape,
 just like the shrine was.\
 
 I thought that meant it had collapsed
-in the earthquake too\, but...\
+in the earthquake too, but...\
 
 Face:alice,驚
 To think you were having such a
@@ -101,13 +101,13 @@ Face:youmu,普
 Earthquakes?\
 
 Face:alice,決
-I'm just going to take a look around\, okay?\
+I'm just going to take a look around, okay?\
 
 Face:youmu,汗
-No\, I'm telling you it's not okay.\
+No, I'm telling you it's not okay.\
 
 Face:youmu,普
-Whatever your reasons are\,
+Whatever your reasons are,
 I can't just let you wander into the manor.\
 
 #戦闘開始
@@ -158,12 +158,12 @@ What makes you think there's
 going to be an earthquake...?\
 
 Face:alice,普
-The endlessly falling hail\, the scarlet clouds...
+The endlessly falling hail, the scarlet clouds...
 All this strange weather may be
 a harbinger of an earthquake.\
 
 Face:alice,普
-In fact\, the shrine has already been leveled.\
+In fact, the shrine has already been leveled.\
 
 Face:youmu,負
 Eh?\

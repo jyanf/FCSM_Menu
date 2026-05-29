@@ -47,7 +47,7 @@ Sleep:30
 
 #0ÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇR
 Face:marisa,ïÅ
-I've heard of rain dancing\,
+I've heard of rain dancing,
 but what do you do when you want the reverse?\
 
 Face:marisa,ó]
@@ -72,7 +72,7 @@ Are you here?\
 Object:data/scenario/reimu/effect/Name.bmp,2,352,304
 
 Face:marisa,ïÅ
-Not right now\, nope.\
+Not right now, nope.\
 
 Hide:1
 # âıê∞
@@ -81,36 +81,36 @@ Sleep:50
 
 
 Face:reimu,äæ
-Oh\, really? But you're right in front of me.\
+Oh, really? But you're right in front of me.\
 
 Face:marisa,ã¡
 Ohhh?
-I was just saying that the sun isn't here\,\
+I was just saying that the sun isn't here,\
 
 Face:marisa,ã¡
-but the moment you came\, it became sunny!\
+but the moment you came, it became sunny!\
 
 Face:reimu,ïÅ
 Because it's been nothing but <color FFFFFF>sun</color> recently.\
 
 Face:reimu,òf
-At this rate\, all the plants are going to die.\
+At this rate, all the plants are going to die.\
 
 Face:marisa,ì{
 Look at this forest!
-If the rain keeps falling\,
+If the rain keeps falling,
 the forest's gonna rot!\
 
 Face:reimu,ì{
 I know nothing of that.\
 
 Face:marisa,ïÅ
-Oh\, I get it.\
+Oh, I get it.\
 
 Face:marisa,åà
 You're the sun.
 The weather's bad because
-you're lazing around\, right?\
+you're lazing around, right?\
 
 Face:marisa,
 
@@ -163,7 +163,7 @@ Are you okay from the earthquake this morning?\
 
 Face:marisa,ïÅ
 Earthquake?
-I didn't really feel anything\, actually.\
+I didn't really feel anything, actually.\
 
 Face:reimu,ïâ
 How can that be...
@@ -198,37 +198,37 @@ Face:udonge,òf
 You had a store?\
 
 Face:marisa,òf
-Actually\, I want to open shop\,
-but the times are hard lately\, you know?\
+Actually, I want to open shop,
+but the times are hard lately, you know?\
 
 Face:udonge,ïÅ
-Anyway\, it seems like something horrible is
-going to happen\, so I came to you.\
+Anyway, it seems like something horrible is
+going to happen, so I came to you.\
 
 Face:marisa,ïÅ
-It was just sunny\, but it's all strange now...
+It was just sunny, but it's all strange now...
 Is this "something horrible?"\
 
 Face:udonge,ó]
-No\, no\, it's an earthquake!\
+No, no, it's an earthquake!\
 
 Face:reimu,ïâ
-An earthquake\, you say?
-Well\, there was already one this morning.\
+An earthquake, you say?
+Well, there was already one this morning.\
 
 Face:udonge,òf
 Eh? I didn't feel anything this morning...\
 
 Face:udonge,ïÅ
-But if an earthquake is going to happen\,
-it wouldn't be a small tremor like that\, I think.\
+But if an earthquake is going to happen,
+it wouldn't be a small tremor like that, I think.\
 
 
 Face:marisa,ïÅ
 How do you know these things?\
 
 Face:udonge,ïÅ
-Hmph\, follow me.\
+Hmph, follow me.\
 
 Hide:1
 

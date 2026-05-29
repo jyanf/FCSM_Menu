@@ -74,7 +74,7 @@ Whew.\
 Object:data/scenario/patchouli/effect/Name.bmp,2,352,304
 
 Face:tenshi,ã¡
-My\, for an inactive person
+My, for an inactive person
 you're here rather early.\
 
 Face:patchouli,ó]
@@ -82,18 +82,18 @@ Oh it's you.
 I made a mistake last time.\
 
 Face:tenshi,ó]
-You did\, didn't you.\
+You did, didn't you.\
 
 Face:patchouli,òf
 You're the culprit behind everything.
-You don't really put out a strong aura\,
+You don't really put out a strong aura,
 so I didn't notice until a little while ago.\
 
 Face:tenshi,ä
 You're just slow.\
 
 Face:tenshi,òf
-However\, someone who is truly strong
+However, someone who is truly strong
 wouldn't scatter their aura about everywhere.\
 
 Face:tenshi,òf
@@ -101,13 +101,13 @@ Standing out while winning a match
 can mean defeat as well.\
 
 Face:patchouli,äæ
-Well\, the disruption seems to be over\, but
+Well, the disruption seems to be over, but
 this bad feeling I have still won't disappear.\
 
 Face:tenshi,ä
-Oh\, you want to fight?
+Oh, you want to fight?
 This time I don't plan to
-lose on purpose\, you know.\
+lose on purpose, you know.\
 
 PlayBgm:data/bgm/st15.ogg
 Action:tenshi,3
@@ -121,7 +121,7 @@ Face:patchouli,ïÅ
 You're nothing to talk about.\
 
 Face:patchouli,ó]
-Now\, after this is the banquet in the sky.
+Now, after this is the banquet in the sky.
 Too bad Remi can't come.\
 
 End:
@@ -146,13 +146,13 @@ Action:patchouli,200
 Action:tenshi,202
 
 Face:tenshi,ó]
-Huh\, not even worth the effort.\
+Huh, not even worth the effort.\
 
 Face:patchouli,ïâ
 Mugyuu~\
 
 Face:tenshi,ïÅ
-After this\, visitors are going to keep coming\,
+After this, visitors are going to keep coming,
 so I conserved my energy.\
 
 Hide:1

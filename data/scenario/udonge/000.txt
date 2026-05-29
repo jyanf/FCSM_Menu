@@ -69,7 +69,7 @@ Long time no see.\
 Object:data/scenario/remilia/effect/Name.bmp,2,352,304
 
 Face:remilia,ïÅ
-Oh? I was wondering who had called on me\,
+Oh? I was wondering who had called on me,
 but it's just the one from back then.\
 
 Face:udonge,ïÅ
@@ -78,33 +78,33 @@ I was wondering if perhaps you had found anything.\
 
 Face:remilia,ã¡
 A disaster investigation?
-Oh\, there was indeed something like that.\
+Oh, there was indeed something like that.\
 
 Face:remilia,ó]
 I'd completely forgotten about it.\
 
 Face:udonge,òf
-In the end\, it looks like the shrine maiden
-resolved the matter. However\, I'm not
+In the end, it looks like the shrine maiden
+resolved the matter. However, I'm not
 very knowledgeable of the details...\
 
 Face:remilia,ó]
-The enemy was above the clouds\, right?\
+The enemy was above the clouds, right?\
 
 Face:udonge,ã¡
-Yes\, that's right.
+Yes, that's right.
 Have you heard about it?\
 
 Face:remilia,ïÅ
 I'd know even if I didn't hear about it.
-So\, what this? You're reporting to me?\
+So, what this? You're reporting to me?\
 
 Face:udonge,ó]
-No\, Reimu certainly did resolve the
+No, Reimu certainly did resolve the
 issues with the strange weather.\
 
 Face:udonge,òf
-However\, my concern has not been resolved.\
+However, my concern has not been resolved.\
 
 Face:remilia,ïÅ
 What could that be?\
@@ -112,10 +112,10 @@ What could that be?\
 #0ÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇR
 Face:udonge,òf
 It's about the earthquakes.
-It seems the land around the shrine has calmed down\,\
+It seems the land around the shrine has calmed down,\
 
 Face:udonge,òf
-however in the bamboo forest\, twisted bamboo
+however in the bamboo forest, twisted bamboo
 is growing... The issues with the earth
 haven't been cleared up.\
 
@@ -125,7 +125,7 @@ with the shrine such as you might know something.\
 
 Face:remilia,ó]
 Maybe so. Even if I did know
-something\, I wouldn't tell you.\
+something, I wouldn't tell you.\
 
 Face:udonge,ì{
 How mean.\
@@ -143,7 +143,7 @@ End:
 Label:Lose
 
 Face:remilia,ïÅ
-Earthquake\, huh?\
+Earthquake, huh?\
 
 Face:remilia,ä
 If one happens we'll just fly to the sky.
@@ -178,19 +178,19 @@ Face:remilia,ïâ
 I haven't noticed anything out of the ordinary.\
 
 Face:udonge,ïÅ
-I see\, well that's fine but...\
+I see, well that's fine but...\
 
 Face:udonge,äæ
 I'm suspicious of that Celestial.\
 
 Face:remilia,ïâ
-Well\, even if an earthquake occurs it'll be fine.
+Well, even if an earthquake occurs it'll be fine.
 At most there's only the 
 window glass to worry about.\
 
 Face:udonge,òf
-More than damage\, I'm worried she's
-plotting something unpleasant\, you know?\
+More than damage, I'm worried she's
+plotting something unpleasant, you know?\
 
 Hide:1
 Result:

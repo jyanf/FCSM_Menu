@@ -120,11 +120,11 @@ Face:tenshi,惑
 "Are you the one slaying all the ghosts?"\
 
 Face:youmu,普
-Uhhh\, is it you who's been slaying all the ghosts?\
+Uhhh, is it you who's been slaying all the ghosts?\
 
 
 Face:tenshi,嬉
-Yes\, it's me.@
+Yes, it's me.@
 
 #Name:非想非非想天の娘　比那名居天子
 # 名前のテロップ
@@ -133,11 +133,11 @@ Object:data/scenario/tenshi/effect/Name.bmp,2,352,304
 My name is Tenshi Hinanawi.\
 
 Face:tenshi,普
-This sword\, the Sword of Scarlet Thought\,
+This sword, the Sword of Scarlet Thought,
 lays bare ghosts and people's temperaments.\
 
 Face:tenshi,普
-This is how I created the scarlet mists\,\
+This is how I created the scarlet mists,\
 
 Face:tenshi,
 
@@ -152,8 +152,8 @@ Face:youmu,汗
 You're not much for conversation.\
 
 Face:tenshi,惑
-Oh\, really!
-You've come here to <color FF0000>punish me</color>\, is it?\
+Oh, really!
+You've come here to <color FF0000>punish me</color>, is it?\
 
 Face:tenshi,惑
 You're not proving to be much
@@ -161,26 +161,26 @@ so I don't feel like it.\
 
 Face:youmu,普
 I don't think I understand.
-You look like you want me defeat you\, then?\
+You look like you want me defeat you, then?\
 
 #Face:tenshi,惑
 #貴方がしっかりしなければ私もやる気が出ない\
 
 Face:tenshi,嬉
-Well\, since you did come all the way here\,
+Well, since you did come all the way here,
 I don't see what else you would be here for.\
 
 Face:youmu,汗
 ???\
 
 Face:tenshi,普
-On the ground\, humans and youkai battle...
+On the ground, humans and youkai battle...
 I've been longing to fight a battle like that!\
 
 
 Face:youmu,惑
-Did\, did you go slay ghosts\,
-slice the temperaments of humans\,
+Did, did you go slay ghosts,
+slice the temperaments of humans,
 and destroy the shrine just for that?\
 
 Bgm:data/bgm/st05.ogg
@@ -202,8 +202,8 @@ Face:youmu,怒
 I'm starting to get angry.\
 
 Face:tenshi,嬉
-Yes\, get angry!@
-Because if you don't punish me\,
+Yes, get angry!@
+Because if you don't punish me,
 Gensokyo shall be no more!\
 
 

@@ -63,7 +63,7 @@ Growl-!\
 Action:remilia,102
 
 Face:aya,ã¡
-It's\, it's here! It's a monster!
+It's, it's here! It's a monster!
 What's going to happen to our correspondent?!\
 
 Face:remilia,ã¡
@@ -77,37 +77,37 @@ Could this be the legendary Mokele-mbembe?!\
 Object:data/scenario/remilia/effect/Name.bmp,2,352,304
 
 Face:remilia,äæ
-Mo\, Moke?
-Sorry\, I can't act like something like that.\
+Mo, Moke?
+Sorry, I can't act like something like that.\
 
 Face:aya,ïÅ
-You're really going with the flow today\, aren't you?\
+You're really going with the flow today, aren't you?\
 
 Face:remilia,òf
 Because I'm bored...
 The weather isn't nice out...\
 
 Face:aya,ã¡
-Oh? The weather\, is it?\
+Oh? The weather, is it?\
 
 Face:remilia,òf
 It suddenly rained outside so I can't go out.\
 
 Face:remilia,òf
-I'm weak against the rain\, after all.\
+I'm weak against the rain, after all.\
 
 Face:aya,òf
 ... You said the weather changed suddenly?\
 
 Face:remilia,ïÅ
-Yeah\, that's what I said.
+Yeah, that's what I said.
 It's been strange since not too long ago.\
 
 Face:aya,ïÅ
 Hmmmmmm?\
 
 Face:remilia,ä
-Well then\, since I'm so bored
+Well then, since I'm so bored
 let's play hide-and-seek with the Mokele!\
 
 Face:remilia,åà
@@ -163,11 +163,11 @@ Face:remilia,ïâ
 Owowowow. Tell me when this gets on the news.\
 
 Face:aya,ã¡
-Ah\, will do. I'll try to
+Ah, will do. I'll try to
 make this suitable for an article.\
 
 Face:aya,òf
-Hmm\, the weather...
+Hmm, the weather...
 Does it have to do with temperaments?\
 
 

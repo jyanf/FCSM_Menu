@@ -48,29 +48,29 @@ Object:data/scenario/effect/StageFinal.bmp,1,256,352
 Sleep:60;
 
 Face:udonge,òf
-So\, since I have no idea what you've done\,
+So, since I have no idea what you've done,
 can you explain it to me?\
 
 Face:tenshi,ïâ
-Oh\, it already happened\, who cares about it.\
+Oh, it already happened, who cares about it.\
 
 Face:udonge,òf
 I find that very strange...
-First of all\, why are you so beaten up?\
+First of all, why are you so beaten up?\
 
 Face:tenshi,ïâ
-I'm tired\, okay.\
+I'm tired, okay.\
 
 Face:udonge,ì{
 This is going nowhere.
-Well\, fine then. I'll investigate
+Well, fine then. I'll investigate
 the earthquakes by myself.\
 
 Face:tenshi,ïâ
 Earthquakes?\
 
 Face:tenshi,ïâ
-Oh\, the earthquakes are fine.
+Oh, the earthquakes are fine.
 Just fine...\
 
 Face:udonge,äæ
@@ -93,7 +93,7 @@ Face:tenshi,ïÅ
 I can't always be down like this.\
 
 Face:tenshi,ïÅ
-For the time being\, I should return
+For the time being, I should return
 to heaven to polish my next scheme...\
 
 End:

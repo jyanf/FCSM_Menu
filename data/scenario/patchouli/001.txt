@@ -50,7 +50,7 @@ Object:data/scenario/effect/Stage2.bmp,1,256,352
 Sleep:60
 
 Face:patchouli,普
-I wonder\, has the shrine maiden noticed?\
+I wonder, has the shrine maiden noticed?\
 
 #
 # 敵登場
@@ -61,11 +61,11 @@ Action:reimu,102
 Object:data/scenario/reimu/effect/Name.bmp,2,352,304
 
 Face:reimu,普
-Oh\, a rare face.\
+Oh, a rare face.\
 
 Face:patchouli,余
 Who cares about faces.
-I just came to check your condition\, that's all.\
+I just came to check your condition, that's all.\
 
 # 天候変化
 Hide:1
@@ -76,17 +76,17 @@ Sleep:20
 
 Face:reimu,普
 I'm perfectly healthy.
-The constant sun is difficult\, though.\
+The constant sun is difficult, though.\
 
 Face:patchouli,普
-I see\, constant sun.
+I see, constant sun.
 Not having a single cloud is rather simple.\
 
 Face:reimu,惑
 ?\
 
 Face:patchouli,決
-If you don't move\, then I will first.\
+If you don't move, then I will first.\
 
 #戦闘開始
 PlayBgm:data/bgm/st01.ogg
@@ -133,7 +133,7 @@ Sleep:60
 
 Face:patchouli,惑
 Isn't there a change that's
-a little easier to understand\,
+a little easier to understand,
 or have I just not noticed it?\
 
 Face:reimu,負
@@ -152,10 +152,10 @@ Face:patchouli,驚
 ... Rain?\
 
 Face:reimu,負
-It is hot\, but rain is a problem when I've collapsed.\
+It is hot, but rain is a problem when I've collapsed.\
 
 Face:patchouli,普
-Whose is this\, I wonder?\
+Whose is this, I wonder?\
 
 #ステージ間調整自キャラ
 Action:patchouli,150

@@ -37,10 +37,10 @@ Bgm:data/bgm/ta06.ogg
 #2345678901234567890123456789012345678901234567890123456789012345
   Hakugyokurou in summer.@
   The snow that fell every day gradually covered the earth.@
-  As the snow hid the ground\, the temperature dropped.\
+  As the snow hid the ground, the temperature dropped.\
 
   Only Hakugyokurou had lost its summer atmosphere thus.@
-  The Netherworld was all white\,
+  The Netherworld was all white,
   and the snow's silence fit it perfectly.\
 
 
@@ -55,12 +55,12 @@ Yuyuko "Youmu~
         Come bring a heater~"\
 
 Youmu  "That's right...@
-        I'd have never thought we'd need a heater in the summer\, but...@
-        It's so cold\, it can't be helped."\
+        I'd have never thought we'd need a heater in the summer, but...@
+        It's so cold, it can't be helped."\
 
 Yuyuko "It's important to take care of your body."@
-Youmu  "Yes\, I suppose."@
-Yuyuko "Even if you don't have one\, like me."\
+Youmu  "Yes, I suppose."@
+Yuyuko "Even if you don't have one, like me."\
 
 
 CG:data/scenario/yuyuko/effect/ED002.bmp,96,16,50
@@ -68,11 +68,11 @@ CG:data/scenario/yuyuko/effect/ED002.bmp,96,16,50
 # âŒî´Ç≈ígÇ‹ÇÈóHÅXéq
 # òeÇ≈ódñ≤Ç™ï∑Ç¢ÇƒÇ¢ÇÈ
 #0ÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇR
-Youmu  "But\, what on earth is with this weather... ?"@
-Yuyuko "Oh\, you don't know\, do you\, Youmu?"\
+Youmu  "But, what on earth is with this weather... ?"@
+Yuyuko "Oh, you don't know, do you, Youmu?"\
 
 Yuyuko "Weather is a type of qi.@
-        If you take ghosts to be the spirits of living things\,
+        If you take ghosts to be the spirits of living things,
         the weather is the temperament of the heavens."\
 
 Youmu  "Huh..."@
@@ -80,21 +80,21 @@ Yuyuko "It looks like you want to look into this weather incident."@
 Youmu  "Well..."\
 
 Yuyuko "There's no need to look into it.@
-        Not until you clear away this snow\, at least."@
-Youmu  "Oh\, I see..."\
+        Not until you clear away this snow, at least."@
+Youmu  "Oh, I see..."\
 
 FadeBgm:2000,0
 CG:BLACK,0,0,15
 
   Someone would probably begin looking into the strange weather soon.
-  Yuyuko didn't know what that celestial really wanted\,
+  Yuyuko didn't know what that celestial really wanted,
   but she was grateful to her for making things so interesting.\
 
 StaffRoll:
 
   The Heaven of Non-Perception --
-  In other words\, a world of the unconscious at the pinnacle of Heaven.
-  And yet\, the resident she'd found there was quite an imperfect being.\
+  In other words, a world of the unconscious at the pinnacle of Heaven.
+  And yet, the resident she'd found there was quite an imperfect being.\
 
 
 End:

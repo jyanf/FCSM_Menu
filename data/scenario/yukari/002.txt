@@ -52,7 +52,7 @@ Action:yukari,51
 
 #ÇOÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇRÇSÇTÇUÇVÇWÇX\
 Face:yukari,òf
-Ah\, it's so\, so hot.\
+Ah, it's so, so hot.\
 
 Face:yukari,òf
 I should've replenished some water
@@ -74,19 +74,19 @@ It's rare for humans to be
 on the mountain so I came to see~\
 
 Face:marisa,ä
-Yeah\, Reimu said there's a world
+Yeah, Reimu said there's a world
 where celestials live above here.\
 
 Face:marisa,ä
 There must be some valuable things there!\
 
 Face:yukari,ïÅ
-Well\, the celestials have stuff like...
-peaches\, fishing tools\, those sorts of things.\
+Well, the celestials have stuff like...
+peaches, fishing tools, those sorts of things.\
 
 Face:marisa,ïÅ
 Really? But we're talking about Heaven?@
-As in the astral plane\, you know? Paradise?\
+As in the astral plane, you know? Paradise?\
 
 Face:marisa,åà
 If I borrow something from there
@@ -148,11 +148,11 @@ Action:yukari,202
 Sleep:60
 
 Face:yukari,ïÅ
-Now\, it's best for you to
+Now, it's best for you to
 head back before the tengu find you.\
 
 Face:marisa,ïâ
-Dammit\, seeing you is a greater misfortune
+Dammit, seeing you is a greater misfortune
 than seeing the tengu.\
 
 Face:marisa,ïâ
@@ -171,7 +171,7 @@ Hide:0
 
 Face:marisa,ñ≥
 Face:yukari,ñ≥
-The astral plane\, and paradise!\
+The astral plane, and paradise!\
 
 Face:marisa,ïâ
 You're also heading to Heaven?\

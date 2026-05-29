@@ -65,7 +65,7 @@ There was such a world beyond the clouds... ?\
 
 Face:patchouli,余
 If there is someone indiscriminately
-transforming the mist of temperament\,\
+transforming the mist of temperament,\
 
 Face:patchouli,普
 they would probably not
@@ -89,7 +89,7 @@ Sleep:30
 
 Action:tenshi,133
 #イベント　地震
-In Heaven\, song and dance...\
+In Heaven, song and dance...\
 
 Hide:1
 #sleep,60
@@ -107,7 +107,7 @@ Action:tenshi,139
 #sleep,30
 
 Face:patchouli,余
-My\, I'm honored.\
+My, I'm honored.\
 
 Object:data/scenario/tenshi/effect/Name.bmp,2,352,304
 
@@ -123,10 +123,10 @@ Face:tenshi,余
 Hmm-\
 
 Face:patchouli,余
-According to my intuition\, they should be here.\
+According to my intuition, they should be here.\
 
 Face:tenshi,余
-Hahaha\, I haven't seen such a person at all.\
+Hahaha, I haven't seen such a person at all.\
 
 PlayBgm:data/bgm/st05.ogg
 
@@ -138,12 +138,12 @@ Face:tenshi,惑
 Hahaha. Isn't it a little too soon for that?\
 
 Face:patchouli,怒
-If you're going to try something\,
+If you're going to try something,
 you're already too late.\
 
 Face:tenshi,決
-But\, say I wanted to break the shrine\,
-I wouldn't be late\, would I?\
+But, say I wanted to break the shrine,
+I wouldn't be late, would I?\
 
 #戦闘開始処理
 Action:patchouli,3
@@ -209,7 +209,7 @@ Action:patchouli,4
 Sleep:100
 
 Face:patchouli,普
-You're here\, aren't you?
+You're here, aren't you?
 Come out already.\
 
 Hide:1

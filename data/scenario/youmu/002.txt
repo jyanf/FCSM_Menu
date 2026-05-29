@@ -69,9 +69,9 @@ What's with your sleepy face?\
 Object:data/scenario/komachi/effect/Name.bmp,2,352,304
 
 Face:youmu,äæ
-No\, well\, haven't you noticed
+No, well, haven't you noticed
 the absence of ghosts recently... ?
-Also\, I'm not sleepy.\
+Also, I'm not sleepy.\
 
 Hide:1
 #ìGìVåÛ
@@ -79,14 +79,14 @@ Action:komachi,103
 Sleep:60
 
 Face:komachi,ã¡
-Ahh\, ghosts?
-Yes\, I have something to ask you about that.\
+Ahh, ghosts?
+Yes, I have something to ask you about that.\
 
 Face:youmu,ïÅ
 Yes?\
 
 Face:komachi,ïÅ
-It's you\, isn't it?
+It's you, isn't it?
 The one who's been going around slaying ghosts.\
 
 Face:komachi,ì{
@@ -126,7 +126,7 @@ End:
 Label:Lose
 
 Face:komachi,ó]
-Work has been decreasing lately\, it's delightful!\
+Work has been decreasing lately, it's delightful!\
 
 Face:komachi,äæ
 ... Though I shouldn't just
@@ -192,7 +192,7 @@ Eh!?
 Lady Yukari?\
 
 Face:yukari,ïÅ
-Youmu\, you are not the only one who can slay ghosts.\
+Youmu, you are not the only one who can slay ghosts.\
 
 Face:youmu,ïÅ
 I-Is that so?\
@@ -205,10 +205,10 @@ It would be dangerous if ghosts kept
 getting cut up the way they are now.\
 
 Face:youmu,òf
-Even so\, why are they being slain?\
+Even so, why are they being slain?\
 
 Face:yukari,ïÅ
-Well\, follow me...\
+Well, follow me...\
 
 Hide:1
 

@@ -55,7 +55,7 @@ Action:remilia,102
 
 #ÇOÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇRÇSÇTÇUÇVÇWÇX\
 Face:iku,ïÅ
-Getting straight to the point\,
+Getting straight to the point,
 there's going to be an earthquake.\
 
 Face:remilia,ïÅ
@@ -73,7 +73,7 @@ I take it that I have
 successfully relayed my message?\
 
 Face:iku,ó]
-Then\, I'll be leaving for the next location.\
+Then, I'll be leaving for the next location.\
 
 Face:remilia,äæ
 No-no-no. I have no idea
@@ -89,7 +89,7 @@ Who are you?\
 
 Face:iku,ïÅ
 My name is Iku Nagae.
-Now then\, the time for questions is over.\
+Now then, the time for questions is over.\
 
 Face:remilia,äæ
 Wait-\
@@ -133,11 +133,11 @@ We don't know exactly when
 the earthquake is going to happen.\
 
 Face:iku,ïÅ
-Therefore\, please make appropriate preparations.\
+Therefore, please make appropriate preparations.\
 
 Face:remilia,ïâ
 Stay an appropriate distance
-from the ground\, I take it.\
+from the ground, I take it.\
 
 Face:remilia,ïâ
 Then we'll live floating in the air for a while.\

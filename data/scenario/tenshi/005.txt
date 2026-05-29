@@ -51,7 +51,7 @@ Sleep:60;
 
 #‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X\
 Face:tenshi,Š¾
-Really\, how many people did that little oni invite?\
+Really, how many people did that little oni invite?\
 
 
 Face:tenshi,
@@ -65,18 +65,18 @@ Action:sakuya,102
 Sleep:20
 
 Face:sakuya,•
-Whew\, I came a bit too early.\
+Whew, I came a bit too early.\
 
 
 Face:tenshi,‹Á
-Oh\, if it isn't the Devil's Caretaker 
+Oh, if it isn't the Devil's Caretaker 
 from the lower world.\
 
 # –¼‘O‚Ìƒeƒƒbƒv
 Object:data/scenario/sakuya/effect/Name.bmp,2,352,304
 
 Face:sakuya,•
-Yes\, that's me. Do you know where the
+Yes, that's me. Do you know where the
 shrine's groundbreaking ceremony is being held?\
 
 Face:tenshi,—]
@@ -84,29 +84,29 @@ Everyone's gathering in the back.\
 
 Face:sakuya,Šğ
 Is that so?
-Well\, that's perfect.\
+Well, that's perfect.\
 
 Face:sakuya,—]
 I have some matters more important
-than the banquet\, so I came early.\
+than the banquet, so I came early.\
 
 Face:tenshi,˜f
-Oh\, there were plenty of people
-that came earlier\, though.\
+Oh, there were plenty of people
+that came earlier, though.\
 
 Face:sakuya,‹Á
-Eeh\, everyone's acting so wierd.\
+Eeh, everyone's acting so wierd.\
 
 Face:tenshi,—]
-So then\, what's this other business you have?\
+So then, what's this other business you have?\
 
 Face:sakuya,Œˆ
 There's an unbearable girl from Heaven here.
 I thought I'd chastise her a little.\
 
 Face:tenshi,Œˆ
-What\, you don't expect me
-to say that's not me\, do you?\
+What, you don't expect me
+to say that's not me, do you?\
 
 #í“¬ŠJnˆ—
 
@@ -119,7 +119,7 @@ End:
 Label:Lose
 
 Face:sakuya,Šğ
-Ahh\, that felt good.\
+Ahh, that felt good.\
 
 Face:sakuya,•
 Bye now.\
@@ -147,7 +147,7 @@ Action:tenshi,202
 
 
 Face:tenshi,Š¾
-I'm getting tired\, about time.\
+I'm getting tired, about time.\
 
 Face:tenshi,—]
 You're pretty strong. Fitting for the one
@@ -159,7 +159,7 @@ My knives can't pierce you.\
 
 Face:tenshi,˜f
 The food in Heaven is good
-for strengthening your body\,
+for strengthening your body,
 if you ignore the taste...\
 
 Hide:1

@@ -68,12 +68,12 @@ Action:alice,102
 Sleep:20
 
 Face:alice,普
-Well\, I don't see you around the forest often.\
+Well, I don't see you around the forest often.\
 
 Face:reimu,惑
 (Better keep the disaster a secret 
 from the non-humans.)
-Uh\, yes. Well.\
+Uh, yes. Well.\
 
 # 名前のテロップ
 #Name:雹の人形遣い　アリス・マーガトロイド
@@ -85,18 +85,18 @@ You sound like you're busy resolving a disaster.\
 
 Face:reimu,汗
 Whatever could you be referring to?
-Oh yes\, how's the weather in the forest been lately?\
+Oh yes, how's the weather in the forest been lately?\
 
 Face:alice,普
 That's a strange question.\
 
 Face:alice,汗
-The weather's been quite odd lately\,
+The weather's been quite odd lately,
 what with the hail every day.\
 
 Face:reimu,普
-Hail\, you say?
-Hail\, huh...\
+Hail, you say?
+Hail, huh...\
 
 Hide:1
 
@@ -106,24 +106,24 @@ Action:alice,103
 Sleep:60
 
 Face:alice,普
-Ah\, see\, there it is again...\
+Ah, see, there it is again...\
 
 Face:reimu,普
 (A scarlet sky again.)
-Huh\, it really is.\
+Huh, it really is.\
 
 Face:alice,普
-This is a disaster\, right?
+This is a disaster, right?
 That's why you came all the way to the forest.\
 
 Face:reimu,怒
-Well\, aren't you acting suspicious?
-I hadn't said anything of the sort\, and yet...\
+Well, aren't you acting suspicious?
+I hadn't said anything of the sort, and yet...\
 
-You're hiding something\, aren't you?\
+You're hiding something, aren't you?\
 
 Face:alice,惑
-Not really\, no.\
+Not really, no.\
 
 PlayBgm:data/bgm/st01.ogg
 
@@ -134,8 +134,8 @@ It definitely smells like a disaster.\
 Face:alice,余
 I'd rather not be a suspect.\
 
-But if you don't take care of this soon\,
-your shrine might get destroyed\, you know?\
+But if you don't take care of this soon,
+your shrine might get destroyed, you know?\
 
 Action:reimu,3
 
@@ -148,7 +148,7 @@ End:
 Label:Lose
 
 Face:alice,余
-How silly. At this rate\, the hail will go on and on.\
+How silly. At this rate, the hail will go on and on.\
 
 End:
 
@@ -199,12 +199,12 @@ Action:komachi,106
 #CrossFadeBgm:data/bgm/st02.ogg,2000,1
 
 Face:komachi,普
-Oh\, good grief.
+Oh, good grief.
 No matter where I go it's always
 so damp and humid. Ick.\
 
 Face:reimu,普
-Oh\, you're that Slackmeister from a while back.\
+Oh, you're that Slackmeister from a while back.\
 
 #Name:川霧の水先案内人　小野塚小町
 # 名前のテロップ
@@ -215,12 +215,12 @@ Face:komachi,汗
 
 Face:komachi,普
 I was taking a stroll during my break
-and I heard about something interesting\,
+and I heard about something interesting,
 so I came to check it out.\
 
 Face:reimu,普
 You too...
-You're also changing the weather\, aren't you?\
+You're also changing the weather, aren't you?\
 
 Face:komachi,惑
 Huh? I don't know what you're talking about.\
@@ -230,7 +230,7 @@ Haven't you noticed?
 That river mist is only showing up around you.\
 
 Face:komachi,普
-Now that you mention it\, I guess so.
+Now that you mention it, I guess so.
 Whaddya think it means?\
 
 Face:reimu,普
@@ -242,9 +242,9 @@ Face:reimu,余
 I'll be destroying that <color FFFFFF>energy</color> now.\
 
 Face:alice,負
-I don't really care what you do\,
+I don't really care what you do,
 but I can't move right now.\
-If you're going to have a duel\,
+If you're going to have a duel,
 can you take it somewhere else?\
 
 Face:komachi,汗

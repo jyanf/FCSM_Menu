@@ -65,8 +65,8 @@ Action:sakuya,102
 Sleep:20
 
 Face:sakuya,驚
-My\, my. A shinigami has come for me?
-I'm very sorry\, but I'll meet
+My, my. A shinigami has come for me?
+I'm very sorry, but I'll meet
 with you some other time.\
 
 # 名前のテロップ
@@ -83,32 +83,32 @@ Face:sakuya,怒
 I'm getting the feeling I'm being slighted somehow.\
 
 Face:komachi,驚
-It's alright\, to become like a cloud means you
-won't be brilliant or wealthy\, but\, you can avoid
-harmful light\, and spend your days telling fortunes.\
+It's alright, to become like a cloud means you
+won't be brilliant or wealthy, but, you can avoid
+harmful light, and spend your days telling fortunes.\
 
 Face:komachi,普
-A very handy spirit to have\, I'll let you know.\
+A very handy spirit to have, I'll let you know.\
 
 Face:sakuya,驚
-Oh my\, are you complimenting me?\
+Oh my, are you complimenting me?\
 
 Face:komachi,普
-While they were living\, these skilled ghosts
-were generally knowledgeable and successful leaders\,
+While they were living, these skilled ghosts
+were generally knowledgeable and successful leaders,
 living without discomfort.\
 
 Face:komachi,惑
-But\, when it comes time for judgement in Higan\,
+But, when it comes time for judgement in Higan,
 those techniques' transient usefulness won't show up.\
 
 
 Face:sakuya,普
 You certainly like talking about the future...
-Well\, it does fit a shinigami.\
+Well, it does fit a shinigami.\
 
 Face:komachi,余
-Well\, well\, let's put that aside and end it here.\
+Well, well, let's put that aside and end it here.\
 
 #戦闘開始
 PlayBgm:data/bgm/st12.ogg
@@ -126,7 +126,7 @@ Face:sakuya,余
 I still don't want to die yet.\
 
 Face:sakuya,普
-That said\, I wonder if there will
+That said, I wonder if there will
 be a time when I do want to die.\
 
 End:
@@ -154,7 +154,7 @@ Action:komachi,103
 Sleep:60
 
 Face:komachi,余
-Don't worry\, I'm not taking anyone's soul.\
+Don't worry, I'm not taking anyone's soul.\
 
 Face:sakuya,負
 Then why... could it be because of the usual?\
@@ -163,12 +163,12 @@ Face:komachi,驚
 Hm? The usual?\
 
 Face:komachi,汗
-Well\, y'know not really.
+Well, y'know not really.
 I was taking a break from work.\
 
 Face:komachi,余
 A knowledgeable and successful leader
-like you would understand\, right?\
+like you would understand, right?\
 
 
 Hide:1

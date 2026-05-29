@@ -56,7 +56,7 @@ Action:aya,102
 
 #‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X\
 Face:iku,•
-Cutting it short\, there's going to be an earthquake.\
+Cutting it short, there's going to be an earthquake.\
 
 # –¼‘O‚Ìƒeƒƒbƒv
 Object:data/scenario/aya/effect/Name.bmp,2,352,304
@@ -73,10 +73,10 @@ I'm a messenger of the Dragon Palace
 sent to deliver only that message.\
 
 Face:iku,Œˆ
-Now\, I'll be leaving for the next location.\
+Now, I'll be leaving for the next location.\
 
 Face:aya,“{
-Wait\, wait!
+Wait, wait!
 I can't write an article with just that!\
 
 #í“¬ŠJnˆ—
@@ -89,7 +89,7 @@ End:
 Label:Lose
 
 Face:aya,Œˆ
-Now\, tell me all you know!\
+Now, tell me all you know!\
 
 Face:aya,Šğ
 How can you tell that
@@ -119,7 +119,7 @@ Action:iku,202
 
 #©ƒLƒƒƒ‰“VŒó
 Face:iku,•
-Now\, I'll be leaving for the next location.\
+Now, I'll be leaving for the next location.\
 
 Face:aya,•‰
 How cruel~

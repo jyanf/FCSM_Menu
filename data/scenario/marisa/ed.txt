@@ -30,9 +30,9 @@ Bgm:data/bgm/ta06.ogg
 
   The Forest of Magic.@
   The forest sheltered all creatures in it from any harmful light.@
-  Still\, the forest couldn't live without any light at all.\
+  Still, the forest couldn't live without any light at all.\
 
-  At the same time\, rain was essential for the creatures of the forest.@
+  At the same time, rain was essential for the creatures of the forest.@
   The drizzle that only fell around her had let up considerably.@
   She'd succeeded in winning back the summer heat.\
 
@@ -46,14 +46,14 @@ Bgm:data/bgm/ta06.ogg
 CG:data/scenario/marisa/effect/ED001.bmp,96,16,50
 
 #0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
-Marisa "Hmm\, where did I put those books I borrowed from the library?"@
-  As soon as she got back from Heaven\, Marisa started really cleaning out her room.
+Marisa "Hmm, where did I put those books I borrowed from the library?"@
+  As soon as she got back from Heaven, Marisa started really cleaning out her room.
   It had been a few years since the last time.\
 
-Marisa "Man\, it's so hot. Summer's really hot."
-        Well\, cleaning up might open up a draft in here."\
+Marisa "Man, it's so hot. Summer's really hot."
+        Well, cleaning up might open up a draft in here."\
 
-  When the earthquake happened\, she was afraid
+  When the earthquake happened, she was afraid
   she might get buried by the piles in her room.@
   That's why she started a frenzy of cleaning.\
 
@@ -70,22 +70,22 @@ CG:data/scenario/marisa/effect/ED002.bmp,96,16,50
 # 
 #0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
 
-Marisa "Well\, as long as I'm safe\, I'm not scared of any earthquake.@
-        Even if my house got leveled\,
+Marisa "Well, as long as I'm safe, I'm not scared of any earthquake.@
+        Even if my house got leveled,
         I can always just build another one."\
 
 Marisa "... what did she say?@
-        Even if you beat me\, you can't prevent the earthquake."\
+        Even if you beat me, you can't prevent the earthquake."\
 
-Marisa "Who was she\, anyway?@
+Marisa "Who was she, anyway?@
         Did she start all this just because she wanted to play?@
         That pisses me off the more I think about it."\
 
-  Tenshi had the Hinanawi's power to prevent earthquakes\,
+  Tenshi had the Hinanawi's power to prevent earthquakes,
   but she had said it wasn't time to use it yet.@
   Marisa had given up and gone home to get ready for an earthquake.\
 
-Marisa "If you have the power to prevent earthquakes\, why not use it?@
+Marisa "If you have the power to prevent earthquakes, why not use it?@
         I don't think I could convince someone as weird as her to do it."\
 
 Marisa "I guess I'll leave this to Reimu for now... @
@@ -96,12 +96,12 @@ FadeBgm:2000,0
 CG:BLACK,0,0,15
 
 Marisa started shoring up her house for the big earthquake that could happen any time.
-As long as she lives in this country\, she'll have to be ready for earthquakes.
+As long as she lives in this country, she'll have to be ready for earthquakes.
 Maybe you could say the celestial had warned her about that.\
 
 StaffRoll:
 
 The earth here is alive.
-Just as it was billions of years ago\, when the gods created the earth.\
+Just as it was billions of years ago, when the gods created the earth.\
 
 End:

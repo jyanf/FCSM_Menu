@@ -56,17 +56,17 @@ Sleep:60;
 Action:yuyuko,102
 
 Face:iku,普
-You there\, there's going to be an earthquake.\
+You there, there's going to be an earthquake.\
 
 # 名前のテロップ
 #Name:風雨の鴉　射命丸文
 Object:data/scenario/yuyuko/effect/Name.bmp,2,352,304
 
 Face:yuyuko,普
-My\, suddenly an earthquake is going to happen.\
+My, suddenly an earthquake is going to happen.\
 
 Face:yuyuko,余
-But\, you don't know everything.
+But, you don't know everything.
 Is it possible that there won't
 be an earthquake?\
 
@@ -78,17 +78,17 @@ Face:iku,普
 But they probably won't.\
 
 Face:yuyuko,嬉
-As a matter of fact\, over at the shrine
+As a matter of fact, over at the shrine
 there's some sort of event going on.
 Isn't it possible that could suppress the earthquake?\
 
 Face:iku,惑
 ?
-I cannot fathom how you came to that conclusion\,
-but\, it's not possible.\
+I cannot fathom how you came to that conclusion,
+but, it's not possible.\
 
 Face:iku,普
-With that\, I've finished my warnings.
+With that, I've finished my warnings.
 I'll be returning now.\
 
 Face:yuyuko,驚
@@ -137,7 +137,7 @@ Action:iku,202
 
 
 Face:iku,惑
-I only came to warn about an earthquake\,
+I only came to warn about an earthquake,
 yet why did I have to fight you...\
 
 Face:yuyuko,普
@@ -148,7 +148,7 @@ But I did try to make my warnings
 as simple as possible.\
 
 Face:iku,嬉
-Well\, anyways.
+Well, anyways.
 Please be prepared for the earthquake.\
 
 

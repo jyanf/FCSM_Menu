@@ -68,14 +68,14 @@ Action:komachi,102
 
 Face:yuyuko,惑
 Oh greetings. But this river
-isn't the Sanzu River\, is it?\
+isn't the Sanzu River, is it?\
 
 # 名前のテロップ
 Object:data/scenario/komachi/effect/Name.bmp,2,352,304
 
 Face:komachi,驚
-Ack... Ah well\,
-I guess that's right\, but anyway...\
+Ack... Ah well,
+I guess that's right, but anyway...\
 
 Face:komachi,汗
 ... What? It's snowing?\
@@ -84,7 +84,7 @@ Face:yuyuko,惑
 The world is full of strange things.\
 
 Face:komachi,汗
-In other words\, you're making it snow?\
+In other words, you're making it snow?\
 
 Face:yuyuko,余
 I suppose so. What about it?\
@@ -93,12 +93,12 @@ Face:komachi,普
 You're really a very peculiar lady.\
 
 Face:komachi,余
-But I guess if that weren't the case\,
+But I guess if that weren't the case,
 it might be difficult for you
 to manage the netherworld.\
 
 Face:yuyuko,決
-And\, this river isn't your workplace\, is it?\
+And, this river isn't your workplace, is it?\
 #戦闘開始処理
 
 PlayBgm:data/bgm/st02.ogg
@@ -110,7 +110,7 @@ End:
 Label:Lose
 
 Face:komachi,驚
-I understand\, I understand.
+I understand, I understand.
 I'm going back to work.\
 
 Face:komachi,余
@@ -139,16 +139,16 @@ Action:yuyuko,202
 
 #自キャラ天候
 Face:yuyuko,嬉
-If you can keep a cool head\,
+If you can keep a cool head,
 it's easy to change the weather.\
 
 Face:komachi,負
-Uhh\, I don't think it's
+Uhh, I don't think it's
 that easy to get your way...\
 
 Face:yuyuko,惑
-However\, in order to change the weather
-to something you prefer\,
+However, in order to change the weather
+to something you prefer,
 a little extra <color FFFFFF>work</color> is needed.\
 
 

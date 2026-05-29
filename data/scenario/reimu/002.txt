@@ -36,7 +36,7 @@ Object:data/scenario/effect/Stage3.bmp,1,256,352
 Sleep:60;
 
 Face:reimu,ïÅ
-Now then\, since the obstacle's out of the way\,
+Now then, since the obstacle's out of the way,
 let's try that again.\
 
 I'll be destroying that <color FFFFFF>energy</color> now.\
@@ -52,8 +52,8 @@ End:
 Label:Lose
 
 Face:komachi,ó]
-How problematic\,
-this won't end these disasters at all\, will it?\
+How problematic,
+this won't end these disasters at all, will it?\
 
 Face:komachi,òf
 This <color FFFFFF>energy</color> of mine may be very dangerous.\
@@ -86,13 +86,13 @@ Face:reimu,ä
 The weather's finally returned to normal.\
 
 Face:komachi,ïâ
-Wait a sec\, sunny is normal?\
+Wait a sec, sunny is normal?\
 Face:komachi,ïâ
 Take a good look.
 It's only sunny around you.\
 
 Face:reimu,ïÅ
-Mm\, hmm...
+Mm, hmm...
 I have to hurry up and find
 whoever's behind this disaster.\
 

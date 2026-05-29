@@ -50,7 +50,7 @@ Face:patchouli,普
 What is it?\
 
 Face:remilia,惑
-Say\, why aren't you moving as well?\
+Say, why aren't you moving as well?\
 
 # 名前のテロップ
 Object:data/scenario/patchouli/effect/Name.bmp,2,352,304
@@ -72,13 +72,13 @@ Sunny weather isn't bad weather?\
 Action:patchouli,103
 
 Face:patchouli,汗
-Well\, whatever works for you.\
+Well, whatever works for you.\
 
 Face:patchouli,普
 But I'm currently investigating the weather...\
 
 Face:remilia,決
-If we depend on Patchy\,
+If we depend on Patchy,
 who knows when we'll finish!\
 
 #戦闘開始
@@ -98,7 +98,7 @@ Intricate investigation takes
 intense considerations.\
 
 Face:patchouli,余
-Well\, wait it out patiently.\
+Well, wait it out patiently.\
 
 End:
 
@@ -125,13 +125,13 @@ Action:remilia,103
 #Sleep:60
 
 Face:remilia,余
-From now on\, this is my workplace.\
+From now on, this is my workplace.\
 
 Face:patchouli,負
 Eh?\
 
 Face:remilia,決
-Sakuya is bringing the suspects over\,@
+Sakuya is bringing the suspects over,@
 so I'm going to stay here
 to listen to what they say.\
 

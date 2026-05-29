@@ -41,7 +41,7 @@ Object:data/scenario/effect/Stage4.bmp,1,256,352
 Sleep:60;
 
 Face:yukari,ïÅ
-Since this place has more living things around\,
+Since this place has more living things around,
 can you see the flow of energy more clearly?\
 
 Face:youmu,ïÅ
@@ -104,27 +104,27 @@ Action:youmu,103
 Sleep:60
 
 Face:youmu,ïÅ
-Oh\, I get it!\
+Oh, I get it!\
 
 Face:youmu,ã¡
-Ghosts... their temperament seems to be rising up\,
+Ghosts... their temperament seems to be rising up,
 as if they're all being sucked into the sky!\
 
 Face:yukari,ïâ
-It's not just ghosts\, actually.\
+It's not just ghosts, actually.\
 
 Face:youmu,ïÅ
-Yes\, it's not just ghosts...\
+Yes, it's not just ghosts...\
 
 Face:youmu,òf
 The temperament of all living things is rising.
 The clouds have turned scarlet... ah!\
 
 Face:yukari,ïâ
-Well then\, see you.\
+Well then, see you.\
 
 Face:youmu,ä
-With your help\, Lady Yukari\, 
+With your help, Lady Yukari, 
 I have realized something very important.
 Thank you very much!\
 
@@ -136,7 +136,7 @@ Action:youmu,151
 Sleep:90;
 
 Face:yukari,ó]
-You're welcome\, although you'll
+You're welcome, although you'll
 still have to fight a little to find the answer.\
 
 Hide:1

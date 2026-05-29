@@ -48,7 +48,7 @@ Sleep:60;
 
 #ÇOÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇRÇSÇTÇUÇVÇWÇX\
 Face:yukari,ïÅ
-The shrine is still out of commission\,\
+The shrine is still out of commission,\
 
 Face:yukari,ì{
 I should take this time to check on the keystone.\
@@ -65,7 +65,7 @@ Action:suika,102
 Sleep:20
 
 Face:suika,ã¡
-Oh oh\, Yukari?
+Oh oh, Yukari?
 Why are you here?\
 
 # ñºëOÇÃÉeÉçÉbÉv
@@ -77,7 +77,7 @@ the shrine's going to be fixed.\
 
 #0ÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇR
 Face:suika,ïÅ
-Ah\, the celestials come down to
+Ah, the celestials come down to
 fix the shrine from time to time.\
 
 Face:suika,ã¡
@@ -109,10 +109,10 @@ Face:yukari,ïÅ
 She wanted me to shred that girl into pieces.\
 
 Face:suika,ã¡
-Ehhhhh\, that's unsettling.
+Ehhhhh, that's unsettling.
 
 Face:suika,ïÅ
-Anyways\, if you wait here
+Anyways, if you wait here
 she's bound to show up some time.\
 
 Face:suika,åà
@@ -121,7 +121,7 @@ We haven't done so in a long time.\
 
 Face:yukari,äæ
 I don't have the time
-to be doing this\, but oh well.\
+to be doing this, but oh well.\
 
 Bgm:data/bgm/st19.ogg
 
@@ -134,7 +134,7 @@ End:
 Label:Lose
 
 Face:suika,ä
-Ahaha\, everyone hates you
+Ahaha, everyone hates you
 because you're so weak! That must be it!\
 
 End:
@@ -166,15 +166,15 @@ Doesn't seem like she's coming today.\
 
 #0ÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇR
 Face:suika,ïâ
-Yeah. If we keep playing like this\,
+Yeah. If we keep playing like this,
 Reimu's gonna get angry.\
 
 Face:yukari,òf
-Hmph\, things aren't going my way lately.\
+Hmph, things aren't going my way lately.\
 
 Face:yukari,ã¡
-Oh\, that's right.
-Suika\, I have something to ask of you.\
+Oh, that's right.
+Suika, I have something to ask of you.\
 
 Face:suika,ïâ
 That's rare.
@@ -182,11 +182,11 @@ But not now.\
 
 Face:yukari,ïÅ
 Ah.@
-Well then\, I'm feeling tired so
+Well then, I'm feeling tired so
 I'll go back to sleep.\
 
 Face:suika,ïâ
-In any case\, seeing you on this side
+In any case, seeing you on this side
 of the world in broad daylight sure is rare.\
 
 #éáâÊñ äOÇ÷åÑä‘ëﬁî
@@ -195,7 +195,7 @@ Action:yukari,155
 Action:yukari,156
 
 Face:yukari,ñ≥
-I'm working hard\, you see.\
+I'm working hard, you see.\
 
 Hide:1
 Result:

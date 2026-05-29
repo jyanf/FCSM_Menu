@@ -47,16 +47,16 @@ Face:yuyuko,ïÅ
 Of course it would pile up when it snows.\
 
 Face:yuyuko,ïÅ
-Well then\, you can escape from
+Well then, you can escape from
 the summer heat in my Netherworld.\
 
 Face:sakuya,äæ
 I don't know... but how is snow falling here...
-This mist was supposed to be the big incident\,
+This mist was supposed to be the big incident,
 but I guess it wasn't.\
 
 Face:sakuya,ïÅ
-With all these weird things happening\,
+With all these weird things happening,
 I get the feeling you're plotting something.\
 
 Face:yuyuko,ó]
@@ -64,7 +64,7 @@ Nothing of the sort.\
 
 Face:sakuya,äæ
 Hmmm.
-I was just asking\, but the questioning starts now!\
+I was just asking, but the questioning starts now!\
 
 
 Action:sakuya,3
@@ -81,7 +81,7 @@ Face:yuyuko,ó]
 Snowing does not change the fact that it is summer.\
 
 Face:yuyuko,ïÅ
-Go back to your mansion\, and\, just to be sure\,
+Go back to your mansion, and, just to be sure,
 maybe it's better if you rebuild it.\
 
 End:
@@ -109,7 +109,7 @@ Action:sakuya,103
 Sleep:60
 
 Face:yuyuko,ïâ
-Ah\, such a cool summer.\
+Ah, such a cool summer.\
 
 Face:sakuya,ïÅ
 You mean cold.\
@@ -123,7 +123,7 @@ What are those things?\
 
 Face:yuyuko,ïâ
 You mean that?
-That problem is already solved\, so it's okay.\
+That problem is already solved, so it's okay.\
 
 Face:sakuya,äæ
 Pardon?\

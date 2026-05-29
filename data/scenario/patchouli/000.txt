@@ -58,7 +58,7 @@ Action:patchouli,51
 
 Face:patchouli,•
 #‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X\
-Sakuya\, are you there?\
+Sakuya, are you there?\
 
 Face:patchouli,
 Hide:1
@@ -70,7 +70,7 @@ Action:sakuya,101
 Action:sakuya,102
 
 Face:sakuya,•
-I am\, more or less.\
+I am, more or less.\
 
 # –¼‘O‚Ìƒeƒƒbƒv
 Object:data/scenario/sakuya/effect/Name.bmp,2,352,304
@@ -85,13 +85,13 @@ Action:sakuya,103
 Sleep:60;
 
 Face:patchouli,•
-Yes\, how enigmatic...\
+Yes, how enigmatic...\
 
 Face:sakuya,˜f
 What's this about?\
 
 Face:patchouli,•
-Now\, try moving a little bit.\
+Now, try moving a little bit.\
 PlayBgm:data/bgm/st12.ogg
 #í“¬ŠJnˆ—
 
@@ -131,12 +131,12 @@ Action:patchouli,103
 Sleep:60;
 
 Face:patchouli,—]
-As I thought\, it's easier to understand
+As I thought, it's easier to understand
 while being a bit violent.
 I'll be going out for a while now.\
 
 Face:sakuya,•‰
-After all that\, just what was this about...\
+After all that, just what was this about...\
 
 Face:patchouli,•
 Temperament...@

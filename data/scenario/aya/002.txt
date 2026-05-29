@@ -75,7 +75,7 @@ It's the first obstacle!\
 Object:data/scenario/sakuya/effect/Name.bmp,2,352,304
 
 Face:sakuya,äæ
-Gee\, whenever there's peace\,
+Gee, whenever there's peace,
 these annoyances come rushing out.\
 
 Hide:1
@@ -87,13 +87,13 @@ Face:sakuya,òf
 This doesn't look good.\
 
 Face:aya,òf
-Ah\, it's stormy again...\
+Ah, it's stormy again...\
 
 Face:sakuya,åà
 Aren't you the one who brought the storm here?\
 
 Face:aya,åà
-No\, that's just not possible.
+No, that's just not possible.
 The infiltration operation starts now!\
 
 Face:sakuya,äæ
@@ -141,11 +141,11 @@ Face:aya,ó]
 Then excuse me!\
 
 Face:sakuya,ïâ
-My\, you're forceful.\
+My, you're forceful.\
 
 Face:aya,ïÅ
 What's with the weather anyways... ?
-Nah\, must be a coincidence.\
+Nah, must be a coincidence.\
 
 
 Hide:1

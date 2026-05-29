@@ -38,7 +38,7 @@ Bgm:data/bgm/ta06.ogg
   It's a great river that separates this world from the next.\
 
   You can't tell where the water goes - it just flows on silently.@
-  The mist is so thick\, it's impossible to see how wide the river is.@
+  The mist is so thick, it's impossible to see how wide the river is.@
   This is where she works.\
 
 
@@ -49,15 +49,15 @@ CG:data/scenario/komachi/effect/ED001.bmp,96,16,50
 
 #0ÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇR
 Ghost   (... the first tower is for my father)@
-Komachi "Oh\, man\, another kid's ghost?@
-         Kids have no experience\, so their conversations are boring."\
+Komachi "Oh, man, another kid's ghost?@
+         Kids have no experience, so their conversations are boring."\
 
 Ghost   (... the second tower is for my mother)@
-Komachi "See\, you're wasting your time piling up those stones.@
+Komachi "See, you're wasting your time piling up those stones.@
          Do you think someone will take pity on you?"\
 
 Ghost   (... the third tower is for...)@
-Komachi "Nah\, that's wrong.
+Komachi "Nah, that's wrong.
          You'll never get across the river like that."\
 
 CG:data/scenario/komachi/effect/ED002.bmp,96,16,50
@@ -66,16 +66,16 @@ CG:data/scenario/komachi/effect/ED002.bmp,96,16,50
 # óHóÏÇÕçQÇƒÇΩä¥Ç∂
 #0ÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇR
 Komachi "The will to fulfill your hopes is just a form of desire.@
-         Desire begets hesitation\, which creates attachment."@
+         Desire begets hesitation, which creates attachment."@
 Ghost    (... ...)\
 
-Komachi "You've gotta throw away your misguided will\, just accept
-         everything\, and float across the river."@
+Komachi "You've gotta throw away your misguided will, just accept
+         everything, and float across the river."@
 Ghost   (... the first tower is for my father)\
 
-Komachi "If you don't understand\, just keep going."@
+Komachi "If you don't understand, just keep going."@
 Ghost   (... the second...)@
-Komachi "But\, your attachment will turn into resentment. That's no good."\
+Komachi "But, your attachment will turn into resentment. That's no good."\
 
 Komachi "If you ever think you want to forget this world...@
          Come see me anytime.@
@@ -87,17 +87,17 @@ CG:BLACK,0,0,15
 
 
   Komachi thought about changing jobs to become one of the shinigami
-  that greets people after death. As long as she had a job in hand\,
+  that greets people after death. As long as she had a job in hand,
   she'd get by somehow even if she got fired.\
 
-  If she ever got sick of ferrying spirits\, she thought
+  If she ever got sick of ferrying spirits, she thought
   maybe she'd go try fighting the celestials in Heaven.
   She wouldn't let them get away with saying they weren't afraid of death.\
 
 StaffRoll:
 
-  Still\, what she didn't realize was --
-  If she lost her job as a ferryman because she didn't ferry spirits\,
+  Still, what she didn't realize was --
+  If she lost her job as a ferryman because she didn't ferry spirits,
   she wouldn't be able to get another job that easily.\
 
 End:

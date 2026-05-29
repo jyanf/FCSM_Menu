@@ -63,10 +63,10 @@ Huh? Why are you here?\
 Action:aya,102
 
 Face:yuyuko,驚
-Ayaya\, the snow...\
+Ayaya, the snow...\
 
 Face:aya,普
-I don't really understand what's going on\, but...\
+I don't really understand what's going on, but...\
 
 Object:data/scenario/aya/effect/Name.bmp,2,352,304
 
@@ -74,13 +74,13 @@ Face:aya,惑
 Nobody is allowed to enter the mountain.\
 
 Face:yuyuko,普
-Oh dear\, the snow got blown away.\
+Oh dear, the snow got blown away.\
 
 Face:aya,惑
 Snow?\
 
 Face:yuyuko,余
-Yes\, the mountain-beautifying snow of mine.\
+Yes, the mountain-beautifying snow of mine.\
 
 
 #戦闘開始処理
@@ -96,10 +96,10 @@ End:
 Label:Lose
 
 Face:aya,普
-Now\, go.\
+Now, go.\
 
 Face:aya,汗
-If people like you meet someone else here\,
+If people like you meet someone else here,
 something bad might happen.\
 
 End:
@@ -125,7 +125,7 @@ Action:yuyuko,202
 #自キャラ天候
 
 Face:yuyuko,惑
-Regrettably\, my power is insufficient.\
+Regrettably, my power is insufficient.\
 
 Face:aya,負
 I guess?\
@@ -134,7 +134,7 @@ Face:yuyuko,普
 My ephemeral snow cannot defeat your tempest.\
 
 Face:aya,負
-No\, I lost...\
+No, I lost...\
 
 Face:yuyuko,余
 It seems that I need a change of tactics.\

@@ -59,14 +59,14 @@ Action:alice,102
 Sleep:20
 
 Face:alice,惑
-Hey\, hey\, what the...!\
+Hey, hey, what the...!\
 
 # 名前のテロップ
 Object:data/scenario/alice/effect/Name.bmp,2,352,304
 
 Face:remilia,余
 A-ahem...
-You're Alice\, aren't you?\
+You're Alice, aren't you?\
 
 Action:alice,103
 
@@ -82,7 +82,7 @@ I don't have the time to play with you.\
 
 Face:remilia,余
 I wonder why you're so busy?
-You must be doing bad things\, that's why.\
+You must be doing bad things, that's why.\
 
 #戦闘開始
 PlayBgm:data/bgm/st13.ogg
@@ -128,14 +128,14 @@ Action:remilia,103
 Sleep:60
 
 Face:remilia,惑
-To make rain fall\, you...
+To make rain fall, you...
 control dolls...\
 
 Face:alice,負
 What?\
 
 Face:remilia,怒
-Hey\, Sakuya\, that makes no sense!
+Hey, Sakuya, that makes no sense!
 Bring the next one!\
 
 

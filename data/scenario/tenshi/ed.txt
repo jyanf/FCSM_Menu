@@ -36,7 +36,7 @@ Bgm:data/bgm/ta06.ogg
 #0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
   Bhava-agra.@
   This is one of the worlds in Heaven where celestials live.@
-  It was full of beautiful flowers\, beautiful song\, and\, of course\, delicious sake.\
+  It was full of beautiful flowers, beautiful song, and, of course, delicious sake.\
 
   You could dance and dance until you couldn't remember what day it was.@
   You could drink and drink until you got tired and fell asleep.@
@@ -53,38 +53,38 @@ CG:data/scenario/tenshi/effect/ED001.bmp,96,16,50
 #0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
 Suika  "I guess we couldn't even get everyone together up here~@
         That's kinda pathetic."@
-Tenshi "Well\, you should've worked harder! It's all your fault."\
+Tenshi "Well, you should've worked harder! It's all your fault."\
 
 Suika  "But there's lots of people who have it out for you...@
         I can't miss a chance to chase them away."@
 Tenshi "Why not try clearing up that grudge while you're at it?"\
 
-Alice  "In any case\, you really are quite strong.@
-        Isn't it hard to fight when the ground's shaking to and fro\, though?"@
-Tenshi "I don't think I'd lose to you even if I didn't cause earthquakes\, though."\
+Alice  "In any case, you really are quite strong.@
+        Isn't it hard to fight when the ground's shaking to and fro, though?"@
+Tenshi "I don't think I'd lose to you even if I didn't cause earthquakes, though."\
 
-Patchy "I lost this time since you had home advantage\,
+Patchy "I lost this time since you had home advantage,
         but I wonder what would have happened in my library..."@
 Marisa "The bookshelves would've collapsed and you'd be buried in books."\
 
-Marisa "An earthquake in a messy room would be really scary\, so..."@
-Tenshi "No\, you can't just leave it at that.
-        If there's nothing in the room\, it's harder to avoid falling things."\
+Marisa "An earthquake in a messy room would be really scary, so..."@
+Tenshi "No, you can't just leave it at that.
+        If there's nothing in the room, it's harder to avoid falling things."\
 
 Marisa "Oh really?@
-        So maybe I shouldn't clean my room\, then?"@
-Sakuya "No\, I really think you'd better."\
+        So maybe I shouldn't clean my room, then?"@
+Sakuya "No, I really think you'd better."\
 
-Reimu  "Anyway\, how is this a construction celebration party?
+Reimu  "Anyway, how is this a construction celebration party?
         It's just a regular party."\
 
 Suika  "But isn't it more interesting when you can't tell
         what the theme of the party is right away?"@
-Yuyuko "... ... the food is awfully modest\, though."\
+Yuyuko "... ... the food is awfully modest, though."\
 
-Tenshi "Yeah\, there isn't a lot of food in Heaven.@
+Tenshi "Yeah, there isn't a lot of food in Heaven.@
         The peaches above our heads are about it."@
-Sakuya "I thought that might be the case\,
+Sakuya "I thought that might be the case,
         so I caught some fish in a stream on the mountain."\
 
 CG:data/scenario/tenshi/effect/ED002.bmp,96,16,50
@@ -93,24 +93,24 @@ CG:data/scenario/tenshi/effect/ED002.bmp,96,16,50
 #
 #0‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O‚P‚Q‚R
 
-Marisa "Wow\, that's really thinking ahead."@
+Marisa "Wow, that's really thinking ahead."@
 Alice  "Isn't that an awfully large catfish?@
         How could you catch that on the way here? Didn't you just bring it?"\
 
 Sakuya "Why don't we try making some catfish?"@
-Suika  "Yeah\, that'd be great!"@
-Tenshi "Hmm\, do catfish taste good?"\
+Suika  "Yeah, that'd be great!"@
+Tenshi "Hmm, do catfish taste good?"\
 
 FadeBgm:2000,0
 CG:BLACK,0,0,15
 
   The party drank the night away with Sakuya's catfish and Suika's sake.
   Parties in Heaven usually aren't this lively.
-  Tenshi felt\, for once\, that she'd had an interesting day.\
+  Tenshi felt, for once, that she'd had an interesting day.\
 
 StaffRoll:
 
-  But\, how long would Suika remain in Heaven?
+  But, how long would Suika remain in Heaven?
   That was the one thing Tenshi was a little worried about.\
 
 End:

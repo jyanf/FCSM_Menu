@@ -51,7 +51,7 @@ Sleep:60;
 
 #ÇOÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇRÇSÇTÇUÇVÇWÇX\
 Face:tenshi,ïÅ
-Mmm\, I feel kinda sorry for her now.\
+Mmm, I feel kinda sorry for her now.\
 
 Face:tenshi,
 Hide:1
@@ -64,23 +64,23 @@ Action:alice,102
 Sleep:20
 
 Face:alice,ïÅ
-Ah\, there she is.
+Ah, there she is.
 That earthquake bastard.\
 
 
 Face:tenshi,ïÅ
-My\, were you called out by
-that little oni as well\, puppet jerk?\
+My, were you called out by
+that little oni as well, puppet jerk?\
 
 # ñºëOÇÃÉeÉçÉbÉv
 Object:data/scenario/alice/effect/Name.bmp,2,352,304
 
 Face:alice,ó]
-That's right. If that's how it is\,
+That's right. If that's how it is,
 I intend to take you down.\
 
 Face:tenshi,ó]
-Oh\, but you know\,
+Oh, but you know,
 you're making a mistake right now.\
 
 Face:alice,ó]
@@ -112,7 +112,7 @@ You're all talk.\
 
 #0ÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇR
 Face:alice,ä
-Now then\, is the banquet where we feast on
+Now then, is the banquet where we feast on
 the sight of your beat-up shape going to start?\
 
 End:
@@ -138,15 +138,15 @@ Action:tenshi,202
 
 #é©ÉLÉÉÉâìVåÛ
 Face:tenshi,ó]
-Today\, it's been one fight after another\,
+Today, it's been one fight after another,
 but I still feel fine.
 Maybe I should've given you a bigger handicap?\
 
 Face:alice,ïâ
-You're... too strong. Ah\, I give up.\
+You're... too strong. Ah, I give up.\
 
 Face:tenshi,òf
-That's right\, most of the time
+That's right, most of the time
 I won't ever lose...@
 Most of the time.\
 

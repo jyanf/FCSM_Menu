@@ -68,11 +68,11 @@ Action:sakuya,7
 Sleep:60
 
 Face:sakuya,òf
-I believed that ghost's words\,
+I believed that ghost's words,
 so I've come into the clouds.\
 
 Face:sakuya,ì{
-I came all the way here\,
+I came all the way here,
 what should I do if nothing happens?\
 
 Face:sakuya,
@@ -100,7 +100,7 @@ make it this far up the mountain.\
 #Sleep:90
 
 Face:sakuya,äæ
-Well\, I didn't want to come here.\
+Well, I didn't want to come here.\
 
 Face:iku,ïÅ
 There is no mountain above this place.
@@ -110,10 +110,10 @@ Face:sakuya,ïÅ
 The heavens?\
 
 Face:iku,òf
-Normally\, ordinary humans can't go to that place.\
+Normally, ordinary humans can't go to that place.\
 
 Face:iku,ïÅ
-It's best for you to return now\,
+It's best for you to return now,
 since the angels haven't noticed you yet.\
 
 Face:sakuya,ã¡
@@ -155,17 +155,17 @@ Face:sakuya,ïÅ
 Are you some kind of guard for the heavens?\
 
 Face:iku,ïÅ
-We\, the messengers of the Dragon Palace\,
+We, the messengers of the Dragon Palace,
 have no relation with the heavens.\
 We just swim in the lightning clouds
 to warn about the things to come.\
 
 Face:iku,ó]
-But\, to ignore my well-intentioned advice...
+But, to ignore my well-intentioned advice...
 I'm a bit irked.\
 
 Face:sakuya,ïÅ
-Oh\, but right now\,\
+Oh, but right now,\
 
 Face:sakuya,åà
 I'm in "Push Forward" mode.\
@@ -175,7 +175,7 @@ The advice from a messenger of the Dragon Palace
 is one way to avoid a future calamity.\
 
 Face:iku,åà
-Unfortunately\,
+Unfortunately,
 you've just lost that excellent choice.\
 
 
@@ -194,7 +194,7 @@ Face:iku,òf
 You might want to take your leave and prepare yourselves.\
 
 Face:iku,òf
-Because unfortunately\, Gensokyo is about to be the host
+Because unfortunately, Gensokyo is about to be the host
 of a tremendously destructive earthquake.\
 
 End:
@@ -222,7 +222,7 @@ Action:sakuya,202
 Action:iku,133
 
 Face:sakuya,ä
-Well then\, let's head to the heavens.\
+Well then, let's head to the heavens.\
 
 Face:iku,ïâ
 The residents of Heaven do not treat
@@ -240,7 +240,7 @@ So why are you going to Heaven?\
 
 #0ÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇR
 Face:sakuya,ïÅ
-Well\, at first I was only chasing 
+Well, at first I was only chasing 
 the scarlet mist that came out from my body.\
 
 Face:sakuya,ä
@@ -248,7 +248,7 @@ Then suddenly it turned into a plight
 that took me all the way up to Heaven.\
 
 Face:sakuya,åà
-If you will excuse me\, time is on my side.\
+If you will excuse me, time is on my side.\
 
 Hide:1
 Sleep:30
@@ -266,7 +266,7 @@ That's how the scarlet clouds came to be?@
 So the earthquake that will happen...\
 
 Face:iku,ïâ
-Mmm\, could it be that it's all her idea of a joke?\
+Mmm, could it be that it's all her idea of a joke?\
 
 Hide:1
 Result:

@@ -64,7 +64,7 @@ Action:yuyuko,102
 Sleep:20
 
 Face:yuyuko,普
-Oh really\, it's so annoying.\
+Oh really, it's so annoying.\
 
 # 名前のテロップ
 Object:data/scenario/yuyuko/effect/Name.bmp,2,352,304
@@ -74,7 +74,7 @@ It's almost time for the
 summer snow viewing to come to an end.\
 
 Face:udonge,普
-It's surprising that the snow hasn't melted yet\,
+It's surprising that the snow hasn't melted yet,
 considering how thin it is.\
 
 Face:yuyuko,余
@@ -89,8 +89,8 @@ Nothing has happened.
 Like catfish ghosts acting violently or-\
 
 Face:udonge,汗
-Huh? Well\, it's good that
-nothing happened\, I guess.\
+Huh? Well, it's good that
+nothing happened, I guess.\
 
 Face:yuyuko,普
 Are you worried about the earthquakes?\
@@ -99,10 +99,10 @@ Face:udonge,驚
 Eh? Yes. That's right.\
 
 Face:yuyuko,嬉
-Then\, you'll have to defeat me first.\
+Then, you'll have to defeat me first.\
 
 Face:udonge,汗
-I'm sorry\, but I don't understand what you mean.\
+I'm sorry, but I don't understand what you mean.\
 
 #戦闘開始
 PlayBgm:data/bgm/st16.ogg
@@ -117,7 +117,7 @@ End:
 Label:Lose
 
 Face:yuyuko,余
-Knowing that an earthquake may happen any time\,\
+Knowing that an earthquake may happen any time,\
 
 Face:yuyuko,普
 it's best when preparing for an earthquake
@@ -153,10 +153,10 @@ I've been told today is the
 completion ceremony of the new shrine.\
 
 Face:udonge,驚
-Ah\, so the shrine has been repaired already.\
+Ah, so the shrine has been repaired already.\
 
 Face:yuyuko,負
-Hmm\, but I wonder what's
+Hmm, but I wonder what's
 going on the shrine right now.\
 
 Face:udonge,汗
@@ -164,7 +164,7 @@ Face:udonge,汗
 
 # 雨
 Face:udonge,普
-Well\, I am worried about the earthquakes\, but
+Well, I am worried about the earthquakes, but
 I'd like to go see what the new shrine is like.\
 
 
