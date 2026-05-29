@@ -33,16 +33,12 @@ to me about, Lady Suwako?\
 Face:utsuho,ä
 Could it be that my work is already finished?\
 
-FadeBgm:2000,0
-Sleep:160;
 PlayBgm:data/bgm/ta21.ogg
-
-Sleep:160;
 
 Face:suwako,ó]
 I'm sorry, but no.\
 
-Sleep:30;
+Sleep:60;
 
 Face:suwako,ïÅ
 I just came to check to see what was going on here.\
@@ -52,8 +48,6 @@ I see you expelled everyone.\
 
 Face:utsuho,ó]
 I'm very powerful!\
-
-FadeBgm:2000,0
 
 Face:suwako,ïÅ
 I saw how powerful you are.\
