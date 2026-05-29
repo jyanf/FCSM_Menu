@@ -28,18 +28,18 @@ Bgm:data/bgm/ta06.ogg
 # Å@àÍñáñ⁄ÇÕèÍèäÇé¶Ç∑ä»íPÇ»ÉCÉâÉXÉgÇ™ì¸ÇÈó\íËÇ≈Ç∑
 #0ÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇRÇSÇTÇUÇVÇWÇXÇOÇPÇQÇR
 
-  ---Hakurei Shrine, the eastern border of Gensokyo.@
+  ---Hakurei Shrine\, the eastern border of Gensokyo.@
   There was something there more annoying
   than the incessant chatter of cicadas.@
-  This annoyance, however, is integral to this story.\
+  This annoyance\, however\, is integral to this story.\
 
 #CG:data/scenario/utsuho/effect/ED001.bmp,96,16,50
-  ---Moriya Shrine, originally from the Outside World.@
+  ---Moriya Shrine\, originally from the Outside World.@
   It is located on top of Youkai Mountain.@
   It's hard to get to her because of the Tengus.\
 
 #CG:data/scenario/utsuho/effect/ED002.bmp,96,16,50
-  ---Doll Forest, a forest full of dolls
+  ---Doll Forest\, a forest full of dolls
   where there was a giant active doll...@
   Alice doing her thing to fix the giant doll problem.\
 
@@ -51,14 +51,14 @@ Bgm:data/bgm/ta06.ogg
 #
 
 #CG:data/scenario/utsuho/effect/ED002.bmp,96,16,50
-Suwako "That's it, I already broke that Goliath Doll."@
+Suwako "That's it\, I already broke that Goliath Doll."@
 Alice  "Why did you want to do that?"\
 #CG:data/scenario/utsuho/effect/ED004.bmp,96,16,50
 Suwako "It can cause problems..."@
 Alice  "Are you sure about that?"@
-Suwako "Yes, because they are objetcts and there
+Suwako "Yes\, because they are objects and there
         will be a time when your don't control them."@
-Alice  "Oh, I didn't realise..."\
+Alice  "Oh\, I didn't realise..."\
 
 FadeBgm:2000,0
 CG:BLACK,0,0,15
@@ -68,7 +68,7 @@ CG:BLACK,0,0,15
   At a festival they did...\
   But she was preparing for one thing...\
   And her...\
-  To HisoutenSoku, so it doesn't become a
+  To HisoutenSoku\, so it doesn't become a
   youkai and attack Gensokyo.\
 
 FadeBgm:20000,0
