@@ -73,7 +73,7 @@ Action:meirin,403　#美鈴驚いて振り向く
 Action:meirin,404　#103終了検知
 
 Face:meirin,惑
-Hey, wait!\
+Hey\, wait!\
 
 Action:meirin,405　#美鈴臨戦態勢
 Face:meirin,怒
@@ -83,10 +83,10 @@ Face:suwako,驚
 Why?\
 
 Face:meirin,怒
-It's the property of the Scarlet Devil, so go away.\
+It's the property of the Scarlet Devil\, so go away.\
 
 Face:suwako,怒
-Well, you don't know who you're up against.\
+Well\, you don't know who you're up against.\
 
 #戦闘開始処理
 
@@ -120,7 +120,7 @@ Face:suwako,決
 Do you know that you're losing?\
 
 Face:meirin,怒
-I'm already realizing it, but that
+I'm already realizing it\, but that
 doesn't mean that I can't lose.\
 
 Hide:1
@@ -175,7 +175,7 @@ Face:suwako,余
 What did I tell you?\
 
 Face:suwako,嬉
-If you allow me, I'll go
+If you allow me\, I'll go
 where you told me.\
 
 Face:suwako,

@@ -50,7 +50,7 @@ Action:marisa,102 #“oê“®ìI—¹ŒŸ’m
 Sleep:30
 
 Face:marisa,•
-I see you weren't expecting me, I suppose?\
+I see you weren't expecting me\, I suppose?\
 
 Face:suwako,Š¾
 I have not idea...\
@@ -64,10 +64,10 @@ I'm an expert at lying.\
 PlayBgm:data/bgm/st11.ogg
 
 Face:suwako,“{
-You're not interested, go away.\
+You're not interested\, go away.\
 
 Face:marisa,Œˆ
-It must be something evil,
+It must be something evil\,
 I'll stop you then.\
 
 #í“¬ŠJnˆ—
@@ -152,16 +152,16 @@ Sleep:30
 Sleep:30
 
 Face:suwako,“{
-Idiot, you see I'm not hiding anything!\
+Idiot\, you see I'm not hiding anything!\
 
 Face:marisa,•‰
-Okay, I believe you...\
+Okay\, I believe you...\
 
 Face:suwako,“{
-Well, I have better things to do.\
+Well\, I have better things to do.\
 
 Hide:1
-Sleep:60
+Sleep:30
 
 Sleep:90
 
