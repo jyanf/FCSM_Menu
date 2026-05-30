@@ -123,7 +123,7 @@ Face:suwako,˜f
 ?!\
 
 Face:suwako,˜f
-I found The Gigant Thing!!!\
+I found The Giant Thing!!!\
 
 Face:suwako,˜f
 I will destroy that thing!!!\
