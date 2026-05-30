@@ -22,10 +22,11 @@
 > - 对于fullsc后缀的dat版本，其拥有完全解锁的卡片、角色、故事线等，还包括**全部的故事符卡记录**（这样您就能在Result菜单随意练习任何一张故事符卡）
 > - 对于init后缀的dat版本，其故事部分完全初始，您将可以游玩灵梦、魔理沙、咲夜和早苗的故事模式，并随着通关解锁更多的故事线，以还原绯想天中的体验。
 
-
+## 已知问题：
+- 来自绯想天中的角色中，灵梦、爱丽丝、魔理沙与帕秋莉本身已在非想天则登场，因此，她们的绯想天故事模式符卡已经被非想天则故事中的符卡顶替且暂时无法还原。
+- 对于部分玩家使用的电脑，在播放结局时可能会发生游戏崩溃，目前原因未知。
 
 ## 注意事项
-- 来自绯想天中的角色中，灵梦、爱丽丝、魔理沙与帕秋莉本身已在非想天则登场，因此，她们的绯想天故事模式符卡已经被非想天则故事中的符卡顶替且暂时无法还原。
 - 由于涉及到本地化和版本差异，仓库提供以下三个分支，请根据需求选择相应的版本下载。
   1. zh
   2. en
@@ -80,11 +81,15 @@ Of course, the recommended approach is replacing your existing `score123.dat` wi
 
 ---
 
-## Notes
+## Known Issues
 
 * Among the characters originating from SWR, Reimu, Alice, Marisa, and Patchouli already appear in Soku.
 
   Therefore, the spell cards from their SWR story routes unfortunately have been replaced by their spell cards from Soku, and restoring their original SWR versions would require a disproportionate amount of work.
+
+* Part of players may suffer story ending crash on their machine for currently unknown reason.
+
+## Notes
 
 * Due to localization and version differences, the repository provides the following three branches. Please download the version appropriate for your setup:
 
