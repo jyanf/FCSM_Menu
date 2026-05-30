@@ -17,7 +17,9 @@ WindowColor:0,0,0,0
 Color:FFFFFF
 Background:data/scenario/effect/EdBack000.bmp,999,0,0
 CG:data/scenario/reimu/effect/ED000.bmp,96,16,50
+WindowPos:8,372
 Label:Start
+
 
 Bgm:data/bgm/ta06.ogg
 

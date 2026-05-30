@@ -130,8 +130,9 @@ Sleep:100;
 PlayBgm:data/bgm/st35.ogg
 
 Face:alice,äæ
-Well\, that doll is built with a lot of magic and 
-it can only be destroyed by itself\, so you can't damage it.
+Well\, that doll is built with a lot of magic...\
+And it can only be destroyed by itself\, 
+so you can't damage it.\
 
 Face:alice,ïÅ
 But I won't let them eliminate
