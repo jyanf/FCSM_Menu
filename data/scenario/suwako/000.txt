@@ -7,20 +7,54 @@ Character:suwako,160,0,0,8888FF
 Character:chirno,160,0,1,FF8888
 
 #背景　霧の湖の辺
-Stage:30,0
+Stage:38,0
 
 #自分初期配置
 Action:suwako,1　#画面外待機
 
 #敵初期配置
-Action:chirno,400　#チルノ左右へうろうろ状態開始
+Action:chirno,100
 
 #カメラ中央固定
-Action:suwako,2　
+Action:suwako,2
 
 #画面表示前処理終了============================
 
+#画面黒からフェードイン
 Label:Start
+Action:suwako,161
+Sleep:30
+
+Face:null,普
+WindowPos:8,192
+
+#幕間口上
+
+Color:8F8F8F
+This storyline is a derivative work based on the
+original setting, featuring additional story scenario
+created by @Ikutron.\
+
+Face:null,無
+Hide:1
+
+Action:suwako,160　#画面外待機
+
+Sleep:120
+
+WindowPos:8,392
+
+#敵初期配置
+Action:chirno,400　#チルノ左右へうろうろ状態開始
+
+#背景　霧の湖の辺
+Stage:30,0
+
+Action:suwako,161
+
+Sleep:60;
+
+#ステージタイトル表示
 PlayBgm:data/bgm/ta05.ogg
 Sleep:60
 
@@ -33,6 +67,7 @@ Sleep:216;
 Action:chirno,401　#チルノ後ろを向いて驚く
 Sleep:60;
 
+Color:FF8888
 Face:chirno,汗
 So does that Daidarabocchi exist or not?\
 
@@ -51,6 +86,7 @@ Action:suwako,6 #登場動作終了検知
 
 Sleep:70;
 
+Color:8888FF
 # 普、嬉、余、汗、驚、怒、決、惑、負
 Face:suwako,普
 Hey!\
@@ -59,6 +95,7 @@ Face:suwako,汗
 (Another one who is believed to have seen
 something gigant.)\
 
+Color:FF8888
 Action:chirno,405　#チルノこちらを向いて驚く
 Face:chirno,惑
 Eh?\
@@ -71,34 +108,41 @@ Action:chirno,407　#チルノごまかし動作高速化
 Face:chirno,驚
 Oh wait. You're the frog maniatic.\
 
+Color:8888FF
 Action:suwako,402# 諏訪子　疑問
 Face:suwako,普
 Yes, just like you. but instead of
 freezing them I make them live.\
 
+Color:FF8888
 Action:chirno,406　#チルノこちらを向いて驚く
 Face:chirno,惑
 How do you know that?\
 
+Color:8888FF
 Face:suwako,驚
 Are you blind or something?\
 
 Face:suwako,汗
 You just need to look at me...\
 
+Color:FF8888
 Action:chirno,405　#チルノこちらを向いて驚く
 Face:chirno,汗
 I don't see anything.\
 
+Color:8888FF
 Action:chirno,203　#チルノこちらを向いて驚く
 Action:suwako,404# 諏訪子　笑う
 Face:suwako,普
 It shows you are idiot. I live
 with frogs symbols on my clothes.\
 
+Color:FF8888
 Face:chirno,惑
 Are you a goddess of frogs?\
 
+Color:8888FF
 Action:suwako,203# 諏訪子　笑う
 Face:suwako,余
 I am a Native Goddess of the Earth...\
@@ -109,11 +153,13 @@ Face:suwako,惑
 Face:suwako,驚
 Hey, fairy, did you see where Sanae went?\
 
+Color:FF8888
 Action:chirno,404
 Face:chirno,決
 Well no, but now I care to fight, defeat and show
 that I am the strongest with a simple goddess.\
 
+Color:8888FF
 Action:suwako,203
 Face:suwako,汗
 Well, if there isn't other way...\

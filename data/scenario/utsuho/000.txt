@@ -7,22 +7,53 @@ Character:utsuho,160,0,0,8888FF
 Character:chirno,160,0,1,FF8888
 
 #背景　霧の湖の辺
-Stage:34,0
+Stage:38,0
 
 #自分初期配置
 Action:utsuho,1　#画面外待機
 
 #敵初期配置
-Action:chirno,400　#チルノ左右へうろうろ状態開始
+Action:chirno,100　#チルノ左右へうろうろ状態開始
 
 #カメラ中央固定
-Action:utsuho,2　
+Action:utsuho,2
+#Action:utsuho,315
 
 #画面表示前処理終了============================
 
+#画面黒からフェードイン
 Label:Start
-PlayBgm:data/bgm/room.ogg
-Sleep:60
+Action:utsuho,161
+Sleep:30
+
+Face:null,普
+WindowPos:8,192
+
+#幕間口上
+
+Color:8F8F8F
+This storyline is a derivative work based on the
+original setting, featuring additional story scenario
+created by @Ikutron.\
+
+Face:null,無
+Hide:1
+
+Action:utsuho,160　#画面外待機
+
+Sleep:120
+
+WindowPos:8,392
+
+#敵初期配置
+Action:chirno,400　#チルノ左右へうろうろ状態開始
+
+#背景　霧の湖の辺
+Stage:34,0
+
+Action:utsuho,161
+#Action:utsuho,316
+Sleep:60;
 
 #ステージタイトル表示
 Object:data/scenario/utsuho/effect/StageTitle001.bmp,0,192,-32
@@ -41,6 +72,7 @@ Sleep:70;
 
 # 普、嬉、余、汗、驚、怒、決、惑、負
 
+Color:8888FF
 Face:utsuho,普
 #0１２３４５６７８９０１２３４５６７８９０１２３
 (I'm supposed to protect this area...)\
@@ -60,10 +92,12 @@ Face:utsuho,汗
 Face:utsuho,驚
 (I'll scare him to make it easier.)\
 
+Color:FF8888
 Action:chirno,401　#チルノ後ろを向いて驚く
 Face:chirno,汗
 So hot! This is unberable!\
 
+Color:8888FF
 Face:utsuho,余
 Foreign substance detected!\
 
@@ -72,6 +106,7 @@ Significant drop in reactor core temperature
 requires urgent attention. The foreign subtance
 is to be immdiately eradicated!\
 
+Color:FF8888
 Action:chirno,405　#チルノこちらを向いて驚く
 Action:chirno,407　#チルノごまかし動作高速化
 Face:chirno,驚
