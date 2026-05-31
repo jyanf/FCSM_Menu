@@ -1,3 +1,14 @@
+local _checkNoSWR = memory.createfunccall(0x43dc10, 0, false)
+local function CheckSWR()
+	return (_checkNoSWR()&0xff)==0
+end
+soku.SubscribeReady(function ()
+
+if not CheckSWR() then
+	print("Game failed to load SWR data!") print("FullCharacterStoryMenu has auto closed.")
+	return
+end
+
 require("FCSM_scripts")
 local CMat = require("FCSM_scripts.CursorMatProxy")
 local ADDR_SUBMENU_CHARACTER = 0x899D10
@@ -97,6 +108,8 @@ soku.SubscribeSceneChange(
 		end
 	end
 )
+	
+end)
 
 --[[
 	local Df = require "FCSM_scripts.DatFlater"
