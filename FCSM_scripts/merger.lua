@@ -280,7 +280,7 @@ node_handlers = {
             for k,v in pairs(t._attr) do
                 local nv = tonumber(v)
                 if k=="mode" then
-                    blend.mode = nv
+                    blend.mode = nv + 1 --0 in pat is 1 in game
                 elseif k=="color" then
                     blend.color = tonumber(v, 16)
                 elseif k=="xscale" then
