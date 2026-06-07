@@ -3,7 +3,10 @@ import copy
 import sys
 from lxml import etree
 
-PARSER = etree.XMLParser(remove_blank_text=True)
+PARSER = etree.XMLParser(
+    remove_blank_text=True,
+    encoding="SHIFT_JIS", #fix the fucking full width "ｂ" in patchouli bulletIｂ000.png
+)
 
 # -----------------------------
 # 基础工具
@@ -20,52 +23,83 @@ def deepcopy(node):
     return copy.deepcopy(node)
 
 def pre_clone(root):
-    # root = deepcopy(root)
-    # move group
+    # --------------------------------
+    # collect original move groups
+    # --------------------------------
     groups = {}
-    for m in root.findall("move"):
-        mid = m.attrib.get("id")
+    for node in root:
+        if node.tag != "move":
+            continue
+        mid = node.attrib.get("id")
         if mid is None:
             continue
-        groups.setdefault(mid, []).append(m)
-    replacements = []
+        groups.setdefault(mid, []).append(node)
+    # --------------------------------
+    # collect clone nodes
+    # --------------------------------
+    clones = {}
     for node in root:
         if node.tag != "clone":
             continue
-        target = node.attrib.get("target")
-        if target is None:
-            continue
-        src_group = groups.get(target)
-        if not src_group:
+        cid = node.attrib.get("id")
+        if cid is None:
             raise RuntimeError(
-                f"clone target not found: {target}"
+                "clone without id"
             )
-        new_nodes = []
+        clones[cid] = node
+    # --------------------------------
+    # dfs resolve clone dependency
+    # --------------------------------
+    visiting = set()
+    resolved = set(groups.keys())
+
+    def resolve(mid):
+        # already solved
+        if mid in resolved:
+            return groups[mid]
+        clone_node = clones.get(mid)
+        if clone_node is None:
+            raise RuntimeError(
+                f"clone target not found: {mid}"
+            )
+        # cycle detect
+        if mid in visiting:
+            raise RuntimeError(
+                f"circular clone dependency: {mid}"
+            )
+        visiting.add(mid)
+        target = clone_node.attrib.get("target")
+        if target is None:
+            raise RuntimeError(
+                f"clone {mid} missing target"
+            )
+        src_group = resolve(target)
+        expanded = []
         for src in src_group:
             cp = deepcopy(src)
-            # clone id覆盖
-            if "id" in node.attrib:
-                cp.attrib["id"] = node.attrib["id"]
-            new_nodes.append(cp)
-
-        replacements.append(
-            (node, new_nodes)
-        )
-
-    for old, new_nodes in replacements:
-
+            # clone id overrides target id
+            cp.attrib["id"] = mid
+            expanded.append(cp)
+        groups[mid] = expanded
+        resolved.add(mid)
+        visiting.remove(mid)
+        return expanded
+    # --------------------------------
+    # expand all clone nodes
+    # --------------------------------
+    replacements = []
+    for cid, node in clones.items():
+        expanded = resolve(cid)
+        replacements.append((node, expanded))
+    # --------------------------------
+    # replace clone node in xml tree
+    # --------------------------------
+    for old, expanded in replacements:
         parent = old.getparent()
-
         pos = parent.index(old)
-
         parent.remove(old)
-
-        for i, n in enumerate(new_nodes):
-
-            parent.insert(
-                pos + i,
-                n
-            )
+        for i, node in enumerate(expanded):
+            parent.insert(pos + i, deepcopy(node))
     return root
 
 def node_equal(a, b):
@@ -78,6 +112,35 @@ def node_equal(a, b):
     for ca, cb in zip(a, b):
         if not node_equal(ca, cb):
             return False
+    return True
+
+#fix xml con-version difference
+def box_equal(a, b):
+    if a.tag != b.tag:
+        return False
+    # completely ignore unknown
+    a_attr = {
+        k:v
+        for k,v in a.attrib.items()
+        if k.lower() != "unknown"
+    }
+    b_attr = {
+        k:v
+        for k,v in b.attrib.items()
+        if k.lower() != "unknown"
+    }
+    if a_attr != b_attr:
+        return False
+
+
+    # preserve recursive comparison; no need but I just kept it
+    if len(a) != len(b):
+        return False
+
+    for ca, cb in zip(a, b):
+        if not box_equal(ca, cb):
+            return False
+
     return True
 
 def attr_diff(a, b):
@@ -212,12 +275,9 @@ def diff_frames(a_move, b_move): # blendOption的drop尚未处理
 
             # box 类节点 atomic
             if contains_box(child_b):
-
                 child_a = find_child(a, child_b.tag)
-
-                if child_a is None or not node_equal(child_a, child_b):
+                if child_a is None or not box_equal(child_a, child_b):
                     out.append(deepcopy(child_b))
-
                 continue
 
             # 普通节点
