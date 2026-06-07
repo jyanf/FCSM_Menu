@@ -196,6 +196,7 @@ function H.InitHacker(pmap, pdeq, pvtx)
     return inst
 end
 
+local callbackIdGen = 0
 local Callbacks = {
     _global = {}
 }
@@ -212,8 +213,27 @@ function H.AddCallBack(p1, p2)
     if not Callbacks[cname] then
         Callbacks[cname] = {}
     end
-    table.insert(Callbacks[cname], cbf)
+    callbackIdGen = callbackIdGen + 1
+    local id = callbackIdGen
+    Callbacks[cname][id] = cbf
+    --table.insert(Callbacks[cname], cbf)
+    return id.."@"..cname
 end
+function H.RemoveCallback(handle)
+    local id, cname = handle:match("^(%d+)@(.+)$")
+    if not cname then return false end
+    local list = Callbacks[cname]
+    if not list then return false end
+
+    id = tonumber(id)
+    if id and list[id] then
+        list[id] = nil
+        return true
+    end
+
+    return false
+end
+
 memory.hookcall(0x4689c2, memory.createcallback(0, function(state)
     local restored_esp = state.esp + 0x39c + 4
     local cname, pid, pMap, pDeq, pVec = string.unpack("<LLLLL", memory.readbytes(restored_esp+4, 20))
@@ -223,11 +243,11 @@ memory.hookcall(0x4689c2, memory.createcallback(0, function(state)
         print(pMap, pDeq, pVec)
     end 
         
-    for idx, gcbf in ipairs(Callbacks["_global"]) do
+    for idx, gcbf in pairs(Callbacks["_global"]) do
         gcbf(hkr, pid, idx>1)
     end
     if not Callbacks[cname] then return end
-    for idx, cbf in ipairs(Callbacks[cname]) do
+    for idx, cbf in pairs(Callbacks[cname]) do
         cbf(hkr, pid, idx>1)
     end
 end))
