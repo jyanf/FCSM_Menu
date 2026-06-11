@@ -75,10 +75,10 @@ M.define("CharacterFrameData", {
             offset = 0x68,
             type = "vector<Box>",
         },
-        -- extraBoxes = {
-        --     offset = 0x78,
-        --     type = "vector<Box*>",
-        -- },
+        extraBoxes = {
+            offset = 0x78,
+            type = "vector<Box*>",
+        },
         customVector1 = {offset=0x88, type="Vector2i"},
         customVector2 = {offset=0x90, type="Vector2i"},
         customVector3 = {offset=0x98, type="Vector2i"},

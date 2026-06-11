@@ -144,9 +144,9 @@ end
 
 local function traits_collect_flags(t, index)
     local value = 0
-    for index, flag in ipairs(t) do
+    for flag, _ in pairs(t) do
         local type, nv =  F.GetFlagValue(flag)
-        value = value + (type==index and nv and value or 0)
+        value = value + (type==index and nv or 0)
     end
     return value
 end
@@ -382,15 +382,18 @@ node_handlers = {
     attack = function(t, data) --hitboxes
         local frame = data.cframe
         local boxes = frame.attackBoxes
+        local eboxes = frame.extraBoxes
         local merge_option = t._attr and t._attr.merge_option
         if not merge_option then
             merge_option = boxes:size()>0 and "trunc"
         end
         if merge_option=="drop" then
             boxes:clear()
+            eboxes:clear()
         else
             if merge_option=="trunc" then
                 boxes:clear()
+                eboxes:clear()
             end
             local count = 0
             for index, box in ipairs(AsArray(t.box)) do
@@ -398,9 +401,10 @@ node_handlers = {
             end
             if count>0 then
                 boxes:resize(count)
+                eboxes:resize(count)
             end
             for index, box in ipairs(AsArray(t.box)) do
-                box = box._attr
+                box = box._attr --ignore extraBoxes
                 local proxy = boxes[index-1]
                 proxy.left = tonumber(box.left)
                 proxy.top = tonumber(box.up)
