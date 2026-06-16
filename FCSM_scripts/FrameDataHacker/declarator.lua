@@ -5,17 +5,9 @@ local M = {
         if n<=0 then return end
         memory.writebytes(dst, memory.readbytes(src, n))
     end,
-    
+    realloc = memory.createfunccall(0x8232ba, 2, false)   
     -- verbose = true
 }
-function M.realloc(addr, n)
-    local new_ptr = n>0 and M.alloc(n)
-    if addr and addr~=0 then
-        M.memcpy(new_ptr, addr, n)
-        M.free(addr)
-    end
-    return new_ptr
-end
 
 local relative = ... and (...):gsub("declarator$", "") or ""
 local merge_table = require(relative.."utils").merge_table
