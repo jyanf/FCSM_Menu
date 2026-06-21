@@ -36,8 +36,11 @@ local function read_name_string_simple(addr, max_len)
     error("No null terminator found for name string")
 end
 
+--int* __thiscall CHandleManager<IDirect3DTexture9*>::LoadTexture (CHandleManager<IDirect3DTexture9*>* this, int* pId, char* pathInDat, uint* param_4, uint* param_5)
+local _load_texture = memory.createfunccall(0x405030, 4, true) -- lower img loader already hooked by shady
 
 return {
     merge_table = merge_table,
     convert_cstring = read_name_string_simple,
+    load_texture = _load_texture,
 }

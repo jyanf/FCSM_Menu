@@ -1,12 +1,12 @@
-local relative = ... and (...):gsub("PatternMap$", "") or ""
+local relative = ... and (...):gsub("CharacterPatternMap$", "") or ""
 local M = require(relative.."declarator")
-require(relative.."SequenceData")
+require(relative.."CharacterSequenceData")
 
-M.define("map<int, SequenceData*>", {
+M.define("map<int, CharacterSequenceData*>", {
     size = 0xC,
     static = {
         key_type = "int",
-        value_type = "SequenceData*",
+        value_type = "CharacterSequenceData*",
 
         -- iterator* find(map* this, iterator* out, int* key)
         _map_find = memory.createfunccall(0x43f2f0, 2, true),
@@ -34,7 +34,7 @@ M.define("map<int, SequenceData*>", {
         find = function (self, k)
             local pnode = self:_find(k)
             local pseq = pnode and memory.readint(pnode+0x10) or nil
-            return pseq and M.fromPtr("SequenceData", pseq) or nil
+            return pseq and M.fromPtr("CharacterSequenceData", pseq) or nil
         end,
         erase = function (self, k)
             local pnode = self:_find(k)
@@ -51,17 +51,17 @@ M.define("map<int, SequenceData*>", {
             return inserted, cur --success
         end,
         insert = function (self, k, pseq)
-            if type(pseq)=="table" and pseq.typeDef.typename=="SequenceData" then
+            if type(pseq)=="table" and pseq.typeDef.typename=="CharacterSequenceData" then
                 pseq = pseq.basePtr
             end
             if type(pseq)=="number" then
                 return self:_insert(k, pseq)
             end
-            error("insertion failed: no SequenceData*")
+            error("insertion failed: no CharacterSequenceData*")
         end,
 
         remap = function (self, k, pseq)
-            if type(pseq)=="table" and pseq.typeDef.typename=="SequenceData" then
+            if type(pseq)=="table" and pseq.typeDef.typename=="CharacterSequenceData" then
                 pseq = pseq.basePtr
             end
             if type(pseq)=="number" then
@@ -89,4 +89,4 @@ M.define("map<int, SequenceData*>", {
         end
     }
 })
-return M, M.verbose and print(relative.."PatternMap")
+return M, M.verbose and print(relative.."CharacterPatternMap")

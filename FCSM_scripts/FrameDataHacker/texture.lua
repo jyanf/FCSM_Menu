@@ -1,8 +1,7 @@
 local relative = ... and (...):gsub("texture$", "") or ""
 
 local M = require(relative.."vector")
-
-local convert_cstring = require(relative.."utils").convert_cstring
+local U = require(relative.."utils")
 
 local Buffer = {}
 local listener0 = memory.createcallback(2, function (state, total)
@@ -20,7 +19,7 @@ local listener0 = memory.createcallback(2, function (state, total)
     }
 end)
 local listener1 = memory.createcallback(0, function (state)
-    local fname, cname = convert_cstring(state.eax), convert_cstring(state.ebp)
+    local fname, cname = U.convert_cstring(state.eax), U.convert_cstring(state.ebp):lower()
     if not Buffer._loadingc then
         Buffer[cname] = {}
     end
@@ -43,13 +42,11 @@ memory.hookcall(0x467ad5, listener0)
 memory.hooktramp(0x467bc8, 5, listener1)
 memory.hooktramp(0x467c4a, 5, listener2)
 
---int* __thiscall CHandleManager<IDirect3DTexture9*>::LoadTexture (CHandleManager<IDirect3DTexture9*>* this, int* pId, char* pathInDat, uint* param_4, uint* param_5)
-local _load_texture = memory.createfunccall(0x405030, 4, true) -- lower img loader already hooked by shady
 local function load_texture(vtx, path)
     local pid = M.alloc(4); memory.writeint(pid, 0)
     path = path.."\0"
     local cpath = M.alloc(#path); memory.writebytes(cpath, path)
-    _load_texture(0x89ff08, pid, cpath, 0, 0)
+    U.load_texture(0x89ff08, pid, cpath, 0, 0)
     local id = memory.readint(pid)
     M.free(pid); M.free(cpath)
 
@@ -60,6 +57,7 @@ end
 
 return {
     get_tex_id = function (vtx, cname, fname)
+        cname = cname:lower(); --fname = fname:lower()
         if not Buffer[cname] then 
             Buffer[cname] = {}    
         end

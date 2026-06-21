@@ -27,11 +27,14 @@ local function vector_define (value_type)
             end,
             at = function (self, i)
                 local count = self:size()
-                if i>=0 and i<count then
-                    return M.fromPtr(self.value_type, self.first+self.element_size*i)
-                elseif i<0 and -i<=count then
-                    return M.fromPtr(self.value_type, self.last+i*self.element_size)
+                if count>=0 then
+                    if i>=0 and i<count then
+                        return M.fromPtr(self.value_type, self.first+self.element_size*i)
+                    elseif i<0 and -i<=count then
+                        return M.fromPtr(self.value_type, self.last+i*self.element_size)
+                    end
                 end
+                -- error(string.format("invalid index %d on size %d vecotr.", i, count))
             end,
 
             _realloc = function (self, N)

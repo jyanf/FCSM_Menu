@@ -1,34 +1,32 @@
-local relative = ... and (...):gsub("CharacterSequenceData$", "") or ""
+local relative = ... and (...):gsub("SequenceData$", "") or ""
 local M = require(relative.."declarator")
-require(relative.."CharacterFrameData")
+require(relative.."FrameData")
 require(relative.."vector")
 
 
-M.define("vector<CharacterFrameData>", M.get_template("vector<>")("CharacterFrameData"))
+M.define("vector<FrameData>", M.get_template("vector<>")("FrameData"))
 
-M.define("CharacterSequenceData", {
+M.define("SequenceData", {
     size = 0x20,
     static = {
-        _init = memory.createfunccall(0x4673b0, 0, true),
-        -- _resize_frame = memory.createfunccall(0x467880, 2, true), --this is actually resize and fill
+        _init = memory.createfunccall(0x423c20, 0, true),
+        -- void __stdcall PatternData_copy(PatternData* dst, PatternData* src)
+        _copy = memory.createfunccall(0x423ec0, 2, false)
     },
     fields = {
-        -- Vector<CharacterFrameData>
-        frames = {offset=0x00, type="vector<CharacterFrameData>"},
-
-        moveLock = {offset=0x10, type="short"},
-        actionLock = {offset=0x12, type="short"},
+        -- Vector<FrameData>
+        frames = {offset=0x04, type="vector<FrameData>"},
         isLoop = {offset=0x14, type="bool"},
 
         prev = {
             offset=0x18,
-            type="CharacterSequenceData",
+            type="SequenceData",
             isPtr=true
         },
 
         next = {
             offset=0x1C,
-            type="CharacterSequenceData",
+            type="SequenceData",
             isPtr=true
         },
     },
@@ -46,12 +44,10 @@ M.define("CharacterSequenceData", {
             -- have to manually manage insert, but for now just append
             
             if type(pframe)=="number" then
-                -- self._resize_frame(self.basePtr, csize+1, pframe)
                 self.frames:resize(csize+1)
                 self.frames[-1]:copy(pframe)
-            elseif type(pframe)=="table" and pframe.typeDef.typename=="CharacterFrameData" then
+            elseif type(pframe)=="table" and pframe.typeDef.typename=="FrameData" then
                 local og = pframe.basePtr
-                -- self._resize_frame(self.basePtr, csize+1, og)
                 self.frames:resize(csize+1)
                 self.frames[-1]:copy(og)
                 if M.verbose then
@@ -133,4 +129,4 @@ M.define("CharacterSequenceData", {
     },
 })
 
-return M, M.verbose and print(relative.."CharacterSequenceData")
+return M, M.verbose and print(relative.."SequenceData")

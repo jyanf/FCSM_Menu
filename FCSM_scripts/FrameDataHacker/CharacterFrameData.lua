@@ -1,26 +1,10 @@
 local relative = ... and (...):gsub("CharacterFrameData$", "") or ""
 local M = require(relative.."declarator")
+require(relative.."FrameData")
 require(relative.."vector")
 require(relative.."Box")
 
-M.define("BlendOptions", {
-    size = 0x1C,
-    fields = {
-        mode = {offset=0, type="uint"},
-        color = {offset=4, type="uint"}, 
-            colorb = {offset=4, type="uchar"}, 
-            colorg = {offset=5, type="uchar"}, 
-            colorr = {offset=6, type="uchar"},
-            colora = {offset=7, type="uchar"},
-        scale = {offset=8, type="Vector2f"},
-        rotateX = {offset=16, type="float"},
-        rotateY = {offset=20, type="float"},
-        rotateZ = {offset=24, type="float"},
-    },
-    methods = {
-        init = M.default_init,
-    }
-})
+--derived from Framedata
 M.define("CharacterFrameData", {
     size = 0xA8,
     fields = {
@@ -96,6 +80,7 @@ M.define("CharacterFrameData", {
         init = function (self)
             self._init(self.basePtr)
             self.vtable = 0x85a2a4 -- fix org function memset
+            return self
         end,
         clear = function (self)
             self._clear(self.basePtr)
@@ -105,6 +90,7 @@ M.define("CharacterFrameData", {
                 pframe = pframe.basePtr
             end
             self._copy(self.basePtr, pframe)
+            return self
         end
     }
 })

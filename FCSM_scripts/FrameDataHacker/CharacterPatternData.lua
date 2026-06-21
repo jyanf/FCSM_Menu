@@ -1,12 +1,17 @@
-local relative = ... and (...):gsub("PatternData$", "") or ""
+local relative = ... and (...):gsub("CharacterPatternData$", "") or ""
 local M = require(relative.."declarator")
-require(relative.."SequenceData")
+require(relative.."CharacterSequenceData")
 
-M.define("deque<SequenceData>", {
+M.define("deque<CharacterSequenceData>", {
     size = 0x14,
     static = {
-        value_type = "SequenceData",
-        element_size = M.sizeof("SequenceData"),
+        value_type = "CharacterSequenceData",
+        element_size = M.sizeof("CharacterSequenceData"),
+		-- _block_max = Classes["CharacterSequenceData"].size <= 0x1 and 0x10 
+        --         or Classes["CharacterSequenceData"].size <= 0x2 and 0x8 
+        --         or Classes["CharacterSequenceData"].size <= 0x4 and 0x4 
+        --         or Classes["CharacterSequenceData"].size <= 0x8 and 0x2 
+        --         or 1,
         _block_max = 1,
 		_min_blocks = 8,
 
@@ -39,7 +44,7 @@ M.define("deque<SequenceData>", {
             self.size = self.size + 1;
         end,
         push_back = function (self, pseq)
-            if type(pseq)=="table" and pseq.typeDef.typename=="SequenceData" then
+            if type(pseq)=="table" and pseq.typeDef.typename=="CharacterSequenceData" then
                 pseq = pseq.basePtr
             end
             if type(pseq)=="number" then
@@ -50,4 +55,4 @@ M.define("deque<SequenceData>", {
         --pop_back,
     }
 })
-return M, M.verbose and print(relative.."PatternData")
+return M, M.verbose and print(relative.."CharacterPatternData")

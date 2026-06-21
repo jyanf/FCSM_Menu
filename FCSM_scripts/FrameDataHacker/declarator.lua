@@ -188,6 +188,7 @@ M.default_meta = {
 
 M.default_init = function (self)
     memory.writebytes(self.basePtr, string.rep("\0", self.typeDef.size))
+    return self
 end
 
 function M.fromPtr(name, ptr)

@@ -7,8 +7,8 @@ local function check_story()
     return memory.readbytes(0x898690, 1)=="\x00"
 end
 
-local diff_suwako = G.fromXml(relative:gsub("%.","/").."_generator/diff_suwako.xml")
-local diff_utsuho = G.fromXml(relative:gsub("%.","/").."_generator/diff_utsuho.xml")
+local diff_suwako = G.fromXml(relative:gsub("%.","/").."diff_suwako.xml")
+local diff_utsuho = G.fromXml(relative:gsub("%.","/").."diff_utsuho.xml")
 
 local handler = Hkr.AddCallBack("suwako", function (hkr, palette, isFirst)
     --[[test
@@ -36,7 +36,22 @@ Hkr.AddCallBack("utsuho", function (hkr, palette, isFirst)
         print("Utsuho pat fix merged.")
     end
 end)
-
+--[[effect test
+local Hkr2 = require(relative.."FrameDataHacker.hacker2")
+Hkr2.AddCallBack("data/infoeffect/effect.pat", function (hkr2, isFirst)
+    print("cb")
+    -- local lv1 = hkr2:getBlock(131, 0)
+    -- lv1.frames[0].duration = 10
+    -- lv1.isLoop = false
+    -- local seq = Hkr2.SequenceData(); seq:init()
+    -- local frame = Hkr2.FrameData()
+    -- seq:addFrame(frame:copy(lv1.frames[0]))
+    -- seq.isLoop = true
+    -- hkr2:addBlock(131, 1, seq)
+    -- lv1.frames[0].texIndex = hkr2:loadTexture("data/effect", "LEVELMAX.png")
+    G.merge(hkr2, "data/infoeffect", G.fromXml(relative:gsub("%.","/").."diff.xml"))
+end)
+--]]
 --[[expand story menu to all - hardcode
 require("FCSM_scripts.ChainedPatch")
 --]]

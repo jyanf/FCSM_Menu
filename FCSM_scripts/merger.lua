@@ -3,6 +3,7 @@ local xml2lua = require(relative.."xml2lua")
 local xmlhandler = require(relative.."xml2lua.xmlhandler.tree")
 local F = require(relative.."Flags")
 local Hkr = require(relative.."FrameDataHacker")
+local Hkr2 = require(relative.."FrameDataHacker.hacker2")
 
 local function read_xml(filename)
     local data = readfile(filename)
@@ -13,7 +14,7 @@ end
 local function parse(data)
     local handler = xmlhandler:new()
     xml2lua.parser(handler):parse(data)
-    local base = handler.root.movepatterndiff
+    local base = handler.root
     return base
 end
 
@@ -154,7 +155,8 @@ end
 -- local attr_handlers = {}
 local node_handlers = {}
 node_handlers = {
-    move = function(t, data) --block
+    block = function(t, data) --block
+        local SD = data.type==2 and Hkr2.SequenceData or Hkr.CharacterSequenceData
         local hkr = data.hacker
         local actId, seqId = get_block_id(t, data)
         local block = hkr:getBlock(actId, seqId)
@@ -167,7 +169,7 @@ node_handlers = {
             data.dropBuffer:record_modify(merge_option, data.xactId, data.xseqId, data.xposeId)
         else
             if merge_option=="add" then
-                block = Hkr.CharacterSequenceData(memory.new(0x20))
+                block = SD()
                 block:init()
                 hkr:addBlock(actId, seqId, block)
                 data.dropBuffer:record_modify(merge_option, data.xactId, data.xseqId, data.xposeId)
@@ -191,6 +193,7 @@ node_handlers = {
     end,
     
     frame = function(t, data) --frame
+        local FD = data.type==2 and Hkr2.FrameData or Hkr.CharacterFrameData
         local hkr = data.hacker
         local poseId = get_frame_id(t, data)
         if not data.cblock then
@@ -206,7 +209,7 @@ node_handlers = {
             data.dropBuffer:record_modify(merge_option, data.xactId, data.xseqId, data.xposeId)
         else
             if merge_option=="add" then
-                frame = Hkr.CharacterFrameData(memory.new(0xA8))
+                frame = FD()
                 frame:init()
                 data.cblock:addFrame(frame)
                 data.dropBuffer:record_modify(merge_option, data.xactId, data.xseqId, data.xposeId)
@@ -260,6 +263,7 @@ node_handlers = {
         end
     end,
     blend = function (t, data)
+        local BO = data.type==2 and Hkr2.BlendOptions or Hkr.BlendOptions
         local frame = data.cframe
         local merge_option = t._attr and t._attr.merge_option
         if not merge_option then
@@ -271,7 +275,7 @@ node_handlers = {
         else
             local blend
             if merge_option=="add" then
-                blend = Hkr.BlendOptions(memory.new(0x1C))
+                blend = BO()
                 blend:init()
                 frame.blendOptions = blend
             elseif merge_option=="update" then
@@ -426,7 +430,7 @@ node_handlers = {
         else
             local cbox
             if merge_option=="add" then
-                cbox = Hkr.Box(memory.new(0x10))
+                cbox = Hkr.Box()
                 cbox:init()
                 frame.collisionBox = cbox
             elseif merge_option=="update" then
@@ -467,24 +471,51 @@ node_handlers = {
                 frame.customShort3 = nv
             end
         end
+    end,
+
+    movepatterndiff = function (t, hkr, cname)
+        local data = {
+            type = 1,
+            cname = cname,
+            hacker = hkr,
+            cblock = nil, cframe = nil,
+            xactId = nil, xseqId = nil, xposeId = nil,
+            dropBuffer = {
+                block = {}, frame = {},
+                record_modify = record_modify,
+                resolve = resolve,
+            }
+        }
+        for index, move in ipairs(AsArray(t.move)) do
+            node_handlers.block(move, data)
+        end
+    end,
+    animpatterndiff = function (t, hkr, cname)
+        local data = {
+            type = 2,
+            cname = cname,
+            hacker = hkr,
+            cblock = nil, cframe = nil,
+            xactId = nil, xseqId = nil, xposeId = nil,
+            dropBuffer = {
+                block = {}, frame = {},
+                record_modify = record_modify,
+                resolve = resolve,
+            }
+        }
+        for index, move in ipairs(AsArray(t.animation)) do
+            node_handlers.block(move, data)
+        end
     end
 }
 
 
 function G.merge(hkr, cname, parsed_table)
-    local data = {
-        cname = cname,
-        hacker = hkr,
-        cblock = nil, cframe = nil,
-        xactId = nil, xseqId = nil, xposeId = nil,
-        dropBuffer = {
-            block = {}, frame = {},
-            record_modify = record_modify,
-            resolve = resolve,
-        }
-    }
-    for index, move in ipairs(AsArray(parsed_table.move)) do
-        node_handlers.move(move, data)
+    for index, diff in ipairs(AsArray(parsed_table.movepatterndiff)) do
+        node_handlers.movepatterndiff(diff, hkr, cname)
+    end
+    for index, diff in ipairs(AsArray(parsed_table.animpatterndiff)) do
+        node_handlers.animpatterndiff(diff, hkr, cname)
     end
 end
 
