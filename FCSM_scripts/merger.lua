@@ -254,6 +254,9 @@ node_handlers = {
             if t.hit then
                 node_handlers.hit(t.hit, data)
             end
+            if frame.frameFlags and frame.frameFlags & 0x1000000 ~=0 then
+                frame.hurtboxes:copy(frame.attackBoxes)
+            end
             if t.collision then
                 node_handlers.collision(t.collision, data)
             end
