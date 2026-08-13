@@ -152,6 +152,14 @@ local function traits_collect_flags(t, index)
     return value
 end
 
+local function convert_BGRA(bgra)
+    local b = (bgra >> 24) & 0xFF
+    local g = (bgra >> 16) & 0xFF
+    local r = (bgra >> 8)  & 0xFF
+    local a = bgra & 0xFF
+    return (a << 24) | (r << 16) | (g << 8) | b
+end
+
 -- local attr_handlers = {}
 local node_handlers = {}
 node_handlers = {
@@ -289,7 +297,7 @@ node_handlers = {
                 if k=="mode" then
                     blend.mode = nv + 1 --0 in pat is 1 in game
                 elseif k=="color" then
-                    blend.color = tonumber(v, 16)
+                    blend.color = convert_BGRA(tonumber(v, 16))
                 elseif k=="xscale" then
                     blend.scale.x = nv/100
                 elseif k=="yscale" then
