@@ -7,7 +7,7 @@ local function init()
     obj._stack = {obj.root}  
     return obj  
 end
-
+---@diagnostic disable-next-line: luadoc-miss-module-name
 --- @module XML Tree Handler.
 -- Generates a lua table from an XML content string.
 -- It is a simplified handler which attempts

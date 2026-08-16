@@ -1,3 +1,4 @@
+---@diagnostic disable-next-line: luadoc-miss-module-name
 --- @module Class providing the actual XML parser.
 --  Available options are:
 --      * stripWS   
@@ -22,7 +23,7 @@
 --@param code the decimal value to convert to its respective character
 local function decimalToHtmlChar(code)
     local num = tonumber(code)
-    if num >= 0 and num < 256 then
+    if num and num >= 0 and num < 256 then
         return string.char(num)
     end
 

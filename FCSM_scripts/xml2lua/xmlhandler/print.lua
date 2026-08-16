@@ -1,3 +1,4 @@
+---@diagnostic disable-next-line: luadoc-miss-module-name
 ---@module Handler to generate a simple event trace which 
 --outputs messages to the terminal during the XML
 --parsing, usually for debugging purposes.

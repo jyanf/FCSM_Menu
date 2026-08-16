@@ -5,7 +5,7 @@ local function init()
         _stack = {}
     }
 end
-
+---@diagnostic disable-next-line: luadoc-miss-module-name
 --- @module Handler to generate a DOM-like node tree structure with
 --      a single ROOT node parent - each node is a table comprising
 --      the fields below.
@@ -81,7 +81,7 @@ function dom:endtag(tag)
     local prev = self._stack[#self._stack]
 
     if tag.name ~= prev._name then
-        error("XML Error - Unmatched Tag ["..s..":"..tag.name.."]\n")
+        error("XML Error - Unmatched Tag ["..":"..tag.name.."]\n")
     end
 
     table.remove(self._stack)
@@ -183,19 +183,19 @@ local function attrsToStr(tab)
    if type(tab) == 'table' then
       local s = ''
       for n,v in pairs(tab) do
-	 -- determine a safe quote character
-	 local val = tostring(v)
-	 local found_single_quote = string.find(val, "'")
-	 local found_double_quote = string.find(val, '"')
-	 local quot = '"'
-	 if found_single_quote and found_double_quote then
-	    -- XML escape both quote characters
-	    val = string.gsub(val, '"', '&quot;')
-	    val = string.gsub(val, "'", '&apos;')
-	 elseif found_double_quote then
-	    quot = "'"
-	 end
-	 s = ' ' .. tostring(n) .. '=' .. quot .. val .. quot
+	      -- determine a safe quote character
+         local val = tostring(v)
+         local found_single_quote = string.find(val, "'")
+         local found_double_quote = string.find(val, '"')
+         local quot = '"'
+         if found_single_quote and found_double_quote then
+            -- XML escape both quote characters
+            val = string.gsub(val, '"', '&quot;')
+            val = string.gsub(val, "'", '&apos;')
+         elseif found_double_quote then
+            quot = "'"
+         end
+         s = ' ' .. tostring(n) .. '=' .. quot .. val .. quot
       end
       return s
    end
@@ -221,27 +221,27 @@ local function toXmlStr(node, indentLevel)
    if node._type == 'ROOT' then
       local s = ''
       for i, n in pairs(node._children) do
-	 s = s .. toXmlStr(n, indentLevel+2)
-      end
-      return s
-   elseif node._type == 'ELEMENT' then
-      local s = indent .. '<' .. node._name .. attrsToStr(node._attr)
+         s = s .. toXmlStr(n, indentLevel+2)
+            end
+            return s
+         elseif node._type == 'ELEMENT' then
+            local s = indent .. '<' .. node._name .. attrsToStr(node._attr)
 
-      -- check if ELEMENT has no children
-      if not node._children or
-	 #node._children == 0 then
-	 return s .. '/>\n'
+            -- check if ELEMENT has no children
+            if not node._children or
+         #node._children == 0 then
+         return s .. '/>\n'
       end
 
       s = s .. '>\n'
 
       for i, n in pairs(node._children) do
-	 local xx = toXmlStr(n, indentLevel+2)
-	 if not xx then
-	    print('BUG:xx==nil')
-	 else
-	    s = s .. xx
-	 end
+         local xx = toXmlStr(n, indentLevel+2)
+         if not xx then
+            print('BUG:xx==nil')
+         else
+            s = s .. xx
+         end
       end
 
       return s .. indent .. '</' .. node._name .. '>\n'
